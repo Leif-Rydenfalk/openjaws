@@ -1,6 +1,8 @@
 // cdk.ts - The Sovereign Substrate for the Rheo Living Mesh
 // Pattern: Narrative Transparent Substrate (NTS-1)
 const bunServe = (globalThis as any).Bun?.serve;
+import { createServer } from "node:http";
+
 import {
     randomUUID,
     createHash,
@@ -343,41 +345,84 @@ export class RheoCell {
     };
 
     /**
-     * The Segmented Capability Proxy
-     * 
-     * Logic: Translates underscores to mesh-standard dashes and maps
-     * double-underscores to recursive middleware layers.
-     * 
-     * Example: cell.mesh.inventory.add__auth_user() -> "inventory/add|auth/user"
-     */
-    public mesh = new Proxy({} as any, {
-        get: (target, namespace: string) => {
-            return new Proxy({}, {
-                get: (subTarget, methodCall: string) => {
-                    return async (args: any, proofs: Record<string, string> = {}) => {
-                        const [method, ...middlewares] = methodCall.split('__');
+ * The Segmented Capability Proxy
+ * 
+ * Logic: Translates underscores to mesh-standard dashes and maps
+ * double-underscores to recursive middleware layers.
+ * 
+ * Example: cell.mesh.inventory.add__auth_user() -> "inventory/add|auth/user"
+ */
+    get mesh(): any {
+        // Lazy initialization - create proxy on first access
+        if (!(this as any)._meshProxy) {
+            (this as any)._meshProxy = new Proxy({} as any, {
+                get: (target, namespace: string) => {
+                    return new Proxy({}, {
+                        get: (subTarget, methodCall: string) => {
+                            return async (args: any, proofs: Record<string, string> = {}) => {
+                                const [method, ...middlewares] = methodCall.split('__');
 
-                        // Standardize underscores to dashes for the primary method
-                        let capability = `${namespace}/${method.replace(/_/g, '-')}`;
+                                // Standardize underscores to dashes for the primary method
+                                let capability = `${namespace}/${method.replace(/_/g, '-')}`;
 
-                        if (middlewares.length > 0) {
-                            // inventory/add|auth/user
-                            capability += "|" + middlewares.join('|').replace(/_/g, '/');
+                                if (middlewares.length > 0) {
+                                    // inventory/add|auth/user
+                                    capability += "|" + middlewares.join('|').replace(/_/g, '/');
+                                }
+
+                                const res = await this.askMesh(capability, args, proofs);
+
+                                if (!res.ok) {
+                                    const err = new MeshError(res.error!, res.cid);
+                                    err.printNarrative();
+                                    throw err;
+                                }
+                                return res.value;
+                            };
                         }
-
-                        const res = await this.askMesh(capability, args, proofs);
-
-                        if (!res.ok) {
-                            const err = new MeshError(res.error!, res.cid);
-                            err.printNarrative();
-                            throw err;
-                        }
-                        return res.value;
-                    };
+                    });
                 }
             });
         }
-    });
+        return (this as any)._meshProxy;
+    }
+
+    // /**
+    //  * The Segmented Capability Proxy
+    //  * 
+    //  * Logic: Translates underscores to mesh-standard dashes and maps
+    //  * double-underscores to recursive middleware layers.
+    //  * 
+    //  * Example: cell.mesh.inventory.add__auth_user() -> "inventory/add|auth/user"
+    //  */
+    // public mesh = new Proxy({} as any, {
+    //     get: (target, namespace: string) => {
+    //         return new Proxy({}, {
+    //             get: (subTarget, methodCall: string) => {
+    //                 return async (args: any, proofs: Record<string, string> = {}) => {
+    //                     const [method, ...middlewares] = methodCall.split('__');
+
+    //                     // Standardize underscores to dashes for the primary method
+    //                     let capability = `${namespace}/${method.replace(/_/g, '-')}`;
+
+    //                     if (middlewares.length > 0) {
+    //                         // inventory/add|auth/user
+    //                         capability += "|" + middlewares.join('|').replace(/_/g, '/');
+    //                     }
+
+    //                     const res = await this.askMesh(capability, args, proofs);
+
+    //                     if (!res.ok) {
+    //                         const err = new MeshError(res.error!, res.cid);
+    //                         err.printNarrative();
+    //                         throw err;
+    //                     }
+    //                     return res.value;
+    //                 };
+    //             }
+    //         });
+    //     }
+    // });
 
     constructor(public id: string, public port: number = 0, public seed?: string) {
         if (process.env.RHEO_CELL_ID) this.id = process.env.RHEO_CELL_ID;
@@ -673,8 +718,14 @@ export class RheoCell {
         this.saveManifest();
     }
 
-    public provideContract(contract: Contract, handler: Function) {
+    public provideContract<I, O>(
+        contract: Contract,
+        handler: (args: I, ctx: Signal) => Promise<O>
+    ) {
         this.contracts.set(contract.capability, contract);
+
+        // Här skulle vi kunna lägga till runtime-validering mot contract.inputSchema
+        // För nu kör vi "trust but verify" via TypeScript
         this.provide(contract.capability, handler);
     }
 
@@ -704,8 +755,10 @@ export class RheoCell {
         const myId = this.id;
         const cap = signal.payload.capability;
 
-        if (!this.addr) {
-            return { ok: false, cid, error: { code: "NOT_READY", msg: "Cell not ready", from: myId, trace: [] } };
+        // Allow cells without address to forward (Ghost Mode / Bridge Mode)
+        // They just can't handle local requests
+        if (!this.addr && this.handlers[cap]) {
+            return { ok: false, cid, error: { code: "NOT_READY", msg: "Cell has no address - cannot handle local capabilities", from: myId, trace: [] } };
         }
 
         // --- 1. RESULT CACHE (Idempotency) ---
@@ -1404,20 +1457,70 @@ export class RheoCell {
     }
 
     /**
-     * The Cell Interface Layer.
-     * Responsibility: Serves the HTTP substrate, handles P2P handshake, 
-     * and performs defensive entry-point checks before routing.
-     */
+ * The Cell Interface Layer.
+ * Responsibility: Serves the HTTP substrate, handles P2P handshake, 
+ * and performs defensive entry-point checks before routing.
+ */
     public listen() {
         let actualPort = this.port;
 
         if (!bunServe) {
-            this.log("WARN", "Native Bun.serve not found. Mesh Node running in 'Ghost Mode' (Routing only, no listening).");
+            this.log("WARN", "Native Bun.serve not found. Falling back to Node.js http server...");
+
+            // Use Node.js HTTP server as fallback
+            const nodeServer = createServer((req, res) => {
+                // Convert Node req to Web API Request
+                const chunks: Buffer[] = [];
+                req.on('data', chunk => chunks.push(chunk));
+                req.on('end', async () => {
+                    const body = Buffer.concat(chunks);
+                    const url = `http://localhost:${this.port}${req.url}`;
+
+                    const request = new Request(url, {
+                        method: req.method,
+                        headers: Object.entries(req.headers).reduce((acc, [k, v]) => {
+                            if (v) acc[k] = Array.isArray(v) ? v.join(', ') : v;
+                            return acc;
+                        }, {} as Record<string, string>),
+                        body: body.length > 0 ? body : undefined
+                    });
+
+                    try {
+                        const response = await this.handleRequest(request);
+                        res.statusCode = response.status;
+                        response.headers.forEach((value, key) => {
+                            res.setHeader(key, value);
+                        });
+                        const responseBody = await response.text();
+                        res.end(responseBody);
+                    } catch (e) {
+                        res.statusCode = 500;
+                        res.end(JSON.stringify({ error: "Internal Server Error" }));
+                    }
+                });
+            });
+
+            nodeServer.listen(this.port, () => {
+                const address = nodeServer.address();
+                if (address && typeof address === 'object') {
+                    this.port = address.port;
+                    this._addr = `http://localhost:${address.port}`;
+
+                    // Store server for shutdown
+                    (this as any).server = {
+                        stop: () => nodeServer.close(),
+                        port: address.port
+                    };
+
+                    this.completeListenSetup();
+                }
+            });
+
             return;
         }
 
         try {
-            this.server = bunServe({ // <--- Use bunServe here
+            this.server = bunServe({
                 port: this.port,
                 fetch: this.handleRequest.bind(this)
             });
@@ -1426,7 +1529,7 @@ export class RheoCell {
         } catch (e: any) {
             if (e.code === 'EADDRINUSE') {
                 this.log("WARN", `Port ${this.port} in use, seeking alternative...`);
-                this.server = serve({
+                this.server = bunServe({
                     port: 0,
                     fetch: this.handleRequest.bind(this)
                 });
@@ -1436,12 +1539,18 @@ export class RheoCell {
 
         // --- POST-BOOT INITIALIZATION ---
         this.port = actualPort;
-        const myAddr = `http://localhost:${this.server.port}`;
-        this._addr = myAddr;
+        this._addr = `http://localhost:${actualPort}`;
 
+        this.completeListenSetup();
+    }
+
+    /**
+     * Complete the listen setup (shared between Bun and Node paths)
+     */
+    private completeListenSetup() {
         // Ensure we are the first entry in our own Atlas.
         this.atlas[this.id] = {
-            id: this.id, addr: myAddr, caps: Object.keys(this.handlers),
+            id: this.id, addr: this._addr, caps: Object.keys(this.handlers),
             pubKey: this.publicKey, lastSeen: Date.now(),
             lastGossiped: Date.now(), gossipHopCount: 0
         };
@@ -1451,21 +1560,22 @@ export class RheoCell {
         this.bootstrapFromRegistry().catch(() => { });
 
         // Heartbeat: Update registry file every 5s to stay "alive"
-        setInterval(() => this.registerToRegistry(), 5000);
+        const heartbeat = setInterval(() => this.registerToRegistry(), 5000);
+        this.activeIntervals.push(heartbeat);
 
-        this.log("INFO", `Sovereign Cell online @ ${this.server.port}`);
+        this.log("INFO", `Sovereign Cell online @ ${this._addr}`);
         this.saveManifest();
 
         // Burst announce to speed up test convergence
         const announce = () => {
             const myEntry: AtlasEntry = {
-                addr: myAddr, caps: Object.keys(this.handlers),
+                addr: this._addr, caps: Object.keys(this.handlers),
                 pubKey: this.publicKey, lastSeen: Date.now(),
                 lastGossiped: Date.now(), gossipHopCount: 0
             };
 
             const targets = Object.values(this.atlas)
-                .filter(e => e.addr !== myAddr)
+                .filter(e => e.addr !== this._addr)
                 .sort(() => 0.5 - Math.random())
                 .slice(0, 3);
 
@@ -1480,7 +1590,7 @@ export class RheoCell {
 
         const gossip = () => {
             const peers = Object.values(this.atlas)
-                .filter(e => e.addr !== myAddr)
+                .filter(e => e.addr !== this._addr)
                 .sort(() => 0.5 - Math.random())
                 .slice(0, 2);
 
@@ -1505,7 +1615,7 @@ export class RheoCell {
                 fetch(`${this.seed}/announce`, {
                     method: "POST",
                     body: JSON.stringify({
-                        addr: myAddr, caps: Object.keys(this.handlers),
+                        addr: this._addr, caps: Object.keys(this.handlers),
                         pubKey: this.publicKey, lastSeen: Date.now(),
                         lastGossiped: Date.now(), gossipHopCount: 0
                     }),
@@ -1520,10 +1630,15 @@ export class RheoCell {
         setTimeout(announce, 500);
         setTimeout(announce, 1000);
 
-        setInterval(announce, 10000);
+        const announceInterval = setInterval(announce, 10000);
+        this.activeIntervals.push(announceInterval);
+
         setTimeout(gossip, 500);
-        setInterval(gossip, 15000);
-        setInterval(healPartition, 30000);
+        const gossipInterval = setInterval(gossip, 15000);
+        this.activeIntervals.push(gossipInterval);
+
+        const healInterval = setInterval(healPartition, 30000);
+        this.activeIntervals.push(healInterval);
     }
 
     // private async fetchSeedAtlas() {

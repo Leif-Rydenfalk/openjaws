@@ -1,0 +1,18 @@
+{
+  "pid": 40273,
+  "version": "11a9b7b717f764ec",
+  "port": 42943,
+  "startTime": 1770419987882,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAPxdKZyyEIa8UgKs9I320pDm1Jvq77OmoXZ5w14m92wY=\n-----END PUBLIC KEY-----\n"
+}

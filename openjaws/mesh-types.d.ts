@@ -1,15 +1,28 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-06T22:14:31.220Z
+ * Generated: 2026-02-06T23:20:39.784Z
+ * Source: Live mesh scan (14 capabilities)
  * 
- * This file provides complete type safety for all mesh capabilities.
  * DO NOT EDIT MANUALLY - changes will be overwritten.
- * 
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
  */
 
 declare module "./protocols/typed-mesh" {
     interface MeshCapabilities {
+        "ai/embed": { input: any; output: any };
+        "ai/generate": { input: any; output: any };
+        "codegen/mesh-types": { input: any; output: { ok: boolean; path?: string; capabilities?: number; namespaces?: Array<string> } };
+        "codegen/poke-ts": { input: any; output: { ok: boolean } };
+        "codegen/validate": { input: any; output: { ok: boolean; error?: string; missing?: Array<string>; undeclared?: Array<string>; stats?: { declared: number; actual: number } } };
+        "list/add": { input: any; output: any };
+        "list/complete": { input: any; output: any };
+        "list/get": { input: any; output: any };
+        "list/suggest-tasks": { input: any; output: any };
+        "list/summarize": { input: any; output: any };
+        "log/get": { input: any; output: any };
+        "log/info": { input: any; output: any };
+        "mesh/health": { input: any; output: any };
+        "mesh/ping": { input: any; output: any };
     }
 }
 
@@ -17,42 +30,48 @@ declare module "./protocols/typed-mesh" {
 // NAMESPACE HELPERS (Optional convenience types)
 // ============================================================================
 
-// ============================================================================
-// USAGE EXAMPLES
-// ============================================================================
+/**
+ * Capabilities in the ai namespace
+ */
+export type AiCapabilities = {
+    embed: { input: any; output: any };
+    generate: { input: any; output: any };
+};
 
 /**
- * Example 1: Direct askMesh with type safety
- * 
- * const cell = new TypedRheoCell(...);
- * 
- * // ✅ Typed input and output
- * const result = await cell.askMesh("ai/generate", { 
- *     prompt: "Hello" 
- * });
- * // result.value => { model: string, response: string, done: boolean }
- * 
- * // ❌ Compile error - wrong input type
- * await cell.askMesh("ai/generate", { prmpt: "typo" });
- * 
- * // ❌ Compile error - capability doesn't exist  
- * await cell.askMesh("ai/nonexistent", {});
+ * Capabilities in the codegen namespace
  */
+export type CodegenCapabilities = {
+    mesh-types: { input: any; output: { ok: boolean; path?: string; capabilities?: number; namespaces?: Array<string> } };
+    poke-ts: { input: any; output: { ok: boolean } };
+    validate: { input: any; output: { ok: boolean; error?: string; missing?: Array<string>; undeclared?: Array<string>; stats?: { declared: number; actual: number } } };
+};
 
 /**
- * Example 2: Proxy API for ergonomic calls
- * 
- * const cell = new TypedRheoCell(...);
- * 
- * // ✅ Natural method-like syntax
- * const health = await cell.mesh.mesh.health();
- * // health => { totalCells: number, ... }
- * 
- * const summary = await cell.mesh.ai.generate({ 
- *     prompt: "Summarize my day" 
- * });
- * // summary => { model: string, response: string, done: boolean }
- * 
- * // ❌ Compile error - namespace doesn't exist
- * await cell.mesh.nonexistent.method();
+ * Capabilities in the list namespace
  */
+export type ListCapabilities = {
+    add: { input: any; output: any };
+    complete: { input: any; output: any };
+    get: { input: any; output: any };
+    suggest-tasks: { input: any; output: any };
+    summarize: { input: any; output: any };
+};
+
+/**
+ * Capabilities in the log namespace
+ */
+export type LogCapabilities = {
+    get: { input: any; output: any };
+    info: { input: any; output: any };
+};
+
+/**
+ * Capabilities in the mesh namespace
+ */
+export type MeshCapabilities = {
+    health: { input: any; output: any };
+    ping: { input: any; output: any };
+};
+
+// Type trigger: 1770420039784

@@ -43,12 +43,14 @@ export type InferRouter<T> = T extends Router<infer TProcedures>
 
 export interface Schema<T> {
     _type?: T; // Phantom type for inference
+    _def?: any; // Internal zod-like structure for codegen
     parse: (value: unknown) => T;
     optional?: boolean;
 }
 
 export const z = {
     string: (): Schema<string> => ({
+        _def: { typeName: "ZodString" },
         parse: (val) => {
             if (typeof val !== 'string') throw new Error('Expected string');
             return val;
@@ -56,6 +58,7 @@ export const z = {
     }),
 
     number: (): Schema<number> => ({
+        _def: { typeName: "ZodNumber" },
         parse: (val) => {
             if (typeof val !== 'number') throw new Error('Expected number');
             return val;
@@ -63,6 +66,7 @@ export const z = {
     }),
 
     boolean: (): Schema<boolean> => ({
+        _def: { typeName: "ZodBoolean" },
         parse: (val) => {
             if (typeof val !== 'boolean') throw new Error('Expected boolean');
             return val;
@@ -70,6 +74,7 @@ export const z = {
     }),
 
     enum: <T extends string>(values: readonly T[]): Schema<T> => ({
+        _def: { typeName: "ZodEnum", values },
         parse: (val) => {
             if (!values.includes(val as T)) {
                 throw new Error(`Expected one of: ${values.join(', ')}`);
@@ -80,31 +85,39 @@ export const z = {
 
     object: <T extends Record<string, Schema<unknown>>>(
         shape: T
-    ): Schema<{ [K in keyof T]: T[K] extends Schema<infer U> ? U : never }> => ({
-        parse: (val) => {
-            if (typeof val !== 'object' || val === null) {
-                throw new Error('Expected object');
-            }
-
-            const result: any = {};
-            for (const [key, schema] of Object.entries(shape)) {
-                const fieldValue = (val as any)[key];
-
-                // Check if required field is missing
-                if (fieldValue === undefined && !schema.optional) {
-                    throw new Error(`Missing required field: ${key}`);
+    ): Schema<{ [K in keyof T]: T[K] extends Schema<infer U> ? U : never }> => {
+        const shapeGetter = () => shape;
+        return {
+            _def: {
+                typeName: "ZodObject",
+                shape: shapeGetter
+            },
+            parse: (val) => {
+                if (typeof val !== 'object' || val === null) {
+                    throw new Error('Expected object');
                 }
 
-                // Parse if present
-                if (fieldValue !== undefined) {
-                    result[key] = schema.parse(fieldValue);
+                const result: any = {};
+                for (const [key, schema] of Object.entries(shape)) {
+                    const fieldValue = (val as any)[key];
+
+                    // Check if required field is missing
+                    if (fieldValue === undefined && !schema.optional) {
+                        throw new Error(`Missing required field: ${key}`);
+                    }
+
+                    // Parse if present
+                    if (fieldValue !== undefined) {
+                        result[key] = schema.parse(fieldValue);
+                    }
                 }
+                return result;
             }
-            return result;
-        }
-    }),
+        };
+    },
 
     array: <T>(item: Schema<T>): Schema<T[]> => ({
+        _def: { typeName: "ZodArray", type: item },
         parse: (val) => {
             if (!Array.isArray(val)) throw new Error('Expected array');
             return val.map(item.parse);
@@ -112,6 +125,7 @@ export const z = {
     }),
 
     optional: <T>(schema: Schema<T>): Schema<T | undefined> => ({
+        _def: { typeName: "ZodOptional", innerType: schema },
         parse: (val) => {
             if (val === undefined) return undefined;
             return schema.parse(val);
@@ -119,7 +133,21 @@ export const z = {
         optional: true
     }),
 
+    void: (): Schema<void> => ({
+        _def: { typeName: "ZodVoid" },
+        parse: (val) => {
+            // void accepts anything (or nothing), returns undefined
+            return undefined;
+        }
+    }),
+
     unknown: (): Schema<unknown> => ({
+        _def: { typeName: "ZodUnknown" },
+        parse: (val) => val
+    }),
+
+    any: (): Schema<any> => ({
+        _def: { typeName: "ZodAny" },
         parse: (val) => val
     })
 };
@@ -131,6 +159,7 @@ export const z = {
 export class Procedure<TInput = void, TOutput = unknown> {
     public readonly _def: {
         input?: Schema<TInput>;
+        output?: Schema<TOutput>;
         type: 'query' | 'mutation';
         handler: (input: TInput, ctx: Signal) => Promise<TOutput>;
     };
@@ -138,9 +167,10 @@ export class Procedure<TInput = void, TOutput = unknown> {
     constructor(
         type: 'query' | 'mutation',
         input: Schema<TInput> | undefined,
+        output: Schema<TOutput> | undefined,
         handler: (input: TInput, ctx: Signal) => Promise<TOutput>
     ) {
-        this._def = { type, input, handler };
+        this._def = { type, input, output, handler };
     }
 }
 
@@ -148,39 +178,36 @@ export class Procedure<TInput = void, TOutput = unknown> {
  * Procedure builder - start here to create endpoints
  */
 export const procedure = {
-    /**
-     * Query with no input
-     */
+    // Add this for output-only procedures (no input)
+    output: <TOutput>(outSchema: Schema<TOutput>) => ({
+        query: (handler: (ctx: Signal) => Promise<TOutput>): Procedure<void, TOutput> =>
+            new Procedure('query', undefined, outSchema, async (_: void, ctx) => handler(ctx)),
+        mutation: (handler: (ctx: Signal) => Promise<TOutput>): Procedure<void, TOutput> =>
+            new Procedure('mutation', undefined, outSchema, async (_: void, ctx) => handler(ctx))
+    }),
+
     query: <TOutput>(
         handler: (ctx: Signal) => Promise<TOutput>
-    ): Procedure<void, TOutput> => {
-        return new Procedure('query', undefined, async (_: void, ctx: Signal) => handler(ctx));
-    },
+    ): Procedure<void, TOutput> =>
+        new Procedure('query', undefined, undefined, async (_: void, ctx) => handler(ctx)),
 
-    /**
-     * Mutation with no input
-     */
     mutation: <TOutput>(
         handler: (ctx: Signal) => Promise<TOutput>
-    ): Procedure<void, TOutput> => {
-        return new Procedure('mutation', undefined, async (_: void, ctx: Signal) => handler(ctx));
-    },
+    ): Procedure<void, TOutput> =>
+        new Procedure('mutation', undefined, undefined, async (_: void, ctx) => handler(ctx)),
 
-    /**
-     * Start building a procedure with input validation
-     */
     input: <TInput>(schema: Schema<TInput>) => ({
-        query: <TOutput>(
-            handler: (input: TInput, ctx: Signal) => Promise<TOutput>
-        ): Procedure<TInput, TOutput> => {
-            return new Procedure('query', schema, handler);
-        },
-
-        mutation: <TOutput>(
-            handler: (input: TInput, ctx: Signal) => Promise<TOutput>
-        ): Procedure<TInput, TOutput> => {
-            return new Procedure('mutation', schema, handler);
-        }
+        output: <TOutput>(outSchema: Schema<TOutput>) => ({
+            query: (handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> =>
+                new Procedure('query', schema, outSchema, handler),
+            mutation: (handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> =>
+                new Procedure('mutation', schema, outSchema, handler)
+        }),
+        // Backward compat - infer output from handler
+        query: <TOutput>(handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> =>
+            new Procedure('query', schema, undefined, handler),
+        mutation: <TOutput>(handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> =>
+            new Procedure('mutation', schema, undefined, handler)
     })
 };
 
@@ -238,6 +265,32 @@ export class Router<TProcedures extends Record<string, AnyProcedure | AnyRouter>
 
         return current instanceof Procedure ? current : null;
     }
+
+    /**
+     * Get contract information for a capability
+     * Returns the actual zod schemas that can be introspected
+     */
+    getContract(capability: string): { input?: any; output?: any } | null {
+        const proc = this.findProcedure(capability);
+        if (!proc) return null;
+
+        return {
+            input: proc._def.input,  // This is the actual zod schema object
+            output: proc._def.output // This is the actual zod schema object
+        };
+    }
+
+    /**
+     * Get all contracts from this router
+     */
+    getAllContracts(): Record<string, { input?: any; output?: any }> {
+        const contracts: Record<string, { input?: any; output?: any }> = {};
+        for (const cap of this.getCapabilities()) {
+            const contract = this.getContract(cap);
+            if (contract) contracts[cap] = contract;
+        }
+        return contracts;
+    }
 }
 
 /**
@@ -288,6 +341,12 @@ export class RheoCell extends BaseCell {
                 return await proc._def.handler(validatedInput, ctx);
             });
         }
+
+        // ✅ AUTO-REGISTER CONTRACT ENDPOINT
+        // This makes the schemas available to codegen
+        this.provide("cell/contract", ({ cap }: { cap: string }) => {
+            return router.getContract(cap) || null;
+        });
     }
 
     /**

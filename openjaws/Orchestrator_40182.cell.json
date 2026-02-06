@@ -1,0 +1,18 @@
+{
+  "pid": 40182,
+  "version": "11a9b7b717f764ec",
+  "port": 32861,
+  "startTime": 1770419979667,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEALTgAGQb9xLStG6UrTQQ1/CgQ4unxQbO7xg10Rp1erDA=\n-----END PUBLIC KEY-----\n"
+}

@@ -1,13 +1,18 @@
+// ui/src/app.d.ts
 // See https://svelte.dev/docs/kit/types#app.d.ts
-// for information about these interfaces
+
+import type { TypedRheoCell } from '../../protocols/typed-mesh';
+
 declare global {
 	namespace App {
 		// interface Error {}
-		// interface Locals {}
+		interface Locals {
+			cell: TypedRheoCell;
+		}
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}
 	}
 }
 
-export {};
+export { };

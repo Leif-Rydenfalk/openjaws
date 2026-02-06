@@ -30,3 +30,6 @@ https://trpc.io/#try-it-out
 
 "Build-time vs Runtime: Schema extraction happens at build time, not during mesh operation. This ensures types are static and verifiable."
 The key distinction is that mesh nodes do not have to run in sync - one can run and another can depend on it and we can perform pre processing before we start the node which depends on the other node.
+
+
+How is it so hard for you to understand that all cells run so the z is active and then they can use those types to generate typed clients for eachother so that i as a developer instantly know in the editor when i fuckup

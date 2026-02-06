@@ -1,5 +1,4 @@
-// ai1/typed-ai-cell.ts - Example of type-safe cell with proper augmentation
-
+// ai1/index.ts - Clean implementation with NO manual type declarations
 import { TypedRheoCell } from "../protocols/typed-mesh";
 import { router, procedure, z } from "../protocols/example2";
 
@@ -13,6 +12,11 @@ const aiRouter = router({
             .input(z.object({
                 prompt: z.string(),
                 model: z.optional(z.string())
+            }))
+            .output(z.object({
+                model: z.string(),
+                response: z.string(),
+                done: z.boolean()
             }))
             .mutation(async (input) => {
                 const model = input.model || "llama3";
@@ -53,6 +57,10 @@ const aiRouter = router({
                 text: z.string(),
                 model: z.optional(z.string())
             }))
+            .output(z.object({
+                embedding: z.array(z.number()),
+                model: z.string()
+            }))
             .mutation(async (input) => {
                 // Mock implementation
                 return {
@@ -62,38 +70,6 @@ const aiRouter = router({
             })
     })
 });
-
-// ============================================================================
-// TYPE AUGMENTATION
-// ============================================================================
-
-// Augment the global MeshCapabilities interface with AI capabilities
-declare module "../protocols/typed-mesh" {
-    interface MeshCapabilities {
-        "ai/generate": {
-            input: {
-                prompt: string;
-                model?: string;
-            };
-            output: {
-                model: string;
-                response: string;
-                done: boolean;
-            };
-        };
-
-        "ai/embed": {
-            input: {
-                text: string;
-                model?: string;
-            };
-            output: {
-                embedding: number[];
-                model: string;
-            };
-        };
-    }
-}
 
 // ============================================================================
 // CELL INITIALIZATION
@@ -115,37 +91,39 @@ cell.log("INFO", "🤖 Type-safe AI cell initialized");
 
 // This demonstrates type-safe inter-cell communication
 async function demonstrateTypeSafety() {
-    // ✅ This is fully typed - IDE will autocomplete and type-check
-    const result = await cell.mesh.ai.generate({
-        prompt: "What is the meaning of life?"
-    });
+    await new Promise(r => setTimeout(r, 10000)); // Wait for mesh
 
-    // result is typed as { model: string, response: string, done: boolean }
-    console.log(`AI Response: ${result.response}`);
-
-    // ✅ Optional parameters work
-    const withModel = await cell.mesh.ai.generate({
-        prompt: "Hello",
-        model: "llama3"
-    });
-
-    // ❌ This would be a compile error - wrong property name
-    // await cell.mesh.ai.generate({ prmpt: "typo" });
-
-    // ❌ This would be a compile error - capability doesn't exist
-    // await cell.mesh.ai.nonexistent({ });
-
-    // ✅ Can call other cells with full type safety
     try {
+        // ✅ This is fully typed - IDE will autocomplete and type-check
+        const result = await cell.mesh.ai.generate({
+            prompt: "What is the meaning of life?"
+        });
+
+        // result is typed as { model: string, response: string, done: boolean }
+        console.log(`AI Response: ${result.response}`);
+
+        // ✅ Optional parameters work
+        const withModel = await cell.mesh.ai.generate({
+            prompt: "Hello",
+            model: "llama3"
+        });
+
+        // ❌ This would be a compile error - wrong property name
+        // await cell.mesh.ai.generate({ prmpt: "typo" });
+
+        // ❌ This would be a compile error - capability doesn't exist
+        // await cell.mesh.ai.nonexistent({ });
+
+        // ✅ Can call other cells with full type safety
         const health = await cell.mesh.mesh.health();
         console.log(`Mesh has ${health.totalCells} cells`);
     } catch (e) {
-        // Health might not be available yet
+        console.log("Demo waiting for mesh convergence...");
     }
 }
 
 // Run demonstration after mesh stabilizes
-setTimeout(demonstrateTypeSafety, 5000);
+setTimeout(demonstrateTypeSafety, 12000);
 
 // ============================================================================
 // TYPE EXPORTS

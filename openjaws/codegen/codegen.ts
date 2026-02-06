@@ -1,223 +1,181 @@
-// codegen/enhanced-codegen.ts - Auto-generate type-safe mesh declarations
-// This cell scans the mesh and generates TypeScript type declarations
-
+// codegen/codegen.ts - Auto-generate types from LIVE zod schemas
 import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure } from "../protocols/example2";
-import { writeFileSync, readFileSync, existsSync } from "node:fs";
+import { router, procedure, z } from "../protocols/example2";
+import { writeFileSync, existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
+import { spawn } from "node:child_process";
 
 const cell = new TypedRheoCell(`Codegen_${process.pid}`, 0, process.argv[2]);
 
 // ============================================================================
-// TYPE EXTRACTION FROM LIVE CELLS
+// ZOD TO TYPESCRIPT CONVERTER
 // ============================================================================
 
-interface CapabilitySignature {
-    input: string;  // TypeScript type as string
-    output: string; // TypeScript type as string
-}
-
 /**
- * Extract type information from a cell by analyzing its router
- * This queries the cell and infers types from the schema
+ * Convert zod schema shape to TypeScript type string
+ * This works by introspecting the runtime zod schema structure
  */
-async function extractCellTypes(cellId: string, capabilities: string[]): Promise<Map<string, CapabilitySignature>> {
-    const types = new Map<string, CapabilitySignature>();
+function zodShapeToTS(shape: any): string {
+    if (!shape) return "void";
 
-    for (const cap of capabilities) {
-        try {
-            // Try to get schema information if the cell provides it
-            const contractResult = await cell.askMesh("cell/contract" as any, { cap } as any);
+    // Handle zod internals
+    if (shape._def) {
+        const def = shape._def;
 
-            if (contractResult.ok && contractResult.value) {
-                const schema = contractResult.value;
-                types.set(cap, {
-                    input: schemaToTypeScript(schema.inputSchema),
-                    output: schemaToTypeScript(schema.outputSchema)
-                });
-            } else {
-                // Fallback: infer from capability name and common patterns
-                types.set(cap, inferTypesFromCapability(cap));
-            }
-        } catch (e) {
-            // Fallback for cells without contract support
-            types.set(cap, inferTypesFromCapability(cap));
+        // String
+        if (def.typeName === "ZodString") {
+            return "string";
         }
-    }
 
-    return types;
-}
-
-/**
- * Convert JSON schema to TypeScript type string
- */
-function schemaToTypeScript(schema: any): string {
-    if (!schema) return "void";
-
-    switch (schema.type) {
-        case "string":
-            return schema.enum ? schema.enum.map((v: string) => `"${v}"`).join(" | ") : "string";
-        case "number":
+        // Number
+        if (def.typeName === "ZodNumber") {
             return "number";
-        case "boolean":
+        }
+
+        // Boolean
+        if (def.typeName === "ZodBoolean") {
             return "boolean";
-        case "array":
-            return `Array<${schemaToTypeScript(schema.items)}>`;
-        case "object":
-            if (!schema.properties) return "Record<string, any>";
-            const props = Object.entries(schema.properties)
-                .map(([key, propSchema]) => {
-                    const optional = !schema.required?.includes(key);
-                    return `${key}${optional ? "?" : ""}: ${schemaToTypeScript(propSchema)}`;
+        }
+
+        // Enum
+        if (def.typeName === "ZodEnum") {
+            const values = def.values || [];
+            return values.map((v: string) => `"${v}"`).join(" | ");
+        }
+
+        // Array
+        if (def.typeName === "ZodArray") {
+            const itemType = zodShapeToTS(def.type);
+            return `Array<${itemType}>`;
+        }
+
+        // Optional
+        if (def.typeName === "ZodOptional") {
+            const innerType = zodShapeToTS(def.innerType);
+            return innerType; // Don't add undefined here, it's handled in object parsing
+        }
+
+        // Object
+        if (def.typeName === "ZodObject") {
+            const shape = typeof def.shape === "function" ? def.shape() : def.shape;
+            const props = Object.entries(shape)
+                .map(([key, schema]: [string, any]) => {
+                    const isOptional = schema._def?.typeName === "ZodOptional" || schema.optional;
+                    const typeStr = zodShapeToTS(schema);
+                    return `${key}${isOptional ? "?" : ""}: ${typeStr}`;
                 })
                 .join("; ");
             return `{ ${props} }`;
-        default:
+        }
+
+        // Unknown/Any
+        if (def.typeName === "ZodUnknown" || def.typeName === "ZodAny") {
             return "any";
+        }
     }
+
+    // Fallback for plain objects
+    if (typeof shape === "object" && shape !== null) {
+        if (Array.isArray(shape)) {
+            return "any[]";
+        }
+        return "any";
+    }
+
+    return "any";
 }
 
 /**
- * Infer types from capability name using common patterns
+ * Extract contract from a cell's router
+ * This queries the cell and gets the actual zod schemas
  */
-function inferTypesFromCapability(capability: string): CapabilitySignature {
-    const [namespace, procedure] = capability.split("/");
+async function extractContract(
+    cellId: string,
+    capability: string
+): Promise<{ input: string; output: string } | null> {
+    try {
+        const result = await cell.askMesh("cell/contract" as any, { cap: capability });
 
-    // Common patterns based on procedure names
-    if (procedure === "get" || procedure === "list" || procedure === "health") {
-        return { input: "void", output: "any" };
+        if (!result.ok || !result.value) {
+            return null;
+        }
+
+        const contract = result.value;
+
+        // Convert schemas to TypeScript
+        const inputType = contract.input ? zodShapeToTS(contract.input) : "void";
+        const outputType = contract.output ? zodShapeToTS(contract.output) : "any";
+
+        return { input: inputType, output: outputType };
+    } catch (e) {
+        // Cell might not support contracts yet
+        return null;
     }
-
-    if (procedure === "add" || procedure === "create" || procedure === "update") {
-        return { input: "any", output: "{ ok: boolean }" };
-    }
-
-    if (procedure === "delete" || procedure === "remove") {
-        return { input: "{ id: string }", output: "{ ok: boolean }" };
-    }
-
-    // Default
-    return { input: "any", output: "any" };
 }
 
 // ============================================================================
 // DECLARATION FILE GENERATION
 // ============================================================================
 
-const codegenRouter = router({
-    codegen: router({
-        'mesh-types': procedure.query(async () => {
-            cell.log("INFO", "🧬 Generating mesh type declarations...");
+/**
+ * Generate mesh-types.d.ts from live mesh topology
+ */
+async function generateTypes(): Promise<{
+    ok: boolean;
+    path?: string;
+    capabilities?: number;
+    namespaces?: string[];
+}> {
+    cell.log("INFO", "🧬 Scanning mesh for type information...");
 
-            const atlas = cell.atlas;
-            const namespaceMap = new Map<string, Set<string>>();
-            const capabilityTypes = new Map<string, CapabilitySignature>();
+    const atlas = cell.atlas;
+    const capabilityTypes = new Map<string, { input: string; output: string }>();
+    const namespaces = new Set<string>();
 
-            // 1. Collect capabilities by namespace
-            for (const [cellId, entry] of Object.entries(atlas)) {
-                if (!entry.id || entry.id === cell.id) continue;
+    // Scan all cells
+    for (const [cellId, entry] of Object.entries(atlas)) {
+        if (cellId === cell.id) continue;
 
-                for (const cap of entry.caps) {
-                    // Skip system capabilities
-                    if (cap.startsWith("mesh/") || cap.startsWith("cell/")) {
-                        if (!["mesh/health", "mesh/ping"].includes(cap)) continue;
-                    }
+        for (const cap of entry.caps) {
+            // Skip internal system capabilities
+            if (cap.startsWith("cell/")) {
+                continue;
+            }
 
-                    const [namespace, procedure] = cap.split("/");
-                    if (!namespace || !procedure) continue;
-
-                    if (!namespaceMap.has(namespace)) {
-                        namespaceMap.set(namespace, new Set());
-                    }
-                    namespaceMap.get(namespace)!.add(cap);
+            // Include core mesh capabilities
+            if (cap.startsWith("mesh/")) {
+                if (!["mesh/ping", "mesh/health"].includes(cap)) {
+                    continue;
                 }
             }
 
-            // 2. Extract type information for each capability
-            for (const [namespace, caps] of namespaceMap) {
-                const cellId = Array.from(Object.entries(atlas))
-                    .find(([_, e]) => e.caps.some(c => c.startsWith(namespace + "/")))
-                    ?.[0];
+            const [namespace, procedure] = cap.split("/");
+            if (!namespace || !procedure) continue;
 
-                if (cellId) {
-                    const types = await extractCellTypes(cellId, Array.from(caps));
-                    types.forEach((sig, cap) => capabilityTypes.set(cap, sig));
-                }
+            namespaces.add(namespace);
+
+            // Try to get contract
+            const contract = await extractContract(cellId, cap);
+
+            if (contract) {
+                capabilityTypes.set(cap, contract);
+                cell.log("INFO", `  ✓ ${cap}: ${contract.input} → ${contract.output}`);
+            } else {
+                // Fallback: use any
+                capabilityTypes.set(cap, { input: "any", output: "any" });
+                cell.log("WARN", `  ? ${cap}: No contract (using any)`);
             }
+        }
+    }
 
-            // 3. Generate TypeScript declaration file
-            const declarations = generateDeclarations(namespaceMap, capabilityTypes);
-
-            // 4. Write to disk
-            const outputPath = join(process.cwd(), "..", "mesh-types.d.ts");
-            writeFileSync(outputPath, declarations);
-
-            cell.log("INFO", `✅ Generated types for ${capabilityTypes.size} capabilities`);
-
-            return {
-                ok: true,
-                path: outputPath,
-                namespaces: Array.from(namespaceMap.keys()),
-                capabilities: Array.from(capabilityTypes.keys()),
-                timestamp: new Date().toISOString()
-            };
-        }),
-
-        'validate-mesh': procedure.query(async () => {
-            // Validate that runtime mesh matches generated types
-            const typeFile = join(process.cwd(), "..", "mesh-types.d.ts");
-
-            if (!existsSync(typeFile)) {
-                return {
-                    ok: false,
-                    error: "Type declarations not generated yet"
-                };
-            }
-
-            const atlas = cell.atlas;
-            const actualCaps = new Set<string>();
-
-            for (const entry of Object.values(atlas)) {
-                entry.caps.forEach(cap => actualCaps.add(cap));
-            }
-
-            // Parse type file to get declared capabilities
-            const content = readFileSync(typeFile, "utf8");
-            const declaredCaps = extractDeclaredCapabilities(content);
-
-            const missing = Array.from(declaredCaps)
-                .filter(cap => !actualCaps.has(cap));
-
-            const undeclared = Array.from(actualCaps)
-                .filter(cap => !declaredCaps.has(cap))
-                .filter(cap => !cap.startsWith("cell/")); // Ignore system caps
-
-            return {
-                ok: missing.length === 0 && undeclared.length === 0,
-                missing,
-                undeclared,
-                stats: {
-                    declared: declaredCaps.size,
-                    actual: actualCaps.size
-                }
-            };
-        })
-    })
-});
-
-function generateDeclarations(
-    namespaceMap: Map<string, Set<string>>,
-    capabilityTypes: Map<string, CapabilitySignature>
-): string {
+    // Generate TypeScript file
     const timestamp = new Date().toISOString();
-
     let output = `/**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
  * Generated: ${timestamp}
+ * Source: Live mesh scan (${capabilityTypes.size} capabilities)
  * 
- * This file provides complete type safety for all mesh capabilities.
  * DO NOT EDIT MANUALLY - changes will be overwritten.
- * 
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
  */
 
@@ -225,12 +183,9 @@ declare module "./protocols/typed-mesh" {
     interface MeshCapabilities {
 `;
 
-    // Generate capability declarations
-    const sortedCaps = Array.from(capabilityTypes.keys()).sort();
-
-    for (const capability of sortedCaps) {
-        const sig = capabilityTypes.get(capability)!;
-        output += `        "${capability}": { input: ${sig.input}; output: ${sig.output} };\n`;
+    // Add capabilities
+    for (const [cap, sig] of Array.from(capabilityTypes.entries()).sort()) {
+        output += `        "${cap}": { input: ${sig.input}; output: ${sig.output} };\n`;
     }
 
     output += `    }
@@ -243,7 +198,13 @@ declare module "./protocols/typed-mesh" {
 `;
 
     // Generate namespace-specific types
-    for (const [namespace, caps] of namespaceMap) {
+    for (const namespace of Array.from(namespaces).sort()) {
+        const caps = Array.from(capabilityTypes.keys())
+            .filter(cap => cap.startsWith(`${namespace}/`))
+            .sort();
+
+        if (caps.length === 0) continue;
+
         const pascalNamespace = namespace.charAt(0).toUpperCase() + namespace.slice(1);
 
         output += `/**
@@ -251,7 +212,7 @@ declare module "./protocols/typed-mesh" {
  */
 export type ${pascalNamespace}Capabilities = {\n`;
 
-        for (const cap of Array.from(caps).sort()) {
+        for (const cap of caps) {
             const procedure = cap.split("/")[1];
             const sig = capabilityTypes.get(cap)!;
             output += `    ${procedure}: { input: ${sig.input}; output: ${sig.output} };\n`;
@@ -260,82 +221,160 @@ export type ${pascalNamespace}Capabilities = {\n`;
         output += `};\n\n`;
     }
 
-    output += `// ============================================================================
-// USAGE EXAMPLES
-// ============================================================================
-
-/**
- * Example 1: Direct askMesh with type safety
- * 
- * const cell = new TypedRheoCell(...);
- * 
- * // ✅ Typed input and output
- * const result = await cell.askMesh("ai/generate", { 
- *     prompt: "Hello" 
- * });
- * // result.value => { model: string, response: string, done: boolean }
- * 
- * // ❌ Compile error - wrong input type
- * await cell.askMesh("ai/generate", { prmpt: "typo" });
- * 
- * // ❌ Compile error - capability doesn't exist  
- * await cell.askMesh("ai/nonexistent", {});
- */
-
-/**
- * Example 2: Proxy API for ergonomic calls
- * 
- * const cell = new TypedRheoCell(...);
- * 
- * // ✅ Natural method-like syntax
- * const health = await cell.mesh.mesh.health();
- * // health => { totalCells: number, ... }
- * 
- * const summary = await cell.mesh.ai.generate({ 
- *     prompt: "Summarize my day" 
- * });
- * // summary => { model: string, response: string, done: boolean }
- * 
- * // ❌ Compile error - namespace doesn't exist
- * await cell.mesh.nonexistent.method();
- */
+    output += `// Type trigger: ${Date.now()}
 `;
 
-    return output;
+    // Write file
+    const outputPath = join(process.cwd(), "..", "mesh-types.d.ts");
+    writeFileSync(outputPath, output);
+
+    // Poke TypeScript server
+    pokeTSServer();
+
+    cell.log("INFO", `✅ Generated ${capabilityTypes.size} types → ${outputPath}`);
+
+    return {
+        ok: true,
+        path: outputPath,
+        capabilities: capabilityTypes.size,
+        namespaces: Array.from(namespaces)
+    };
 }
 
-function extractDeclaredCapabilities(content: string): Set<string> {
-    const caps = new Set<string>();
-    const regex = /"([^"]+)":\s*{/g;
-    let match;
+/**
+ * Force VS Code to reload TypeScript types
+ */
+function pokeTSServer() {
+    const typesPath = join(process.cwd(), "..", "mesh-types.d.ts");
 
-    while ((match = regex.exec(content)) !== null) {
-        if (match[1].includes("/")) {
-            caps.add(match[1]);
+    // Method 1: Touch the file timestamp
+    try {
+        const now = new Date();
+        if (existsSync(typesPath)) {
+            const content = readFileSync(typesPath, "utf8");
+            writeFileSync(typesPath, content);
         }
-    }
+    } catch (e) { }
 
-    return caps;
+    // Method 2: Create trigger file
+    try {
+        const triggerPath = join(process.cwd(), "..", ".mesh-types-trigger");
+        writeFileSync(triggerPath, Date.now().toString());
+    } catch (e) { }
+
+    // Method 3: Signal tsserver (if running)
+    try {
+        spawn("pkill", ["-SIGUSR1", "-f", "tsserver"], {
+            stdio: "ignore",
+            detached: true
+        }).unref();
+    } catch (e) { }
+
+    cell.log("INFO", "👉 Poked TypeScript server");
 }
+
+// ============================================================================
+// ROUTER
+// ============================================================================
+
+const codegenRouter = router({
+    codegen: router({
+        "mesh-types": procedure
+            .input(z.void())
+            .output(z.object({
+                ok: z.boolean(),
+                path: z.optional(z.string()),
+                capabilities: z.optional(z.number()),
+                namespaces: z.optional(z.array(z.string()))
+            }))
+            .query(generateTypes),
+
+        "poke-ts": procedure
+            .input(z.void())
+            .output(z.object({
+                ok: z.boolean()
+            }))
+            .query(() => {
+                pokeTSServer();
+                return { ok: true };
+            }),
+
+        validate: procedure
+            .input(z.void())
+            .output(z.object({
+                ok: z.boolean(),
+                error: z.optional(z.string()),
+                missing: z.optional(z.array(z.string())),
+                undeclared: z.optional(z.array(z.string())),
+                stats: z.optional(z.object({
+                    declared: z.number(),
+                    actual: z.number()
+                }))
+            }))
+            .query(async () => {
+                const typeFile = join(process.cwd(), "..", "mesh-types.d.ts");
+
+                if (!existsSync(typeFile)) {
+                    return {
+                        ok: false,
+                        error: "Type file not generated yet"
+                    };
+                }
+
+                const content = readFileSync(typeFile, "utf8");
+                const declared = new Set<string>();
+                const regex = /"([^"]+)":\s*{/g;
+                let match;
+
+                while ((match = regex.exec(content)) !== null) {
+                    if (match[1].includes("/")) {
+                        declared.add(match[1]);
+                    }
+                }
+
+                const actual = new Set<string>();
+                for (const entry of Object.values(cell.atlas)) {
+                    entry.caps.forEach(cap => actual.add(cap));
+                }
+
+                const missing = Array.from(declared).filter(c => !actual.has(c));
+                const undeclared = Array.from(actual).filter(c => !declared.has(c));
+
+                return {
+                    ok: missing.length === 0 && undeclared.length === 0,
+                    missing,
+                    undeclared,
+                    stats: {
+                        declared: declared.size,
+                        actual: actual.size
+                    }
+                };
+            })
+    })
+});
 
 // ============================================================================
 // CELL SETUP
 // ============================================================================
 
-// Register router (augmentation happens in separate declaration file)
 cell.useRouter(codegenRouter);
 cell.listen();
 
 cell.log("INFO", "🧬 Enhanced Codegen cell online");
 
-// Auto-generate types on startup
-setTimeout(async () => {
-    try {
-        const result = await cell.askMesh("codegen/mesh-types" as any);
-        if (result.ok) {
-            cell.log("INFO", "✨ Initial type generation complete");
-        }
-    } catch (e) {
-        cell.log("WARN", "Type generation delayed - mesh not ready");
+// Watch for mesh changes
+let lastHash = "";
+cell.onAtlasUpdate(async (atlas) => {
+    const hash = Object.keys(atlas).sort().join(",");
+    if (hash !== lastHash) {
+        lastHash = hash;
+        // Debounce
+        setTimeout(generateTypes, 1000);
     }
-}, 3000);
+});
+
+// Initial generation
+setTimeout(generateTypes, 5000);
+
+// Periodic regeneration
+setInterval(generateTypes, 30000);

@@ -340,6 +340,31 @@ if (mode === "start") {
     (async () => {
         console.log("🌌 Rheo Sovereign Mesh: Hard Reset & Ignition...");
 
+        // ✅ ADD THIS - Clean all old manifest files
+        const manifestPattern = /.*_\d+\.cell\.json$/;
+        for (const entry of readdirSync(ROOT_DIR)) {
+            const fullPath = join(ROOT_DIR, entry);
+            if (statSync(fullPath).isDirectory()) {
+                for (const file of readdirSync(fullPath)) {
+                    if (manifestPattern.test(file)) {
+                        try {
+                            unlinkSync(join(fullPath, file));
+                            console.log(`🧹 Cleaned old manifest: ${file}`);
+                        } catch (e) { }
+                    }
+                }
+            }
+        }
+
+        // Also clean root-level orchestrator manifests
+        for (const file of readdirSync(ROOT_DIR)) {
+            if (file.startsWith('Orchestrator_') && file.endsWith('.cell.json')) {
+                try {
+                    unlinkSync(join(ROOT_DIR, file));
+                } catch (e) { }
+            }
+        }
+
         // Nuclear cleanup
         if (existsSync(join(ROOT_DIR, PID_REGISTRY))) {
             const oldPids = JSON.parse(readFileSync(join(ROOT_DIR, PID_REGISTRY), 'utf8'));

@@ -1,0 +1,22 @@
+{
+  "pid": 40210,
+  "version": "11a9b7b717f764ec",
+  "port": 37769,
+  "startTime": 1770419979783,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "codegen/mesh-types",
+    "codegen/poke-ts",
+    "codegen/validate"
+  ],
+  "seed": "",
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/v9SQP0xbK5BDVMP9YZWGZwvWE9lFmj6wvzBFjRuAaY=\n-----END PUBLIC KEY-----\n"
+}

@@ -1,34 +1,45 @@
-// ui/src/hooks.server.ts
+// ui/src/hooks.server.ts - Type-safe SvelteKit mesh bridge
 import type { Handle } from '@sveltejs/kit';
-import { RheoCell } from '../../protocols/example1';
+import { TypedRheoCell } from '../../protocols/typed-mesh';
 
 // Singleton mesh node
 const globalMesh = globalThis as any;
+
 if (!globalMesh._meshNode) {
     console.log('🌌 [MeshBridge] Initializing server-side mesh node...');
-    const cell = new RheoCell(`SvelteKit_Bridge_${process.pid}`, 0);
 
-    // --- 🛠️ FIX: GHOST MODE BYPASS ---
-    // Eftersom Vite kör servern kan inte RheoCell binda sin port.
-    // CDK:n blockerar utgående trafik om ingen adress finns ("NOT_READY").
-    // Vi sätter manuellt en dummy-adress för att låsa upp klient-läget.
-    if (!cell.addr) {
-        console.log('👻 Activating Client-Only Ghost Mode');
-        (cell as any)._addr = "http://GHOST_CLIENT";
-    }
-    // ---------------------------------
+    // Create a proper cell that can listen
+    const cell = new TypedRheoCell(`SvelteKit_Bridge_${process.pid}`, 0);
 
+    // Listen first to get a port
     cell.listen();
+
+    // Bootstrap from registry
+    cell.bootstrapFromRegistry(true).catch(() => {
+        console.log('[MeshBridge] Initial bootstrap failed, will retry via gossip');
+    });
+
     globalMesh._meshNode = cell;
+
+    console.log(`[MeshBridge] Cell initialized at ${cell.addr}`);
 }
 
-const meshNode = globalMesh._meshNode;
+const meshNode: TypedRheoCell = globalMesh._meshNode;
 
 export const handle: Handle = async ({ event, resolve }) => {
     const { request, url, locals } = event;
 
-    // Gör cellen tillgänglig
+    // Make cell available to all routes
     locals.cell = meshNode;
+
+    // Ensure we have peers (lazy bootstrap)
+    if (Object.keys(meshNode.atlas).length <= 1) {
+        try {
+            await meshNode.bootstrapFromRegistry(true);
+        } catch (e) {
+            console.error('[MeshBridge] Bootstrap error:', e);
+        }
+    }
 
     // --- MESH PROXY ENDPOINT ---
     if (url.pathname === '/_mesh/call' && request.method === 'POST') {
@@ -36,24 +47,42 @@ export const handle: Handle = async ({ event, resolve }) => {
             const body = await request.json();
             const { capability, args } = body;
 
-            // Se till att vi har peers innan vi anropar
-            // (Detta görs normalt i load, men bra som fallback här)
-            if (Object.keys(meshNode.atlas).length === 1) {
-                await meshNode.bootstrapFromRegistry(true);
-            }
-
-            const result = await meshNode.askMesh(capability, args || {});
+            // Type-safe mesh call
+            const result = await meshNode.askMesh(capability as any, args || {});
 
             return new Response(JSON.stringify(result), {
-                headers: { 'Content-Type': 'application/json' }
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Cache-Control': 'no-cache'
+                }
             });
         } catch (e: any) {
-            console.error("Mesh Bridge Error:", e);
+            console.error("[MeshBridge] Call error:", e);
             return new Response(JSON.stringify({
                 ok: false,
-                error: { code: 'BRIDGE_CRASH', msg: e.message, from: 'SvelteKit' }
-            }), { status: 500 });
+                error: {
+                    code: 'BRIDGE_ERROR',
+                    msg: e.message,
+                    from: 'SvelteKit'
+                }
+            }), {
+                status: 500,
+                headers: { 'Content-Type': 'application/json' }
+            });
         }
+    }
+
+    // --- MESH STATUS ENDPOINT (for debugging) ---
+    if (url.pathname === '/_mesh/status' && request.method === 'GET') {
+        return new Response(JSON.stringify({
+            cellId: meshNode.id,
+            address: meshNode.addr,
+            atlasSize: Object.keys(meshNode.atlas).length,
+            capabilities: Object.values(meshNode.atlas).flatMap(e => e.caps),
+            peers: Object.keys(meshNode.atlas).filter(id => id !== meshNode.id)
+        }), {
+            headers: { 'Content-Type': 'application/json' }
+        });
     }
 
     return resolve(event);

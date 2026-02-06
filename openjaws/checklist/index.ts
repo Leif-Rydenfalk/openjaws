@@ -1,5 +1,4 @@
-// checklist/typed-checklist-cell.ts - Type-safe checklist with cross-cell calls
-
+// checklist/index.ts - Clean implementation with NO manual type declarations
 import { TypedRheoCell } from "../protocols/typed-mesh";
 import { router, procedure, z } from "../protocols/example2";
 import { writeFileSync, existsSync, mkdirSync, readFileSync } from "node:fs";
@@ -48,18 +47,41 @@ const cell = new TypedRheoCell(`Checklist_${process.pid}`, 0, process.argv[2]);
 
 const checklistRouter = router({
     list: router({
-        get: procedure.query(async () => {
-            return {
-                items: loadDailyData(),
-                capacity: MAX_ITEMS,
-                date: new Date().toISOString().split('T')[0]
-            };
-        }),
+        get: procedure
+            .input(z.void())
+            .output(z.object({
+                items: z.array(z.object({
+                    id: z.string(),
+                    text: z.string(),
+                    completed: z.boolean(),
+                    type: z.enum(['task', 'idea']),
+                    createdAt: z.number()
+                })),
+                capacity: z.number(),
+                date: z.string()
+            }))
+            .query(async () => {
+                return {
+                    items: loadDailyData(),
+                    capacity: MAX_ITEMS,
+                    date: new Date().toISOString().split('T')[0]
+                };
+            }),
 
         add: procedure
             .input(z.object({
                 text: z.string(),
-                type: z.enum(['task', 'idea'] as const)
+                type: z.enum(['task', 'idea'])
+            }))
+            .output(z.object({
+                ok: z.boolean(),
+                item: z.object({
+                    id: z.string(),
+                    text: z.string(),
+                    completed: z.boolean(),
+                    type: z.enum(['task', 'idea']),
+                    createdAt: z.number()
+                })
             }))
             .mutation(async (input) => {
                 const items = loadDailyData();
@@ -84,14 +106,12 @@ const checklistRouter = router({
                 saveDailyData(items);
 
                 // ✅ TYPE-SAFE CROSS-CELL CALL
-                // This demonstrates calling the log cell with full type safety
                 try {
                     await cell.mesh.log.info({
                         msg: `➕ Added ${input.type}: ${input.text}`,
                         from: cell.id
                     });
                 } catch (e) {
-                    // Log cell might not be available - that's ok
                     cell.log("INFO", `➕ Added ${input.type}: ${input.text}`);
                 }
 
@@ -101,6 +121,10 @@ const checklistRouter = router({
         complete: procedure
             .input(z.object({
                 id: z.string()
+            }))
+            .output(z.object({
+                ok: z.boolean(),
+                momentum: z.enum(['plus_one'])
             }))
             .mutation(async (input) => {
                 const items = loadDailyData();
@@ -126,40 +150,46 @@ const checklistRouter = router({
                 return { ok: true, momentum: "plus_one" as const };
             }),
 
-        summarize: procedure.mutation(async () => {
-            const items = loadDailyData();
-            const completed = items.filter(i => i.completed).map(i => i.text);
-            const pending = items.filter(i => !i.completed && i.type === 'task').map(i => i.text);
-            const ideas = items.filter(i => i.type === 'idea').map(i => i.text);
+        summarize: procedure
+            .output(z.object({
+                summary: z.string(),
+                generatedBy: z.string()
+            }))
+            .mutation(async () => {
+                const items = loadDailyData();
+                const completed = items.filter(i => i.completed).map(i => i.text);
+                const pending = items.filter(i => !i.completed && i.type === 'task').map(i => i.text);
+                const ideas = items.filter(i => i.type === 'idea').map(i => i.text);
 
-            const prompt = `Sammanfatta min dag kortfattat. 
-                Klarade av: ${completed.join(", ")}. 
-                Missade: ${pending.join(", ")}. 
-                Nya idéer: ${ideas.join(", ")}.
-                Ge mig feedback för att bibehålla momentum imorgon.`;
+                const prompt = `Sammanfatta min dag kortfattat. 
+                    Klarade av: ${completed.join(", ")}. 
+                    Missade: ${pending.join(", ")}. 
+                    Nya idéer: ${ideas.join(", ")}.
+                    Ge mig feedback för att bibehålla momentum imorgon.`;
 
-            // ✅ TYPE-SAFE CROSS-CELL CALL to AI
-            // The return type is automatically inferred from ai/generate's output type
-            try {
-                const aiResponse = await cell.mesh.ai.generate({ prompt });
+                // ✅ TYPE-SAFE CROSS-CELL CALL to AI
+                try {
+                    const aiResponse = await cell.mesh.ai.generate({ prompt });
 
-                // aiResponse is typed as { model: string, response: string, done: boolean }
-                return {
-                    summary: aiResponse.response,
-                    generatedBy: aiResponse.model
-                };
-            } catch (e) {
-                return {
-                    summary: "AI unavailable, but great work today!",
-                    generatedBy: "fallback"
-                };
-            }
-        }),
+                    return {
+                        summary: aiResponse.response,
+                        generatedBy: aiResponse.model
+                    };
+                } catch (e) {
+                    return {
+                        summary: "AI unavailable, but great work today!",
+                        generatedBy: "fallback"
+                    };
+                }
+            }),
 
-        // New: AI-enhanced task suggestions
         'suggest-tasks': procedure
             .input(z.object({
                 context: z.optional(z.string())
+            }))
+            .output(z.object({
+                suggestions: z.array(z.string()),
+                basedOn: z.number()
             }))
             .mutation(async (input) => {
                 const items = loadDailyData();
@@ -171,88 +201,31 @@ const checklistRouter = router({
                     Format: Just list the 3 tasks, one per line.`;
 
                 // ✅ TYPE-SAFE AI CALL
-                const aiResponse = await cell.mesh.ai.generate({ prompt });
+                try {
+                    const aiResponse = await cell.mesh.ai.generate({ prompt });
 
-                const suggestions = aiResponse.response
-                    .split('\n')
-                    .filter(line => line.trim())
-                    .slice(0, 3);
+                    const suggestions = aiResponse.response
+                        .split('\n')
+                        .filter(line => line.trim())
+                        .slice(0, 3);
 
-                return {
-                    suggestions,
-                    basedOn: completedToday.length
-                };
+                    return {
+                        suggestions,
+                        basedOn: completedToday.length
+                    };
+                } catch (e) {
+                    return {
+                        suggestions: [
+                            "Review your progress",
+                            "Plan tomorrow's priorities",
+                            "Take a well-deserved break"
+                        ],
+                        basedOn: completedToday.length
+                    };
+                }
             })
     })
 });
-
-// ============================================================================
-// TYPE AUGMENTATION
-// ============================================================================
-
-declare module "../protocols/typed-mesh" {
-    interface MeshCapabilities {
-        "list/get": {
-            input: void;
-            output: {
-                items: Array<{
-                    id: string;
-                    text: string;
-                    completed: boolean;
-                    type: 'task' | 'idea';
-                    createdAt: number;
-                }>;
-                capacity: number;
-                date: string;
-            };
-        };
-
-        "list/add": {
-            input: {
-                text: string;
-                type: 'task' | 'idea';
-            };
-            output: {
-                ok: boolean;
-                item: {
-                    id: string;
-                    text: string;
-                    completed: boolean;
-                    type: 'task' | 'idea';
-                    createdAt: number;
-                };
-            };
-        };
-
-        "list/complete": {
-            input: {
-                id: string;
-            };
-            output: {
-                ok: boolean;
-                momentum: "plus_one";
-            };
-        };
-
-        "list/summarize": {
-            input: void;
-            output: {
-                summary: string;
-                generatedBy: string;
-            };
-        };
-
-        "list/suggest-tasks": {
-            input: {
-                context?: string;
-            };
-            output: {
-                suggestions: string[];
-                basedOn: number;
-            };
-        };
-    }
-}
 
 // ============================================================================
 // CELL SETUP
@@ -268,6 +241,8 @@ cell.log("INFO", "📋 Type-safe Checklist cell initialized");
 // ============================================================================
 
 async function demonstrateTypeSafety() {
+    await new Promise(resolve => setTimeout(resolve, 12000)); // Wait for mesh
+
     try {
         // ✅ Calling our own capabilities
         const list = await cell.mesh.list.get();
@@ -291,12 +266,12 @@ async function demonstrateTypeSafety() {
         // await cell.mesh.nonexistent.method(); // namespace doesn't exist
 
     } catch (e) {
-        console.error("Demo error:", e);
+        console.log("Demo waiting for mesh convergence...");
     }
 }
 
 // Run demo after mesh stabilizes
-setTimeout(demonstrateTypeSafety, 6000);
+setTimeout(demonstrateTypeSafety, 15000);
 
 // ============================================================================
 // TYPE EXPORTS

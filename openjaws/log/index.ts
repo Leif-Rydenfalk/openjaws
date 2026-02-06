@@ -1,6 +1,4 @@
-// log/typed-log-cell.ts - Type-safe logging cell
-// This demonstrates a minimal but complete type-safe cell
-
+// log/index.ts - Clean implementation with NO manual type declarations
 import { TypedRheoCell } from "../protocols/typed-mesh";
 import { router, procedure, z } from "../protocols/example2";
 import { appendFileSync, readFileSync, existsSync } from "node:fs";
@@ -25,6 +23,10 @@ const logRouter = router({
                 msg: z.string(),
                 from: z.string()
             }))
+            .output(z.object({
+                ok: z.boolean(),
+                timestamp: z.string()
+            }))
             .mutation(async (input) => {
                 const timestamp = new Date().toISOString();
                 const logLine = `[${timestamp}] [${input.from}] ${input.msg}\n`;
@@ -46,6 +48,13 @@ const logRouter = router({
         get: procedure
             .input(z.object({
                 limit: z.optional(z.number())
+            }))
+            .output(z.object({
+                ok: z.boolean(),
+                logs: z.array(z.string()),
+                count: z.number(),
+                path: z.string(),
+                error: z.optional(z.string())
             }))
             .query(async (input) => {
                 try {
@@ -84,38 +93,6 @@ const logRouter = router({
             })
     })
 });
-
-// ============================================================================
-// TYPE AUGMENTATION
-// ============================================================================
-
-declare module "../protocols/typed-mesh" {
-    interface MeshCapabilities {
-        "log/info": {
-            input: {
-                msg: string;
-                from: string;
-            };
-            output: {
-                ok: boolean;
-                timestamp: string;
-            };
-        };
-
-        "log/get": {
-            input: {
-                limit?: number;
-            };
-            output: {
-                ok: boolean;
-                logs: string[];
-                count: number;
-                path: string;
-                error?: string;
-            };
-        };
-    }
-}
 
 // ============================================================================
 // CELL SETUP

@@ -1,0 +1,4 @@
+id = "verify-types-tests"
+command = "bun run index.ts"
+critical = true
+scalable = false

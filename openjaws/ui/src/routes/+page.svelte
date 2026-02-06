@@ -1,46 +1,87 @@
 <!-- ui/src/routes/+page.svelte -->
 <script lang="ts">
-    import { mesh } from "$lib/typed-mesh-runtime";
+    import { mesh, getMeshStatus } from "$lib/typed-mesh-runtime";
     import { onMount } from "svelte";
 
     // State
     let checklist = { items: [], capacity: 5, date: "" };
     let health = {
-        status: "LOADING",
+        status: "LOADING" as const,
         totalCells: 0,
         avgLoad: 0,
         hotSpots: [],
         timestamp: 0,
     };
     let logs: string[] = [];
+    let meshStatus: any = null;
     let newTask = "";
     let isSubmitting = false;
-    let errorMessage = ""; // Changed from 'error' to avoid shadowing
+    let errorMessage = "";
     let loading = true;
+    let retryCount = 0;
+    const MAX_RETRIES = 5;
 
     // ✅ FULLY TYPED CLIENT-SIDE DATA LOADING
     onMount(async () => {
         await loadData();
-        loading = false;
     });
 
     async function loadData() {
+        loading = true;
+        errorMessage = "";
+
         try {
+            // First check mesh status
+            meshStatus = await getMeshStatus();
+            console.log("[UI] Mesh status:", meshStatus);
+
+            if (!meshStatus || meshStatus.atlasSize <= 1) {
+                if (retryCount < MAX_RETRIES) {
+                    retryCount++;
+                    errorMessage = `Mesh not ready (${retryCount}/${MAX_RETRIES}). Retrying...`;
+                    setTimeout(loadData, 2000);
+                    return;
+                }
+                errorMessage =
+                    "Mesh not converged. Check that cells are running.";
+                loading = false;
+                return;
+            }
+
             // Parallel typed mesh calls
-            const [checklistResult, healthResult, logsResult] =
+            const [healthResult, checklistResult, logsResult] =
                 await Promise.all([
-                    mesh.list.get(),
-                    mesh.mesh.health(),
-                    mesh.log.get({ limit: 20 }),
+                    mesh.mesh.health().catch((e) => {
+                        console.error("[UI] Health call failed:", e);
+                        return null;
+                    }),
+                    mesh.list.get().catch((e) => {
+                        console.error("[UI] Checklist call failed:", e);
+                        return null;
+                    }),
+                    mesh.log.get({ limit: 20 }).catch((e) => {
+                        console.error("[UI] Log call failed:", e);
+                        return null;
+                    }),
                 ]);
 
-            checklist = checklistResult;
-            health = healthResult;
-            logs = logsResult.logs || [];
+            if (healthResult) health = healthResult;
+            if (checklistResult) checklist = checklistResult;
+            if (logsResult) logs = logsResult.logs || [];
+
+            retryCount = 0; // Reset on success
+            loading = false;
         } catch (e: unknown) {
             const err = e as Error;
             console.error("[LoadData] Error:", err);
-            errorMessage = `Failed to load data: ${err.message}`; // Now using errorMessage
+            errorMessage = `Failed to load data: ${err.message}`;
+
+            if (retryCount < MAX_RETRIES) {
+                retryCount++;
+                setTimeout(loadData, 2000);
+            } else {
+                loading = false;
+            }
         }
     }
 
@@ -59,7 +100,6 @@
 
             if (result.ok) {
                 newTask = "";
-                // Reload data
                 await loadData();
             }
         } catch (e: unknown) {
@@ -84,7 +124,6 @@
             const err = e as Error;
             console.error("[Complete] Error:", err);
             errorMessage = err.message;
-            // Reload on error
             await loadData();
         }
     }
@@ -105,12 +144,23 @@
     <div
         class="p-8 bg-gray-900 min-h-screen text-gray-100 font-mono flex items-center justify-center"
     >
-        <div class="text-center">
+        <div class="text-center max-w-md">
             <div class="text-4xl mb-4">🌐</div>
-            <div class="text-xl text-green-400">Connecting to mesh...</div>
-            <div class="text-sm text-gray-500 mt-2">
-                Discovering cells and capabilities
+            <div class="text-xl text-green-400 mb-2">
+                {retryCount > 0
+                    ? `Retrying (${retryCount}/${MAX_RETRIES})...`
+                    : "Connecting to mesh..."}
             </div>
+            <div class="text-sm text-gray-500 mt-2">
+                {meshStatus
+                    ? `Found ${meshStatus.atlasSize} cells, waiting for capabilities...`
+                    : "Discovering cells and capabilities"}
+            </div>
+            {#if errorMessage}
+                <div class="mt-4 text-yellow-400 text-sm">
+                    {errorMessage}
+                </div>
+            {/if}
         </div>
     </div>
 {:else}
@@ -122,6 +172,12 @@
             <div>
                 <h1 class="text-2xl text-green-400 font-bold">RHEO_MESH_UI</h1>
                 <p class="text-sm text-gray-500">Type-Safe Client API</p>
+                {#if meshStatus}
+                    <p class="text-xs text-gray-600 mt-1">
+                        Bridge: {meshStatus.cellId} | Atlas: {meshStatus.atlasSize}
+                        cells
+                    </p>
+                {/if}
             </div>
             <div class="text-right">
                 <div
@@ -254,7 +310,7 @@
             </section>
         </main>
 
-        <!-- Footer with refresh button -->
+        <!-- Footer with refresh button and debug info -->
         <footer class="mt-8 text-center">
             <button
                 on:click={loadData}
@@ -262,6 +318,11 @@
             >
                 🔄 Refresh Data
             </button>
+            {#if meshStatus}
+                <div class="mt-2 text-xs text-gray-700">
+                    Peers: {meshStatus.peers.join(", ")}
+                </div>
+            {/if}
         </footer>
     </div>
 {/if}
