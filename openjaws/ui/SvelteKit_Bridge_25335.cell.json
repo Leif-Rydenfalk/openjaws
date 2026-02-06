@@ -1,0 +1,18 @@
+{
+  "pid": 25335,
+  "version": "7bf2e4a2b75f1927",
+  "port": 0,
+  "startTime": 1770411815211,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAPR2upSDptb8Zky1w9zwc3RMg8qBavti7zsDem9uN+7I=\n-----END PUBLIC KEY-----\n"
+}

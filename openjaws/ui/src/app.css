@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Din system-font och bakgrund */
+@theme {
+  --color-system-950: #050505;
+  --color-system-900: #0a0a0a;
+  --color-system-800: #111111;
+  --color-system-accent: #00ffaa;
+}
+
+@layer base {
+  body {
+    @apply bg-[--color-system-950] text-zinc-400 antialiased;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+  }
+}

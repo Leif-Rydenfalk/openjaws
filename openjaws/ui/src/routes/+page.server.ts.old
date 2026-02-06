@@ -1,0 +1,62 @@
+import { getMeshNode } from '$lib/mesh';
+import type { PageServerLoad, Actions } from './$types';
+
+export const load: PageServerLoad = async () => {
+    const cell = getMeshNode();
+
+    // Tvinga noden att titta på disken efter nya grannar
+    await cell.bootstrapFromRegistry(true);
+
+    // Hämta data från meshen parallellt för prestanda
+    const [healthRes, listRes, logRes] = await Promise.all([
+        cell.askMesh("mesh/health", {}),
+        cell.askMesh("list/get", {}),
+        cell.askMesh("log/get", { limit: 20 }) // Hämta de 20 senaste raderna
+    ]);
+
+    // Extrahera journalen (stegen som denna UI-nod har tagit)
+    // Vi mappar om journalen för att få en platt lista av händelser
+    const journal = (cell as any).rollingJournal || [];
+
+    return {
+        mesh: {
+            health: healthRes.ok ? healthRes.value : { status: "OFFLINE", totalCells: 0, avgLoad: 0 },
+            atlas: cell.atlas,
+            journal: JSON.parse(JSON.stringify(journal)).reverse() // Djupkopia för att undvika cirkulära referenser
+        },
+        business: {
+            checklist: listRes.ok ? listRes.value : { items: [] }
+        },
+        nodeId: cell.id,
+        globalLogs: logRes.ok ? logRes.value.logs : []
+    };
+};
+
+export const actions: Actions = {
+    /**
+     * UNIVERSAL DISPATCHER
+     * Tar emot vilken capability som helst och skickar den vidare in i meshen.
+     */
+    dispatch: async ({ request }) => {
+        const data = await request.formData();
+        const cell = getMeshNode();
+
+        const cap = data.get('cap') as string;
+        const argsRaw = data.get('args') as string;
+
+        if (!cap) return { ok: false, error: "NO_CAPABILITY_SPECIFIED" };
+
+        let args = {};
+        try {
+            args = argsRaw ? JSON.parse(argsRaw) : {};
+        } catch (e) {
+            return { ok: false, error: "INVALID_JSON_PAYLOAD" };
+        }
+
+        console.log(`[SIGNAL FORGE] Dispatching: ${cap}`, args);
+
+        // Exekvera anropet i meshen
+        const result = await cell.askMesh(cap, args);
+        return result;
+    }
+};

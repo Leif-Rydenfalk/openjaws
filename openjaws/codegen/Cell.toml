@@ -1,0 +1,4 @@
+id = "Codegen"
+command = "bun run codegen.ts"
+critical = false
+scalable = false

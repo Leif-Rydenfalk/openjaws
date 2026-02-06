@@ -1,0 +1,422 @@
+<script lang="ts">
+    import { enhance } from "$app/forms";
+    import { invalidateAll } from "$app/navigation";
+    import { onMount } from "svelte";
+
+    export let data;
+    export let form;
+
+    // State för Signal Forge
+    let selectedCap = "";
+    let customArgs = "{}";
+
+    // Reaktivt: Hämta alla unika capabilities från alla noder i Atlasen
+    $: allCaps = Array.from(
+        new Set(
+            Object.values(data.mesh.atlas || {}).flatMap(
+                (node: any) => node.caps,
+            ),
+        ),
+    ).sort();
+
+    $: items = data.business.checklist.items || [];
+    $: journal = data.mesh.journal || [];
+    $: completionRate = Math.round(
+        (items.filter((i: any) => i.completed).length / (items.length || 1)) *
+            100,
+    );
+
+    // Auto-refresh varannan sekund för att se meshen leva
+    onMount(() => {
+        const interval = setInterval(() => invalidateAll(), 2000);
+        return () => clearInterval(interval);
+    });
+
+    // Hjälpfunktion för att snabbt välja en cap från listan
+    function selectCap(cap: string) {
+        selectedCap = cap;
+        // Enkel boilerplate-generator för testning
+        if (cap.includes("add"))
+            customArgs = '{\n  "text": "Nytt mål",\n  "type": "task"\n}';
+        else if (cap.includes("generate"))
+            customArgs =
+                '{\n  "prompt": "Hur optimerar vi OpenJaws idag?",\n  "stream": false\n}';
+        else if (cap.includes("info"))
+            customArgs =
+                '{\n  "msg": "Test-signal skickad",\n  "from": "COMMAND_CENTER"\n}';
+        else if (cap.includes("who"))
+            customArgs = '{\n  "cap": "ai/generate"\n}';
+        else customArgs = "{}";
+    }
+</script>
+
+<div
+    class="flex flex-col h-screen max-h-screen bg-zinc-950 text-zinc-400 font-mono overflow-hidden"
+>
+    <!-- HEADER: SYSTEM VITALS -->
+    <header
+        class="h-14 border-b border-zinc-800 bg-zinc-900/50 flex items-center justify-between px-6 shrink-0"
+    >
+        <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div
+                    class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_#10b981]"
+                ></div>
+                <h1 class="font-bold tracking-tighter text-white text-sm">
+                    OPENJAWS_OPERATING_SYSTEM_v1.0
+                </h1>
+            </div>
+            <div class="h-4 w-px bg-zinc-800"></div>
+            <div class="text-[10px] text-zinc-500 uppercase tracking-widest">
+                Node: {data.nodeId}
+            </div>
+        </div>
+
+        <div class="flex gap-8 text-[10px]">
+            <div class="flex gap-2">
+                <span class="text-zinc-600">CLUSTER_LOAD:</span>
+                <span class="text-emerald-400"
+                    >{(data.mesh.health.avgLoad * 100).toFixed(1)}%</span
+                >
+            </div>
+            <div class="flex gap-2">
+                <span class="text-zinc-600">ACTIVE_CELLS:</span>
+                <span class="text-white">{data.mesh.health.totalCells}</span>
+            </div>
+            <div class="text-zinc-600 uppercase">
+                {new Date().toLocaleTimeString()}
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTROL GRID -->
+    <main class="flex-grow grid grid-cols-12 overflow-hidden bg-zinc-900/20">
+        <!-- COLUMN 1: NETWORK TOPOLOGY (ATLAS) -->
+        <section
+            class="col-span-3 border-r border-zinc-800 p-5 overflow-y-auto custom-scrollbar"
+        >
+            <div
+                class="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-6 flex items-center gap-2"
+            >
+                <span class="w-1 h-1 bg-zinc-500"></span> NETWORK_TOPOLOGY
+            </div>
+
+            <div class="space-y-4">
+                {#each Object.entries(data.mesh.atlas) as [id, info]}
+                    <div
+                        class="p-3 bg-zinc-900/40 border border-zinc-800 rounded-lg group transition-all hover:border-zinc-700"
+                    >
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-zinc-200 text-xs font-bold"
+                                >{id.split("_")[0]}</span
+                            >
+                            <span class="text-[9px] text-zinc-600"
+                                >:{info.addr.split(":").pop()}</span
+                            >
+                        </div>
+                        <div class="flex flex-wrap gap-1">
+                            {#each info.caps as cap}
+                                <button
+                                    on:click={() => selectCap(cap)}
+                                    class="text-[9px] px-1.5 py-0.5 rounded bg-black border border-zinc-800 text-zinc-500 hover:text-emerald-400 hover:border-emerald-500 transition-colors"
+                                >
+                                    {cap}
+                                </button>
+                            {/each}
+                        </div>
+                    </div>
+                {/each}
+            </div>
+        </section>
+
+        <!-- COLUMN 2: OPERATIONS & SIGNAL FORGE -->
+        <section
+            class="col-span-6 border-r border-zinc-800 p-8 overflow-y-auto custom-scrollbar bg-zinc-950/30"
+        >
+            <div class="max-w-2xl mx-auto space-y-12">
+                <!-- BUSINESS OPERATIONS -->
+                <div class="space-y-6">
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <h2
+                                class="text-lg font-bold text-white tracking-tight"
+                            >
+                                Core_Business_Operations
+                            </h2>
+                            <p
+                                class="text-[10px] text-zinc-500 uppercase tracking-widest"
+                            >
+                                Active Capability Orchestration
+                            </p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xl text-emerald-400 font-bold"
+                                >{completionRate}%</span
+                            >
+                            <p class="text-[9px] text-zinc-600 uppercase">
+                                Efficiency_Index
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="h-1 w-full bg-zinc-800 rounded-full overflow-hidden"
+                    >
+                        <div
+                            class="h-full bg-emerald-500 shadow-[0_0_10px_#10b981] transition-all duration-1000"
+                            style="width: {completionRate}%"
+                        ></div>
+                    </div>
+
+                    <div class="space-y-2">
+                        {#each items as item}
+                            <div
+                                class="flex items-center justify-between p-3 bg-zinc-900/20 border border-zinc-800/50 rounded-lg group"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-1.5 h-1.5 rounded-full {item.completed
+                                            ? 'bg-zinc-700'
+                                            : 'bg-rose-500 shadow-[0_0_8px_#f43f5e]'}"
+                                    ></div>
+                                    <span
+                                        class="text-xs {item.completed
+                                            ? 'text-zinc-600 line-through'
+                                            : 'text-zinc-200'}"
+                                    >
+                                        <span class="text-[9px] opacity-40 mr-2"
+                                            >[{item.type.toUpperCase()}]</span
+                                        >
+                                        {item.text}
+                                    </span>
+                                </div>
+                                {#if !item.completed}
+                                    <form
+                                        method="POST"
+                                        action="?/dispatch"
+                                        use:enhance
+                                    >
+                                        <input
+                                            type="hidden"
+                                            name="cap"
+                                            value="list/complete"
+                                        />
+                                        <input
+                                            type="hidden"
+                                            name="args"
+                                            value={JSON.stringify({
+                                                id: item.id,
+                                            })}
+                                        />
+                                        <button
+                                            class="text-[9px] font-bold text-emerald-500 border border-emerald-500/30 px-2 py-1 rounded hover:bg-emerald-500 hover:text-black transition-all"
+                                            >COMMIT</button
+                                        >
+                                    </form>
+                                {/if}
+                            </div>
+                        {/each}
+                    </div>
+                </div>
+
+                <!-- THE SIGNAL FORGE (CAPABILITY LAB) -->
+                <div class="pt-8 border-t border-zinc-800">
+                    <div class="mb-6">
+                        <h2
+                            class="text-sm font-bold text-emerald-500 uppercase tracking-[0.3em]"
+                        >
+                            // Signal_Forge_v1.0
+                        </h2>
+                        <p class="text-[10px] text-zinc-600 mt-1">
+                            Manual Capability Injection & Mesh Testing
+                        </p>
+                    </div>
+
+                    <form
+                        method="POST"
+                        action="?/dispatch"
+                        use:enhance
+                        class="space-y-4"
+                    >
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <label
+                                    class="text-[9px] text-zinc-500 uppercase font-bold"
+                                    >Target_Capability</label
+                                >
+                                <select
+                                    name="cap"
+                                    bind:value={selectedCap}
+                                    class="bg-black border border-zinc-800 rounded-md p-2 text-xs text-emerald-400 outline-none focus:border-emerald-500"
+                                >
+                                    <option value="">Select Endpoint...</option>
+                                    {#each allCaps as cap}
+                                        <option value={cap}>{cap}</option>
+                                    {/each}
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label
+                                    class="text-[9px] text-zinc-500 uppercase font-bold"
+                                    >Protocol_Mode</label
+                                >
+                                <div
+                                    class="bg-zinc-900/50 border border-zinc-800 rounded-md p-2 text-[9px] text-zinc-500 flex items-center justify-center font-bold"
+                                >
+                                    NTS-1_TRANSPARENT_ASK
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label
+                                class="text-[9px] text-zinc-500 uppercase font-bold"
+                                >Signal_Arguments (JSON)</label
+                            >
+                            <textarea
+                                name="args"
+                                bind:value={customArgs}
+                                class="bg-black border border-zinc-800 rounded-md p-4 text-emerald-500 font-mono text-xs h-40 outline-none focus:border-emerald-500 transition-colors"
+                            ></textarea>
+                        </div>
+
+                        <button
+                            class="w-full bg-emerald-500 hover:bg-emerald-400 text-black font-bold py-3 rounded-md text-[10px] uppercase tracking-widest transition-all shadow-lg shadow-emerald-500/5"
+                        >
+                            Execute_Signal_Over_Mesh
+                        </button>
+                    </form>
+
+                    <!-- DYNAMISKT RESULTAT FRÅN DISPATCH -->
+                    {#if form}
+                        <div
+                            class="mt-6 p-4 rounded-md border {form.ok
+                                ? 'bg-emerald-500/5 border-emerald-500/20'
+                                : 'bg-rose-500/5 border-rose-500/20'}"
+                        >
+                            <div class="flex justify-between items-center mb-3">
+                                <span
+                                    class="text-[9px] font-bold uppercase {form.ok
+                                        ? 'text-emerald-500'
+                                        : 'text-rose-500'}"
+                                >
+                                    // {form.ok
+                                        ? "Execution_Success"
+                                        : "Execution_Failure"}
+                                </span>
+                                <span class="text-[8px] text-zinc-600 font-mono"
+                                    >CID: {form.cid}</span
+                                >
+                            </div>
+                            <pre
+                                class="text-[10px] font-mono overflow-x-auto text-zinc-300">
+                                {JSON.stringify(
+                                    form.ok ? form.value : form.error,
+                                    null,
+                                    2,
+                                )}
+                            </pre>
+                        </div>
+                    {/if}
+                </div>
+            </div>
+        </section>
+
+        <!-- COLUMN 3: INTEL & NARRATIVE LEDGER -->
+        <section
+            class="col-span-3 p-5 overflow-y-auto custom-scrollbar flex flex-col gap-8"
+        >
+            <!-- AUTONOMIC SUMMARY -->
+            <div>
+                <div
+                    class="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-4"
+                >
+                    // Autonomic_Intelligence
+                </div>
+                <form method="POST" action="?/dispatch" use:enhance>
+                    <input type="hidden" name="cap" value="list/summarize" />
+                    <input
+                        type="hidden"
+                        name="args"
+                        value={JSON.stringify({})}
+                    />
+                    <button
+                        class="w-full py-3 bg-zinc-900 border border-zinc-800 text-white rounded hover:bg-white hover:text-black transition-all text-[10px] font-bold uppercase tracking-widest"
+                    >
+                        Run_Synthesis
+                    </button>
+                </form>
+            </div>
+
+            <!-- REAL-TIME JOURNAL (LEDGER) -->
+            <div class="flex flex-col flex-grow overflow-hidden">
+                <div
+                    class="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-4 shrink-0"
+                >
+                    // Narrative_Ledger
+                </div>
+                <div
+                    class="flex-grow overflow-y-auto space-y-3 pr-2 custom-scrollbar"
+                >
+                    {#each journal as step}
+                        <div
+                            class="text-[9px] font-mono border-b border-zinc-900 pb-2"
+                        >
+                            <div class="flex justify-between mb-1">
+                                <span class="text-emerald-500"
+                                    >[{new Date(
+                                        step.timestamp,
+                                    ).toLocaleTimeString()}]</span
+                                >
+                                <span class="text-zinc-300 uppercase"
+                                    >{step.action}</span
+                                >
+                            </div>
+                            <div
+                                class="text-zinc-600 break-all leading-tight italic"
+                            >
+                                {JSON.stringify(step.data)}
+                            </div>
+                        </div>
+                    {/each}
+                </div>
+            </div>
+
+            <div class="header mt-10 text-emerald-500">// GLOBAL_AUDIT_LOG</div>
+            <div
+                class="bg-black/50 border border-zinc-800 rounded p-3 font-mono text-[9px] h-64 overflow-y-auto custom-scrollbar"
+            >
+                {#each data.mesh.globalLogs as logLine}
+                    <div
+                        class="mb-1 text-zinc-400 border-b border-zinc-900/50 pb-1"
+                    >
+                        {logLine}
+                    </div>
+                {/each}
+            </div>
+        </section>
+    </main>
+</div>
+
+<style>
+    /* Industrial Scrollbar */
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #27272a;
+        border-radius: 2px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #3f3f46;
+    }
+
+    /* Fix för pre-tags */
+    pre {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+</style>

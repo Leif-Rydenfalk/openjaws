@@ -1,0 +1,20 @@
+{
+  "pid": 20639,
+  "version": "7bf2e4a2b75f1927",
+  "port": 36809,
+  "startTime": 1770410101139,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "ai/generate"
+  ],
+  "seed": "",
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAkr9OlaHCrDuWjI5iKIaRj9un4MP+o7tW+ci+7/+pcpc=\n-----END PUBLIC KEY-----\n"
+}

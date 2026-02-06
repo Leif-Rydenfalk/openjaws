@@ -1,0 +1,20 @@
+{
+  "pid": 20636,
+  "version": "7bf2e4a2b75f1927",
+  "port": 44545,
+  "startTime": 1770410101143,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "mesh/health"
+  ],
+  "seed": "",
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAamEV4DcuOmEfIICuaZBnGA3QXGcupHCeB8xJWlk1Q2w=\n-----END PUBLIC KEY-----\n"
+}
