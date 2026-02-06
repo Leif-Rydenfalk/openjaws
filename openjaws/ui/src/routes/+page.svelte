@@ -1,9 +1,12 @@
 <!-- ui/src/routes/+page.svelte -->
 <script lang="ts">
-    import { mesh, getMeshStatus } from "$lib/typed-mesh-runtime";
+    import { getMeshCell, getMeshStatus } from "$lib/mesh";
     import { onMount } from "svelte";
+    import { browser } from "$app/environment";
 
-    // State
+    // Get the real TypedRheoCell (only works in browser)
+    let cell: any = null;
+
     let checklist = { items: [], capacity: 5, date: "" };
     let health = {
         status: "LOADING" as const,
@@ -13,239 +16,135 @@
         timestamp: 0,
     };
     let logs: string[] = [];
-    let meshStatus: any = null;
     let newTask = "";
-    let isSubmitting = false;
-    let errorMessage = "";
     let loading = true;
-    let retryCount = 0;
-    const MAX_RETRIES = 5;
+    let error = "";
 
-    // ✅ FULLY TYPED CLIENT-SIDE DATA LOADING
     onMount(async () => {
-        await loadData();
+        // Initialize cell in browser only
+        cell = getMeshCell();
+
+        // Wait for cell to bootstrap
+        await new Promise((r) => setTimeout(r, 2000));
+        loadData();
     });
 
     async function loadData() {
+        if (!cell) return;
+
         loading = true;
-        errorMessage = "";
+        error = "";
 
         try {
-            // First check mesh status
-            meshStatus = await getMeshStatus();
-            console.log("[UI] Mesh status:", meshStatus);
+            // Use the cell's mesh proxy directly - same API as server cells!
+            const [h, c, l] = await Promise.all([
+                cell.mesh.mesh.health(),
+                cell.mesh.list.get(),
+                cell.mesh.log.get({ limit: 20 }),
+            ]);
 
-            if (!meshStatus || meshStatus.atlasSize <= 1) {
-                if (retryCount < MAX_RETRIES) {
-                    retryCount++;
-                    errorMessage = `Mesh not ready (${retryCount}/${MAX_RETRIES}). Retrying...`;
-                    setTimeout(loadData, 2000);
-                    return;
-                }
-                errorMessage =
-                    "Mesh not converged. Check that cells are running.";
-                loading = false;
-                return;
-            }
-
-            // Parallel typed mesh calls
-            const [healthResult, checklistResult, logsResult] =
-                await Promise.all([
-                    mesh.mesh.health().catch((e) => {
-                        console.error("[UI] Health call failed:", e);
-                        return null;
-                    }),
-                    mesh.list.get().catch((e) => {
-                        console.error("[UI] Checklist call failed:", e);
-                        return null;
-                    }),
-                    mesh.log.get({ limit: 20 }).catch((e) => {
-                        console.error("[UI] Log call failed:", e);
-                        return null;
-                    }),
-                ]);
-
-            if (healthResult) health = healthResult;
-            if (checklistResult) checklist = checklistResult;
-            if (logsResult) logs = logsResult.logs || [];
-
-            retryCount = 0; // Reset on success
+            health = h;
+            checklist = c;
+            logs = l.logs || [];
             loading = false;
-        } catch (e: unknown) {
-            const err = e as Error;
-            console.error("[LoadData] Error:", err);
-            errorMessage = `Failed to load data: ${err.message}`;
-
-            if (retryCount < MAX_RETRIES) {
-                retryCount++;
-                setTimeout(loadData, 2000);
-            } else {
-                loading = false;
-            }
+        } catch (e: any) {
+            error = e.message;
+            loading = false;
         }
     }
 
-    // ✅ FULLY TYPED MUTATIONS
-    async function addItem() {
-        if (!newTask.trim() || isSubmitting) return;
-
-        isSubmitting = true;
-        errorMessage = "";
-
+    async function addTask() {
+        if (!newTask.trim() || !cell) return;
         try {
-            const result = await mesh.list.add({
-                text: newTask,
-                type: "task",
-            });
-
-            if (result.ok) {
-                newTask = "";
-                await loadData();
-            }
-        } catch (e: unknown) {
-            const err = e as Error;
-            errorMessage = err.message;
-            console.error("[AddItem] Error:", err);
-        } finally {
-            isSubmitting = false;
+            await cell.mesh.list.add({ text: newTask, type: "task" });
+            newTask = "";
+            await loadData();
+        } catch (e: any) {
+            error = e.message;
         }
     }
 
     async function complete(id: string) {
+        if (!cell) return;
         try {
-            await mesh.list.complete({ id });
-
-            // Optimistic update
-            checklist.items = checklist.items.map((i: unknown) => {
-                const item = i as { id: string; completed: boolean };
-                return item.id === id ? { ...item, completed: true } : item;
-            });
-        } catch (e: unknown) {
-            const err = e as Error;
-            console.error("[Complete] Error:", err);
-            errorMessage = err.message;
-            await loadData();
-        }
-    }
-
-    async function summarize() {
-        try {
-            const result = await mesh.list.summarize();
-            alert(result.summary);
-        } catch (e: unknown) {
-            const err = e as Error;
-            console.error("[Summarize] Error:", err);
-            errorMessage = err.message;
+            await cell.mesh.list.complete({ id });
+            checklist.items = checklist.items.map((i: any) =>
+                i.id === id ? { ...i, completed: true } : i,
+            );
+        } catch (e: any) {
+            error = e.message;
         }
     }
 </script>
 
-{#if loading}
+<svelte:head>
+    <title>Rheo Mesh UI</title>
+</svelte:head>
+
+{#if !browser || loading}
     <div
-        class="p-8 bg-gray-900 min-h-screen text-gray-100 font-mono flex items-center justify-center"
+        class="p-8 bg-gray-900 min-h-screen text-gray-100 flex items-center justify-center"
     >
-        <div class="text-center max-w-md">
+        <div class="text-center">
             <div class="text-4xl mb-4">🌐</div>
-            <div class="text-xl text-green-400 mb-2">
-                {retryCount > 0
-                    ? `Retrying (${retryCount}/${MAX_RETRIES})...`
-                    : "Connecting to mesh..."}
+            <div class="text-xl text-green-400">
+                {#if !browser}
+                    Initializing...
+                {:else}
+                    Connecting to mesh...
+                {/if}
             </div>
-            <div class="text-sm text-gray-500 mt-2">
-                {meshStatus
-                    ? `Found ${meshStatus.atlasSize} cells, waiting for capabilities...`
-                    : "Discovering cells and capabilities"}
-            </div>
-            {#if errorMessage}
-                <div class="mt-4 text-yellow-400 text-sm">
-                    {errorMessage}
+            {#if cell}
+                <div class="text-sm text-gray-500 mt-2">Cell: {cell.id}</div>
+                <div class="text-xs text-purple-400 mt-1">
+                    Mode: {cell.mode}
                 </div>
             {/if}
         </div>
     </div>
 {:else}
     <div class="p-8 bg-gray-900 min-h-screen text-gray-100 font-mono">
-        <!-- Header -->
-        <header
-            class="mb-8 border-b border-gray-700 pb-4 flex justify-between items-center"
-        >
-            <div>
-                <h1 class="text-2xl text-green-400 font-bold">RHEO_MESH_UI</h1>
-                <p class="text-sm text-gray-500">Type-Safe Client API</p>
-                {#if meshStatus}
-                    <p class="text-xs text-gray-600 mt-1">
-                        Bridge: {meshStatus.cellId} | Atlas: {meshStatus.atlasSize}
-                        cells
-                    </p>
-                {/if}
-            </div>
-            <div class="text-right">
-                <div
-                    class="text-xl"
-                    class:text-green-500={health.status === "NOMINAL"}
-                    class:text-yellow-500={health.status === "LOADING"}
-                    class:text-red-500={health.status !== "NOMINAL" &&
-                        health.status !== "LOADING"}
-                >
-                    {health.status}
-                </div>
-                <div class="text-xs text-gray-500">
-                    {health.totalCells} active cells
-                </div>
-            </div>
+        <header class="mb-8 border-b border-gray-700 pb-4">
+            <h1 class="text-2xl text-green-400 font-bold">RHEO MESH UI</h1>
+            <p class="text-sm text-gray-500">Direct TypedRheoCell Access</p>
+            {#if cell}
+                <p class="text-xs text-purple-400">
+                    Cell: {cell.id} @ {cell.addr}
+                </p>
+                <p class="text-xs text-gray-600">
+                    Atlas: {Object.keys(cell.atlas).length} cells
+                </p>
+            {/if}
         </header>
 
-        <!-- Error Display -->
-        {#if errorMessage}
-            <div
-                class="mb-4 p-4 bg-red-900 border border-red-700 rounded text-red-200"
-            >
-                ⚠️ {errorMessage}
-                <button
-                    on:click={() => (errorMessage = "")}
-                    class="float-right text-xs hover:text-white"
+        {#if error}
+            <div class="mb-4 p-4 bg-red-900 text-red-200 rounded">
+                {error}
+                <button on:click={() => (error = "")} class="float-right"
+                    >✕</button
                 >
-                    ✕
-                </button>
             </div>
         {/if}
 
         <main class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Checklist Cell Interface -->
-            <section
-                class="bg-gray-800 p-6 rounded shadow-lg border border-gray-700"
-            >
-                <div
-                    class="flex justify-between items-center mb-4 border-b border-gray-700 pb-2"
-                >
-                    <h2 class="text-xl text-blue-400">>> Checklist.exe</h2>
-                    <button
-                        on:click={summarize}
-                        class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded hover:bg-purple-700"
-                    >
-                        SUMMARIZE
-                    </button>
-                </div>
+            <section class="bg-gray-800 p-6 rounded">
+                <h2 class="text-xl text-blue-400 mb-4">Checklist</h2>
 
-                <!-- Items List -->
                 <div class="space-y-2 mb-6">
                     {#if checklist.items.length === 0}
-                        <p class="text-gray-600 italic">
-                            No active tasks detected in mesh.
-                        </p>
+                        <p class="text-gray-600 italic">No tasks</p>
                     {/if}
-
                     {#each checklist.items as item}
                         <div
-                            class="flex justify-between items-center bg-gray-900 p-3 rounded hover:bg-gray-850 transition"
+                            class="flex justify-between bg-gray-900 p-3 rounded"
                         >
                             <span
                                 class:line-through={item.completed}
                                 class:text-gray-500={item.completed}
                             >
-                                <span class="text-xs text-yellow-600 mr-2">
-                                    [{item.type.toUpperCase()}]
-                                </span>
+                                <span class="text-xs text-yellow-600 mr-2"
+                                    >[{item.type.toUpperCase()}]</span
+                                >
                                 {item.text}
                             </span>
                             {#if !item.completed}
@@ -260,46 +159,38 @@
                     {/each}
                 </div>
 
-                <!-- Capacity Indicator -->
                 <div class="mb-4 text-xs text-gray-500">
-                    Capacity: {checklist.items.filter((i: unknown) => {
-                        const item = i as { type: string; completed: boolean };
-                        return item.type === "task" && !item.completed;
-                    }).length} / {checklist.capacity}
+                    Capacity: {checklist.items.filter(
+                        (i: any) => i.type === "task" && !i.completed,
+                    ).length} / {checklist.capacity}
                 </div>
 
-                <!-- Add New Task -->
                 <div class="flex gap-2">
                     <input
                         type="text"
                         bind:value={newTask}
-                        placeholder="New directive..."
+                        placeholder="New task..."
                         class="flex-1 bg-gray-900 border border-gray-600 p-2 text-white focus:outline-none focus:border-green-500"
-                        on:keydown={(e) => e.key === "Enter" && addItem()}
-                        disabled={isSubmitting}
+                        on:keydown={(e) => e.key === "Enter" && addTask()}
                     />
                     <button
-                        on:click={addItem}
-                        disabled={isSubmitting}
-                        class="bg-green-600 text-black font-bold px-4 py-2 hover:bg-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                        on:click={addTask}
+                        class="bg-green-600 text-black font-bold px-4 py-2 hover:bg-green-500"
                     >
-                        {isSubmitting ? "..." : "EXEC"}
+                        EXEC
                     </button>
                 </div>
             </section>
 
-            <!-- Logs / Audit -->
             <section
-                class="bg-black p-4 rounded font-mono text-xs border border-gray-800 h-96 overflow-y-auto"
+                class="bg-black p-4 rounded font-mono text-xs h-96 overflow-y-auto"
             >
-                <h3
-                    class="text-gray-500 mb-2 sticky top-0 bg-black pb-2 border-b border-gray-800"
-                >
-                    SYSTEM_LOGS
+                <h3 class="text-gray-500 mb-2 sticky top-0 bg-black pb-2">
+                    SYSTEM LOGS
                 </h3>
                 {#each logs as log}
                     <div
-                        class="mb-1 whitespace-pre-wrap text-gray-400 border-b border-gray-900 pb-1"
+                        class="text-gray-400 mb-1 border-b border-gray-900 pb-1"
                     >
                         {log}
                     </div>
@@ -310,19 +201,16 @@
             </section>
         </main>
 
-        <!-- Footer with refresh button and debug info -->
         <footer class="mt-8 text-center">
             <button
                 on:click={loadData}
                 class="text-xs text-gray-500 hover:text-gray-300 border border-gray-700 px-3 py-1 rounded"
             >
-                🔄 Refresh Data
+                🔄 Refresh
             </button>
-            {#if meshStatus}
-                <div class="mt-2 text-xs text-gray-700">
-                    Peers: {meshStatus.peers.join(", ")}
-                </div>
-            {/if}
+            <div class="mt-2 text-xs text-purple-600">
+                Using Real TypedRheoCell in Browser ✨
+            </div>
         </footer>
     </div>
 {/if}

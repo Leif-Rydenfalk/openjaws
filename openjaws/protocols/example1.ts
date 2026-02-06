@@ -69,6 +69,8 @@ export interface TraceResult {
     cid: string;
 }
 
+export type TransportMode = 'server' | 'client';
+
 /**
  * Signal: The Extensible Envelope.
  * 
@@ -313,6 +315,9 @@ export class RheoCell {
     // Cryptographic Identity (Ed25519)
     private privateKey: KeyObject;
     public publicKey: string;
+
+    public mode: TransportMode = 'server';
+
 
     private manifestPath: string;
     private cellDir: string;
@@ -755,9 +760,8 @@ export class RheoCell {
         const myId = this.id;
         const cap = signal.payload.capability;
 
-        // Allow cells without address to forward (Ghost Mode / Bridge Mode)
-        // They just can't handle local requests
-        if (!this.addr && this.handlers[cap]) {
+        // CLIENT MODE: Can forward but not handle unless explicitly provided
+        if (!this.addr && this.mode === 'server' && this.handlers[cap]) {
             return { ok: false, cid, error: { code: "NOT_READY", msg: "Cell has no address - cannot handle local capabilities", from: myId, trace: [] } };
         }
 
@@ -855,6 +859,7 @@ export class RheoCell {
         // Filter the Atlas for cells providing this capability.
         // We exclude: ourselves, cells we've already visited, and duplicate addresses.
         const seenAddrs = new Set<string>();
+
         const providers = Object.entries(this.atlas)
             .filter(([key, e]) => {
                 const entryId = e.id || key;
@@ -862,8 +867,9 @@ export class RheoCell {
                 const isSelf = entryId === myId || e.addr === myAddr;
                 const isVisited = visitedIds.includes(entryId);
                 const isDuplicateAddr = seenAddrs.has(e.addr);
+                const isClientOnly = e.addr.startsWith('client://'); // NEW: Skip client cells for capability routing
 
-                if (hasCap && !isSelf && !isVisited && !isDuplicateAddr) {
+                if (hasCap && !isSelf && !isVisited && !isDuplicateAddr && !isClientOnly) {
                     seenAddrs.add(e.addr);
                     return true;
                 }
@@ -1457,6 +1463,49 @@ export class RheoCell {
     }
 
     /**
+        * Connect to mesh in client mode (no server, HTTP client only)
+        * For browser environments or cells that only need to call others
+        */
+    public async connect(seedAddr?: string): Promise<void> {
+        this.mode = 'client';
+        this._addr = `client://${this.id}`; // Virtual address for client cells
+
+        if (seedAddr) {
+            this.seed = seedAddr;
+        }
+
+        // Bootstrap from registry to find peers
+        await this.bootstrapFromRegistry(true);
+
+        // If we have a seed, try to connect directly
+        if (this.seed && Object.keys(this.atlas).length === 0) {
+            try {
+                const response = await fetch(`${this.seed}/atlas`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ requester: this.id })
+                });
+                if (response.ok) {
+                    const { atlas } = await response.json();
+                    this.mergeAtlas(atlas, false, 0);
+                }
+            } catch (e) {
+                this.log("WARN", "Could not connect to seed, will retry via gossip");
+            }
+        }
+
+        // Register ourselves (even as client) so others know we exist
+        this.registerToRegistry();
+
+        // Start heartbeat
+        const heartbeat = setInterval(() => this.registerToRegistry(), 5000);
+        this.activeIntervals.push(heartbeat);
+
+        this.log("INFO", `Client cell connected @ ${this._addr}`);
+    }
+
+
+    /**
  * The Cell Interface Layer.
  * Responsibility: Serves the HTTP substrate, handles P2P handshake, 
  * and performs defensive entry-point checks before routing.
@@ -1575,7 +1624,10 @@ export class RheoCell {
             };
 
             const targets = Object.values(this.atlas)
-                .filter(e => e.addr !== this._addr)
+                .filter(e =>
+                    e.addr !== this._addr &&
+                    !e.addr.startsWith('client://') // NEW: Don't announce to clients
+                )
                 .sort(() => 0.5 - Math.random())
                 .slice(0, 3);
 

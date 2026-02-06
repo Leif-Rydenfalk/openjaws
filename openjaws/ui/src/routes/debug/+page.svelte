@@ -1,11 +1,13 @@
 <!-- ui/src/routes/debug/+page.svelte -->
 <script lang="ts">
-    import { getMeshStatus, meshCall } from "$lib/typed-mesh-runtime";
+    import { getBrowserCell, getMeshStatus } from "$lib/browser-mesh-client";
     import { onMount } from "svelte";
 
-    let status: any = null;
-    let atlasData: any = null;
-    let testResults: any = {};
+    const cell = getBrowserCell();
+
+    let meshStatus: any = null;
+    let browserCellInfo: any = null;
+    let testResults: Record<string, any> = {};
     let loading = true;
 
     onMount(async () => {
@@ -15,28 +17,27 @@
     async function loadDebugInfo() {
         loading = true;
 
-        // Get mesh status
-        status = await getMeshStatus();
-        console.log("[Debug] Mesh status:", status);
+        // Get server mesh status
+        meshStatus = await getMeshStatus();
+        console.log("[Debug] Mesh status:", meshStatus);
 
-        // Try to get atlas from mesh
-        try {
-            const result = await meshCall("mesh/directory" as any);
-            if (result.ok) {
-                atlasData = result.value;
-            }
-        } catch (e) {
-            console.error("[Debug] Atlas call failed:", e);
-        }
+        // Get browser cell info
+        browserCellInfo = {
+            id: cell.id,
+            mode: cell.mode,
+            addr: cell.addr,
+            atlasSize: Object.keys(cell.atlas).length,
+            capabilities: Object.values(cell.atlas).flatMap((e) => e.caps),
+            atlas: cell.atlas,
+        };
 
         // Test each capability
         const tests = [
-            { name: "mesh/health", call: () => meshCall("mesh/health" as any) },
-            { name: "mesh/ping", call: () => meshCall("mesh/ping" as any) },
-            { name: "list/get", call: () => meshCall("list/get" as any) },
+            { name: "mesh/health", call: () => cell.mesh.mesh.health() },
+            { name: "list/get", call: () => cell.mesh.list.get() },
             {
                 name: "log/get",
-                call: () => meshCall("log/get" as any, { limit: 5 }),
+                call: () => cell.mesh.log.get({ limit: 5 }),
             },
         ];
 
@@ -44,8 +45,8 @@
             try {
                 const result = await test.call();
                 testResults[test.name] = {
-                    status: result.ok ? "✅ OK" : "❌ FAIL",
-                    result: result.ok ? result.value : result.error,
+                    status: result ? "✅ OK" : "❌ FAIL",
+                    result: result,
                 };
             } catch (e: any) {
                 testResults[test.name] = {
@@ -60,41 +61,93 @@
 </script>
 
 <div class="p-8 bg-gray-900 min-h-screen text-gray-100 font-mono">
-    <h1 class="text-2xl text-green-400 font-bold mb-4">🔍 Mesh Debug Panel</h1>
+    <h1 class="text-2xl text-green-400 font-bold mb-4">
+        🔍 Browser Cell Debug Panel
+    </h1>
 
     {#if loading}
         <div class="text-yellow-400">Loading debug info...</div>
     {:else}
-        <!-- Bridge Status -->
+        <!-- Browser Cell Info -->
         <section class="mb-8 bg-gray-800 p-4 rounded border border-gray-700">
-            <h2 class="text-xl text-blue-400 mb-3">Bridge Cell Status</h2>
-            {#if status}
+            <h2 class="text-xl text-purple-400 mb-3">
+                Browser Cell (Client Mode)
+            </h2>
+            {#if browserCellInfo}
                 <table class="w-full text-sm">
                     <tbody>
                         <tr>
                             <td class="text-gray-500 pr-4">Cell ID:</td>
-                            <td class="text-green-400">{status.cellId}</td>
+                            <td class="text-purple-400">{browserCellInfo.id}</td
+                            >
+                        </tr>
+                        <tr>
+                            <td class="text-gray-500 pr-4">Mode:</td>
+                            <td class="text-purple-400"
+                                >{browserCellInfo.mode}</td
+                            >
                         </tr>
                         <tr>
                             <td class="text-gray-500 pr-4">Address:</td>
-                            <td class="text-green-400"
-                                >{status.address || "NOT BOUND"}</td
+                            <td class="text-purple-400"
+                                >{browserCellInfo.addr}</td
                             >
                         </tr>
                         <tr>
                             <td class="text-gray-500 pr-4">Atlas Size:</td>
-                            <td class="text-green-400">{status.atlasSize}</td>
+                            <td class="text-purple-400"
+                                >{browserCellInfo.atlasSize}</td
+                            >
+                        </tr>
+                        <tr>
+                            <td class="text-gray-500 pr-4"
+                                >Known Capabilities:</td
+                            >
+                            <td class="text-purple-400"
+                                >{browserCellInfo.capabilities.length}</td
+                            >
+                        </tr>
+                    </tbody>
+                </table>
+            {/if}
+        </section>
+
+        <!-- Server Cell Status -->
+        <section class="mb-8 bg-gray-800 p-4 rounded border border-gray-700">
+            <h2 class="text-xl text-blue-400 mb-3">Server Cell Status</h2>
+            {#if meshStatus}
+                <table class="w-full text-sm">
+                    <tbody>
+                        <tr>
+                            <td class="text-gray-500 pr-4">Cell ID:</td>
+                            <td class="text-green-400">{meshStatus.cellId}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-gray-500 pr-4">Mode:</td>
+                            <td class="text-green-400">{meshStatus.mode}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-gray-500 pr-4">Address:</td>
+                            <td class="text-green-400"
+                                >{meshStatus.address || "NOT BOUND"}</td
+                            >
+                        </tr>
+                        <tr>
+                            <td class="text-gray-500 pr-4">Atlas Size:</td>
+                            <td class="text-green-400"
+                                >{meshStatus.atlasSize}</td
+                            >
                         </tr>
                         <tr>
                             <td class="text-gray-500 pr-4">Peers:</td>
                             <td class="text-green-400"
-                                >{status.peers?.join(", ") || "None"}</td
+                                >{meshStatus.peers?.join(", ") || "None"}</td
                             >
                         </tr>
                     </tbody>
                 </table>
             {:else}
-                <div class="text-red-400">❌ Bridge cell not responding</div>
+                <div class="text-red-400">❌ Server cell not responding</div>
             {/if}
         </section>
 
@@ -119,18 +172,18 @@
             </div>
         </section>
 
-        <!-- Atlas Data -->
+        <!-- Atlas Dump -->
         <section class="bg-gray-800 p-4 rounded border border-gray-700">
-            <h2 class="text-xl text-blue-400 mb-3">Atlas Data</h2>
-            {#if atlasData}
+            <h2 class="text-xl text-blue-400 mb-3">Browser Cell Atlas</h2>
+            {#if browserCellInfo}
                 <pre
                     class="text-xs text-gray-500 overflow-x-auto">{JSON.stringify(
-                        atlasData,
+                        browserCellInfo.atlas,
                         null,
                         2,
                     )}</pre>
             {:else}
-                <div class="text-red-400">❌ Could not fetch atlas</div>
+                <div class="text-red-400">❌ No atlas data</div>
             {/if}
         </section>
 

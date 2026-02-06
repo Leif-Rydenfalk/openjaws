@@ -1,0 +1,18 @@
+{
+  "pid": 42881,
+  "version": "cf00e2d6aca41696",
+  "port": 43459,
+  "startTime": 1770421704491,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAgYRKEJUbOF2oFjMAf0EuP1nFjmIwbP2Khd53uc9akCs=\n-----END PUBLIC KEY-----\n"
+}

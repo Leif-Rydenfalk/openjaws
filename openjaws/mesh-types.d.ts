@@ -1,6 +1,6 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-06T23:20:39.784Z
+ * Generated: 2026-02-06T23:53:31.093Z
  * Source: Live mesh scan (14 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
@@ -74,4 +74,4 @@ export type MeshCapabilities = {
     ping: { input: any; output: any };
 };
 
-// Type trigger: 1770420039784
+// Type trigger: 1770422011093
