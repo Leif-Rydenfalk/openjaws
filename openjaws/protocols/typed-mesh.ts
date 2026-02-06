@@ -1,0 +1,340 @@
+// protocols/typed-mesh.ts - Fully Type-Safe Cross-Cell Communication
+// This protocol provides 100% compile-time type safety for mesh calls
+
+import { RheoCell as BaseCell, TraceResult, Signal } from "./example1";
+import type {
+    Router,
+    Procedure,
+    InferInput,
+    InferOutput,
+    AnyProcedure,
+    AnyRouter
+} from "./example2";
+import type { Procedure as ProcedureClass } from "./example2";
+
+// ============================================================================
+// TYPE EXTRACTION UTILITIES
+// ============================================================================
+
+/**
+ * Extract all procedures from a router recursively
+ * Converts nested routers into flat capability paths
+ * 
+ * Example:
+ *   router({ list: router({ get: procedure }) })
+ *   => { "list/get": typeof procedure }
+ */
+export type FlattenRouter<T, Prefix extends string = ""> = T extends Router<infer TProcedures>
+    ? {
+        [K in keyof TProcedures]: TProcedures[K] extends Router<any>
+        ? FlattenRouter<TProcedures[K], Prefix extends "" ? K & string : `${Prefix}/${K & string}`>
+        : Prefix extends ""
+        ? { [P in K]: TProcedures[K] }
+        : { [P in `${Prefix}/${K & string}`]: TProcedures[K] }
+    }[keyof TProcedures]
+    : never;
+
+/**
+ * Convert flattened procedures into capability map
+ * 
+ * Example:
+ *   { "list/get": Procedure<void, ListData> }
+ *   => { "list/get": { input: void, output: ListData } }
+ */
+export type RouterToCapabilityMap<T extends AnyRouter> = {
+    [K in keyof FlattenRouter<T>]: FlattenRouter<T>[K] extends AnyProcedure
+    ? {
+        input: InferInput<FlattenRouter<T>[K]>;
+        output: InferOutput<FlattenRouter<T>[K]>;
+    }
+    : never;
+};
+
+// ============================================================================
+// MESH REGISTRY (Augmentable by cells)
+// ============================================================================
+
+/**
+ * Global mesh capability registry
+ * Each cell augments this interface with their router types
+ * 
+ * Usage in a cell:
+ *   declare module "./protocols/typed-mesh" {
+ *       interface MeshCapabilities {
+ *           "ai/generate": { input: {...}, output: {...} };
+ *       }
+ *   }
+ */
+export interface MeshCapabilities {
+    // Cells augment this interface
+    // Core mesh capabilities are defined here
+    "mesh/ping": { input: void; output: "PONG" };
+    "mesh/health": {
+        input: void;
+        output: {
+            totalCells: number;
+            avgLoad: number;
+            status: "NOMINAL";
+            hotSpots: string[];
+            timestamp: number;
+        };
+    };
+    "cell/shutdown": { input: void; output: { status: string } };
+}
+
+/**
+ * Helper type to validate a capability path exists
+ */
+export type ValidCapability = keyof MeshCapabilities;
+
+/**
+ * Extract input type for a specific capability
+ */
+export type CapabilityInput<T extends ValidCapability> = MeshCapabilities[T]["input"];
+
+/**
+ * Extract output type for a specific capability
+ */
+export type CapabilityOutput<T extends ValidCapability> = MeshCapabilities[T]["output"];
+
+/**
+ * Typed result that includes the capability's output type
+ */
+export interface TypedTraceResult<T> extends TraceResult {
+    value?: T;
+}
+
+// ============================================================================
+// TYPED RHEO CELL
+// ============================================================================
+
+/**
+ * Type-safe extension of RheoCell
+ * Provides compile-time verification of all mesh calls
+ */
+export class TypedRheoCell extends BaseCell {
+    private _router: AnyRouter | null = null;
+
+    /**
+     * Type-safe mesh call
+     * - Validates capability exists at compile time
+     * - Validates input matches expected schema
+     * - Returns typed output
+     */
+    async askMesh<TCapability extends ValidCapability>(
+        capability: TCapability,
+        ...args: CapabilityInput<TCapability> extends void
+            ? []
+            : [CapabilityInput<TCapability>]
+    ): Promise<TypedTraceResult<CapabilityOutput<TCapability>>> {
+        const input = args[0];
+        const result = await super.askMesh(
+            capability as string,
+            input,
+            {}
+        );
+        return result as TypedTraceResult<CapabilityOutput<TCapability>>;
+    }
+
+    /**
+     * Attach a typed router to this cell (from example2.ts)
+     */
+    useRouter<T extends AnyRouter>(router: T): void {
+        this._router = router;
+
+        // Register all capabilities from the router
+        const capabilities = router.getCapabilities();
+
+        for (const cap of capabilities) {
+            const proc = router.findProcedure(cap);
+
+            if (!proc) {
+                throw new Error(`Procedure not found: ${cap}`);
+            }
+
+            // Validate input if schema exists
+            this.provide(cap, async (args: unknown, ctx: any) => {
+                let validatedInput = args;
+                if (proc._def.input) {
+                    try {
+                        validatedInput = proc._def.input.parse(args);
+                    } catch (e: unknown) {
+                        const error = e as Error;
+                        throw new Error(`Input validation failed for ${cap}: ${error.message}`);
+                    }
+                }
+
+                // Execute handler
+                return await proc._def.handler(validatedInput, ctx);
+            });
+        }
+    }
+
+    /**
+     * Get the router if attached
+     */
+    getRouter(): AnyRouter | null {
+        return this._router;
+    }
+
+    /**
+     * Proxy-based API for more ergonomic calls
+     * Usage: cell.mesh.ai.generate({ prompt: "..." })
+     */
+    get mesh(): MeshProxy {
+        return createMeshProxy(this);
+    }
+}
+
+// ============================================================================
+// MESH PROXY (Ergonomic API)
+// ============================================================================
+
+/**
+ * Parse "namespace/procedure" capability path
+ */
+type ParseCapability<T extends string> =
+    T extends `${infer Namespace}/${infer Procedure}`
+    ? { namespace: Namespace; procedure: Procedure }
+    : never;
+
+/**
+ * Get all capabilities for a namespace
+ */
+type CapabilitiesForNamespace<TNamespace extends string> = {
+    [K in ValidCapability]: ParseCapability<K>["namespace"] extends TNamespace
+    ? K
+    : never
+}[ValidCapability];
+
+/**
+ * Convert capabilities to procedure methods
+ */
+type NamespaceProcedures<TNamespace extends string> = {
+    [K in CapabilitiesForNamespace<TNamespace> as ParseCapability<K>["procedure"]]:
+    CapabilityInput<K> extends void
+    ? () => Promise<CapabilityOutput<K>>
+    : (input: CapabilityInput<K>) => Promise<CapabilityOutput<K>>
+};
+
+/**
+ * Get all unique namespaces from capability paths
+ */
+type ExtractNamespaces<T extends string> =
+    T extends `${infer NS}/${string}` ? NS : never;
+
+type AllNamespaces = ExtractNamespaces<ValidCapability>;
+
+/**
+ * The typed mesh proxy interface
+ */
+export type MeshProxy = {
+    [TNamespace in AllNamespaces]: NamespaceProcedures<TNamespace>
+};
+
+/**
+ * Create the mesh proxy for ergonomic calls
+ */
+function createMeshProxy(cell: TypedRheoCell): MeshProxy {
+    return new Proxy({} as MeshProxy, {
+        get(_target, namespace: string) {
+            return new Proxy({}, {
+                get(_subTarget, procedure: string) {
+                    return async (input?: any) => {
+                        const capability = `${namespace}/${procedure}` as ValidCapability;
+                        const result = await cell.askMesh(
+                            capability,
+                            ...(input !== undefined ? [input] : []) as any
+                        );
+
+                        if (!result.ok) {
+                            throw new Error(
+                                `Mesh call failed: ${capability}\n` +
+                                `Error: ${result.error?.msg || 'Unknown error'}`
+                            );
+                        }
+
+                        return result.value;
+                    };
+                }
+            });
+        }
+    });
+}
+
+// ============================================================================
+// ROUTER REGISTRATION HELPER
+// ============================================================================
+
+/**
+ * Register a router and augment the type system
+ * This helper makes it easier for cells to register their capabilities
+ */
+export function registerRouter<T extends AnyRouter>(
+    cell: TypedRheoCell,
+    router: T,
+    options?: { prefix?: string }
+): void {
+    // Register with the base cell (runtime)
+    (cell as any).useRouter(router);
+
+    // Type augmentation happens via declare module in each cell file
+}
+
+// ============================================================================
+// CAPABILITY VALIDATOR (Optional runtime validation)
+// ============================================================================
+
+/**
+ * Runtime validator to ensure mesh state matches types
+ * Useful during development to catch capability mismatches
+ */
+export class CapabilityValidator {
+    private static expectedCapabilities: Set<string> = new Set();
+
+    static registerExpected(capabilities: ValidCapability[]) {
+        capabilities.forEach(cap => this.expectedCapabilities.add(cap));
+    }
+
+    static async validateMesh(cell: TypedRheoCell): Promise<{
+        missing: string[];
+        unexpected: string[];
+    }> {
+        // Get actual capabilities from mesh
+        const healthResult = await cell.askMesh("mesh/health");
+
+        if (!healthResult.ok) {
+            return { missing: [], unexpected: [] };
+        }
+
+        // Gather all capabilities from atlas
+        const actualCapabilities = new Set<string>();
+        for (const entry of Object.values(cell.atlas)) {
+            entry.caps.forEach(cap => actualCapabilities.add(cap));
+        }
+
+        const missing = Array.from(this.expectedCapabilities)
+            .filter(cap => !actualCapabilities.has(cap));
+
+        const expected = Array.from(this.expectedCapabilities);
+        const unexpected = Array.from(actualCapabilities)
+            .filter(cap => !expected.includes(cap as ValidCapability));
+
+        return { missing, unexpected };
+    }
+}
+
+// ============================================================================
+// TYPE EXPORT HELPERS
+// ============================================================================
+
+/**
+ * Helper to define a cell's router with full type inference
+ */
+export type DefineRouter<T extends AnyRouter> = T;
+
+/**
+ * Extract the capability map from a router for augmentation
+ */
+export type ExtractCapabilities<T extends AnyRouter, Prefix extends string = ""> =
+    RouterToCapabilityMap<T>;

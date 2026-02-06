@@ -1,0 +1,20 @@
+{
+  "pid": 27516,
+  "version": "f07c94f87feb41e2",
+  "port": 46323,
+  "startTime": 1770413698530,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "ai/generate"
+  ],
+  "seed": "",
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAp1/UpWtOakkWU/HAcjeRTMpM9H21r/v3MwB1ijyrhYM=\n-----END PUBLIC KEY-----\n"
+}

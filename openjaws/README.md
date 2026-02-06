@@ -25,3 +25,8 @@ kolla typer genereras redan
 
 Precis som tRPC fast i cell miljön!
 https://trpc.io/#try-it-out
+
+
+
+"Build-time vs Runtime: Schema extraction happens at build time, not during mesh operation. This ensures types are static and verifiable."
+The key distinction is that mesh nodes do not have to run in sync - one can run and another can depend on it and we can perform pre processing before we start the node which depends on the other node.

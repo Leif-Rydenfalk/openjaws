@@ -1559,3 +1559,77 @@ export class RheoCell {
         return "Unknown - check for duplicate signal generation or stale Atlas entries";
     }
 }
+
+// --- 🛡️ NATIVE TYPE SYSTEM (Sovereign Schema) ---
+
+export interface JsonSchema {
+    type: string;
+    properties?: Record<string, JsonSchema>;
+    items?: JsonSchema;
+    required?: string[];
+    enum?: any[];
+}
+
+// En wrapper för att bära både Runtime Schema och Compile-time Type
+export class TypeDef<T> {
+    constructor(public schema: JsonSchema) { }
+
+    optional(): TypeDef<T | undefined> {
+        return new TypeDef({ ...this.schema, _optional: true } as any);
+    }
+}
+
+// Typ-hjälpare för att extrahera T från TypeDef<T>
+export type Infer<T> = T extends TypeDef<infer U> ? U : never;
+
+export const S = {
+    string: () => new TypeDef<string>({ type: "string" }),
+    number: () => new TypeDef<number>({ type: "number" }),
+    boolean: () => new TypeDef<boolean>({ type: "boolean" }),
+    any: () => new TypeDef<any>({ type: "object" }), // Fallback
+
+    // Enums
+    enum: <U extends string>(values: [U, ...U[]]) =>
+        new TypeDef<U>({ type: "string", enum: values }),
+
+    // Arrays
+    array: <T>(item: TypeDef<T>) =>
+        new TypeDef<T[]>({ type: "array", items: item.schema }),
+
+    // Objects
+    object: <T extends Record<string, TypeDef<any>>>(shape: T) => {
+        const properties: Record<string, JsonSchema> = {};
+        const required: string[] = [];
+
+        for (const [key, def] of Object.entries(shape)) {
+            properties[key] = def.schema;
+            // Hack: Vi markerar optional internt, standard JSON schema har required-listan
+            if (!(def.schema as any)._optional) {
+                required.push(key);
+            }
+        }
+
+        return new TypeDef<{ [K in keyof T]: Infer<typeof shape[K]> }>({
+            type: "object",
+            properties,
+            required
+        });
+    }
+};
+
+/**
+ * Helper för att skapa kontrakt utan externa deps
+ */
+export function createContract<I extends TypeDef<any>, O extends TypeDef<any>>(
+    capability: string,
+    def: { input: I; output: O }
+): Contract {
+    return {
+        capability,
+        version: "1.0.0",
+        inputSchema: def.input.schema,
+        outputSchema: def.output.schema,
+        compatibility: [],
+        transport: { protocol: "INTERNAL", adapters: [] }
+    };
+}

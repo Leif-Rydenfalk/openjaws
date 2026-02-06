@@ -1,0 +1,18 @@
+{
+  "pid": 32491,
+  "version": "f07c94f87feb41e2",
+  "port": 0,
+  "startTime": 1770415931518,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAYuZK47Ln0459pYwks2npD4bLaltprRwt0N2CjrKDn5M=\n-----END PUBLIC KEY-----\n"
+}
