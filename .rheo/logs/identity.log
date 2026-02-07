@@ -1,0 +1,301 @@
+[2:25:19 AM] [identity] Key fingerprint: 69be57711da1c77b
+[2:25:19 AM] 174 |         /**
+[2:25:19 AM] 175 |          * Create a new user account
+[2:25:19 AM] 176 |          */
+[2:25:19 AM] 177 |         create: procedure
+[2:25:19 AM] 178 |             .input(z.object({
+[2:25:19 AM] 179 |                 username: z.string().min(3),
+[2:25:19 AM]                                            ^
+[2:25:19 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:25:19 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:25:19 AM] Bun v1.3.1 (Linux x64)
+[2:25:29 AM] [identity] Key fingerprint: ef5537da69d55286
+[2:25:29 AM] 174 |         /**
+[2:25:29 AM] 175 |          * Create a new user account
+[2:25:29 AM] 176 |          */
+[2:25:29 AM] 177 |         create: procedure
+[2:25:29 AM] 178 |             .input(z.object({
+[2:25:29 AM] 179 |                 username: z.string().min(3),
+[2:25:29 AM]                                            ^
+[2:25:29 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:25:29 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:25:29 AM] Bun v1.3.1 (Linux x64)
+[2:25:38 AM] [identity] Key fingerprint: 432d4a0adc6f57a4
+[2:25:38 AM] 174 |         /**
+[2:25:38 AM] 175 |          * Create a new user account
+[2:25:38 AM] 176 |          */
+[2:25:39 AM] 177 |         create: procedure
+[2:25:39 AM] 178 |             .input(z.object({
+[2:25:39 AM] 179 |                 username: z.string().min(3),
+[2:25:39 AM]                                            ^
+[2:25:39 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:25:39 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:25:39 AM] Bun v1.3.1 (Linux x64)
+[2:25:49 AM] [identity] Key fingerprint: 52e56ba47317e6ce
+[2:25:49 AM] 174 |         /**
+[2:25:49 AM] 175 |          * Create a new user account
+[2:25:49 AM] 176 |          */
+[2:25:49 AM] 177 |         create: procedure
+[2:25:49 AM] 178 |             .input(z.object({
+[2:25:49 AM] 179 |                 username: z.string().min(3),
+[2:25:49 AM]                                            ^
+[2:25:49 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:25:49 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:25:49 AM] Bun v1.3.1 (Linux x64)
+[2:25:59 AM] [identity] Key fingerprint: cb0111008fa24540
+[2:25:59 AM] 174 |         /**
+[2:25:59 AM] 175 |          * Create a new user account
+[2:25:59 AM] 176 |          */
+[2:25:59 AM] 177 |         create: procedure
+[2:25:59 AM] 178 |             .input(z.object({
+[2:25:59 AM] 179 |                 username: z.string().min(3),
+[2:25:59 AM]                                            ^
+[2:25:59 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:25:59 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:25:59 AM] Bun v1.3.1 (Linux x64)
+[2:26:08 AM] [identity] Key fingerprint: 489fb032525fa3a1
+[2:26:09 AM] 174 |         /**
+[2:26:09 AM] 175 |          * Create a new user account
+[2:26:09 AM] 176 |          */
+[2:26:09 AM] 177 |         create: procedure
+[2:26:09 AM] 178 |             .input(z.object({
+[2:26:09 AM] 179 |                 username: z.string().min(3),
+[2:26:09 AM]                                            ^
+[2:26:09 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:26:09 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:26:09 AM] Bun v1.3.1 (Linux x64)
+[2:26:19 AM] [identity] Key fingerprint: 20d91f3570d2f036
+[2:26:19 AM] 174 |         /**
+[2:26:19 AM] 175 |          * Create a new user account
+[2:26:19 AM] 176 |          */
+[2:26:19 AM] 177 |         create: procedure
+[2:26:19 AM] 178 |             .input(z.object({
+[2:26:19 AM] 179 |                 username: z.string().min(3),
+[2:26:19 AM]                                            ^
+[2:26:19 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:26:19 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:26:19 AM] Bun v1.3.1 (Linux x64)
+[2:26:28 AM] [identity] Key fingerprint: 36fdc68fbd7593ef
+[2:26:29 AM] 174 |         /**
+[2:26:29 AM] 175 |          * Create a new user account
+[2:26:29 AM] 176 |          */
+[2:26:29 AM] 177 |         create: procedure
+[2:26:29 AM] 178 |             .input(z.object({
+[2:26:29 AM] 179 |                 username: z.string().min(3),
+[2:26:29 AM]                                            ^
+[2:26:29 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:26:29 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:26:29 AM] Bun v1.3.1 (Linux x64)
+[2:26:39 AM] [identity] Key fingerprint: c0302b04a86e5a0e
+[2:26:39 AM] 174 |         /**
+[2:26:39 AM] 175 |          * Create a new user account
+[2:26:39 AM] 176 |          */
+[2:26:39 AM] 177 |         create: procedure
+[2:26:39 AM] 178 |             .input(z.object({
+[2:26:39 AM] 179 |                 username: z.string().min(3),
+[2:26:39 AM]                                            ^
+[2:26:39 AM] TypeError: z.string().min is not a function. (In 'z.string().min(3)', 'z.string().min' is undefined)
+[2:26:39 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:179:38
+[2:26:39 AM] Bun v1.3.1 (Linux x64)
+[2:28:52 AM] [identity] Key fingerprint: 054d729d83b739dc
+[2:28:52 AM] 178 |             .input(z.object({
+[2:28:52 AM] 179 |                 username: z.string(),
+[2:28:52 AM] 180 |                 password: z.string(), // in production hash this!!
+[2:28:52 AM] 181 |                 email: z.string().optional(),
+[2:28:52 AM] 182 |                 role: z.enum(["admin", "user", "guest"]),
+[2:28:52 AM] 183 |                 metadata: z.record(z.any()).optional()
+[2:28:52 AM]                                   ^
+[2:28:52 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:28:52 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:183:29
+[2:28:52 AM] Bun v1.3.1 (Linux x64)
+[2:28:55 AM] [identity] Key fingerprint: a93cf724b1056ab5
+[2:28:55 AM] 178 |             .input(z.object({
+[2:28:55 AM] 179 |                 username: z.string(),
+[2:28:55 AM] 180 |                 password: z.string(), // in production hash this!!
+[2:28:55 AM] 181 |                 email: z.string().optional(),
+[2:28:55 AM] 182 |                 role: z.enum(["admin", "user", "guest"]),
+[2:28:55 AM] 183 |                 metadata: z.record(z.any()).optional()
+[2:28:55 AM]                                   ^
+[2:28:55 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:28:55 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:183:29
+[2:28:55 AM] Bun v1.3.1 (Linux x64)
+[2:29:05 AM] [identity] Key fingerprint: d54d83fa854fce27
+[2:29:05 AM] 178 |             .input(z.object({
+[2:29:05 AM] 179 |                 username: z.string(),
+[2:29:05 AM] 180 |                 password: z.string(), // in production hash this!!
+[2:29:05 AM] 181 |                 email: z.string().optional(),
+[2:29:05 AM] 182 |                 role: z.enum(["admin", "user", "guest"]),
+[2:29:05 AM] 183 |                 metadata: z.record(z.any()).optional()
+[2:29:05 AM]                                   ^
+[2:29:05 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:29:05 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:183:29
+[2:29:05 AM] Bun v1.3.1 (Linux x64)
+[2:29:19 AM] [identity] Key fingerprint: 7caa8c7adb2c2995
+[2:29:19 AM] 225 |          */
+[2:29:19 AM] 226 |         login: procedure
+[2:29:19 AM] 227 |             .input(z.object({
+[2:29:19 AM] 228 |                 username: z.string(),
+[2:29:19 AM] 229 |                 password: z.string(),
+[2:29:19 AM] 230 |                 deviceInfo: z.record(z.any()).optional()
+[2:29:19 AM]                                     ^
+[2:29:19 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:29:19 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:230:31
+[2:29:19 AM] Bun v1.3.1 (Linux x64)
+[2:29:26 AM] [identity] Key fingerprint: e2d0862169f2e7d5
+[2:29:26 AM] 225 |          */
+[2:29:26 AM] 226 |         login: procedure
+[2:29:26 AM] 227 |             .input(z.object({
+[2:29:26 AM] 228 |                 username: z.string(),
+[2:29:26 AM] 229 |                 password: z.string(),
+[2:29:26 AM] 230 |                 deviceInfo: z.record(z.any()).optional()
+[2:29:26 AM]                                     ^
+[2:29:26 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:29:26 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:230:31
+[2:29:26 AM] Bun v1.3.1 (Linux x64)
+[2:29:36 AM] [identity] Key fingerprint: 6a752689e724a493
+[2:29:36 AM] 225 |          */
+[2:29:36 AM] 226 |         login: procedure
+[2:29:36 AM] 227 |             .input(z.object({
+[2:29:36 AM] 228 |                 username: z.string(),
+[2:29:36 AM] 229 |                 password: z.string(),
+[2:29:36 AM] 230 |                 deviceInfo: z.record(z.any()).optional()
+[2:29:36 AM]                                     ^
+[2:29:36 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:29:36 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:230:31
+[2:29:36 AM] Bun v1.3.1 (Linux x64)
+[2:29:46 AM] [identity] Key fingerprint: 0b7af574df983b8c
+[2:29:46 AM] 392 |                     session: z.object({
+[2:29:46 AM] 393 |                         id: z.string(),
+[2:29:46 AM] 394 |                         startedAt: z.number(),
+[2:29:46 AM] 395 |                         lastActivity: z.number()
+[2:29:46 AM] 396 |                     }),
+[2:29:46 AM] 397 |                     preferences: z.record(z.any()),
+[2:29:46 AM]                                          ^
+[2:29:46 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:29:46 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:397:36
+[2:29:46 AM] Bun v1.3.1 (Linux x64)
+[2:29:47 AM] [identity] Key fingerprint: 4eb58b21298e3359
+[2:29:47 AM] 392 |                     session: z.object({
+[2:29:47 AM] 393 |                         id: z.string(),
+[2:29:47 AM] 394 |                         startedAt: z.number(),
+[2:29:47 AM] 395 |                         lastActivity: z.number()
+[2:29:47 AM] 396 |                     }),
+[2:29:47 AM] 397 |                     preferences: z.record(z.any()),
+[2:29:47 AM]                                          ^
+[2:29:47 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:29:47 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:397:36
+[2:29:47 AM] Bun v1.3.1 (Linux x64)
+[2:29:57 AM] [identity] Key fingerprint: 15549fc9a47c7518
+[2:29:57 AM] 392 |                     session: z.object({
+[2:29:57 AM] 393 |                         id: z.string(),
+[2:29:57 AM] 394 |                         startedAt: z.number(),
+[2:29:57 AM] 395 |                         lastActivity: z.number()
+[2:29:57 AM] 396 |                     }),
+[2:29:57 AM] 397 |                     preferences: z.record(z.any()),
+[2:29:57 AM]                                          ^
+[2:29:57 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:29:57 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:397:36
+[2:29:57 AM] Bun v1.3.1 (Linux x64)
+[2:30:06 AM] [identity] Key fingerprint: 38dc97f0d36e7ce8
+[2:30:06 AM] 512 |          * Update user preferences
+[2:30:06 AM] 513 |          */
+[2:30:06 AM] 514 |         updatePreferences: procedure
+[2:30:06 AM] 515 |             .input(z.object({
+[2:30:06 AM] 516 |                 token: z.string(),
+[2:30:06 AM] 517 |                 preferences: z.record(z.any())
+[2:30:06 AM]                                      ^
+[2:30:06 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:30:06 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:517:32
+[2:30:06 AM] Bun v1.3.1 (Linux x64)
+[2:30:16 AM] [identity] Key fingerprint: 857c08662cc86775
+[2:30:16 AM] 512 |          * Update user preferences
+[2:30:16 AM] 513 |          */
+[2:30:16 AM] 514 |         updatePreferences: procedure
+[2:30:16 AM] 515 |             .input(z.object({
+[2:30:16 AM] 516 |                 token: z.string(),
+[2:30:16 AM] 517 |                 preferences: z.record(z.any())
+[2:30:16 AM]                                      ^
+[2:30:16 AM] TypeError: z.record is not a function. (In 'z.record(z.any())', 'z.record' is undefined)
+[2:30:16 AM]       at /home/asdfghj/openjaws/openjaws/identity/index.ts:517:32
+[2:30:16 AM] Bun v1.3.1 (Linux x64)
+[2:30:19 AM] [identity] Key fingerprint: 5361858c7cd38643
+[2:30:19 AM] [32m[01:30:19.862] [INFO] [identity] 📋 Registered 7 capabilities with contracts[0m
+[2:30:19 AM] [32m[01:30:19.873] [INFO] [identity] Sovereign Cell online @ http://localhost:43889[0m
+[2:30:19 AM] [32m[01:30:19.884] [INFO] [identity] 🛡️ Identity cell online - User sessions & RBAC active[0m
+[2:30:21 AM] [32m[01:30:21.885] [INFO] [identity] 👤 Creating default admin user...[0m
+[2:30:21 AM] 594 | // Create default admin user if none exists
+[2:30:21 AM] 595 | setTimeout(async () => {
+[2:30:21 AM] 596 |     const hasAdmin = Object.values(users).some(u => u.role === "admin");
+[2:30:21 AM] 597 |     if (!hasAdmin) {
+[2:30:21 AM] 598 |         cell.log("INFO", "👤 Creating default admin user...");
+[2:30:21 AM] 599 |         await cell.identity.create({
+[2:30:21 AM]                          ^
+[2:30:21 AM] TypeError: undefined is not an object (evaluating 'cell.identity.create')
+[2:30:21 AM]       at <anonymous> (/home/asdfghj/openjaws/openjaws/identity/index.ts:599:20)
+[2:30:21 AM]       at <anonymous> (/home/asdfghj/openjaws/openjaws/identity/index.ts:595:12)
+[2:30:21 AM] Bun v1.3.1 (Linux x64)
+[2:30:55 AM] [identity] Key fingerprint: 9f06e23464ff3568
+[2:30:55 AM] [32m[01:30:55.405] [INFO] [identity] 📋 Registered 7 capabilities with contracts[0m
+[2:30:55 AM] [32m[01:30:55.439] [INFO] [identity] Sovereign Cell online @ http://localhost:35379[0m
+[2:30:55 AM] [32m[01:30:55.440] [INFO] [identity] 🛡️ Identity cell online - User sessions & RBAC active[0m
+[2:30:57 AM] [32m[01:30:57.441] [INFO] [identity] 👤 Creating default admin user...[0m
+[2:30:57 AM] [32m[01:30:57.442] [INFO] [identity] 👤 Created user: admin (admin)[0m
+[2:30:57 AM] [32m[01:30:57.442] [INFO] [identity] ✅ Default admin created: admin / admin123[0m
+[2:30:57 AM] [33m[01:30:57.442] [WARN] [identity] ⚠️  Please change the default admin password![0m
+[2:31:03 AM] [32m[01:31:03.242] [INFO] [identity] 🔐 Login: admin (admin) - Session 02df3f18[0m
+[2:31:13 AM] [32m[01:31:13.854] [INFO] [identity] 🔐 Login: admin (admin) - Session 2fef3339[0m
+[2:32:08 AM] [32m[01:32:08.144] [INFO] [identity] 🔐 Login: admin (admin) - Session ec0a41b8[0m
+[2:32:10 AM] [32m[01:32:10.967] [INFO] [identity] 🔐 Login: admin (admin) - Session 97a4a012[0m
+[2:32:11 AM] [32m[01:32:11.749] [INFO] [identity] 🔐 Login: admin (admin) - Session ade65a65[0m
+[2:32:32 AM] [32m[01:32:32.757] [INFO] [identity] 🔐 Login: admin (admin) - Session 07d9c399[0m
+[2:33:11 AM] [32m[01:33:11.154] [INFO] [identity] 🔐 Login: admin (admin) - Session 312b8f78[0m
+[2:33:11 AM] [32m[01:33:11.936] [INFO] [identity] 🔐 Login: admin (admin) - Session b403e9ed[0m
+[2:33:12 AM] [32m[01:33:12.154] [INFO] [identity] 🔐 Login: admin (admin) - Session 60f68b8c[0m
+[2:33:12 AM] [32m[01:33:12.361] [INFO] [identity] 🔐 Login: admin (admin) - Session 1ae695cd[0m
+[2:33:12 AM] [32m[01:33:12.528] [INFO] [identity] 🔐 Login: admin (admin) - Session 881a2a84[0m
+[2:33:12 AM] [32m[01:33:12.702] [INFO] [identity] 🔐 Login: admin (admin) - Session 0bf0fb58[0m
+[2:33:15 AM] [32m[01:33:15.517] [INFO] [identity] 🔐 Login: admin (admin) - Session af447b51[0m
+[2:34:10 AM] [32m[01:34:10.171] [INFO] [identity] 🔐 Login: admin (admin) - Session 4c046d03[0m
+[2:34:11 AM] [32m[01:34:11.025] [INFO] [identity] 🔐 Login: admin (admin) - Session a31de6dd[0m
+[2:35:41 AM] [32m[01:35:41.430] [INFO] [identity] 🔐 Login: admin (admin) - Session 802884e1[0m
+[2:35:48 AM] [32m[01:35:48.910] [INFO] [identity] 🔐 Login: admin (admin) - Session 44865787[0m
+[2:35:49 AM] [32m[01:35:49.691] [INFO] [identity] 🔐 Login: admin (admin) - Session 3a3d22af[0m
+[2:36:07 AM] [32m[01:36:07.770] [INFO] [identity] 🔐 Login: admin (admin) - Session d4414f2a[0m
+[2:36:08 AM] [32m[01:36:08.592] [INFO] [identity] 🔐 Login: admin (admin) - Session 4e898304[0m
+[2:37:07 AM] [32m[01:37:07.772] [INFO] [identity] 🔐 Login: admin (admin) - Session 84d3452e[0m
+[2:37:08 AM] [32m[01:37:08.516] [INFO] [identity] 🔐 Login: admin (admin) - Session 9f20a034[0m
+[2:37:08 AM] [32m[01:37:08.676] [INFO] [identity] 🔐 Login: admin (admin) - Session 34d04518[0m
+[2:37:08 AM] [32m[01:37:08.866] [INFO] [identity] 🔐 Login: admin (admin) - Session 94735b00[0m
+[2:37:09 AM] [32m[01:37:09.056] [INFO] [identity] 🔐 Login: admin (admin) - Session bb0e3492[0m
+[2:37:09 AM] [32m[01:37:09.236] [INFO] [identity] 🔐 Login: admin (admin) - Session 0585816a[0m
+[2:37:09 AM] [32m[01:37:09.413] [INFO] [identity] 🔐 Login: admin (admin) - Session ae60973c[0m
+[2:37:09 AM] [32m[01:37:09.612] [INFO] [identity] 🔐 Login: admin (admin) - Session 437902d7[0m
+[2:37:09 AM] [32m[01:37:09.956] [INFO] [identity] 🔐 Login: admin (admin) - Session 75c52d5a[0m
+[2:37:10 AM] [32m[01:37:10.186] [INFO] [identity] 🔐 Login: admin (admin) - Session ea3f9b29[0m
+[2:37:10 AM] [32m[01:37:10.406] [INFO] [identity] 🔐 Login: admin (admin) - Session 5553ba39[0m
+[2:38:22 AM] [32m[01:38:22.880] [INFO] [identity] 🔐 Login: admin (admin) - Session e9b331f7[0m
+[2:38:23 AM] [32m[01:38:23.716] [INFO] [identity] 🔐 Login: admin (admin) - Session 7306962b[0m
+[2:39:35 AM] [32m[01:39:35.069] [INFO] [identity] 🔐 Login: admin (admin) - Session 7653eeff[0m
+[2:39:53 AM] [32m[01:39:53.760] [INFO] [identity] 🔐 Login: admin (admin) - Session 0bf5ea53[0m
+[2:40:18 AM] [32m[01:40:18.719] [INFO] [identity] 🔐 Login: admin (admin) - Session 356ccf09[0m
+[2:40:42 AM] [32m[01:40:42.319] [INFO] [identity] 🔐 Login: admin (admin) - Session 80470768[0m
+[2:41:50 AM] [32m[01:41:50.341] [INFO] [identity] 🔐 Login: admin (admin) - Session 29db421c[0m
+[2:41:57 AM] [32m[01:41:57.446] [INFO] [identity] 🔐 Login: admin (admin) - Session 40226c7a[0m
+[2:42:19 AM] [32m[01:42:19.955] [INFO] [identity] 🔐 Login: admin (admin) - Session 4af3bd1d[0m
+[2:42:47 AM] [32m[01:42:47.943] [INFO] [identity] 🔐 Login: admin (admin) - Session 1dfde88a[0m
+[2:42:50 AM] [32m[01:42:50.150] [INFO] [identity] 🔐 Login: admin (admin) - Session ee8fa484[0m
+[2:42:52 AM] [32m[01:42:52.678] [INFO] [identity] 🔐 Login: admin (admin) - Session d58aa82c[0m
+[2:42:53 AM] [32m[01:42:53.208] [INFO] [identity] 🔐 Login: admin (admin) - Session 2f03ad8c[0m
+[2:42:53 AM] [32m[01:42:53.416] [INFO] [identity] 🔐 Login: admin (admin) - Session 2e9eb188[0m
+[2:44:00 AM] [32m[01:44:00.507] [INFO] [identity] 🔐 Login: admin (admin) - Session e8b14922[0m
+[2:44:02 AM] [32m[01:44:02.484] [INFO] [identity] 🔐 Login: admin (admin) - Session e07d41a4[0m
+[2:44:03 AM] [32m[01:44:03.036] [INFO] [identity] 🔐 Login: admin (admin) - Session 955cb6b8[0m
+[2:44:03 AM] [32m[01:44:03.220] [INFO] [identity] 🔐 Login: admin (admin) - Session 305211e8[0m
+[2:45:01 AM] [32m[01:45:01.559] [INFO] [identity] 🔐 Login: admin (admin) - Session 05ca5c97[0m
+[2:45:41 AM] [32m[01:45:41.333] [INFO] [identity] 🔐 Login: admin (admin) - Session 4b729303[0m
+[2:50:36 AM] [32m[01:50:36.478] [INFO] [identity] 🔐 Login: admin (admin) - Session d139e9eb[0m
+[2:52:35 AM] [32m[01:52:35.609] [INFO] [identity] 🔐 Login: admin (admin) - Session 33221489[0m
+[2:54:06 AM] [identity] Key fingerprint: d82f90c9d483387c
+[2:54:06 AM] [32m[01:54:06.420] [INFO] [identity] 📋 Registered 7 capabilities with contracts[0m
+[2:54:06 AM] [32m[01:54:06.449] [INFO] [identity] Sovereign Cell online @ http://localhost:37881[0m
+[2:54:06 AM] [32m[01:54:06.449] [INFO] [identity] 🛡️ Identity cell online - User sessions & RBAC active[0m

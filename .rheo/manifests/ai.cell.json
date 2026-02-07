@@ -1,0 +1,19 @@
+{
+  "pid": 76509,
+  "version": "81eba6f713197876",
+  "port": 39117,
+  "startTime": 1770459621047,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "ai/generate"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA+Jn1IDPP7hlDx1REr5wrB/m7bDxAhzGvD9028592q4w=\n-----END PUBLIC KEY-----\n"
+}

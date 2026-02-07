@@ -1,0 +1,23 @@
+{
+  "pid": 76507,
+  "version": "81eba6f713197876",
+  "port": 42425,
+  "startTime": 1770459621030,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "list/get",
+    "list/add",
+    "list/complete",
+    "list/summarize",
+    "list/suggest-tasks"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAeQAPxNWpGzLyP5FTLCwzK4VBQUBYbVMG7387eRNYyIc=\n-----END PUBLIC KEY-----\n"
+}

@@ -1,0 +1,19 @@
+{
+  "pid": 76483,
+  "version": "81eba6f713197876",
+  "port": 35231,
+  "startTime": 1770459620985,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "mesh/health"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAsNH/PLCZ3y+enbxTupshKpcgBh2mNTbCtxJzHZPztbs=\n-----END PUBLIC KEY-----\n"
+}

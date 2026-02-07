@@ -1,0 +1,18 @@
+{
+  "pid": 60028,
+  "version": "dc9ab985a98ecc9a",
+  "port": 33479,
+  "startTime": 1770426671121,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAUwHyROl/Sj8NXpsKYYHtsigmedW3IpKXVikkNIQQPqg=\n-----END PUBLIC KEY-----\n"
+}

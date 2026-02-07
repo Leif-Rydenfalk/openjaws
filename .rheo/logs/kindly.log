@@ -1,0 +1,112 @@
+[1:45:29 AM] [kindly_53612] Key fingerprint: 25a90f4c92e9a690
+[1:45:29 AM] [32m[00:45:29.218] [INFO] [kindly_53612] 📋 Registered 1 capabilities with contracts[0m
+[1:45:29 AM] [32m[00:45:29.230] [INFO] [kindly_53612] Sovereign Cell online @ http://localhost:33223[0m
+[1:45:31 AM] [kindly_53740] Key fingerprint: 1a6cc23a911c906d
+[1:45:31 AM] [32m[00:45:31.521] [INFO] [kindly_53740] 📋 Registered 1 capabilities with contracts[0m
+[1:45:31 AM] [32m[00:45:31.527] [INFO] [kindly_53740] Sovereign Cell online @ http://localhost:38281[0m
+[1:47:37 AM] [kindly_54040] Key fingerprint: 2578f9ebb364c808
+[1:47:37 AM] [32m[00:47:37.539] [INFO] [kindly_54040] 📋 Registered 1 capabilities with contracts[0m
+[1:47:37 AM] [32m[00:47:37.553] [INFO] [kindly_54040] Sovereign Cell online @ http://localhost:40323[0m
+[1:48:59 AM] [kindly] Key fingerprint: 817c325d7bca66e5
+[1:48:59 AM] [32m[00:48:59.771] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[1:48:59 AM] [32m[00:48:59.788] [INFO] [kindly] Sovereign Cell online @ http://localhost:45769[0m
+[1:52:49 AM] [kindly] Key fingerprint: a86705022d9df9b4
+[1:52:49 AM] [32m[00:52:49.255] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[1:52:49 AM] [32m[00:52:49.267] [INFO] [kindly] Sovereign Cell online @ http://localhost:40245[0m
+[1:53:27 AM] [31m[00:53:27.861] [ERROR] [kindly] Kindly failed to reach AI: Mesh call failed: ai/generate
+[1:53:27 AM] Error: No route to ai/generate after exhaustive search (Providers: 1, Neighbors: 3)[0m
+[1:53:38 AM] [31m[00:53:38.503] [ERROR] [kindly] Kindly failed to reach AI: Mesh call failed: ai/generate
+[1:53:38 AM] Error: No route to ai/generate after exhaustive search (Providers: 1, Neighbors: 3)[0m
+[1:55:00 AM] [kindly] Key fingerprint: c09aa80310371410
+[1:55:00 AM] [32m[00:55:00.779] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[1:55:00 AM] [32m[00:55:00.798] [INFO] [kindly] Sovereign Cell online @ http://localhost:34343[0m
+[1:55:30 AM] [31m[00:55:30.734] [ERROR] [kindly] Kindly failed to reach AI: Mesh call failed: ai/generate
+[1:55:30 AM] Error: No route to ai/generate after exhaustive search (Providers: 1, Neighbors: 3)[0m
+[1:57:35 AM] [kindly] Key fingerprint: db796f409a167a75
+[1:57:35 AM] [32m[00:57:35.043] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[1:57:35 AM] [32m[00:57:35.067] [INFO] [kindly] Sovereign Cell online @ http://localhost:39121[0m
+[1:57:46 AM] [kindly] Key fingerprint: 6d2396895e957316
+[1:57:46 AM] [32m[00:57:46.678] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[1:57:46 AM] [32m[00:57:46.688] [INFO] [kindly] Sovereign Cell online @ http://localhost:39121[0m
+[1:57:56 AM] [kindly] Key fingerprint: 6c219103c6baf2d7
+[1:57:56 AM] [32m[00:57:56.326] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[1:57:56 AM] [32m[00:57:56.332] [INFO] [kindly] Sovereign Cell online @ http://localhost:39121[0m
+[1:57:56 AM] [32m[00:57:56.823] [INFO] [kindly] 🌐 ~1 → 10p/30c[0m
+[1:57:56 AM] [32m[00:57:56.875] [INFO] [kindly] 🌐 ~1 → 11p/31c[0m
+[2:00:23 AM] [kindly] Key fingerprint: 29ac4bd19c062927
+[2:00:23 AM] [32m[01:00:22.978] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[2:00:23 AM] [32m[01:00:22.999] [INFO] [kindly] Sovereign Cell online @ http://localhost:44993[0m
+[2:01:08 AM] [32m[01:01:08.074] [INFO] [kindly] 🌐 ~2 → 14p/31c[0m
+[2:08:33 AM] [kindly] Key fingerprint: fad420f57c46fdc1
+[2:08:33 AM] [32m[01:08:33.847] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[2:08:33 AM] [32m[01:08:33.855] [INFO] [kindly] Sovereign Cell online @ http://localhost:34073[0m
+[2:09:17 AM] [kindly] Key fingerprint: 3eb90c637ad0e4fe
+[2:09:17 AM] [32m[01:09:17.981] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[2:09:18 AM] [32m[01:09:18.001] [INFO] [kindly] Sovereign Cell online @ http://localhost:45667[0m
+[2:09:35 AM] [kindly] Key fingerprint: 99a0c9788d81e8c1
+[2:09:35 AM] [32m[01:09:35.012] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[2:09:35 AM] [32m[01:09:35.053] [INFO] [kindly] Sovereign Cell online @ http://localhost:45667[0m
+[2:09:46 AM] [32m[01:09:46.623] [INFO] [kindly] 🌐 ~5 → 11p/31c[0m
+[2:09:46 AM] [32m[01:09:46.624] [INFO] [kindly] Processing message: list mesh[0m
+[2:09:48 AM] [32m[01:09:48.626] [INFO] [kindly] 🌐 ~5 → 12p/31c[0m
+[2:09:50 AM] [32m[01:09:50.061] [INFO] [kindly] 🌐 ~2 → 17p/31c[0m
+[2:09:50 AM] [32m[01:09:50.630] [INFO] [kindly] 🌐 ~3 → 12p/31c[0m
+[2:10:04 AM] [32m[01:10:04.946] [INFO] [kindly] 🌐 ~1 → 17p/31c[0m
+[2:10:05 AM] [32m[01:10:05.049] [INFO] [kindly] 🌐 ~1 → 17p/31c[0m
+[2:10:19 AM] [32m[01:10:19.947] [INFO] [kindly] 🌐 ~1 → 17p/31c[0m
+[2:11:11 AM] [kindly] Key fingerprint: d0e0f9c9373ebf2e
+[2:11:11 AM] [32m[01:11:11.216] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[2:11:11 AM] [32m[01:11:11.223] [INFO] [kindly] Sovereign Cell online @ http://localhost:36629[0m
+[2:11:18 AM] [32m[01:11:18.882] [INFO] [kindly] Processing message: list mesh[0m
+[2:11:32 AM] [32m[01:11:32.392] [INFO] [kindly] Processing message: list mesh[0m
+[2:14:18 AM] [32m[01:14:18.154] [INFO] [kindly] Processing message: my name is leif[0m
+[2:14:21 AM] [32m[01:14:21.452] [INFO] [kindly] Stored identity fact to memory[0m
+[2:14:25 AM] [32m[01:14:25.969] [INFO] [kindly] Processing message: wuats my name?[0m
+[2:14:25 AM] [32m[01:14:25.972] [INFO] [kindly] Retrieved 1 relevant memories[0m
+[2:25:19 AM] [kindly] Key fingerprint: 4e0dba3011c3c60e
+[2:25:19 AM] [32m[01:25:18.957] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:25:19 AM] [32m[01:25:18.971] [INFO] [kindly] Sovereign Cell online @ http://localhost:38009[0m
+[2:28:52 AM] [kindly] Key fingerprint: adf600c8782a4ff0
+[2:28:52 AM] [32m[01:28:52.115] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:28:52 AM] [32m[01:28:52.120] [INFO] [kindly] Sovereign Cell online @ http://localhost:43433[0m
+[2:28:55 AM] [kindly] Key fingerprint: c4ec6d55119a29ce
+[2:28:55 AM] [32m[01:28:55.772] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:28:55 AM] [32m[01:28:55.778] [INFO] [kindly] Sovereign Cell online @ http://localhost:43433[0m
+[2:28:56 AM] [32m[01:28:56.313] [INFO] [kindly] 🌐 ~2 → 10p/32c[0m
+[2:29:19 AM] [kindly] Key fingerprint: caca0cea8cccdcfd
+[2:29:19 AM] [32m[01:29:19.096] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:29:19 AM] [32m[01:29:19.101] [INFO] [kindly] Sovereign Cell online @ http://localhost:43433[0m
+[2:29:19 AM] [32m[01:29:19.647] [INFO] [kindly] 🌐 ~1 → 10p/32c[0m
+[2:29:26 AM] [kindly] Key fingerprint: a17f953947c75ce2
+[2:29:26 AM] [32m[01:29:26.351] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:29:26 AM] [32m[01:29:26.366] [INFO] [kindly] Sovereign Cell online @ http://localhost:43433[0m
+[2:29:47 AM] [kindly] Key fingerprint: ece54aba715aebcc
+[2:29:47 AM] [32m[01:29:47.557] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:29:47 AM] [32m[01:29:47.576] [INFO] [kindly] Sovereign Cell online @ http://localhost:43433[0m
+[2:30:06 AM] [kindly] Key fingerprint: f5efb6e23fa27aee
+[2:30:06 AM] [32m[01:30:06.211] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:30:06 AM] [32m[01:30:06.241] [INFO] [kindly] Sovereign Cell online @ http://localhost:43433[0m
+[2:30:19 AM] [kindly] Key fingerprint: b3f6e352a08e8dca
+[2:30:19 AM] [32m[01:30:19.894] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:30:19 AM] [32m[01:30:19.907] [INFO] [kindly] Sovereign Cell online @ http://localhost:43433[0m
+[2:30:20 AM] [32m[01:30:20.428] [INFO] [kindly] 🌐 ~1 → 11p/39c[0m
+[2:30:49 AM] [32m[01:30:49.893] [INFO] [kindly] 🌐 ~1 → 11p/39c[0m
+[2:30:49 AM] [32m[01:30:49.949] [INFO] [kindly] 🌐 ~1 → 11p/39c[0m
+[2:30:55 AM] [kindly] Key fingerprint: c34273c45ffde4dc
+[2:30:55 AM] [32m[01:30:55.409] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:30:55 AM] [32m[01:30:55.435] [INFO] [kindly] Sovereign Cell online @ http://localhost:35425[0m
+[2:54:06 AM] [kindly] Key fingerprint: 066355d1c5655d09
+[2:54:06 AM] [32m[01:54:06.534] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:54:06 AM] [32m[01:54:06.546] [INFO] [kindly] Sovereign Cell online @ http://localhost:44289[0m
+[3:15:38 AM] [kindly] Key fingerprint: 5a4d256b0db178a5
+[3:15:38 AM] [32m[02:15:38.061] [INFO] [kindly] 📋 Registered 3 capabilities with contracts[0m
+[3:15:38 AM] [32m[02:15:38.067] [INFO] [kindly] Sovereign Cell online @ http://localhost:41395[0m
+[3:15:38 AM] [32m[02:15:38.068] [INFO] [kindly] 🧠 Temporal Memory-Aware Kindly cell initialized[0m
+[11:05:18 AM] [kindly] Key fingerprint: 7a0f51bbca5df569
+[11:05:18 AM] [32m[10:05:18.208] [INFO] [kindly] 📋 Registered 3 capabilities with contracts[0m
+[11:05:18 AM] [32m[10:05:18.234] [INFO] [kindly] Sovereign Cell online @ http://localhost:36413[0m
+[11:05:18 AM] [32m[10:05:18.237] [INFO] [kindly] 🧠 Temporal Memory-Aware Kindly cell initialized[0m
+[11:20:21 AM] [kindly] Key fingerprint: 1db874beb5a6d9fc
+[11:20:21 AM] [32m[10:20:20.970] [INFO] [kindly] 📋 Registered 3 capabilities with contracts[0m
+[11:20:21 AM] [32m[10:20:20.982] [INFO] [kindly] Sovereign Cell online @ http://localhost:43159[0m
+[11:20:21 AM] [32m[10:20:20.984] [INFO] [kindly] 🧠 Temporal Memory-Aware Kindly cell initialized[0m

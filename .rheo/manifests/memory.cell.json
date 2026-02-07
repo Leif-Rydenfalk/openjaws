@@ -1,0 +1,23 @@
+{
+  "pid": 76468,
+  "version": "81eba6f713197876",
+  "port": 34851,
+  "startTime": 1770459620948,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "memory/store",
+    "memory/search",
+    "memory/get-session",
+    "memory/suggest-from-patterns",
+    "memory/prune"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAVqiFFcdODTijt2I7vslRO6K4ynEJtaCGvRYARtu8M48=\n-----END PUBLIC KEY-----\n"
+}

@@ -1,0 +1,18 @@
+{
+  "pid": 62104,
+  "version": "81eba6f713197876",
+  "port": 37469,
+  "startTime": 1770427732006,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA2JFOoNPj6dNhtPUueYVUk1gMAsBJ1JmNPqGbVXsbjJE=\n-----END PUBLIC KEY-----\n"
+}

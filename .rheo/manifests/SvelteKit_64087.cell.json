@@ -1,0 +1,18 @@
+{
+  "pid": 64087,
+  "version": "81eba6f713197876",
+  "port": 43735,
+  "startTime": 1770428146068,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAg25zpQHWL6+/r8QZPmjOXl69kdFPoLVeZa4VUossmaA=\n-----END PUBLIC KEY-----\n"
+}

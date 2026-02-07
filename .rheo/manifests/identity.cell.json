@@ -1,0 +1,25 @@
+{
+  "pid": 65416,
+  "version": "81eba6f713197876",
+  "port": 37881,
+  "startTime": 1770429246449,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "identity/create",
+    "identity/login",
+    "identity/verify",
+    "identity/getContext",
+    "identity/logout",
+    "identity/listSessions",
+    "identity/updatePreferences"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAN43JDrKmJ9yWnlGam2l5ICMjYWgaRps9XLd6Hv/hyMA=\n-----END PUBLIC KEY-----\n"
+}

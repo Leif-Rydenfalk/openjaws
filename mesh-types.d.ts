@@ -1,6 +1,6 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T02:31:08.133Z
+ * Generated: 2026-02-07T10:20:26.073Z
  * Source: Live mesh scan (24 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
@@ -118,4 +118,4 @@ export type ProjectsCapabilities = {
     write: { input: any; output: any };
 };
 
-// Type trigger: 1770431468133
+// Type trigger: 1770459626075

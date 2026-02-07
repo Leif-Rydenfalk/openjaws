@@ -1,0 +1,18 @@
+{
+  "pid": 58352,
+  "version": "0bb2c8a51fdb2e7c",
+  "port": 33509,
+  "startTime": 1770426022899,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAsAMbgB3UY4EoHkoHAmn+hkeAdPY+VI/sW7ly0Za4INo=\n-----END PUBLIC KEY-----\n"
+}

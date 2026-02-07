@@ -1,0 +1,134 @@
+[1:45:29 AM] [ai_53612] Key fingerprint: ef01dca18d2d1f94
+[1:45:29 AM] [32m[00:45:29.277] [INFO] [ai_53612] 📋 Registered 1 capabilities with contracts[0m
+[1:45:29 AM] [32m[00:45:29.286] [INFO] [ai_53612] Sovereign Cell online @ http://localhost:37675[0m
+[1:45:31 AM] [ai_53740] Key fingerprint: 62f965ef40f81d01
+[1:45:31 AM] [32m[00:45:31.610] [INFO] [ai_53740] 📋 Registered 1 capabilities with contracts[0m
+[1:45:31 AM] [32m[00:45:31.615] [INFO] [ai_53740] Sovereign Cell online @ http://localhost:46331[0m
+[1:47:37 AM] [ai_54040] Key fingerprint: 5eae0b5aa6ecdd13
+[1:47:37 AM] [32m[00:47:37.582] [INFO] [ai_54040] 📋 Registered 1 capabilities with contracts[0m
+[1:47:37 AM] [32m[00:47:37.591] [INFO] [ai_54040] Sovereign Cell online @ http://localhost:37931[0m
+[1:48:27 AM] [32m[00:48:27.820] [INFO] [ai_54040] Generating content for prompt: User Message: awdadw
+[1:48:27 AM] History: []...[0m
+[1:48:27 AM] [31m[00:48:27.966] [ERROR] [ai_54040] Gemini API Error: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.[0m
+[1:48:59 AM] [ai] Key fingerprint: dce800ca14d1f968
+[1:48:59 AM] [32m[00:48:59.845] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[1:48:59 AM] [32m[00:48:59.850] [INFO] [ai] Sovereign Cell online @ http://localhost:33707[0m
+[1:49:05 AM] [32m[00:49:05.019] [INFO] [ai] Generating content for prompt: User Message: hello
+[1:49:05 AM] History: []...[0m
+[1:49:21 AM] [32m[00:49:21.580] [INFO] [ai] Generating content for prompt: User Message: what cells can you see?
+[1:49:21 AM] History: []...[0m
+[1:49:24 AM] [32m[00:49:24.546] [INFO] [ai] Generating content for prompt: User Message: what cells can you see?
+[1:49:24 AM] History: []...[0m
+[1:52:49 AM] [ai] Key fingerprint: 6a0c3e37070d7956
+[1:52:49 AM] [32m[00:52:49.275] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[1:52:49 AM] [32m[00:52:49.289] [INFO] [ai] Sovereign Cell online @ http://localhost:38827[0m
+[1:53:03 AM] [32m[00:53:03.014] [INFO] [ai] Generating content for prompt: Hello...[0m
+[1:53:23 AM] [32m[00:53:23.857] [INFO] [ai] Generating content for prompt: What do you do? what can you do? whats the purpose...[0m
+[1:53:32 AM] [32m[00:53:32.287] [INFO] [ai] Generating content for prompt: Hello...[0m
+[1:53:34 AM] [32m[00:53:34.500] [INFO] [ai] Generating content for prompt: what...[0m
+[1:55:00 AM] [ai] Key fingerprint: 10c74f6c76f14aaa
+[1:55:00 AM] [32m[00:55:00.815] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[1:55:00 AM] [32m[00:55:00.830] [INFO] [ai] Sovereign Cell online @ http://localhost:38869[0m
+[1:55:29 AM] [32m[00:55:29.721] [INFO] [ai] Generating content for prompt: awddawdw...[0m
+[1:55:34 AM] [32m[00:55:34.398] [INFO] [ai] Generating content for prompt: hello...[0m
+[1:57:35 AM] [ai] Key fingerprint: 4aea136f1fb64f04
+[1:57:35 AM] [32m[00:57:35.091] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[1:57:35 AM] [32m[00:57:35.097] [INFO] [ai] Sovereign Cell online @ http://localhost:41593[0m
+[1:57:46 AM] [ai] Key fingerprint: 51b38a12c2cdd0af
+[1:57:46 AM] [32m[00:57:46.738] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[1:57:46 AM] [32m[00:57:46.744] [INFO] [ai] Sovereign Cell online @ http://localhost:41593[0m
+[1:57:56 AM] [ai] Key fingerprint: 3f528b2db0e43bf6
+[1:57:56 AM] [32m[00:57:56.350] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[1:57:56 AM] [32m[00:57:56.371] [INFO] [ai] Sovereign Cell online @ http://localhost:41593[0m
+[1:57:56 AM] [32m[00:57:56.725] [INFO] [ai] 🌐 ~2 → 10p/27c[0m
+[1:57:56 AM] [32m[00:57:56.910] [INFO] [ai] 🌐 ~1 → 11p/31c[0m
+[1:58:11 AM] [32m[00:58:11.408] [INFO] [ai] 🌐 ~1 → 13p/31c[0m
+[1:58:20 AM] [32m[00:58:20.415] [INFO] [ai] Generating content for prompt: hello...[0m
+[1:58:31 AM] [32m[00:58:31.208] [INFO] [ai] Generating content for prompt: awdwd...[0m
+[1:58:34 AM] [32m[00:58:34.204] [INFO] [ai] Generating content for prompt: awdadw...[0m
+[1:58:43 AM] [32m[00:58:43.932] [INFO] [ai] Generating content for prompt: 1 + 1...[0m
+[1:58:48 AM] [32m[00:58:48.398] [INFO] [ai] Generating content for prompt: 1 + 1...[0m
+[1:58:54 AM] [32m[00:58:54.247] [INFO] [ai] Generating content for prompt: 23535 + 53...[0m
+[1:59:02 AM] [32m[00:59:02.631] [INFO] [ai] Generating content for prompt: you pass bread...[0m
+[2:00:23 AM] [ai] Key fingerprint: 4ff144a99d370f2d
+[2:00:23 AM] [32m[01:00:23.042] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:00:23 AM] [32m[01:00:23.050] [INFO] [ai] Sovereign Cell online @ http://localhost:38907[0m
+[2:00:28 AM] [32m[01:00:28.072] [INFO] [ai] Generating content for prompt: History: []
+[2:00:28 AM] User: dawawd...[0m
+[2:00:32 AM] [32m[01:00:32.940] [INFO] [ai] Generating content for prompt: History: []
+[2:00:32 AM] User: hello...[0m
+[2:00:46 AM] [32m[01:00:46.778] [INFO] [ai] Generating content for prompt: History: []
+[2:00:46 AM] User: gello...[0m
+[2:06:21 AM] [32m[01:06:21.587] [INFO] [ai] Generating content for prompt: History: []
+[2:06:21 AM] User: status...[0m
+[2:06:32 AM] [32m[01:06:32.436] [INFO] [ai] Generating content for prompt: History: []
+[2:06:32 AM] User: list mesh...[0m
+[2:06:43 AM] [32m[01:06:43.014] [INFO] [ai] Generating content for prompt: History: []
+[2:06:43 AM] User: hello...[0m
+[2:06:48 AM] [32m[01:06:48.235] [INFO] [ai] Generating content for prompt: History: []
+[2:06:48 AM] User: status...[0m
+[2:06:52 AM] [32m[01:06:52.415] [INFO] [ai] Generating content for prompt: History: []
+[2:06:52 AM] User: list mesh...[0m
+[2:06:59 AM] [32m[01:06:59.276] [INFO] [ai] Generating content for prompt: History: []
+[2:06:59 AM] User: my name is leif...[0m
+[2:07:05 AM] [32m[01:07:05.786] [INFO] [ai] Generating content for prompt: History: []
+[2:07:05 AM] User: what is my name?...[0m
+[2:08:33 AM] [ai] Key fingerprint: a5649d9376dd7db9
+[2:08:33 AM] [32m[01:08:33.909] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:08:33 AM] [32m[01:08:33.920] [INFO] [ai] Sovereign Cell online @ http://localhost:37539[0m
+[2:09:18 AM] [ai] Key fingerprint: 062da4a2ac4294b7
+[2:09:18 AM] [32m[01:09:18.027] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:09:18 AM] [32m[01:09:18.032] [INFO] [ai] Sovereign Cell online @ http://localhost:43315[0m
+[2:09:35 AM] [ai] Key fingerprint: a59409c198b157b2
+[2:09:35 AM] [32m[01:09:35.009] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:09:35 AM] [32m[01:09:35.022] [INFO] [ai] Sovereign Cell online @ http://localhost:43315[0m
+[2:11:11 AM] [ai] Key fingerprint: 8e5899b876b30409
+[2:11:11 AM] [32m[01:11:11.301] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:11:11 AM] [32m[01:11:11.308] [INFO] [ai] Sovereign Cell online @ http://localhost:41861[0m
+[2:25:19 AM] [ai] Key fingerprint: 32ca4051c4444cba
+[2:25:19 AM] [32m[01:25:19.063] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:25:19 AM] [32m[01:25:19.073] [INFO] [ai] Sovereign Cell online @ http://localhost:44027[0m
+[2:28:52 AM] [ai] Key fingerprint: 5bad2f778f62f9d0
+[2:28:52 AM] [32m[01:28:52.190] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:28:52 AM] [32m[01:28:52.196] [INFO] [ai] Sovereign Cell online @ http://localhost:37293[0m
+[2:28:55 AM] [ai] Key fingerprint: 20c9271922563ca7
+[2:28:55 AM] [32m[01:28:55.720] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:28:55 AM] [32m[01:28:55.725] [INFO] [ai] Sovereign Cell online @ http://localhost:37293[0m
+[2:29:19 AM] [ai] Key fingerprint: 130791b6da69adc6
+[2:29:19 AM] [32m[01:29:19.172] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:29:19 AM] [32m[01:29:19.176] [INFO] [ai] Sovereign Cell online @ http://localhost:37293[0m
+[2:29:19 AM] [32m[01:29:19.727] [INFO] [ai] 🌐 ~1 → 10p/32c[0m
+[2:29:26 AM] [ai] Key fingerprint: 57f3b70b65064fd1
+[2:29:26 AM] [32m[01:29:26.469] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:29:26 AM] [32m[01:29:26.475] [INFO] [ai] Sovereign Cell online @ http://localhost:37293[0m
+[2:29:47 AM] [ai] Key fingerprint: 9e30a4823c8323b5
+[2:29:47 AM] [32m[01:29:47.540] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:29:47 AM] [32m[01:29:47.550] [INFO] [ai] Sovereign Cell online @ http://localhost:37293[0m
+[2:29:47 AM] [32m[01:29:47.883] [INFO] [ai] 🌐 ~3 → 9p/30c[0m
+[2:29:47 AM] [32m[01:29:47.962] [INFO] [ai] 🌐 ~1 → 10p/32c[0m
+[2:29:48 AM] [32m[01:29:48.069] [INFO] [ai] 🌐 ~1 → 10p/32c[0m
+[2:30:02 AM] [32m[01:30:02.522] [INFO] [ai] 🌐 ~1 → 10p/32c[0m
+[2:30:02 AM] [32m[01:30:02.568] [INFO] [ai] 🌐 ~1 → 10p/32c[0m
+[2:30:02 AM] [32m[01:30:02.612] [INFO] [ai] 🌐 ~1 → 10p/32c[0m
+[2:30:06 AM] [ai] Key fingerprint: 36d6b8dc86151447
+[2:30:06 AM] [32m[01:30:06.143] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:30:06 AM] [32m[01:30:06.151] [INFO] [ai] Sovereign Cell online @ http://localhost:37293[0m
+[2:30:19 AM] [ai] Key fingerprint: 88f5c710036fdd44
+[2:30:19 AM] [32m[01:30:19.965] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:30:19 AM] [32m[01:30:19.977] [INFO] [ai] Sovereign Cell online @ http://localhost:37293[0m
+[2:30:20 AM] [32m[01:30:20.476] [INFO] [ai] 🌐 ~1 → 11p/39c[0m
+[2:30:55 AM] [ai] Key fingerprint: a741879991f09b70
+[2:30:55 AM] [32m[01:30:55.493] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:30:55 AM] [32m[01:30:55.504] [INFO] [ai] Sovereign Cell online @ http://localhost:46859[0m
+[2:54:06 AM] [ai] Key fingerprint: 60a76402abb48160
+[2:54:06 AM] [32m[01:54:06.495] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[2:54:06 AM] [32m[01:54:06.516] [INFO] [ai] Sovereign Cell online @ http://localhost:39081[0m
+[3:15:38 AM] [ai] Key fingerprint: 622bece5133c61dc
+[3:15:38 AM] [32m[02:15:38.105] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[3:15:38 AM] [32m[02:15:38.111] [INFO] [ai] Sovereign Cell online @ http://localhost:43041[0m
+[11:05:18 AM] [ai] Key fingerprint: 1f2aed085d749b17
+[11:05:18 AM] [32m[10:05:18.307] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[11:05:18 AM] [32m[10:05:18.311] [INFO] [ai] Sovereign Cell online @ http://localhost:37145[0m
+[11:20:21 AM] [ai] Key fingerprint: 9669a9466634c97d
+[11:20:21 AM] [32m[10:20:21.035] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[11:20:21 AM] [32m[10:20:21.046] [INFO] [ai] Sovereign Cell online @ http://localhost:39117[0m

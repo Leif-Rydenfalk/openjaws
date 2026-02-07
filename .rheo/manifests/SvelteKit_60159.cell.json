@@ -1,0 +1,18 @@
+{
+  "pid": 60159,
+  "version": "dc9ab985a98ecc9a",
+  "port": 36665,
+  "startTime": 1770426688775,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAiMY1cu4Xj6nl/3iPfFsuCtr+9fcFGKODJByO39GOF/A=\n-----END PUBLIC KEY-----\n"
+}

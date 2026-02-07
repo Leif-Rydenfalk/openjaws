@@ -1,0 +1,18 @@
+{
+  "pid": 56061,
+  "version": "0bb2c8a51fdb2e7c",
+  "port": 42329,
+  "startTime": 1770425883071,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAcKl8wO2r2L3ed4ZLsPO2FzY8x58yZDXAqwNDNEfGFI8=\n-----END PUBLIC KEY-----\n"
+}
