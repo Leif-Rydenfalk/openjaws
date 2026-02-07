@@ -1,6 +1,6 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T00:35:41.503Z
+ * Generated: 2026-02-07T01:00:53.102Z
  * Source: Live mesh scan (19 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
@@ -9,10 +9,10 @@
 
 declare module "./protocols/typed-mesh" {
     interface MeshCapabilities {
-        "ai/embed": { input: any; output: any };
         "ai/generate": { input: any; output: any };
         "architect/consult": { input: any; output: any };
         "coder/develop": { input: any; output: any };
+        "kindly/chat": { input: any; output: any };
         "list/add": { input: any; output: any };
         "list/complete": { input: any; output: any };
         "list/get": { input: any; output: any };
@@ -39,7 +39,6 @@ declare module "./protocols/typed-mesh" {
  * Capabilities in the ai namespace
  */
 export type AiCapabilities = {
-    embed: { input: any; output: any };
     generate: { input: any; output: any };
 };
 
@@ -55,6 +54,13 @@ export type ArchitectCapabilities = {
  */
 export type CoderCapabilities = {
     develop: { input: any; output: any };
+};
+
+/**
+ * Capabilities in the kindly namespace
+ */
+export type KindlyCapabilities = {
+    chat: { input: any; output: any };
 };
 
 /**
@@ -102,4 +108,4 @@ export type ProjectsCapabilities = {
     write: { input: any; output: any };
 };
 
-// Type trigger: 1770424541504
+// Type trigger: 1770426053103

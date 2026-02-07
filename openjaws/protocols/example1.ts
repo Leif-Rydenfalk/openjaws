@@ -433,7 +433,9 @@ export class RheoCell {
         if (process.env.RHEO_CELL_ID) this.id = process.env.RHEO_CELL_ID;
 
         this.cellDir = process.cwd();
-        this.manifestPath = join(this.cellDir, `${this.id}.cell.json`);
+        const manifestDir = join(cellsRoot, ".rheo", "manifests");
+        if (!existsSync(manifestDir)) mkdirSync(manifestDir, { recursive: true });
+        this.manifestPath = join(manifestDir, `${this.id}.cell.json`);
 
         // --- IDENTITY GENERATION (Session-based Ed25519) ---
         // Generate Identity with explicit Ed25519
@@ -1275,6 +1277,29 @@ export class RheoCell {
         if (this.isShuttingDown) return;
         let now = Date.now();
 
+        for (const [key, entry] of Object.entries(incoming)) {
+            const cellId = entry.id || key;
+            if (cellId === this.id) continue;
+
+            // Fix: Use ID as key, but only if the entry is newer or we don't have it
+            const existing = this.atlas[cellId];
+
+            // STALENESS CHECK: Ignore entries older than 30 seconds
+            if (now - entry.lastSeen > 30000) {
+                if (existing && existing.addr === entry.addr) delete this.atlas[cellId];
+                continue;
+            }
+
+            if (!existing || entry.lastSeen > existing.lastSeen || entry.addr !== existing.addr) {
+                // This is a fresh or better entry
+                this.atlas[cellId] = {
+                    ...entry,
+                    lastGossiped: now,
+                    gossipHopCount: receivedViaGossip ? Math.min((entry.gossipHopCount || 0) + 1, 3) : 0
+                };
+            }
+        }
+
         // Track changes for logging - ONLY meaningful changes
         let addedPeers: string[] = [];
         let removedPeers: string[] = [];
@@ -1395,7 +1420,7 @@ export class RheoCell {
             const currentCaps = new Set(Object.values(this.atlas).flatMap(e => e.caps)).size;
 
             const changeStr = parts.join(' ');
-            // this.log("INFO", `🌐 ${changeStr} → ${currentPeers}p/${currentCaps}c`);
+            this.log("INFO", `🌐 ${changeStr} → ${currentPeers}p/${currentCaps}c`);
         }
 
         // Notify callbacks only on meaningful changes
