@@ -185,3 +185,13 @@
 [9:15:50 PM] [32m[20:15:50.208] [INFO] [kindly]    Reason: I am checking the recent conversation history to see if there is any context from the current session that wasn't captured in the search.[0m
 [9:16:05 PM] [32m[20:16:05.784] [INFO] [kindly] 🔧 AI calling: list_get[0m
 [9:16:05 PM] [32m[20:16:05.784] [INFO] [kindly]    Reason: I need to retrieve the current task list to show the user what's on it.[0m
+[9:34:13 PM] [kindly] Key fingerprint: 50d4fbb8f2cffc9d
+[9:34:13 PM] [32m[20:34:13.871] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[9:34:13 PM] [32m[20:34:13.887] [INFO] [kindly] Sovereign Cell online @ http://localhost:34947[0m
+[9:34:13 PM] [32m[20:34:13.887] [INFO] [kindly] 🧠 Kindly online - temporal agent mode[0m
+[9:34:13 PM] [32m[20:34:13.887] [INFO] [kindly]    Features: Perfect memory | Pattern learning | Proactive action[0m
+[9:36:08 PM] [kindly] Key fingerprint: 43012bdadedfb663
+[9:36:08 PM] [32m[20:36:08.133] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[9:36:08 PM] [32m[20:36:08.138] [INFO] [kindly] Sovereign Cell online @ http://localhost:32833[0m
+[9:36:08 PM] [32m[20:36:08.139] [INFO] [kindly] 🧠 Kindly online - temporal agent mode[0m
+[9:36:08 PM] [32m[20:36:08.139] [INFO] [kindly]    Features: Perfect memory | Pattern learning | Proactive action[0m

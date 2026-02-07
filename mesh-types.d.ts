@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T20:26:24.479Z
- * Source: Live mesh scan (37 capabilities)
+ * Generated: 2026-02-07T20:39:08.201Z
+ * Source: Live mesh scan (29 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -26,14 +26,6 @@ declare module "./protocols/typed-mesh" {
         "list/summarize": { input: any; output: any };
         "log/get": { input: any; output: any };
         "log/info": { input: any; output: any };
-        "memory/cleanup": { input: any; output: any };
-        "memory/get-by-tag": { input: any; output: any };
-        "memory/get-recent": { input: any; output: any };
-        "memory/get-session": { input: any; output: any };
-        "memory/get-thread": { input: any; output: any };
-        "memory/search": { input: any; output: any };
-        "memory/stats": { input: any; output: any };
-        "memory/store": { input: any; output: any };
         "mesh/health": { input: any; output: any };
         "mesh/ping": { input: any; output: any };
         "projects/exec": { input: any; output: any };
@@ -113,20 +105,6 @@ export type LogCapabilities = {
 };
 
 /**
- * Capabilities in the memory namespace
- */
-export type MemoryCapabilities = {
-    cleanup: { input: any; output: any };
-    get-by-tag: { input: any; output: any };
-    get-recent: { input: any; output: any };
-    get-session: { input: any; output: any };
-    get-thread: { input: any; output: any };
-    search: { input: any; output: any };
-    stats: { input: any; output: any };
-    store: { input: any; output: any };
-};
-
-/**
  * Capabilities in the mesh namespace
  */
 export type MeshCapabilities = {
@@ -156,4 +134,4 @@ export type SkillsCapabilities = {
     update-capability: { input: any; output: any };
 };
 
-// Type trigger: 1770495984479
+// Type trigger: 1770496748202

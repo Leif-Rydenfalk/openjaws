@@ -246,3 +246,13 @@
 [9:14:54 PM] [32m[20:14:54.431] [INFO] [log] Sovereign Cell online @ http://localhost:44165[0m
 [9:14:54 PM] [32m[20:14:54.432] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
 [9:14:54 PM] [32m[20:14:54.433] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[9:34:14 PM] [log] Key fingerprint: cc7af897cf970b40
+[9:34:14 PM] [32m[20:34:14.007] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[9:34:14 PM] [32m[20:34:14.011] [INFO] [log] Sovereign Cell online @ http://localhost:43571[0m
+[9:34:14 PM] [32m[20:34:14.013] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[9:34:14 PM] [32m[20:34:14.014] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[9:36:08 PM] [log] Key fingerprint: d30850ff73668942
+[9:36:08 PM] [32m[20:36:08.106] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[9:36:08 PM] [32m[20:36:08.118] [INFO] [log] Sovereign Cell online @ http://localhost:45299[0m
+[9:36:08 PM] [32m[20:36:08.119] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[9:36:08 PM] [32m[20:36:08.119] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m

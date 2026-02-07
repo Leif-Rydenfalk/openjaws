@@ -149,3 +149,236 @@
 [9:14:54 PM] [32m[20:14:54.303] [INFO] [memory] 📋 Registered 8 capabilities with contracts[0m
 [9:14:54 PM] [32m[20:14:54.318] [INFO] [memory] Sovereign Cell online @ http://localhost:35199[0m
 [9:14:54 PM] [32m[20:14:54.318] [INFO] [memory] 🧠 Memory utility online - pure storage, no logic[0m
+[9:34:13 PM] [memory] Key fingerprint: 0aca2d57b9e19965
+[9:34:13 PM] 593 |             }))
+[9:34:13 PM] 594 |             .output(z.object({
+[9:34:13 PM] 595 |                 entries: z.array(z.any()),
+[9:34:13 PM] 596 |                 summary: z.object({
+[9:34:13 PM] 597 |                     total: z.number(),
+[9:34:13 PM] 598 |                     byLayer: z.record(z.number()),
+[9:34:13 PM]                                      ^
+[9:34:13 PM] TypeError: z.record is not a function. (In 'z.record(z.number())', 'z.record' is undefined)
+[9:34:13 PM]       at /home/asdfghj/openjaws/memory/index.ts:598:32
+[9:34:13 PM]       at loadAndEvaluateModule (2:1)
+[9:34:13 PM] Bun v1.3.1 (Linux x64)
+[9:36:08 PM] [memory] Key fingerprint: ec37d5c09f14de02
+[9:36:08 PM] 131 | 
+[9:36:08 PM] 132 |         for (const cap of capabilities) {
+[9:36:08 PM] 133 |             const proc = router.findProcedure(cap);
+[9:36:08 PM] 134 | 
+[9:36:08 PM] 135 |             if (!proc) {
+[9:36:08 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:36:08 PM]                                 ^
+[9:36:08 PM] error: Procedure not found: memory/session/store
+[9:36:08 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:36:08 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:36:08 PM]       at loadAndEvaluateModule (2:1)
+[9:36:08 PM] Bun v1.3.1 (Linux x64)
+[9:36:48 PM] [memory] Key fingerprint: 41028f82cf6b78e6
+[9:36:48 PM] 131 | 
+[9:36:48 PM] 132 |         for (const cap of capabilities) {
+[9:36:48 PM] 133 |             const proc = router.findProcedure(cap);
+[9:36:48 PM] 134 | 
+[9:36:48 PM] 135 |             if (!proc) {
+[9:36:48 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:36:48 PM]                                 ^
+[9:36:48 PM] error: Procedure not found: memory/session/store
+[9:36:48 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:36:48 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:36:48 PM]       at loadAndEvaluateModule (2:1)
+[9:36:48 PM] Bun v1.3.1 (Linux x64)
+[9:36:58 PM] [memory] Key fingerprint: 23e9d47652d3a900
+[9:36:58 PM] 131 | 
+[9:36:58 PM] 132 |         for (const cap of capabilities) {
+[9:36:58 PM] 133 |             const proc = router.findProcedure(cap);
+[9:36:58 PM] 134 | 
+[9:36:58 PM] 135 |             if (!proc) {
+[9:36:58 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:36:58 PM]                                 ^
+[9:36:58 PM] error: Procedure not found: memory/session/store
+[9:36:58 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:36:58 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:36:58 PM]       at loadAndEvaluateModule (2:1)
+[9:36:58 PM] Bun v1.3.1 (Linux x64)
+[9:37:08 PM] [memory] Key fingerprint: 59c56c17c9bd2a9b
+[9:37:08 PM] 131 | 
+[9:37:08 PM] 132 |         for (const cap of capabilities) {
+[9:37:08 PM] 133 |             const proc = router.findProcedure(cap);
+[9:37:08 PM] 134 | 
+[9:37:08 PM] 135 |             if (!proc) {
+[9:37:08 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:37:08 PM]                                 ^
+[9:37:08 PM] error: Procedure not found: memory/session/store
+[9:37:08 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:37:08 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:37:08 PM]       at loadAndEvaluateModule (2:1)
+[9:37:08 PM] Bun v1.3.1 (Linux x64)
+[9:37:18 PM] [memory] Key fingerprint: b1c12a9318059c10
+[9:37:18 PM] 131 | 
+[9:37:18 PM] 132 |         for (const cap of capabilities) {
+[9:37:18 PM] 133 |             const proc = router.findProcedure(cap);
+[9:37:18 PM] 134 | 
+[9:37:18 PM] 135 |             if (!proc) {
+[9:37:18 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:37:18 PM]                                 ^
+[9:37:18 PM] error: Procedure not found: memory/session/store
+[9:37:18 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:37:18 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:37:18 PM]       at loadAndEvaluateModule (2:1)
+[9:37:18 PM] Bun v1.3.1 (Linux x64)
+[9:37:28 PM] [memory] Key fingerprint: a7b6916b51fa0200
+[9:37:28 PM] 131 | 
+[9:37:28 PM] 132 |         for (const cap of capabilities) {
+[9:37:28 PM] 133 |             const proc = router.findProcedure(cap);
+[9:37:28 PM] 134 | 
+[9:37:28 PM] 135 |             if (!proc) {
+[9:37:28 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:37:28 PM]                                 ^
+[9:37:28 PM] error: Procedure not found: memory/session/store
+[9:37:28 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:37:28 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:37:28 PM]       at loadAndEvaluateModule (2:1)
+[9:37:28 PM] Bun v1.3.1 (Linux x64)
+[9:37:38 PM] [memory] Key fingerprint: 723f3e9d129a5dd0
+[9:37:38 PM] 131 | 
+[9:37:38 PM] 132 |         for (const cap of capabilities) {
+[9:37:38 PM] 133 |             const proc = router.findProcedure(cap);
+[9:37:38 PM] 134 | 
+[9:37:38 PM] 135 |             if (!proc) {
+[9:37:38 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:37:38 PM]                                 ^
+[9:37:38 PM] error: Procedure not found: memory/session/store
+[9:37:38 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:37:38 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:37:38 PM]       at loadAndEvaluateModule (2:1)
+[9:37:38 PM] Bun v1.3.1 (Linux x64)
+[9:37:48 PM] [memory] Key fingerprint: 8b2d03f3a9a611d6
+[9:37:48 PM] 131 | 
+[9:37:48 PM] 132 |         for (const cap of capabilities) {
+[9:37:48 PM] 133 |             const proc = router.findProcedure(cap);
+[9:37:48 PM] 134 | 
+[9:37:48 PM] 135 |             if (!proc) {
+[9:37:48 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:37:48 PM]                                 ^
+[9:37:48 PM] error: Procedure not found: memory/session/store
+[9:37:48 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:37:48 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:37:48 PM]       at loadAndEvaluateModule (2:1)
+[9:37:48 PM] Bun v1.3.1 (Linux x64)
+[9:37:58 PM] [memory] Key fingerprint: ae9b1b0696fb7d8f
+[9:37:58 PM] 131 | 
+[9:37:58 PM] 132 |         for (const cap of capabilities) {
+[9:37:58 PM] 133 |             const proc = router.findProcedure(cap);
+[9:37:58 PM] 134 | 
+[9:37:58 PM] 135 |             if (!proc) {
+[9:37:58 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:37:58 PM]                                 ^
+[9:37:58 PM] error: Procedure not found: memory/session/store
+[9:37:58 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:37:58 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:37:58 PM]       at loadAndEvaluateModule (2:1)
+[9:37:58 PM] Bun v1.3.1 (Linux x64)
+[9:38:08 PM] [memory] Key fingerprint: 16c6f160634c27f0
+[9:38:08 PM] 131 | 
+[9:38:08 PM] 132 |         for (const cap of capabilities) {
+[9:38:08 PM] 133 |             const proc = router.findProcedure(cap);
+[9:38:08 PM] 134 | 
+[9:38:08 PM] 135 |             if (!proc) {
+[9:38:08 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:38:08 PM]                                 ^
+[9:38:08 PM] error: Procedure not found: memory/session/store
+[9:38:08 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:38:08 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:38:08 PM]       at loadAndEvaluateModule (2:1)
+[9:38:08 PM] Bun v1.3.1 (Linux x64)
+[9:38:18 PM] [memory] Key fingerprint: f896d0043aff5d7b
+[9:38:18 PM] 131 | 
+[9:38:18 PM] 132 |         for (const cap of capabilities) {
+[9:38:18 PM] 133 |             const proc = router.findProcedure(cap);
+[9:38:18 PM] 134 | 
+[9:38:18 PM] 135 |             if (!proc) {
+[9:38:18 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:38:18 PM]                                 ^
+[9:38:18 PM] error: Procedure not found: memory/session/store
+[9:38:18 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:38:18 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:38:18 PM]       at loadAndEvaluateModule (2:1)
+[9:38:18 PM] Bun v1.3.1 (Linux x64)
+[9:38:28 PM] [memory] Key fingerprint: 2a5ca3eff43437d5
+[9:38:28 PM] 131 | 
+[9:38:28 PM] 132 |         for (const cap of capabilities) {
+[9:38:28 PM] 133 |             const proc = router.findProcedure(cap);
+[9:38:28 PM] 134 | 
+[9:38:28 PM] 135 |             if (!proc) {
+[9:38:28 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:38:28 PM]                                 ^
+[9:38:28 PM] error: Procedure not found: memory/session/store
+[9:38:28 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:38:28 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:38:28 PM]       at loadAndEvaluateModule (2:1)
+[9:38:28 PM] Bun v1.3.1 (Linux x64)
+[9:38:38 PM] [memory] Key fingerprint: f9ee1eb02e663fe4
+[9:38:38 PM] 131 | 
+[9:38:38 PM] 132 |         for (const cap of capabilities) {
+[9:38:38 PM] 133 |             const proc = router.findProcedure(cap);
+[9:38:38 PM] 134 | 
+[9:38:38 PM] 135 |             if (!proc) {
+[9:38:38 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:38:38 PM]                                 ^
+[9:38:38 PM] error: Procedure not found: memory/session/store
+[9:38:38 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:38:38 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:38:38 PM]       at loadAndEvaluateModule (2:1)
+[9:38:38 PM] Bun v1.3.1 (Linux x64)
+[9:38:48 PM] [memory] Key fingerprint: 27873c2d0466a017
+[9:38:48 PM] 131 | 
+[9:38:48 PM] 132 |         for (const cap of capabilities) {
+[9:38:48 PM] 133 |             const proc = router.findProcedure(cap);
+[9:38:48 PM] 134 | 
+[9:38:48 PM] 135 |             if (!proc) {
+[9:38:48 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:38:48 PM]                                 ^
+[9:38:48 PM] error: Procedure not found: memory/session/store
+[9:38:48 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:38:48 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:38:48 PM]       at loadAndEvaluateModule (2:1)
+[9:38:48 PM] Bun v1.3.1 (Linux x64)
+[9:38:58 PM] [memory] Key fingerprint: 00ed4cfded6bc51c
+[9:38:58 PM] 131 | 
+[9:38:58 PM] 132 |         for (const cap of capabilities) {
+[9:38:58 PM] 133 |             const proc = router.findProcedure(cap);
+[9:38:58 PM] 134 | 
+[9:38:58 PM] 135 |             if (!proc) {
+[9:38:58 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:38:58 PM]                                 ^
+[9:38:58 PM] error: Procedure not found: memory/session/store
+[9:38:58 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:38:58 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:38:58 PM]       at loadAndEvaluateModule (2:1)
+[9:38:58 PM] Bun v1.3.1 (Linux x64)
+[9:39:08 PM] [memory] Key fingerprint: 68e40101d45e4ecb
+[9:39:08 PM] 131 | 
+[9:39:08 PM] 132 |         for (const cap of capabilities) {
+[9:39:08 PM] 133 |             const proc = router.findProcedure(cap);
+[9:39:08 PM] 134 | 
+[9:39:08 PM] 135 |             if (!proc) {
+[9:39:08 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:08 PM]                                 ^
+[9:39:08 PM] error: Procedure not found: memory/session/store
+[9:39:08 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:08 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:08 PM]       at loadAndEvaluateModule (2:1)
+[9:39:08 PM] Bun v1.3.1 (Linux x64)
+[9:39:18 PM] [memory] Key fingerprint: 8a0bd2da02b69f61
+[9:39:18 PM] 131 | 
+[9:39:18 PM] 132 |         for (const cap of capabilities) {
+[9:39:18 PM] 133 |             const proc = router.findProcedure(cap);
+[9:39:18 PM] 134 | 
+[9:39:18 PM] 135 |             if (!proc) {
+[9:39:18 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:18 PM]                                 ^
+[9:39:18 PM] error: Procedure not found: memory/session/store
+[9:39:18 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:18 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:18 PM]       at loadAndEvaluateModule (2:1)
+[9:39:18 PM] Bun v1.3.1 (Linux x64)

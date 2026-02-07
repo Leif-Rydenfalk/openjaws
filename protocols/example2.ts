@@ -56,6 +56,7 @@ const createSchema = <T>(base: Omit<Schema<T>, 'optional'>): Schema<T> => {
     return s;
 };
 
+
 export const z = {
     string: () => createSchema<string>({
         _def: { typeName: "ZodString" },
@@ -103,7 +104,6 @@ export const z = {
             const result: any = {};
             for (const [key, schema] of Object.entries(shape)) {
                 const fieldValue = (val as any)[key];
-                // Check renamed _isOptional property
                 if (fieldValue === undefined && !schema._isOptional) {
                     throw new Error(`Missing required field: ${key}`);
                 }
@@ -123,13 +123,28 @@ export const z = {
         }
     }),
 
+    // ADD THIS - Record type for key-value maps
+    record: <T>(valueSchema: Schema<T>) => createSchema<Record<string, T>>({
+        _def: { typeName: "ZodRecord", valueType: valueSchema },
+        parse: (val) => {
+            if (typeof val !== 'object' || val === null || Array.isArray(val)) {
+                throw new Error('Expected object');
+            }
+            const result: Record<string, T> = {};
+            for (const [key, value] of Object.entries(val)) {
+                result[key] = valueSchema.parse(value);
+            }
+            return result;
+        }
+    }),
+
     optional: <T>(schema: Schema<T>): Schema<T | undefined> => {
         const s = {
             _def: { typeName: "ZodOptional", innerType: schema },
             parse: (val: any) => (val === undefined ? undefined : schema.parse(val)),
             _isOptional: true,
         } as Schema<T | undefined>;
-        s.optional = () => s; // Already optional
+        s.optional = () => s;
         return s;
     },
 

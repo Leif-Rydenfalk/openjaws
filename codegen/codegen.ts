@@ -68,6 +68,12 @@ function zodShapeToTS(shape: any): string {
             return `{ ${props} }`;
         }
 
+        // Record type
+        if (def.typeName === "ZodRecord") {
+            const valueType = zodShapeToTS(def.valueType);
+            return `Record<string, ${valueType}>`;
+        }
+
         // Unknown/Any
         if (def.typeName === "ZodUnknown" || def.typeName === "ZodAny") {
             return "any";
