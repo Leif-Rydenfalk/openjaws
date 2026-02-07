@@ -19,6 +19,9 @@ if (!globalThis_any._meshCell) {
 const serverCell: TypedRheoCell = globalThis_any._meshCell;
 
 export const handle: Handle = async ({ event, resolve }) => {
+    // ✅ FIX: Inject the cell into locals so endpoints can use it
+    event.locals.cell = serverCell;
+
     const { request, url } = event;
 
     // Simple mesh call endpoint - just forward to askMesh

@@ -1,0 +1,4 @@
+id = "projects"
+command = "bun run index.ts"
+critical = true
+scalable = false

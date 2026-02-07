@@ -1,0 +1,21 @@
+{
+  "pid": 50267,
+  "version": "5c2f1e8481f31579",
+  "port": 41921,
+  "startTime": 1770423912266,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "ai/generate",
+    "ai/embed"
+  ],
+  "seed": "",
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEACPjWI4sxusIltGhmezwlRC8vfgouvsuVgvqcejrlyPM=\n-----END PUBLIC KEY-----\n"
+}

@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T00:13:34.732Z
- * Source: Live mesh scan (14 capabilities)
+ * Generated: 2026-02-07T00:25:17.278Z
+ * Source: Live mesh scan (15 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -12,6 +12,7 @@ declare module "./protocols/typed-mesh" {
         "ai/embed": { input: any; output: any };
         "ai/generate": { input: any; output: any };
         "architect/consult": { input: any; output: any };
+        "coder/develop": { input: any; output: any };
         "list/add": { input: any; output: any };
         "list/complete": { input: any; output: any };
         "list/get": { input: any; output: any };
@@ -43,6 +44,13 @@ export type AiCapabilities = {
  */
 export type ArchitectCapabilities = {
     consult: { input: any; output: any };
+};
+
+/**
+ * Capabilities in the coder namespace
+ */
+export type CoderCapabilities = {
+    develop: { input: any; output: any };
 };
 
 /**
@@ -80,4 +88,4 @@ export type MeshCapabilities = {
     ping: { input: any; output: any };
 };
 
-// Type trigger: 1770423214733
+// Type trigger: 1770423917278

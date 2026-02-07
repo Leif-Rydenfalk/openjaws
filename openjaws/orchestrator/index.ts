@@ -4,6 +4,8 @@ import { spawn } from "node:child_process";
 import { unlinkSync, existsSync, readFileSync, writeFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { createHash } from "node:crypto";
+import { config } from "dotenv";
+config({ path: resolve(import.meta.dir, "../.env") });
 
 // --- CONFIGURATION ---
 const ROOT_DIR = resolve(import.meta.dir, "..");
@@ -160,7 +162,7 @@ async function spawnCell(blueprint: Blueprint, isReplica = false) {
             stdio: ["ignore", logFile, logFile],
             detached: true,
             env: {
-                ...process.env,
+                ...process.env, // This now includes GEMINI_API_KEY
                 ...blueprint.env,
                 RHEO_CELL_ID: instanceId,
             }

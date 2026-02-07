@@ -1,8 +1,8 @@
 {
-  "pid": 48174,
+  "pid": 50289,
   "version": "5c2f1e8481f31579",
-  "port": 36819,
-  "startTime": 1770423154731,
+  "port": 37907,
+  "startTime": 1770423912277,
   "capabilities": [
     "mesh/ping",
     "mesh/gossip",
@@ -19,5 +19,5 @@
     "codegen/describe"
   ],
   "seed": "",
-  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAB3vUEMKMhPfYZj2xj9SP7hBianYJYrFYFTG3wpUz49E=\n-----END PUBLIC KEY-----\n"
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAa224BE9AFtBnWheUjobwRjciW9PBhQriWY7MUqqpZAg=\n-----END PUBLIC KEY-----\n"
 }
