@@ -1,0 +1,8 @@
+id = "discord"
+command = "bun run index.ts"
+critical = false
+scalable = false
+
+[env]
+DISCORD_BOT_TOKEN = ""
+DISCORD_APPLICATION_ID = ""

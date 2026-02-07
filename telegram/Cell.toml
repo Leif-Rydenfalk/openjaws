@@ -1,0 +1,8 @@
+id = "telegram"
+command = "bun run index.ts"
+critical = false
+scalable = false
+
+[env]
+TELEGRAM_BOT_TOKEN = ""
+TELEGRAM_WEBHOOK_URL = ""

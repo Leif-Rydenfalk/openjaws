@@ -59,3 +59,67 @@ You're using the filesystem (.rheo/registry/) as the shared memory between cells
 Network filesystems would be slow/fragile
 No built-in encryption for cross-machine discovery
 The bootstrapFromRegistry() polling is elegant but has inherent latency
+
+
+
+Implement a skills system - a new cell responsible for keeping track of what the system is capable off. It has a skills.md (clawdbot style) but also remembers things and shows all the mesh capabilities and endpoints for the ai systems.
+
+
+
+Kindly_Orchestrator_v1
+
+📝 0🎯 0🔮 0⏰ afternoon
+
+⚠ ROOT ACCESS ACTIVEROOT_ADMIN [admin]
+
+Kindly_Agent12:40 PM
+
+Security protocols disabled. Root Administrator access granted. System fully operational.
+
+Time: afternoon
+Session Memory: 0 events
+Active Goals: 0
+Learned Patterns: 0
+
+Temporal memory system active. I'm learning your routines.
+
+
+
+
+The server communication and memory for the chat instance should not be handled by the frontend. It should be handled by a cell specifically for it and with a nice api so that we can add another cell later with telegram, another cell for connecting discord, another cell for supporting phone messages...
+
+
+
+problem with the agents responses:
+
+it doesnt know its own capabilities.
+
+it doesnt know how to actually do stuff and create projects and teamwork with the other agents.
+
+It hallucinates a lot.
+
+its very annoying and doesnt give professional and short and useful answers.
+
+I wrote it "health" and it wrote back:
+
+
+Make it so that it can actually do shit on my system and turn it into a good designer. It should be able to perform the simple python task i said to it, debug it and give me results
+
+
+It should be an extension of my own mind and it should know what the fuck is up.
+
+Look at what i sent to you - the paste 1 contains all the code and documentation. Your task is to write the files so i can copy and paste them into the project to get the fixes i want.
+
+
+The ai model should use the memory module - dont try to create logic within the memory - it should be a memory util which the kindly agent can call to freely like any skill
+
+
+
+
+The AI will be a primary component of my workflow and it should know this. I will talk to it and utilize it to run all of my businesses and companies - it needs to understand my brain, respond efficently, creatively and make sure projects are actually finished instead of just left half-baked.
+
+
+No stop trying to hack this. The ai should do and decide everything by itself, all calls, all memories, all intents everything. no hardcoded strings.
+
+
+The problem is that its not aware of what the fuck is going on. Memory is the single most important component in a agentic system.

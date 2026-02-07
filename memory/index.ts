@@ -1,405 +1,446 @@
-// memory/index.ts - COMPLETE TEMPORAL MEMORY SYSTEM
+// memory/index.ts - PURE MEMORY UTILITY (No AI Logic)
 import { TypedRheoCell } from "../protocols/typed-mesh";
 import { router, procedure, z } from "../protocols/example2";
+import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
-import { existsSync, writeFileSync, readFileSync } from "node:fs";
 
-const DB_PATH = join(process.cwd(), "temporal_memory.json");
-const PATTERN_DB = join(process.cwd(), "learned_patterns.json");
+const DATA_DIR = join(process.cwd(), "data");
+if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR, { recursive: true });
 
-// ============================================================================
-// TYPE DEFINITIONS
-// ============================================================================
-
-interface TemporalMemory {
-    id: string;
-    timestamp: number;
-    layer: 'session' | 'goals' | 'movement' | 'patterns' | 'actions';
-    content: string;
-    tags: string[];
-    context: {
-        userId?: string;
-        sessionId?: string;
-        timeOfDay?: string;
-        dayOfWeek?: string;
-        relatedTo?: string[];
-    };
-}
-
-interface LearnedPattern {
-    id: string;
-    pattern: string;
-    triggers: string[];
-    actions: string[];
-    confidence: number;
-    lastSeen: number;
-    occurrences: number;
-}
-
-// ============================================================================
-// DATABASE FUNCTIONS
-// ============================================================================
-
-function loadDb(): TemporalMemory[] {
-    try {
-        if (!existsSync(DB_PATH)) return [];
-        return JSON.parse(readFileSync(DB_PATH, 'utf8'));
-    } catch { return []; }
-}
-
-function saveDb(data: TemporalMemory[]) {
-    writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
-}
-
-function loadPatterns(): LearnedPattern[] {
-    try {
-        if (!existsSync(PATTERN_DB)) return [];
-        return JSON.parse(readFileSync(PATTERN_DB, 'utf8'));
-    } catch { return []; }
-}
-
-function savePatterns(patterns: LearnedPattern[]) {
-    writeFileSync(PATTERN_DB, JSON.stringify(patterns, null, 2));
-}
-
-// ============================================================================
-// HELPER FUNCTIONS
-// ============================================================================
-
-function getTimeOfDay(date: Date): string {
-    const hour = date.getHours();
-    if (hour < 6) return 'night';
-    if (hour < 12) return 'morning';
-    if (hour < 18) return 'afternoon';
-    return 'evening';
-}
-
-function frequency<T>(arr: T[]): Record<string, number> {
-    return arr.reduce((acc, val) => {
-        const key = String(val);
-        acc[key] = (acc[key] || 0) + 1;
-        return acc;
-    }, {} as Record<string, number>);
-}
-
-function detectPatterns(newAction: TemporalMemory, cell: TypedRheoCell) {
-    const db = loadDb();
-    const patterns = loadPatterns();
-
-    const thirtyDaysAgo = Date.now() - 30 * 24 * 60 * 60 * 1000;
-    const actionKeyword = newAction.content.toLowerCase().split(' ')[0];
-
-    const similarActions = db.filter(m =>
-        m.layer === 'actions' &&
-        m.timestamp > thirtyDaysAgo &&
-        m.context.userId === newAction.context.userId &&
-        m.content.toLowerCase().includes(actionKeyword)
-    );
-
-    if (similarActions.length < 3) return;
-
-    const times = similarActions.map(a => a.context.timeOfDay).filter(Boolean) as string[];
-    const days = similarActions.map(a => a.context.dayOfWeek).filter(Boolean) as string[];
-
-    const timeFreq = frequency(times);
-    const dayFreq = frequency(days);
-
-    const dominantTime = Object.entries(timeFreq).sort((a, b) => b[1] - a[1])[0];
-    const dominantDay = Object.entries(dayFreq).sort((a, b) => b[1] - a[1])[0];
-
-    if (dominantTime && dominantTime[1] / similarActions.length > 0.7) {
-        const patternId = `${actionKeyword}_${dominantTime[0]}_${newAction.context.userId}`;
-
-        let existing = patterns.find(p => p.id === patternId);
-        if (existing) {
-            existing.occurrences++;
-            existing.confidence = Math.min(0.95, existing.confidence + 0.05);
-            existing.lastSeen = Date.now();
-        } else {
-            patterns.push({
-                id: patternId,
-                pattern: `${actionKeyword} routine - ${dominantTime[0]}`,
-                triggers: [`time:${dominantTime[0]}`, `user:${newAction.context.userId}`],
-                actions: [newAction.content],
-                confidence: 0.7,
-                lastSeen: Date.now(),
-                occurrences: similarActions.length
-            });
-        }
-
-        savePatterns(patterns);
-        cell.log("INFO", `🔮 Pattern learned: ${patternId} (${dominantTime[1]}/${similarActions.length})`);
-    }
-}
-
-// ============================================================================
-// CELL INITIALIZATION
-// ============================================================================
+const MESSAGES_PATH = join(DATA_DIR, "messages.json");
 
 const cell = new TypedRheoCell(`Memory_${process.pid}`, 0);
 
 // ============================================================================
-// ROUTER DEFINITION
+// SIMPLE DATA STRUCTURES
+// ============================================================================
+
+interface MemoryEntry {
+    id: string;
+    timestamp: number;
+    userId: string;
+    sessionId: string;
+
+    // Core content
+    speaker: 'user' | 'assistant';
+    text: string;
+
+    // Lightweight metadata for filtering
+    tags?: string[];
+    layer?: 'session' | 'goals' | 'movement' | 'patterns' | 'actions';
+
+    // For linking/threading
+    respondsTo?: string;
+
+    // Compression tracking (managed by caller)
+    compressionLevel?: 0 | 1 | 2;
+    compressed?: {
+        gist: string;
+        claims: string[];
+        suggestions: string[];
+    };
+}
+
+// ============================================================================
+// PERSISTENCE
+// ============================================================================
+
+function loadMessages(): MemoryEntry[] {
+    try {
+        if (existsSync(MESSAGES_PATH)) {
+            return JSON.parse(readFileSync(MESSAGES_PATH, 'utf8'));
+        }
+    } catch (e) {
+        cell.log("WARN", "Failed to load messages, using empty store");
+    }
+    return [];
+}
+
+function saveMessages(messages: MemoryEntry[]) {
+    try {
+        writeFileSync(MESSAGES_PATH, JSON.stringify(messages, null, 2));
+    } catch (e: any) {
+        cell.log("ERROR", `Failed to save messages: ${e.message}`);
+    }
+}
+
+// ============================================================================
+// MEMORY ROUTER - PURE CRUD + SMART QUERIES
 // ============================================================================
 
 const memoryRouter = router({
     memory: router({
         /**
-         * Store a temporal memory in the appropriate layer
+         * Store a single memory entry
          */
         store: procedure
             .input(z.object({
-                layer: z.enum(['session', 'goals', 'movement', 'patterns', 'actions']),
-                content: z.string(),
-                tags: z.array(z.string()),
-                userId: z.optional(z.string()),
-                sessionId: z.optional(z.string()),
-                relatedTo: z.optional(z.array(z.string()))
+                userId: z.string(),
+                sessionId: z.string(),
+                speaker: z.enum(['user', 'assistant']),
+                text: z.string(),
+                tags: z.optional(z.array(z.string())),
+                layer: z.optional(z.enum(['session', 'goals', 'movement', 'patterns', 'actions'])),
+                respondsTo: z.optional(z.string()),
+                compressed: z.optional(z.object({
+                    gist: z.string(),
+                    claims: z.array(z.string()),
+                    suggestions: z.array(z.string())
+                }))
             }))
-            .output(z.object({ id: z.string(), ok: z.boolean() }))
+            .output(z.object({
+                id: z.string(),
+                timestamp: z.number()
+            }))
             .mutation(async (input) => {
-                const db = loadDb();
-                const now = new Date();
-                const id = Math.random().toString(36).substring(7);
+                const messages = loadMessages();
 
-                const entry: TemporalMemory = {
-                    id,
+                const entry: MemoryEntry = {
+                    id: `msg_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
                     timestamp: Date.now(),
-                    layer: input.layer,
-                    content: input.content,
+                    userId: input.userId,
+                    sessionId: input.sessionId,
+                    speaker: input.speaker,
+                    text: input.text,
                     tags: input.tags,
-                    context: {
-                        userId: input.userId,
-                        sessionId: input.sessionId,
-                        timeOfDay: getTimeOfDay(now),
-                        dayOfWeek: now.toLocaleDateString('en-US', { weekday: 'long' }),
-                        relatedTo: input.relatedTo
-                    }
+                    layer: input.layer,
+                    respondsTo: input.respondsTo,
+                    compressionLevel: input.compressed ? 1 : 0,
+                    compressed: input.compressed
                 };
 
-                db.push(entry);
-                saveDb(db);
+                messages.push(entry);
+                saveMessages(messages);
 
-                if (input.layer === 'actions') {
-                    detectPatterns(entry, cell);
-                }
-
-                cell.log("INFO", `🧠 ${input.layer.toUpperCase()}: "${input.content.substring(0, 40)}..."`);
-                return { id, ok: true };
+                return {
+                    id: entry.id,
+                    timestamp: entry.timestamp
+                };
             }),
 
         /**
-         * Search across temporal layers with time awareness
+         * Get recent messages (raw retrieval)
+         */
+        'get-recent': procedure
+            .input(z.object({
+                userId: z.string(),
+                sessionId: z.optional(z.string()),
+                limit: z.optional(z.number()),
+                speaker: z.optional(z.enum(['user', 'assistant']))
+            }))
+            .output(z.object({
+                messages: z.array(z.any()),
+                total: z.number()
+            }))
+            .query(async (input) => {
+                const messages = loadMessages();
+
+                let filtered = messages.filter(m => m.userId === input.userId);
+
+                if (input.sessionId) {
+                    filtered = filtered.filter(m => m.sessionId === input.sessionId);
+                }
+
+                if (input.speaker) {
+                    filtered = filtered.filter(m => m.speaker === input.speaker);
+                }
+
+                // Most recent first
+                filtered.sort((a, b) => b.timestamp - a.timestamp);
+
+                const limit = input.limit || 20;
+                const result = filtered.slice(0, limit);
+
+                return {
+                    messages: result,
+                    total: filtered.length
+                };
+            }),
+
+        /**
+         * Search messages by text content
          */
         search: procedure
             .input(z.object({
+                userId: z.string(),
                 query: z.string(),
-                layers: z.optional(z.array(z.enum(['session', 'goals', 'movement', 'patterns', 'actions']))),
+                limit: z.optional(z.number()),
+                speaker: z.optional(z.enum(['user', 'assistant'])),
+                layer: z.optional(z.enum(['session', 'goals', 'movement', 'patterns', 'actions'])),
                 timeRange: z.optional(z.object({
                     start: z.number(),
                     end: z.number()
-                })),
-                userId: z.optional(z.string()),
-                sessionId: z.optional(z.string()),
-                limit: z.optional(z.number())
-            }))
-            .output(z.array(z.object({
-                id: z.string(),
-                layer: z.string(),
-                content: z.string(),
-                timestamp: z.number(),
-                score: z.number(),
-                tags: z.array(z.string()),
-                context: z.any()
-            })))
-            .query(async (input) => {
-                const db = loadDb();
-                const queryWords = input.query.toLowerCase()
-                    .replace(/[?.!,]/g, '')
-                    .split(/\s+/)
-                    .filter(w => w.length > 0);
-
-                const results = db
-                    .filter(entry => {
-                        if (input.layers && !input.layers.includes(entry.layer)) return false;
-                        if (input.timeRange) {
-                            if (entry.timestamp < input.timeRange.start ||
-                                entry.timestamp > input.timeRange.end) return false;
-                        }
-                        if (input.userId && entry.context.userId !== input.userId) return false;
-                        if (input.sessionId && entry.context.sessionId !== input.sessionId) return false;
-                        return true;
-                    })
-                    .map(entry => {
-                        let score = 0;
-                        const contentLower = entry.content.toLowerCase();
-
-                        if (queryWords.length > 0) {
-                            queryWords.forEach(word => {
-                                if (contentLower.includes(word)) score += 1;
-                            });
-
-                            entry.tags.forEach(tag => {
-                                if (input.query.toLowerCase().includes(tag.toLowerCase())) score += 3;
-                            });
-                        } else {
-                            score = 1;
-                        }
-
-                        const ageHours = (Date.now() - entry.timestamp) / (1000 * 60 * 60);
-                        if (ageHours < 1) score += 2;
-                        else if (ageHours < 24) score += 1;
-
-                        const layerBonus: Record<string, number> = {
-                            session: 1.5,
-                            movement: 1.3,
-                            goals: 1.2,
-                            actions: 1.0,
-                            patterns: 0.8
-                        };
-                        score *= layerBonus[entry.layer];
-
-                        return {
-                            id: entry.id,
-                            layer: entry.layer,
-                            content: entry.content,
-                            timestamp: entry.timestamp,
-                            score,
-                            tags: entry.tags,
-                            context: entry.context
-                        };
-                    })
-                    .filter(r => r.score > 0)
-                    .sort((a, b) => b.score - a.score || b.timestamp - a.timestamp)
-                    .slice(0, input.limit || 10);
-
-                cell.log("INFO", `🔍 Search: "${input.query}" → ${results.length} results`);
-                return results;
-            }),
-
-        /**
-         * Get current session context
-         */
-        'get-session': procedure
-            .input(z.object({
-                userId: z.optional(z.string()),
-                sessionId: z.optional(z.string()),
-                hoursBack: z.optional(z.number())
+                }))
             }))
             .output(z.object({
-                memories: z.array(z.any()),
-                summary: z.string(),
-                activeGoals: z.array(z.string())
+                results: z.array(z.any()),
+                total: z.number()
             }))
             .query(async (input) => {
-                const db = loadDb();
-                const cutoff = Date.now() - (input.hoursBack || 4) * 60 * 60 * 1000;
+                const messages = loadMessages();
+                const queryLower = input.query.toLowerCase();
 
-                const sessionMemories = db
-                    .filter(m =>
-                        m.timestamp > cutoff &&
-                        m.layer === 'session' &&
-                        (!input.userId || m.context.userId === input.userId) &&
-                        (!input.sessionId || m.context.sessionId === input.sessionId)
-                    )
-                    .sort((a, b) => b.timestamp - a.timestamp);
+                let filtered = messages.filter(m => {
+                    if (m.userId !== input.userId) return false;
+                    if (input.speaker && m.speaker !== input.speaker) return false;
+                    if (input.layer && m.layer !== input.layer) return false;
+                    if (input.timeRange) {
+                        if (m.timestamp < input.timeRange.start || m.timestamp > input.timeRange.end) {
+                            return false;
+                        }
+                    }
 
-                const activeGoals = db
-                    .filter(m =>
-                        m.layer === 'goals' &&
-                        m.timestamp > cutoff &&
-                        (!input.userId || m.context.userId === input.userId)
-                    )
-                    .map(m => m.content);
+                    // Text search
+                    const searchable = (m.text || '').toLowerCase() +
+                        (m.compressed?.gist || '').toLowerCase() +
+                        (m.tags?.join(' ') || '').toLowerCase();
+
+                    return searchable.includes(queryLower);
+                });
+
+                // Sort by relevance (simple: most recent matching)
+                filtered.sort((a, b) => b.timestamp - a.timestamp);
+
+                const limit = input.limit || 10;
+                const results = filtered.slice(0, limit);
 
                 return {
-                    memories: sessionMemories,
-                    summary: `${sessionMemories.length} session memories in last ${input.hoursBack || 4}h`,
-                    activeGoals
+                    results,
+                    total: filtered.length
                 };
             }),
 
         /**
-         * Suggest actions based on learned patterns
+         * Get messages by tag
          */
-        'suggest-from-patterns': procedure
+        'get-by-tag': procedure
             .input(z.object({
-                context: z.object({
-                    timeOfDay: z.optional(z.string()),
-                    dayOfWeek: z.optional(z.string()),
-                    userId: z.optional(z.string())
-                }),
-                minConfidence: z.optional(z.number())
+                userId: z.string(),
+                tags: z.array(z.string()),
+                limit: z.optional(z.number())
             }))
-            .output(z.array(z.object({
-                pattern: z.string(),
-                suggestion: z.string(),
-                confidence: z.number(),
-                lastSeen: z.number()
-            })))
+            .output(z.object({
+                messages: z.array(z.any())
+            }))
             .query(async (input) => {
-                const patterns = loadPatterns();
+                const messages = loadMessages();
 
-                const matches = patterns
-                    .filter(p => {
-                        if (p.confidence < (input.minConfidence || 0.5)) return false;
+                const filtered = messages.filter(m => {
+                    if (m.userId !== input.userId) return false;
+                    if (!m.tags) return false;
 
-                        const timeMatch = !input.context.timeOfDay ||
-                            p.triggers.includes(`time:${input.context.timeOfDay}`);
-                        const dayMatch = !input.context.dayOfWeek ||
-                            p.triggers.includes(`day:${input.context.dayOfWeek}`);
-                        const userMatch = !input.context.userId ||
-                            p.triggers.includes(`user:${input.context.userId}`);
+                    return input.tags.some(tag => m.tags!.includes(tag));
+                });
 
-                        return timeMatch && dayMatch && userMatch;
-                    })
-                    .map(p => ({
-                        pattern: p.pattern,
-                        suggestion: p.actions.join(', '),
-                        confidence: p.confidence,
-                        lastSeen: p.lastSeen
-                    }))
-                    .sort((a, b) => b.confidence - a.confidence)
-                    .slice(0, 5);
+                filtered.sort((a, b) => b.timestamp - a.timestamp);
 
-                if (matches.length > 0) {
-                    cell.log("INFO", `🔮 Pattern suggestions: ${matches.length} matches`);
-                }
-
-                return matches;
+                return {
+                    messages: filtered.slice(0, input.limit || 20)
+                };
             }),
 
         /**
-         * Prune old memories
+         * Get session summary (just metadata)
          */
-        prune: procedure
+        'get-session': procedure
             .input(z.object({
-                olderThanDays: z.number()
+                userId: z.string(),
+                sessionId: z.string()
             }))
             .output(z.object({
-                removed: z.number(),
-                kept: z.number()
+                messageCount: z.number(),
+                userMessages: z.number(),
+                assistantMessages: z.number(),
+                startTime: z.number(),
+                lastActive: z.number(),
+                tags: z.array(z.string())
             }))
-            .mutation(async (input) => {
-                const db = loadDb();
-                const cutoff = Date.now() - input.olderThanDays * 24 * 60 * 60 * 1000;
+            .query(async (input) => {
+                const messages = loadMessages();
 
-                const kept = db.filter(m =>
-                    m.timestamp > cutoff ||
-                    m.layer === 'goals' ||
-                    m.layer === 'patterns'
+                const sessionMsgs = messages.filter(m =>
+                    m.userId === input.userId &&
+                    m.sessionId === input.sessionId
                 );
 
-                const removed = db.length - kept.length;
-                saveDb(kept);
+                if (sessionMsgs.length === 0) {
+                    return {
+                        messageCount: 0,
+                        userMessages: 0,
+                        assistantMessages: 0,
+                        startTime: 0,
+                        lastActive: 0,
+                        tags: []
+                    };
+                }
 
-                cell.log("INFO", `🧹 Pruned ${removed} memories, kept ${kept.length}`);
-                return { removed, kept: kept.length };
+                const allTags = new Set<string>();
+                sessionMsgs.forEach(m => m.tags?.forEach(t => allTags.add(t)));
+
+                return {
+                    messageCount: sessionMsgs.length,
+                    userMessages: sessionMsgs.filter(m => m.speaker === 'user').length,
+                    assistantMessages: sessionMsgs.filter(m => m.speaker === 'assistant').length,
+                    startTime: Math.min(...sessionMsgs.map(m => m.timestamp)),
+                    lastActive: Math.max(...sessionMsgs.map(m => m.timestamp)),
+                    tags: Array.from(allTags)
+                };
+            }),
+
+        /**
+         * Get conversation thread (linked messages)
+         */
+        'get-thread': procedure
+            .input(z.object({
+                messageId: z.string()
+            }))
+            .output(z.object({
+                thread: z.array(z.any())
+            }))
+            .query(async (input) => {
+                const messages = loadMessages();
+                const thread: MemoryEntry[] = [];
+
+                // Find the starting message
+                let current = messages.find(m => m.id === input.messageId);
+                if (!current) {
+                    return { thread: [] };
+                }
+
+                // Walk backwards through respondsTo chain
+                const visited = new Set<string>();
+                while (current && !visited.has(current.id)) {
+                    thread.unshift(current);
+                    visited.add(current.id);
+
+                    if (current.respondsTo) {
+                        current = messages.find(m => m.id === current!.respondsTo);
+                    } else {
+                        break;
+                    }
+                }
+
+                // Walk forwards through messages that respond to thread members
+                const threadIds = new Set(thread.map(m => m.id));
+                const responses = messages.filter(m =>
+                    m.respondsTo && threadIds.has(m.respondsTo) && !visited.has(m.id)
+                );
+
+                thread.push(...responses);
+
+                // Sort by timestamp
+                thread.sort((a, b) => a.timestamp - b.timestamp);
+
+                return { thread };
+            }),
+
+        /**
+         * Delete old messages (cleanup)
+         */
+        cleanup: procedure
+            .input(z.object({
+                olderThan: z.number(), // timestamp
+                keepUserMessages: z.optional(z.boolean())
+            }))
+            .output(z.object({
+                deleted: z.number()
+            }))
+            .mutation(async (input) => {
+                const messages = loadMessages();
+                const cutoff = input.olderThan;
+
+                const before = messages.length;
+
+                const kept = messages.filter(m => {
+                    if (m.timestamp > cutoff) return true;
+                    if (input.keepUserMessages && m.speaker === 'user') return true;
+                    return false;
+                });
+
+                saveMessages(kept);
+
+                cell.log("INFO", `🧹 Cleaned up ${before - kept.length} old messages`);
+
+                return {
+                    deleted: before - kept.length
+                };
+            }),
+
+        /**
+         * Get stats
+         */
+        stats: procedure
+            .input(z.object({
+                userId: z.optional(z.string())
+            }))
+            .output(z.object({
+                totalMessages: z.number(),
+                userMessages: z.number(),
+                assistantMessages: z.number(),
+                uniqueSessions: z.number(),
+                uniqueUsers: z.number(),
+                oldestMessage: z.number(),
+                newestMessage: z.number()
+            }))
+            .query(async (input) => {
+                const messages = loadMessages();
+
+                let filtered = input.userId
+                    ? messages.filter(m => m.userId === input.userId)
+                    : messages;
+
+                if (filtered.length === 0) {
+                    return {
+                        totalMessages: 0,
+                        userMessages: 0,
+                        assistantMessages: 0,
+                        uniqueSessions: 0,
+                        uniqueUsers: 0,
+                        oldestMessage: 0,
+                        newestMessage: 0
+                    };
+                }
+
+                const sessions = new Set(filtered.map(m => m.sessionId));
+                const users = new Set(filtered.map(m => m.userId));
+
+                return {
+                    totalMessages: filtered.length,
+                    userMessages: filtered.filter(m => m.speaker === 'user').length,
+                    assistantMessages: filtered.filter(m => m.speaker === 'assistant').length,
+                    uniqueSessions: sessions.size,
+                    uniqueUsers: users.size,
+                    oldestMessage: Math.min(...filtered.map(m => m.timestamp)),
+                    newestMessage: Math.max(...filtered.map(m => m.timestamp))
+                };
             })
     })
 });
 
+// ============================================================================
+// CELL SETUP
+// ============================================================================
+
 cell.useRouter(memoryRouter);
 cell.listen();
 
-cell.log("INFO", "🧠 Temporal Memory System online");
+cell.log("INFO", "🧠 Memory utility online - pure storage, no logic");
+
+// Periodic cleanup (optional)
+setInterval(async () => {
+    try {
+        const thirtyDaysAgo = Date.now() - 30 * 24 * 60 * 60 * 1000;
+        const result = await cell.mesh.memory.cleanup({
+            olderThan: thirtyDaysAgo,
+            keepUserMessages: true // Always keep user messages
+        });
+
+        if (result.deleted > 0) {
+            cell.log("INFO", `🗑️  Auto-cleanup: removed ${result.deleted} old assistant messages`);
+        }
+    } catch (e) {
+        // Cleanup is non-critical
+    }
+}, 3600000); // Every hour
+
+export type MemoryRouter = typeof memoryRouter;

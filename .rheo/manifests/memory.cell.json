@@ -1,8 +1,8 @@
 {
-  "pid": 76468,
+  "pid": 286978,
   "version": "81eba6f713197876",
-  "port": 34851,
-  "startTime": 1770459620948,
+  "port": 35199,
+  "startTime": 1770495294318,
   "capabilities": [
     "mesh/ping",
     "mesh/gossip",
@@ -14,10 +14,13 @@
     "mesh/signal-to-url",
     "cell/contract",
     "memory/store",
+    "memory/get-recent",
     "memory/search",
+    "memory/get-by-tag",
     "memory/get-session",
-    "memory/suggest-from-patterns",
-    "memory/prune"
+    "memory/get-thread",
+    "memory/cleanup",
+    "memory/stats"
   ],
-  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAVqiFFcdODTijt2I7vslRO6K4ynEJtaCGvRYARtu8M48=\n-----END PUBLIC KEY-----\n"
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAGh7KhNFrCEdLpCH8WqBv89Mw9bT5PafSelhcQoS4Acc=\n-----END PUBLIC KEY-----\n"
 }

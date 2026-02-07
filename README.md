@@ -15,6 +15,11 @@ cd ui
 bun run dev
 
 
+t3:
+cd telegram
+bun run index.ts
+
+
 see .ts .svelte .js .toml
 see .ts .svelte .js .rs .toml
 

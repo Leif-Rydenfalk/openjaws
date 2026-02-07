@@ -1,0 +1,4 @@
+id = "comms"
+command = "bun run index.ts"
+critical = true
+scalable = false
