@@ -1,8 +1,8 @@
 {
-  "pid": 50228,
+  "pid": 51527,
   "version": "5c2f1e8481f31579",
-  "port": 45791,
-  "startTime": 1770423912196,
+  "port": 46583,
+  "startTime": 1770424481440,
   "capabilities": [
     "mesh/ping",
     "mesh/gossip",
@@ -15,5 +15,5 @@
     "cell/contract",
     "coder/develop"
   ],
-  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA8owq3WSptyTvW9q3XwLo3QX9hAdSgYQ/55VZwV3yy6U=\n-----END PUBLIC KEY-----\n"
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASZ+QMz1me6OptSPeRl+8D3NGh/Upne5erejF4r+L0xE=\n-----END PUBLIC KEY-----\n"
 }

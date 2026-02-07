@@ -1,0 +1,19 @@
+{
+  "pid": 51550,
+  "version": "5c2f1e8481f31579",
+  "port": 35685,
+  "startTime": 1770424481480,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "ai/generate"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA4Umuui3GXX6rU2noG5M3FkrhfKTpX50hBFl9qd1ZP0w=\n-----END PUBLIC KEY-----\n"
+}

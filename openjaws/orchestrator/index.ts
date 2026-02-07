@@ -6,6 +6,16 @@ import { join, resolve } from "node:path";
 import { createHash } from "node:crypto";
 import { config } from "dotenv";
 config({ path: resolve(import.meta.dir, "../.env") });
+import { createWriteStream } from "node:fs";
+
+// Define a simple color map for the console
+const COLORS = [
+    "\x1b[32m", "\x1b[33m", "\x1b[34m", "\x1b[35m",
+    "\x1b[36m", "\x1b[38;5;208m", "\x1b[38;5;112m"
+];
+let colorIdx = 0;
+const cellColors = new Map<string, string>();
+
 
 // --- CONFIGURATION ---
 const ROOT_DIR = resolve(import.meta.dir, "..");
@@ -143,6 +153,7 @@ if (!existsSync(LOG_DIR)) {
     mkdirSync(LOG_DIR, { recursive: true });
 }
 
+
 async function spawnCell(blueprint: Blueprint, isReplica = false) {
     if (shuttingDown) return;
 
@@ -150,31 +161,68 @@ async function spawnCell(blueprint: Blueprint, isReplica = false) {
         ? `${blueprint.id}_Replica_${Math.random().toString(36).substring(7)}`
         : `${blueprint.id}_${process.pid}`;
 
-    const logFilePath = join(LOG_DIR, `${instanceId}.log`);
-    const { openSync } = await import("node:fs");
-    const logFile = openSync(logFilePath, "a");
+    // STABLE LOGGING: Write to blueprint.id.log, not instanceId.log
+    const logFilePath = join(LOG_DIR, `${blueprint.id}.log`);
+    const meshAuditPath = join(LOG_DIR, `mesh.audit.log`);
+
+    const fileStream = createWriteStream(logFilePath, { flags: 'a' });
+    const auditStream = createWriteStream(meshAuditPath, { flags: 'a' });
+
+    // Assign a color to this cell type
+    if (!cellColors.has(blueprint.id)) {
+        cellColors.set(blueprint.id, COLORS[colorIdx % COLORS.length]);
+        colorIdx++;
+    }
+    const color = cellColors.get(blueprint.id);
 
     const [cmd, ...args] = blueprint.command.split(" ");
 
     try {
-        const proc = spawn(cmd, [...args, ""], {
+        const proc = spawn(cmd, args, {
             cwd: blueprint.path,
-            stdio: ["ignore", logFile, logFile],
-            detached: true,
+            stdio: ["ignore", "pipe", "pipe"], // Pipe instead of direct to file
             env: {
-                ...process.env, // This now includes GEMINI_API_KEY
+                ...process.env,
                 ...blueprint.env,
                 RHEO_CELL_ID: instanceId,
             }
         });
 
+        // UNIFIED STREAMING LOGIC
+        const handleData = (data: Buffer) => {
+            const lines = data.toString().trim().split('\n');
+            for (const line of lines) {
+                if (!line) continue;
+
+                const timestamp = new Date().toLocaleTimeString();
+                const formatted = `${color}[${timestamp}] [${blueprint.id}]\x1b[0m ${line}`;
+
+                // 1. Print to Orchestrator Console
+                console.log(formatted);
+
+                // 2. Write to stable cell-specific log (ai.log)
+                fileStream.write(`[${timestamp}] ${line}\n`);
+
+                // 3. Write to aggregated mesh log
+                auditStream.write(`[${timestamp}] [${blueprint.id}] ${line}\n`);
+            }
+        };
+
+        proc.stdout?.on('data', handleData);
+        proc.stderr?.on('data', handleData);
+
         if (proc.pid) {
             children.set(instanceId, proc.pid);
             savePidRegistry();
-            console.log(`📡 [Orchestrator] Spawned ${instanceId} (Logs: .rheo/logs/${instanceId}.log)`);
         }
 
-        proc.unref();
+        proc.on('exit', (code) => {
+            if (code !== 0 && !shuttingDown) {
+                console.log(`\x1b[31m🚨 [Orchestrator] ${instanceId} exited with code ${code}\x1b[0m`);
+            }
+            fileStream.end();
+        });
+
     } catch (e: any) {
         console.error(`💥 [Orchestrator] Failed to spawn ${blueprint.id}:`, e.message);
     }

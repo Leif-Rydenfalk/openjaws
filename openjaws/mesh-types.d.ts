@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T00:25:17.278Z
- * Source: Live mesh scan (15 capabilities)
+ * Generated: 2026-02-07T00:35:41.503Z
+ * Source: Live mesh scan (19 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -24,6 +24,10 @@ declare module "./protocols/typed-mesh" {
         "memory/store": { input: any; output: any };
         "mesh/health": { input: any; output: any };
         "mesh/ping": { input: any; output: any };
+        "projects/exec": { input: any; output: any };
+        "projects/list": { input: any; output: any };
+        "projects/read": { input: any; output: any };
+        "projects/write": { input: any; output: any };
     }
 }
 
@@ -88,4 +92,14 @@ export type MeshCapabilities = {
     ping: { input: any; output: any };
 };
 
-// Type trigger: 1770423917278
+/**
+ * Capabilities in the projects namespace
+ */
+export type ProjectsCapabilities = {
+    exec: { input: any; output: any };
+    list: { input: any; output: any };
+    read: { input: any; output: any };
+    write: { input: any; output: any };
+};
+
+// Type trigger: 1770424541504

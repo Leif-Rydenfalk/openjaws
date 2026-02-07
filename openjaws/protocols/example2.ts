@@ -45,11 +45,19 @@ export interface Schema<T> {
     _type?: T; // Phantom type for inference
     _def?: any; // Internal zod-like structure for codegen
     parse: (value: unknown) => T;
-    optional?: boolean;
+    _isOptional?: boolean; // Renamed from optional to avoid conflict
+    optional: () => Schema<T | undefined>; // The method for chaining
 }
 
+// Helper to satisfy the Schema interface and provide chaining
+const createSchema = <T>(base: Omit<Schema<T>, 'optional'>): Schema<T> => {
+    const s = base as Schema<T>;
+    s.optional = () => z.optional(s);
+    return s;
+};
+
 export const z = {
-    string: (): Schema<string> => ({
+    string: () => createSchema<string>({
         _def: { typeName: "ZodString" },
         parse: (val) => {
             if (typeof val !== 'string') throw new Error('Expected string');
@@ -57,7 +65,7 @@ export const z = {
         }
     }),
 
-    number: (): Schema<number> => ({
+    number: () => createSchema<number>({
         _def: { typeName: "ZodNumber" },
         parse: (val) => {
             if (typeof val !== 'number') throw new Error('Expected number');
@@ -65,7 +73,7 @@ export const z = {
         }
     }),
 
-    boolean: (): Schema<boolean> => ({
+    boolean: () => createSchema<boolean>({
         _def: { typeName: "ZodBoolean" },
         parse: (val) => {
             if (typeof val !== 'boolean') throw new Error('Expected boolean');
@@ -73,7 +81,7 @@ export const z = {
         }
     }),
 
-    enum: <T extends string>(values: readonly T[]): Schema<T> => ({
+    enum: <T extends string>(values: readonly T[]) => createSchema<T>({
         _def: { typeName: "ZodEnum", values },
         parse: (val) => {
             if (!values.includes(val as T)) {
@@ -85,38 +93,29 @@ export const z = {
 
     object: <T extends Record<string, Schema<unknown>>>(
         shape: T
-    ): Schema<{ [K in keyof T]: T[K] extends Schema<infer U> ? U : never }> => {
-        const shapeGetter = () => shape;
-        return {
-            _def: {
-                typeName: "ZodObject",
-                shape: shapeGetter
-            },
-            parse: (val) => {
-                if (typeof val !== 'object' || val === null) {
-                    throw new Error('Expected object');
+    ) => createSchema<{ [K in keyof T]: T[K] extends Schema<infer U> ? U : never }>({
+        _def: {
+            typeName: "ZodObject",
+            shape: () => shape
+        },
+        parse: (val) => {
+            if (typeof val !== 'object' || val === null) throw new Error('Expected object');
+            const result: any = {};
+            for (const [key, schema] of Object.entries(shape)) {
+                const fieldValue = (val as any)[key];
+                // Check renamed _isOptional property
+                if (fieldValue === undefined && !schema._isOptional) {
+                    throw new Error(`Missing required field: ${key}`);
                 }
-
-                const result: any = {};
-                for (const [key, schema] of Object.entries(shape)) {
-                    const fieldValue = (val as any)[key];
-
-                    // Check if required field is missing
-                    if (fieldValue === undefined && !schema.optional) {
-                        throw new Error(`Missing required field: ${key}`);
-                    }
-
-                    // Parse if present
-                    if (fieldValue !== undefined) {
-                        result[key] = schema.parse(fieldValue);
-                    }
+                if (fieldValue !== undefined) {
+                    result[key] = schema.parse(fieldValue);
                 }
-                return result;
             }
-        };
-    },
+            return result;
+        }
+    }),
 
-    array: <T>(item: Schema<T>): Schema<T[]> => ({
+    array: <T>(item: Schema<T>) => createSchema<T[]>({
         _def: { typeName: "ZodArray", type: item },
         parse: (val) => {
             if (!Array.isArray(val)) throw new Error('Expected array');
@@ -124,29 +123,22 @@ export const z = {
         }
     }),
 
-    optional: <T>(schema: Schema<T>): Schema<T | undefined> => ({
-        _def: { typeName: "ZodOptional", innerType: schema },
-        parse: (val) => {
-            if (val === undefined) return undefined;
-            return schema.parse(val);
-        },
-        optional: true
-    }),
+    optional: <T>(schema: Schema<T>): Schema<T | undefined> => {
+        const s = {
+            _def: { typeName: "ZodOptional", innerType: schema },
+            parse: (val: any) => (val === undefined ? undefined : schema.parse(val)),
+            _isOptional: true,
+        } as Schema<T | undefined>;
+        s.optional = () => s; // Already optional
+        return s;
+    },
 
-    void: (): Schema<void> => ({
+    void: () => createSchema<void>({
         _def: { typeName: "ZodVoid" },
-        parse: (val) => {
-            // void accepts anything (or nothing), returns undefined
-            return undefined;
-        }
+        parse: () => undefined
     }),
 
-    unknown: (): Schema<unknown> => ({
-        _def: { typeName: "ZodUnknown" },
-        parse: (val) => val
-    }),
-
-    any: (): Schema<any> => ({
+    any: () => createSchema<any>({
         _def: { typeName: "ZodAny" },
         parse: (val) => val
     })

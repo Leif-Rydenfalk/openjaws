@@ -163,7 +163,7 @@ async function generateTypes(): Promise<{
             } else {
                 // Fallback: use any
                 capabilityTypes.set(cap, { input: "any", output: "any" });
-                cell.log("WARN", `  ? ${cap}: No contract (using any)`);
+                // cell.log("WARN", `  ? ${cap}: No contract (using any)`);
             }
         }
     }
