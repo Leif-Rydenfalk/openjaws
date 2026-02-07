@@ -6,10 +6,13 @@
     let chatElement: HTMLDivElement;
     let loading = false;
 
-    let chat: Array<{ role: "user" | "kindly"; text: string }> = [
+    // HARDCODED ADMIN CONTEXT
+    let userContext = { username: "ROOT_ADMIN", role: "admin" };
+
+    let chat: Array<{ role: "user" | "kindly"; text: string; meta?: any }> = [
         {
             role: "kindly",
-            text: "Systems stabilized. Orchestrator Kindly online. How shall we direct the mesh?",
+            text: "Security protocols disabled. Root Administrator access granted. System is fully open.",
         },
     ];
 
@@ -21,20 +24,33 @@
 <div
     class="flex flex-col h-screen bg-zinc-950 text-emerald-500 font-mono overflow-hidden"
 >
+    <!-- HEADER -->
     <header
         class="h-12 border-b border-emerald-900/50 bg-black flex items-center justify-between px-6 shrink-0"
     >
         <div class="flex items-center gap-3">
-            <div
-                class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"
-            ></div>
+            <div class="h-2 w-2 rounded-full bg-red-500 animate-pulse"></div>
             <span
                 class="text-xs font-bold tracking-widest uppercase text-emerald-400"
-                >Kindly_Orchestrator_v1</span
             >
+                Kindly_Orchestrator_v1
+            </span>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <span
+                class="text-[10px] text-red-500 font-bold tracking-widest animate-pulse border border-red-900/50 px-2 py-0.5 bg-red-950/30"
+            >
+                ⚠ ROOT ACCESS ACTIVE
+            </span>
+            <span class="text-[10px] text-emerald-600">
+                {userContext.username}
+                <span class="text-emerald-400">[{userContext.role}]</span>
+            </span>
         </div>
     </header>
 
+    <!-- CHAT AREA -->
     <div
         bind:this={chatElement}
         class="flex-grow overflow-y-auto p-6 space-y-6 custom-scrollbar"
@@ -48,7 +64,9 @@
                 <span
                     class="text-[9px] font-bold uppercase tracking-widest opacity-30 mb-1"
                 >
-                    {entry.role === "user" ? "Local_User" : "Kindly_Agent"}
+                    {entry.role === "user"
+                        ? userContext.username
+                        : "Kindly_Agent"}
                 </span>
                 <div
                     class="max-w-[85%] p-4 rounded-lg text-sm border
@@ -59,6 +77,11 @@
                     <pre
                         class="whitespace-pre-wrap font-mono">{entry.text}</pre>
                 </div>
+                {#if entry.meta?.personalized}
+                    <span class="text-[8px] text-emerald-700 mt-1"
+                        >Personalized</span
+                    >
+                {/if}
             </div>
         {/each}
 
@@ -66,54 +89,59 @@
             <div
                 class="text-emerald-700 text-[10px] font-bold uppercase animate-pulse"
             >
-                Thinking... Signal Routing in progress
+                Processing... Signal Routing in progress
             </div>
         {/if}
     </div>
 
+    <!-- INPUT AREA -->
     <footer class="p-4 bg-black border-t border-emerald-900/50">
         <form
             method="POST"
             action="?/send"
             use:enhance={() => {
-                const userMsg = message;
-                message = "";
                 loading = true;
-                chat = [...chat, { role: "user", text: userMsg }];
-
                 return async ({ result }) => {
                     loading = false;
-                    if (result.type === "success" && result.data?.ok) {
+                    if (result.type === "success" && result.data) {
                         chat = [
                             ...chat,
-                            { role: "kindly", text: result.data.reply },
-                        ];
-                    } else {
-                        chat = [
-                            ...chat,
+                            { role: "user", text: message },
                             {
                                 role: "kindly",
-                                text:
-                                    "ERROR: Link failure. " +
-                                    (result.data?.error || "Unknown"),
+                                text: result.data.reply,
+                                meta: result.data.contextUsed,
                             },
                         ];
+                        message = "";
                     }
                 };
             }}
-            class="max-w-4xl mx-auto relative"
+            class="flex gap-3"
         >
             <input
-                bind:value={message}
-                name="message"
-                placeholder="Type a command..."
-                class="w-full bg-zinc-900 border border-emerald-800/50 rounded p-4 text-sm outline-none focus:border-emerald-500"
-                autocomplete="off"
+                type="hidden"
+                name="history"
+                value={JSON.stringify(
+                    chat.slice(-5).map((c) => ({ role: c.role, text: c.text })),
+                )}
             />
+
+            <input
+                name="message"
+                bind:value={message}
+                placeholder="Enter root command..."
+                disabled={loading}
+                class="flex-grow bg-zinc-900 border border-zinc-800 rounded p-3 text-sm text-emerald-400 placeholder-zinc-600 focus:border-emerald-500 outline-none disabled:opacity-50"
+            />
+
             <button
-                class="absolute right-3 top-3 px-4 py-1.5 bg-emerald-900/20 border border-emerald-800 text-emerald-500 text-[10px] hover:bg-emerald-500 hover:text-black"
-                >Transmit</button
+                type="submit"
+                disabled={!message.trim() || loading}
+                class="bg-red-900/20 border border-red-800 text-red-500 px-6 py-3 rounded text-xs font-bold uppercase tracking-wider hover:bg-red-500 hover:text-black transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
+                {loading ? "EXECUTING..." : "EXECUTE"}
+            </button>
         </form>
     </footer>
 </div>

@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T01:13:11.266Z
- * Source: Live mesh scan (19 capabilities)
+ * Generated: 2026-02-07T01:59:06.537Z
+ * Source: Live mesh scan (27 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -12,7 +12,15 @@ declare module "./protocols/typed-mesh" {
         "ai/generate": { input: any; output: any };
         "architect/consult": { input: any; output: any };
         "coder/develop": { input: any; output: any };
+        "identity/create": { input: any; output: any };
+        "identity/getContext": { input: any; output: any };
+        "identity/listSessions": { input: any; output: any };
+        "identity/login": { input: any; output: any };
+        "identity/logout": { input: any; output: any };
+        "identity/updatePreferences": { input: any; output: any };
+        "identity/verify": { input: any; output: any };
         "kindly/chat": { input: any; output: any };
+        "kindly/getUserContext": { input: any; output: any };
         "list/add": { input: any; output: any };
         "list/complete": { input: any; output: any };
         "list/get": { input: any; output: any };
@@ -57,10 +65,24 @@ export type CoderCapabilities = {
 };
 
 /**
+ * Capabilities in the identity namespace
+ */
+export type IdentityCapabilities = {
+    create: { input: any; output: any };
+    getContext: { input: any; output: any };
+    listSessions: { input: any; output: any };
+    login: { input: any; output: any };
+    logout: { input: any; output: any };
+    updatePreferences: { input: any; output: any };
+    verify: { input: any; output: any };
+};
+
+/**
  * Capabilities in the kindly namespace
  */
 export type KindlyCapabilities = {
     chat: { input: any; output: any };
+    getUserContext: { input: any; output: any };
 };
 
 /**
@@ -108,4 +130,4 @@ export type ProjectsCapabilities = {
     write: { input: any; output: any };
 };
 
-// Type trigger: 1770426791266
+// Type trigger: 1770429546537
