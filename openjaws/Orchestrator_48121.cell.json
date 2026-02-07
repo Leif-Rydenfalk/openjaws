@@ -1,0 +1,18 @@
+{
+  "pid": 48121,
+  "version": "5c2f1e8481f31579",
+  "port": 43907,
+  "startTime": 1770423154581,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAGxfNEF8VQtxqycjAY0s/PH5s17jPv3oiruVVVygDTtE=\n-----END PUBLIC KEY-----\n"
+}

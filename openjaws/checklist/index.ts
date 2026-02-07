@@ -83,6 +83,13 @@ const checklistRouter = router({
                     createdAt: z.number()
                 })
             }))
+            .meta({
+                description: "Add a new item to the daily checklist",
+                example: {
+                    text: "Optimize Deployment",
+                    type: "task"
+                }
+            })
             .mutation(async (input) => {
                 const items = loadDailyData();
                 const activeTasks = items.filter(i => i.type === 'task' && !i.completed);

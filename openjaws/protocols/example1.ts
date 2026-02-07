@@ -1618,10 +1618,15 @@ export class RheoCell {
         // Burst announce to speed up test convergence
         const announce = () => {
             const myEntry: AtlasEntry = {
-                addr: this._addr, caps: Object.keys(this.handlers),
-                pubKey: this.publicKey, lastSeen: Date.now(),
-                lastGossiped: Date.now(), gossipHopCount: 0
+                id: this.id,
+                addr: this._addr,
+                caps: Object.keys(this.handlers),
+                pubKey: this.publicKey,
+                lastSeen: Date.now(),
+                lastGossiped: Date.now(),
+                gossipHopCount: 0
             };
+
 
             const targets = Object.values(this.atlas)
                 .filter(e =>
@@ -1667,9 +1672,13 @@ export class RheoCell {
                 fetch(`${this.seed}/announce`, {
                     method: "POST",
                     body: JSON.stringify({
-                        addr: this._addr, caps: Object.keys(this.handlers),
-                        pubKey: this.publicKey, lastSeen: Date.now(),
-                        lastGossiped: Date.now(), gossipHopCount: 0
+                        id: this.id,
+                        addr: this._addr,
+                        caps: Object.keys(this.handlers),
+                        pubKey: this.publicKey,
+                        lastSeen: Date.now(),
+                        lastGossiped: Date.now(),
+                        gossipHopCount: 0
                     }),
                     headers: { "Content-Type": "application/json" }
                 }).catch(() => { });

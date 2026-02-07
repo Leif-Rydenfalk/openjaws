@@ -156,10 +156,16 @@ export const z = {
 // PROCEDURE BUILDER
 // ============================================================================
 
+export interface ProcedureMeta {
+    description?: string;
+    example?: any;
+}
+
 export class Procedure<TInput = void, TOutput = unknown> {
     public readonly _def: {
         input?: Schema<TInput>;
         output?: Schema<TOutput>;
+        meta?: ProcedureMeta;
         type: 'query' | 'mutation';
         handler: (input: TInput, ctx: Signal) => Promise<TOutput>;
     };
@@ -168,48 +174,85 @@ export class Procedure<TInput = void, TOutput = unknown> {
         type: 'query' | 'mutation',
         input: Schema<TInput> | undefined,
         output: Schema<TOutput> | undefined,
-        handler: (input: TInput, ctx: Signal) => Promise<TOutput>
+        handler: (input: TInput, ctx: Signal) => Promise<TOutput>,
+        meta?: ProcedureMeta
     ) {
-        this._def = { type, input, output, handler };
+        this._def = { type, input, output, handler, meta };
+    }
+}
+
+class ProcedureBuilder<TInput, TOutput> {
+    constructor(
+        private _input?: Schema<TInput>,
+        private _output?: Schema<TOutput>,
+        private _meta?: ProcedureMeta
+    ) { }
+
+    /**
+     * Add metadata/documentation to the procedure.
+     * Can be called multiple times; properties are merged.
+     */
+    meta(meta: ProcedureMeta): ProcedureBuilder<TInput, TOutput> {
+        return new ProcedureBuilder(
+            this._input,
+            this._output,
+            { ...this._meta, ...meta }
+        );
+    }
+
+    /**
+     * Define the input schema (validation)
+     */
+    input<TNewInput>(schema: Schema<TNewInput>): ProcedureBuilder<TNewInput, TOutput> {
+        return new ProcedureBuilder<TNewInput, TOutput>(
+            schema,
+            this._output,
+            this._meta
+        );
+    }
+
+    /**
+     * Define the output schema (validation)
+     */
+    output<TNewOutput>(schema: Schema<TNewOutput>): ProcedureBuilder<TInput, TNewOutput> {
+        return new ProcedureBuilder<TInput, TNewOutput>(
+            this._input,
+            schema,
+            this._meta
+        );
+    }
+
+    /**
+     * Define a Query (read-only) operation
+     */
+    query(handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> {
+        return new Procedure(
+            'query',
+            this._input,
+            this._output,
+            handler,
+            this._meta
+        );
+    }
+
+    /**
+     * Define a Mutation (write) operation
+     */
+    mutation(handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> {
+        return new Procedure(
+            'mutation',
+            this._input,
+            this._output,
+            handler,
+            this._meta
+        );
     }
 }
 
 /**
  * Procedure builder - start here to create endpoints
  */
-export const procedure = {
-    // Add this for output-only procedures (no input)
-    output: <TOutput>(outSchema: Schema<TOutput>) => ({
-        query: (handler: (ctx: Signal) => Promise<TOutput>): Procedure<void, TOutput> =>
-            new Procedure('query', undefined, outSchema, async (_: void, ctx) => handler(ctx)),
-        mutation: (handler: (ctx: Signal) => Promise<TOutput>): Procedure<void, TOutput> =>
-            new Procedure('mutation', undefined, outSchema, async (_: void, ctx) => handler(ctx))
-    }),
-
-    query: <TOutput>(
-        handler: (ctx: Signal) => Promise<TOutput>
-    ): Procedure<void, TOutput> =>
-        new Procedure('query', undefined, undefined, async (_: void, ctx) => handler(ctx)),
-
-    mutation: <TOutput>(
-        handler: (ctx: Signal) => Promise<TOutput>
-    ): Procedure<void, TOutput> =>
-        new Procedure('mutation', undefined, undefined, async (_: void, ctx) => handler(ctx)),
-
-    input: <TInput>(schema: Schema<TInput>) => ({
-        output: <TOutput>(outSchema: Schema<TOutput>) => ({
-            query: (handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> =>
-                new Procedure('query', schema, outSchema, handler),
-            mutation: (handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> =>
-                new Procedure('mutation', schema, outSchema, handler)
-        }),
-        // Backward compat - infer output from handler
-        query: <TOutput>(handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> =>
-            new Procedure('query', schema, undefined, handler),
-        mutation: <TOutput>(handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> =>
-            new Procedure('mutation', schema, undefined, handler)
-    })
-};
+export const procedure = new ProcedureBuilder<void, unknown>();
 
 // ============================================================================
 // ROUTER
@@ -270,13 +313,14 @@ export class Router<TProcedures extends Record<string, AnyProcedure | AnyRouter>
      * Get contract information for a capability
      * Returns the actual zod schemas that can be introspected
      */
-    getContract(capability: string): { input?: any; output?: any } | null {
+    getContract(capability: string): { input?: any; output?: any; meta?: ProcedureMeta } | null {
         const proc = this.findProcedure(capability);
         if (!proc) return null;
 
         return {
-            input: proc._def.input,  // This is the actual zod schema object
-            output: proc._def.output // This is the actual zod schema object
+            input: proc._def.input,
+            output: proc._def.output,
+            meta: proc._def.meta // <--- ADDED
         };
     }
 

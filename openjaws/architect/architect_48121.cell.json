@@ -1,0 +1,19 @@
+{
+  "pid": 48140,
+  "version": "5c2f1e8481f31579",
+  "port": 35723,
+  "startTime": 1770423154692,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "architect/consult"
+  ],
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAWI/UwqNjIr+tZcZi5NZY4YEkGQcc6tQM5k/2zWHjbW0=\n-----END PUBLIC KEY-----\n"
+}

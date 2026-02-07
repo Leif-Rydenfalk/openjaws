@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <!-- A subtle dark grey grid line on the right and bottom edges -->
+    <path d="M40 0V40H0" stroke="#3f3f46" stroke-width="1" fill="none" opacity="0.2"/>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "pid": 48174,
+  "version": "5c2f1e8481f31579",
+  "port": 36819,
+  "startTime": 1770423154731,
+  "capabilities": [
+    "mesh/ping",
+    "mesh/gossip",
+    "cell/shutdown",
+    "cell/inspect",
+    "cell/journal",
+    "mesh/directory",
+    "mesh/who",
+    "mesh/signal-to-url",
+    "cell/contract",
+    "codegen/mesh-types",
+    "codegen/poke-ts",
+    "codegen/validate",
+    "codegen/describe"
+  ],
+  "seed": "",
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAB3vUEMKMhPfYZj2xj9SP7hBianYJYrFYFTG3wpUz49E=\n-----END PUBLIC KEY-----\n"
+}

@@ -1,6 +1,6 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-06T23:53:31.093Z
+ * Generated: 2026-02-07T00:13:34.732Z
  * Source: Live mesh scan (14 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
@@ -11,9 +11,7 @@ declare module "./protocols/typed-mesh" {
     interface MeshCapabilities {
         "ai/embed": { input: any; output: any };
         "ai/generate": { input: any; output: any };
-        "codegen/mesh-types": { input: any; output: { ok: boolean; path?: string; capabilities?: number; namespaces?: Array<string> } };
-        "codegen/poke-ts": { input: any; output: { ok: boolean } };
-        "codegen/validate": { input: any; output: { ok: boolean; error?: string; missing?: Array<string>; undeclared?: Array<string>; stats?: { declared: number; actual: number } } };
+        "architect/consult": { input: any; output: any };
         "list/add": { input: any; output: any };
         "list/complete": { input: any; output: any };
         "list/get": { input: any; output: any };
@@ -21,6 +19,8 @@ declare module "./protocols/typed-mesh" {
         "list/summarize": { input: any; output: any };
         "log/get": { input: any; output: any };
         "log/info": { input: any; output: any };
+        "memory/search": { input: any; output: any };
+        "memory/store": { input: any; output: any };
         "mesh/health": { input: any; output: any };
         "mesh/ping": { input: any; output: any };
     }
@@ -39,12 +39,10 @@ export type AiCapabilities = {
 };
 
 /**
- * Capabilities in the codegen namespace
+ * Capabilities in the architect namespace
  */
-export type CodegenCapabilities = {
-    mesh-types: { input: any; output: { ok: boolean; path?: string; capabilities?: number; namespaces?: Array<string> } };
-    poke-ts: { input: any; output: { ok: boolean } };
-    validate: { input: any; output: { ok: boolean; error?: string; missing?: Array<string>; undeclared?: Array<string>; stats?: { declared: number; actual: number } } };
+export type ArchitectCapabilities = {
+    consult: { input: any; output: any };
 };
 
 /**
@@ -67,6 +65,14 @@ export type LogCapabilities = {
 };
 
 /**
+ * Capabilities in the memory namespace
+ */
+export type MemoryCapabilities = {
+    search: { input: any; output: any };
+    store: { input: any; output: any };
+};
+
+/**
  * Capabilities in the mesh namespace
  */
 export type MeshCapabilities = {
@@ -74,4 +80,4 @@ export type MeshCapabilities = {
     ping: { input: any; output: any };
 };
 
-// Type trigger: 1770422011093
+// Type trigger: 1770423214733

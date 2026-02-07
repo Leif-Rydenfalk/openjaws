@@ -349,7 +349,45 @@ const codegenRouter = router({
                         actual: actual.size
                     }
                 };
-            })
+            }),
+
+        describe: procedure
+            .input(z.object({
+                cap: z.string()
+            }))
+            .output(z.object({
+                found: z.boolean(),
+                meta: z.any()
+            }))
+            .query(async ({ cap }) => {
+                // Find a provider in our local atlas
+                const providers = Object.values(cell.atlas).filter(e => e.caps.includes(cap));
+
+                if (providers.length === 0) {
+                    return { found: false, meta: null };
+                }
+
+                // Ask the first provider for its contract
+                // We use rpc direct to the provider to ensure we get the definition
+                try {
+                    const provider = providers[0];
+                    const res = await cell.rpc(provider.addr, {
+                        id: crypto.randomUUID(),
+                        from: cell.id,
+                        intent: "ASK",
+                        payload: { capability: "cell/contract", args: { cap } },
+                        proofs: {},
+                        atlas: cell.atlas,
+                        trace: []
+                    } as any);
+
+                    if (res.ok && res.value && res.value.meta) {
+                        return { found: true, meta: res.value.meta };
+                    }
+                } catch (e) { }
+
+                return { found: false, meta: null };
+            }),
     })
 });
 
