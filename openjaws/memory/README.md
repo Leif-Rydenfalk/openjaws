@@ -4,3 +4,10 @@ all memories are chronological.
 
 
 
+5 semantic layers: session (ephemeral), goals (intention), movement (progress), patterns (learned behavior), actions (raw events)
+Context-aware scoring: time-of-day, day-of-week, user ID, recency, layer-specific weighting
+Automatic pattern detection: The detectPatterns() function looks for temporal correlations (e.g., "user always checks logs at 9am") and surfaces them as suggestions
+
+
+
+Whats the optimal memory format for kindly? it should always remember every single message the user sent - but it should not remember all of its own messages since they can be pretty long so we might cut after 5 or start summarizing them until the other memory types takes over the session memory.

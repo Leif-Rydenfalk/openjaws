@@ -50,3 +50,12 @@ Add a ai model which actually does shit. create an orchestrator. we want modular
 
 
 Give it more functionality and make the systems composable and robust (they should talk to eachother)
+
+
+
+What I'd Watch Carefully
+1. The Registry Bottleneck
+You're using the filesystem (.rheo/registry/) as the shared memory between cells. This works for single-machine deployments, but:
+Network filesystems would be slow/fragile
+No built-in encryption for cross-machine discovery
+The bootstrapFromRegistry() polling is elegant but has inherent latency
