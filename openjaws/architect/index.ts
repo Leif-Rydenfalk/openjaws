@@ -9,52 +9,70 @@ const architectRouter = router({
         consult: procedure
             .input(z.object({
                 goal: z.string(),
-                execute: z.optional(z.boolean()) // If true, actually adds tasks
-            }))
-            .output(z.object({
-                plan: z.string(),
-                contextUsed: z.array(z.string()),
-                tasksCreated: z.number()
+                execute: z.optional(z.boolean())
             }))
             .mutation(async (input) => {
-                // 1. SEARCH FOR PREVIOUS PLANS
+                // 1. READ THE ACTUAL CODEBASE
+                const relevantFiles = [
+                    "ui/src/routes/+page.svelte",
+                    "ui/src/routes/+layout.svelte",
+                    "ui/tailwind.config.ts",
+                    "ui/src/app.css"
+                ];
+
+                let codeContext = "";
+                for (const file of relevantFiles) {
+                    try {
+                        const content = await cell.mesh.projects.read({ path: file });
+                        codeContext += `\n=== ${file} ===\n${content.content}\n`;
+                    } catch (e) {
+                        // File might not exist
+                    }
+                }
+
+                // 2. SEARCH MEMORY FOR PREVIOUS CONTEXT
                 const pastPlans = await cell.mesh.memory.search({
                     query: `plan for ${input.goal}`,
                     limit: 3
                 }).catch(() => []);
 
-                // 2. BUILD THE PROMPT
+                // 3. BUILD INFORMED PROMPT
                 const prompt = `
-                OBJECTIVE: ${input.goal}
-                
-                PREVIOUS_ATTEMPTS_FROM_MEMORY:
-                ${pastPlans.map(p => p.content).join('\n---\n')}
+        OBJECTIVE: ${input.goal}
+        
+        CURRENT CODEBASE STATE:
+        ${codeContext}
+        
+        PREVIOUS_ATTEMPTS_FROM_MEMORY:
+        ${pastPlans.map(p => p.content).join('\n---\n')}
 
-                TASK: Create a technical execution plan for the OpenJaws Mesh.
-                Specify which cells (coder, projects, list) should be used.
-                `;
+        TASK: Create a CONCRETE execution plan based on the ACTUAL codebase above.
+        - Reference specific files and line numbers
+        - Identify what already exists vs what needs to be created
+        - Specify which mesh cells to use (coder, projects, checklist)
+        - Break down into executable steps
+        `;
 
                 const aiRes = await cell.mesh.ai.generate({
                     prompt,
-                    systemInstruction: "You are the Lead Mesh Architect. Focus on modularity and type-safety."
+                    systemInstruction: `You are analyzing a real codebase. Base your plan ONLY on what you can see in the files provided. Do not hallucinate features that don't exist.`
                 });
 
-                // 3. STORE THE NEW PLAN IN MEMORY
+                // Store the plan
                 await cell.mesh.memory.store({
-                    content: `Goal: ${input.goal} | Plan: ${aiRes.response}`,
+                    content: `Goal: ${input.goal} | Files analyzed: ${relevantFiles.join(', ')} | Plan: ${aiRes.response}`,
                     tags: ["architect", "planning", input.goal.substring(0, 10)]
                 });
 
-                // 3. (Optional) Execute by adding to Checklist
+                // Execute if requested
                 let tasksCreated = 0;
                 if (input.execute) {
                     const lines = aiRes.response.split('\n');
                     for (const line of lines) {
-                        if (line.trim().match(/^[1-9]\.|^-/)) {
-                            // It looks like a task
+                        if (line.trim().match(/^[1-9]\.|^-|^\*\s/)) {
                             try {
                                 await cell.mesh.list.add({
-                                    text: line.replace(/^[0-9.-]+\s*/, ''),
+                                    text: line.replace(/^[0-9.\-*]+\s*/, '').trim(),
                                     type: 'task'
                                 });
                                 tasksCreated++;
@@ -65,7 +83,7 @@ const architectRouter = router({
 
                 return {
                     plan: aiRes.response,
-                    contextUsed: context.map(c => c.content),
+                    contextUsed: relevantFiles,
                     tasksCreated
                 };
             })
