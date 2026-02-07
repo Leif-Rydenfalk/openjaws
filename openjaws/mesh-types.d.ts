@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T02:03:36.534Z
- * Source: Live mesh scan (27 capabilities)
+ * Generated: 2026-02-07T02:15:43.140Z
+ * Source: Live mesh scan (24 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -12,14 +12,8 @@ declare module "./protocols/typed-mesh" {
         "ai/generate": { input: any; output: any };
         "architect/consult": { input: any; output: any };
         "coder/develop": { input: any; output: any };
-        "identity/create": { input: any; output: any };
-        "identity/getContext": { input: any; output: any };
-        "identity/listSessions": { input: any; output: any };
-        "identity/login": { input: any; output: any };
-        "identity/logout": { input: any; output: any };
-        "identity/updatePreferences": { input: any; output: any };
-        "identity/verify": { input: any; output: any };
         "kindly/chat": { input: any; output: any };
+        "kindly/getTemporalSummary": { input: any; output: any };
         "kindly/getUserContext": { input: any; output: any };
         "list/add": { input: any; output: any };
         "list/complete": { input: any; output: any };
@@ -28,8 +22,11 @@ declare module "./protocols/typed-mesh" {
         "list/summarize": { input: any; output: any };
         "log/get": { input: any; output: any };
         "log/info": { input: any; output: any };
+        "memory/get-session": { input: any; output: any };
+        "memory/prune": { input: any; output: any };
         "memory/search": { input: any; output: any };
         "memory/store": { input: any; output: any };
+        "memory/suggest-from-patterns": { input: any; output: any };
         "mesh/health": { input: any; output: any };
         "mesh/ping": { input: any; output: any };
         "projects/exec": { input: any; output: any };
@@ -65,23 +62,11 @@ export type CoderCapabilities = {
 };
 
 /**
- * Capabilities in the identity namespace
- */
-export type IdentityCapabilities = {
-    create: { input: any; output: any };
-    getContext: { input: any; output: any };
-    listSessions: { input: any; output: any };
-    login: { input: any; output: any };
-    logout: { input: any; output: any };
-    updatePreferences: { input: any; output: any };
-    verify: { input: any; output: any };
-};
-
-/**
  * Capabilities in the kindly namespace
  */
 export type KindlyCapabilities = {
     chat: { input: any; output: any };
+    getTemporalSummary: { input: any; output: any };
     getUserContext: { input: any; output: any };
 };
 
@@ -108,8 +93,11 @@ export type LogCapabilities = {
  * Capabilities in the memory namespace
  */
 export type MemoryCapabilities = {
+    get-session: { input: any; output: any };
+    prune: { input: any; output: any };
     search: { input: any; output: any };
     store: { input: any; output: any };
+    suggest-from-patterns: { input: any; output: any };
 };
 
 /**
@@ -130,4 +118,4 @@ export type ProjectsCapabilities = {
     write: { input: any; output: any };
 };
 
-// Type trigger: 1770429816535
+// Type trigger: 1770430543141

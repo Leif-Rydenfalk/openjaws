@@ -1,24 +1,52 @@
+<!-- kindly/+page.svelte - UPDATED UI WITH TEMPORAL CONTEXT -->
 <script lang="ts">
     import { enhance } from "$app/forms";
-    import { afterUpdate } from "svelte";
+    import { afterUpdate, onMount } from "svelte";
+
+    export let data;
 
     let message = "";
     let chatElement: HTMLDivElement;
     let loading = false;
 
-    // HARDCODED ADMIN CONTEXT
     let userContext = { username: "ROOT_ADMIN", role: "admin" };
+    let temporalContext = data.temporalContext || {
+        sessionMemories: 0,
+        activeGoals: 0,
+        learnedPatterns: 0,
+        timeOfDay: "unknown",
+    };
 
-    let chat: Array<{ role: "user" | "kindly"; text: string; meta?: any }> = [
+    let chat: Array<{
+        role: "user" | "kindly";
+        text: string;
+        meta?: any;
+        timestamp: number;
+    }> = [
         {
             role: "kindly",
-            text: "Security protocols disabled. Root Administrator access granted. System is fully open.",
+            text: `Security protocols disabled. Root Administrator access granted. System fully operational.
+
+Time: ${temporalContext.timeOfDay}
+Session Memory: ${temporalContext.sessionMemories} events
+Active Goals: ${temporalContext.activeGoals}
+Learned Patterns: ${temporalContext.learnedPatterns}
+
+Temporal memory system active. I'm learning your routines.`,
+            timestamp: Date.now(),
         },
     ];
 
     afterUpdate(() => {
         if (chatElement) chatElement.scrollTop = chatElement.scrollHeight;
     });
+
+    function formatTime(timestamp: number): string {
+        return new Date(timestamp).toLocaleTimeString("en-US", {
+            hour: "2-digit",
+            minute: "2-digit",
+        });
+    }
 </script>
 
 <div
@@ -29,7 +57,9 @@
         class="h-12 border-b border-emerald-900/50 bg-black flex items-center justify-between px-6 shrink-0"
     >
         <div class="flex items-center gap-3">
-            <div class="h-2 w-2 rounded-full bg-red-500 animate-pulse"></div>
+            <div
+                class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"
+            ></div>
             <span
                 class="text-xs font-bold tracking-widest uppercase text-emerald-400"
             >
@@ -38,6 +68,20 @@
         </div>
 
         <div class="flex items-center gap-4">
+            <!-- Temporal Context Indicators -->
+            <div class="flex gap-3 text-[9px] text-emerald-600">
+                <span title="Session Memories"
+                    >📝 {temporalContext.sessionMemories}</span
+                >
+                <span title="Active Goals"
+                    >🎯 {temporalContext.activeGoals}</span
+                >
+                <span title="Learned Patterns"
+                    >🔮 {temporalContext.learnedPatterns}</span
+                >
+                <span title="Time of Day">⏰ {temporalContext.timeOfDay}</span>
+            </div>
+
             <span
                 class="text-[10px] text-red-500 font-bold tracking-widest animate-pulse border border-red-900/50 px-2 py-0.5 bg-red-950/30"
             >
@@ -61,13 +105,19 @@
                     ? 'items-end'
                     : 'items-start'}"
             >
-                <span
-                    class="text-[9px] font-bold uppercase tracking-widest opacity-30 mb-1"
-                >
-                    {entry.role === "user"
-                        ? userContext.username
-                        : "Kindly_Agent"}
-                </span>
+                <div class="flex items-center gap-2 mb-1">
+                    <span
+                        class="text-[9px] font-bold uppercase tracking-widest opacity-30"
+                    >
+                        {entry.role === "user"
+                            ? userContext.username
+                            : "Kindly_Agent"}
+                    </span>
+                    <span class="text-[8px] text-emerald-900">
+                        {formatTime(entry.timestamp)}
+                    </span>
+                </div>
+
                 <div
                     class="max-w-[85%] p-4 rounded-lg text-sm border
                     {entry.role === 'user'
@@ -77,19 +127,42 @@
                     <pre
                         class="whitespace-pre-wrap font-mono">{entry.text}</pre>
                 </div>
-                {#if entry.meta?.personalized}
-                    <span class="text-[8px] text-emerald-700 mt-1"
-                        >Personalized</span
-                    >
+
+                {#if entry.meta}
+                    <div class="flex gap-2 mt-1 text-[8px] text-emerald-700">
+                        {#if entry.meta.personalized}
+                            <span title="Using temporal memory"
+                                >🧠 Personalized</span
+                            >
+                        {/if}
+                        {#if entry.meta.patternsDetected > 0}
+                            <span title="Patterns detected"
+                                >🔮 {entry.meta.patternsDetected} patterns</span
+                            >
+                        {/if}
+                        {#if entry.meta.sessionMemories > 0}
+                            <span title="Session context"
+                                >📝 {entry.meta.sessionMemories} memories</span
+                            >
+                        {/if}
+                        {#if entry.meta.suggestedActions && entry.meta.suggestedActions.length > 0}
+                            <span title="Suggestions available"
+                                >💡 {entry.meta.suggestedActions.length} suggestions</span
+                            >
+                        {/if}
+                    </div>
                 {/if}
             </div>
         {/each}
 
         {#if loading}
             <div
-                class="text-emerald-700 text-[10px] font-bold uppercase animate-pulse"
+                class="text-emerald-700 text-[10px] font-bold uppercase animate-pulse flex items-center gap-2"
             >
-                Processing... Signal Routing in progress
+                <div
+                    class="h-1 w-1 bg-emerald-500 rounded-full animate-ping"
+                ></div>
+                Processing temporal context...
             </div>
         {/if}
     </div>
@@ -101,18 +174,37 @@
             action="?/send"
             use:enhance={() => {
                 loading = true;
+                const userMsg = message;
+                const timestamp = Date.now();
+
                 return async ({ result }) => {
                     loading = false;
                     if (result.type === "success" && result.data) {
                         chat = [
                             ...chat,
-                            { role: "user", text: message },
+                            { role: "user", text: userMsg, timestamp },
                             {
                                 role: "kindly",
                                 text: result.data.reply,
                                 meta: result.data.contextUsed,
+                                timestamp: Date.now(),
                             },
                         ];
+
+                        // Update temporal context display
+                        if (result.data.contextUsed) {
+                            temporalContext = {
+                                sessionMemories:
+                                    result.data.contextUsed.sessionMemories ||
+                                    temporalContext.sessionMemories,
+                                activeGoals: temporalContext.activeGoals,
+                                learnedPatterns:
+                                    result.data.contextUsed.patternsDetected ||
+                                    temporalContext.learnedPatterns,
+                                timeOfDay: temporalContext.timeOfDay,
+                            };
+                        }
+
                         message = "";
                     }
                 };
@@ -138,10 +230,26 @@
             <button
                 type="submit"
                 disabled={!message.trim() || loading}
-                class="bg-red-900/20 border border-red-800 text-red-500 px-6 py-3 rounded text-xs font-bold uppercase tracking-wider hover:bg-red-500 hover:text-black transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                class="bg-emerald-900/20 border border-emerald-800 text-emerald-500 px-6 py-3 rounded text-xs font-bold uppercase tracking-wider hover:bg-emerald-500 hover:text-black transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
-                {loading ? "EXECUTING..." : "EXECUTE"}
+                {loading ? "PROCESSING..." : "EXECUTE"}
             </button>
         </form>
     </footer>
 </div>
+
+<style>
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #065f46;
+        border-radius: 2px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #047857;
+    }
+</style>
