@@ -17,3 +17,7 @@ bun run dev
 
 see .ts .svelte .js .toml
 see .ts .svelte .js .rs .toml
+
+
+When you add a Cell.toml the orchestrator picks it up and runs the spawn script you write in it.
+Prototyping meshes is very fast with this... But it can be faster.
