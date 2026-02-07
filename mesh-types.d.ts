@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T20:39:08.201Z
- * Source: Live mesh scan (29 capabilities)
+ * Generated: 2026-02-07T20:54:03.032Z
+ * Source: Live mesh scan (42 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -26,6 +26,19 @@ declare module "./protocols/typed-mesh" {
         "list/summarize": { input: any; output: any };
         "log/get": { input: any; output: any };
         "log/info": { input: any; output: any };
+        "memory/actions/history": { input: any; output: any };
+        "memory/actions/record": { input: any; output: any };
+        "memory/goals/create": { input: any; output: any };
+        "memory/goals/list": { input: any; output: any };
+        "memory/goals/update": { input: any; output: any };
+        "memory/movement/record": { input: any; output: any };
+        "memory/movement/timeline": { input: any; output: any };
+        "memory/patterns/learn": { input: any; output: any };
+        "memory/patterns/match": { input: any; output: any };
+        "memory/session/get": { input: any; output: any };
+        "memory/session/store": { input: any; output: any };
+        "memory/temporal/context": { input: any; output: any };
+        "memory/temporal/slice": { input: any; output: any };
         "mesh/health": { input: any; output: any };
         "mesh/ping": { input: any; output: any };
         "projects/exec": { input: any; output: any };
@@ -105,6 +118,25 @@ export type LogCapabilities = {
 };
 
 /**
+ * Capabilities in the memory namespace
+ */
+export type MemoryCapabilities = {
+    actions: { input: any; output: any };
+    actions: { input: any; output: any };
+    goals: { input: any; output: any };
+    goals: { input: any; output: any };
+    goals: { input: any; output: any };
+    movement: { input: any; output: any };
+    movement: { input: any; output: any };
+    patterns: { input: any; output: any };
+    patterns: { input: any; output: any };
+    session: { input: any; output: any };
+    session: { input: any; output: any };
+    temporal: { input: any; output: any };
+    temporal: { input: any; output: any };
+};
+
+/**
  * Capabilities in the mesh namespace
  */
 export type MeshCapabilities = {
@@ -134,4 +166,4 @@ export type SkillsCapabilities = {
     update-capability: { input: any; output: any };
 };
 
-// Type trigger: 1770496748202
+// Type trigger: 1770497643032

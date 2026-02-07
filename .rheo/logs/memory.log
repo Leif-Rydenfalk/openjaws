@@ -382,3 +382,86 @@
 [9:39:18 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
 [9:39:18 PM]       at loadAndEvaluateModule (2:1)
 [9:39:18 PM] Bun v1.3.1 (Linux x64)
+[9:39:28 PM] [memory] Key fingerprint: a7412c8328ef9116
+[9:39:28 PM] 131 | 
+[9:39:28 PM] 132 |         for (const cap of capabilities) {
+[9:39:28 PM] 133 |             const proc = router.findProcedure(cap);
+[9:39:28 PM] 134 | 
+[9:39:28 PM] 135 |             if (!proc) {
+[9:39:28 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:28 PM]                                 ^
+[9:39:28 PM] error: Procedure not found: memory/session/store
+[9:39:28 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:28 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:28 PM]       at loadAndEvaluateModule (2:1)
+[9:39:28 PM] Bun v1.3.1 (Linux x64)
+[9:39:38 PM] [memory] Key fingerprint: 24d9970861292790
+[9:39:38 PM] 131 | 
+[9:39:38 PM] 132 |         for (const cap of capabilities) {
+[9:39:38 PM] 133 |             const proc = router.findProcedure(cap);
+[9:39:38 PM] 134 | 
+[9:39:38 PM] 135 |             if (!proc) {
+[9:39:38 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:38 PM]                                 ^
+[9:39:38 PM] error: Procedure not found: memory/session/store
+[9:39:38 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:38 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:38 PM]       at loadAndEvaluateModule (2:1)
+[9:39:38 PM] Bun v1.3.1 (Linux x64)
+[9:39:48 PM] [memory] Key fingerprint: ebd264513ecc09dc
+[9:39:48 PM] 131 | 
+[9:39:48 PM] 132 |         for (const cap of capabilities) {
+[9:39:48 PM] 133 |             const proc = router.findProcedure(cap);
+[9:39:48 PM] 134 | 
+[9:39:48 PM] 135 |             if (!proc) {
+[9:39:48 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:48 PM]                                 ^
+[9:39:48 PM] error: Procedure not found: memory/session/store
+[9:39:48 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:48 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:48 PM]       at loadAndEvaluateModule (2:1)
+[9:39:48 PM] Bun v1.3.1 (Linux x64)
+[9:39:58 PM] [memory] Key fingerprint: 7ac0b61ecb01bad6
+[9:39:58 PM] 131 | 
+[9:39:58 PM] 132 |         for (const cap of capabilities) {
+[9:39:58 PM] 133 |             const proc = router.findProcedure(cap);
+[9:39:58 PM] 134 | 
+[9:39:58 PM] 135 |             if (!proc) {
+[9:39:58 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:58 PM]                                 ^
+[9:39:58 PM] error: Procedure not found: memory/session/store
+[9:39:58 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:58 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:58 PM]       at loadAndEvaluateModule (2:1)
+[9:39:58 PM] Bun v1.3.1 (Linux x64)
+[9:40:08 PM] [memory] Key fingerprint: 9195992ca776b8cc
+[9:40:08 PM] 131 | 
+[9:40:08 PM] 132 |         for (const cap of capabilities) {
+[9:40:08 PM] 133 |             const proc = router.findProcedure(cap);
+[9:40:08 PM] 134 | 
+[9:40:08 PM] 135 |             if (!proc) {
+[9:40:08 PM] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:40:08 PM]                                 ^
+[9:40:08 PM] error: Procedure not found: memory/session/store
+[9:40:08 PM]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:40:08 PM]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:40:08 PM]       at loadAndEvaluateModule (2:1)
+[9:40:08 PM] Bun v1.3.1 (Linux x64)
+[9:40:17 PM] [memory] Key fingerprint: 506a2ff2f50939a2
+[9:40:17 PM] [32m[20:40:17.792] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[9:40:17 PM] [32m[20:40:17.804] [INFO] [memory] Sovereign Cell online @ http://localhost:36107[0m
+[9:40:17 PM] [32m[20:40:17.804] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[9:40:17 PM] [32m[20:40:17.804] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[9:40:17 PM] [32m[20:40:17.804] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[9:47:14 PM] [memory] Key fingerprint: 7603ad8f1f76d70b
+[9:47:14 PM] [32m[20:47:14.644] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[9:47:14 PM] [32m[20:47:14.655] [INFO] [memory] Sovereign Cell online @ http://localhost:40567[0m
+[9:47:14 PM] [32m[20:47:14.656] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[9:47:14 PM] [32m[20:47:14.656] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[9:47:14 PM] [32m[20:47:14.656] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[9:49:32 PM] [memory] Key fingerprint: a929158f8f33b112
+[9:49:32 PM] [32m[20:49:32.870] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[9:49:32 PM] [32m[20:49:32.891] [INFO] [memory] Sovereign Cell online @ http://localhost:42111[0m
+[9:49:32 PM] [32m[20:49:32.892] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[9:49:32 PM] [32m[20:49:32.892] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[9:49:32 PM] [32m[20:49:32.892] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m

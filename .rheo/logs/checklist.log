@@ -209,3 +209,19 @@
 [9:36:08 PM] [32m[20:36:08.089] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
 [9:36:35 PM] Current list has 0 items
 [9:36:35 PM] Mesh health: NOMINAL, 11 cells
+[9:40:17 PM] [checklist] Key fingerprint: 4230073e7a587776
+[9:40:17 PM] [32m[20:40:17.878] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[9:40:17 PM] [32m[20:40:17.888] [INFO] [checklist] Sovereign Cell online @ http://localhost:40089[0m
+[9:40:17 PM] [32m[20:40:17.888] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[9:40:44 PM] Current list has 0 items
+[9:40:44 PM] Mesh health: NOMINAL, 15 cells
+[9:47:14 PM] [checklist] Key fingerprint: f9aa531c7c017c3b
+[9:47:14 PM] [32m[20:47:14.741] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[9:47:14 PM] [32m[20:47:14.755] [INFO] [checklist] Sovereign Cell online @ http://localhost:36215[0m
+[9:47:14 PM] [32m[20:47:14.756] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[9:49:32 PM] [checklist] Key fingerprint: 82eee919c2a593be
+[9:49:32 PM] [32m[20:49:32.887] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[9:49:32 PM] [32m[20:49:32.910] [INFO] [checklist] Sovereign Cell online @ http://localhost:41401[0m
+[9:49:32 PM] [32m[20:49:32.911] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[9:49:59 PM] Current list has 0 items
+[9:49:59 PM] Mesh health: NOMINAL, 15 cells

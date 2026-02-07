@@ -4722,3 +4722,304 @@
 [9:39:18 PM] [memory]       at /home/asdfghj/openjaws/memory/index.ts:876:6
 [9:39:18 PM] [memory]       at loadAndEvaluateModule (2:1)
 [9:39:18 PM] [memory] Bun v1.3.1 (Linux x64)
+[9:39:28 PM] [memory] [memory] Key fingerprint: a7412c8328ef9116
+[9:39:28 PM] [memory] 131 | 
+[9:39:28 PM] [memory] 132 |         for (const cap of capabilities) {
+[9:39:28 PM] [memory] 133 |             const proc = router.findProcedure(cap);
+[9:39:28 PM] [memory] 134 | 
+[9:39:28 PM] [memory] 135 |             if (!proc) {
+[9:39:28 PM] [memory] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:28 PM] [memory]                                 ^
+[9:39:28 PM] [memory] error: Procedure not found: memory/session/store
+[9:39:28 PM] [memory]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:28 PM] [memory]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:28 PM] [memory]       at loadAndEvaluateModule (2:1)
+[9:39:28 PM] [memory] Bun v1.3.1 (Linux x64)
+[9:39:38 PM] [memory] [memory] Key fingerprint: 24d9970861292790
+[9:39:38 PM] [memory] 131 | 
+[9:39:38 PM] [memory] 132 |         for (const cap of capabilities) {
+[9:39:38 PM] [memory] 133 |             const proc = router.findProcedure(cap);
+[9:39:38 PM] [memory] 134 | 
+[9:39:38 PM] [memory] 135 |             if (!proc) {
+[9:39:38 PM] [memory] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:38 PM] [memory]                                 ^
+[9:39:38 PM] [memory] error: Procedure not found: memory/session/store
+[9:39:38 PM] [memory]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:38 PM] [memory]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:38 PM] [memory]       at loadAndEvaluateModule (2:1)
+[9:39:38 PM] [memory] Bun v1.3.1 (Linux x64)
+[9:39:38 PM] [Codegen] [32m[20:39:38.201] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:39:38 PM] [Codegen] [32m[20:39:38.203] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:39:38 PM] [Codegen] [32m[20:39:38.203] [INFO] [Codegen] ✅ Generated 29 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:39:48 PM] [memory] [memory] Key fingerprint: ebd264513ecc09dc
+[9:39:48 PM] [memory] 131 | 
+[9:39:48 PM] [memory] 132 |         for (const cap of capabilities) {
+[9:39:48 PM] [memory] 133 |             const proc = router.findProcedure(cap);
+[9:39:48 PM] [memory] 134 | 
+[9:39:48 PM] [memory] 135 |             if (!proc) {
+[9:39:48 PM] [memory] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:48 PM] [memory]                                 ^
+[9:39:48 PM] [memory] error: Procedure not found: memory/session/store
+[9:39:48 PM] [memory]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:48 PM] [memory]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:48 PM] [memory]       at loadAndEvaluateModule (2:1)
+[9:39:48 PM] [memory] Bun v1.3.1 (Linux x64)
+[9:39:58 PM] [memory] [memory] Key fingerprint: 7ac0b61ecb01bad6
+[9:39:58 PM] [memory] 131 | 
+[9:39:58 PM] [memory] 132 |         for (const cap of capabilities) {
+[9:39:58 PM] [memory] 133 |             const proc = router.findProcedure(cap);
+[9:39:58 PM] [memory] 134 | 
+[9:39:58 PM] [memory] 135 |             if (!proc) {
+[9:39:58 PM] [memory] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:39:58 PM] [memory]                                 ^
+[9:39:58 PM] [memory] error: Procedure not found: memory/session/store
+[9:39:58 PM] [memory]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:39:58 PM] [memory]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:39:58 PM] [memory]       at loadAndEvaluateModule (2:1)
+[9:39:58 PM] [memory] Bun v1.3.1 (Linux x64)
+[9:40:08 PM] [memory] [memory] Key fingerprint: 9195992ca776b8cc
+[9:40:08 PM] [memory] 131 | 
+[9:40:08 PM] [memory] 132 |         for (const cap of capabilities) {
+[9:40:08 PM] [memory] 133 |             const proc = router.findProcedure(cap);
+[9:40:08 PM] [memory] 134 | 
+[9:40:08 PM] [memory] 135 |             if (!proc) {
+[9:40:08 PM] [memory] 136 |                 throw new Error(`Procedure not found: ${cap}`);
+[9:40:08 PM] [memory]                                 ^
+[9:40:08 PM] [memory] error: Procedure not found: memory/session/store
+[9:40:08 PM] [memory]       at useRouter (/home/asdfghj/openjaws/protocols/typed-mesh.ts:136:27)
+[9:40:08 PM] [memory]       at /home/asdfghj/openjaws/memory/index.ts:876:6
+[9:40:08 PM] [memory]       at loadAndEvaluateModule (2:1)
+[9:40:08 PM] [memory] Bun v1.3.1 (Linux x64)
+[9:40:08 PM] [Codegen] [32m[20:40:08.200] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:40:08 PM] [Codegen] [32m[20:40:08.202] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:40:08 PM] [Codegen] [32m[20:40:08.202] [INFO] [Codegen] ✅ Generated 29 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:40:17 PM] [skills] [skills] Key fingerprint: 9536a85c8789f966
+[9:40:17 PM] [memory] [memory] Key fingerprint: 506a2ff2f50939a2
+[9:40:17 PM] [coder] [coder] Key fingerprint: 8f966b35cc58142a
+[9:40:17 PM] [discord] ❌ DISCORD_BOT_TOKEN not set in environment
+[9:40:17 PM] [kindly] [kindly] Key fingerprint: c0eb176609b76835
+[9:40:17 PM] [telemetry] [telemetry] Key fingerprint: a168232a57c3b84c
+[9:40:17 PM] [projects] [projects] Key fingerprint: 8e7499e4e0a3b9a4
+[9:40:17 PM] [checklist] [checklist] Key fingerprint: 4230073e7a587776
+[9:40:17 PM] [skills] [32m[20:40:17.805] [INFO] [skills] 📋 Registered 6 capabilities with contracts[0m
+[9:40:17 PM] [checklist] [32m[20:40:17.878] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[9:40:17 PM] [projects] [32m[20:40:17.845] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[9:40:17 PM] [telemetry] [32m[20:40:17.809] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[9:40:17 PM] [kindly] [32m[20:40:17.842] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[9:40:17 PM] [coder] [32m[20:40:17.783] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[9:40:17 PM] [memory] [32m[20:40:17.792] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[9:40:17 PM] [skills] [32m[20:40:17.816] [INFO] [skills] Sovereign Cell online @ http://localhost:40541[0m
+[9:40:17 PM] [checklist] [32m[20:40:17.888] [INFO] [checklist] Sovereign Cell online @ http://localhost:40089[0m
+[9:40:17 PM] [projects] [32m[20:40:17.849] [INFO] [projects] Sovereign Cell online @ http://localhost:39965[0m
+[9:40:17 PM] [telemetry] [32m[20:40:17.812] [INFO] [telemetry] Sovereign Cell online @ http://localhost:41135[0m
+[9:40:17 PM] [coder] [32m[20:40:17.793] [INFO] [coder] Sovereign Cell online @ http://localhost:39791[0m
+[9:40:17 PM] [kindly] [32m[20:40:17.847] [INFO] [kindly] Sovereign Cell online @ http://localhost:39039[0m
+[9:40:17 PM] [memory] [32m[20:40:17.804] [INFO] [memory] Sovereign Cell online @ http://localhost:36107[0m
+[9:40:17 PM] [skills] [32m[20:40:17.816] [INFO] [skills] 📚 Skills System online[0m
+[9:40:17 PM] [checklist] [32m[20:40:17.888] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[9:40:17 PM] [kindly] [32m[20:40:17.848] [INFO] [kindly] 🧠 Kindly online - temporal agent mode[0m
+[9:40:17 PM] [memory] [32m[20:40:17.804] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[9:40:17 PM] [kindly] [32m[20:40:17.848] [INFO] [kindly]    Features: Perfect memory | Pattern learning | Proactive action[0m
+[9:40:17 PM] [ai] [ai] Key fingerprint: 2f32d258a151022b
+[9:40:17 PM] [memory] [32m[20:40:17.804] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[9:40:17 PM] [ai] [32m[20:40:17.900] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[9:40:17 PM] [memory] [32m[20:40:17.804] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[9:40:17 PM] [ai] [32m[20:40:17.918] [INFO] [ai] Sovereign Cell online @ http://localhost:44775[0m
+[9:40:17 PM] [architect] [architect] Key fingerprint: da88fa57a3e3c521
+[9:40:17 PM] [comms] [comms] Key fingerprint: a9d9e52826c99bf2
+[9:40:17 PM] [log] [log] Key fingerprint: 9d48404347772f28
+[9:40:17 PM] [architect] [32m[20:40:17.930] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[9:40:17 PM] [log] [32m[20:40:17.931] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[9:40:17 PM] [comms] [32m[20:40:17.932] [INFO] [comms] 📋 Registered 6 capabilities with contracts[0m
+[9:40:17 PM] [Codegen] [Codegen] Key fingerprint: 2b5b1318f1c31c5a
+[9:40:17 PM] [log] [32m[20:40:17.937] [INFO] [log] Sovereign Cell online @ http://localhost:33265[0m
+[9:40:17 PM] [log] [32m[20:40:17.938] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[9:40:17 PM] [log] [32m[20:40:17.938] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[9:40:17 PM] [architect] [32m[20:40:17.939] [INFO] [architect] Sovereign Cell online @ http://localhost:44413[0m
+[9:40:17 PM] [Codegen] [32m[20:40:17.940] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[9:40:17 PM] [telegram] [dotenv@17.2.4] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[9:40:17 PM] [telegram] ❌ TELEGRAM_BOT_TOKEN not set in environment
+[9:40:17 PM] [comms] [32m[20:40:17.946] [INFO] [comms] Sovereign Cell online @ http://localhost:44935[0m
+[9:40:17 PM] [Codegen] [32m[20:40:17.946] [INFO] [Codegen] Sovereign Cell online @ http://localhost:45841[0m
+[9:40:17 PM] [Codegen] [32m[20:40:17.947] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[9:40:17 PM] [comms] [32m[20:40:17.948] [INFO] [comms] 📡 Communications Hub online[0m
+[9:40:22 PM] [Codegen] [32m[20:40:22.947] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:40:22 PM] [Codegen] [32m[20:40:22.953] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:40:22 PM] [Codegen] [32m[20:40:22.953] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:40:32 PM] [skills] [32m[20:40:32.820] [INFO] [skills] 📚 Initial sync: 0 capabilities discovered[0m
+[9:40:44 PM] [checklist] Current list has 0 items
+[9:40:44 PM] [checklist] Mesh health: NOMINAL, 15 cells
+[9:40:47 PM] [Codegen] [32m[20:40:47.947] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:40:47 PM] [Codegen] [32m[20:40:47.950] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:40:47 PM] [Codegen] [32m[20:40:47.950] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:41:17 PM] [Codegen] [32m[20:41:17.946] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:41:17 PM] [Codegen] [32m[20:41:17.949] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:41:17 PM] [Codegen] [32m[20:41:17.949] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:41:32 PM] [coder] [32m[20:41:32.890] [INFO] [coder] 🌐 ~2 → 14p/54c[0m
+[9:41:47 PM] [skills] [32m[20:41:47.889] [INFO] [skills] 🌐 ~1 → 14p/54c[0m
+[9:41:47 PM] [Codegen] [32m[20:41:47.946] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:41:47 PM] [Codegen] [32m[20:41:47.948] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:41:47 PM] [Codegen] [32m[20:41:47.948] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:42:17 PM] [Codegen] [32m[20:42:17.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:42:17 PM] [Codegen] [32m[20:42:17.947] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:42:17 PM] [Codegen] [32m[20:42:17.947] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:42:47 PM] [Codegen] [32m[20:42:47.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:42:47 PM] [Codegen] [32m[20:42:47.947] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:42:47 PM] [Codegen] [32m[20:42:47.947] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:43:17 PM] [Codegen] [32m[20:43:17.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:43:17 PM] [Codegen] [32m[20:43:17.947] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:43:17 PM] [Codegen] [32m[20:43:17.947] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:43:47 PM] [Codegen] [32m[20:43:47.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:43:47 PM] [Codegen] [32m[20:43:47.948] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:43:47 PM] [Codegen] [32m[20:43:47.948] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:44:17 PM] [Codegen] [32m[20:44:17.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:44:17 PM] [Codegen] [32m[20:44:17.947] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:44:17 PM] [Codegen] [32m[20:44:17.947] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:44:47 PM] [Codegen] [32m[20:44:47.946] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:44:47 PM] [Codegen] [32m[20:44:47.947] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:44:47 PM] [Codegen] [32m[20:44:47.948] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:45:17 PM] [Codegen] [32m[20:45:17.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:45:17 PM] [Codegen] [32m[20:45:17.948] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:45:17 PM] [Codegen] [32m[20:45:17.949] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:45:47 PM] [Codegen] [32m[20:45:47.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:45:47 PM] [Codegen] [32m[20:45:47.947] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:45:47 PM] [Codegen] [32m[20:45:47.947] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:46:17 PM] [Codegen] [32m[20:46:17.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:46:17 PM] [Codegen] [32m[20:46:17.950] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:46:17 PM] [Codegen] [32m[20:46:17.950] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:46:47 PM] [Codegen] [32m[20:46:47.945] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:46:47 PM] [Codegen] [32m[20:46:47.946] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:46:47 PM] [Codegen] [32m[20:46:47.946] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:47:14 PM] [memory] [memory] Key fingerprint: 7603ad8f1f76d70b
+[9:47:14 PM] [coder] [coder] Key fingerprint: 9a8e4f2f21f9365a
+[9:47:14 PM] [discord] ❌ DISCORD_BOT_TOKEN not set in environment
+[9:47:14 PM] [kindly] [kindly] Key fingerprint: 73966b10243fa93f
+[9:47:14 PM] [telemetry] [telemetry] Key fingerprint: b0cd67028cb87aeb
+[9:47:14 PM] [projects] [projects] Key fingerprint: ea49c70406a8e4b8
+[9:47:14 PM] [checklist] [checklist] Key fingerprint: f9aa531c7c017c3b
+[9:47:14 PM] [architect] [architect] Key fingerprint: e7bf0aa319cafffc
+[9:47:14 PM] [memory] [32m[20:47:14.644] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[9:47:14 PM] [coder] [32m[20:47:14.621] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[9:47:14 PM] [telemetry] [32m[20:47:14.664] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[9:47:14 PM] [kindly] [32m[20:47:14.613] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[9:47:14 PM] [projects] [32m[20:47:14.651] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[9:47:14 PM] [telemetry] [32m[20:47:14.686] [INFO] [telemetry] Sovereign Cell online @ http://localhost:34063[0m
+[9:47:14 PM] [coder] [32m[20:47:14.677] [INFO] [coder] Sovereign Cell online @ http://localhost:44127[0m
+[9:47:14 PM] [architect] [32m[20:47:14.715] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[9:47:14 PM] [kindly] [32m[20:47:14.625] [INFO] [kindly] Sovereign Cell online @ http://localhost:41257[0m
+[9:47:14 PM] [projects] [32m[20:47:14.668] [INFO] [projects] Sovereign Cell online @ http://localhost:43131[0m
+[9:47:14 PM] [architect] [32m[20:47:14.721] [INFO] [architect] Sovereign Cell online @ http://localhost:38727[0m
+[9:47:14 PM] [kindly] [32m[20:47:14.625] [INFO] [kindly] 🧠 Kindly online - temporal agent mode[0m
+[9:47:14 PM] [kindly] [32m[20:47:14.625] [INFO] [kindly]    Features: Perfect memory | Pattern learning | Proactive action[0m
+[9:47:14 PM] [telegram] [dotenv@17.2.4] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[9:47:14 PM] [log] [log] Key fingerprint: 7a43b9fd2cdd0d94
+[9:47:14 PM] [ai] [ai] Key fingerprint: 1bf606c64580780a
+[9:47:14 PM] [checklist] [32m[20:47:14.741] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[9:47:14 PM] [skills] [skills] Key fingerprint: 8b1610d5be358a96
+[9:47:14 PM] [memory] [32m[20:47:14.655] [INFO] [memory] Sovereign Cell online @ http://localhost:40567[0m
+[9:47:14 PM] [telegram] ❌ TELEGRAM_BOT_TOKEN not set in environment
+[9:47:14 PM] [log] [32m[20:47:14.780] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[9:47:14 PM] [ai] [32m[20:47:14.765] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[9:47:14 PM] [checklist] [32m[20:47:14.755] [INFO] [checklist] Sovereign Cell online @ http://localhost:36215[0m
+[9:47:14 PM] [skills] [32m[20:47:14.745] [INFO] [skills] 📋 Registered 6 capabilities with contracts[0m
+[9:47:14 PM] [memory] [32m[20:47:14.656] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[9:47:14 PM] [ai] [32m[20:47:14.776] [INFO] [ai] Sovereign Cell online @ http://localhost:45485[0m
+[9:47:14 PM] [checklist] [32m[20:47:14.756] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[9:47:14 PM] [skills] [32m[20:47:14.777] [INFO] [skills] Sovereign Cell online @ http://localhost:46199[0m
+[9:47:14 PM] [memory] [32m[20:47:14.656] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[9:47:14 PM] [skills] [32m[20:47:14.780] [INFO] [skills] 📚 Skills System online[0m
+[9:47:14 PM] [memory] [32m[20:47:14.656] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[9:47:14 PM] [log] [32m[20:47:14.790] [INFO] [log] Sovereign Cell online @ http://localhost:36935[0m
+[9:47:14 PM] [log] [32m[20:47:14.791] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[9:47:14 PM] [log] [32m[20:47:14.791] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[9:47:14 PM] [comms] [comms] Key fingerprint: 9d112e478235f1a3
+[9:47:14 PM] [comms] [32m[20:47:14.811] [INFO] [comms] 📋 Registered 6 capabilities with contracts[0m
+[9:47:14 PM] [comms] [32m[20:47:14.818] [INFO] [comms] Sovereign Cell online @ http://localhost:38097[0m
+[9:47:14 PM] [comms] [32m[20:47:14.819] [INFO] [comms] 📡 Communications Hub online[0m
+[9:47:14 PM] [Codegen] [Codegen] Key fingerprint: 97a573e0d8a77ef1
+[9:47:14 PM] [Codegen] [32m[20:47:14.825] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[9:47:14 PM] [Codegen] [32m[20:47:14.832] [INFO] [Codegen] Sovereign Cell online @ http://localhost:43405[0m
+[9:47:14 PM] [Codegen] [32m[20:47:14.833] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[9:47:19 PM] [Codegen] [32m[20:47:19.837] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:47:19 PM] [Codegen] [32m[20:47:19.847] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:47:19 PM] [Codegen] [32m[20:47:19.848] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:49:32 PM] [skills] [skills] Key fingerprint: 3ede757f5da0f6c3
+[9:49:32 PM] [memory] [memory] Key fingerprint: a929158f8f33b112
+[9:49:32 PM] [coder] [coder] Key fingerprint: 14a7feb4d5c637e2
+[9:49:32 PM] [checklist] [checklist] Key fingerprint: 82eee919c2a593be
+[9:49:32 PM] [skills] [32m[20:49:32.851] [INFO] [skills] 📋 Registered 6 capabilities with contracts[0m
+[9:49:32 PM] [memory] [32m[20:49:32.870] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[9:49:32 PM] [coder] [32m[20:49:32.848] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[9:49:32 PM] [checklist] [32m[20:49:32.887] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[9:49:32 PM] [skills] [32m[20:49:32.856] [INFO] [skills] Sovereign Cell online @ http://localhost:44405[0m
+[9:49:32 PM] [memory] [32m[20:49:32.891] [INFO] [memory] Sovereign Cell online @ http://localhost:42111[0m
+[9:49:32 PM] [coder] [32m[20:49:32.871] [INFO] [coder] Sovereign Cell online @ http://localhost:44901[0m
+[9:49:32 PM] [checklist] [32m[20:49:32.910] [INFO] [checklist] Sovereign Cell online @ http://localhost:41401[0m
+[9:49:32 PM] [skills] [32m[20:49:32.856] [INFO] [skills] 📚 Skills System online[0m
+[9:49:32 PM] [memory] [32m[20:49:32.892] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[9:49:32 PM] [checklist] [32m[20:49:32.911] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[9:49:32 PM] [memory] [32m[20:49:32.892] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[9:49:32 PM] [memory] [32m[20:49:32.892] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[9:49:32 PM] [telemetry] [telemetry] Key fingerprint: 48ebe5b368257c29
+[9:49:32 PM] [telemetry] [32m[20:49:32.933] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[9:49:32 PM] [telemetry] [32m[20:49:32.941] [INFO] [telemetry] Sovereign Cell online @ http://localhost:35795[0m
+[9:49:32 PM] [kindly] [kindly] Key fingerprint: d572f337ae0a67dc
+[9:49:32 PM] [kindly] [32m[20:49:32.973] [INFO] [kindly] 📋 Registered 1 capabilities with contracts[0m
+[9:49:32 PM] [projects] [projects] Key fingerprint: fb3dcd9289db74e8
+[9:49:32 PM] [kindly] [32m[20:49:32.983] [INFO] [kindly] Sovereign Cell online @ http://localhost:36599[0m
+[9:49:32 PM] [kindly] [32m[20:49:32.983] [INFO] [kindly] 🧠 Kindly online - temporal agent mode[0m
+[9:49:32 PM] [kindly] [32m[20:49:32.983] [INFO] [kindly]    Features: Perfect memory | Pattern learning | Proactive action[0m
+[9:49:32 PM] [projects] [32m[20:49:32.999] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[9:49:33 PM] [ai] [ai] Key fingerprint: 959f90cec21c8343
+[9:49:33 PM] [Codegen] [Codegen] Key fingerprint: b969968188954a87
+[9:49:33 PM] [ai] [32m[20:49:33.019] [INFO] [ai] 📋 Registered 1 capabilities with contracts[0m
+[9:49:33 PM] [comms] [comms] Key fingerprint: 0b52ef54eb649389
+[9:49:33 PM] [Codegen] [32m[20:49:33.022] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[9:49:33 PM] [projects] [32m[20:49:33.027] [INFO] [projects] Sovereign Cell online @ http://localhost:38001[0m
+[9:49:33 PM] [architect] [architect] Key fingerprint: b457656cae99a66c
+[9:49:33 PM] [architect] [32m[20:49:33.031] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[9:49:33 PM] [comms] [32m[20:49:33.033] [INFO] [comms] 📋 Registered 6 capabilities with contracts[0m
+[9:49:33 PM] [Codegen] [32m[20:49:33.034] [INFO] [Codegen] Sovereign Cell online @ http://localhost:41191[0m
+[9:49:33 PM] [Codegen] [32m[20:49:33.034] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[9:49:33 PM] [ai] [32m[20:49:33.038] [INFO] [ai] Sovereign Cell online @ http://localhost:42035[0m
+[9:49:33 PM] [comms] [32m[20:49:33.040] [INFO] [comms] Sovereign Cell online @ http://localhost:40729[0m
+[9:49:33 PM] [comms] [32m[20:49:33.041] [INFO] [comms] 📡 Communications Hub online[0m
+[9:49:33 PM] [architect] [32m[20:49:33.041] [INFO] [architect] Sovereign Cell online @ http://localhost:38773[0m
+[9:49:33 PM] [log] [log] Key fingerprint: 35f9559488f8ba46
+[9:49:33 PM] [log] [32m[20:49:33.058] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[9:49:33 PM] [log] [32m[20:49:33.066] [INFO] [log] Sovereign Cell online @ http://localhost:38539[0m
+[9:49:33 PM] [log] [32m[20:49:33.067] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[9:49:33 PM] [log] [32m[20:49:33.067] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[9:49:38 PM] [Codegen] [32m[20:49:38.035] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:49:38 PM] [Codegen] [32m[20:49:38.043] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:49:38 PM] [Codegen] [32m[20:49:38.043] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:49:47 PM] [skills] [32m[20:49:47.861] [INFO] [skills] 📚 Initial sync: 0 capabilities discovered[0m
+[9:49:59 PM] [checklist] Current list has 0 items
+[9:49:59 PM] [checklist] Mesh health: NOMINAL, 15 cells
+[9:50:03 PM] [Codegen] [32m[20:50:03.034] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:50:03 PM] [Codegen] [32m[20:50:03.037] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:50:03 PM] [Codegen] [32m[20:50:03.037] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:50:33 PM] [Codegen] [32m[20:50:33.034] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:50:33 PM] [Codegen] [32m[20:50:33.037] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:50:33 PM] [Codegen] [32m[20:50:33.037] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:51:03 PM] [Codegen] [32m[20:51:03.033] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:51:03 PM] [Codegen] [32m[20:51:03.035] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:51:03 PM] [Codegen] [32m[20:51:03.035] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:51:33 PM] [Codegen] [32m[20:51:33.033] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:51:33 PM] [Codegen] [32m[20:51:33.036] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:51:33 PM] [Codegen] [32m[20:51:33.036] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:52:03 PM] [Codegen] [32m[20:52:03.033] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:52:03 PM] [Codegen] [32m[20:52:03.034] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:52:03 PM] [Codegen] [32m[20:52:03.034] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:52:33 PM] [Codegen] [32m[20:52:33.033] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:52:33 PM] [Codegen] [32m[20:52:33.035] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:52:33 PM] [Codegen] [32m[20:52:33.035] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:53:03 PM] [Codegen] [32m[20:53:03.032] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:53:03 PM] [Codegen] [32m[20:53:03.034] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:53:03 PM] [Codegen] [32m[20:53:03.034] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:53:33 PM] [Codegen] [32m[20:53:33.032] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:53:33 PM] [Codegen] [32m[20:53:33.033] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:53:33 PM] [Codegen] [32m[20:53:33.033] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:54:03 PM] [Codegen] [32m[20:54:03.031] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:54:03 PM] [Codegen] [32m[20:54:03.033] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:54:03 PM] [Codegen] [32m[20:54:03.033] [INFO] [Codegen] ✅ Generated 42 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
