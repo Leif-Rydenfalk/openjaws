@@ -29,8 +29,14 @@ export const handle: Handle = async ({ event, resolve }) => {
         try {
             const { capability, args } = await request.json();
 
-            // Use server cell to make the mesh call
-            const result = await serverCell.askMesh(capability as any, args || {});
+            let result = await serverCell.askMesh(capability as any, args || {});
+
+            // If it failed because it couldn't find the cell, force a registry refresh and try ONCE more
+            if (!result.ok && result.error?.code === "NOT_FOUND") {
+                console.log(`[Server] Capability ${capability} not found, refreshing registry...`);
+                await serverCell.bootstrapFromRegistry(true);
+                result = await serverCell.askMesh(capability as any, args || {});
+            }
 
             return new Response(JSON.stringify(result), {
                 headers: { 'Content-Type': 'application/json' }

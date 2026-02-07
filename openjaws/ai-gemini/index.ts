@@ -21,22 +21,30 @@ const aiRouter = router({
                 example: { prompt: "Explain quantum computing" }
             })
             .mutation(async (input) => {
-                if (!API_KEY) {
-                    cell.log("ERROR", "GEMINI_API_KEY is not set in environment!");
-                    throw new Error("API_KEY_MISSING");
-                }
+                // Base identity that is always included
+                const baseIdentity = `
+    IDENTITY: Gemini Flash Node [${cell.id}]
+    OPERATING_SYSTEM: OpenJaws Mesh OS
+    CONTEXT_AWARENESS: High
+    PROTOCOLS: NTS-1 (Narrative Transparent Substrate)
+    
+    You are a node in a distributed computing mesh. Your responses are being 
+    routed through a network of specialized cells. You provide intelligence 
+    to the Architect, the Coder, and Kindly.
+    `;
+
+                // Combine the base identity with any specific instructions passed in the call
+                const fullSystemInstruction = `${baseIdentity}\n${input.systemInstruction || ""}`;
 
                 const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
-                cell.log("INFO", `Generating content for prompt: ${input.prompt.substring(0, 50)}...`);
-
                 const body: any = {
-                    contents: [{ parts: [{ text: input.prompt }] }]
+                    contents: [{ parts: [{ text: input.prompt }] }],
+                    // ADDED HERE: This ensures the AI always knows it's a Mesh Node
+                    systemInstruction: {
+                        parts: [{ text: fullSystemInstruction }]
+                    }
                 };
-
-                if (input.systemInstruction) {
-                    body.systemInstruction = { parts: [{ text: input.systemInstruction }] };
-                }
 
                 if (input.jsonMode) {
                     body.generationConfig = { responseMimeType: "application/json" };

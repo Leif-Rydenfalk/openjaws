@@ -45,3 +45,8 @@ it shouldnt fail - but it must let us know
 
 
 Add a ai model which actually does shit. create an orchestrator. we want modularity and multi agent architecture with mutli tools in this environment. all should call to a "projects" cell which allows access to the filesystem, running code, creating code documetns, documentation etc etc which the ai agents are allowed to use. Use google gemini api using rest / http with the .env being in root level with the api keys.
+
+
+
+
+Give it more functionality and make the systems composable and robust (they should talk to eachother)

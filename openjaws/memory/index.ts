@@ -3,23 +3,38 @@ import { router, procedure, z } from "../protocols/example2";
 import { join } from "node:path";
 import { existsSync, writeFileSync, readFileSync } from "node:fs";
 
-// Simple JSON Store (in real prod, use a Vector DB like Chroma/Qdrant)
-const DB_PATH = join(process.cwd(), "memory.json");
-interface MemoryEntry { id: string; content: string; tags: string[]; timestamp: number; }
+// --- PERSISTENCE LAYER ---
+const DB_PATH = join(process.cwd(), "memory_store.json");
+
+interface MemoryEntry {
+    id: string;
+    content: string;
+    tags: string[];
+    timestamp: number;
+}
 
 function loadDb(): MemoryEntry[] {
-    if (!existsSync(DB_PATH)) return [];
-    return JSON.parse(readFileSync(DB_PATH, 'utf8'));
+    try {
+        if (!existsSync(DB_PATH)) return [];
+        const data = readFileSync(DB_PATH, 'utf8');
+        return JSON.parse(data);
+    } catch (e) {
+        return [];
+    }
 }
 
 function saveDb(data: MemoryEntry[]) {
     writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
 }
 
+// --- CELL LOGIC ---
 const cell = new TypedRheoCell(`Memory_${process.pid}`, 0);
 
 const memoryRouter = router({
     memory: router({
+        /**
+         * Store a new fact or observation into the mesh's long-term memory.
+         */
         store: procedure
             .input(z.object({
                 content: z.string(),
@@ -29,16 +44,24 @@ const memoryRouter = router({
             .mutation(async (input) => {
                 const db = loadDb();
                 const id = Math.random().toString(36).substring(7);
-                db.push({
+
+                const newEntry: MemoryEntry = {
                     id,
                     content: input.content,
                     tags: input.tags,
                     timestamp: Date.now()
-                });
+                };
+
+                db.push(newEntry);
                 saveDb(db);
+
+                cell.log("INFO", `🧠 Memory Consumed: "${input.content.substring(0, 40)}..."`);
                 return { id, ok: true };
             }),
 
+        /**
+         * Search for relevant memories using keyword overlap scoring.
+         */
         search: procedure
             .input(z.object({
                 query: z.string(),
@@ -46,22 +69,40 @@ const memoryRouter = router({
             }))
             .output(z.array(z.object({
                 content: z.string(),
-                score: z.number()
+                score: z.number(),
+                tags: z.array(z.string()),
+                timestamp: z.number()
             })))
             .query(async (input) => {
                 const db = loadDb();
-                // Naive keyword matching (replace with embeddings later)
-                const keywords = input.query.toLowerCase().split(' ');
+                const queryWords = input.query.toLowerCase()
+                    .replace(/[?.!,]/g, '')
+                    .split(/\s+/);
 
-                return db.map(entry => {
+                if (queryWords.length === 0) return [];
+
+                const results = db.map(entry => {
                     let score = 0;
-                    const text = entry.content.toLowerCase();
-                    keywords.forEach(k => { if (text.includes(k)) score++; });
-                    return { content: entry.content, score };
+                    const contentLower = entry.content.toLowerCase();
+
+                    // Score based on keyword matches
+                    queryWords.forEach(word => {
+                        if (contentLower.includes(word)) score += 1;
+                    });
+
+                    // Bonus for tag matches
+                    entry.tags.forEach(tag => {
+                        if (input.query.toLowerCase().includes(tag.toLowerCase())) score += 2;
+                    });
+
+                    return { ...entry, score };
                 })
                     .filter(r => r.score > 0)
-                    .sort((a, b) => b.score - a.score)
-                    .slice(0, input.limit || 3);
+                    .sort((a, b) => b.score - a.score || b.timestamp - a.timestamp)
+                    .slice(0, input.limit || 5);
+
+                cell.log("INFO", `🔍 Recall triggered for "${input.query}" - Found ${results.length} matches`);
+                return results.map(({ id, ...rest }) => rest);
             })
     })
 });

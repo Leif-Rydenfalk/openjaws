@@ -17,28 +17,33 @@ const architectRouter = router({
                 tasksCreated: z.number()
             }))
             .mutation(async (input) => {
-                // 1. Retrieve Context from Memory
-                let context: any[] = [];
-                try {
-                    context = await cell.mesh.memory.search({ query: input.goal });
-                } catch (e) { console.warn("Memory offline"); }
+                // 1. SEARCH FOR PREVIOUS PLANS
+                const pastPlans = await cell.mesh.memory.search({
+                    query: `plan for ${input.goal}`,
+                    limit: 3
+                }).catch(() => []);
 
-                const contextStr = context.map(c => c.content).join("\n- ");
-
-                // 2. Synthesize Plan via AI
+                // 2. BUILD THE PROMPT
                 const prompt = `
-                    ROLE: You are the Chief Architect of this company.
-                    GOAL: ${input.goal}
-                    
-                    COMPANY CONTEXT:
-                    ${contextStr || "No specific memory found."}
-                    
-                    INSTRUCTIONS:
-                    Create a concrete, 3-step execution plan.
-                    If the goal is actionable, output tasks clearly.
+                OBJECTIVE: ${input.goal}
+                
+                PREVIOUS_ATTEMPTS_FROM_MEMORY:
+                ${pastPlans.map(p => p.content).join('\n---\n')}
+
+                TASK: Create a technical execution plan for the OpenJaws Mesh.
+                Specify which cells (coder, projects, list) should be used.
                 `;
 
-                const aiRes = await cell.mesh.ai.generate({ prompt, model: "llama3" });
+                const aiRes = await cell.mesh.ai.generate({
+                    prompt,
+                    systemInstruction: "You are the Lead Mesh Architect. Focus on modularity and type-safety."
+                });
+
+                // 3. STORE THE NEW PLAN IN MEMORY
+                await cell.mesh.memory.store({
+                    content: `Goal: ${input.goal} | Plan: ${aiRes.response}`,
+                    tags: ["architect", "planning", input.goal.substring(0, 10)]
+                });
 
                 // 3. (Optional) Execute by adding to Checklist
                 let tasksCreated = 0;

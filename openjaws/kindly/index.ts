@@ -8,35 +8,58 @@ const kindlyRouter = router({
         chat: procedure
             .input(z.object({ message: z.string(), history: z.array(z.any()).optional() }))
             .mutation(async ({ message, history = [] }) => {
+                cell.log("INFO", `Processing message: ${message}`);
 
-                // 1. DYNAMIC TOPOLOGY (Filtered for fresh cells only)
-                const now = Date.now();
+                // 1. SEARCH LONG-TERM MEMORY
+                // We look for relevant context based on the user's message
+                let contextMemories = "";
+                try {
+                    const memories = await cell.mesh.memory.search({ query: message, limit: 3 });
+                    if (memories && memories.length > 0) {
+                        contextMemories = memories.map(m => `- ${m.content}`).join("\n");
+                        cell.log("INFO", `Retrieved ${memories.length} relevant memories`);
+                    }
+                } catch (e) {
+                    cell.log("WARN", "Memory cell unreachable, proceeding with limited context");
+                }
+
+                // 2. GET CURRENT MESH STATE
                 const activeCells = Object.entries(cell.atlas)
-                    .filter(([_, info]) => now - info.lastSeen < 30000); // 30s freshness
-
-                const topology = activeCells.map(([id, info]) => {
-                    return `- ${id} [CAPS: ${info.caps.join(', ')}]`;
-                }).join('\n');
+                    .filter(([_, info]) => Date.now() - info.lastSeen < 30000);
 
                 const systemInstruction = `
-                SYSTEM: OpenJaws Mesh OS
-                AGENT: Kindly
-                ACTIVE_CELLS_COUNT: ${activeCells.length}
+                SYSTEM: OpenJaws Mesh OS (Sovereign Intelligence)
+                NODE: Kindly_Orchestrator
                 
-                CURRENT TOPOLOGY:
-                ${topology}
+                ACTIVE_TOPOLOGY:
+                ${activeCells.map(([id]) => `- ${id}`).join('\n')}
+
+                RELEVANT_LONG_TERM_MEMORIES:
+                ${contextMemories || "No previous records found for this query."}
 
                 CORE PROTOCOL:
-                - You are a concise mesh operator.
-                - Respond strictly to the LATEST user message.
-                - Use the history provided only for context.
-                - If asked about cells, use the ACTIVE_CELLS_COUNT (${activeCells.length}).
+                - You are the sentient interface of this mesh.
+                - If the user introduces themselves (e.g., "My name is..."), REMEMBER IT.
+                - Use the RELEVANT_LONG_TERM_MEMORIES to answer questions about the past.
+                - If you learn a new fact about the user, include [STORE_MEMORY: fact] in your internal logic.
+                - Be concise, helpful, and acknowledge your distributed nature.
                 `;
 
+                // 3. GENERATE RESPONSE
                 const response = await cell.mesh.ai.generate({
-                    prompt: `History: ${JSON.stringify(history.slice(-5))}\n\nUser: ${message}`,
+                    prompt: `Chat History: ${JSON.stringify(history.slice(-3))}\nUser: ${message}`,
                     systemInstruction: systemInstruction
                 });
+
+                // 4. PERSISTENT MEMORY STORAGE (The "Consciousness" Loop)
+                // If the user said "My name is...", we proactively store it.
+                if (message.toLowerCase().includes("my name is") || message.toLowerCase().includes("i am")) {
+                    await cell.mesh.memory.store({
+                        content: `User Identity: ${message}`,
+                        tags: ["identity", "user_profile"]
+                    }).catch(() => { });
+                    cell.log("INFO", "Stored identity fact to memory");
+                }
 
                 return { reply: response.response };
             })

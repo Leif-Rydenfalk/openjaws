@@ -256,7 +256,9 @@ export class MeshError extends Error {
                 "Capability not registered in any cell",
                 "Cell hosting capability is offline",
                 "Mesh hasn't converged yet (try adding delay)",
-                "Typo in capability name"
+                "Typo in capability name",
+                "The capability was found earlier, but no cell responded to the signal.",
+                "This usually happens if the cell crashed or timed out during the hop."
             ],
             "RPC_FAIL": [
                 "Target cell crashed or unreachable",
@@ -269,7 +271,12 @@ export class MeshError extends Error {
                 "Downstream cell is overloaded",
                 "Deadlock in capability chain",
                 "Check for infinite loops in handlers"
-            ]
+            ],
+            "RPC_TIMEOUT": [
+                "The target cell (AI, Kindly, etc.) is taking too long to process.",
+                "Check if the Gemini/LLM API is responding slowly.",
+                "Consider increasing the rpc timeout in example1.ts"
+            ],
         };
 
         return causes[error.code] || [
@@ -1014,7 +1021,7 @@ export class RheoCell {
                 method: "POST",
                 body: JSON.stringify(signal),
                 headers: { "Content-Type": "application/json" },
-                signal: AbortSignal.timeout(1000)
+                signal: AbortSignal.timeout(600000) // 600 second timeout on requests - 10 minutes
             });
 
             const duration = performance.now() - startTime;
