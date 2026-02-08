@@ -154,3 +154,7 @@ certs/
 /certs
 .pem
 *.pem
+
+.rheo/
+/.rheo
+.rheo

@@ -9156,3 +9156,6 @@
 [12:36:12 AM] [32m[23:36:12.125] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
 [12:36:12 AM] [32m[23:36:12.153] [INFO] [Codegen] 👉 Poked TypeScript server[0m
 [12:36:12 AM] [32m[23:36:12.154] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:36:37 AM] [32m[23:36:37.124] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:36:37 AM] [32m[23:36:37.159] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:36:37 AM] [32m[23:36:37.159] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m

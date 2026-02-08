@@ -741,3 +741,11 @@
 [12:36:07 AM] [32m[23:36:07.188] [INFO] [checklist] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44231[0m
 [12:36:07 AM] [32m[23:36:07.194] [INFO] [checklist] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36371[0m
 [12:36:07 AM] [32m[23:36:07.225] [INFO] [checklist] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:40359[0m
+[12:36:34 AM] [32m[23:36:34.162] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:36:34 AM] [32m[23:36:34.162] [INFO] [checklist] [fb25ba13] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:36:34 AM] Current list has 0 items
+[12:36:34 AM] [32m[23:36:34.163] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:36:34 AM] [32m[23:36:34.163] [INFO] [checklist] [f45a530d] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:36:34 AM] [32m[23:36:34.164] [INFO] [checklist] [f45a530d] 📡 RPC_OUT: [mesh/health] -> http://localhost:36371[0m
+[12:36:34 AM] [32m[23:36:34.166] [INFO] [checklist] [f45a530d] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:36371[0m
+[12:36:34 AM] Mesh health: NOMINAL, 16 cells
