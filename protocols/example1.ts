@@ -382,8 +382,8 @@ interface IntegrityEntry {
  * Every cell maintains a shard of the global narrative.
  */
 export class NarrativeLedger {
-    private entries = new Map<string, NarrativeEnvelope>();
-    private readonly maxAncestryDepth = 100;
+    entries = new Map<string, NarrativeEnvelope>();
+    readonly maxAncestryDepth = 100;
 
     /**
      * Create or extend a narrative envelope for a signal.
@@ -847,6 +847,69 @@ export class NarrativeLedger {
                 .slice(0, 5)
         };
     }
+
+    /**
+     * Merge a remote envelope into our local ledger.
+     * Preserves all ancestry, timings, and integrity checks from remote.
+     */
+    merge(remoteEnvelope: NarrativeEnvelope): void {
+        if (!remoteEnvelope) return;
+
+        const cid = remoteEnvelope.current.id;
+        const local = this.entries.get(cid);
+
+        if (!local) {
+            // We don't have this signal - adopt it fully
+            this.entries.set(cid, this.deepClone(remoteEnvelope));
+            return;
+        }
+
+        // Merge ancestry: combine both histories, deduplicate by timestamp+cell
+        const seen = new Set(local.ancestry.map(a => `${a.timestamp}-${a.cellId}-${a.action}`));
+        for (const remoteEntry of remoteEnvelope.ancestry) {
+            const key = `${remoteEntry.timestamp}-${remoteEntry.cellId}-${remoteEntry.action}`;
+            if (!seen.has(key)) {
+                local.ancestry.push(this.deepClone(remoteEntry));
+                seen.add(key);
+            }
+        }
+
+        // Sort by timestamp to maintain chronological order
+        local.ancestry.sort((a, b) => a.timestamp - b.timestamp);
+
+        // Merge timings
+        const localTimingKeys = new Set(local.timings.map(t => `${t.phase}-${t.cellId}-${t.startTime}`));
+        for (const remoteTiming of remoteEnvelope.timings) {
+            const key = `${remoteTiming.phase}-${remoteTiming.cellId}-${remoteTiming.startTime}`;
+            if (!localTimingKeys.has(key)) {
+                local.timings.push(this.deepClone(remoteTiming));
+            }
+        }
+
+        // Merge integrity checks
+        const localHashes = new Set(local.integrity.map(i => i.hash));
+        for (const remoteIntegrity of remoteEnvelope.integrity) {
+            if (!localHashes.has(remoteIntegrity.hash)) {
+                local.integrity.push(this.deepClone(remoteIntegrity));
+            }
+        }
+
+        // Merge children (fork tracking)
+        for (const childId of remoteEnvelope.children) {
+            if (!local.children.includes(childId)) {
+                local.children.push(childId);
+            }
+        }
+
+        // Update current signal if remote is newer
+        if (remoteEnvelope.current._hops > local.current._hops) {
+            local.current = this.deepClone(remoteEnvelope.current);
+        }
+    }
+
+    private deepClone<T>(obj: T): T {
+        return JSON.parse(JSON.stringify(obj));
+    }
 }
 
 // Type exports
@@ -992,6 +1055,33 @@ export class RheoCell {
         requestCount: 0,
         windowStart: Date.now()
     };
+
+    private errorSubscribers = new Set<(error: any) => void>();
+    private static globalErrorSubscribers = new Set<(error: any) => void>();
+
+    // Subscribe to errors from this specific cell
+    onError(callback: (error: any) => void): () => void {
+        this.errorSubscribers.add(callback);
+        return () => this.errorSubscribers.delete(callback);
+    }
+
+    // Subscribe to errors from ALL cells (static)
+    static onGlobalError(callback: (error: any) => void): () => void {
+        RheoCell.globalErrorSubscribers.add(callback);
+        return () => RheoCell.globalErrorSubscribers.delete(callback);
+    }
+
+    // Emit error to all subscribers
+    private emitError(error: any): void {
+        // Local subscribers
+        for (const cb of this.errorSubscribers) {
+            try { cb(error); } catch { }
+        }
+        // Global subscribers
+        for (const cb of RheoCell.globalErrorSubscribers) {
+            try { cb(error); } catch { }
+        }
+    }
 
     /**
  * The Segmented Capability Proxy
@@ -1561,30 +1651,38 @@ export class RheoCell {
             }
         }
 
-        const neighbors = Object.values(this.atlas)
-            .filter(e => e.addr !== myAddr && !visitedIds.includes(e.id || '') && !providers.includes(e))
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 3);
+        // --- FLOODING CONTROL: Only flood if we haven't already tried flooding for this signal ---
+        if (signal._floodAttempted) {
+            this.ledger.wrap(signal, myId, "P2P_NO_ROUTE_SKIP_FLOOD", { reason: "Flood already attempted by upstream" });
+        } else {
+            const neighbors = Object.values(this.atlas)
+                .filter(e => e.addr !== myAddr && !visitedIds.includes(e.id || '') && !providers.includes(e))
+                .sort(() => 0.5 - Math.random())
+                .slice(0, 3);
 
-        if (neighbors.length > 0) {
-            this.ledger.wrap(signal, myId, "P2P_FLOOD_START", { neighborCount: neighbors.length });
+            if (neighbors.length > 0) {
+                this.ledger.wrap(signal, myId, "P2P_FLOOD_START", { neighborCount: neighbors.length });
 
-            const floodResults = await Promise.allSettled(
-                neighbors.map(n => this.rpc(n.addr, signal))
-            );
+                // Mark that we're flooding so children don't also flood
+                const floodSignal = { ...signal, _floodAttempted: true };
 
-            for (let i = 0; i < floodResults.length; i++) {
-                const res = floodResults[i];
-                if (res.status === 'fulfilled') {
-                    const val = res.value;
-                    if (val.ok || val.error?.code === "DUPLICATE_SIGNAL" || val.error?.code === "DUPLICATE_ARRIVAL") {
-                        this.ledger.wrap(signal, myId, "P2P_FLOOD_SUCCESS", { via: neighbors[i].addr });
-                        return val;
+                const floodResults = await Promise.allSettled(
+                    neighbors.map(n => this.rpc(n.addr, floodSignal))
+                );
+
+                for (let i = 0; i < floodResults.length; i++) {
+                    const res = floodResults[i];
+                    if (res.status === 'fulfilled') {
+                        const val = res.value;
+                        if (val.ok || val.error?.code === "DUPLICATE_SIGNAL" || val.error?.code === "DUPLICATE_ARRIVAL") {
+                            this.ledger.wrap(signal, myId, "P2P_FLOOD_SUCCESS", { via: neighbors[i].addr });
+                            return val;
+                        }
                     }
                 }
-            }
 
-            this.ledger.wrap(signal, myId, "P2P_FLOOD_FAILED", { attempts: neighbors.length });
+                this.ledger.wrap(signal, myId, "P2P_FLOOD_FAILED", { attempts: neighbors.length });
+            }
         }
 
         if (this.seed && !visitedAddr.includes(this.seed)) {
@@ -1609,7 +1707,7 @@ export class RheoCell {
             cid,
             error: {
                 code: "NOT_FOUND",
-                msg: `No route to ${cap} after exhaustive search (Providers: ${providers.length}, Neighbors: ${neighbors.length})`,
+                msg: `No route to ${cap} after exhaustive search (Providers: ${providers.length})`,
                 from: myId,
                 trace: signal.trace || [],
                 _envelope: this.ledger.entries.get(cid)
@@ -1690,19 +1788,22 @@ export class RheoCell {
 
             const r = data.result || data;
 
+            // FIXED: Properly merge remote narrative
             if (!r.ok && r.error?._envelope) {
-                this.ledger.merge(r.error._envelope);
+                try {
+                    this.ledger.merge(r.error._envelope);
+                } catch (mergeErr: any) {
+                    this.log("WARN", `Failed to merge narrative: ${mergeErr.message}`, cid);
+                }
             }
 
             if (r.ok && signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") {
                 this.log("INFO", "✅ RPC_SUCCESS: [" + signal.payload.capability + "] from " + addr, cid);
             } else if (!r.ok) {
                 const err = r.error as TraceError;
+                // CONCISE ERROR LOGGING: Don't dump the whole narrative, just the essentials
                 this.log('ERROR',
-                    `❌ RPC_REMOTE_FAIL: [${signal.payload.capability}] @ ${addr}\n` +
-                    `  Error Code: ${err?.code}\n` +
-                    `  Error Message: ${err?.msg}\n` +
-                    `  From Cell: ${err?.from}`,
+                    `❌ RPC_REMOTE_FAIL: [${signal.payload.capability}] @ ${addr} | ${err?.code}: ${err?.msg?.substring(0, 100)}`,
                     cid
                 );
             }
@@ -1746,13 +1847,25 @@ export class RheoCell {
                 _envelope: this.ledger.entries.get(cid)
             };
 
+            // CONCISE ERROR LOGGING
             this.log("ERROR",
-                `💥 RPC FAILURE [${errorCode}]\n` +
-                `  Target: ${addr}\n` +
-                `  Capability: ${signal.payload.capability}\n` +
-                `  Message: ${e.message}`,
+                `💥 RPC FAILURE [${errorCode}] ${signal.payload.capability} -> ${addr} | ${e.message?.substring(0, 100)}`,
                 cid
             );
+
+            // Add stuff like this to notify subscribers:
+            // Problem: we need to notify about EVERY single error - not just stupid mesh errors. Subscribe to log errors?
+            // this.emitError({
+            //     cell: this.id,
+            //     timestamp: Date.now(),
+            //     code: errorCode,
+            //     message: e.message,
+            //     capability: signal.payload.capability,
+            //     target: addr,
+            //     trace: signal.trace,
+            //     // Include full envelope for deep inspection
+            //     envelope: this.ledger.entries.get(cid)
+            // });
 
             return {
                 ok: false,

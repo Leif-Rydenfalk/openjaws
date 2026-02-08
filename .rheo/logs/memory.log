@@ -894,3 +894,23 @@
 [12:36:07 AM] [32m[23:36:07.169] [INFO] [memory] [b793c367] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
 [12:36:07 AM] [32m[23:36:07.171] [INFO] [memory] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39293[0m
 [12:36:07 AM] [32m[23:36:07.177] [INFO] [memory] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39293[0m
+[12:37:39 AM] [32m[23:37:39.478] [INFO] [memory] [2b307997] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[12:37:39 AM] [32m[23:37:39.488] [INFO] [memory] [22ba43c3] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.656] [INFO] [memory] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:49 AM] [32m[23:37:49.519] [INFO] [memory] [649344f7] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[12:37:49 AM] [32m[23:37:49.522] [INFO] [memory] [02af8b98] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.730] [INFO] [memory] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:42:09 AM] [32m[23:42:09.024] [INFO] [memory] [7678b1f2] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:42:09 AM] [32m[23:42:09.028] [INFO] [memory] [7678b1f2] 📡 RPC_OUT: [kindly/chat] -> http://localhost:40359[0m
+[12:44:39 AM] [memory] Key fingerprint: 09f57e7e156f933d
+[12:44:39 AM] [32m[23:44:39.213] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[12:44:39 AM] [32m[23:44:39.222] [INFO] [memory] Sovereign Cell online @ http://localhost:45361[0m
+[12:44:39 AM] [32m[23:44:39.226] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[12:44:39 AM] [32m[23:44:39.226] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[12:44:39 AM] [32m[23:44:39.226] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[12:51:33 AM] [memory] Key fingerprint: 7f6e6f7b20fde02b
+[12:51:33 AM] [32m[23:51:33.650] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[12:51:33 AM] [32m[23:51:33.662] [INFO] [memory] Sovereign Cell online @ http://localhost:38825[0m
+[12:51:33 AM] [32m[23:51:33.666] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[12:51:33 AM] [32m[23:51:33.666] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[12:51:33 AM] [32m[23:51:33.666] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m

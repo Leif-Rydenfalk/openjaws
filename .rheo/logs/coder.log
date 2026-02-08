@@ -438,3 +438,72 @@
 [12:36:07 AM] [32m[23:36:07.199] [INFO] [coder] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44231[0m
 [12:36:07 AM] [32m[23:36:07.221] [INFO] [coder] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:34395[0m
 [12:36:07 AM] [32m[23:36:07.223] [INFO] [coder] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:42571[0m
+[12:37:46 AM] [32m[23:37:46.687] [INFO] [coder] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.687] [INFO] [coder] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.697] [ERROR] [coder] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:46 AM] [32m[23:37:46.697] [INFO] [coder] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:37023[0m
+[12:37:46 AM] [32m[23:37:46.698] [INFO] [coder] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
+[12:37:46 AM] [32m[23:37:46.698] [INFO] [coder] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.702] [ERROR] [coder] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.740] [INFO] [coder] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.740] [INFO] [coder] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [31m[23:37:55.747] [ERROR] [coder] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.748] [INFO] [coder] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
+[12:37:55 AM] [32m[23:37:55.748] [INFO] [coder] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:46507[0m
+[12:37:55 AM] [32m[23:37:55.748] [INFO] [coder] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
+[12:42:09 AM] [31m[23:42:09.104] [ERROR] [coder] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:09 AM]   Target: http://localhost:44089
+[12:42:09 AM]   Capability: memory/goals/create
+[12:42:09 AM]   Message: The operation timed out.[0m
+[12:42:09 AM] [31m[23:42:09.104] [ERROR] [coder] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:09 AM]   Target: http://localhost:46507
+[12:42:09 AM]   Capability: memory/goals/create
+[12:42:09 AM]   Message: The operation timed out.[0m
+[12:42:09 AM] [31m[23:42:09.104] [ERROR] [coder] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:09 AM]   Target: http://localhost:39293
+[12:42:09 AM]   Capability: memory/goals/create
+[12:42:09 AM]   Message: The operation timed out.[0m
+[12:42:09 AM] [32m[23:42:09.105] [INFO] [coder] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:09 AM] [31m[23:42:09.106] [ERROR] [coder] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:09 AM]   Target: http://localhost:39293
+[12:42:09 AM]   Capability: memory/goals/create
+[12:42:09 AM]   Message: The operation timed out.[0m
+[12:42:09 AM] [31m[23:42:09.107] [ERROR] [coder] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:09 AM]   Target: http://localhost:37023
+[12:42:09 AM]   Capability: memory/goals/create
+[12:42:09 AM]   Message: The operation timed out.[0m
+[12:42:09 AM] [32m[23:42:09.108] [INFO] [coder] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:09 AM] [31m[23:42:09.109] [ERROR] [coder] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:09 AM]   Target: http://localhost:44231
+[12:42:09 AM]   Capability: memory/goals/create
+[12:42:09 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:09 AM] [32m[23:42:09.110] [INFO] [coder] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
+[12:42:09 AM] [32m[23:42:09.111] [INFO] [coder] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:34395[0m
+[12:42:09 AM] [32m[23:42:09.112] [INFO] [coder] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:09 AM] [31m[23:42:09.114] [ERROR] [coder] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:09 AM]   Target: http://localhost:44231
+[12:42:09 AM]   Capability: memory/goals/create
+[12:42:09 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:09 AM] [32m[23:42:09.115] [INFO] [coder] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:46507[0m
+[12:42:09 AM] [32m[23:42:09.115] [INFO] [coder] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42597[0m
+[12:42:09 AM] [32m[23:42:09.116] [INFO] [coder] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40557[0m
+[12:42:09 AM] [31m[23:42:09.118] [ERROR] [coder] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:09 AM]   Target: http://localhost:44231
+[12:42:09 AM]   Capability: memory/goals/create
+[12:42:09 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:44:39 AM] [coder] Key fingerprint: 73f9a2dc0cf591a6
+[12:44:39 AM] [32m[23:44:39.300] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[12:44:39 AM] [32m[23:44:39.310] [INFO] [coder] Sovereign Cell online @ http://localhost:37613[0m
+[12:51:33 AM] [coder] Key fingerprint: 18f3500a8b87608f
+[12:51:33 AM] [32m[23:51:33.509] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[12:51:33 AM] [32m[23:51:33.522] [INFO] [coder] Sovereign Cell online @ http://localhost:33015[0m
+[12:51:33 AM] [32m[23:51:33.597] [INFO] [coder] [37cd6c6f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m

@@ -378,3 +378,74 @@
 [12:36:07 AM] [32m[23:36:07.169] [INFO] [projects] [b793c367] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
 [12:36:07 AM] [32m[23:36:07.171] [INFO] [projects] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39293[0m
 [12:36:07 AM] [32m[23:36:07.181] [INFO] [projects] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39293[0m
+[12:37:46 AM] [32m[23:37:46.675] [INFO] [projects] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.675] [INFO] [projects] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.682] [ERROR] [projects] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:46 AM] [32m[23:37:46.682] [INFO] [projects] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:35417[0m
+[12:37:46 AM] [32m[23:37:46.683] [INFO] [projects] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
+[12:37:46 AM] [32m[23:37:46.685] [INFO] [projects] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36975[0m
+[12:37:55 AM] [32m[23:37:55.749] [INFO] [projects] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.750] [INFO] [projects] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [31m[23:37:55.763] [ERROR] [projects] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.763] [INFO] [projects] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:35417[0m
+[12:37:55 AM] [32m[23:37:55.764] [INFO] [projects] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40359[0m
+[12:37:55 AM] [32m[23:37:55.764] [INFO] [projects] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36371[0m
+[12:42:07 AM] [31m[23:42:07.098] [ERROR] [projects] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:36371
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.099] [ERROR] [projects] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:40359
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.099] [ERROR] [projects] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:35417
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [32m[23:42:07.100] [INFO] [projects] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [31m[23:42:07.102] [ERROR] [projects] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:36975
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.102] [ERROR] [projects] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:42571
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.103] [ERROR] [projects] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:35417
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [32m[23:42:07.105] [INFO] [projects] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [31m[23:42:07.106] [ERROR] [projects] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [32m[23:42:07.106] [INFO] [projects] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [32m[23:42:07.106] [INFO] [projects] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
+[12:42:07 AM] [32m[23:42:07.107] [INFO] [projects] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36371[0m
+[12:42:07 AM] [31m[23:42:07.108] [ERROR] [projects] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [32m[23:42:07.108] [INFO] [projects] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42711[0m
+[12:42:07 AM] [32m[23:42:07.109] [INFO] [projects] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:45355[0m
+[12:42:07 AM] [32m[23:42:07.109] [INFO] [projects] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40359[0m
+[12:42:07 AM] [31m[23:42:07.110] [ERROR] [projects] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:44:39 AM] [projects] Key fingerprint: f2cada5224778af8
+[12:44:39 AM] [32m[23:44:39.289] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[12:44:39 AM] [32m[23:44:39.308] [INFO] [projects] Sovereign Cell online @ http://localhost:34503[0m
+[12:44:39 AM] [32m[23:44:39.415] [INFO] [projects] [7fdc3fc1] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:44:39 AM] [32m[23:44:39.417] [INFO] [projects] [7fdc3fc1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40577[0m
+[12:44:39 AM] [32m[23:44:39.423] [INFO] [projects] [7fdc3fc1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:40577[0m
+[12:51:33 AM] [projects] Key fingerprint: 9b6c7f9ae7699e51
+[12:51:33 AM] [32m[23:51:33.503] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[12:51:33 AM] [32m[23:51:33.512] [INFO] [projects] Sovereign Cell online @ http://localhost:34663[0m

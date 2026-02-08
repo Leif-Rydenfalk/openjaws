@@ -209,6 +209,83 @@ export async function safe<T>(
 const [session, error] = await safe(
   cell.mesh.comms['configure-channel']({...})
 );
+```
 
-if (error) {
- 
+
+ ---
+
+
+ You're right. I overcomplicated it.
+
+Here's the simple version - just add this to `example1.ts`, no new files:
+
+```typescript
+// Add to RheoCell class
+private errorSubscribers = new Set<(error: any) => void>();
+private static globalErrorSubscribers = new Set<(error: any) => void>();
+
+// Subscribe to errors from this specific cell
+onError(callback: (error: any) => void): () => void {
+    this.errorSubscribers.add(callback);
+    return () => this.errorSubscribers.delete(callback);
+}
+
+// Subscribe to errors from ALL cells (static)
+static onGlobalError(callback: (error: any) => void): () => void {
+    RheoCell.globalErrorSubscribers.add(callback);
+    return () => RheoCell.globalErrorSubscribers.delete(callback);
+}
+
+// Emit error to all subscribers
+private emitError(error: any): void {
+    // Local subscribers
+    for (const cb of this.errorSubscribers) {
+        try { cb(error); } catch {}
+    }
+    // Global subscribers
+    for (const cb of RheoCell.globalErrorSubscribers) {
+        try { cb(error); } catch {}
+    }
+}
+```
+
+Then in `rpc()` and `route()`, replace the error logging with:
+
+```typescript
+// Instead of this.log("ERROR", ...)
+this.emitError({
+    cell: this.id,
+    timestamp: Date.now(),
+    code: errorCode,
+    message: e.message,
+    capability: signal.payload.capability,
+    target: addr,
+    trace: signal.trace,
+    // Include full envelope for deep inspection
+    envelope: this.ledger.entries.get(cid)
+});
+```
+
+Usage in any cell:
+
+```typescript
+// Auto-log all errors to file
+RheoCell.onGlobalError((err) => {
+    appendFileSync("errors.log", JSON.stringify(err) + "\n");
+});
+
+// Auto-fix with AI
+RheoCell.onGlobalError(async (err) => {
+    if (err.code === "HANDLER_ERR") {
+        const fix = await cell.mesh.ai.generate({
+            prompt: `Fix this error: ${err.message}\nSource: ${err.cell}`
+        });
+        // Apply fix...
+    }
+});
+
+// Just log to terminal
+cell.onError((err) => console.error(`[${err.cell}] ${err.code}: ${err.message}`));
+```
+
+That's it. No files, no complexity.

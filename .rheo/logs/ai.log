@@ -1642,3 +1642,118 @@
 [12:36:07 AM] [ai] Key fingerprint: e9c901c4235f7fba
 [12:36:07 AM] [32m[23:36:07.096] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
 [12:36:07 AM] [32m[23:36:07.111] [INFO] [ai] Sovereign Cell online @ http://localhost:42711[0m
+[12:37:37 AM] [32m[23:37:37.747] [INFO] [ai] [bfc2b778] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:37:37 AM] [32m[23:37:37.748] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "hello"
+[12:37:37 AM] Options: goal, question, command, update, f...[0m
+[12:37:37 AM] [32m[23:37:37.748] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:37:37 AM] [32m[23:37:37.749] [INFO] [ai] [ddf04d9d] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:37 AM] [32m[23:37:37.749] [INFO] [ai] [ddf04d9d] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:37 AM] [32m[23:37:37.751] [INFO] [ai] [ddf04d9d] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:39 AM] [32m[23:37:39.471] [INFO] [ai] ✅ AI Response [direct]: 265 tokens, 1723ms[0m
+[12:37:39 AM] [32m[23:37:39.471] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:37:39 AM] [32m[23:37:39.472] [INFO] [ai] [c2a75530] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:39 AM] [32m[23:37:39.472] [INFO] [ai] [c2a75530] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:39 AM] [32m[23:37:39.474] [INFO] [ai] [c2a75530] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:39 AM] [32m[23:37:39.491] [INFO] [ai] [66088eb2] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:37:39 AM] [32m[23:37:39.492] [INFO] [ai] 🤖 AI Request [tts_session_1770592195345_89pqocuo4_1]: USER: hello...[0m
+[12:37:39 AM] [32m[23:37:39.492] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:37:39 AM] [32m[23:37:39.492] [INFO] [ai] [3f390d06] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:39 AM] [32m[23:37:39.493] [INFO] [ai] [3f390d06] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:39 AM] [32m[23:37:39.495] [INFO] [ai] [3f390d06] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:46 AM] [32m[23:37:46.648] [INFO] [ai] ✅ AI Response [tts_session_1770592195345_89pqocuo4_1]: 1491 tokens, 7156ms[0m
+[12:37:46 AM] [32m[23:37:46.648] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:37:46 AM] [32m[23:37:46.649] [INFO] [ai] [ce709147] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:46 AM] [32m[23:37:46.649] [INFO] [ai] [ce709147] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:46 AM] [32m[23:37:46.651] [INFO] [ai] [ce709147] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:46 AM] [32m[23:37:46.675] [INFO] [ai] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.675] [INFO] [ai] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.682] [ERROR] [ai] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:46 AM] [32m[23:37:46.682] [INFO] [ai] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36975[0m
+[12:37:46 AM] [32m[23:37:46.682] [INFO] [ai] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36371[0m
+[12:37:46 AM] [32m[23:37:46.683] [INFO] [ai] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:34395[0m
+[12:37:47 AM] [32m[23:37:47.224] [INFO] [ai] [a9f51605] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:37:47 AM] [32m[23:37:47.225] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "hello"
+[12:37:47 AM] Options: goal, question, command, update, f...[0m
+[12:37:47 AM] [32m[23:37:47.225] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:37:47 AM] [32m[23:37:47.225] [INFO] [ai] [ebba1c7a] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:47 AM] [32m[23:37:47.225] [INFO] [ai] [ebba1c7a] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:47 AM] [32m[23:37:47.227] [INFO] [ai] [ebba1c7a] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:49 AM] [32m[23:37:49.513] [INFO] [ai] ✅ AI Response [direct]: 335 tokens, 2288ms[0m
+[12:37:49 AM] [32m[23:37:49.513] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:37:49 AM] [32m[23:37:49.514] [INFO] [ai] [e33af1c4] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:49 AM] [32m[23:37:49.515] [INFO] [ai] [e33af1c4] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:49 AM] [32m[23:37:49.516] [INFO] [ai] [e33af1c4] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:49 AM] [32m[23:37:49.525] [INFO] [ai] [401076e8] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:37:49 AM] [32m[23:37:49.526] [INFO] [ai] 🤖 AI Request [tts_session_1770592195345_89pqocuo4_1]: USER: hello...[0m
+[12:37:49 AM] [32m[23:37:49.526] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:37:49 AM] [32m[23:37:49.526] [INFO] [ai] [f39fb638] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:49 AM] [32m[23:37:49.526] [INFO] [ai] [f39fb638] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:49 AM] [32m[23:37:49.528] [INFO] [ai] [f39fb638] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:55 AM] [32m[23:37:55.722] [INFO] [ai] ✅ AI Response [tts_session_1770592195345_89pqocuo4_1]: 1368 tokens, 6196ms[0m
+[12:37:55 AM] [32m[23:37:55.722] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:37:55 AM] [32m[23:37:55.722] [INFO] [ai] [c15a62c9] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:55 AM] [32m[23:37:55.723] [INFO] [ai] [c15a62c9] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:55 AM] [32m[23:37:55.725] [INFO] [ai] [c15a62c9] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:55 AM] [32m[23:37:55.747] [INFO] [ai] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.747] [INFO] [ai] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [31m[23:37:55.760] [ERROR] [ai] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.760] [INFO] [ai] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [32m[23:37:55.760] [INFO] [ai] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36975[0m
+[12:37:55 AM] [32m[23:37:55.761] [INFO] [ai] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
+[12:37:55 AM] [31m[23:37:55.770] [ERROR] [ai] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:38:07 AM] [32m[23:38:07.113] [INFO] [ai] 📊 AI Stats: 4 calls, 3459 tokens total, 3459 last hour[0m
+[12:39:07 AM] [32m[23:39:07.113] [INFO] [ai] 📊 AI Stats: 4 calls, 3459 tokens total, 3459 last hour[0m
+[12:40:07 AM] [32m[23:40:07.112] [INFO] [ai] 📊 AI Stats: 4 calls, 3459 tokens total, 3459 last hour[0m
+[12:41:07 AM] [32m[23:41:07.112] [INFO] [ai] 📊 AI Stats: 4 calls, 3459 tokens total, 3459 last hour[0m
+[12:42:07 AM] [32m[23:42:07.111] [INFO] [ai] 📊 AI Stats: 4 calls, 3459 tokens total, 3459 last hour[0m
+[12:42:07 AM] [31m[23:42:07.123] [ERROR] [ai] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:39293
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.123] [ERROR] [ai] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:36975
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [32m[23:42:07.127] [INFO] [ai] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [31m[23:42:07.132] [ERROR] [ai] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:36975
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.132] [ERROR] [ai] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:34395
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.132] [ERROR] [ai] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:36371
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [32m[23:42:07.135] [INFO] [ai] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [31m[23:42:07.136] [ERROR] [ai] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [32m[23:42:07.138] [INFO] [ai] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:34395[0m
+[12:42:07 AM] [32m[23:42:07.139] [INFO] [ai] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40557[0m
+[12:42:07 AM] [32m[23:42:07.140] [INFO] [ai] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:45355[0m
+[12:42:07 AM] [31m[23:42:07.142] [ERROR] [ai] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [32m[23:42:07.142] [INFO] [ai] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
+[12:42:07 AM] [32m[23:42:07.143] [INFO] [ai] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
+[12:42:07 AM] [32m[23:42:07.144] [INFO] [ai] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40557[0m
+[12:44:39 AM] [ai] Key fingerprint: 3c3147c98f901ab9
+[12:44:39 AM] [32m[23:44:39.373] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:44:39 AM] [32m[23:44:39.387] [INFO] [ai] Sovereign Cell online @ http://localhost:39923[0m
+[12:51:33 AM] [ai] Key fingerprint: e6d11fd9923d1226
+[12:51:33 AM] [32m[23:51:33.618] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:51:33 AM] [32m[23:51:33.634] [INFO] [ai] Sovereign Cell online @ http://localhost:44325[0m

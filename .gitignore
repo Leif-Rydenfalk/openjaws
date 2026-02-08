@@ -158,3 +158,4 @@ certs/
 .rheo/
 /.rheo
 .rheo
+*.log

@@ -152,3 +152,10 @@ The error handling needs to be 10000000000 times better
 
 "The current system throws away the most useful debugging information at every hop."
 Fix this. Right now.
+
+
+Add even better error handling, logging tracing etc. I want to let cells subscribe to error events happening in any cell - any error in any cell.
+Example use cases:
+auto error log and saving for human personel to look through
+auto fix errors using ai by looking at source code of cells
+Log to terminal

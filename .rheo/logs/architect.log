@@ -329,3 +329,71 @@
 [12:36:07 AM] [architect] Key fingerprint: 6cc4ac32621c5ce2
 [12:36:07 AM] [32m[23:36:07.107] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
 [12:36:07 AM] [32m[23:36:07.112] [INFO] [architect] Sovereign Cell online @ http://localhost:40557[0m
+[12:37:46 AM] [32m[23:37:46.667] [INFO] [architect] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.668] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.681] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:46 AM] [32m[23:37:46.687] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42597[0m
+[12:37:46 AM] [32m[23:37:46.687] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [32m[23:37:46.687] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
+[12:37:46 AM] [31m[23:37:46.696] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.748] [INFO] [architect] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.749] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [31m[23:37:55.760] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.760] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36371[0m
+[12:37:55 AM] [32m[23:37:55.761] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
+[12:37:55 AM] [32m[23:37:55.761] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
+[12:42:09 AM] [32m[23:42:09.025] [INFO] [architect] [7678b1f2] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:42:09 AM] [32m[23:42:09.026] [INFO] [architect] [7678b1f2] 📡 RPC_OUT: [kindly/chat] -> http://localhost:40359[0m
+[12:42:09 AM] [32m[23:42:09.031] [INFO] [architect] [df814e3f] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:42:09 AM] [32m[23:42:09.032] [INFO] [architect] [df814e3f] 📡 RPC_OUT: [kindly/chat] -> http://localhost:40359[0m
+[12:42:11 AM] [31m[23:42:11.115] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:11 AM]   Target: http://localhost:44089
+[12:42:11 AM]   Capability: memory/goals/create
+[12:42:11 AM]   Message: The operation timed out.[0m
+[12:42:11 AM] [31m[23:42:11.115] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:11 AM]   Target: http://localhost:42571
+[12:42:11 AM]   Capability: memory/goals/create
+[12:42:11 AM]   Message: The operation timed out.[0m
+[12:42:11 AM] [31m[23:42:11.115] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:11 AM]   Target: http://localhost:36371
+[12:42:11 AM]   Capability: memory/goals/create
+[12:42:11 AM]   Message: The operation timed out.[0m
+[12:42:11 AM] [32m[23:42:11.116] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:11 AM] [31m[23:42:11.117] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:11 AM]   Target: http://localhost:42597
+[12:42:11 AM]   Capability: memory/goals/create
+[12:42:11 AM]   Message: The operation timed out.[0m
+[12:42:11 AM] [31m[23:42:11.117] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:11 AM]   Target: http://localhost:44089
+[12:42:11 AM]   Capability: memory/goals/create
+[12:42:11 AM]   Message: The operation timed out.[0m
+[12:42:11 AM] [32m[23:42:11.118] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:11 AM] [31m[23:42:11.119] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:11 AM]   Target: http://localhost:44231
+[12:42:11 AM]   Capability: memory/goals/create
+[12:42:11 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:11 AM] [32m[23:42:11.120] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
+[12:42:11 AM] [32m[23:42:11.120] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40359[0m
+[12:42:11 AM] [32m[23:42:11.121] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42597[0m
+[12:42:11 AM] [31m[23:42:11.121] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:11 AM]   Target: http://localhost:44231
+[12:42:11 AM]   Capability: memory/goals/create
+[12:42:11 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:11 AM] [32m[23:42:11.122] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
+[12:42:11 AM] [32m[23:42:11.122] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
+[12:42:11 AM] [32m[23:42:11.123] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:35417[0m
+[12:44:39 AM] [architect] Key fingerprint: c030c90e90547d41
+[12:44:39 AM] [32m[23:44:39.391] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[12:44:39 AM] [32m[23:44:39.414] [INFO] [architect] Sovereign Cell online @ http://localhost:36789[0m
+[12:51:33 AM] [architect] Key fingerprint: 57bd3e3bfc3a0324
+[12:51:33 AM] [32m[23:51:33.637] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[12:51:33 AM] [32m[23:51:33.644] [INFO] [architect] Sovereign Cell online @ http://localhost:42603[0m

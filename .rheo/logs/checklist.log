@@ -749,3 +749,99 @@
 [12:36:34 AM] [32m[23:36:34.164] [INFO] [checklist] [f45a530d] 📡 RPC_OUT: [mesh/health] -> http://localhost:36371[0m
 [12:36:34 AM] [32m[23:36:34.166] [INFO] [checklist] [f45a530d] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:36371[0m
 [12:36:34 AM] Mesh health: NOMINAL, 16 cells
+[12:37:46 AM] [32m[23:37:46.667] [INFO] [checklist] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.667] [INFO] [checklist] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.679] [ERROR] [checklist] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:46 AM] [32m[23:37:46.679] [INFO] [checklist] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40359[0m
+[12:37:46 AM] [32m[23:37:46.679] [INFO] [checklist] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40557[0m
+[12:37:46 AM] [32m[23:37:46.680] [INFO] [checklist] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.693] [ERROR] [checklist] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.742] [INFO] [checklist] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.742] [INFO] [checklist] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [31m[23:37:55.755] [ERROR] [checklist] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.755] [INFO] [checklist] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:46507[0m
+[12:37:55 AM] [32m[23:37:55.756] [INFO] [checklist] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [32m[23:37:55.756] [INFO] [checklist] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:34395[0m
+[12:37:55 AM] [31m[23:37:55.762] [ERROR] [checklist] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [31m[23:42:07.173] [ERROR] [checklist] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:34395
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.173] [ERROR] [checklist] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:46507
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [32m[23:42:07.174] [INFO] [checklist] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [31m[23:42:07.176] [ERROR] [checklist] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:40557
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.178] [ERROR] [checklist] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:40359
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [32m[23:42:07.179] [INFO] [checklist] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [31m[23:42:07.180] [ERROR] [checklist] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [32m[23:42:07.181] [INFO] [checklist] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:45355[0m
+[12:42:07 AM] [32m[23:42:07.182] [INFO] [checklist] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [32m[23:42:07.183] [INFO] [checklist] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40557[0m
+[12:42:07 AM] [31m[23:42:07.184] [ERROR] [checklist] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [32m[23:42:07.184] [INFO] [checklist] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [32m[23:42:07.194] [INFO] [checklist] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:37023[0m
+[12:42:07 AM] [32m[23:42:07.194] [INFO] [checklist] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42711[0m
+[12:42:07 AM] [31m[23:42:07.198] [ERROR] [checklist] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [31m[23:42:07.198] [ERROR] [checklist] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:09 AM] [32m[23:42:09.022] [INFO] [checklist] [7678b1f2] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:42:09 AM] [32m[23:42:09.024] [INFO] [checklist] [7678b1f2] 📡 RPC_OUT: [kindly/chat] -> http://localhost:40359[0m
+[12:44:39 AM] [checklist] Key fingerprint: 0de42a77f2e05240
+[12:44:39 AM] [32m[23:44:39.307] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:44:39 AM] [32m[23:44:39.313] [INFO] [checklist] Sovereign Cell online @ http://localhost:33217[0m
+[12:44:39 AM] [32m[23:44:39.314] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:44:39 AM] [32m[23:44:39.425] [INFO] [checklist] [7fdc3fc1] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:44:39 AM] [32m[23:44:39.427] [INFO] [checklist] [7fdc3fc1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40577[0m
+[12:44:39 AM] [32m[23:44:39.434] [INFO] [checklist] [7fdc3fc1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:40577[0m
+[12:45:06 AM] [32m[23:45:06.316] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:45:06 AM] [32m[23:45:06.317] [INFO] [checklist] [9325d7a0] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:45:06 AM] Current list has 0 items
+[12:45:06 AM] [32m[23:45:06.318] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:45:06 AM] [32m[23:45:06.318] [INFO] [checklist] [209ac875] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:45:06 AM] [32m[23:45:06.318] [INFO] [checklist] [209ac875] 📡 RPC_OUT: [mesh/health] -> http://localhost:35079[0m
+[12:45:06 AM] [32m[23:45:06.320] [INFO] [checklist] [209ac875] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:35079[0m
+[12:45:06 AM] Mesh health: NOMINAL, 16 cells
+[12:51:33 AM] [checklist] Key fingerprint: 72120d91049d967f
+[12:51:33 AM] [32m[23:51:33.634] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:51:33 AM] [32m[23:51:33.676] [INFO] [checklist] Sovereign Cell online @ http://localhost:38197[0m
+[12:51:33 AM] [32m[23:51:33.677] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:52:00 AM] [32m[23:52:00.678] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:52:00 AM] [32m[23:52:00.679] [INFO] [checklist] [c8f1464a] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:52:00 AM] Current list has 0 items
+[12:52:00 AM] [32m[23:52:00.680] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:52:00 AM] [32m[23:52:00.680] [INFO] [checklist] [3ac40d0c] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:52:00 AM] [32m[23:52:00.681] [INFO] [checklist] [3ac40d0c] 📡 RPC_OUT: [mesh/health] -> http://localhost:46403[0m
+[12:52:00 AM] [32m[23:52:00.684] [INFO] [checklist] [3ac40d0c] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:46403[0m
+[12:52:00 AM] Mesh health: NOMINAL, 16 cells
+[12:52:33 AM] [32m[23:52:33.509] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m

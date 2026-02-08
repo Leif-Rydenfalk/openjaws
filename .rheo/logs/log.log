@@ -841,3 +841,104 @@
 [12:36:07 AM] [32m[23:36:07.204] [INFO] [log] [b793c367] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
 [12:36:07 AM] [32m[23:36:07.206] [INFO] [log] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39293[0m
 [12:36:07 AM] [32m[23:36:07.207] [INFO] [log] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39293[0m
+[12:37:37 AM] [32m[23:37:37.741] [INFO] [log] [28446342] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[12:37:37 AM] [32m[23:37:37.742] [INFO] [log] 📝 Logged: [3HKS9] VOICE_UI: Relaying to ...[0m
+[12:37:37 AM] [32m[23:37:37.750] [INFO] [log] [ddf04d9d] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:37 AM] [32m[23:37:37.751] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[12:37:39 AM] [32m[23:37:39.473] [INFO] [log] [c2a75530] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:39 AM] [32m[23:37:39.474] [INFO] [log] 📝 Logged: AI_COMPLETE: 265tok, 1723ms (r...[0m
+[12:37:39 AM] [32m[23:37:39.494] [INFO] [log] [3f390d06] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:39 AM] [32m[23:37:39.494] [INFO] [log] 📝 Logged: AI_REQUEST: USER: hello... (re...[0m
+[12:37:46 AM] [32m[23:37:46.651] [INFO] [log] [ce709147] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:46 AM] [32m[23:37:46.651] [INFO] [log] 📝 Logged: AI_COMPLETE: 1491tok, 7156ms (...[0m
+[12:37:46 AM] [32m[23:37:46.655] [INFO] [log] [aab74cca] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.655] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[12:37:46 AM] [32m[23:37:46.666] [INFO] [log] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.666] [INFO] [log] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.673] [ERROR] [log] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:46 AM] [32m[23:37:46.673] [INFO] [log] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:35417[0m
+[12:37:46 AM] [32m[23:37:46.674] [INFO] [log] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
+[12:37:46 AM] [32m[23:37:46.674] [INFO] [log] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [31m[23:37:46.694] [ERROR] [log] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:47 AM] [32m[23:37:47.222] [INFO] [log] [e6615297] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[12:37:47 AM] [32m[23:37:47.222] [INFO] [log] 📝 Logged: [7ZWOH] VOICE_UI: Relaying to ...[0m
+[12:37:47 AM] [32m[23:37:47.226] [INFO] [log] [ebba1c7a] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:47 AM] [32m[23:37:47.226] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[12:37:49 AM] [32m[23:37:49.516] [INFO] [log] [e33af1c4] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:49 AM] [32m[23:37:49.516] [INFO] [log] 📝 Logged: AI_COMPLETE: 335tok, 2288ms (r...[0m
+[12:37:49 AM] [32m[23:37:49.527] [INFO] [log] [f39fb638] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:49 AM] [32m[23:37:49.527] [INFO] [log] 📝 Logged: AI_REQUEST: USER: hello... (re...[0m
+[12:37:55 AM] [32m[23:37:55.724] [INFO] [log] [c15a62c9] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:37:55 AM] [32m[23:37:55.724] [INFO] [log] 📝 Logged: AI_COMPLETE: 1368tok, 6196ms (...[0m
+[12:37:55 AM] [32m[23:37:55.729] [INFO] [log] [bc9c6a36] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.729] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[12:37:55 AM] [32m[23:37:55.750] [INFO] [log] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.751] [INFO] [log] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [31m[23:37:55.764] [ERROR] [log] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.765] [INFO] [log] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
+[12:37:55 AM] [32m[23:37:55.765] [INFO] [log] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40557[0m
+[12:37:55 AM] [32m[23:37:55.765] [INFO] [log] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
+[12:42:07 AM] [31m[23:42:07.134] [ERROR] [log] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44089
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.134] [ERROR] [log] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:40557
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.134] [ERROR] [log] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:42571
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [32m[23:42:07.136] [INFO] [log] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [31m[23:42:07.136] [ERROR] [log] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:35417
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [31m[23:42:07.136] [ERROR] [log] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:42571
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: The operation timed out.[0m
+[12:42:07 AM] [32m[23:42:07.138] [INFO] [log] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [31m[23:42:07.139] [ERROR] [log] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [32m[23:42:07.140] [INFO] [log] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
+[12:42:07 AM] [32m[23:42:07.140] [INFO] [log] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:07 AM] [32m[23:42:07.140] [INFO] [log] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
+[12:42:07 AM] [31m[23:42:07.147] [ERROR] [log] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:07 AM] [32m[23:42:07.147] [INFO] [log] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40359[0m
+[12:42:07 AM] [32m[23:42:07.148] [INFO] [log] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
+[12:42:07 AM] [32m[23:42:07.149] [INFO] [log] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40557[0m
+[12:42:07 AM] [31m[23:42:07.150] [ERROR] [log] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:07 AM]   Target: http://localhost:44231
+[12:42:07 AM]   Capability: memory/goals/create
+[12:42:07 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:09 AM] [32m[23:42:09.031] [INFO] [log] [df814e3f] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:42:09 AM] [32m[23:42:09.032] [INFO] [log] [df814e3f] 📡 RPC_OUT: [kindly/chat] -> http://localhost:40359[0m
+[12:44:39 AM] [log] Key fingerprint: ef4d35668b5e231d
+[12:44:39 AM] [32m[23:44:39.382] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:44:39 AM] [32m[23:44:39.388] [INFO] [log] Sovereign Cell online @ http://localhost:40511[0m
+[12:44:39 AM] [32m[23:44:39.392] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:44:39 AM] [32m[23:44:39.392] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:51:33 AM] [log] Key fingerprint: 1cd91b9995a912fc
+[12:51:33 AM] [32m[23:51:33.589] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:51:33 AM] [32m[23:51:33.597] [INFO] [log] Sovereign Cell online @ http://localhost:33583[0m
+[12:51:33 AM] [32m[23:51:33.598] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:51:33 AM] [32m[23:51:33.598] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:51:33 AM] [32m[23:51:33.608] [INFO] [log] [37cd6c6f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:52:03 AM] [31m[23:52:03.602] [ERROR] [log] [d6ed91b6] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:33217 | Unable to connect. Is the computer able to access the url?[0m
+[12:52:03 AM] [31m[23:52:03.602] [ERROR] [log] [55f3c628] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:37549 | Unable to connect. Is the computer able to access the url?[0m

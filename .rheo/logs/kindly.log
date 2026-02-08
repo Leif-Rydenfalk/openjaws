@@ -918,3 +918,123 @@
 [12:36:07 AM] [32m[23:36:07.197] [INFO] [kindly] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44231[0m
 [12:36:07 AM] [32m[23:36:07.197] [INFO] [kindly] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36371[0m
 [12:36:07 AM] [32m[23:36:07.225] [INFO] [kindly] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36975[0m
+[12:37:37 AM] [32m[23:37:37.743] [INFO] [kindly] [df814e3f] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:37:37 AM] [32m[23:37:37.745] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[12:37:37 AM] [32m[23:37:37.745] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[12:37:37 AM] [32m[23:37:37.745] [INFO] [kindly] [bfc2b778] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:37:37 AM] [32m[23:37:37.746] [INFO] [kindly] [bfc2b778] 📡 RPC_OUT: [ai/generate] -> http://localhost:42711[0m
+[12:37:39 AM] [32m[23:37:39.475] [INFO] [kindly] [bfc2b778] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:42711[0m
+[12:37:39 AM] [32m[23:37:39.476] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[12:37:39 AM] [32m[23:37:39.476] [INFO] [kindly] [2b307997] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[12:37:39 AM] [32m[23:37:39.477] [INFO] [kindly] [2b307997] 📡 RPC_OUT: [memory/session/store] -> http://localhost:44231[0m
+[12:37:39 AM] [32m[23:37:39.483] [INFO] [kindly] [2b307997] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:44231[0m
+[12:37:39 AM] [32m[23:37:39.486] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[12:37:39 AM] [32m[23:37:39.487] [INFO] [kindly] [22ba43c3] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[12:37:39 AM] [32m[23:37:39.487] [INFO] [kindly] [22ba43c3] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:44231[0m
+[12:37:39 AM] [32m[23:37:39.489] [INFO] [kindly] [22ba43c3] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:44231[0m
+[12:37:39 AM] [32m[23:37:39.490] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[12:37:39 AM] [32m[23:37:39.490] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[12:37:39 AM] [32m[23:37:39.490] [INFO] [kindly] [66088eb2] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:37:39 AM] [32m[23:37:39.490] [INFO] [kindly] [66088eb2] 📡 RPC_OUT: [ai/generate] -> http://localhost:42711[0m
+[12:37:46 AM] [32m[23:37:46.652] [INFO] [kindly] [66088eb2] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:42711[0m
+[12:37:46 AM] [32m[23:37:46.653] [INFO] [kindly] 📊 Tokens: 1491 (total: 1491)[0m
+[12:37:46 AM] [32m[23:37:46.653] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[12:37:46 AM] [32m[23:37:46.653] [INFO] [kindly] 🔧 [tts_sess] Starting: memory_goals_create[0m
+[12:37:46 AM] [32m[23:37:46.653] [INFO] [kindly] 🔗 PROXY_CALL: [log/info][0m
+[12:37:46 AM] [32m[23:37:46.653] [INFO] [kindly] [aab74cca] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.654] [INFO] [kindly] [aab74cca] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:46 AM] [32m[23:37:46.654] [INFO] [kindly] 🔗 PROXY_CALL: [memory/goals/create][0m
+[12:37:46 AM] [32m[23:37:46.654] [INFO] [kindly] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:46 AM] [32m[23:37:46.654] [INFO] [kindly] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:46 AM] [32m[23:37:46.655] [INFO] [kindly] [aab74cca] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:46 AM] [31m[23:37:46.658] [ERROR] [kindly] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:46 AM]   Target: http://localhost:44231
+[12:37:46 AM]   Capability: memory/goals/create
+[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:46 AM] [32m[23:37:46.658] [INFO] [kindly] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36371[0m
+[12:37:46 AM] [32m[23:37:46.659] [INFO] [kindly] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:45355[0m
+[12:37:46 AM] [32m[23:37:46.659] [INFO] [kindly] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:34395[0m
+[12:37:47 AM] [32m[23:37:47.223] [INFO] [kindly] [7678b1f2] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:37:47 AM] [32m[23:37:47.223] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[12:37:47 AM] [32m[23:37:47.223] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[12:37:47 AM] [32m[23:37:47.223] [INFO] [kindly] [a9f51605] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:37:47 AM] [32m[23:37:47.224] [INFO] [kindly] [a9f51605] 📡 RPC_OUT: [ai/generate] -> http://localhost:42711[0m
+[12:37:49 AM] [32m[23:37:49.517] [INFO] [kindly] [a9f51605] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:42711[0m
+[12:37:49 AM] [32m[23:37:49.518] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[12:37:49 AM] [32m[23:37:49.518] [INFO] [kindly] [649344f7] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[12:37:49 AM] [32m[23:37:49.518] [INFO] [kindly] [649344f7] 📡 RPC_OUT: [memory/session/store] -> http://localhost:44231[0m
+[12:37:49 AM] [32m[23:37:49.521] [INFO] [kindly] [649344f7] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:44231[0m
+[12:37:49 AM] [32m[23:37:49.521] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[12:37:49 AM] [32m[23:37:49.521] [INFO] [kindly] [02af8b98] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[12:37:49 AM] [32m[23:37:49.521] [INFO] [kindly] [02af8b98] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:44231[0m
+[12:37:49 AM] [32m[23:37:49.523] [INFO] [kindly] [02af8b98] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:44231[0m
+[12:37:49 AM] [32m[23:37:49.524] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[12:37:49 AM] [32m[23:37:49.524] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[12:37:49 AM] [32m[23:37:49.524] [INFO] [kindly] [401076e8] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:37:49 AM] [32m[23:37:49.524] [INFO] [kindly] [401076e8] 📡 RPC_OUT: [ai/generate] -> http://localhost:42711[0m
+[12:37:55 AM] [32m[23:37:55.726] [INFO] [kindly] [401076e8] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:42711[0m
+[12:37:55 AM] [32m[23:37:55.726] [INFO] [kindly] 📊 Tokens: 1368 (total: 1368)[0m
+[12:37:55 AM] [32m[23:37:55.726] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[12:37:55 AM] [32m[23:37:55.726] [INFO] [kindly] 🔧 [tts_sess] Starting: memory_goals_create[0m
+[12:37:55 AM] [32m[23:37:55.726] [INFO] [kindly] 🔗 PROXY_CALL: [log/info][0m
+[12:37:55 AM] [32m[23:37:55.727] [INFO] [kindly] [bc9c6a36] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.727] [INFO] [kindly] [bc9c6a36] 📡 RPC_OUT: [log/info] -> http://localhost:46507[0m
+[12:37:55 AM] [32m[23:37:55.727] [INFO] [kindly] 🔗 PROXY_CALL: [memory/goals/create][0m
+[12:37:55 AM] [32m[23:37:55.728] [INFO] [kindly] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:37:55 AM] [32m[23:37:55.728] [INFO] [kindly] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [32m[23:37:55.730] [INFO] [kindly] [bc9c6a36] ✅ RPC_SUCCESS: [log/info] from http://localhost:46507[0m
+[12:37:55 AM] [31m[23:37:55.732] [ERROR] [kindly] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:37:55 AM] [32m[23:37:55.732] [INFO] [kindly] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:35417[0m
+[12:37:55 AM] [32m[23:37:55.732] [INFO] [kindly] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36371[0m
+[12:37:55 AM] [32m[23:37:55.733] [INFO] [kindly] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:37:55 AM] [31m[23:37:55.735] [ERROR] [kindly] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:37:55 AM]   Target: http://localhost:44231
+[12:37:55 AM]   Capability: memory/goals/create
+[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:13 AM] [31m[23:42:13.152] [ERROR] [kindly] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:13 AM]   Target: http://localhost:35417
+[12:42:13 AM]   Capability: memory/goals/create
+[12:42:13 AM]   Message: The operation timed out.[0m
+[12:42:13 AM] [31m[23:42:13.153] [ERROR] [kindly] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:13 AM]   Target: http://localhost:36371
+[12:42:13 AM]   Capability: memory/goals/create
+[12:42:13 AM]   Message: The operation timed out.[0m
+[12:42:13 AM] [32m[23:42:13.154] [INFO] [kindly] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:13 AM] [31m[23:42:13.155] [ERROR] [kindly] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:13 AM]   Target: http://localhost:45355
+[12:42:13 AM]   Capability: memory/goals/create
+[12:42:13 AM]   Message: The operation timed out.[0m
+[12:42:13 AM] [31m[23:42:13.155] [ERROR] [kindly] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:13 AM]   Target: http://localhost:34395
+[12:42:13 AM]   Capability: memory/goals/create
+[12:42:13 AM]   Message: The operation timed out.[0m
+[12:42:13 AM] [31m[23:42:13.155] [ERROR] [kindly] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:13 AM]   Target: http://localhost:36371
+[12:42:13 AM]   Capability: memory/goals/create
+[12:42:13 AM]   Message: The operation timed out.[0m
+[12:42:13 AM] [32m[23:42:13.156] [INFO] [kindly] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
+[12:42:13 AM] [31m[23:42:13.158] [ERROR] [kindly] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:13 AM]   Target: http://localhost:44231
+[12:42:13 AM]   Capability: memory/goals/create
+[12:42:13 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:13 AM] [32m[23:42:13.158] [INFO] [kindly] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:46507[0m
+[12:42:13 AM] [32m[23:42:13.159] [INFO] [kindly] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
+[12:42:13 AM] [32m[23:42:13.159] [INFO] [kindly] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:38761[0m
+[12:42:13 AM] [31m[23:42:13.160] [ERROR] [kindly] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
+[12:42:13 AM]   Target: http://localhost:44231
+[12:42:13 AM]   Capability: memory/goals/create
+[12:42:13 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
+[12:42:13 AM] [32m[23:42:13.161] [INFO] [kindly] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40557[0m
+[12:42:13 AM] [32m[23:42:13.161] [INFO] [kindly] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36371[0m
+[12:42:13 AM] [32m[23:42:13.162] [INFO] [kindly] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:38761[0m
+[12:44:39 AM] [kindly] Key fingerprint: dc4edb8434d5e4a7
+[12:44:39 AM] [32m[23:44:39.302] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:44:39 AM] [32m[23:44:39.334] [INFO] [kindly] Sovereign Cell online @ http://localhost:44387[0m
+[12:44:39 AM] [32m[23:44:39.335] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:51:33 AM] [kindly] Key fingerprint: 6135000b8a4ef67d
+[12:51:33 AM] [32m[23:51:33.627] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:51:33 AM] [32m[23:51:33.637] [INFO] [kindly] Sovereign Cell online @ http://localhost:34541[0m
+[12:51:33 AM] [32m[23:51:33.642] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
