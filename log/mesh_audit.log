@@ -150,3 +150,168 @@ Error: No route to memory/goals/create after exhaustive search (Providers: 1, Ne
 [2026-02-07T22:39:30.148Z] [kindly] TOOL_START: list_add (session: session_, params: {"task":"Build and test TypeScript Todo App in projects/todoapptest"})
 [2026-02-07T22:49:21.768Z] [kindly] TOOL_END: list_add FAILED (591621ms) - Mesh call failed: list/add
 Error: No route to list/add after exhaustive search (Providers: 1, Neighbors: 3)
+[2026-02-08T13:14:03.074Z] [ai] AI_REQUEST: Classify intent in ONE word: "Online?"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:14:04.650Z] [ai] AI_COMPLETE: 239tok, 1578ms (reqId: none)
+[2026-02-08T13:17:10.784Z] [ai] AI_REQUEST: Classify intent in ONE word: "Online?"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:17:12.359Z] [ai] AI_COMPLETE: 283tok, 1577ms (reqId: none)
+[2026-02-08T13:17:12.371Z] [ai] AI_REQUEST: USER: Online?... (reqId: session_1770472190500_p1714b1fg_1)
+[2026-02-08T13:17:15.344Z] [ai] AI_COMPLETE: 843tok, 2973ms (reqId: session_1770472190500_p1714b1fg_1)
+[2026-02-08T13:27:18.576Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:27:20.913Z] [ai] AI_COMPLETE: 347tok, 2337ms (reqId: none)
+[2026-02-08T13:27:20.924Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770557238573_1)
+[2026-02-08T13:27:23.772Z] [ai] AI_COMPLETE: 852tok, 2847ms (reqId: session_1770557238573_1)
+[2026-02-08T13:27:23.775Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:27:23.777Z] [kindly] TOOL_END: list_get SUCCESS (2ms)
+[2026-02-08T13:27:23.778Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770557238573_2)
+[2026-02-08T13:27:28.317Z] [ai] AI_COMPLETE: 1062tok, 4538ms (reqId: session_1770557238573_2)
+[2026-02-08T13:29:21.611Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:29:23.972Z] [ai] AI_COMPLETE: 373tok, 2362ms (reqId: none)
+[2026-02-08T13:29:23.986Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770557361607_1)
+[2026-02-08T13:29:29.563Z] [ai] AI_COMPLETE: 1223tok, 5578ms (reqId: session_1770557361607_1)
+[2026-02-08T13:29:29.566Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:29:29.567Z] [kindly] TOOL_END: list_get SUCCESS (2ms)
+[2026-02-08T13:29:29.568Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770557361607_2)
+[2026-02-08T13:29:33.826Z] [ai] AI_COMPLETE: 1060tok, 4257ms (reqId: session_1770557361607_2)
+[2026-02-08T13:29:33.927Z] [tts] TTS_API_ERROR: 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.0-flash-exp is not found for API ver
+[2026-02-08T13:30:34.899Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:30:37.011Z] [ai] AI_COMPLETE: 343tok, 2112ms (reqId: none)
+[2026-02-08T13:30:37.024Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770557434895_1)
+[2026-02-08T13:30:41.432Z] [ai] AI_COMPLETE: 1044tok, 4408ms (reqId: session_1770557434895_1)
+[2026-02-08T13:30:41.434Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:30:41.436Z] [kindly] TOOL_END: list_get SUCCESS (2ms)
+[2026-02-08T13:30:41.437Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770557434895_2)
+[2026-02-08T13:30:45.141Z] [ai] AI_COMPLETE: 969tok, 3703ms (reqId: session_1770557434895_2)
+[2026-02-08T13:30:45.240Z] [tts] TTS_API_ERROR: 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.5-flash-native-audio-preview-12-2025
+[2026-02-08T13:33:11.611Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:33:14.107Z] [ai] AI_COMPLETE: 412tok, 2497ms (reqId: none)
+[2026-02-08T13:33:14.119Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770557591607_1)
+[2026-02-08T13:33:18.725Z] [ai] AI_COMPLETE: 1111tok, 4605ms (reqId: session_1770557591607_1)
+[2026-02-08T13:33:18.728Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:33:18.730Z] [kindly] TOOL_END: list_get SUCCESS (2ms)
+[2026-02-08T13:33:18.730Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770557591607_2)
+[2026-02-08T13:33:22.682Z] [ai] AI_COMPLETE: 986tok, 3951ms (reqId: session_1770557591607_2)
+[2026-02-08T13:35:09.485Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:35:11.180Z] [ai] AI_COMPLETE: 298tok, 1695ms (reqId: none)
+[2026-02-08T13:35:11.192Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770557709482_1)
+[2026-02-08T13:35:13.937Z] [ai] AI_COMPLETE: 824tok, 2744ms (reqId: session_1770557709482_1)
+[2026-02-08T13:35:13.939Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:35:13.941Z] [kindly] TOOL_END: list_get SUCCESS (3ms)
+[2026-02-08T13:35:13.942Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770557709482_2)
+[2026-02-08T13:35:17.782Z] [ai] AI_COMPLETE: 976tok, 3839ms (reqId: session_1770557709482_2)
+[2026-02-08T13:37:18.821Z] [tts-ui] [75AYZ] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T13:37:18.824Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:37:20.766Z] [ai] AI_COMPLETE: 327tok, 1942ms (reqId: none)
+[2026-02-08T13:37:20.780Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770557838821_1)
+[2026-02-08T13:37:26.501Z] [ai] AI_COMPLETE: 1261tok, 5720ms (reqId: session_1770557838821_1)
+[2026-02-08T13:37:26.504Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:37:26.506Z] [kindly] TOOL_END: list_get SUCCESS (2ms)
+[2026-02-08T13:37:26.506Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770557838821_2)
+[2026-02-08T13:37:31.104Z] [ai] AI_COMPLETE: 1109tok, 4597ms (reqId: session_1770557838821_2)
+[2026-02-08T13:37:31.109Z] [tts-ui] [75AYZ] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T13:37:40.968Z] [tts] TTS_FAIL: API returned success but content was empty or filtered. (Model: models/nano-banana-pro-preview)
+[2026-02-08T13:50:19.856Z] [tts-ui] [MTT9O3] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T13:50:19.860Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:50:22.105Z] [ai] AI_COMPLETE: 380tok, 2245ms (reqId: none)
+[2026-02-08T13:50:22.117Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770558619857_1)
+[2026-02-08T13:50:26.258Z] [ai] AI_COMPLETE: 1093tok, 4140ms (reqId: session_1770558619857_1)
+[2026-02-08T13:50:26.260Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:50:26.262Z] [kindly] TOOL_END: list_get SUCCESS (2ms)
+[2026-02-08T13:50:26.262Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770558619857_2)
+[2026-02-08T13:50:31.064Z] [ai] AI_COMPLETE: 1191tok, 4801ms (reqId: session_1770558619857_2)
+[2026-02-08T13:50:31.068Z] [tts-ui] [MTT9O3] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T13:51:30.589Z] [tts-ui] [YGMJUF] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T13:51:30.593Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:51:32.190Z] [ai] AI_COMPLETE: 300tok, 1597ms (reqId: none)
+[2026-02-08T13:51:32.202Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770558690590_1)
+[2026-02-08T13:51:35.197Z] [ai] AI_COMPLETE: 882tok, 2994ms (reqId: session_1770558690590_1)
+[2026-02-08T13:51:35.200Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:51:35.202Z] [kindly] TOOL_END: list_get SUCCESS (2ms)
+[2026-02-08T13:51:35.202Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770558690590_2)
+[2026-02-08T13:51:39.372Z] [ai] AI_COMPLETE: 1102tok, 4169ms (reqId: session_1770558690590_2)
+[2026-02-08T13:51:39.377Z] [tts-ui] [YGMJUF] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T13:53:58.742Z] [tts-ui] [ZTIOG] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T13:53:58.746Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T13:54:01.095Z] [ai] AI_COMPLETE: 346tok, 2349ms (reqId: none)
+[2026-02-08T13:54:01.108Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770558838743_1)
+[2026-02-08T13:54:04.900Z] [ai] AI_COMPLETE: 1080tok, 3791ms (reqId: session_1770558838743_1)
+[2026-02-08T13:54:04.903Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T13:54:04.905Z] [kindly] TOOL_END: list_get SUCCESS (3ms)
+[2026-02-08T13:54:04.906Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770558838743_2)
+[2026-02-08T13:54:08.035Z] [ai] AI_COMPLETE: 961tok, 3129ms (reqId: session_1770558838743_2)
+[2026-02-08T13:54:08.040Z] [tts-ui] [ZTIOG] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T14:01:10.775Z] [tts-ui] [4YR28Q] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T14:01:10.779Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T14:01:12.671Z] [ai] AI_COMPLETE: 310tok, 1892ms (reqId: none)
+[2026-02-08T14:01:12.683Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770559270776_1)
+[2026-02-08T14:01:15.204Z] [ai] AI_COMPLETE: 857tok, 2520ms (reqId: session_1770559270776_1)
+[2026-02-08T14:01:15.207Z] [kindly] TOOL_START: list_get (session: session_, params: {})
+[2026-02-08T14:01:15.210Z] [kindly] TOOL_END: list_get SUCCESS (3ms)
+[2026-02-08T14:01:15.211Z] [ai] AI_REQUEST: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date":"2026-02-08"}}... (reqId: session_1770559270776_2)
+[2026-02-08T14:01:19.069Z] [ai] AI_COMPLETE: 1129tok, 3858ms (reqId: session_1770559270776_2)
+[2026-02-08T14:01:19.073Z] [tts-ui] [4YR28Q] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T22:35:17.867Z] [tts-ui] [62MEGD] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T22:35:17.872Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T22:35:20.386Z] [ai] AI_COMPLETE: 363tok, 2515ms (reqId: none)
+[2026-02-08T22:35:20.402Z] [ai] AI_REQUEST: USER: online... (reqId: session_1770590117866_1)
+[2026-02-08T22:35:26.801Z] [ai] AI_COMPLETE: 1355tok, 6398ms (reqId: session_1770590117866_1)
+[2026-02-08T22:35:26.807Z] [tts-ui] [62MEGD] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T22:41:09.320Z] [tts-ui] [GEE2BW] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T22:41:09.327Z] [ai] AI_REQUEST: Classify intent in ONE word: "online"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T22:41:11.817Z] [ai] AI_COMPLETE: 346tok, 2490ms (reqId: none)
+[2026-02-08T22:41:11.832Z] [ai] AI_REQUEST: USER: online... (reqId: tts_session_1770590469290_r743c0wcp_1)
+[2026-02-08T22:41:16.996Z] [ai] AI_COMPLETE: 1205tok, 5163ms (reqId: tts_session_1770590469290_r743c0wcp_1)
+[2026-02-08T22:41:17.002Z] [tts-ui] [GEE2BW] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T22:48:01.410Z] [tts-ui] [N46HK] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T22:48:01.415Z] [ai] AI_REQUEST: Classify intent in ONE word: "status report"
+Options: goal, question, command, update, feedback, cha... (reqId: none)
+[2026-02-08T22:48:03.711Z] [ai] AI_COMPLETE: 375tok, 2297ms (reqId: none)
+[2026-02-08T22:48:03.727Z] [ai] AI_REQUEST: USER: status report... (reqId: tts_session_1770590881390_3n1d7xe0m_1)
+[2026-02-08T22:48:07.260Z] [ai] AI_COMPLETE: 964tok, 3532ms (reqId: tts_session_1770590881390_3n1d7xe0m_1)
+[2026-02-08T22:48:07.266Z] [tts-ui] [N46HK] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T22:56:32.284Z] [tts-ui] [ZRE6DQ] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T22:56:32.284Z] [ai] AI_REQUEST: Classify intent in ONE word: "status report"
+Options: goal, question, command, update, feedback, cha... (reqId: none)
+[2026-02-08T22:56:34.458Z] [ai] AI_COMPLETE: 351tok, 2176ms (reqId: none)
+[2026-02-08T22:56:34.474Z] [ai] AI_REQUEST: USER: status report... (reqId: tts_session_1770590469290_r743c0wcp_1)
+[2026-02-08T22:56:37.579Z] [ai] AI_COMPLETE: 931tok, 3105ms (reqId: tts_session_1770590469290_r743c0wcp_1)
+[2026-02-08T22:56:37.585Z] [tts-ui] [ZRE6DQ] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T22:56:39.080Z] [tts-ui] [VP1CDD] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T22:56:39.082Z] [ai] AI_REQUEST: Classify intent in ONE word: "status report"
+Options: goal, question, command, update, feedback, cha... (reqId: none)
+[2026-02-08T22:56:41.290Z] [ai] AI_COMPLETE: 355tok, 2205ms (reqId: none)
+[2026-02-08T22:56:41.297Z] [ai] AI_REQUEST: USER: status report... (reqId: tts_session_1770590881390_3n1d7xe0m_1)
+[2026-02-08T22:56:45.827Z] [ai] AI_COMPLETE: 1133tok, 4530ms (reqId: tts_session_1770590881390_3n1d7xe0m_1)
+[2026-02-08T22:56:45.832Z] [tts-ui] [VP1CDD] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T23:10:03.603Z] [tts-ui] [VBB2VT] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T23:10:03.608Z] [ai] AI_REQUEST: Classify intent in ONE word: "hello"
+Options: goal, question, command, update, feedback, chat... (reqId: none)
+[2026-02-08T23:10:05.610Z] [ai] AI_COMPLETE: 300tok, 2003ms (reqId: none)
+[2026-02-08T23:10:05.624Z] [ai] AI_REQUEST: USER: hello... (reqId: tts_session_1770592195345_89pqocuo4_1)
+[2026-02-08T23:10:08.728Z] [ai] AI_COMPLETE: 897tok, 3103ms (reqId: tts_session_1770592195345_89pqocuo4_1)
+[2026-02-08T23:10:08.733Z] [tts-ui] [VBB2VT] VOICE_UI: Relaying to [tts] for native synthesis (en-US-Achernar)...
+[2026-02-08T23:10:56.342Z] [tts-ui] [L0T16] VOICE_UI: Relaying to [kindly] for logic processing...
+[2026-02-08T23:10:56.344Z] [ai] AI_REQUEST: Classify intent in ONE word: "the plan is to release our second hand Marketplace called Rio in emu S... (reqId: none)
+[2026-02-08T23:10:59.426Z] [ai] AI_COMPLETE: 551tok, 3081ms (reqId: none)
+[2026-02-08T23:10:59.433Z] [ai] AI_REQUEST: USER: the plan is to release our second hand Marketplace called Rio in emu Sweden said that as a ver... (reqId: tts_session_1770592195345_89pqocuo4_1)
+[2026-02-08T23:11:04.461Z] [ai] AI_COMPLETE: 1377tok, 5026ms (reqId: tts_session_1770592195345_89pqocuo4_1)
+[2026-02-08T23:11:04.463Z] [kindly] TOOL_START: memory_goals_create (session: tts_sess, params: {"goal_description":"Release and market Rio: AI-based one-click second-hand marketplace in Sweden.",)

@@ -398,7 +398,8 @@ ${contextMarkdown}
 ${tools.map(t => `- ${t.name}: ${t.description}`).join('\n')}
 
 # DECISION PROTOCOL
-1. **Understand Context**: You see the user's goals, recent events, and learned patterns
+1. **Understand Context**: You see user goals.
+2. **VOICE OPTIMIZATION**: Keep responses under 150 characters. Be punchy and immediate.
 2. **Think Temporally**: Consider time of day, day of week, and seasonal patterns
 3. **Be Proactive**: If patterns suggest an action, do it without asking
 4. **Plan Tools**: Decide which tools to call and in what order

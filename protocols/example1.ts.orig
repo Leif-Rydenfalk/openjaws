@@ -310,643 +310,6 @@ export class MeshError extends Error {
     }
 }
 
-// --- Narrative ---
-
-
-// protocols/narrative.ts - The Complete Signal Preservation Layer
-// No information loss. Ever.
-
-import type { Signal, TraceResult, TraceError, NarrativeStep } from "./example1";
-
-/**
- * Immutable signal envelope that grows with each hop.
- * Previous signals are never mutated - only wrapped.
- */
-export interface NarrativeEnvelope {
-    // The current signal being processed
-    current: Signal;
-
-    // Complete history of this signal's journey
-    // Each entry is the FULL signal as it existed at that point in time
-    ancestry: AncestryEntry[];
-
-    // Fork tracking - if this signal spawned children
-    children: string[]; // Signal IDs of forked signals
-
-    // Performance telemetry
-    timings: TimingEntry[];
-
-    // Binary payload hashes for integrity verification
-    integrity: IntegrityEntry[];
-}
-
-interface AncestryEntry {
-    signalId: string;
-    timestamp: number;
-    cellId: string;
-    cellAddr: string;
-    action: string;
-    // SNAPSHOT: The complete signal state at this moment
-    signalSnapshot: Signal;
-    // The delta from previous state (for compression)
-    delta?: SignalDelta;
-}
-
-interface SignalDelta {
-    changedFields: string[];
-    previousValues: Record<string, any>;
-    reason: string; // Why did we change?
-}
-
-interface TimingEntry {
-    phase: string;
-    cellId: string;
-    startTime: number;
-    endTime: number;
-    durationMs: number;
-    // What were we waiting for?
-    blockingOn?: string;
-}
-
-interface IntegrityEntry {
-    timestamp: number;
-    cellId: string;
-    // Hash of the complete signal JSON at this point
-    hash: string;
-    // Signature proving this cell saw this state
-    signature: string;
-}
-
-/**
- * The NarrativeLedger: Append-only, cryptographically verifiable signal history.
- * Every cell maintains a shard of the global narrative.
- */
-export class NarrativeLedger {
-    private entries = new Map<string, NarrativeEnvelope>();
-    private readonly maxAncestryDepth = 100;
-
-    /**
-     * Create or extend a narrative envelope for a signal.
-     * NEVER mutates existing entries - creates new envelope with extended ancestry.
-     */
-    wrap(signal: Signal, cellId: string, action: string, reason?: string): NarrativeEnvelope {
-        const existing = this.entries.get(signal.id);
-        const timestamp = Date.now();
-
-        // Create ancestry entry with FULL signal snapshot
-        const ancestryEntry: AncestryEntry = {
-            signalId: signal.id,
-            timestamp,
-            cellId,
-            cellAddr: this.getCellAddr(cellId),
-            action,
-            signalSnapshot: this.deepFreeze(structuredClone(signal)),
-            delta: existing ? this.computeDelta(existing.current, signal, reason) : undefined
-        };
-
-        // Build new envelope
-        const envelope: NarrativeEnvelope = {
-            current: signal,
-            ancestry: existing
-                ? [...existing.ancestry, ancestryEntry].slice(-this.maxAncestryDepth)
-                : [ancestryEntry],
-            children: existing?.children || [],
-            timings: existing?.timings || [],
-            integrity: [...(existing?.integrity || []), this.computeIntegrity(signal, cellId, timestamp)]
-        };
-
-        this.entries.set(signal.id, envelope);
-        return envelope;
-    }
-
-    /**
-     * Record a timing event
-     */
-    recordTiming(signalId: string, phase: string, cellId: string, startTime: number, endTime: number, blockingOn?: string) {
-        const envelope = this.entries.get(signalId);
-        if (!envelope) return;
-
-        envelope.timings.push({
-            phase,
-            cellId,
-            startTime,
-            endTime,
-            durationMs: endTime - startTime,
-            blockingOn
-        });
-    }
-
-    /**
-     * Fork a signal - create child signal with linked ancestry
-     */
-    fork(parentId: string, childSignal: Signal, reason: string): NarrativeEnvelope {
-        const parent = this.entries.get(parentId);
-        if (!parent) {
-            throw new Error(`Cannot fork: parent ${parentId} not found in ledger`);
-        }
-
-        // Mark parent as having forked
-        parent.children.push(childSignal.id);
-
-        // Child inherits full ancestry PLUS fork marker
-        const forkEntry: AncestryEntry = {
-            signalId: childSignal.id,
-            timestamp: Date.now(),
-            cellId: "SYSTEM",
-            cellAddr: "fork",
-            action: `FORK_FROM_${parentId}`,
-            signalSnapshot: this.deepFreeze(structuredClone(childSignal)),
-            delta: { changedFields: ["id", "parentId"], previousValues: { parentId }, reason }
-        };
-
-        const childEnvelope: NarrativeEnvelope = {
-            current: childSignal,
-            ancestry: [...parent.ancestry, forkEntry],
-            children: [],
-            timings: [],
-            integrity: [this.computeIntegrity(childSignal, "FORK", Date.now())]
-        };
-
-        this.entries.set(childSignal.id, childEnvelope);
-        return childEnvelope;
-    }
-
-    /**
-     * Reconstruct the complete execution path with full fidelity
-     */
-    reconstructExecutionPath(signalId: string): ExecutionPath {
-        const envelope = this.entries.get(signalId);
-        if (!envelope) {
-            throw new Error(`Signal ${signalId} not found in ledger`);
-        }
-
-        const path: ExecutionStep[] = [];
-
-        for (let i = 0; i < envelope.ancestry.length; i++) {
-            const entry = envelope.ancestry[i];
-            const prevEntry = i > 0 ? envelope.ancestry[i - 1] : null;
-
-            path.push({
-                stepNumber: i,
-                timestamp: entry.timestamp,
-                cellId: entry.cellId,
-                cellAddr: entry.cellAddr,
-                action: entry.action,
-
-                // FULL signal state at this point
-                signalState: entry.signalSnapshot,
-
-                // What changed from previous step
-                changes: entry.delta ? {
-                    fields: entry.delta.changedFields,
-                    previousValues: entry.delta.previousValues,
-                    reason: entry.delta.reason
-                } : null,
-
-                // Timing for this hop
-                timing: envelope.timings.find(t =>
-                    t.phase === entry.action &&
-                    Math.abs(t.startTime - entry.timestamp) < 100
-                ) || null,
-
-                // Integrity verification
-                integrity: envelope.integrity.find(int =>
-                    Math.abs(int.timestamp - entry.timestamp) < 100
-                ) || null
-            });
-        }
-
-        return {
-            signalId,
-            totalSteps: path.length,
-            totalDurationMs: envelope.timings.reduce((sum, t) => sum + t.durationMs, 0),
-            steps: path,
-            children: envelope.children,
-            finalState: envelope.current
-        };
-    }
-
-    /**
-     * Generate a complete forensic report for debugging
-     * This is what gets logged on error - EVERYTHING.
-     */
-    generateForensicReport(signalId: string, errorContext?: any): ForensicReport {
-        const path = this.reconstructExecutionPath(signalId);
-        const envelope = this.entries.get(signalId)!;
-
-        // Find the exact point of failure
-        const failureStep = errorContext
-            ? path.steps.find(s => s.cellId === errorContext.failedAt)
-            : path.steps[path.steps.length - 1];
-
-        // Analyze what went wrong
-        const analysis = this.analyzeFailure(path, failureStep, errorContext);
-
-        return {
-            signalId,
-            generatedAt: Date.now(),
-
-            summary: {
-                totalHops: path.totalSteps,
-                totalDurationMs: path.totalDurationMs,
-                cellsVisited: [...new Set(path.steps.map(s => s.cellId))],
-                failurePoint: failureStep ? {
-                    step: failureStep.stepNumber,
-                    cell: failureStep.cellId,
-                    action: failureStep.action,
-                    timestamp: failureStep.timestamp
-                } : null
-            },
-
-            // Complete execution path with full signal states
-            executionPath: path,
-
-            // Detailed analysis of the failure
-            failureAnalysis: analysis,
-
-            // Timing breakdown
-            timingBreakdown: this.analyzeTimings(envelope.timings),
-
-            // Integrity verification - did anyone tamper with the signal?
-            integrityCheck: this.verifyIntegrity(path),
-
-            // Reproduction data - can we replay this exact execution?
-            reproduction: {
-                canReplay: true,
-                initialSignal: path.steps[0]?.signalState,
-                replayScript: this.generateReplayScript(path)
-            },
-
-            // Raw data for programmatic analysis
-            raw: {
-                envelope: this.sanitizeForExport(envelope),
-                errorContext
-            }
-        };
-    }
-
-    /**
-     * Deep analysis of what went wrong
-     */
-    private analyzeFailure(path: ExecutionPath, failureStep: ExecutionStep | null, errorContext: any): FailureAnalysis {
-        if (!failureStep) {
-            return {
-                type: "UNKNOWN",
-                description: "Could not identify failure point",
-                likelyCauses: ["Signal completed without error", "Error occurred after last logged step"],
-                recommendations: ["Check cell logs for unhandled exceptions"]
-            };
-        }
-
-        const stepIndex = failureStep.stepNumber;
-        const previousStep = stepIndex > 0 ? path.steps[stepIndex - 1] : null;
-
-        // Analyze based on action type
-        switch (failureStep.action) {
-            case "RPC_ATTEMPT":
-                return {
-                    type: "NETWORK_FAILURE",
-                    description: `Failed to reach ${failureStep.cellAddr}`,
-                    details: {
-                        targetCell: failureStep.cellId,
-                        targetAddr: failureStep.cellAddr,
-                        payloadSize: JSON.stringify(failureStep.signalState.payload).length
-                    },
-                    likelyCauses: [
-                        "Target cell crashed or is unreachable",
-                        "Network partition between cells",
-                        "Target cell overloaded (circuit breaker open)",
-                        "DNS resolution failure for target address"
-                    ],
-                    recommendations: [
-                        `Check if cell ${failureStep.cellId} is running: mesh/ping → ${failureStep.cellId}`,
-                        `Verify network path: traceroute to ${failureStep.cellAddr}`,
-                        `Check target cell logs for crash reports`,
-                        `Review circuit breaker state for ${failureStep.cellId}`
-                    ]
-                };
-
-            case "LOCAL_HANDLER":
-                const handlerError = errorContext?.error;
-                return {
-                    type: "HANDLER_EXCEPTION",
-                    description: `Capability handler threw exception in ${failureStep.cellId}`,
-                    details: {
-                        capability: failureStep.signalState.payload?.capability,
-                        handlerCell: failureStep.cellId,
-                        errorMessage: handlerError?.message,
-                        errorStack: handlerError?.stack
-                    },
-                    likelyCauses: [
-                        "Handler implementation bug",
-                        "Missing required arguments in payload",
-                        "Downstream dependency failure",
-                        "State corruption in handler cell"
-                    ],
-                    recommendations: [
-                        `Review handler code in ${failureStep.cellId}`,
-                        `Validate input schema for ${failureStep.signalState.payload?.capability}`,
-                        `Check downstream service health`,
-                        `Review recent changes to ${failureStep.cellId} handler`
-                    ]
-                };
-
-            case "RECEIVED_SIGNAL":
-                // Check if we looped
-                const previousVisits = path.steps.filter((s, i) =>
-                    i < stepIndex && s.cellId === failureStep.cellId
-                );
-                if (previousVisits.length > 0) {
-                    return {
-                        type: "ROUTING_LOOP",
-                        description: `Signal visited ${failureStep.cellId} ${previousVisits.length + 1} times`,
-                        details: {
-                            loopCell: failureStep.cellId,
-                            previousVisits: previousVisits.map(s => s.timestamp),
-                            loopDepth: previousVisits.length
-                        },
-                        likelyCauses: [
-                            "Stale atlas entry pointing to wrong address",
-                            "Cell forwarding logic error (forwarding to self)",
-                            "Circular capability chain (A→B→C→A)",
-                            "Signal ID collision (extremely unlikely)"
-                        ],
-                        recommendations: [
-                            `Force atlas refresh: POST ${failureStep.cellAddr}/atlas`,
-                            `Check ${failureStep.cellId} route() implementation for self-forwarding`,
-                            `Review capability chain for cycles`,
-                            `Verify signal ID generation is using crypto.randomUUID()`
-                        ]
-                    };
-                }
-                break;
-        }
-
-        // Generic analysis
-        return {
-            type: "UNEXPECTED_FAILURE",
-            description: `Failure during ${failureStep.action} in ${failureStep.cellId}`,
-            details: {
-                lastKnownGoodStep: previousStep ? {
-                    cell: previousStep.cellId,
-                    action: previousStep.action,
-                    timestamp: previousStep.timestamp
-                } : null,
-                failedStep: {
-                    cell: failureStep.cellId,
-                    action: failureStep.action,
-                    timestamp: failureStep.timestamp,
-                    signalState: failureStep.signalState
-                }
-            },
-            likelyCauses: ["Unknown - requires manual investigation"],
-            recommendations: ["Review complete execution path below", "Check cell logs for unhandled exceptions"]
-        };
-    }
-
-    /**
-     * Verify cryptographic integrity of signal chain
-     */
-    private verifyIntegrity(path: ExecutionPath): IntegrityResult {
-        const results: IntegrityCheck[] = [];
-
-        for (const step of path.steps) {
-            if (!step.integrity) continue;
-
-            // Recompute hash and compare
-            const computedHash = this.computeSignalHash(step.signalState);
-            const matches = computedHash === step.integrity.hash;
-
-            results.push({
-                step: step.stepNumber,
-                cell: step.cellId,
-                timestamp: step.integrity.timestamp,
-                hashMatches: matches,
-                claimedHash: step.integrity.hash,
-                computedHash,
-                signatureValid: this.verifySignature(step.integrity.signature, step.integrity.hash, step.cellId)
-            });
-        }
-
-        const allValid = results.every(r => r.hashMatches && r.signatureValid);
-
-        return {
-            overall: allValid ? "VALID" : "COMPROMISED",
-            checks: results,
-            tamperedSteps: results.filter(r => !r.hashMatches || !r.signatureValid).map(r => r.step)
-        };
-    }
-
-    /**
-     * Generate a script that can replay this exact execution
-     */
-    private generateReplayScript(path: ExecutionPath): string {
-        const lines: string[] = [];
-        lines.push("// Auto-generated replay script");
-        lines.push(`const initialSignal = ${JSON.stringify(path.steps[0]?.signalState, null, 2)};`);
-        lines.push("");
-        lines.push("// Replay each hop");
-
-        for (let i = 1; i < path.steps.length; i++) {
-            const step = path.steps[i];
-            lines.push(`// Step ${i}: ${step.action} @ ${step.cellId}`);
-            lines.push(`await simulateHop({
-                cell: "${step.cellId}",
-                action: "${step.action}",
-                inputSignal: ${JSON.stringify(step.signalState)},
-                expectedChanges: ${JSON.stringify(step.changes?.fields)}
-            });`);
-        }
-
-        return lines.join("\n");
-    }
-
-    // Helper methods
-    private computeDelta(prev: Signal, curr: Signal, reason?: string): SignalDelta {
-        const changedFields: string[] = [];
-        const previousValues: Record<string, any> = {};
-
-        for (const key of Object.keys(curr)) {
-            if (JSON.stringify((prev as any)[key]) !== JSON.stringify((curr as any)[key])) {
-                changedFields.push(key);
-                previousValues[key] = (prev as any)[key];
-            }
-        }
-
-        return { changedFields, previousValues, reason: reason || "unknown" };
-    }
-
-    private computeIntegrity(signal: Signal, cellId: string, timestamp: number): IntegrityEntry {
-        const hash = this.computeSignalHash(signal);
-        const signature = this.signHash(hash, cellId);
-        return { timestamp, cellId, hash, signature };
-    }
-
-    private computeSignalHash(signal: Signal): string {
-        // Deterministic JSON serialization
-        const canonical = JSON.stringify(signal, Object.keys(signal).sort());
-        // Use crypto in real implementation
-        return `sha256:${btoa(canonical).slice(0, 16)}`;
-    }
-
-    private signHash(hash: string, cellId: string): string {
-        // Use actual crypto in production
-        return `sig:${cellId}:${hash.slice(0, 8)}`;
-    }
-
-    private verifySignature(signature: string, hash: string, cellId: string): boolean {
-        // Verify against cell's public key
-        return signature.startsWith(`sig:${cellId}:`);
-    }
-
-    private deepFreeze<T>(obj: T): T {
-        Object.freeze(obj);
-        Object.getOwnPropertyNames(obj).forEach(prop => {
-            const value = (obj as any)[prop];
-            if (value !== null && (typeof value === "object" || typeof value === "function")) {
-                this.deepFreeze(value);
-            }
-        });
-        return obj;
-    }
-
-    private getCellAddr(cellId: string): string {
-        // Look up in registry
-        return "unknown";
-    }
-
-    private sanitizeForExport(envelope: NarrativeEnvelope): any {
-        // Remove circular refs, reduce size for transport
-        return {
-            signalId: envelope.current.id,
-            ancestryCount: envelope.ancestry.length,
-            timingCount: envelope.timings.length,
-            children: envelope.children
-        };
-    }
-
-    private analyzeTimings(timings: TimingEntry[]): TimingAnalysis {
-        const byPhase = new Map<string, TimingEntry[]>();
-        for (const t of timings) {
-            if (!byPhase.has(t.phase)) byPhase.set(t.phase, []);
-            byPhase.get(t.phase)!.push(t);
-        }
-
-        return {
-            totalTime: timings.reduce((sum, t) => sum + t.durationMs, 0),
-            byPhase: Array.from(byPhase.entries()).map(([phase, entries]) => ({
-                phase,
-                count: entries.length,
-                totalMs: entries.reduce((sum, t) => sum + t.durationMs, 0),
-                avgMs: entries.reduce((sum, t) => sum + t.durationMs, 0) / entries.length,
-                maxMs: Math.max(...entries.map(t => t.durationMs))
-            })),
-            bottlenecks: timings
-                .filter(t => t.durationMs > 1000)
-                .sort((a, b) => b.durationMs - a.durationMs)
-                .slice(0, 5)
-        };
-    }
-}
-
-// Type exports
-interface ExecutionPath {
-    signalId: string;
-    totalSteps: number;
-    totalDurationMs: number;
-    steps: ExecutionStep[];
-    children: string[];
-    finalState: Signal;
-}
-
-interface ExecutionStep {
-    stepNumber: number;
-    timestamp: number;
-    cellId: string;
-    cellAddr: string;
-    action: string;
-    signalState: Signal;
-    changes: {
-        fields: string[];
-        previousValues: Record<string, any>;
-        reason: string;
-    } | null;
-    timing: TimingEntry | null;
-    integrity: IntegrityEntry | null;
-}
-
-interface ForensicReport {
-    signalId: string;
-    generatedAt: number;
-    summary: {
-        totalHops: number;
-        totalDurationMs: number;
-        cellsVisited: string[];
-        failurePoint: {
-            step: number;
-            cell: string;
-            action: string;
-            timestamp: number;
-        } | null;
-    };
-    executionPath: ExecutionPath;
-    failureAnalysis: FailureAnalysis;
-    timingBreakdown: TimingAnalysis;
-    integrityCheck: IntegrityResult;
-    reproduction: {
-        canReplay: boolean;
-        initialSignal: Signal | undefined;
-        replayScript: string;
-    };
-    raw: {
-        envelope: any;
-        errorContext: any;
-    };
-}
-
-interface FailureAnalysis {
-    type: string;
-    description: string;
-    details?: any;
-    likelyCauses: string[];
-    recommendations: string[];
-}
-
-interface TimingAnalysis {
-    totalTime: number;
-    byPhase: Array<{
-        phase: string;
-        count: number;
-        totalMs: number;
-        avgMs: number;
-        maxMs: number;
-    }>;
-    bottlenecks: TimingEntry[];
-}
-
-interface IntegrityResult {
-    overall: "VALID" | "COMPROMISED";
-    checks: IntegrityCheck[];
-    tamperedSteps: number[];
-}
-
-interface IntegrityCheck {
-    step: number;
-    cell: string;
-    timestamp: number;
-    hashMatches: boolean;
-    claimedHash: string;
-    computedHash: string;
-    signatureValid: boolean;
-}
-
-// Global ledger instance per cell
-export const globalLedger = new NarrativeLedger();
-
-
-// --- end Narrative ---
-
-
 // --- CORE RHEO CELL ---
 
 export class RheoCell {
@@ -1392,7 +755,6 @@ export class RheoCell {
 
     private requestQueue = new Map<string, Promise<TraceResult>>();
     private maxConcurrent = 50;
-    private ledger = new NarrativeLedger();
 
     /**
      * The Logic Engine of the Cell.
@@ -1409,49 +771,38 @@ export class RheoCell {
 
         // CLIENT MODE: Can forward but not handle unless explicitly provided
         if (!this.addr && this.mode === 'server' && this.handlers[cap]) {
-            const envelope = this.ledger.wrap(signal, myId, "REJECTED_NOT_READY", "Cell has no address");
-            const error = {
-                code: "NOT_READY",
-                msg: "Cell has no address - cannot handle local capabilities",
-                from: myId,
-                trace: [],
-                _envelope: envelope
-            };
-            return { ok: false, cid, error };
+            return { ok: false, cid, error: { code: "NOT_READY", msg: "Cell has no address - cannot handle local capabilities", from: myId, trace: [] } };
         }
 
         // --- 1. RESULT CACHE (Idempotency) ---
+        // If we already finished this work recently, return the exact same result.
         if (this.resultCache.has(cid)) {
             return this.resultCache.get(cid)!.result;
         }
 
         // --- 2. REQUEST JOINING (Deduplication) ---
+        // If we are currently working on this ID, don't start a new execution.
+        // Return the Promise of the one already running.
         if (this.activeExecutions.has(cid)) {
+            // this.log("DEBUG", `🪢  Joining existing execution for signal ${cid.substring(0,8)}`);
             return this.activeExecutions.get(cid)!;
         }
 
         // --- 3. LOOP PREVENTION ---
         const visitedIds = signal._visitedCellIds || [];
         if (visitedIds.includes(myId)) {
-            const envelope = this.ledger.wrap(signal, myId, "LOOP_DETECTED", "Signal already visited this cell");
-            const error = {
-                code: "LOOP",
-                msg: "Loop detected",
-                from: myId,
-                trace: signal.trace,
-                _envelope: envelope
-            };
-            return { ok: false, cid, error };
+            return { ok: false, cid, error: { code: "LOOP", msg: "Loop detected", from: myId, trace: signal.trace } };
         }
 
         // --- 4. EXECUTION WRAPPER ---
+        // We create a promise that represents the work.
         const executionPromise = (async (): Promise<TraceResult> => {
             visitedIds.push(myId);
 
-            this.ledger.wrap(signal, myId, "RECEIVED_SIGNAL", { capability: cap });
-
+            if (!this.journal[cid]) this.journal[cid] = (signal._steps || []).slice(-20);
+            this.addStep(cid, "RECEIVED_SIGNAL", { capability: cap });
             if (cap !== 'mesh/gossip' && cap !== 'cell/contract') {
-                this.log("INFO", `📥 SIGNAL_ARRIVED: [${cap}] from [${signal.from}]`, cid);
+                if(cap!=="mesh/gossip"&&cap!=="cell/contract")if(cap!=="mesh/gossip"&&cap!=="cell/contract")if(cap!=="mesh/gossip"&&cap!=="cell/contract")if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") this.log("INFO", `📥 SIGNAL_ARRIVED: [${cap}] from [${signal.from}]`, cid);
             }
 
             const updatedSignal: Signal = {
@@ -1460,6 +811,7 @@ export class RheoCell {
                 _visitedAddr: [...(signal._visitedAddr || []), this.addr],
                 trace: [...(signal.trace || []), `${myId}:${Date.now()}`],
                 atlas: { ...this.atlas, ...(signal.atlas || {}) },
+                _steps: this.journal[cid],
                 _hops: (signal._hops || 0) + 1
             };
 
@@ -1468,35 +820,28 @@ export class RheoCell {
 
             try {
                 if (this.handlers[cap]) {
-                    this.ledger.wrap(updatedSignal, myId, "LOCAL_HANDLER", { capability: cap });
+                    this.addStep(cid, "LOCAL_HANDLER", { capability: cap });
                     const val = await this.handlers[cap](updatedSignal.payload.args, updatedSignal);
                     result = { ok: true, value: val, cid };
                 } else {
                     result = await this.forwardToPeer(updatedSignal, cap, cid);
                 }
             } catch (e: any) {
-                this.ledger.wrap(updatedSignal, myId, "HANDLER_EXCEPTION", { error: e.message });
-                result = {
-                    ok: false,
-                    cid,
-                    error: {
-                        code: "HANDLER_ERR",
-                        msg: e.message,
-                        from: myId,
-                        trace: updatedSignal.trace,
-                        _envelope: this.ledger.entries.get(cid)
-                    }
-                };
+                result = { ok: false, cid, error: { code: "HANDLER_ERR", msg: e.message, from: myId, trace: updatedSignal.trace, history: this.journal[cid] } };
             }
 
             this.updateMetrics(performance.now() - startTime, !result.ok);
+
+            // Move from "Active" to "Recent Cache"
             this.resultCache.set(cid, { result, time: Date.now() });
             this.activeExecutions.delete(cid);
             return result;
         })();
 
+        // Register the promise so other redundant paths can join it.
         this.activeExecutions.set(cid, executionPromise);
 
+        // Cleanup Cache periodically
         if (this.resultCache.size > 1000) {
             const now = Date.now();
             for (const [id, entry] of this.resultCache) {
@@ -1509,6 +854,12 @@ export class RheoCell {
 
     /**
      * The P2P Strategy Engine.
+     * Logic Flow: 
+     * 1. Attempt the known primary provider.
+     * 2. If primary is busy/duplicate, accept that as delivery.
+     * 3. If primary fails, cycle through failover providers.
+     * 4. If all known providers fail, flood to random neighbors.
+     * 5. As a last resort, hit the seed (bootstrap) node.
      */
     private async forwardToPeer(signal: Signal, cap: string, cid: string): Promise<TraceResult> {
         const myAddr = this.addr;
@@ -1516,6 +867,9 @@ export class RheoCell {
         const visitedIds = signal._visitedCellIds || [];
         const visitedAddr = signal._visitedAddr || [];
 
+        // --- 1. PROVIDER IDENTIFICATION ---
+        // Filter the Atlas for cells providing this capability.
+        // We exclude: ourselves, cells we've already visited, and duplicate addresses.
         const seenAddrs = new Set<string>();
 
         const providers = Object.entries(this.atlas)
@@ -1525,7 +879,7 @@ export class RheoCell {
                 const isSelf = entryId === myId || e.addr === myAddr;
                 const isVisited = visitedIds.includes(entryId);
                 const isDuplicateAddr = seenAddrs.has(e.addr);
-                const isClientOnly = e.addr.startsWith('client://');
+                const isClientOnly = e.addr.startsWith('client://'); // NEW: Skip client cells for capability routing
 
                 if (hasCap && !isSelf && !isVisited && !isDuplicateAddr && !isClientOnly) {
                     seenAddrs.add(e.addr);
@@ -1535,60 +889,74 @@ export class RheoCell {
             })
             .map(([_, e]) => e);
 
+        // --- 2. PRIMARY & FAILOVER ROUTING ---
         if (providers.length > 0) {
+            // We iterate through available providers until one accepts or reports busy.
             for (let i = 0; i < Math.min(providers.length, 4); i++) {
                 const target = providers[i];
-                this.ledger.wrap(signal, myId, i === 0 ? "P2P_ROUTE_ATTEMPT" : "P2P_FAILOVER_ATTEMPT", {
+                this.addStep(cid, i === 0 ? "P2P_ROUTE_ATTEMPT" : "P2P_FAILOVER_ATTEMPT", {
                     target: target.addr,
                     attempt: i + 1
                 });
 
                 const result = await this.rpc(target.addr, signal);
 
+                // --- THE HANDOFF FIX ---
+                // result.ok is standard success.
+                // DUPLICATE_SIGNAL/ARRIVAL means the signal reached its destination 
+                // via a different path already. This is a mesh SUCCESS.
                 const isDelivered = result.ok ||
                     result.error?.code === "DUPLICATE_SIGNAL" ||
                     result.error?.code === "DUPLICATE_ARRIVAL";
 
                 if (isDelivered) {
-                    this.ledger.wrap(signal, myId, "P2P_ROUTE_SUCCESS", {
+                    this.addStep(cid, "P2P_ROUTE_SUCCESS", {
                         via: target.addr,
                         status: result.ok ? "OK" : "ALREADY_PROCESSING"
                     });
                     return result;
                 }
 
+                // If the error was a loop or something unrecoverable, we stop this branch immediately.
                 if (result.error?.code === "ROUTING_LOOP_PREVENTED") return result;
             }
         }
 
+        // --- 3. BOUNDED FLOODING ---
+        // If we found no providers or all providers were unreachable, 
+        // we "Flood" the signal to 3 random neighbors who might have a fresher Atlas.
         const neighbors = Object.values(this.atlas)
             .filter(e => e.addr !== myAddr && !visitedIds.includes(e.id || '') && !providers.includes(e))
             .sort(() => 0.5 - Math.random())
             .slice(0, 3);
 
         if (neighbors.length > 0) {
-            this.ledger.wrap(signal, myId, "P2P_FLOOD_START", { neighborCount: neighbors.length });
+            this.addStep(cid, "P2P_FLOOD_START", { neighborCount: neighbors.length });
 
+            // We fire these off in parallel (Promise.allSettled) for maximum throughput.
             const floodResults = await Promise.allSettled(
                 neighbors.map(n => this.rpc(n.addr, signal))
             );
 
             for (let i = 0; i < floodResults.length; i++) {
                 const res = floodResults[i];
+                // Check if any flood path resulted in a successful handoff.
                 if (res.status === 'fulfilled') {
                     const val = res.value;
                     if (val.ok || val.error?.code === "DUPLICATE_SIGNAL" || val.error?.code === "DUPLICATE_ARRIVAL") {
-                        this.ledger.wrap(signal, myId, "P2P_FLOOD_SUCCESS", { via: neighbors[i].addr });
+                        this.addStep(cid, "P2P_FLOOD_SUCCESS", { via: neighbors[i].addr });
                         return val;
                     }
                 }
             }
 
-            this.ledger.wrap(signal, myId, "P2P_FLOOD_FAILED", { attempts: neighbors.length });
+            this.addStep(cid, "P2P_FLOOD_FAILED", { attempts: neighbors.length });
         }
 
+        // --- 4. SEED BOOTSTRAP (LAST RESORT) ---
+        // If the seed is defined and we haven't visited it yet, try it as a last hope.
         if (this.seed && !visitedAddr.includes(this.seed)) {
-            this.ledger.wrap(signal, myId, "P2P_SEED_ATTEMPT", { seed: this.seed });
+            this.addStep(cid, "P2P_SEED_ATTEMPT", { seed: this.seed });
             const seedResult = await this.rpc(this.seed, signal);
 
             if (seedResult.ok || seedResult.error?.code === "DUPLICATE_SIGNAL" || seedResult.error?.code === "DUPLICATE_ARRIVAL") {
@@ -1596,13 +964,23 @@ export class RheoCell {
             }
         }
 
-        if (!signal._registryScanned) {
+        // --- 5. EXHAUSTIVE FAILURE ---
+
+        // FAIL-SAFE: If we are about to fail, check the disk one last time.
+        // This fixes the startup race condition where we started before the target existed.
+        if (!signal._registryScanned) { // Prevent infinite loops
+
+            // Force a full read of the registry directory
             await this.bootstrapFromRegistry(true);
+
             signal._registryScanned = true;
+
+            // Try routing again with the fresh data
             return this.forwardToPeer(signal, cap, cid);
         }
 
-        this.ledger.wrap(signal, myId, "P2P_NO_ROUTE", { capability: cap, atlasSize: Object.keys(this.atlas).length });
+        // Original Failure Logic
+        this.addStep(cid, "P2P_NO_ROUTE", { capability: cap, atlasSize: Object.keys(this.atlas).length });
 
         return {
             ok: false,
@@ -1612,7 +990,7 @@ export class RheoCell {
                 msg: `No route to ${cap} after exhaustive search (Providers: ${providers.length}, Neighbors: ${neighbors.length})`,
                 from: myId,
                 trace: signal.trace || [],
-                _envelope: this.ledger.entries.get(cid)
+                history: this.journal[cid]
             }
         };
     }
@@ -1627,8 +1005,7 @@ export class RheoCell {
                     code: "CIRCUIT_OPEN",
                     msg: "Circuit breaker open",
                     from: addr,
-                    trace: [],
-                    _envelope: this.ledger.entries.get(signal.id)
+                    trace: []
                 }
             };
         }
@@ -1637,10 +1014,9 @@ export class RheoCell {
         const startTime = performance.now();
 
         if (signal.payload.capability !== 'mesh/gossip' && signal.payload.capability !== 'cell/contract') {
-            this.log("INFO", `📡 RPC_OUT: [${signal.payload.capability}] -> ${addr}`, cid);
+            if(signal.payload.capability!=="mesh/gossip"&&signal.payload.capability!=="cell/contract")if(signal.payload.capability!=="mesh/gossip"&&signal.payload.capability!=="cell/contract")if(signal.payload.capability!=="mesh/gossip"&&signal.payload.capability!=="cell/contract")if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") this.log("INFO", `📡 RPC_OUT: [${signal.payload.capability}] -> ${addr}`, cid);
         }
-
-        this.ledger.wrap(signal, this.id, "RPC_ATTEMPT", {
+        this.addStep(cid, "RPC_ATTEMPT", {
             target: addr,
             capability: signal.payload.capability,
             payloadSize: JSON.stringify(signal.payload).length
@@ -1651,14 +1027,14 @@ export class RheoCell {
                 method: "POST",
                 body: JSON.stringify(signal),
                 headers: { "Content-Type": "application/json" },
-                signal: AbortSignal.timeout(600000)
+                signal: AbortSignal.timeout(600000) // 600 second timeout on requests - 10 minutes
             });
 
             const duration = performance.now() - startTime;
 
             if (!res.ok) {
                 const body = await res.text().catch(() => 'unreadable');
-                this.ledger.wrap(signal, this.id, "RPC_HTTP_ERROR", {
+                this.addStep(cid, "RPC_HTTP_ERROR", {
                     status: res.status,
                     statusText: res.statusText,
                     body: body.substring(0, 200),
@@ -1679,7 +1055,7 @@ export class RheoCell {
                         },
                         from: addr,
                         trace: signal.trace,
-                        _envelope: this.ledger.entries.get(cid)
+                        history: this.journal[cid]
                     }
                 };
             }
@@ -1690,507 +1066,91 @@ export class RheoCell {
 
             const r = data.result || data;
 
-            if (!r.ok && r.error?._envelope) {
-                this.ledger.merge(r.error._envelope);
+            // Merge remote narrative if failure occurred
+            if (!r.ok && r.error?.history) {
+                this.journal[cid] = r.error.history;
             }
 
-            if (r.ok && signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") {
-                this.log("INFO", "✅ RPC_SUCCESS: [" + signal.payload.capability + "] from " + addr, cid);
-            } else if (!r.ok) {
-                const err = r.error as TraceError;
-                this.log('ERROR',
-                    `❌ RPC_REMOTE_FAIL: [${signal.payload.capability}] @ ${addr}\n` +
-                    `  Error Code: ${err?.code}\n` +
-                    `  Error Message: ${err?.msg}\n` +
-                    `  From Cell: ${err?.from}`,
-                    cid
-                );
-            }
+            if (r.ok && signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") { if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") this.log("INFO", "✅ RPC_SUCCESS: [" + signal.payload.capability + "] from " + addr, cid);
+            this.log('WARN', '❌ RPC_REMOTE_FAIL: [' + signal.payload.capability + '] @ ' + addr + ' (' + r.error?.code + ')', cid);
+        }
+        return r;
 
-            return r;
         } catch (e: any) {
             const duration = performance.now() - startTime;
 
+            // --- FAIL FAST FIX ---
+            // If the port is closed (cell died), fail immediately. 
+            // Do not let this fall through to generic timeout logic.
+            if (
+                e.code === 'ECONNREFUSED' ||
+                e.message.includes('Connection refused') ||
+                e.message.includes('Network is unreachable') ||
+                e.message.includes('fetch failed')
+            ) {
+                // Determine ID from trace to prune it
+                const targetId = signal.trace.length > 0
+                    ? signal.trace[signal.trace.length - 1].split(':')[0]
+                    : 'unknown';
+
+                // Remove the dead peer immediately so we don't try again
+                this.pruneDeadPeer(targetId);
+
+                return {
+                    ok: false,
+                    cid,
+                    error: {
+                        code: "RPC_UNREACHABLE",
+                        msg: `Target offline (pruned): ${addr}`,
+                        from: addr,
+                        trace: signal.trace,
+                        history: this.journal[cid]
+                    }
+                };
+            }
+
+            // Categorize network errors
             let errorCode = "RPC_FAIL";
             let errorDetails: any = {
                 targetAddress: addr,
                 duration: Math.round(duration),
-                errorType: e.constructor?.name || 'Unknown'
+                errorType: e.constructor.name
             };
 
             if (e.name === 'AbortError' || e.message?.includes('timeout')) {
                 errorCode = "RPC_TIMEOUT";
-                errorDetails.reason = "Request timed out";
-            } else if (e.message?.includes('ECONNREFUSED') || e.message?.includes('fetch failed') || e.message?.includes('Connection refused')) {
+                errorDetails.reason = "Request timed out after 5000ms";
+                errorDetails.suggestion = "Target cell may be overloaded or unresponsive";
+            } else if (e.message?.includes('ECONNREFUSED') || e.message?.includes('fetch failed')) {
                 errorCode = "RPC_UNREACHABLE";
-                errorDetails.reason = "Target offline";
-                const targetId = signal.trace.length > 0 ? signal.trace[signal.trace.length - 1].split(':')[0] : 'unknown';
-                this.pruneDeadPeer(targetId);
+                errorDetails.reason = "Connection refused - target is offline";
+                errorDetails.suggestion = "Check if target cell is running and port is correct";
             } else if (e.message?.includes('JSON')) {
                 errorCode = "RPC_PARSE_ERR";
                 errorDetails.reason = "Invalid JSON response";
+                errorDetails.suggestion = "Target may have returned HTML error page or crashed";
             }
 
-            this.ledger.wrap(signal, this.id, errorCode, {
+            this.addStep(cid, errorCode, {
                 error: e.message,
                 duration,
                 ...errorDetails
             });
 
-            const richError: TraceError = {
-                code: errorCode,
-                msg: `${errorCode}: ${e.message}`,
-                details: errorDetails,
-                from: addr,
-                trace: signal.trace || [],
-                _envelope: this.ledger.entries.get(cid)
-            };
-
-            this.log("ERROR",
-                `💥 RPC FAILURE [${errorCode}]\n` +
-                `  Target: ${addr}\n` +
-                `  Capability: ${signal.payload.capability}\n` +
-                `  Message: ${e.message}`,
-                cid
-            );
-
             return {
                 ok: false,
                 cid,
-                error: richError
+                error: {
+                    code: errorCode,
+                    msg: `${errorCode}: ${e.message}`,
+                    details: errorDetails,
+                    from: addr,
+                    trace: signal.trace,
+                    history: this.journal[cid]
+                }
             };
         }
     }
-
-
-    // private requestQueue = new Map<string, Promise<TraceResult>>();
-    // private maxConcurrent = 50;
-
-    // /**
-    //  * The Logic Engine of the Cell.
-    //  * Responsibility: Deduplication, Loop Prevention, Narrative Tracking, and Execution.
-    //  */
-    // private async route(signal: Signal): Promise<TraceResult> {
-    //     while (this.activeExecutions.size >= this.maxConcurrent) {
-    //         await new Promise(r => setTimeout(r, 10));
-    //     }
-
-    //     const cid = signal.id;
-    //     const myId = this.id;
-    //     const cap = signal.payload.capability;
-
-    //     // CLIENT MODE: Can forward but not handle unless explicitly provided
-    //     if (!this.addr && this.mode === 'server' && this.handlers[cap]) {
-    //         return { ok: false, cid, error: { code: "NOT_READY", msg: "Cell has no address - cannot handle local capabilities", from: myId, trace: [] } };
-    //     }
-
-    //     // --- 1. RESULT CACHE (Idempotency) ---
-    //     // If we already finished this work recently, return the exact same result.
-    //     if (this.resultCache.has(cid)) {
-    //         return this.resultCache.get(cid)!.result;
-    //     }
-
-    //     // --- 2. REQUEST JOINING (Deduplication) ---
-    //     // If we are currently working on this ID, don't start a new execution.
-    //     // Return the Promise of the one already running.
-    //     if (this.activeExecutions.has(cid)) {
-    //         // this.log("DEBUG", `🪢  Joining existing execution for signal ${cid.substring(0,8)}`);
-    //         return this.activeExecutions.get(cid)!;
-    //     }
-
-    //     // --- 3. LOOP PREVENTION ---
-    //     const visitedIds = signal._visitedCellIds || [];
-    //     if (visitedIds.includes(myId)) {
-    //         return { ok: false, cid, error: { code: "LOOP", msg: "Loop detected", from: myId, trace: signal.trace } };
-    //     }
-
-    //     // --- 4. EXECUTION WRAPPER ---
-    //     // We create a promise that represents the work.
-    //     const executionPromise = (async (): Promise<TraceResult> => {
-    //         visitedIds.push(myId);
-
-    //         if (!this.journal[cid]) this.journal[cid] = (signal._steps || []).slice(-20);
-    //         this.addStep(cid, "RECEIVED_SIGNAL", { capability: cap });
-    //         if (cap !== 'mesh/gossip' && cap !== 'cell/contract') {
-    //             if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") this.log("INFO", `📥 SIGNAL_ARRIVED: [${cap}] from [${signal.from}]`, cid);
-    //         }
-
-    //         const updatedSignal: Signal = {
-    //             ...signal,
-    //             _visitedCellIds: visitedIds,
-    //             _visitedAddr: [...(signal._visitedAddr || []), this.addr],
-    //             trace: [...(signal.trace || []), `${myId}:${Date.now()}`],
-    //             atlas: { ...this.atlas, ...(signal.atlas || {}) },
-    //             _steps: this.journal[cid],
-    //             _hops: (signal._hops || 0) + 1
-    //         };
-
-    //         let result: TraceResult;
-    //         const startTime = performance.now();
-
-    //         try {
-    //             if (this.handlers[cap]) {
-    //                 this.addStep(cid, "LOCAL_HANDLER", { capability: cap });
-    //                 const val = await this.handlers[cap](updatedSignal.payload.args, updatedSignal);
-    //                 result = { ok: true, value: val, cid };
-    //             } else {
-    //                 result = await this.forwardToPeer(updatedSignal, cap, cid);
-    //             }
-    //         } catch (e: any) {
-    //             result = { ok: false, cid, error: { code: "HANDLER_ERR", msg: e.message, from: myId, trace: updatedSignal.trace, history: this.journal[cid] } };
-    //         }
-
-    //         this.updateMetrics(performance.now() - startTime, !result.ok);
-
-    //         // Move from "Active" to "Recent Cache"
-    //         this.resultCache.set(cid, { result, time: Date.now() });
-    //         this.activeExecutions.delete(cid);
-    //         return result;
-    //     })();
-
-    //     // Register the promise so other redundant paths can join it.
-    //     this.activeExecutions.set(cid, executionPromise);
-
-    //     // Cleanup Cache periodically
-    //     if (this.resultCache.size > 1000) {
-    //         const now = Date.now();
-    //         for (const [id, entry] of this.resultCache) {
-    //             if (now - entry.time > 10000) this.resultCache.delete(id);
-    //         }
-    //     }
-
-    //     return executionPromise;
-    // }
-
-    // /**
-    //  * The P2P Strategy Engine.
-    //  * Logic Flow: 
-    //  * 1. Attempt the known primary provider.
-    //  * 2. If primary is busy/duplicate, accept that as delivery.
-    //  * 3. If primary fails, cycle through failover providers.
-    //  * 4. If all known providers fail, flood to random neighbors.
-    //  * 5. As a last resort, hit the seed (bootstrap) node.
-    //  */
-    // private async forwardToPeer(signal: Signal, cap: string, cid: string): Promise<TraceResult> {
-    //     const myAddr = this.addr;
-    //     const myId = this.id;
-    //     const visitedIds = signal._visitedCellIds || [];
-    //     const visitedAddr = signal._visitedAddr || [];
-
-    //     // --- 1. PROVIDER IDENTIFICATION ---
-    //     // Filter the Atlas for cells providing this capability.
-    //     // We exclude: ourselves, cells we've already visited, and duplicate addresses.
-    //     const seenAddrs = new Set<string>();
-
-    //     const providers = Object.entries(this.atlas)
-    //         .filter(([key, e]) => {
-    //             const entryId = e.id || key;
-    //             const hasCap = e.caps.includes(cap);
-    //             const isSelf = entryId === myId || e.addr === myAddr;
-    //             const isVisited = visitedIds.includes(entryId);
-    //             const isDuplicateAddr = seenAddrs.has(e.addr);
-    //             const isClientOnly = e.addr.startsWith('client://'); // NEW: Skip client cells for capability routing
-
-    //             if (hasCap && !isSelf && !isVisited && !isDuplicateAddr && !isClientOnly) {
-    //                 seenAddrs.add(e.addr);
-    //                 return true;
-    //             }
-    //             return false;
-    //         })
-    //         .map(([_, e]) => e);
-
-    //     // --- 2. PRIMARY & FAILOVER ROUTING ---
-    //     if (providers.length > 0) {
-    //         // We iterate through available providers until one accepts or reports busy.
-    //         for (let i = 0; i < Math.min(providers.length, 4); i++) {
-    //             const target = providers[i];
-    //             this.addStep(cid, i === 0 ? "P2P_ROUTE_ATTEMPT" : "P2P_FAILOVER_ATTEMPT", {
-    //                 target: target.addr,
-    //                 attempt: i + 1
-    //             });
-
-    //             const result = await this.rpc(target.addr, signal);
-
-    //             // --- THE HANDOFF FIX ---
-    //             // result.ok is standard success.
-    //             // DUPLICATE_SIGNAL/ARRIVAL means the signal reached its destination 
-    //             // via a different path already. This is a mesh SUCCESS.
-    //             const isDelivered = result.ok ||
-    //                 result.error?.code === "DUPLICATE_SIGNAL" ||
-    //                 result.error?.code === "DUPLICATE_ARRIVAL";
-
-    //             if (isDelivered) {
-    //                 this.addStep(cid, "P2P_ROUTE_SUCCESS", {
-    //                     via: target.addr,
-    //                     status: result.ok ? "OK" : "ALREADY_PROCESSING"
-    //                 });
-    //                 return result;
-    //             }
-
-    //             // If the error was a loop or something unrecoverable, we stop this branch immediately.
-    //             if (result.error?.code === "ROUTING_LOOP_PREVENTED") return result;
-    //         }
-    //     }
-
-    //     // --- 3. BOUNDED FLOODING ---
-    //     // If we found no providers or all providers were unreachable, 
-    //     // we "Flood" the signal to 3 random neighbors who might have a fresher Atlas.
-    //     const neighbors = Object.values(this.atlas)
-    //         .filter(e => e.addr !== myAddr && !visitedIds.includes(e.id || '') && !providers.includes(e))
-    //         .sort(() => 0.5 - Math.random())
-    //         .slice(0, 3);
-
-    //     if (neighbors.length > 0) {
-    //         this.addStep(cid, "P2P_FLOOD_START", { neighborCount: neighbors.length });
-
-    //         // We fire these off in parallel (Promise.allSettled) for maximum throughput.
-    //         const floodResults = await Promise.allSettled(
-    //             neighbors.map(n => this.rpc(n.addr, signal))
-    //         );
-
-    //         for (let i = 0; i < floodResults.length; i++) {
-    //             const res = floodResults[i];
-    //             // Check if any flood path resulted in a successful handoff.
-    //             if (res.status === 'fulfilled') {
-    //                 const val = res.value;
-    //                 if (val.ok || val.error?.code === "DUPLICATE_SIGNAL" || val.error?.code === "DUPLICATE_ARRIVAL") {
-    //                     this.addStep(cid, "P2P_FLOOD_SUCCESS", { via: neighbors[i].addr });
-    //                     return val;
-    //                 }
-    //             }
-    //         }
-
-    //         this.addStep(cid, "P2P_FLOOD_FAILED", { attempts: neighbors.length });
-    //     }
-
-    //     // --- 4. SEED BOOTSTRAP (LAST RESORT) ---
-    //     // If the seed is defined and we haven't visited it yet, try it as a last hope.
-    //     if (this.seed && !visitedAddr.includes(this.seed)) {
-    //         this.addStep(cid, "P2P_SEED_ATTEMPT", { seed: this.seed });
-    //         const seedResult = await this.rpc(this.seed, signal);
-
-    //         if (seedResult.ok || seedResult.error?.code === "DUPLICATE_SIGNAL" || seedResult.error?.code === "DUPLICATE_ARRIVAL") {
-    //             return seedResult;
-    //         }
-    //     }
-
-    //     // --- 5. EXHAUSTIVE FAILURE ---
-
-    //     // FAIL-SAFE: If we are about to fail, check the disk one last time.
-    //     // This fixes the startup race condition where we started before the target existed.
-    //     if (!signal._registryScanned) { // Prevent infinite loops
-
-    //         // Force a full read of the registry directory
-    //         await this.bootstrapFromRegistry(true);
-
-    //         signal._registryScanned = true;
-
-    //         // Try routing again with the fresh data
-    //         return this.forwardToPeer(signal, cap, cid);
-    //     }
-
-    //     // Original Failure Logic
-    //     this.addStep(cid, "P2P_NO_ROUTE", { capability: cap, atlasSize: Object.keys(this.atlas).length });
-
-    //     return {
-    //         ok: false,
-    //         cid,
-    //         error: {
-    //             code: "NOT_FOUND",
-    //             msg: `No route to ${cap} after exhaustive search (Providers: ${providers.length}, Neighbors: ${neighbors.length})`,
-    //             from: myId,
-    //             trace: signal.trace || [],
-    //             history: this.journal[cid]
-    //         }
-    //     };
-    // }
-
-    // private failedAddresses = new Map<string, { count: number, lastFail: number }>();
-
-    // public async rpc(addr: string, signal: Signal): Promise<TraceResult> {
-    //     const failure = this.failedAddresses.get(addr);
-    //     if (failure && failure.count > 3 && Date.now() - failure.lastFail < 30000) {
-    //         return {
-    //             ok: false, cid: signal.id, error: {
-    //                 code: "CIRCUIT_OPEN",
-    //                 msg: "Circuit breaker open",
-    //                 from: addr,
-    //                 trace: []
-    //             }
-    //         };
-    //     }
-
-    //     const cid = signal.id;
-    //     const startTime = performance.now();
-
-    //     if (signal.payload.capability !== 'mesh/gossip' && signal.payload.capability !== 'cell/contract') {
-    //         if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") this.log("INFO", `📡 RPC_OUT: [${signal.payload.capability}] -> ${addr}`, cid);
-    //     }
-    //     this.addStep(cid, "RPC_ATTEMPT", {
-    //         target: addr,
-    //         capability: signal.payload.capability,
-    //         payloadSize: JSON.stringify(signal.payload).length
-    //     });
-
-    //     try {
-    //         const res = await fetch(addr, {
-    //             method: "POST",
-    //             body: JSON.stringify(signal),
-    //             headers: { "Content-Type": "application/json" },
-    //             signal: AbortSignal.timeout(600000) // 600 second timeout on requests - 10 minutes
-    //         });
-
-    //         const duration = performance.now() - startTime;
-
-    //         if (!res.ok) {
-    //             const body = await res.text().catch(() => 'unreadable');
-    //             this.addStep(cid, "RPC_HTTP_ERROR", {
-    //                 status: res.status,
-    //                 statusText: res.statusText,
-    //                 body: body.substring(0, 200),
-    //                 duration
-    //             });
-
-    //             return {
-    //                 ok: false,
-    //                 cid,
-    //                 error: {
-    //                     code: "RPC_HTTP_ERR",
-    //                     msg: `HTTP ${res.status} ${res.statusText} from ${addr}`,
-    //                     details: {
-    //                         httpStatus: res.status,
-    //                         responseBody: body.substring(0, 500),
-    //                         targetAddress: addr,
-    //                         duration: Math.round(duration)
-    //                     },
-    //                     from: addr,
-    //                     trace: signal.trace,
-    //                     history: this.journal[cid]
-    //                 }
-    //             };
-    //         }
-
-    //         const data = await res.json();
-
-    //         if (data.atlas) this.mergeAtlas(data.atlas);
-
-    //         const r = data.result || data;
-
-    //         // CRITICAL: Merge remote narrative if failure occurred
-    //         if (!r.ok && r.error?.history) {
-    //             // Merge remote history into local journal for full context
-    //             const remoteHistory = r.error.history;
-    //             if (!this.journal[cid]) this.journal[cid] = [];
-
-    //             // Add remote steps that we don't have yet (avoiding duplicates)
-    //             const localTimestamps = new Set(this.journal[cid].map((s: NarrativeStep) => s.timestamp));
-    //             for (const remoteStep of remoteHistory) {
-    //                 if (!localTimestamps.has(remoteStep.timestamp)) {
-    //                     this.journal[cid].push(remoteStep);
-    //                 }
-    //             }
-
-    //             // Log the merged narrative
-    //             this.log("WARN",
-    //                 `📥 Merged ${remoteHistory.length} remote narrative steps from failing cell\n` +
-    //                 `  Remote error: ${r.error.code} - ${r.error.msg}\n` +
-    //                 `  From cell: ${r.error.from}`,
-    //                 cid
-    //             );
-    //         }
-
-    //         if (r.ok && signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") {
-    //             this.log("INFO", "✅ RPC_SUCCESS: [" + signal.payload.capability + "] from " + addr, cid);
-    //         } else if (!r.ok) {
-    //             // Enhanced error logging with full context
-    //             const err = r.error as TraceError;
-    //             this.log('ERROR',
-    //                 `❌ RPC_REMOTE_FAIL: [${signal.payload.capability}] @ ${addr}\n` +
-    //                 `  Error Code: ${err?.code}\n` +
-    //                 `  Error Message: ${err?.msg}\n` +
-    //                 `  From Cell: ${err?.from}\n` +
-    //                 `  Details: ${JSON.stringify(err?.details, null, 2)}\n` +
-    //                 `  Full Trace: ${err?.trace?.join(' -> ')}\n` +
-    //                 `  Narrative History (${err?.history?.length || 0} steps):`,
-    //                 cid
-    //             );
-
-    //             // Also dump full narrative to stderr for debugging
-    //             if (err?.history && err.history.length > 0) {
-    //                 console.error(`\n=== FULL NARRATIVE FOR ${cid} ===`);
-    //                 for (const step of err.history) {
-    //                     const time = new Date(step.timestamp).toISOString().split('T')[1].replace('Z', '');
-    //                     const dataStr = step.data ? JSON.stringify(step.data).substring(0, 100) : '';
-    //                     console.error(`[${time}] ${step.cell.padEnd(20)} | ${step.action.padEnd(25)} | ${dataStr}`);
-    //                 }
-    //                 console.error(`=== END NARRATIVE ===\n`);
-    //             }
-    //         }
-
-    //         return r;
-    //     } catch (e: any) {
-    //         const duration = performance.now() - startTime;
-
-    //         // Categorize network errors
-    //         let errorCode = "RPC_FAIL";
-    //         let errorDetails: any = {
-    //             targetAddress: addr,
-    //             duration: Math.round(duration),
-    //             errorType: e.constructor?.name || 'Unknown'
-    //         };
-
-    //         if (e.name === 'AbortError' || e.message?.includes('timeout')) {
-    //             errorCode = "RPC_TIMEOUT";
-    //             errorDetails.reason = "Request timed out";
-    //         } else if (e.message?.includes('ECONNREFUSED') || e.message?.includes('fetch failed') || e.message?.includes('Connection refused')) {
-    //             errorCode = "RPC_UNREACHABLE";
-    //             errorDetails.reason = "Target offline";
-    //             // Prune dead peer
-    //             const targetId = signal.trace.length > 0 ? signal.trace[signal.trace.length - 1].split(':')[0] : 'unknown';
-    //             this.pruneDeadPeer(targetId);
-    //         } else if (e.message?.includes('JSON')) {
-    //             errorCode = "RPC_PARSE_ERR";
-    //             errorDetails.reason = "Invalid JSON response";
-    //         }
-
-    //         this.addStep(cid, errorCode, {
-    //             error: e.message,
-    //             duration,
-    //             ...errorDetails
-    //         });
-
-    //         // CRITICAL: Build rich error with full context
-    //         const richError: TraceError = {
-    //             code: errorCode,
-    //             msg: `${errorCode}: ${e.message}`,
-    //             details: errorDetails,
-    //             from: addr,
-    //             trace: signal.trace || [],
-    //             history: this.journal[cid] || []
-    //         };
-
-    //         // Log the FULL error locally with narrative
-    //         this.log("ERROR",
-    //             `💥 RPC FAILURE [${errorCode}]\n` +
-    //             `  Target: ${addr}\n` +
-    //             `  Capability: ${signal.payload.capability}\n` +
-    //             `  Message: ${e.message}\n` +
-    //             `  Duration: ${Math.round(duration)}ms\n` +
-    //             `  Narrative (${richError.history.length} steps):\n` +
-    //             richError.history.slice(-5).map((s: NarrativeStep) =>
-    //                 `    [${new Date(s.timestamp).toISOString().split('T')[1].replace('Z', '')}] ${s.cell}: ${s.action}`
-    //             ).join('\n'),
-    //             cid
-    //         );
-
-    //         return {
-    //             ok: false,
-    //             cid,
-    //             error: richError
-    //         };
-    //     }
-
-    // }
 
     /**
  * Create a pipeline that auto-updates when mesh topology changes.

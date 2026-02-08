@@ -42,37 +42,97 @@ export type InferRouter<T> = T extends Router<infer TProcedures>
 // ============================================================================
 
 export interface Schema<T> {
-    _type?: T; // Phantom type for inference
-    _def?: any; // Internal zod-like structure for codegen
+    _type?: T;
+    _def?: any;
     parse: (value: unknown) => T;
-    _isOptional?: boolean; // Renamed from optional to avoid conflict
-    optional: () => Schema<T | undefined>; // The method for chaining
+    _isOptional?: boolean;
+    optional: () => Schema<T | undefined>;
 }
 
-// Helper to satisfy the Schema interface and provide chaining
+// Interfaces for chainable methods
+export interface ZodString extends Schema<string> {
+    min: (length: number, message?: string) => ZodString;
+    max: (length: number, message?: string) => ZodString;
+}
+
+export interface ZodNumber extends Schema<number> {
+    min: (value: number, message?: string) => ZodNumber;
+    max: (value: number, message?: string) => ZodNumber;
+}
+
+// Helper to attach common methods
 const createSchema = <T>(base: Omit<Schema<T>, 'optional'>): Schema<T> => {
     const s = base as Schema<T>;
     s.optional = () => z.optional(s);
     return s;
 };
 
-
 export const z = {
-    string: () => createSchema<string>({
-        _def: { typeName: "ZodString" },
-        parse: (val) => {
-            if (typeof val !== 'string') throw new Error('Expected string');
-            return val;
-        }
-    }),
+    string: (): ZodString => {
+        const base = createSchema<string>({
+            _def: { typeName: "ZodString" },
+            parse: (val) => {
+                if (typeof val !== 'string') throw new Error('Expected string');
+                return val;
+            }
+        }) as ZodString;
 
-    number: () => createSchema<number>({
-        _def: { typeName: "ZodNumber" },
-        parse: (val) => {
-            if (typeof val !== 'number') throw new Error('Expected number');
-            return val;
-        }
-    }),
+        // Add chainable string methods
+        base.min = (length: number, msg?: string) => {
+            const prevParse = base.parse;
+            base.parse = (val: unknown) => {
+                const res = prevParse(val);
+                if (res.length < length) throw new Error(msg || `String must be at least ${length} characters`);
+                return res;
+            };
+            return base;
+        };
+
+        base.max = (length: number, msg?: string) => {
+            const prevParse = base.parse;
+            base.parse = (val: unknown) => {
+                const res = prevParse(val);
+                if (res.length > length) throw new Error(msg || `String must be at most ${length} characters`);
+                return res;
+            };
+            return base;
+        };
+
+        return base;
+    },
+
+    number: (): ZodNumber => {
+        const base = createSchema<number>({
+            _def: { typeName: "ZodNumber" },
+            parse: (val) => {
+                if (typeof val !== 'number') throw new Error('Expected number');
+                return val;
+            }
+        }) as ZodNumber;
+
+        // Add chainable number methods
+        base.min = (value: number, msg?: string) => {
+            const prevParse = base.parse;
+            base.parse = (val: unknown) => {
+                const res = prevParse(val);
+                if (res < value) throw new Error(msg || `Number must be >= ${value}`);
+                return res;
+            };
+            return base;
+        };
+
+        base.max = (value: number, msg?: string) => {
+            const prevParse = base.parse;
+            base.parse = (val: unknown) => {
+                const res = prevParse(val);
+                if (res > value) throw new Error(msg || `Number must be <= ${value}`);
+                return res;
+            };
+            return base;
+        };
+
+        return base;
+    },
 
     boolean: () => createSchema<boolean>({
         _def: { typeName: "ZodBoolean" },
@@ -119,16 +179,15 @@ export const z = {
         _def: { typeName: "ZodArray", type: item },
         parse: (val) => {
             if (!Array.isArray(val)) throw new Error('Expected array');
-            return val.map(item.parse);
+            return val.map(v => item.parse(v));
         }
     }),
 
-    // ADD THIS - Record type for key-value maps
     record: <T>(valueSchema: Schema<T>) => createSchema<Record<string, T>>({
         _def: { typeName: "ZodRecord", valueType: valueSchema },
         parse: (val) => {
             if (typeof val !== 'object' || val === null || Array.isArray(val)) {
-                throw new Error('Expected object');
+                throw new Error('Expected object map');
             }
             const result: Record<string, T> = {};
             for (const [key, value] of Object.entries(val)) {
@@ -389,7 +448,11 @@ export class RheoCell extends BaseCell {
                 }
 
                 // Execute handler
-                return await proc._def.handler(validatedInput, ctx);
+                const start = Date.now();
+                this.log('INFO', `⚙️  EXEC_START: [${cap}]`);
+                const result = await proc._def.handler(validatedInput, ctx);
+                this.log('INFO', `⚙️  EXEC_END: [${cap}] (${Date.now() - start}ms)`);
+                return result;
             });
         }
 

@@ -7886,3 +7886,1273 @@
 [12:30:49 PM] [32m[11:30:49.673] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
 [12:30:49 PM] [32m[11:30:49.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
 [12:30:49 PM] [32m[11:30:49.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:31:19 PM] [32m[11:31:19.673] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:31:19 PM] [32m[11:31:19.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:31:19 PM] [32m[11:31:19.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:31:49 PM] [32m[11:31:49.673] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:31:49 PM] [32m[11:31:49.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:31:49 PM] [32m[11:31:49.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:32:19 PM] [32m[11:32:19.673] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:32:19 PM] [32m[11:32:19.675] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:32:19 PM] [32m[11:32:19.675] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:32:49 PM] [32m[11:32:49.672] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:32:49 PM] [32m[11:32:49.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:32:49 PM] [32m[11:32:49.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:33:19 PM] [32m[11:33:19.673] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:33:19 PM] [32m[11:33:19.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:33:19 PM] [32m[11:33:19.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:33:49 PM] [32m[11:33:49.672] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:33:49 PM] [32m[11:33:49.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:33:49 PM] [32m[11:33:49.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:34:19 PM] [32m[11:34:19.672] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:34:19 PM] [32m[11:34:19.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:34:19 PM] [32m[11:34:19.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:34:49 PM] [32m[11:34:49.672] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:34:49 PM] [32m[11:34:49.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:34:49 PM] [32m[11:34:49.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:35:19 PM] [32m[11:35:19.672] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:35:19 PM] [32m[11:35:19.673] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:35:19 PM] [32m[11:35:19.673] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:35:49 PM] [32m[11:35:49.672] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:35:49 PM] [32m[11:35:49.674] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:35:49 PM] [32m[11:35:49.674] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:36:19 PM] [32m[11:36:19.672] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:36:19 PM] [32m[11:36:19.673] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:36:19 PM] [32m[11:36:19.673] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:36:49 PM] [32m[11:36:49.672] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:36:49 PM] [32m[11:36:49.673] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:36:49 PM] [32m[11:36:49.673] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:05:49 PM] [Codegen] Key fingerprint: 11957b6cf12fc3ad
+[2:05:49 PM] [32m[13:05:49.937] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:05:49 PM] [32m[13:05:49.942] [INFO] [Codegen] Sovereign Cell online @ http://localhost:46621[0m
+[2:05:49 PM] [32m[13:05:49.942] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:05:54 PM] [32m[13:05:54.943] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:05:54 PM] [32m[13:05:54.950] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:05:54 PM] [32m[13:05:54.950] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:06:19 PM] [32m[13:06:19.943] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:06:19 PM] [32m[13:06:19.948] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:06:19 PM] [32m[13:06:19.948] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:06:49 PM] [32m[13:06:49.943] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:06:49 PM] [32m[13:06:49.946] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:06:49 PM] [32m[13:06:49.947] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:07:19 PM] [32m[13:07:19.943] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:07:19 PM] [32m[13:07:19.947] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:07:19 PM] [32m[13:07:19.947] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:09:10 PM] [Codegen] Key fingerprint: 8645a5f1fc7e6091
+[2:09:10 PM] [32m[13:09:10.561] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:09:10 PM] [32m[13:09:10.565] [INFO] [Codegen] Sovereign Cell online @ http://localhost:46167[0m
+[2:09:10 PM] [32m[13:09:10.566] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:09:15 PM] [32m[13:09:15.567] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:09:15 PM] [32m[13:09:15.574] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:09:15 PM] [32m[13:09:15.574] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:09:40 PM] [32m[13:09:40.566] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:09:40 PM] [32m[13:09:40.569] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:09:40 PM] [32m[13:09:40.570] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:10:10 PM] [32m[13:10:10.566] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:10:10 PM] [32m[13:10:10.574] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:10:10 PM] [32m[13:10:10.575] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:10:40 PM] [32m[13:10:40.566] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:10:40 PM] [32m[13:10:40.568] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:10:40 PM] [32m[13:10:40.568] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:11:10 PM] [32m[13:11:10.565] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:11:10 PM] [32m[13:11:10.567] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:11:10 PM] [32m[13:11:10.567] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:11:40 PM] [32m[13:11:40.565] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:11:40 PM] [32m[13:11:40.567] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:11:40 PM] [32m[13:11:40.567] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:12:10 PM] [32m[13:12:10.565] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:12:10 PM] [32m[13:12:10.568] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:12:10 PM] [32m[13:12:10.568] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:12:40 PM] [32m[13:12:40.565] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:12:40 PM] [32m[13:12:40.567] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:12:40 PM] [32m[13:12:40.567] [INFO] [Codegen] ✅ Generated 45 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:12:41 PM] [Codegen] Key fingerprint: e19a5f5b53f5dae3
+[2:12:41 PM] [32m[13:12:41.733] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:12:41 PM] [32m[13:12:41.737] [INFO] [Codegen] Sovereign Cell online @ http://localhost:41179[0m
+[2:12:41 PM] [32m[13:12:41.737] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:12:46 PM] [32m[13:12:46.738] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:12:46 PM] [32m[13:12:46.744] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:12:46 PM] [32m[13:12:46.744] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:13:11 PM] [32m[13:13:11.737] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:13:11 PM] [32m[13:13:11.743] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:13:11 PM] [32m[13:13:11.743] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:13:41 PM] [32m[13:13:41.737] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:13:41 PM] [32m[13:13:41.741] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:13:41 PM] [32m[13:13:41.741] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:14:02 PM] [Codegen] Key fingerprint: aff6116bb04e74bc
+[2:14:02 PM] [32m[13:14:02.911] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:14:02 PM] [32m[13:14:02.917] [INFO] [Codegen] Sovereign Cell online @ http://localhost:43157[0m
+[2:14:02 PM] [32m[13:14:02.918] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:14:07 PM] [32m[13:14:07.919] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:14:07 PM] [32m[13:14:07.924] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:14:07 PM] [32m[13:14:07.924] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:14:32 PM] [32m[13:14:32.918] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:14:32 PM] [32m[13:14:32.923] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:14:32 PM] [32m[13:14:32.923] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:15:02 PM] [32m[13:15:02.920] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:15:02 PM] [32m[13:15:02.926] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:15:02 PM] [32m[13:15:02.926] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:15:32 PM] [32m[13:15:32.920] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:15:32 PM] [32m[13:15:32.922] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:15:32 PM] [32m[13:15:32.922] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:16:02 PM] [32m[13:16:02.920] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:16:02 PM] [32m[13:16:02.922] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:16:02 PM] [32m[13:16:02.922] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:16:32 PM] [32m[13:16:32.920] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:16:32 PM] [32m[13:16:32.923] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:16:32 PM] [32m[13:16:32.923] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:17:02 PM] [32m[13:17:02.919] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:17:02 PM] [32m[13:17:02.924] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:17:02 PM] [32m[13:17:02.924] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:17:10 PM] [Codegen] Key fingerprint: 022ed1f8fb792187
+[2:17:10 PM] [32m[13:17:10.689] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:17:10 PM] [32m[13:17:10.695] [INFO] [Codegen] Sovereign Cell online @ http://localhost:36115[0m
+[2:17:10 PM] [32m[13:17:10.696] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:17:15 PM] [32m[13:17:15.696] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:17:15 PM] [32m[13:17:15.702] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:17:15 PM] [32m[13:17:15.702] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:17:40 PM] [32m[13:17:40.696] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:17:40 PM] [32m[13:17:40.698] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:17:40 PM] [32m[13:17:40.698] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:18:10 PM] [32m[13:18:10.695] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:18:10 PM] [32m[13:18:10.697] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:18:10 PM] [32m[13:18:10.697] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:18:40 PM] [32m[13:18:40.695] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:18:40 PM] [32m[13:18:40.697] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:18:40 PM] [32m[13:18:40.697] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:19:10 PM] [32m[13:19:10.695] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:19:10 PM] [32m[13:19:10.696] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:19:10 PM] [32m[13:19:10.697] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:19:40 PM] [32m[13:19:40.695] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:19:40 PM] [32m[13:19:40.697] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:19:40 PM] [32m[13:19:40.697] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:20:10 PM] [32m[13:20:10.695] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:20:10 PM] [32m[13:20:10.696] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:20:10 PM] [32m[13:20:10.696] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:20:40 PM] [32m[13:20:40.694] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:20:40 PM] [32m[13:20:40.696] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:20:40 PM] [32m[13:20:40.696] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:21:10 PM] [32m[13:21:10.694] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:21:10 PM] [32m[13:21:10.696] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:21:10 PM] [32m[13:21:10.696] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:21:40 PM] [32m[13:21:40.694] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:21:40 PM] [32m[13:21:40.696] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:21:40 PM] [32m[13:21:40.696] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:22:10 PM] [32m[13:22:10.694] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:22:10 PM] [32m[13:22:10.696] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:22:10 PM] [32m[13:22:10.696] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:22:40 PM] [32m[13:22:40.694] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:22:40 PM] [32m[13:22:40.695] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:22:40 PM] [32m[13:22:40.695] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:23:10 PM] [32m[13:23:10.693] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:23:10 PM] [32m[13:23:10.696] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:23:10 PM] [32m[13:23:10.696] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:23:40 PM] [32m[13:23:40.694] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:23:40 PM] [32m[13:23:40.700] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:23:40 PM] [32m[13:23:40.700] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:24:04 PM] [Codegen] Key fingerprint: 0ca78a2c93f2c979
+[2:24:04 PM] [32m[13:24:04.718] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:24:04 PM] [32m[13:24:04.723] [INFO] [Codegen] Sovereign Cell online @ http://localhost:38013[0m
+[2:24:04 PM] [32m[13:24:04.723] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:24:09 PM] [32m[13:24:09.724] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:24:09 PM] [32m[13:24:09.729] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:24:09 PM] [32m[13:24:09.729] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:24:34 PM] [32m[13:24:34.723] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:24:34 PM] [32m[13:24:34.725] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:24:34 PM] [32m[13:24:34.725] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:25:04 PM] [32m[13:25:04.723] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:25:04 PM] [32m[13:25:04.725] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:25:04 PM] [32m[13:25:04.725] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:25:34 PM] [32m[13:25:34.722] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:25:34 PM] [32m[13:25:34.724] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:25:34 PM] [32m[13:25:34.724] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:26:04 PM] [32m[13:26:04.723] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:26:04 PM] [32m[13:26:04.725] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:26:04 PM] [32m[13:26:04.725] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:26:34 PM] [32m[13:26:34.723] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:26:34 PM] [32m[13:26:34.725] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:26:34 PM] [32m[13:26:34.725] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:27:04 PM] [32m[13:27:04.722] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:27:04 PM] [32m[13:27:04.724] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:27:04 PM] [32m[13:27:04.724] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:27:11 PM] [Codegen] Key fingerprint: 1aa80bbfe1999f9f
+[2:27:11 PM] [32m[13:27:11.776] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:27:11 PM] [32m[13:27:11.788] [INFO] [Codegen] Sovereign Cell online @ http://localhost:36425[0m
+[2:27:11 PM] [32m[13:27:11.790] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:27:16 PM] [32m[13:27:16.791] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:27:16 PM] [32m[13:27:16.796] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:27:16 PM] [32m[13:27:16.797] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:27:41 PM] [32m[13:27:41.790] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:27:41 PM] [32m[13:27:41.794] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:27:41 PM] [32m[13:27:41.794] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:28:11 PM] [32m[13:28:11.790] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:28:11 PM] [32m[13:28:11.792] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:28:11 PM] [32m[13:28:11.792] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:28:41 PM] [32m[13:28:41.789] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:28:41 PM] [32m[13:28:41.791] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:28:41 PM] [32m[13:28:41.791] [INFO] [Codegen] ✅ Generated 53 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:28:55 PM] [Codegen] Key fingerprint: 47439ece6063aa1e
+[2:28:55 PM] [32m[13:28:55.108] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:28:55 PM] [32m[13:28:55.126] [INFO] [Codegen] Sovereign Cell online @ http://localhost:42217[0m
+[2:28:55 PM] [32m[13:28:55.128] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:29:00 PM] [32m[13:29:00.129] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:29:00 PM] [32m[13:29:00.135] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:29:00 PM] [32m[13:29:00.135] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:29:25 PM] [32m[13:29:25.128] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:29:25 PM] [32m[13:29:25.131] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:29:25 PM] [32m[13:29:25.131] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:29:55 PM] [32m[13:29:55.128] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:29:55 PM] [32m[13:29:55.129] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:29:55 PM] [32m[13:29:55.130] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:30:25 PM] [Codegen] Key fingerprint: 60ce84573cebfc59
+[2:30:25 PM] [32m[13:30:25.332] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:30:25 PM] [32m[13:30:25.336] [INFO] [Codegen] Sovereign Cell online @ http://localhost:45987[0m
+[2:30:25 PM] [32m[13:30:25.337] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:30:30 PM] [32m[13:30:30.337] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:30:30 PM] [32m[13:30:30.342] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:30:30 PM] [32m[13:30:30.342] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:30:55 PM] [32m[13:30:55.337] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:30:55 PM] [32m[13:30:55.341] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:30:55 PM] [32m[13:30:55.341] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:31:25 PM] [32m[13:31:25.336] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:31:25 PM] [32m[13:31:25.340] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:31:25 PM] [32m[13:31:25.340] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:31:55 PM] [32m[13:31:55.337] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:31:55 PM] [32m[13:31:55.346] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:31:55 PM] [32m[13:31:55.346] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:32:25 PM] [32m[13:32:25.337] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:32:25 PM] [32m[13:32:25.338] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:32:25 PM] [32m[13:32:25.338] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:32:55 PM] [32m[13:32:55.336] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:32:55 PM] [32m[13:32:55.338] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:32:55 PM] [32m[13:32:55.338] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:33:05 PM] [Codegen] Key fingerprint: fc1bad478d838136
+[2:33:05 PM] [32m[13:33:05.614] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:33:05 PM] [32m[13:33:05.619] [INFO] [Codegen] Sovereign Cell online @ http://localhost:43601[0m
+[2:33:05 PM] [32m[13:33:05.620] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:33:10 PM] [32m[13:33:10.621] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:33:10 PM] [32m[13:33:10.627] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:33:10 PM] [32m[13:33:10.627] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:33:35 PM] [32m[13:33:35.620] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:33:35 PM] [32m[13:33:35.623] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:33:35 PM] [32m[13:33:35.623] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:35:04 PM] [Codegen] Key fingerprint: 8bbd7d5248333586
+[2:35:04 PM] [32m[13:35:04.603] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:35:04 PM] [32m[13:35:04.613] [INFO] [Codegen] Sovereign Cell online @ http://localhost:43885[0m
+[2:35:04 PM] [32m[13:35:04.614] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:35:09 PM] [32m[13:35:09.614] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:35:09 PM] [32m[13:35:09.620] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:35:09 PM] [32m[13:35:09.620] [INFO] [Codegen] ✅ Generated 52 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:35:34 PM] [32m[13:35:34.614] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:35:34 PM] [32m[13:35:34.616] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:35:34 PM] [32m[13:35:34.616] [INFO] [Codegen] ✅ Generated 52 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:36:04 PM] [32m[13:36:04.614] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:36:04 PM] [32m[13:36:04.616] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:36:04 PM] [32m[13:36:04.616] [INFO] [Codegen] ✅ Generated 52 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:37:08 PM] [Codegen] Key fingerprint: 9d559708583e8dfb
+[2:37:08 PM] [32m[13:37:08.645] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:37:08 PM] [32m[13:37:08.653] [INFO] [Codegen] Sovereign Cell online @ http://localhost:46815[0m
+[2:37:08 PM] [32m[13:37:08.653] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:37:13 PM] [32m[13:37:13.654] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:37:13 PM] [32m[13:37:13.660] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:37:13 PM] [32m[13:37:13.660] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:37:38 PM] [32m[13:37:38.653] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:37:38 PM] [32m[13:37:38.656] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:37:38 PM] [32m[13:37:38.657] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:38:08 PM] [32m[13:38:08.653] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:38:08 PM] [32m[13:38:08.658] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:38:08 PM] [32m[13:38:08.658] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:38:38 PM] [32m[13:38:38.653] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:38:38 PM] [32m[13:38:38.656] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:38:38 PM] [32m[13:38:38.656] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:39:08 PM] [32m[13:39:08.654] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:39:08 PM] [32m[13:39:08.655] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:39:08 PM] [32m[13:39:08.655] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:40:59 PM] [Codegen] Key fingerprint: b4e24086d869f685
+[2:40:59 PM] [32m[13:40:59.202] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:40:59 PM] [32m[13:40:59.206] [INFO] [Codegen] Sovereign Cell online @ http://localhost:34885[0m
+[2:40:59 PM] [32m[13:40:59.207] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:41:04 PM] [32m[13:41:04.208] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:41:04 PM] [32m[13:41:04.213] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:41:04 PM] [32m[13:41:04.213] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:41:29 PM] [32m[13:41:29.207] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:41:29 PM] [32m[13:41:29.210] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:41:29 PM] [32m[13:41:29.210] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:43:30 PM] [Codegen] Key fingerprint: 0f6a3e06b1c39c56
+[2:43:30 PM] [32m[13:43:30.934] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:43:30 PM] [32m[13:43:30.938] [INFO] [Codegen] Sovereign Cell online @ http://localhost:35027[0m
+[2:43:30 PM] [32m[13:43:30.939] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:43:35 PM] [32m[13:43:35.940] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:43:35 PM] [32m[13:43:35.947] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:43:35 PM] [32m[13:43:35.947] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:44:10 PM] [Codegen] Key fingerprint: a8d57dffae93bf63
+[2:44:10 PM] [32m[13:44:10.726] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:44:10 PM] [32m[13:44:10.729] [INFO] [Codegen] Sovereign Cell online @ http://localhost:36819[0m
+[2:44:10 PM] [32m[13:44:10.730] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:44:15 PM] [32m[13:44:15.731] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:44:15 PM] [32m[13:44:15.736] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:44:15 PM] [32m[13:44:15.736] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:44:40 PM] [32m[13:44:40.730] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:44:40 PM] [32m[13:44:40.733] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:44:40 PM] [32m[13:44:40.733] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:45:10 PM] [32m[13:45:10.730] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:45:10 PM] [32m[13:45:10.734] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:45:10 PM] [32m[13:45:10.734] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:45:23 PM] [Codegen] Key fingerprint: 93c0b00b7e8cd618
+[2:45:23 PM] [32m[13:45:23.674] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:45:23 PM] [32m[13:45:23.679] [INFO] [Codegen] Sovereign Cell online @ http://localhost:40575[0m
+[2:45:23 PM] [32m[13:45:23.680] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:45:28 PM] [32m[13:45:28.681] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:45:28 PM] [32m[13:45:28.687] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:45:28 PM] [32m[13:45:28.687] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:45:53 PM] [32m[13:45:53.680] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:45:53 PM] [32m[13:45:53.685] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:45:53 PM] [32m[13:45:53.685] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:46:23 PM] [32m[13:46:23.680] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:46:23 PM] [32m[13:46:23.687] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:46:23 PM] [32m[13:46:23.687] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:46:53 PM] [32m[13:46:53.680] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:46:53 PM] [32m[13:46:53.681] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:46:53 PM] [32m[13:46:53.681] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:47:23 PM] [32m[13:47:23.680] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:47:23 PM] [32m[13:47:23.682] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:47:23 PM] [32m[13:47:23.682] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:47:51 PM] [Codegen] Key fingerprint: cf1c976a9b035dff
+[2:47:51 PM] [32m[13:47:51.392] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:47:51 PM] [32m[13:47:51.404] [INFO] [Codegen] Sovereign Cell online @ http://localhost:34903[0m
+[2:47:51 PM] [32m[13:47:51.405] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:47:56 PM] [32m[13:47:56.407] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:47:56 PM] [32m[13:47:56.412] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:47:56 PM] [32m[13:47:56.412] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:48:21 PM] [32m[13:48:21.406] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:48:21 PM] [32m[13:48:21.411] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:48:21 PM] [32m[13:48:21.411] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:48:51 PM] [32m[13:48:51.405] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:48:51 PM] [32m[13:48:51.408] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:48:51 PM] [32m[13:48:51.408] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:49:07 PM] [Codegen] Key fingerprint: 3a41c526c4e49b44
+[2:49:07 PM] [32m[13:49:07.854] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:49:07 PM] [32m[13:49:07.859] [INFO] [Codegen] Sovereign Cell online @ http://localhost:37161[0m
+[2:49:07 PM] [32m[13:49:07.861] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:49:12 PM] [32m[13:49:12.862] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:49:12 PM] [32m[13:49:12.867] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:49:12 PM] [32m[13:49:12.867] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:49:37 PM] [32m[13:49:37.861] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:49:37 PM] [32m[13:49:37.863] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:49:37 PM] [32m[13:49:37.863] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:50:07 PM] [32m[13:50:07.860] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:50:07 PM] [32m[13:50:07.862] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:50:07 PM] [32m[13:50:07.862] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:50:37 PM] [32m[13:50:37.860] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:50:37 PM] [32m[13:50:37.862] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:50:37 PM] [32m[13:50:37.862] [INFO] [Codegen] ✅ Generated 51 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:51:25 PM] [Codegen] Key fingerprint: 47dad6dc12ed38f2
+[2:51:25 PM] [32m[13:51:25.476] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:51:25 PM] [32m[13:51:25.480] [INFO] [Codegen] Sovereign Cell online @ http://localhost:32881[0m
+[2:51:25 PM] [32m[13:51:25.482] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:51:30 PM] [32m[13:51:30.483] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:51:30 PM] [32m[13:51:30.488] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:51:30 PM] [32m[13:51:30.488] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:51:55 PM] [32m[13:51:55.482] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:51:55 PM] [32m[13:51:55.484] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:51:55 PM] [32m[13:51:55.484] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:52:25 PM] [32m[13:52:25.482] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:52:25 PM] [32m[13:52:25.484] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:52:25 PM] [32m[13:52:25.484] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:52:55 PM] [32m[13:52:55.482] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:52:55 PM] [32m[13:52:55.484] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:52:55 PM] [32m[13:52:55.485] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:53:51 PM] [Codegen] Key fingerprint: 2a4595adb601480a
+[2:53:51 PM] [32m[13:53:51.170] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:53:51 PM] [32m[13:53:51.184] [INFO] [Codegen] Sovereign Cell online @ http://localhost:45659[0m
+[2:53:51 PM] [32m[13:53:51.185] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:53:51 PM] [32m[13:53:51.627] [INFO] [Codegen] [c7202e44] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [checklist][0m
+[2:53:51 PM] [32m[13:53:51.686] [INFO] [Codegen] [d2b08fdc] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:42651[0m
+[2:53:51 PM] [32m[13:53:51.686] [INFO] [Codegen] [59a9365b] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:43247[0m
+[2:53:56 PM] [32m[13:53:56.185] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [2105a552] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [feb92c3c] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [3ad5a3e2] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [23031428] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [a74d1313] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [6578cdab] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [54dbb22c] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [563ef3de] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [fa17de50] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [aa269431] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [56de4b4c] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [d7235699] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [0aca7cba] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [9945a979] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [5ad07071] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.186] [INFO] [Codegen] [5accb0b1] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [9934cb72] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [8a1455c1] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [ebdd3209] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [687a581a] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [5248dae4] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [c66be68d] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [26661759] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [3febdc7a] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [18fe3582] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [eaa5867f] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [6ae69d85] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [a324b4c8] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.187] [INFO] [Codegen] [e4d1e986] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [7a121dd3] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [b730c335] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [8c392b68] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [826b10cf] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [6dbd285f] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [74d5e467] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [469a234e] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [b2846642] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [a8ad8516] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [9da62660] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [abbfba71] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [fbf5e798] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [dcc0442d] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [36f29495] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [ffa2c48d] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [2cb42606] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [a5405e50] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [40043aa5] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [75b47b89] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.188] [INFO] [Codegen] [f8249655] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [3a25bdc4] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [8c92a4e2] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [53354472] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [ddae9ce5] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [b3574cf6] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [99431d2f] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [3faac167] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [fdae6862] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [146c7565] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [6fe6eeb5] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.189] [INFO] [Codegen] [b13575f8] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:53:56 PM] [32m[13:53:56.192] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:53:56 PM] [32m[13:53:56.192] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:54:06 PM] [32m[13:54:06.165] [INFO] [Codegen] [adfe302d] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [ai][0m
+[2:54:06 PM] [32m[13:54:06.185] [INFO] [Codegen] [bfd33709] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:43433[0m
+[2:54:06 PM] [32m[13:54:06.185] [INFO] [Codegen] [138d24af] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:37135[0m
+[2:54:08 PM] [32m[13:54:08.041] [INFO] [Codegen] [050a4ab9] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[2:54:08 PM] [32m[13:54:08.044] [INFO] [Codegen] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:37135[0m
+[2:54:08 PM] [32m[13:54:08.045] [INFO] [Codegen] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:41521[0m
+[2:54:08 PM] [32m[13:54:08.045] [INFO] [Codegen] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:35099[0m
+[2:54:21 PM] [32m[13:54:21.126] [INFO] [Codegen] [7972dbd6] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [checklist][0m
+[2:54:21 PM] [32m[13:54:21.150] [INFO] [Codegen] [af510c5f] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [projects][0m
+[2:54:21 PM] [32m[13:54:21.180] [INFO] [Codegen] [fd1921b8] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [comms][0m
+[2:54:21 PM] [32m[13:54:21.186] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:54:21 PM] [32m[13:54:21.186] [INFO] [Codegen] [467cd7be] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [f9c66cc7] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [3aa24066] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [dbb6f314] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [41d03f38] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [a7adde39] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [f117f7b9] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [8a0e386b] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [9028a10f] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [fe7c5fdf] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [5749dfb1] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [65b5d7cf] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [bef4ad2a] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [29e7f6df] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [885643a0] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [7b65a579] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [5e1b9c29] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [bc49f2f9] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [74c21914] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [105af36a] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [d8856e81] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [5932a135] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [fb7e88b8] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.187] [INFO] [Codegen] [60c2378d] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [5ebb32fb] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [ba50682a] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [0c76cc77] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [16f68510] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [62ee0d62] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [fcc16e91] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [d21085ad] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [300dbc81] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [f172aa8a] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [08cb9fed] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [a0098b9d] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [d2bfe5af] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [e1d46dd7] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [5a765161] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [5b33347e] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [be501351] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [0ff2a482] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [7540cf00] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [1f96c87f] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [d2a0be79] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [2bebf209] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [525d1217] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [604ce104] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [8c024dd1] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [f4d1c4b9] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [08d6f0da] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [9d790ce0] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [3a702f3e] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [bc7f59fd] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [57a10438] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [d740219d] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [77446ecc] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [adb28a52] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [df82ccfb] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [87944cce] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [ecd9c7d1] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.188] [INFO] [Codegen] [df574bfc] 📥 SIGNAL_ARRIVED: [cell/contract] from [Codegen][0m
+[2:54:21 PM] [32m[13:54:21.190] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:54:21 PM] [32m[13:54:21.190] [INFO] [Codegen] ✅ Generated 48 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[2:54:21 PM] [32m[13:54:21.190] [INFO] [Codegen] [c6955673] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:35099[0m
+[2:54:21 PM] [32m[13:54:21.190] [INFO] [Codegen] [900c1bd7] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:37135[0m
+[2:59:49 PM] [Codegen] Key fingerprint: 4d3d5cddff7e502a
+[2:59:49 PM] [32m[13:59:49.033] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[2:59:49 PM] [32m[13:59:49.038] [INFO] [Codegen] Sovereign Cell online @ http://localhost:41839[0m
+[2:59:49 PM] [32m[13:59:49.039] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[2:59:49 PM] [32m[13:59:49.057] [INFO] [Codegen] [d2728c9f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[2:59:49 PM] [32m[13:59:49.058] [INFO] [Codegen] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44935[0m
+[2:59:49 PM] [32m[13:59:49.058] [INFO] [Codegen] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43079[0m
+[2:59:49 PM] [32m[13:59:49.058] [INFO] [Codegen] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34749[0m
+[2:59:54 PM] [32m[13:59:54.040] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[2:59:54 PM] [32m[13:59:54.046] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[2:59:54 PM] [32m[13:59:54.046] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:00:19 PM] [32m[14:00:19.039] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:00:19 PM] [32m[14:00:19.043] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:00:19 PM] [32m[14:00:19.043] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:00:41 PM] [Codegen] Key fingerprint: 87ac195b156776ff
+[3:00:41 PM] [32m[14:00:41.987] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:00:42 PM] [32m[14:00:42.005] [INFO] [Codegen] Sovereign Cell online @ http://localhost:32867[0m
+[3:00:42 PM] [32m[14:00:42.005] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:00:47 PM] [32m[14:00:47.006] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:00:47 PM] [32m[14:00:47.012] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:00:47 PM] [32m[14:00:47.012] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:01:12 PM] [32m[14:01:12.005] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:01:12 PM] [32m[14:01:12.008] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:01:12 PM] [32m[14:01:12.008] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:01:19 PM] [32m[14:01:19.080] [INFO] [Codegen] [c036933f] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[3:01:19 PM] [32m[14:01:19.081] [INFO] [Codegen] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:39385[0m
+[3:01:19 PM] [32m[14:01:19.082] [INFO] [Codegen] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:36741[0m
+[3:01:19 PM] [32m[14:01:19.082] [INFO] [Codegen] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:39385[0m
+[3:01:19 PM] [32m[14:01:19.083] [INFO] [Codegen] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:43529[0m
+[3:01:42 PM] [32m[14:01:42.005] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:01:42 PM] [32m[14:01:42.008] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:01:42 PM] [32m[14:01:42.008] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:02:12 PM] [32m[14:02:12.005] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:02:12 PM] [32m[14:02:12.007] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:02:12 PM] [32m[14:02:12.007] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:02:42 PM] [32m[14:02:42.004] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:02:42 PM] [32m[14:02:42.006] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:02:42 PM] [32m[14:02:42.006] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:02:53 PM] [Codegen] Key fingerprint: f1bfda79966ebd7f
+[3:02:53 PM] [32m[14:02:53.006] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:02:53 PM] [32m[14:02:53.018] [INFO] [Codegen] Sovereign Cell online @ http://localhost:32809[0m
+[3:02:53 PM] [32m[14:02:53.019] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:02:53 PM] [32m[14:02:53.524] [INFO] [Codegen] [eef93af0] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:02:53 PM] [32m[14:02:53.524] [INFO] [Codegen] [a9ca8826] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43619[0m
+[3:02:58 PM] [32m[14:02:58.020] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:02:58 PM] [32m[14:02:58.025] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:02:58 PM] [32m[14:02:58.025] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:03:08 PM] [32m[14:03:08.021] [INFO] [Codegen] [f542857c] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:03:08 PM] [32m[14:03:08.021] [INFO] [Codegen] [a4292c5e] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40875[0m
+[3:03:23 PM] [32m[14:03:23.020] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:03:23 PM] [32m[14:03:23.041] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:03:23 PM] [32m[14:03:23.041] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:03:23 PM] [32m[14:03:23.044] [INFO] [Codegen] [64fb06b6] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:32869[0m
+[3:03:23 PM] [32m[14:03:23.044] [INFO] [Codegen] [f26178b0] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:03:38 PM] [32m[14:03:38.042] [INFO] [Codegen] [f715a9de] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43543[0m
+[3:03:38 PM] [32m[14:03:38.042] [INFO] [Codegen] [caff0bc8] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40761[0m
+[3:03:48 PM] [Codegen] Key fingerprint: 874c691d4eea3d60
+[3:03:48 PM] [32m[14:03:48.187] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:03:48 PM] [32m[14:03:48.194] [INFO] [Codegen] Sovereign Cell online @ http://localhost:44307[0m
+[3:03:48 PM] [32m[14:03:48.195] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:03:48 PM] [32m[14:03:48.698] [INFO] [Codegen] [c2a2041a] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37951[0m
+[3:03:48 PM] [32m[14:03:48.698] [INFO] [Codegen] [442cf7e4] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45425[0m
+[3:03:53 PM] [32m[14:03:53.196] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:03:53 PM] [32m[14:03:53.211] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:03:53 PM] [32m[14:03:53.211] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:04:03 PM] [32m[14:04:03.197] [INFO] [Codegen] [c3c5371d] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34813[0m
+[3:04:03 PM] [32m[14:04:03.197] [INFO] [Codegen] [a4612399] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37951[0m
+[3:04:18 PM] [32m[14:04:18.195] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:04:18 PM] [32m[14:04:18.199] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:04:18 PM] [32m[14:04:18.199] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:04:18 PM] [32m[14:04:18.202] [INFO] [Codegen] [aefd088b] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:42689[0m
+[3:04:18 PM] [32m[14:04:18.203] [INFO] [Codegen] [49aa4453] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45425[0m
+[3:05:53 PM] [Codegen] Key fingerprint: 963e6bee283e211e
+[3:05:53 PM] [32m[14:05:53.753] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:05:53 PM] [32m[14:05:53.760] [INFO] [Codegen] Sovereign Cell online @ http://localhost:45599[0m
+[3:05:53 PM] [32m[14:05:53.761] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:05:54 PM] [32m[14:05:54.264] [INFO] [Codegen] [378ec749] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34467[0m
+[3:05:54 PM] [32m[14:05:54.264] [INFO] [Codegen] [b452a86a] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:39011[0m
+[3:05:58 PM] [32m[14:05:58.761] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:05:58 PM] [32m[14:05:58.767] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:05:58 PM] [32m[14:05:58.767] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:06:43 PM] [Codegen] Key fingerprint: 9de39696f8069a40
+[3:06:43 PM] [32m[14:06:43.897] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:06:43 PM] [32m[14:06:43.901] [INFO] [Codegen] Sovereign Cell online @ http://localhost:43539[0m
+[3:06:43 PM] [32m[14:06:43.902] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:06:44 PM] [32m[14:06:44.405] [INFO] [Codegen] [80a20d5b] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45045[0m
+[3:06:44 PM] [32m[14:06:44.405] [INFO] [Codegen] [48e21335] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:41585[0m
+[3:07:39 PM] [Codegen] Key fingerprint: 41e4de8921f17dba
+[3:07:39 PM] [32m[14:07:39.612] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:07:39 PM] [32m[14:07:39.622] [INFO] [Codegen] Sovereign Cell online @ http://localhost:33833[0m
+[3:07:39 PM] [32m[14:07:39.622] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:07:40 PM] [33m[14:07:40.124] [WARN] [Codegen] [f1813ddf] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:42063 (undefined)[0m
+[3:07:40 PM] [33m[14:07:40.125] [WARN] [Codegen] [ba417131] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:37477 (undefined)[0m
+[3:08:35 PM] [Codegen] Key fingerprint: d4f3f06e19ba9683
+[3:08:35 PM] [32m[14:08:35.151] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:08:35 PM] [32m[14:08:35.158] [INFO] [Codegen] Sovereign Cell online @ http://localhost:40847[0m
+[3:08:35 PM] [32m[14:08:35.158] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:08:40 PM] [32m[14:08:40.159] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:08:40 PM] [32m[14:08:40.166] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:08:40 PM] [32m[14:08:40.166] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:09:03 PM] [Codegen] Key fingerprint: f03cbbad33e22934
+[3:09:03 PM] [32m[14:09:03.526] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:09:03 PM] [32m[14:09:03.531] [INFO] [Codegen] Sovereign Cell online @ http://localhost:40847[0m
+[3:09:03 PM] [32m[14:09:03.533] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:09:08 PM] [32m[14:09:08.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:09:08 PM] [32m[14:09:08.541] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:09:08 PM] [32m[14:09:08.541] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:09:18 PM] [32m[14:09:18.457] [INFO] [Codegen] 🌐 ~2 → 15p/62c[0m
+[3:09:19 PM] [32m[14:09:19.458] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:09:19 PM] [32m[14:09:19.460] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:09:19 PM] [32m[14:09:19.460] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:09:33 PM] [32m[14:09:33.476] [INFO] [Codegen] 🌐 ~1 → 15p/62c[0m
+[3:09:33 PM] [32m[14:09:33.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:09:33 PM] [32m[14:09:33.542] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:09:33 PM] [32m[14:09:33.542] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:10:12 PM] [Codegen] Key fingerprint: 0f52d4d22d6834ce
+[3:10:12 PM] [32m[14:10:12.524] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[3:10:12 PM] [32m[14:10:12.529] [INFO] [Codegen] Sovereign Cell online @ http://localhost:36087[0m
+[3:10:12 PM] [32m[14:10:12.529] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[3:10:17 PM] [32m[14:10:17.530] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:10:17 PM] [32m[14:10:17.538] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:10:17 PM] [32m[14:10:17.538] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:10:42 PM] [32m[14:10:42.530] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:10:42 PM] [32m[14:10:42.532] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:10:42 PM] [32m[14:10:42.532] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:11:12 PM] [32m[14:11:12.530] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:11:12 PM] [32m[14:11:12.535] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:11:12 PM] [32m[14:11:12.535] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[3:11:42 PM] [32m[14:11:42.530] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[3:11:42 PM] [32m[14:11:42.532] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[3:11:42 PM] [32m[14:11:42.532] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:47:54 PM] [Codegen] Key fingerprint: 10a15d219198844a
+[10:47:54 PM] [32m[21:47:54.530] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[10:47:54 PM] [32m[21:47:54.537] [INFO] [Codegen] Sovereign Cell online @ http://localhost:32975[0m
+[10:47:54 PM] [32m[21:47:54.538] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[10:47:59 PM] [32m[21:47:59.540] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:47:59 PM] [32m[21:47:59.555] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:47:59 PM] [32m[21:47:59.555] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:48:24 PM] [32m[21:48:24.539] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:48:24 PM] [32m[21:48:24.542] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:48:24 PM] [32m[21:48:24.542] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:48:54 PM] [32m[21:48:54.539] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:48:54 PM] [32m[21:48:54.541] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:48:54 PM] [32m[21:48:54.541] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:49:24 PM] [32m[21:49:24.538] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:49:24 PM] [32m[21:49:24.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:49:24 PM] [32m[21:49:24.540] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:49:54 PM] [32m[21:49:54.538] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:49:54 PM] [32m[21:49:54.543] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:49:54 PM] [32m[21:49:54.543] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:50:24 PM] [32m[21:50:24.538] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:50:24 PM] [32m[21:50:24.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:50:24 PM] [32m[21:50:24.540] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:50:54 PM] [32m[21:50:54.538] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:50:54 PM] [32m[21:50:54.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:50:54 PM] [32m[21:50:54.540] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:51:24 PM] [32m[21:51:24.538] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:51:24 PM] [32m[21:51:24.542] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:51:24 PM] [32m[21:51:24.542] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:51:54 PM] [32m[21:51:54.537] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:51:54 PM] [32m[21:51:54.542] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:51:54 PM] [32m[21:51:54.542] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:52:24 PM] [32m[21:52:24.537] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:52:24 PM] [32m[21:52:24.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:52:24 PM] [32m[21:52:24.540] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:52:54 PM] [32m[21:52:54.537] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:52:54 PM] [32m[21:52:54.539] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:52:54 PM] [32m[21:52:54.539] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:53:24 PM] [32m[21:53:24.537] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:53:24 PM] [32m[21:53:24.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:53:24 PM] [32m[21:53:24.540] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:53:54 PM] [32m[21:53:54.537] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:53:54 PM] [32m[21:53:54.538] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:53:54 PM] [32m[21:53:54.538] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:54:24 PM] [32m[21:54:24.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:54:24 PM] [32m[21:54:24.538] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:54:24 PM] [32m[21:54:24.538] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:54:54 PM] [32m[21:54:54.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:54:54 PM] [32m[21:54:54.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:54:54 PM] [32m[21:54:54.540] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:55:24 PM] [32m[21:55:24.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:55:24 PM] [32m[21:55:24.537] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:55:24 PM] [32m[21:55:24.538] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:55:54 PM] [32m[21:55:54.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:55:54 PM] [32m[21:55:54.544] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:55:54 PM] [32m[21:55:54.544] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:56:24 PM] [32m[21:56:24.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:56:24 PM] [32m[21:56:24.542] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:56:24 PM] [32m[21:56:24.542] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:56:54 PM] [32m[21:56:54.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:56:54 PM] [32m[21:56:54.538] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:56:54 PM] [32m[21:56:54.538] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:57:24 PM] [32m[21:57:24.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:57:24 PM] [32m[21:57:24.537] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:57:24 PM] [32m[21:57:24.537] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:57:54 PM] [32m[21:57:54.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:57:54 PM] [32m[21:57:54.537] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:57:54 PM] [32m[21:57:54.537] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:58:24 PM] [32m[21:58:24.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:58:24 PM] [32m[21:58:24.537] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:58:24 PM] [32m[21:58:24.537] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:58:54 PM] [32m[21:58:54.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:58:54 PM] [32m[21:58:54.536] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:58:54 PM] [32m[21:58:54.536] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:59:24 PM] [32m[21:59:24.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:59:24 PM] [32m[21:59:24.537] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:59:24 PM] [32m[21:59:24.537] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:59:54 PM] [32m[21:59:54.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:59:54 PM] [32m[21:59:54.537] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:59:54 PM] [32m[21:59:54.537] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:00:24 PM] [32m[22:00:24.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:00:24 PM] [32m[22:00:24.541] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:00:24 PM] [32m[22:00:24.541] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:00:54 PM] [32m[22:00:54.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:00:54 PM] [32m[22:00:54.537] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:00:54 PM] [32m[22:00:54.537] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:01:24 PM] [32m[22:01:24.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:01:24 PM] [32m[22:01:24.537] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:01:24 PM] [32m[22:01:24.537] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:01:54 PM] [32m[22:01:54.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:01:54 PM] [32m[22:01:54.538] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:01:54 PM] [32m[22:01:54.538] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:02:24 PM] [32m[22:02:24.535] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:02:24 PM] [32m[22:02:24.538] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:02:24 PM] [32m[22:02:24.538] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:02:54 PM] [32m[22:02:54.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:02:54 PM] [32m[22:02:54.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:02:54 PM] [32m[22:02:54.541] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:03:24 PM] [32m[22:03:24.536] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:03:24 PM] [32m[22:03:24.539] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:03:24 PM] [32m[22:03:24.539] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:03:39 PM] [Codegen] Key fingerprint: 2ff99173a7a31df7
+[11:03:39 PM] [32m[22:03:39.363] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:03:39 PM] [32m[22:03:39.369] [INFO] [Codegen] Sovereign Cell online @ http://localhost:41511[0m
+[11:03:39 PM] [32m[22:03:39.369] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:03:44 PM] [32m[22:03:44.370] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:03:44 PM] [32m[22:03:44.376] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:03:44 PM] [32m[22:03:44.376] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:04:09 PM] [32m[22:04:09.369] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:04:09 PM] [32m[22:04:09.372] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:04:09 PM] [32m[22:04:09.372] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:04:39 PM] [32m[22:04:39.369] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:04:39 PM] [32m[22:04:39.374] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:04:39 PM] [32m[22:04:39.374] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:05:09 PM] [32m[22:05:09.369] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:05:09 PM] [32m[22:05:09.372] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:05:09 PM] [32m[22:05:09.372] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:05:39 PM] [32m[22:05:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:05:39 PM] [32m[22:05:39.370] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:05:39 PM] [32m[22:05:39.370] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:06:09 PM] [32m[22:06:09.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:06:09 PM] [32m[22:06:09.370] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:06:09 PM] [32m[22:06:09.370] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:06:39 PM] [32m[22:06:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:06:39 PM] [32m[22:06:39.370] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:06:39 PM] [32m[22:06:39.370] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:07:09 PM] [32m[22:07:09.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:07:09 PM] [32m[22:07:09.370] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:07:09 PM] [32m[22:07:09.370] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:07:39 PM] [32m[22:07:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:07:39 PM] [32m[22:07:39.370] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:07:39 PM] [32m[22:07:39.370] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:08:09 PM] [32m[22:08:09.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:08:09 PM] [32m[22:08:09.370] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:08:09 PM] [32m[22:08:09.371] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:08:39 PM] [32m[22:08:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:08:39 PM] [32m[22:08:39.370] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:08:39 PM] [32m[22:08:39.370] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:09:09 PM] [32m[22:09:09.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:09:09 PM] [32m[22:09:09.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:09:09 PM] [32m[22:09:09.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:09:39 PM] [32m[22:09:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:09:39 PM] [32m[22:09:39.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:09:39 PM] [32m[22:09:39.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:10:09 PM] [32m[22:10:09.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:10:09 PM] [32m[22:10:09.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:10:09 PM] [32m[22:10:09.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:10:39 PM] [32m[22:10:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:10:39 PM] [32m[22:10:39.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:10:39 PM] [32m[22:10:39.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:11:09 PM] [32m[22:11:09.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:11:09 PM] [32m[22:11:09.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:11:09 PM] [32m[22:11:09.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:11:39 PM] [32m[22:11:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:11:39 PM] [32m[22:11:39.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:11:39 PM] [32m[22:11:39.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:12:09 PM] [32m[22:12:09.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:12:09 PM] [32m[22:12:09.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:12:09 PM] [32m[22:12:09.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:12:39 PM] [32m[22:12:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:12:39 PM] [32m[22:12:39.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:12:39 PM] [32m[22:12:39.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:13:09 PM] [32m[22:13:09.367] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:13:09 PM] [32m[22:13:09.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:13:09 PM] [32m[22:13:09.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:13:39 PM] [32m[22:13:39.368] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:13:39 PM] [32m[22:13:39.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:13:39 PM] [32m[22:13:39.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:14:09 PM] [32m[22:14:09.367] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:14:09 PM] [32m[22:14:09.369] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:14:09 PM] [32m[22:14:09.369] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:14:39 PM] [32m[22:14:39.367] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:14:39 PM] [32m[22:14:39.368] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:14:39 PM] [32m[22:14:39.368] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:15:09 PM] [32m[22:15:09.367] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:15:09 PM] [32m[22:15:09.368] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:15:09 PM] [32m[22:15:09.368] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:15:39 PM] [32m[22:15:39.366] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:15:39 PM] [32m[22:15:39.368] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:15:39 PM] [32m[22:15:39.368] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:16:09 PM] [32m[22:16:09.366] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:16:09 PM] [32m[22:16:09.367] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:16:09 PM] [32m[22:16:09.367] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:16:39 PM] [32m[22:16:39.365] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:16:39 PM] [32m[22:16:39.367] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:16:39 PM] [32m[22:16:39.367] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:17:09 PM] [32m[22:17:09.365] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:17:09 PM] [32m[22:17:09.366] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:17:09 PM] [32m[22:17:09.366] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:17:39 PM] [32m[22:17:39.365] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:17:39 PM] [32m[22:17:39.367] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:17:39 PM] [32m[22:17:39.367] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:18:09 PM] [32m[22:18:09.365] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:18:09 PM] [32m[22:18:09.366] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:18:09 PM] [32m[22:18:09.366] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:18:39 PM] [32m[22:18:39.365] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:18:39 PM] [32m[22:18:39.366] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:18:39 PM] [32m[22:18:39.366] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:19:09 PM] [32m[22:19:09.365] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:19:09 PM] [32m[22:19:09.366] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:19:09 PM] [32m[22:19:09.366] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:19:39 PM] [32m[22:19:39.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:19:39 PM] [32m[22:19:39.366] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:19:39 PM] [32m[22:19:39.366] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:20:09 PM] [32m[22:20:09.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:20:09 PM] [32m[22:20:09.366] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:20:09 PM] [32m[22:20:09.366] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:20:39 PM] [32m[22:20:39.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:20:39 PM] [32m[22:20:39.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:20:39 PM] [32m[22:20:39.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:21:09 PM] [32m[22:21:09.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:21:09 PM] [32m[22:21:09.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:21:09 PM] [32m[22:21:09.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:21:39 PM] [32m[22:21:39.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:21:39 PM] [32m[22:21:39.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:21:39 PM] [32m[22:21:39.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:22:09 PM] [32m[22:22:09.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:22:09 PM] [32m[22:22:09.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:22:09 PM] [32m[22:22:09.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:22:39 PM] [32m[22:22:39.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:22:39 PM] [32m[22:22:39.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:22:39 PM] [32m[22:22:39.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:23:09 PM] [32m[22:23:09.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:23:09 PM] [32m[22:23:09.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:23:09 PM] [32m[22:23:09.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:23:39 PM] [32m[22:23:39.364] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:23:39 PM] [32m[22:23:39.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:23:39 PM] [32m[22:23:39.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:24:09 PM] [32m[22:24:09.363] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:24:09 PM] [32m[22:24:09.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:24:09 PM] [32m[22:24:09.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:24:39 PM] [32m[22:24:39.363] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:24:39 PM] [32m[22:24:39.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:24:39 PM] [32m[22:24:39.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:25:09 PM] [32m[22:25:09.363] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:25:09 PM] [32m[22:25:09.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:25:09 PM] [32m[22:25:09.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:25:39 PM] [32m[22:25:39.363] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:25:39 PM] [32m[22:25:39.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:25:39 PM] [32m[22:25:39.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:26:09 PM] [32m[22:26:09.363] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:26:09 PM] [32m[22:26:09.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:26:09 PM] [32m[22:26:09.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:26:39 PM] [32m[22:26:39.363] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:26:39 PM] [32m[22:26:39.364] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:26:39 PM] [32m[22:26:39.364] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:27:09 PM] [32m[22:27:09.362] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:27:09 PM] [32m[22:27:09.365] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:27:09 PM] [32m[22:27:09.365] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:27:39 PM] [32m[22:27:39.362] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:27:39 PM] [32m[22:27:39.364] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:27:39 PM] [32m[22:27:39.364] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:28:09 PM] [32m[22:28:09.362] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:28:09 PM] [32m[22:28:09.364] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:28:09 PM] [32m[22:28:09.364] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:28:39 PM] [32m[22:28:39.362] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:28:39 PM] [32m[22:28:39.363] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:28:39 PM] [32m[22:28:39.363] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:29:09 PM] [32m[22:29:09.362] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:29:09 PM] [32m[22:29:09.371] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:29:09 PM] [32m[22:29:09.371] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:29:17 PM] [Codegen] Key fingerprint: ccd5e43f50885fce
+[11:29:17 PM] [32m[22:29:17.293] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:29:17 PM] [32m[22:29:17.312] [INFO] [Codegen] Sovereign Cell online @ http://localhost:46387[0m
+[11:29:17 PM] [32m[22:29:17.315] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:29:22 PM] [32m[22:29:22.316] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:29:22 PM] [32m[22:29:22.321] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:29:22 PM] [32m[22:29:22.321] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:29:47 PM] [32m[22:29:47.315] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:29:47 PM] [32m[22:29:47.317] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:29:47 PM] [32m[22:29:47.317] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:30:17 PM] [32m[22:30:17.314] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:30:17 PM] [32m[22:30:17.317] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:30:17 PM] [32m[22:30:17.317] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:30:47 PM] [32m[22:30:47.314] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:30:47 PM] [32m[22:30:47.320] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:30:47 PM] [32m[22:30:47.320] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:31:17 PM] [32m[22:31:17.315] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:31:17 PM] [32m[22:31:17.317] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:31:17 PM] [32m[22:31:17.317] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:31:47 PM] [32m[22:31:47.315] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:31:47 PM] [32m[22:31:47.316] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:31:47 PM] [32m[22:31:47.316] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:32:17 PM] [32m[22:32:17.314] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:32:17 PM] [32m[22:32:17.317] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:32:17 PM] [32m[22:32:17.317] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:32:32 PM] [Codegen] Key fingerprint: f9a1d1f4636548e0
+[11:32:32 PM] [32m[22:32:32.102] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:32:32 PM] [32m[22:32:32.107] [INFO] [Codegen] Sovereign Cell online @ http://localhost:44237[0m
+[11:32:32 PM] [32m[22:32:32.108] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:32:37 PM] [32m[22:32:37.109] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:32:37 PM] [32m[22:32:37.116] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:32:37 PM] [32m[22:32:37.116] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:33:02 PM] [32m[22:33:02.108] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:33:02 PM] [32m[22:33:02.110] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:33:02 PM] [32m[22:33:02.110] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:33:32 PM] [32m[22:33:32.107] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:33:32 PM] [32m[22:33:32.110] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:33:32 PM] [32m[22:33:32.110] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:34:02 PM] [32m[22:34:02.107] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:34:02 PM] [32m[22:34:02.111] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:34:02 PM] [32m[22:34:02.111] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:34:32 PM] [32m[22:34:32.107] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:34:32 PM] [32m[22:34:32.109] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:34:32 PM] [32m[22:34:32.109] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:35:02 PM] [32m[22:35:02.107] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:35:02 PM] [32m[22:35:02.109] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:35:02 PM] [32m[22:35:02.109] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:35:13 PM] [Codegen] Key fingerprint: 8943c88117facde9
+[11:35:13 PM] [32m[22:35:13.623] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:35:13 PM] [32m[22:35:13.628] [INFO] [Codegen] Sovereign Cell online @ http://localhost:36629[0m
+[11:35:13 PM] [32m[22:35:13.629] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:35:18 PM] [32m[22:35:18.631] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:35:18 PM] [32m[22:35:18.637] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:35:18 PM] [32m[22:35:18.637] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:35:43 PM] [32m[22:35:43.630] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:35:43 PM] [32m[22:35:43.632] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:35:43 PM] [32m[22:35:43.632] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:36:13 PM] [32m[22:36:13.630] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:36:13 PM] [32m[22:36:13.632] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:36:13 PM] [32m[22:36:13.632] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:36:43 PM] [32m[22:36:43.629] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:36:43 PM] [32m[22:36:43.631] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:36:43 PM] [32m[22:36:43.631] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:37:13 PM] [32m[22:37:13.629] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:37:13 PM] [32m[22:37:13.631] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:37:13 PM] [32m[22:37:13.631] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:37:43 PM] [32m[22:37:43.630] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:37:43 PM] [32m[22:37:43.637] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:37:43 PM] [32m[22:37:43.637] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:38:13 PM] [32m[22:38:13.631] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:38:13 PM] [32m[22:38:13.634] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:38:13 PM] [32m[22:38:13.634] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:38:43 PM] [32m[22:38:43.631] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:38:43 PM] [32m[22:38:43.637] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:38:43 PM] [32m[22:38:43.637] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:39:13 PM] [32m[22:39:13.631] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:39:13 PM] [32m[22:39:13.633] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:39:13 PM] [32m[22:39:13.633] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:39:43 PM] [32m[22:39:43.630] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:39:43 PM] [32m[22:39:43.640] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:39:43 PM] [32m[22:39:43.640] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:40:13 PM] [32m[22:40:13.631] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:40:13 PM] [32m[22:40:13.633] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:40:13 PM] [32m[22:40:13.633] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:40:28 PM] [Codegen] Key fingerprint: 29d238a0d9f71139
+[11:40:28 PM] [32m[22:40:28.898] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:40:28 PM] [32m[22:40:28.903] [INFO] [Codegen] Sovereign Cell online @ http://localhost:37719[0m
+[11:40:28 PM] [32m[22:40:28.904] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:40:33 PM] [32m[22:40:33.904] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:40:33 PM] [32m[22:40:33.910] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:40:33 PM] [32m[22:40:33.910] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:40:58 PM] [32m[22:40:58.904] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:40:58 PM] [32m[22:40:58.907] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:40:58 PM] [32m[22:40:58.907] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:41:28 PM] [32m[22:41:28.903] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:41:28 PM] [32m[22:41:28.905] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:41:28 PM] [32m[22:41:28.905] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:41:58 PM] [32m[22:41:58.903] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:41:58 PM] [32m[22:41:58.906] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:41:58 PM] [32m[22:41:58.906] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:42:28 PM] [32m[22:42:28.903] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:42:28 PM] [32m[22:42:28.905] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:42:28 PM] [32m[22:42:28.905] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:42:58 PM] [32m[22:42:58.903] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:42:58 PM] [32m[22:42:58.905] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:42:58 PM] [32m[22:42:58.905] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:43:28 PM] [32m[22:43:28.903] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:43:28 PM] [32m[22:43:28.907] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:43:28 PM] [32m[22:43:28.907] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:43:58 PM] [32m[22:43:58.903] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:43:58 PM] [32m[22:43:58.904] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:43:58 PM] [32m[22:43:58.904] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:44:28 PM] [32m[22:44:28.903] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:44:28 PM] [32m[22:44:28.904] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:44:28 PM] [32m[22:44:28.904] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:44:58 PM] [32m[22:44:58.902] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:44:58 PM] [32m[22:44:58.904] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:44:58 PM] [32m[22:44:58.905] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:45:28 PM] [32m[22:45:28.902] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:45:28 PM] [32m[22:45:28.904] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:45:28 PM] [32m[22:45:28.904] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:45:58 PM] [32m[22:45:58.902] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:45:58 PM] [32m[22:45:58.903] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:45:58 PM] [32m[22:45:58.903] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:46:28 PM] [32m[22:46:28.902] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:46:28 PM] [32m[22:46:28.904] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:46:28 PM] [32m[22:46:28.904] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:46:58 PM] [32m[22:46:58.902] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:46:58 PM] [32m[22:46:58.903] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:46:58 PM] [32m[22:46:58.903] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:47:28 PM] [32m[22:47:28.901] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:47:28 PM] [32m[22:47:28.903] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:47:28 PM] [32m[22:47:28.903] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:47:49 PM] [Codegen] Key fingerprint: 47bab729d88018ba
+[11:47:49 PM] [32m[22:47:49.768] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:47:49 PM] [32m[22:47:49.775] [INFO] [Codegen] Sovereign Cell online @ http://localhost:46827[0m
+[11:47:49 PM] [32m[22:47:49.776] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:47:54 PM] [32m[22:47:54.777] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:47:54 PM] [32m[22:47:54.783] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:47:54 PM] [32m[22:47:54.783] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:48:19 PM] [32m[22:48:19.776] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:48:19 PM] [32m[22:48:19.778] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:48:19 PM] [32m[22:48:19.778] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:48:49 PM] [32m[22:48:49.776] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:48:49 PM] [32m[22:48:49.777] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:48:49 PM] [32m[22:48:49.777] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:49:19 PM] [32m[22:49:19.775] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:49:19 PM] [32m[22:49:19.779] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:49:19 PM] [32m[22:49:19.779] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:49:49 PM] [32m[22:49:49.775] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:49:49 PM] [32m[22:49:49.777] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:49:49 PM] [32m[22:49:49.777] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:50:19 PM] [32m[22:50:19.775] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:50:19 PM] [32m[22:50:19.777] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:50:19 PM] [32m[22:50:19.777] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:50:49 PM] [32m[22:50:49.775] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:50:49 PM] [32m[22:50:49.777] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:50:49 PM] [32m[22:50:49.777] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:51:19 PM] [32m[22:51:19.775] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:51:19 PM] [32m[22:51:19.777] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:51:19 PM] [32m[22:51:19.777] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:51:49 PM] [32m[22:51:49.775] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:51:49 PM] [32m[22:51:49.778] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:51:49 PM] [32m[22:51:49.778] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:52:19 PM] [32m[22:52:19.774] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:52:19 PM] [32m[22:52:19.777] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:52:19 PM] [32m[22:52:19.777] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:52:49 PM] [32m[22:52:49.774] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:52:49 PM] [32m[22:52:49.776] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:52:49 PM] [32m[22:52:49.776] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:53:19 PM] [32m[22:53:19.774] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:53:19 PM] [32m[22:53:19.777] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:53:19 PM] [32m[22:53:19.777] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:53:29 PM] [Codegen] Key fingerprint: e25636c5c352655f
+[11:53:29 PM] [32m[22:53:29.180] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:53:29 PM] [32m[22:53:29.194] [INFO] [Codegen] Sovereign Cell online @ http://localhost:39631[0m
+[11:53:29 PM] [32m[22:53:29.195] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:53:34 PM] [32m[22:53:34.196] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:53:34 PM] [32m[22:53:34.202] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:53:34 PM] [32m[22:53:34.202] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:53:59 PM] [32m[22:53:59.195] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:53:59 PM] [32m[22:53:59.198] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:53:59 PM] [32m[22:53:59.198] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:56:22 PM] [Codegen] Key fingerprint: c284435f6d2e1ba1
+[11:56:22 PM] [32m[22:56:22.758] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:56:22 PM] [32m[22:56:22.764] [INFO] [Codegen] Sovereign Cell online @ http://localhost:42201[0m
+[11:56:22 PM] [32m[22:56:22.765] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:56:27 PM] [32m[22:56:27.766] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:56:27 PM] [32m[22:56:27.772] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:56:27 PM] [32m[22:56:27.772] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:56:53 PM] [Codegen] Key fingerprint: c15d664a8036380e
+[11:56:53 PM] [32m[22:56:53.718] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:56:53 PM] [32m[22:56:53.726] [INFO] [Codegen] Sovereign Cell online @ http://localhost:44213[0m
+[11:56:53 PM] [32m[22:56:53.727] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:56:58 PM] [32m[22:56:58.728] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:56:58 PM] [32m[22:56:58.735] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:56:58 PM] [32m[22:56:58.735] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:57:23 PM] [32m[22:57:23.727] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:57:23 PM] [32m[22:57:23.730] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:57:23 PM] [32m[22:57:23.730] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:57:53 PM] [32m[22:57:53.727] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:57:53 PM] [32m[22:57:53.731] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:57:53 PM] [32m[22:57:53.731] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:58:23 PM] [32m[22:58:23.727] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:58:23 PM] [32m[22:58:23.733] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:58:23 PM] [32m[22:58:23.733] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:58:53 PM] [32m[22:58:53.727] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:58:53 PM] [32m[22:58:53.733] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:58:53 PM] [32m[22:58:53.733] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:59:23 PM] [32m[22:59:23.726] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:59:23 PM] [32m[22:59:23.728] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:59:23 PM] [32m[22:59:23.728] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:59:46 PM] [Codegen] Key fingerprint: 502033e1fe39965e
+[11:59:46 PM] [32m[22:59:46.519] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:59:46 PM] [32m[22:59:46.529] [INFO] [Codegen] Sovereign Cell online @ http://localhost:34053[0m
+[11:59:46 PM] [32m[22:59:46.530] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:59:46 PM] [32m[22:59:46.570] [INFO] [Codegen] [7fcc9c79] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:59:46 PM] [32m[22:59:46.572] [INFO] [Codegen] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34507[0m
+[11:59:46 PM] [32m[22:59:46.572] [INFO] [Codegen] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46313[0m
+[11:59:46 PM] [32m[22:59:46.572] [INFO] [Codegen] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40269[0m
+[11:59:51 PM] [32m[22:59:51.530] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:59:51 PM] [32m[22:59:51.539] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:59:51 PM] [32m[22:59:51.539] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:00:16 AM] [32m[23:00:16.530] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:00:16 AM] [32m[23:00:16.534] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:00:16 AM] [32m[23:00:16.534] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:00:46 AM] [32m[23:00:46.530] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:00:46 AM] [32m[23:00:46.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:00:46 AM] [32m[23:00:46.540] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:01:16 AM] [32m[23:01:16.530] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:01:16 AM] [32m[23:01:16.540] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:01:16 AM] [32m[23:01:16.540] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:01:46 AM] [32m[23:01:46.529] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:01:46 AM] [32m[23:01:46.531] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:01:46 AM] [32m[23:01:46.531] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:02:16 AM] [32m[23:02:16.529] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:02:16 AM] [32m[23:02:16.531] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:02:16 AM] [32m[23:02:16.531] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:02:46 AM] [32m[23:02:46.529] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:02:46 AM] [32m[23:02:46.533] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:02:46 AM] [32m[23:02:46.533] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:07:18 AM] [Codegen] Key fingerprint: 7aa8742c1c59e833
+[12:07:18 AM] [32m[23:07:18.284] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[12:07:18 AM] [32m[23:07:18.289] [INFO] [Codegen] Sovereign Cell online @ http://localhost:40629[0m
+[12:07:18 AM] [32m[23:07:18.295] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[12:07:18 AM] [32m[23:07:18.348] [INFO] [Codegen] [218a6a89] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:07:18 AM] [32m[23:07:18.349] [INFO] [Codegen] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41737[0m
+[12:07:18 AM] [32m[23:07:18.349] [INFO] [Codegen] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46605[0m
+[12:07:18 AM] [32m[23:07:18.349] [INFO] [Codegen] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43693[0m
+[12:07:23 AM] [32m[23:07:23.296] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:07:23 AM] [32m[23:07:23.305] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:07:23 AM] [32m[23:07:23.305] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:07:48 AM] [32m[23:07:48.295] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:07:48 AM] [32m[23:07:48.300] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:07:48 AM] [32m[23:07:48.300] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:08:37 AM] [Codegen] Key fingerprint: b1aaedb228364139
+[12:08:37 AM] [32m[23:08:37.047] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[12:08:37 AM] [32m[23:08:37.055] [INFO] [Codegen] Sovereign Cell online @ http://localhost:41557[0m
+[12:08:37 AM] [32m[23:08:37.056] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[12:08:42 AM] [32m[23:08:42.058] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:08:42 AM] [32m[23:08:42.067] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:08:42 AM] [32m[23:08:42.067] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:09:07 AM] [32m[23:09:07.057] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:09:07 AM] [32m[23:09:07.061] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:09:07 AM] [32m[23:09:07.061] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:09:37 AM] [32m[23:09:37.056] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:09:37 AM] [32m[23:09:37.062] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:09:37 AM] [32m[23:09:37.062] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:10:07 AM] [32m[23:10:07.056] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:10:07 AM] [32m[23:10:07.058] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:10:07 AM] [32m[23:10:07.058] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:10:37 AM] [32m[23:10:37.056] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:10:37 AM] [32m[23:10:37.057] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:10:37 AM] [32m[23:10:37.057] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:11:04 AM] [32m[23:11:04.473] [INFO] [Codegen] [6d4ed6d6] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:11:04 AM] [32m[23:11:04.474] [INFO] [Codegen] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36661[0m
+[12:11:04 AM] [33m[23:11:04.477] [WARN] [Codegen] [6d4ed6d6] ❌ RPC_REMOTE_FAIL: [memory/goals/create] @ http://localhost:36661 (HANDLER_ERR)[0m
+[12:11:04 AM] [32m[23:11:04.477] [INFO] [Codegen] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40753[0m
+[12:11:04 AM] [32m[23:11:04.477] [INFO] [Codegen] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:41293[0m
+[12:11:04 AM] [32m[23:11:04.477] [INFO] [Codegen] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39149[0m
+[12:11:07 AM] [32m[23:11:07.055] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:11:07 AM] [32m[23:11:07.057] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:11:07 AM] [32m[23:11:07.058] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:11:37 AM] [32m[23:11:37.055] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:11:37 AM] [32m[23:11:37.057] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:11:37 AM] [32m[23:11:37.058] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:12:07 AM] [32m[23:12:07.055] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:12:07 AM] [32m[23:12:07.057] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:12:07 AM] [32m[23:12:07.057] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:12:37 AM] [32m[23:12:37.055] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:12:37 AM] [32m[23:12:37.057] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:12:37 AM] [32m[23:12:37.057] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:13:07 AM] [32m[23:13:07.055] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:13:07 AM] [32m[23:13:07.061] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:13:07 AM] [32m[23:13:07.062] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:13:37 AM] [32m[23:13:37.054] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:13:37 AM] [32m[23:13:37.056] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:13:37 AM] [32m[23:13:37.057] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:14:07 AM] [32m[23:14:07.054] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:14:07 AM] [32m[23:14:07.068] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:14:07 AM] [32m[23:14:07.068] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:14:37 AM] [32m[23:14:37.054] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:14:37 AM] [32m[23:14:37.055] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:14:37 AM] [32m[23:14:37.055] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:15:04 AM] [Codegen] Key fingerprint: 00d9ce3f28b67472
+[12:15:04 AM] [32m[23:15:04.598] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[12:15:04 AM] [32m[23:15:04.603] [INFO] [Codegen] Sovereign Cell online @ http://localhost:33927[0m
+[12:15:04 AM] [32m[23:15:04.605] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[12:15:09 AM] [32m[23:15:09.605] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:15:09 AM] [32m[23:15:09.612] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:15:09 AM] [32m[23:15:09.612] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:15:34 AM] [32m[23:15:34.605] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:15:34 AM] [32m[23:15:34.609] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:15:34 AM] [32m[23:15:34.609] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:16:04 AM] [32m[23:16:04.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:16:04 AM] [32m[23:16:04.608] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:16:04 AM] [32m[23:16:04.608] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:16:34 AM] [32m[23:16:34.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:16:34 AM] [32m[23:16:34.606] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:16:34 AM] [32m[23:16:34.606] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:17:04 AM] [32m[23:17:04.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:17:04 AM] [32m[23:17:04.606] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:17:04 AM] [32m[23:17:04.606] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:17:34 AM] [32m[23:17:34.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:17:34 AM] [32m[23:17:34.606] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:17:34 AM] [32m[23:17:34.606] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:18:04 AM] [32m[23:18:04.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:18:04 AM] [32m[23:18:04.607] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:18:04 AM] [32m[23:18:04.607] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:18:34 AM] [32m[23:18:34.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:18:34 AM] [32m[23:18:34.606] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:18:34 AM] [32m[23:18:34.606] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:19:04 AM] [32m[23:19:04.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:19:04 AM] [32m[23:19:04.606] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:19:04 AM] [32m[23:19:04.606] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:19:34 AM] [32m[23:19:34.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:19:34 AM] [32m[23:19:34.606] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:19:34 AM] [32m[23:19:34.606] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:20:04 AM] [32m[23:20:04.605] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:20:04 AM] [32m[23:20:04.611] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:20:04 AM] [32m[23:20:04.611] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:20:34 AM] [32m[23:20:34.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:20:34 AM] [32m[23:20:34.607] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:20:34 AM] [32m[23:20:34.607] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:21:04 AM] [32m[23:21:04.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:21:04 AM] [32m[23:21:04.606] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:21:04 AM] [32m[23:21:04.606] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:21:34 AM] [32m[23:21:34.604] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:21:34 AM] [32m[23:21:34.606] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:21:34 AM] [32m[23:21:34.606] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:36:07 AM] [Codegen] Key fingerprint: 36315a6a63c99f61
+[12:36:07 AM] [32m[23:36:07.118] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[12:36:07 AM] [32m[23:36:07.122] [INFO] [Codegen] Sovereign Cell online @ http://localhost:35417[0m
+[12:36:07 AM] [32m[23:36:07.123] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[12:36:12 AM] [32m[23:36:12.125] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:36:12 AM] [32m[23:36:12.153] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:36:12 AM] [32m[23:36:12.154] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m

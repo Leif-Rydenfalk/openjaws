@@ -235,6 +235,7 @@ function createMeshProxy(cell: TypedRheoCell): MeshProxy {
                 get(_subTarget, procedure: string) {
                     return async (input?: any) => {
                         const capability = `${namespace}/${procedure}` as ValidCapability;
+                        cell.log('INFO', `🔗 PROXY_CALL: [${capability}]`);
                         const result = await cell.askMesh(
                             capability,
                             ...(input !== undefined ? [input] : []) as any

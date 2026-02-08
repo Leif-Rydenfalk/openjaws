@@ -333,3 +333,511 @@
 [11:39:30 PM] [32m[22:39:30.147] [INFO] [log] 📝 Logged: AI_COMPLETE: 1873tok, 8376ms (...[0m
 [11:39:30 PM] [32m[22:39:30.148] [INFO] [log] 📝 Logged: TOOL_START: list_add (session:...[0m
 [11:49:21 PM] [32m[22:49:21.768] [INFO] [log] 📝 Logged: TOOL_END: list_add FAILED (591...[0m
+[2:05:49 PM] [log] Key fingerprint: 617125e846aeed8b
+[2:05:49 PM] [32m[13:05:49.979] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:05:49 PM] [32m[13:05:49.983] [INFO] [log] Sovereign Cell online @ http://localhost:43447[0m
+[2:05:49 PM] [32m[13:05:49.984] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:05:49 PM] [32m[13:05:49.984] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:09:10 PM] [log] Key fingerprint: 453ebcb1b70b22f4
+[2:09:10 PM] [32m[13:09:10.469] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:09:10 PM] [32m[13:09:10.482] [INFO] [log] Sovereign Cell online @ http://localhost:40949[0m
+[2:09:10 PM] [32m[13:09:10.482] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:09:10 PM] [32m[13:09:10.482] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:12:41 PM] [log] Key fingerprint: b03111c956b7608d
+[2:12:41 PM] [32m[13:12:41.646] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:12:41 PM] [32m[13:12:41.652] [INFO] [log] Sovereign Cell online @ http://localhost:46403[0m
+[2:12:41 PM] [32m[13:12:41.653] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:12:41 PM] [32m[13:12:41.653] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:14:02 PM] [log] Key fingerprint: f25b44bd3c8514d3
+[2:14:02 PM] [32m[13:14:02.863] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:14:02 PM] [32m[13:14:02.872] [INFO] [log] Sovereign Cell online @ http://localhost:36847[0m
+[2:14:02 PM] [32m[13:14:02.874] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:14:02 PM] [32m[13:14:02.874] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:14:03 PM] [32m[13:14:03.074] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:14:04 PM] [32m[13:14:04.650] [INFO] [log] 📝 Logged: AI_COMPLETE: 239tok, 1578ms (r...[0m
+[2:17:10 PM] [log] Key fingerprint: de97e7b4710b8a4d
+[2:17:10 PM] [32m[13:17:10.657] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:17:10 PM] [32m[13:17:10.678] [INFO] [log] Sovereign Cell online @ http://localhost:34751[0m
+[2:17:10 PM] [32m[13:17:10.679] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:17:10 PM] [32m[13:17:10.679] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:17:10 PM] [32m[13:17:10.784] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:17:12 PM] [32m[13:17:12.360] [INFO] [log] 📝 Logged: AI_COMPLETE: 283tok, 1577ms (r...[0m
+[2:17:12 PM] [32m[13:17:12.371] [INFO] [log] 📝 Logged: AI_REQUEST: USER: Online?... (...[0m
+[2:17:15 PM] [32m[13:17:15.344] [INFO] [log] 📝 Logged: AI_COMPLETE: 843tok, 2973ms (r...[0m
+[2:24:04 PM] [log] Key fingerprint: add7c5221b21c5d0
+[2:24:04 PM] [32m[13:24:04.704] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:24:04 PM] [32m[13:24:04.716] [INFO] [log] Sovereign Cell online @ http://localhost:41877[0m
+[2:24:04 PM] [32m[13:24:04.719] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:24:04 PM] [32m[13:24:04.719] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:27:11 PM] [log] Key fingerprint: e9e87a60b55ce5f1
+[2:27:11 PM] [32m[13:27:11.701] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:27:11 PM] [32m[13:27:11.727] [INFO] [log] Sovereign Cell online @ http://localhost:43523[0m
+[2:27:11 PM] [32m[13:27:11.728] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:27:11 PM] [32m[13:27:11.728] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:27:18 PM] [32m[13:27:18.577] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:27:20 PM] [32m[13:27:20.913] [INFO] [log] 📝 Logged: AI_COMPLETE: 347tok, 2337ms (r...[0m
+[2:27:20 PM] [32m[13:27:20.924] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:27:23 PM] [32m[13:27:23.772] [INFO] [log] 📝 Logged: AI_COMPLETE: 852tok, 2847ms (r...[0m
+[2:27:23 PM] [32m[13:27:23.775] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:27:23 PM] [32m[13:27:23.777] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (2m...[0m
+[2:27:23 PM] [32m[13:27:23.778] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:27:28 PM] [32m[13:27:28.317] [INFO] [log] 📝 Logged: AI_COMPLETE: 1062tok, 4538ms (...[0m
+[2:28:55 PM] [log] Key fingerprint: 70dd215437e7114a
+[2:28:55 PM] [32m[13:28:55.126] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:28:55 PM] [32m[13:28:55.133] [INFO] [log] Sovereign Cell online @ http://localhost:44501[0m
+[2:28:55 PM] [32m[13:28:55.135] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:28:55 PM] [32m[13:28:55.135] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:29:21 PM] [32m[13:29:21.611] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:29:23 PM] [32m[13:29:23.972] [INFO] [log] 📝 Logged: AI_COMPLETE: 373tok, 2362ms (r...[0m
+[2:29:23 PM] [32m[13:29:23.986] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:29:29 PM] [32m[13:29:29.563] [INFO] [log] 📝 Logged: AI_COMPLETE: 1223tok, 5578ms (...[0m
+[2:29:29 PM] [32m[13:29:29.566] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:29:29 PM] [32m[13:29:29.567] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (2m...[0m
+[2:29:29 PM] [32m[13:29:29.568] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:29:33 PM] [32m[13:29:33.826] [INFO] [log] 📝 Logged: AI_COMPLETE: 1060tok, 4257ms (...[0m
+[2:29:33 PM] [32m[13:29:33.927] [INFO] [log] 📝 Logged: TTS_API_ERROR: 404 - {
+[2:29:33 PM]   "erro...[0m
+[2:30:25 PM] [log] Key fingerprint: 849d9a73fe8177d5
+[2:30:25 PM] [32m[13:30:25.221] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:30:25 PM] [32m[13:30:25.230] [INFO] [log] Sovereign Cell online @ http://localhost:40607[0m
+[2:30:25 PM] [32m[13:30:25.231] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:30:25 PM] [32m[13:30:25.231] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:30:34 PM] [32m[13:30:34.899] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:30:37 PM] [32m[13:30:37.011] [INFO] [log] 📝 Logged: AI_COMPLETE: 343tok, 2112ms (r...[0m
+[2:30:37 PM] [32m[13:30:37.024] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:30:41 PM] [32m[13:30:41.432] [INFO] [log] 📝 Logged: AI_COMPLETE: 1044tok, 4408ms (...[0m
+[2:30:41 PM] [32m[13:30:41.434] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:30:41 PM] [32m[13:30:41.437] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (2m...[0m
+[2:30:41 PM] [32m[13:30:41.437] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:30:45 PM] [32m[13:30:45.141] [INFO] [log] 📝 Logged: AI_COMPLETE: 969tok, 3703ms (r...[0m
+[2:30:45 PM] [32m[13:30:45.240] [INFO] [log] 📝 Logged: TTS_API_ERROR: 404 - {
+[2:30:45 PM]   "erro...[0m
+[2:33:05 PM] [log] Key fingerprint: da551eb5945fa381
+[2:33:05 PM] [32m[13:33:05.627] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:33:05 PM] [32m[13:33:05.632] [INFO] [log] Sovereign Cell online @ http://localhost:36287[0m
+[2:33:05 PM] [32m[13:33:05.634] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:33:05 PM] [32m[13:33:05.634] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:33:11 PM] [32m[13:33:11.611] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:33:14 PM] [32m[13:33:14.107] [INFO] [log] 📝 Logged: AI_COMPLETE: 412tok, 2497ms (r...[0m
+[2:33:14 PM] [32m[13:33:14.119] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:33:18 PM] [32m[13:33:18.725] [INFO] [log] 📝 Logged: AI_COMPLETE: 1111tok, 4605ms (...[0m
+[2:33:18 PM] [32m[13:33:18.728] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:33:18 PM] [32m[13:33:18.730] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (2m...[0m
+[2:33:18 PM] [32m[13:33:18.730] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:33:22 PM] [32m[13:33:22.682] [INFO] [log] 📝 Logged: AI_COMPLETE: 986tok, 3951ms (r...[0m
+[2:35:04 PM] [log] Key fingerprint: 2863096594c62c1f
+[2:35:04 PM] [32m[13:35:04.582] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:35:04 PM] [32m[13:35:04.590] [INFO] [log] Sovereign Cell online @ http://localhost:41203[0m
+[2:35:04 PM] [32m[13:35:04.591] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:35:04 PM] [32m[13:35:04.591] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:35:09 PM] [32m[13:35:09.485] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:35:11 PM] [32m[13:35:11.180] [INFO] [log] 📝 Logged: AI_COMPLETE: 298tok, 1695ms (r...[0m
+[2:35:11 PM] [32m[13:35:11.192] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:35:13 PM] [32m[13:35:13.937] [INFO] [log] 📝 Logged: AI_COMPLETE: 824tok, 2744ms (r...[0m
+[2:35:13 PM] [32m[13:35:13.939] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:35:13 PM] [32m[13:35:13.941] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (3m...[0m
+[2:35:13 PM] [32m[13:35:13.942] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:35:17 PM] [32m[13:35:17.782] [INFO] [log] 📝 Logged: AI_COMPLETE: 976tok, 3839ms (r...[0m
+[2:37:08 PM] [log] Key fingerprint: ccc703a9fc63b3b7
+[2:37:08 PM] [32m[13:37:08.597] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:37:08 PM] [32m[13:37:08.605] [INFO] [log] Sovereign Cell online @ http://localhost:44645[0m
+[2:37:08 PM] [32m[13:37:08.608] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:37:08 PM] [32m[13:37:08.608] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:37:18 PM] [32m[13:37:18.821] [INFO] [log] 📝 Logged: [75AYZ] VOICE_UI: Relaying to ...[0m
+[2:37:18 PM] [32m[13:37:18.824] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:37:20 PM] [32m[13:37:20.766] [INFO] [log] 📝 Logged: AI_COMPLETE: 327tok, 1942ms (r...[0m
+[2:37:20 PM] [32m[13:37:20.780] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:37:26 PM] [32m[13:37:26.501] [INFO] [log] 📝 Logged: AI_COMPLETE: 1261tok, 5720ms (...[0m
+[2:37:26 PM] [32m[13:37:26.504] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:37:26 PM] [32m[13:37:26.506] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (2m...[0m
+[2:37:26 PM] [32m[13:37:26.507] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:37:31 PM] [32m[13:37:31.104] [INFO] [log] 📝 Logged: AI_COMPLETE: 1109tok, 4597ms (...[0m
+[2:37:31 PM] [32m[13:37:31.109] [INFO] [log] 📝 Logged: [75AYZ] VOICE_UI: Relaying to ...[0m
+[2:37:40 PM] [32m[13:37:40.968] [INFO] [log] 📝 Logged: TTS_FAIL: API returned success...[0m
+[2:40:59 PM] [log] Key fingerprint: fdb37bc141dfe290
+[2:40:59 PM] [32m[13:40:59.129] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:40:59 PM] [32m[13:40:59.159] [INFO] [log] Sovereign Cell online @ http://localhost:41963[0m
+[2:40:59 PM] [32m[13:40:59.160] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:40:59 PM] [32m[13:40:59.160] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:43:30 PM] [log] Key fingerprint: d788718621aa0d6d
+[2:43:30 PM] [32m[13:43:30.872] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:43:30 PM] [32m[13:43:30.877] [INFO] [log] Sovereign Cell online @ http://localhost:36607[0m
+[2:43:30 PM] [32m[13:43:30.878] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:43:30 PM] [32m[13:43:30.878] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:44:10 PM] [log] Key fingerprint: 2b7fef002bbf3e17
+[2:44:10 PM] [32m[13:44:10.746] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:44:10 PM] [32m[13:44:10.754] [INFO] [log] Sovereign Cell online @ http://localhost:32913[0m
+[2:44:10 PM] [32m[13:44:10.754] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:44:10 PM] [32m[13:44:10.754] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:45:23 PM] [log] Key fingerprint: e547fff922e9ce8d
+[2:45:23 PM] [32m[13:45:23.581] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:45:23 PM] [32m[13:45:23.598] [INFO] [log] Sovereign Cell online @ http://localhost:41457[0m
+[2:45:23 PM] [32m[13:45:23.601] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:45:23 PM] [32m[13:45:23.601] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:47:51 PM] [log] Key fingerprint: 6ebf9589d8b7e604
+[2:47:51 PM] [32m[13:47:51.360] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:47:51 PM] [32m[13:47:51.370] [INFO] [log] Sovereign Cell online @ http://localhost:39457[0m
+[2:47:51 PM] [32m[13:47:51.371] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:47:51 PM] [32m[13:47:51.371] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:49:07 PM] [log] Key fingerprint: ffe33e8102601291
+[2:49:07 PM] [32m[13:49:07.808] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:49:07 PM] [32m[13:49:07.816] [INFO] [log] Sovereign Cell online @ http://localhost:45713[0m
+[2:49:07 PM] [32m[13:49:07.817] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:49:07 PM] [32m[13:49:07.817] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:50:19 PM] [32m[13:50:19.857] [INFO] [log] 📝 Logged: [MTT9O3] VOICE_UI: Relaying to...[0m
+[2:50:19 PM] [32m[13:50:19.861] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:50:22 PM] [32m[13:50:22.105] [INFO] [log] 📝 Logged: AI_COMPLETE: 380tok, 2245ms (r...[0m
+[2:50:22 PM] [32m[13:50:22.117] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:50:26 PM] [32m[13:50:26.258] [INFO] [log] 📝 Logged: AI_COMPLETE: 1093tok, 4140ms (...[0m
+[2:50:26 PM] [32m[13:50:26.260] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:50:26 PM] [32m[13:50:26.262] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (2m...[0m
+[2:50:26 PM] [32m[13:50:26.262] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:50:31 PM] [32m[13:50:31.064] [INFO] [log] 📝 Logged: AI_COMPLETE: 1191tok, 4801ms (...[0m
+[2:50:31 PM] [32m[13:50:31.068] [INFO] [log] 📝 Logged: [MTT9O3] VOICE_UI: Relaying to...[0m
+[2:51:25 PM] [log] Key fingerprint: 0c9dd14955cc67d1
+[2:51:25 PM] [32m[13:51:25.397] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:51:25 PM] [32m[13:51:25.405] [INFO] [log] Sovereign Cell online @ http://localhost:40175[0m
+[2:51:25 PM] [32m[13:51:25.405] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:51:25 PM] [32m[13:51:25.405] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:51:30 PM] [32m[13:51:30.589] [INFO] [log] 📝 Logged: [YGMJUF] VOICE_UI: Relaying to...[0m
+[2:51:30 PM] [32m[13:51:30.593] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:51:32 PM] [32m[13:51:32.190] [INFO] [log] 📝 Logged: AI_COMPLETE: 300tok, 1597ms (r...[0m
+[2:51:32 PM] [32m[13:51:32.202] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:51:35 PM] [32m[13:51:35.197] [INFO] [log] 📝 Logged: AI_COMPLETE: 882tok, 2994ms (r...[0m
+[2:51:35 PM] [32m[13:51:35.200] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:51:35 PM] [32m[13:51:35.202] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (2m...[0m
+[2:51:35 PM] [32m[13:51:35.202] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:51:39 PM] [32m[13:51:39.372] [INFO] [log] 📝 Logged: AI_COMPLETE: 1102tok, 4169ms (...[0m
+[2:51:39 PM] [32m[13:51:39.377] [INFO] [log] 📝 Logged: [YGMJUF] VOICE_UI: Relaying to...[0m
+[2:53:51 PM] [log] Key fingerprint: 42c6adfff544ade0
+[2:53:51 PM] [32m[13:53:51.154] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:53:51 PM] [32m[13:53:51.175] [INFO] [log] Sovereign Cell online @ http://localhost:35099[0m
+[2:53:51 PM] [32m[13:53:51.182] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:53:51 PM] [32m[13:53:51.182] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:53:51 PM] [32m[13:53:51.682] [INFO] [log] [88e90ddb] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [comms][0m
+[2:53:51 PM] [32m[13:53:51.684] [INFO] [log] [4c7ae459] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:43247[0m
+[2:53:51 PM] [32m[13:53:51.685] [INFO] [log] [3f48364c] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:41051[0m
+[2:53:58 PM] [32m[13:53:58.742] [INFO] [log] [924929d2] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[2:53:58 PM] [32m[13:53:58.742] [INFO] [log] 📝 Logged: [ZTIOG] VOICE_UI: Relaying to ...[0m
+[2:53:58 PM] [32m[13:53:58.746] [INFO] [log] [30f93412] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:53:58 PM] [32m[13:53:58.746] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[2:54:01 PM] [32m[13:54:01.095] [INFO] [log] [0c9ff39e] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:01 PM] [32m[13:54:01.095] [INFO] [log] 📝 Logged: AI_COMPLETE: 346tok, 2349ms (r...[0m
+[2:54:01 PM] [32m[13:54:01.108] [INFO] [log] [5a7d7bed] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:01 PM] [32m[13:54:01.108] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[2:54:04 PM] [32m[13:54:04.900] [INFO] [log] [29a64e24] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:04 PM] [32m[13:54:04.900] [INFO] [log] 📝 Logged: AI_COMPLETE: 1080tok, 3791ms (...[0m
+[2:54:04 PM] [32m[13:54:04.903] [INFO] [log] [e091f970] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[2:54:04 PM] [32m[13:54:04.903] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [log] [fc243355] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (3m...[0m
+[2:54:04 PM] [32m[13:54:04.906] [INFO] [log] [7df82252] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:04 PM] [32m[13:54:04.906] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[2:54:06 PM] [32m[13:54:06.149] [INFO] [log] [8533f95e] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [projects][0m
+[2:54:06 PM] [32m[13:54:06.151] [INFO] [log] [94b8da9d] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [telegram][0m
+[2:54:06 PM] [32m[13:54:06.183] [INFO] [log] [f6c95243] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:41521[0m
+[2:54:06 PM] [32m[13:54:06.183] [INFO] [log] [6614fa88] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:36433[0m
+[2:54:08 PM] [32m[13:54:08.035] [INFO] [log] [a733d91d] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:08 PM] [32m[13:54:08.035] [INFO] [log] 📝 Logged: AI_COMPLETE: 961tok, 3129ms (r...[0m
+[2:54:08 PM] [32m[13:54:08.039] [INFO] [log] [26a9393b] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[2:54:08 PM] [32m[13:54:08.040] [INFO] [log] 📝 Logged: [ZTIOG] VOICE_UI: Relaying to ...[0m
+[2:54:08 PM] [32m[13:54:08.042] [INFO] [log] [050a4ab9] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[2:54:08 PM] [32m[13:54:08.043] [INFO] [log] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:42651[0m
+[2:54:08 PM] [32m[13:54:08.043] [INFO] [log] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:43247[0m
+[2:54:08 PM] [32m[13:54:08.043] [INFO] [log] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:36455[0m
+[2:54:21 PM] [32m[13:54:21.183] [INFO] [log] [efe0ca01] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:42651[0m
+[2:54:21 PM] [32m[13:54:21.183] [INFO] [log] [00ddedfc] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:41051[0m
+[2:54:21 PM] [32m[13:54:21.191] [INFO] [log] [c6955673] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [Codegen][0m
+[2:59:49 PM] [log] Key fingerprint: fdec6ef7808fabbf
+[2:59:49 PM] [32m[13:59:49.004] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[2:59:49 PM] [32m[13:59:49.008] [INFO] [log] Sovereign Cell online @ http://localhost:46293[0m
+[2:59:49 PM] [32m[13:59:49.010] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[2:59:49 PM] [32m[13:59:49.011] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[2:59:49 PM] [32m[13:59:49.050] [INFO] [log] [d2728c9f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[2:59:49 PM] [32m[13:59:49.052] [INFO] [log] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36831[0m
+[3:00:41 PM] [log] Key fingerprint: ed79474aefdc7ae3
+[3:00:41 PM] [32m[14:00:41.944] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:00:41 PM] [32m[14:00:41.955] [INFO] [log] Sovereign Cell online @ http://localhost:36855[0m
+[3:00:41 PM] [32m[14:00:41.956] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:00:41 PM] [32m[14:00:41.956] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:00:42 PM] [32m[14:00:42.014] [INFO] [log] [6ecce893] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:00:42 PM] [32m[14:00:42.015] [INFO] [log] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40581[0m
+[3:00:42 PM] [32m[14:00:42.015] [INFO] [log] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33267[0m
+[3:00:42 PM] [32m[14:00:42.015] [INFO] [log] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44799[0m
+[3:01:10 PM] [32m[14:01:10.775] [INFO] [log] [e28af5c4] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[3:01:10 PM] [32m[14:01:10.775] [INFO] [log] 📝 Logged: [4YR28Q] VOICE_UI: Relaying to...[0m
+[3:01:10 PM] [32m[14:01:10.779] [INFO] [log] [be727048] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:10 PM] [32m[14:01:10.779] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[3:01:12 PM] [32m[14:01:12.671] [INFO] [log] [3c4d0c38] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:12 PM] [32m[14:01:12.671] [INFO] [log] 📝 Logged: AI_COMPLETE: 310tok, 1892ms (r...[0m
+[3:01:12 PM] [32m[14:01:12.683] [INFO] [log] [396bb818] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:12 PM] [32m[14:01:12.683] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[3:01:15 PM] [32m[14:01:15.204] [INFO] [log] [c84dc8e6] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:15 PM] [32m[14:01:15.204] [INFO] [log] 📝 Logged: AI_COMPLETE: 857tok, 2520ms (r...[0m
+[3:01:15 PM] [32m[14:01:15.207] [INFO] [log] [1ef5bf8d] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[3:01:15 PM] [32m[14:01:15.207] [INFO] [log] 📝 Logged: TOOL_START: list_get (session:...[0m
+[3:01:15 PM] [32m[14:01:15.210] [INFO] [log] [4a0ea521] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[3:01:15 PM] [32m[14:01:15.210] [INFO] [log] 📝 Logged: TOOL_END: list_get SUCCESS (3m...[0m
+[3:01:15 PM] [32m[14:01:15.211] [INFO] [log] [b9bdc9c3] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:15 PM] [32m[14:01:15.211] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[3:01:19 PM] [32m[14:01:19.069] [INFO] [log] [990dbcd8] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:19 PM] [32m[14:01:19.069] [INFO] [log] 📝 Logged: AI_COMPLETE: 1129tok, 3858ms (...[0m
+[3:01:19 PM] [32m[14:01:19.073] [INFO] [log] [52306e4b] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[3:01:19 PM] [32m[14:01:19.073] [INFO] [log] 📝 Logged: [4YR28Q] VOICE_UI: Relaying to...[0m
+[3:01:19 PM] [32m[14:01:19.089] [INFO] [log] [c036933f] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[3:01:19 PM] [32m[14:01:19.090] [INFO] [log] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:39385[0m
+[3:01:19 PM] [32m[14:01:19.091] [INFO] [log] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:40581[0m
+[3:01:19 PM] [32m[14:01:19.091] [INFO] [log] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:36741[0m
+[3:01:19 PM] [32m[14:01:19.091] [INFO] [log] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:39649[0m
+[3:02:53 PM] [log] Key fingerprint: b2264c6a114abc6c
+[3:02:53 PM] [32m[14:02:53.020] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:02:53 PM] [32m[14:02:53.032] [INFO] [log] Sovereign Cell online @ http://localhost:34161[0m
+[3:02:53 PM] [32m[14:02:53.033] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:02:53 PM] [32m[14:02:53.034] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:02:53 PM] [32m[14:02:53.538] [INFO] [log] [6eaa1bbb] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43619[0m
+[3:02:53 PM] [32m[14:02:53.540] [INFO] [log] [b2c9c3c3] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45043[0m
+[3:03:08 PM] [32m[14:03:08.036] [INFO] [log] [d82bca53] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:32809[0m
+[3:03:08 PM] [32m[14:03:08.036] [INFO] [log] [942eeeb5] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45043[0m
+[3:03:23 PM] [32m[14:03:23.035] [INFO] [log] [274567d5] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:39865[0m
+[3:03:23 PM] [32m[14:03:23.035] [INFO] [log] [3a60f191] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:03:38 PM] [32m[14:03:38.035] [INFO] [log] [8e55efc0] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:32809[0m
+[3:03:38 PM] [32m[14:03:38.037] [INFO] [log] [b3ec5b6b] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:42793[0m
+[3:03:48 PM] [log] Key fingerprint: 6efeba4a339e0081
+[3:03:48 PM] [32m[14:03:48.092] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:03:48 PM] [32m[14:03:48.099] [INFO] [log] Sovereign Cell online @ http://localhost:38583[0m
+[3:03:48 PM] [32m[14:03:48.100] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:03:48 PM] [32m[14:03:48.100] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:03:48 PM] [32m[14:03:48.604] [INFO] [log] [4c4f74da] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37951[0m
+[3:03:48 PM] [32m[14:03:48.604] [INFO] [log] [2105276f] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34813[0m
+[3:04:03 PM] [32m[14:04:03.101] [INFO] [log] [8cd2bce2] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:36039[0m
+[3:04:03 PM] [32m[14:04:03.102] [INFO] [log] [7da2febd] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45425[0m
+[3:04:18 PM] [32m[14:04:18.101] [INFO] [log] [58609fac] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37951[0m
+[3:04:18 PM] [32m[14:04:18.101] [INFO] [log] [b718880e] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40787[0m
+[3:05:53 PM] [log] Key fingerprint: 344df34a0dc7a8f2
+[3:05:53 PM] [32m[14:05:53.679] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:05:53 PM] [32m[14:05:53.684] [INFO] [log] Sovereign Cell online @ http://localhost:42863[0m
+[3:05:53 PM] [32m[14:05:53.685] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:05:53 PM] [32m[14:05:53.685] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:05:53 PM] [32m[14:05:53.745] [INFO] [log] [57cb6c73] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:05:53 PM] [32m[14:05:53.752] [INFO] [log] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37705[0m
+[3:05:53 PM] [32m[14:05:53.752] [INFO] [log] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36421[0m
+[3:05:53 PM] [32m[14:05:53.752] [INFO] [log] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:38931[0m
+[3:05:54 PM] [32m[14:05:54.187] [INFO] [log] [741e3959] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:41165[0m
+[3:05:54 PM] [32m[14:05:54.187] [INFO] [log] [ff41a062] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:38931[0m
+[3:06:43 PM] [log] Key fingerprint: 82dde24f24b8a548
+[3:06:43 PM] [32m[14:06:43.880] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:06:43 PM] [32m[14:06:43.886] [INFO] [log] Sovereign Cell online @ http://localhost:42067[0m
+[3:06:43 PM] [32m[14:06:43.886] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:06:43 PM] [32m[14:06:43.886] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:06:44 PM] [32m[14:06:44.394] [INFO] [log] [a1104c08] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:36183[0m
+[3:06:44 PM] [32m[14:06:44.394] [INFO] [log] [1ed5c065] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45717[0m
+[3:07:39 PM] [log] Key fingerprint: f4f966190e9a94f1
+[3:07:39 PM] [32m[14:07:39.514] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:07:39 PM] [32m[14:07:39.519] [INFO] [log] Sovereign Cell online @ http://localhost:38297[0m
+[3:07:39 PM] [32m[14:07:39.520] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:07:39 PM] [32m[14:07:39.520] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:07:40 PM] [33m[14:07:40.024] [WARN] [log] [a6c34308] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:42063 (undefined)[0m
+[3:07:40 PM] [33m[14:07:40.024] [WARN] [log] [d37b6ec1] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:37477 (undefined)[0m
+[3:08:35 PM] [log] Key fingerprint: 1763ab0c4d456d2e
+[3:08:35 PM] [32m[14:08:35.090] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:08:35 PM] [32m[14:08:35.116] [INFO] [log] Sovereign Cell online @ http://localhost:40965[0m
+[3:08:35 PM] [32m[14:08:35.117] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:08:35 PM] [32m[14:08:35.117] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:08:35 PM] [32m[14:08:35.165] [INFO] [log] [93e04371] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:08:35 PM] [32m[14:08:35.167] [INFO] [log] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39801[0m
+[3:08:35 PM] [32m[14:08:35.167] [INFO] [log] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:35195[0m
+[3:08:35 PM] [32m[14:08:35.167] [INFO] [log] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46813[0m
+[3:08:35 PM] [32m[14:08:35.169] [INFO] [log] [93e04371] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39801[0m
+[3:08:35 PM] [33m[14:08:35.169] [WARN] [log] [93e04371] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:39801 (undefined)[0m
+[3:09:03 PM] [log] Key fingerprint: acd381aa17feaa2e
+[3:09:03 PM] [32m[14:09:03.450] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:09:03 PM] [32m[14:09:03.470] [INFO] [log] Sovereign Cell online @ http://localhost:40965[0m
+[3:09:03 PM] [32m[14:09:03.473] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:09:03 PM] [32m[14:09:03.473] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:09:03 PM] [32m[14:09:03.764] [INFO] [log] 🌐 ~2 → 10p/38c[0m
+[3:09:33 PM] [32m[14:09:33.483] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[3:10:12 PM] [log] Key fingerprint: 1d999364d3118bf7
+[3:10:12 PM] [32m[14:10:12.458] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[3:10:12 PM] [32m[14:10:12.464] [INFO] [log] Sovereign Cell online @ http://localhost:37883[0m
+[3:10:12 PM] [32m[14:10:12.465] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[3:10:12 PM] [32m[14:10:12.465] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[3:10:12 PM] [32m[14:10:12.482] [INFO] [log] [46342ad3] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:10:12 PM] [32m[14:10:12.483] [INFO] [log] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:35869[0m
+[3:10:12 PM] [32m[14:10:12.483] [INFO] [log] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45907[0m
+[3:10:12 PM] [32m[14:10:12.483] [INFO] [log] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37007[0m
+[10:47:54 PM] [log] Key fingerprint: c73c48f537e7500a
+[10:47:54 PM] [32m[21:47:54.462] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[10:47:54 PM] [32m[21:47:54.486] [INFO] [log] Sovereign Cell online @ http://localhost:46681[0m
+[10:47:54 PM] [32m[21:47:54.487] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[10:47:54 PM] [32m[21:47:54.487] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:03:39 PM] [log] Key fingerprint: df8339e513b5b845
+[11:03:39 PM] [32m[22:03:39.287] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:03:39 PM] [32m[22:03:39.298] [INFO] [log] Sovereign Cell online @ http://localhost:34441[0m
+[11:03:39 PM] [32m[22:03:39.298] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:03:39 PM] [32m[22:03:39.298] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:29:17 PM] [log] Key fingerprint: 3c44bc563dda1700
+[11:29:17 PM] [32m[22:29:17.190] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:29:17 PM] [32m[22:29:17.199] [INFO] [log] Sovereign Cell online @ http://localhost:36729[0m
+[11:29:17 PM] [32m[22:29:17.200] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:29:17 PM] [32m[22:29:17.200] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:32:32 PM] [log] Key fingerprint: fce7f67a57afed50
+[11:32:32 PM] [32m[22:32:32.036] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:32:32 PM] [32m[22:32:32.050] [INFO] [log] Sovereign Cell online @ http://localhost:43717[0m
+[11:32:32 PM] [32m[22:32:32.051] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:32:32 PM] [32m[22:32:32.051] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:35:13 PM] [log] Key fingerprint: b8c44a9cfb287f8f
+[11:35:13 PM] [32m[22:35:13.598] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:35:13 PM] [32m[22:35:13.610] [INFO] [log] Sovereign Cell online @ http://localhost:32967[0m
+[11:35:13 PM] [32m[22:35:13.613] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:35:13 PM] [32m[22:35:13.613] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:35:17 PM] [32m[22:35:17.867] [INFO] [log] [d7b685f4] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:35:17 PM] [32m[22:35:17.867] [INFO] [log] 📝 Logged: [62MEGD] VOICE_UI: Relaying to...[0m
+[11:35:17 PM] [32m[22:35:17.872] [INFO] [log] [e47cf031] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:35:17 PM] [32m[22:35:17.872] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[11:35:20 PM] [32m[22:35:20.386] [INFO] [log] [ea473f25] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:35:20 PM] [32m[22:35:20.386] [INFO] [log] 📝 Logged: AI_COMPLETE: 363tok, 2515ms (r...[0m
+[11:35:20 PM] [32m[22:35:20.402] [INFO] [log] [cf6d0344] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:35:20 PM] [32m[22:35:20.402] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[11:35:26 PM] [32m[22:35:26.801] [INFO] [log] [3e913356] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:35:26 PM] [32m[22:35:26.801] [INFO] [log] 📝 Logged: AI_COMPLETE: 1355tok, 6398ms (...[0m
+[11:35:26 PM] [32m[22:35:26.807] [INFO] [log] [5906dd7f] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:35:26 PM] [32m[22:35:26.807] [INFO] [log] 📝 Logged: [62MEGD] VOICE_UI: Relaying to...[0m
+[11:40:28 PM] [log] Key fingerprint: 24ae9d294f29c8c6
+[11:40:28 PM] [32m[22:40:28.832] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:40:28 PM] [32m[22:40:28.854] [INFO] [log] Sovereign Cell online @ http://localhost:38317[0m
+[11:40:28 PM] [32m[22:40:28.855] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:40:28 PM] [32m[22:40:28.855] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:41:09 PM] [32m[22:41:09.320] [INFO] [log] [87ef2432] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:41:09 PM] [32m[22:41:09.320] [INFO] [log] 📝 Logged: [GEE2BW] VOICE_UI: Relaying to...[0m
+[11:41:09 PM] [32m[22:41:09.327] [INFO] [log] [1801dac4] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:41:09 PM] [32m[22:41:09.327] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[11:41:11 PM] [32m[22:41:11.817] [INFO] [log] [d2871121] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:41:11 PM] [32m[22:41:11.817] [INFO] [log] 📝 Logged: AI_COMPLETE: 346tok, 2490ms (r...[0m
+[11:41:11 PM] [32m[22:41:11.832] [INFO] [log] [ccdd7311] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:41:11 PM] [32m[22:41:11.832] [INFO] [log] 📝 Logged: AI_REQUEST: USER: online... (r...[0m
+[11:41:16 PM] [32m[22:41:16.996] [INFO] [log] [45e37bbc] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:41:16 PM] [32m[22:41:16.997] [INFO] [log] 📝 Logged: AI_COMPLETE: 1205tok, 5163ms (...[0m
+[11:41:17 PM] [32m[22:41:17.002] [INFO] [log] [1bd5038a] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:41:17 PM] [32m[22:41:17.002] [INFO] [log] 📝 Logged: [GEE2BW] VOICE_UI: Relaying to...[0m
+[11:47:49 PM] [log] Key fingerprint: ced204312ba61cfe
+[11:47:49 PM] [32m[22:47:49.726] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:47:49 PM] [32m[22:47:49.734] [INFO] [log] Sovereign Cell online @ http://localhost:40897[0m
+[11:47:49 PM] [32m[22:47:49.735] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:47:49 PM] [32m[22:47:49.735] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:48:01 PM] [32m[22:48:01.410] [INFO] [log] [926a06fe] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:48:01 PM] [32m[22:48:01.410] [INFO] [log] 📝 Logged: [N46HK] VOICE_UI: Relaying to ...[0m
+[11:48:01 PM] [32m[22:48:01.415] [INFO] [log] [f5f2f047] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:48:01 PM] [32m[22:48:01.416] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[11:48:03 PM] [32m[22:48:03.711] [INFO] [log] [a41b2450] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:48:03 PM] [32m[22:48:03.711] [INFO] [log] 📝 Logged: AI_COMPLETE: 375tok, 2297ms (r...[0m
+[11:48:03 PM] [32m[22:48:03.727] [INFO] [log] [29de2839] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:48:03 PM] [32m[22:48:03.727] [INFO] [log] 📝 Logged: AI_REQUEST: USER: status repor...[0m
+[11:48:07 PM] [32m[22:48:07.260] [INFO] [log] [dfc7c0ba] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:48:07 PM] [32m[22:48:07.260] [INFO] [log] 📝 Logged: AI_COMPLETE: 964tok, 3532ms (r...[0m
+[11:48:07 PM] [32m[22:48:07.266] [INFO] [log] [1854ae08] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:48:07 PM] [32m[22:48:07.266] [INFO] [log] 📝 Logged: [N46HK] VOICE_UI: Relaying to ...[0m
+[11:53:29 PM] [log] Key fingerprint: 18004063e59d6654
+[11:53:29 PM] [32m[22:53:29.124] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:53:29 PM] [32m[22:53:29.133] [INFO] [log] Sovereign Cell online @ http://localhost:40445[0m
+[11:53:29 PM] [32m[22:53:29.134] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:53:29 PM] [32m[22:53:29.134] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:56:22 PM] [log] Key fingerprint: 1f5e9dddbbd31ce1
+[11:56:22 PM] [32m[22:56:22.795] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:56:22 PM] [32m[22:56:22.800] [INFO] [log] Sovereign Cell online @ http://localhost:45627[0m
+[11:56:22 PM] [32m[22:56:22.801] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:56:22 PM] [32m[22:56:22.802] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:56:32 PM] [32m[22:56:32.283] [INFO] [log] [c69ae79c] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:56:32 PM] [32m[22:56:32.284] [INFO] [log] 📝 Logged: [ZRE6DQ] VOICE_UI: Relaying to...[0m
+[11:56:32 PM] [32m[22:56:32.284] [INFO] [log] [bb4d579c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:32 PM] [32m[22:56:32.284] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[11:56:34 PM] [32m[22:56:34.458] [INFO] [log] [cbea3edf] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:34 PM] [32m[22:56:34.458] [INFO] [log] 📝 Logged: AI_COMPLETE: 351tok, 2176ms (r...[0m
+[11:56:34 PM] [32m[22:56:34.474] [INFO] [log] [4451077a] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:34 PM] [32m[22:56:34.474] [INFO] [log] 📝 Logged: AI_REQUEST: USER: status repor...[0m
+[11:56:37 PM] [32m[22:56:37.579] [INFO] [log] [af278b5b] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:37 PM] [32m[22:56:37.579] [INFO] [log] 📝 Logged: AI_COMPLETE: 931tok, 3105ms (r...[0m
+[11:56:37 PM] [32m[22:56:37.585] [INFO] [log] [5c55f8b6] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:56:37 PM] [32m[22:56:37.585] [INFO] [log] 📝 Logged: [ZRE6DQ] VOICE_UI: Relaying to...[0m
+[11:56:39 PM] [32m[22:56:39.080] [INFO] [log] [1c1e099c] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:56:39 PM] [32m[22:56:39.080] [INFO] [log] 📝 Logged: [VP1CDD] VOICE_UI: Relaying to...[0m
+[11:56:39 PM] [32m[22:56:39.082] [INFO] [log] [2c31887b] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:39 PM] [32m[22:56:39.082] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[11:56:41 PM] [32m[22:56:41.290] [INFO] [log] [76260521] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:41 PM] [32m[22:56:41.290] [INFO] [log] 📝 Logged: AI_COMPLETE: 355tok, 2205ms (r...[0m
+[11:56:41 PM] [32m[22:56:41.296] [INFO] [log] [e5e057f5] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:41 PM] [32m[22:56:41.297] [INFO] [log] 📝 Logged: AI_REQUEST: USER: status repor...[0m
+[11:56:45 PM] [32m[22:56:45.827] [INFO] [log] [23b1d425] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:45 PM] [32m[22:56:45.827] [INFO] [log] 📝 Logged: AI_COMPLETE: 1133tok, 4530ms (...[0m
+[11:56:45 PM] [32m[22:56:45.831] [INFO] [log] [57fa5403] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[11:56:45 PM] [32m[22:56:45.832] [INFO] [log] 📝 Logged: [VP1CDD] VOICE_UI: Relaying to...[0m
+[11:56:53 PM] [log] Key fingerprint: 8318563f03cb04e8
+[11:56:53 PM] [32m[22:56:53.717] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:56:53 PM] [32m[22:56:53.730] [INFO] [log] Sovereign Cell online @ http://localhost:38179[0m
+[11:56:53 PM] [32m[22:56:53.731] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:56:53 PM] [32m[22:56:53.732] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:59:46 PM] [log] Key fingerprint: 5defd39584306950
+[11:59:46 PM] [32m[22:59:46.531] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:59:46 PM] [32m[22:59:46.540] [INFO] [log] Sovereign Cell online @ http://localhost:38773[0m
+[11:59:46 PM] [32m[22:59:46.541] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:59:46 PM] [32m[22:59:46.541] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:59:46 PM] [32m[22:59:46.583] [INFO] [log] [7fcc9c79] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:59:46 PM] [32m[22:59:46.586] [INFO] [log] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46313[0m
+[11:59:46 PM] [32m[22:59:46.587] [INFO] [log] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39379[0m
+[11:59:46 PM] [32m[22:59:46.587] [INFO] [log] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34507[0m
+[12:07:18 AM] [log] Key fingerprint: 72c7eb6a1b16a687
+[12:07:18 AM] [32m[23:07:18.232] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:07:18 AM] [32m[23:07:18.245] [INFO] [log] Sovereign Cell online @ http://localhost:46605[0m
+[12:07:18 AM] [32m[23:07:18.246] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:07:18 AM] [32m[23:07:18.246] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:07:18 AM] [32m[23:07:18.352] [INFO] [log] [218a6a89] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:07:18 AM] [32m[23:07:18.353] [INFO] [log] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36621[0m
+[12:07:18 AM] [32m[23:07:18.353] [INFO] [log] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36603[0m
+[12:07:18 AM] [32m[23:07:18.353] [INFO] [log] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33505[0m
+[12:08:37 AM] [log] Key fingerprint: 7a54cd6c8117aeb0
+[12:08:37 AM] [32m[23:08:37.041] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:08:37 AM] [32m[23:08:37.049] [INFO] [log] Sovereign Cell online @ http://localhost:44675[0m
+[12:08:37 AM] [32m[23:08:37.050] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:08:37 AM] [32m[23:08:37.050] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:10:03 AM] [32m[23:10:03.602] [INFO] [log] [878276a9] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[12:10:03 AM] [32m[23:10:03.603] [INFO] [log] 📝 Logged: [VBB2VT] VOICE_UI: Relaying to...[0m
+[12:10:03 AM] [32m[23:10:03.608] [INFO] [log] [a91ab638] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:03 AM] [32m[23:10:03.608] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[12:10:05 AM] [32m[23:10:05.610] [INFO] [log] [3c3c372c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:05 AM] [32m[23:10:05.610] [INFO] [log] 📝 Logged: AI_COMPLETE: 300tok, 2003ms (r...[0m
+[12:10:05 AM] [32m[23:10:05.624] [INFO] [log] [23de5dcf] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:05 AM] [32m[23:10:05.624] [INFO] [log] 📝 Logged: AI_REQUEST: USER: hello... (re...[0m
+[12:10:08 AM] [32m[23:10:08.728] [INFO] [log] [97a9b7a7] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:08 AM] [32m[23:10:08.728] [INFO] [log] 📝 Logged: AI_COMPLETE: 897tok, 3103ms (r...[0m
+[12:10:08 AM] [32m[23:10:08.733] [INFO] [log] [4d15a0d4] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[12:10:08 AM] [32m[23:10:08.733] [INFO] [log] 📝 Logged: [VBB2VT] VOICE_UI: Relaying to...[0m
+[12:10:56 AM] [32m[23:10:56.342] [INFO] [log] [d79a572d] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[12:10:56 AM] [32m[23:10:56.342] [INFO] [log] 📝 Logged: [L0T16] VOICE_UI: Relaying to ...[0m
+[12:10:56 AM] [32m[23:10:56.344] [INFO] [log] [61db841a] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:56 AM] [32m[23:10:56.344] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[12:10:59 AM] [32m[23:10:59.426] [INFO] [log] [fcad0808] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:59 AM] [32m[23:10:59.426] [INFO] [log] 📝 Logged: AI_COMPLETE: 551tok, 3081ms (r...[0m
+[12:10:59 AM] [32m[23:10:59.433] [INFO] [log] [ef6dd93c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:59 AM] [32m[23:10:59.433] [INFO] [log] 📝 Logged: AI_REQUEST: USER: the plan is ...[0m
+[12:11:04 AM] [32m[23:11:04.461] [INFO] [log] [e8c826c9] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:11:04 AM] [32m[23:11:04.461] [INFO] [log] 📝 Logged: AI_COMPLETE: 1377tok, 5026ms (...[0m
+[12:11:04 AM] [32m[23:11:04.463] [INFO] [log] [5011f45f] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[12:11:04 AM] [32m[23:11:04.463] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[12:11:04 AM] [32m[23:11:04.484] [INFO] [log] [6d4ed6d6] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:11:04 AM] [32m[23:11:04.484] [INFO] [log] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36661[0m
+[12:11:04 AM] [33m[23:11:04.485] [WARN] [log] [6d4ed6d6] ❌ RPC_REMOTE_FAIL: [memory/goals/create] @ http://localhost:36661 (HANDLER_ERR)[0m
+[12:11:04 AM] [32m[23:11:04.486] [INFO] [log] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:37669[0m
+[12:11:04 AM] [32m[23:11:04.486] [INFO] [log] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:38591[0m
+[12:11:04 AM] [32m[23:11:04.486] [INFO] [log] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39687[0m
+[12:15:04 AM] [log] Key fingerprint: d5260e1867f0518f
+[12:15:04 AM] [32m[23:15:04.625] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:15:04 AM] [32m[23:15:04.631] [INFO] [log] Sovereign Cell online @ http://localhost:43939[0m
+[12:15:04 AM] [32m[23:15:04.632] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:15:04 AM] [32m[23:15:04.632] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:36:07 AM] [log] Key fingerprint: 28cf42b75dc7d1f6
+[12:36:07 AM] [32m[23:36:07.105] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:36:07 AM] [32m[23:36:07.121] [INFO] [log] Sovereign Cell online @ http://localhost:46507[0m
+[12:36:07 AM] [32m[23:36:07.123] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:36:07 AM] [32m[23:36:07.123] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:36:07 AM] [32m[23:36:07.204] [INFO] [log] [b793c367] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:36:07 AM] [32m[23:36:07.206] [INFO] [log] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39293[0m
+[12:36:07 AM] [32m[23:36:07.207] [INFO] [log] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39293[0m

@@ -231,3 +231,513 @@
 [10:01:19 PM] [32m[21:01:19.784] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
 [10:01:46 PM] Current list has 0 items
 [10:01:46 PM] Mesh health: NOMINAL, 15 cells
+[2:05:49 PM] [checklist] Key fingerprint: a8c10d37220a9696
+[2:05:49 PM] [32m[13:05:49.871] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:05:49 PM] [32m[13:05:49.881] [INFO] [checklist] Sovereign Cell online @ http://localhost:40385[0m
+[2:05:49 PM] [32m[13:05:49.882] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:06:16 PM] Current list has 0 items
+[2:06:16 PM] Mesh health: NOMINAL, 14 cells
+[2:09:10 PM] [checklist] Key fingerprint: 37a7ca5f56b2bc1a
+[2:09:10 PM] [32m[13:09:10.456] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:09:10 PM] [32m[13:09:10.469] [INFO] [checklist] Sovereign Cell online @ http://localhost:45075[0m
+[2:09:10 PM] [32m[13:09:10.469] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:09:37 PM] Current list has 0 items
+[2:09:37 PM] Mesh health: NOMINAL, 14 cells
+[2:12:41 PM] [checklist] Key fingerprint: 70cf215c07f4b31f
+[2:12:41 PM] [32m[13:12:41.677] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:12:41 PM] [32m[13:12:41.687] [INFO] [checklist] Sovereign Cell online @ http://localhost:37793[0m
+[2:12:41 PM] [32m[13:12:41.690] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:13:08 PM] Current list has 0 items
+[2:13:08 PM] Mesh health: NOMINAL, 16 cells
+[2:14:02 PM] [checklist] Key fingerprint: 7ee49116bab214d6
+[2:14:02 PM] [32m[13:14:02.871] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:14:02 PM] [32m[13:14:02.880] [INFO] [checklist] Sovereign Cell online @ http://localhost:46833[0m
+[2:14:02 PM] [32m[13:14:02.880] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:14:29 PM] Current list has 0 items
+[2:14:29 PM] Mesh health: NOMINAL, 16 cells
+[2:17:10 PM] [checklist] Key fingerprint: c9837ba0803d768e
+[2:17:10 PM] [32m[13:17:10.631] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:17:10 PM] [32m[13:17:10.641] [INFO] [checklist] Sovereign Cell online @ http://localhost:46419[0m
+[2:17:10 PM] [32m[13:17:10.642] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:17:37 PM] Current list has 0 items
+[2:17:37 PM] Mesh health: NOMINAL, 16 cells
+[2:24:04 PM] [checklist] Key fingerprint: e9cf8a0a2990623f
+[2:24:04 PM] [32m[13:24:04.641] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:24:04 PM] [32m[13:24:04.650] [INFO] [checklist] Sovereign Cell online @ http://localhost:35165[0m
+[2:24:04 PM] [32m[13:24:04.652] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:24:31 PM] Current list has 0 items
+[2:24:31 PM] Mesh health: NOMINAL, 16 cells
+[2:27:11 PM] [checklist] Key fingerprint: 7f60ed5e25e21e10
+[2:27:11 PM] [32m[13:27:11.766] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:27:11 PM] [32m[13:27:11.773] [INFO] [checklist] Sovereign Cell online @ http://localhost:39477[0m
+[2:27:11 PM] [32m[13:27:11.773] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:27:38 PM] Current list has 0 items
+[2:27:38 PM] Mesh health: NOMINAL, 15 cells
+[2:28:55 PM] [checklist] Key fingerprint: 7b52dff9e20a1972
+[2:28:55 PM] [32m[13:28:55.009] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:28:55 PM] [32m[13:28:55.014] [INFO] [checklist] Sovereign Cell online @ http://localhost:42431[0m
+[2:28:55 PM] [32m[13:28:55.015] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:29:22 PM] Current list has 0 items
+[2:29:22 PM] Mesh health: NOMINAL, 16 cells
+[2:30:25 PM] [checklist] Key fingerprint: 9d66743c99609f14
+[2:30:25 PM] [32m[13:30:25.299] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:30:25 PM] [32m[13:30:25.307] [INFO] [checklist] Sovereign Cell online @ http://localhost:43699[0m
+[2:30:25 PM] [32m[13:30:25.308] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:30:52 PM] Current list has 0 items
+[2:30:52 PM] Mesh health: NOMINAL, 15 cells
+[2:33:05 PM] [checklist] Key fingerprint: c52bb18f97b9af32
+[2:33:05 PM] [32m[13:33:05.530] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:33:05 PM] [32m[13:33:05.537] [INFO] [checklist] Sovereign Cell online @ http://localhost:38765[0m
+[2:33:05 PM] [32m[13:33:05.538] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:33:32 PM] Current list has 0 items
+[2:33:32 PM] Mesh health: NOMINAL, 16 cells
+[2:35:04 PM] [checklist] Key fingerprint: 059009efc30b0dee
+[2:35:04 PM] [32m[13:35:04.580] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:35:04 PM] [32m[13:35:04.587] [INFO] [checklist] Sovereign Cell online @ http://localhost:44421[0m
+[2:35:04 PM] [32m[13:35:04.587] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:35:31 PM] Current list has 0 items
+[2:35:31 PM] Mesh health: NOMINAL, 16 cells
+[2:37:08 PM] [checklist] Key fingerprint: de9a8d3ee85d029a
+[2:37:08 PM] [32m[13:37:08.555] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:37:08 PM] [32m[13:37:08.568] [INFO] [checklist] Sovereign Cell online @ http://localhost:46047[0m
+[2:37:08 PM] [32m[13:37:08.571] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:37:35 PM] Current list has 0 items
+[2:37:35 PM] Mesh health: NOMINAL, 16 cells
+[2:40:59 PM] [checklist] Key fingerprint: 2909d48dfcccb6ec
+[2:40:59 PM] [32m[13:40:59.093] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:40:59 PM] [32m[13:40:59.102] [INFO] [checklist] Sovereign Cell online @ http://localhost:45011[0m
+[2:40:59 PM] [32m[13:40:59.103] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:41:26 PM] Current list has 0 items
+[2:41:26 PM] Mesh health: NOMINAL, 16 cells
+[2:43:30 PM] [checklist] Key fingerprint: 02208db9a067e477
+[2:43:30 PM] [32m[13:43:30.805] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:43:30 PM] [32m[13:43:30.819] [INFO] [checklist] Sovereign Cell online @ http://localhost:36375[0m
+[2:43:30 PM] [32m[13:43:30.820] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:44:10 PM] [checklist] Key fingerprint: 80814accf584e800
+[2:44:10 PM] [32m[13:44:10.667] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:44:10 PM] [32m[13:44:10.688] [INFO] [checklist] Sovereign Cell online @ http://localhost:35967[0m
+[2:44:10 PM] [32m[13:44:10.689] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:44:37 PM] Current list has 0 items
+[2:44:37 PM] Mesh health: NOMINAL, 16 cells
+[2:45:23 PM] [checklist] Key fingerprint: 44a03f7d2b664b3e
+[2:45:23 PM] [32m[13:45:23.626] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:45:23 PM] [32m[13:45:23.644] [INFO] [checklist] Sovereign Cell online @ http://localhost:34881[0m
+[2:45:23 PM] [32m[13:45:23.646] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:45:50 PM] Current list has 0 items
+[2:45:50 PM] Mesh health: NOMINAL, 16 cells
+[2:47:51 PM] [checklist] Key fingerprint: d63a966d7abf3d38
+[2:47:51 PM] [32m[13:47:51.314] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:47:51 PM] [32m[13:47:51.346] [INFO] [checklist] Sovereign Cell online @ http://localhost:43949[0m
+[2:47:51 PM] [32m[13:47:51.347] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:48:18 PM] Current list has 0 items
+[2:48:18 PM] Mesh health: NOMINAL, 15 cells
+[2:49:07 PM] [checklist] Key fingerprint: 3aaaa744dfa3a74a
+[2:49:07 PM] [32m[13:49:07.755] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:49:07 PM] [32m[13:49:07.782] [INFO] [checklist] Sovereign Cell online @ http://localhost:39333[0m
+[2:49:07 PM] [32m[13:49:07.782] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:49:34 PM] Current list has 0 items
+[2:49:34 PM] Mesh health: NOMINAL, 16 cells
+[2:51:25 PM] [checklist] Key fingerprint: 130ab409da3f1c50
+[2:51:25 PM] [32m[13:51:25.424] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:51:25 PM] [32m[13:51:25.443] [INFO] [checklist] Sovereign Cell online @ http://localhost:42921[0m
+[2:51:25 PM] [32m[13:51:25.446] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:51:52 PM] Current list has 0 items
+[2:51:52 PM] Mesh health: NOMINAL, 15 cells
+[2:53:51 PM] [checklist] Key fingerprint: 1c6ba52eac4964a1
+[2:53:51 PM] [32m[13:53:51.105] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:53:51 PM] [32m[13:53:51.124] [INFO] [checklist] Sovereign Cell online @ http://localhost:43433[0m
+[2:53:51 PM] [32m[13:53:51.125] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:53:51 PM] [32m[13:53:51.166] [INFO] [checklist] [4e255dbf] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[2:53:51 PM] [32m[13:53:51.168] [INFO] [checklist] [4e255dbf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42651[0m
+[2:53:51 PM] [32m[13:53:51.168] [INFO] [checklist] [4e255dbf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36713[0m
+[2:53:51 PM] [32m[13:53:51.168] [INFO] [checklist] [4e255dbf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42551[0m
+[2:53:51 PM] [32m[13:53:51.515] [INFO] [checklist] [454255b5] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [skills][0m
+[2:53:51 PM] [32m[13:53:51.518] [INFO] [checklist] [32ca8393] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [tts-ui][0m
+[2:53:51 PM] [32m[13:53:51.615] [INFO] [checklist] [f64a4903] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [kindly][0m
+[2:53:51 PM] [32m[13:53:51.625] [INFO] [checklist] [649b9eff] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:36713[0m
+[2:53:51 PM] [32m[13:53:51.625] [INFO] [checklist] [c7202e44] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:45659[0m
+[2:53:51 PM] [32m[13:53:51.650] [INFO] [checklist] [30418d9d] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [projects][0m
+[2:53:51 PM] [32m[13:53:51.651] [INFO] [checklist] [9c446322] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [telegram][0m
+[2:53:51 PM] [32m[13:53:51.665] [INFO] [checklist] [7118be2a] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [ai][0m
+[2:54:04 PM] [32m[13:54:04.904] [INFO] [checklist] [55d50547] 📥 SIGNAL_ARRIVED: [list/get] from [kindly][0m
+[2:54:06 PM] [32m[13:54:06.125] [INFO] [checklist] [51e365a0] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:36713[0m
+[2:54:06 PM] [32m[13:54:06.125] [INFO] [checklist] [95fcde79] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:42551[0m
+[2:54:06 PM] [32m[13:54:06.149] [INFO] [checklist] [c098a1a8] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [projects][0m
+[2:54:06 PM] [32m[13:54:06.186] [INFO] [checklist] [bfd33709] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [Codegen][0m
+[2:54:08 PM] [32m[13:54:08.042] [INFO] [checklist] [050a4ab9] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[2:54:08 PM] [32m[13:54:08.042] [INFO] [checklist] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:42651[0m
+[2:54:08 PM] [32m[13:54:08.042] [INFO] [checklist] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:38211[0m
+[2:54:08 PM] [32m[13:54:08.042] [INFO] [checklist] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:36455[0m
+[2:54:18 PM] [32m[13:54:18.127] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[2:54:18 PM] [32m[13:54:18.127] [INFO] [checklist] [0e989e8e] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[2:54:18 PM] Current list has 0 items
+[2:54:18 PM] [32m[13:54:18.127] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[2:54:18 PM] [32m[13:54:18.127] [INFO] [checklist] [509643a6] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[2:54:18 PM] [32m[13:54:18.127] [INFO] [checklist] [509643a6] 📡 RPC_OUT: [mesh/health] -> http://localhost:41521[0m
+[2:54:18 PM] Mesh health: NOMINAL, 15 cells
+[2:54:21 PM] [32m[13:54:21.125] [INFO] [checklist] [2b7bfc1c] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:43247[0m
+[2:54:21 PM] [32m[13:54:21.125] [INFO] [checklist] [7972dbd6] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:45659[0m
+[2:59:48 PM] [checklist] Key fingerprint: 8fd7acc09af78b40
+[2:59:48 PM] [32m[13:59:48.991] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[2:59:48 PM] [32m[13:59:48.999] [INFO] [checklist] Sovereign Cell online @ http://localhost:43289[0m
+[2:59:49 PM] [32m[13:59:49.000] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[2:59:49 PM] [32m[13:59:49.056] [INFO] [checklist] [d2728c9f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[2:59:49 PM] [32m[13:59:49.057] [INFO] [checklist] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39445[0m
+[2:59:49 PM] [32m[13:59:49.057] [INFO] [checklist] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45229[0m
+[2:59:49 PM] [32m[13:59:49.057] [INFO] [checklist] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41807[0m
+[3:00:16 PM] [32m[14:00:16.002] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[3:00:16 PM] [32m[14:00:16.002] [INFO] [checklist] [813fc2f7] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[3:00:16 PM] Current list has 0 items
+[3:00:16 PM] [32m[14:00:16.002] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[3:00:16 PM] [32m[14:00:16.003] [INFO] [checklist] [6a12457d] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[3:00:16 PM] [32m[14:00:16.003] [INFO] [checklist] [6a12457d] 📡 RPC_OUT: [mesh/health] -> http://localhost:35803[0m
+[3:00:16 PM] Mesh health: NOMINAL, 16 cells
+[3:00:41 PM] [checklist] Key fingerprint: 1b7862074b384d62
+[3:00:41 PM] [32m[14:00:41.871] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:00:41 PM] [32m[14:00:41.887] [INFO] [checklist] Sovereign Cell online @ http://localhost:33267[0m
+[3:00:41 PM] [32m[14:00:41.887] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:00:42 PM] [32m[14:00:42.018] [INFO] [checklist] [6ecce893] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:00:42 PM] [32m[14:00:42.019] [INFO] [checklist] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39649[0m
+[3:00:42 PM] [32m[14:00:42.019] [INFO] [checklist] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36855[0m
+[3:00:42 PM] [32m[14:00:42.019] [INFO] [checklist] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36741[0m
+[3:01:08 PM] [32m[14:01:08.889] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[3:01:08 PM] [32m[14:01:08.889] [INFO] [checklist] [8d70a834] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[3:01:08 PM] Current list has 0 items
+[3:01:08 PM] [32m[14:01:08.890] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[3:01:08 PM] [32m[14:01:08.890] [INFO] [checklist] [39823e63] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[3:01:08 PM] [32m[14:01:08.890] [INFO] [checklist] [39823e63] 📡 RPC_OUT: [mesh/health] -> http://localhost:43529[0m
+[3:01:08 PM] Mesh health: NOMINAL, 17 cells
+[3:01:15 PM] [32m[14:01:15.208] [INFO] [checklist] [19fabee3] 📥 SIGNAL_ARRIVED: [list/get] from [kindly][0m
+[3:01:19 PM] [32m[14:01:19.080] [INFO] [checklist] [c036933f] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[3:01:19 PM] [32m[14:01:19.080] [INFO] [checklist] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:39385[0m
+[3:01:19 PM] [32m[14:01:19.085] [INFO] [checklist] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:44047[0m
+[3:01:19 PM] [32m[14:01:19.085] [INFO] [checklist] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:36741[0m
+[3:01:19 PM] [32m[14:01:19.085] [INFO] [checklist] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:43529[0m
+[3:02:53 PM] [checklist] Key fingerprint: 63c2d860430c0bd5
+[3:02:53 PM] [32m[14:02:52.934] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:02:53 PM] [32m[14:02:52.946] [INFO] [checklist] Sovereign Cell online @ http://localhost:40761[0m
+[3:02:53 PM] [32m[14:02:52.949] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:02:53 PM] [32m[14:02:53.452] [INFO] [checklist] [dc63d8de] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37737[0m
+[3:02:53 PM] [32m[14:02:53.453] [INFO] [checklist] [34d98311] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:03:07 PM] [32m[14:03:07.951] [INFO] [checklist] [874b08fe] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:42793[0m
+[3:03:07 PM] [32m[14:03:07.951] [INFO] [checklist] [659dea4a] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:32869[0m
+[3:03:19 PM] [32m[14:03:19.951] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[3:03:19 PM] [32m[14:03:19.951] [INFO] [checklist] [3cc66583] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[3:03:19 PM] Current list has 0 items
+[3:03:19 PM] [32m[14:03:19.951] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[3:03:19 PM] [32m[14:03:19.951] [INFO] [checklist] [fe31b337] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[3:03:19 PM] [32m[14:03:19.952] [INFO] [checklist] [fe31b337] 📡 RPC_OUT: [mesh/health] -> http://localhost:43089[0m
+[3:03:19 PM] [32m[14:03:19.954] [INFO] [checklist] [fe31b337] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:43089[0m
+[3:03:19 PM] Mesh health: NOMINAL, 16 cells
+[3:03:22 PM] [32m[14:03:22.952] [INFO] [checklist] [ae215f94] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:39865[0m
+[3:03:22 PM] [32m[14:03:22.952] [INFO] [checklist] [a62e0888] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:03:37 PM] [32m[14:03:37.950] [INFO] [checklist] [0c58ec92] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43543[0m
+[3:03:37 PM] [32m[14:03:37.951] [INFO] [checklist] [7c3afafa] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:32809[0m
+[3:03:48 PM] [checklist] Key fingerprint: e9eaae393d8103af
+[3:03:48 PM] [32m[14:03:48.163] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:03:48 PM] [32m[14:03:48.175] [INFO] [checklist] Sovereign Cell online @ http://localhost:45527[0m
+[3:03:48 PM] [32m[14:03:48.179] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:03:48 PM] [32m[14:03:48.688] [INFO] [checklist] [c9214c24] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45425[0m
+[3:03:48 PM] [32m[14:03:48.688] [INFO] [checklist] [f8e9f7d2] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37951[0m
+[3:04:03 PM] [32m[14:04:03.181] [INFO] [checklist] [3ec85f02] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:38583[0m
+[3:04:03 PM] [32m[14:04:03.186] [INFO] [checklist] [c39b6f22] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:42689[0m
+[3:04:15 PM] [32m[14:04:15.180] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[3:04:15 PM] [32m[14:04:15.180] [INFO] [checklist] [27687c08] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[3:04:15 PM] Current list has 0 items
+[3:04:15 PM] [32m[14:04:15.181] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[3:04:15 PM] [32m[14:04:15.181] [INFO] [checklist] [4c87b593] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[3:04:15 PM] [32m[14:04:15.181] [INFO] [checklist] [4c87b593] 📡 RPC_OUT: [mesh/health] -> http://localhost:34751[0m
+[3:04:15 PM] [32m[14:04:15.182] [INFO] [checklist] [4c87b593] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:34751[0m
+[3:04:15 PM] Mesh health: NOMINAL, 16 cells
+[3:04:18 PM] [32m[14:04:18.181] [INFO] [checklist] [cbff739d] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:39043[0m
+[3:04:18 PM] [32m[14:04:18.183] [INFO] [checklist] [e89af106] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:44307[0m
+[3:05:53 PM] [checklist] Key fingerprint: b5b3efe6edaf1389
+[3:05:53 PM] [32m[14:05:53.628] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:05:53 PM] [32m[14:05:53.640] [INFO] [checklist] Sovereign Cell online @ http://localhost:36421[0m
+[3:05:53 PM] [32m[14:05:53.643] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:05:53 PM] [32m[14:05:53.742] [INFO] [checklist] [57cb6c73] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:05:53 PM] [32m[14:05:53.743] [INFO] [checklist] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42863[0m
+[3:05:53 PM] [32m[14:05:53.743] [INFO] [checklist] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34467[0m
+[3:05:53 PM] [32m[14:05:53.743] [INFO] [checklist] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37705[0m
+[3:05:54 PM] [32m[14:05:54.144] [INFO] [checklist] [5f804c83] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34467[0m
+[3:05:54 PM] [32m[14:05:54.148] [INFO] [checklist] [dbf5f0fc] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40177[0m
+[3:06:43 PM] [checklist] Key fingerprint: 01fd2a8cf605537e
+[3:06:43 PM] [32m[14:06:43.874] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:06:43 PM] [32m[14:06:43.885] [INFO] [checklist] Sovereign Cell online @ http://localhost:40135[0m
+[3:06:43 PM] [32m[14:06:43.888] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:06:44 PM] [32m[14:06:44.393] [INFO] [checklist] [3577b66b] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43539[0m
+[3:06:44 PM] [32m[14:06:44.398] [INFO] [checklist] [c238a9f0] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:39549[0m
+[3:07:39 PM] [checklist] Key fingerprint: 382ce5550dda7c9e
+[3:07:39 PM] [32m[14:07:39.547] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:07:39 PM] [32m[14:07:39.566] [INFO] [checklist] Sovereign Cell online @ http://localhost:39001[0m
+[3:07:39 PM] [32m[14:07:39.567] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:07:39 PM] [32m[14:07:39.613] [INFO] [checklist] [5fae5789] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:07:39 PM] [32m[14:07:39.614] [INFO] [checklist] [5fae5789] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45287[0m
+[3:07:39 PM] [32m[14:07:39.614] [INFO] [checklist] [5fae5789] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37477[0m
+[3:07:39 PM] [32m[14:07:39.614] [INFO] [checklist] [5fae5789] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34801[0m
+[3:07:39 PM] [32m[14:07:39.627] [INFO] [checklist] [5fae5789] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:45287[0m
+[3:07:39 PM] [32m[14:07:39.627] [INFO] [checklist] [5fae5789] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37477[0m
+[3:07:40 PM] [33m[14:07:40.069] [WARN] [checklist] [ef622dbd] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:38297 (undefined)[0m
+[3:07:40 PM] [33m[14:07:40.069] [WARN] [checklist] [db1479b9] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:37477 (undefined)[0m
+[3:08:35 PM] [checklist] Key fingerprint: 41301d40b5e0204a
+[3:08:35 PM] [32m[14:08:35.054] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:08:35 PM] [32m[14:08:35.066] [INFO] [checklist] Sovereign Cell online @ http://localhost:35195[0m
+[3:08:35 PM] [32m[14:08:35.068] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:08:35 PM] [32m[14:08:35.157] [INFO] [checklist] [93e04371] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:08:35 PM] [32m[14:08:35.159] [INFO] [checklist] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43879[0m
+[3:08:35 PM] [32m[14:08:35.160] [INFO] [checklist] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41269[0m
+[3:08:35 PM] [32m[14:08:35.160] [INFO] [checklist] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42381[0m
+[3:08:35 PM] [32m[14:08:35.173] [INFO] [checklist] [93e04371] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:43879[0m
+[3:08:35 PM] [33m[14:08:35.173] [WARN] [checklist] [93e04371] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:43879 (undefined)[0m
+[3:09:03 PM] [checklist] Key fingerprint: ed5deb497b0f979d
+[3:09:03 PM] [32m[14:09:03.427] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:09:03 PM] [32m[14:09:03.470] [INFO] [checklist] Sovereign Cell online @ http://localhost:35195[0m
+[3:09:03 PM] [32m[14:09:03.473] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:09:30 PM] [32m[14:09:30.475] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[3:09:30 PM] [32m[14:09:30.475] [INFO] [checklist] [b5a79884] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[3:09:30 PM] Current list has 0 items
+[3:09:30 PM] [32m[14:09:30.475] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[3:09:30 PM] [32m[14:09:30.475] [INFO] [checklist] [1d57fb60] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[3:09:30 PM] [32m[14:09:30.476] [INFO] [checklist] [1d57fb60] 📡 RPC_OUT: [mesh/health] -> http://localhost:45461[0m
+[3:09:30 PM] [32m[14:09:30.478] [INFO] [checklist] [1d57fb60] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:45461[0m
+[3:09:30 PM] [33m[14:09:30.478] [WARN] [checklist] [1d57fb60] ❌ RPC_REMOTE_FAIL: [mesh/health] @ http://localhost:45461 (undefined)[0m
+[3:09:30 PM] Mesh health: NOMINAL, 16 cells
+[3:09:33 PM] [32m[14:09:33.457] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[3:09:48 PM] [32m[14:09:48.443] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[3:09:48 PM] [32m[14:09:48.492] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[3:10:12 PM] [checklist] Key fingerprint: fa644002dded38c4
+[3:10:12 PM] [32m[14:10:12.432] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[3:10:12 PM] [32m[14:10:12.443] [INFO] [checklist] Sovereign Cell online @ http://localhost:46181[0m
+[3:10:12 PM] [32m[14:10:12.444] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[3:10:12 PM] [32m[14:10:12.479] [INFO] [checklist] [46342ad3] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:10:12 PM] [32m[14:10:12.480] [INFO] [checklist] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34443[0m
+[3:10:12 PM] [32m[14:10:12.480] [INFO] [checklist] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37883[0m
+[3:10:12 PM] [32m[14:10:12.480] [INFO] [checklist] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45907[0m
+[3:10:39 PM] [32m[14:10:39.445] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[3:10:39 PM] [32m[14:10:39.445] [INFO] [checklist] [5518e124] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[3:10:39 PM] Current list has 0 items
+[3:10:39 PM] [32m[14:10:39.446] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[3:10:39 PM] [32m[14:10:39.446] [INFO] [checklist] [83a3e0c7] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[3:10:39 PM] [32m[14:10:39.446] [INFO] [checklist] [83a3e0c7] 📡 RPC_OUT: [mesh/health] -> http://localhost:37007[0m
+[3:10:39 PM] [32m[14:10:39.447] [INFO] [checklist] [83a3e0c7] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:37007[0m
+[3:10:39 PM] [33m[14:10:39.447] [WARN] [checklist] [83a3e0c7] ❌ RPC_REMOTE_FAIL: [mesh/health] @ http://localhost:37007 (undefined)[0m
+[3:10:39 PM] Mesh health: NOMINAL, 17 cells
+[3:10:42 PM] [32m[14:10:42.386] [INFO] [checklist] 🌐 ~2 → 14p/62c[0m
+[3:10:57 PM] [32m[14:10:57.386] [INFO] [checklist] 🌐 ~2 → 14p/62c[0m
+[10:47:54 PM] [checklist] Key fingerprint: 542f2c25a2d3697c
+[10:47:54 PM] [32m[21:47:54.401] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[10:47:54 PM] [32m[21:47:54.408] [INFO] [checklist] Sovereign Cell online @ http://localhost:43279[0m
+[10:47:54 PM] [32m[21:47:54.409] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[10:47:54 PM] [32m[21:47:54.462] [INFO] [checklist] [a19e3189] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:47:54 PM] [32m[21:47:54.463] [INFO] [checklist] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46337[0m
+[10:47:54 PM] [32m[21:47:54.463] [INFO] [checklist] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42379[0m
+[10:47:54 PM] [32m[21:47:54.463] [INFO] [checklist] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46493[0m
+[10:48:21 PM] [32m[21:48:21.410] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[10:48:21 PM] [32m[21:48:21.410] [INFO] [checklist] [24fa5b96] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[10:48:21 PM] Current list has 0 items
+[10:48:21 PM] [32m[21:48:21.411] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[10:48:21 PM] [32m[21:48:21.411] [INFO] [checklist] [38584ae2] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[10:48:21 PM] [32m[21:48:21.411] [INFO] [checklist] [38584ae2] 📡 RPC_OUT: [mesh/health] -> http://localhost:41191[0m
+[10:48:21 PM] [32m[21:48:21.412] [INFO] [checklist] [38584ae2] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:41191[0m
+[10:48:21 PM] Mesh health: NOMINAL, 16 cells
+[10:52:54 PM] [32m[21:52:54.380] [INFO] [checklist] [a19e3189] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:42379[0m
+[10:52:54 PM] [32m[21:52:54.385] [INFO] [checklist] [a19e3189] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:46337[0m
+[11:03:39 PM] [checklist] Key fingerprint: 09b74daf8f9f8318
+[11:03:39 PM] [32m[22:03:39.193] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:03:39 PM] [32m[22:03:39.199] [INFO] [checklist] Sovereign Cell online @ http://localhost:33355[0m
+[11:03:39 PM] [32m[22:03:39.202] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:04:06 PM] [32m[22:04:06.203] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:04:06 PM] [32m[22:04:06.203] [INFO] [checklist] [5a30fa79] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:04:06 PM] Current list has 0 items
+[11:04:06 PM] [32m[22:04:06.204] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:04:06 PM] [32m[22:04:06.204] [INFO] [checklist] [66441627] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:04:06 PM] [32m[22:04:06.204] [INFO] [checklist] [66441627] 📡 RPC_OUT: [mesh/health] -> http://localhost:36093[0m
+[11:04:06 PM] [32m[22:04:06.206] [INFO] [checklist] [66441627] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:36093[0m
+[11:04:06 PM] Mesh health: NOMINAL, 16 cells
+[11:29:17 PM] [checklist] Key fingerprint: b61169235f96cac4
+[11:29:17 PM] [32m[22:29:17.267] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:29:17 PM] [32m[22:29:17.275] [INFO] [checklist] Sovereign Cell online @ http://localhost:33195[0m
+[11:29:17 PM] [32m[22:29:17.278] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:29:44 PM] [32m[22:29:44.280] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:29:44 PM] [32m[22:29:44.280] [INFO] [checklist] [2b5a4f85] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:29:44 PM] Current list has 0 items
+[11:29:44 PM] [32m[22:29:44.280] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:29:44 PM] [32m[22:29:44.280] [INFO] [checklist] [32b70143] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:29:44 PM] [32m[22:29:44.281] [INFO] [checklist] [32b70143] 📡 RPC_OUT: [mesh/health] -> http://localhost:39763[0m
+[11:29:44 PM] [32m[22:29:44.283] [INFO] [checklist] [32b70143] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:39763[0m
+[11:29:44 PM] Mesh health: NOMINAL, 17 cells
+[11:32:32 PM] [checklist] Key fingerprint: 61aa517f66a6f188
+[11:32:32 PM] [32m[22:32:32.041] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:32:32 PM] [32m[22:32:32.047] [INFO] [checklist] Sovereign Cell online @ http://localhost:45225[0m
+[11:32:32 PM] [32m[22:32:32.048] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:32:59 PM] [32m[22:32:59.050] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:32:59 PM] [32m[22:32:59.050] [INFO] [checklist] [ef9e430d] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:32:59 PM] Current list has 0 items
+[11:32:59 PM] [32m[22:32:59.051] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:32:59 PM] [32m[22:32:59.051] [INFO] [checklist] [416bbf79] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:32:59 PM] [32m[22:32:59.052] [INFO] [checklist] [416bbf79] 📡 RPC_OUT: [mesh/health] -> http://localhost:39209[0m
+[11:32:59 PM] [32m[22:32:59.053] [INFO] [checklist] [416bbf79] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:39209[0m
+[11:32:59 PM] Mesh health: NOMINAL, 16 cells
+[11:33:17 PM] [32m[22:33:17.008] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[11:35:13 PM] [checklist] Key fingerprint: 56e4a64ae891db6a
+[11:35:13 PM] [32m[22:35:13.407] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:35:13 PM] [32m[22:35:13.412] [INFO] [checklist] Sovereign Cell online @ http://localhost:38443[0m
+[11:35:13 PM] [32m[22:35:13.413] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:35:13 PM] [32m[22:35:13.533] [INFO] [checklist] [a31aeec4] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:35:13 PM] [32m[22:35:13.535] [INFO] [checklist] [a31aeec4] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46401[0m
+[11:35:13 PM] [32m[22:35:13.535] [INFO] [checklist] [a31aeec4] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34831[0m
+[11:35:13 PM] [32m[22:35:13.535] [INFO] [checklist] [a31aeec4] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39727[0m
+[11:35:40 PM] [32m[22:35:40.415] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:35:40 PM] [32m[22:35:40.415] [INFO] [checklist] [ee46caf0] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:35:40 PM] Current list has 0 items
+[11:35:40 PM] [32m[22:35:40.415] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:35:40 PM] [32m[22:35:40.415] [INFO] [checklist] [8d1d9f24] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:35:40 PM] [32m[22:35:40.416] [INFO] [checklist] [8d1d9f24] 📡 RPC_OUT: [mesh/health] -> http://localhost:36521[0m
+[11:35:40 PM] [32m[22:35:40.419] [INFO] [checklist] [8d1d9f24] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:36521[0m
+[11:35:40 PM] Mesh health: NOMINAL, 16 cells
+[11:40:13 PM] [32m[22:40:13.447] [INFO] [checklist] [a31aeec4] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:34831[0m
+[11:40:28 PM] [checklist] Key fingerprint: 509fda2c5b5b7a85
+[11:40:28 PM] [32m[22:40:28.801] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:40:28 PM] [32m[22:40:28.811] [INFO] [checklist] Sovereign Cell online @ http://localhost:39703[0m
+[11:40:28 PM] [32m[22:40:28.812] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:40:28 PM] [32m[22:40:28.860] [INFO] [checklist] [a8aa5baf] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:40:28 PM] [32m[22:40:28.868] [INFO] [checklist] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41113[0m
+[11:40:28 PM] [32m[22:40:28.868] [INFO] [checklist] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44295[0m
+[11:40:28 PM] [32m[22:40:28.868] [INFO] [checklist] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36407[0m
+[11:40:55 PM] [32m[22:40:55.814] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:40:55 PM] [32m[22:40:55.814] [INFO] [checklist] [88070995] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:40:55 PM] Current list has 0 items
+[11:40:55 PM] [32m[22:40:55.814] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:40:55 PM] [32m[22:40:55.814] [INFO] [checklist] [9d6a8e64] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:40:55 PM] [32m[22:40:55.814] [INFO] [checklist] [9d6a8e64] 📡 RPC_OUT: [mesh/health] -> http://localhost:36407[0m
+[11:40:55 PM] [32m[22:40:55.816] [INFO] [checklist] [9d6a8e64] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:36407[0m
+[11:40:55 PM] Mesh health: NOMINAL, 16 cells
+[11:45:28 PM] [32m[22:45:28.786] [INFO] [checklist] [a8aa5baf] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:41113[0m
+[11:45:28 PM] [32m[22:45:28.788] [INFO] [checklist] [a8aa5baf] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36407[0m
+[11:47:49 PM] [checklist] Key fingerprint: 8512b764a202a167
+[11:47:49 PM] [32m[22:47:49.660] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:47:49 PM] [32m[22:47:49.679] [INFO] [checklist] Sovereign Cell online @ http://localhost:34747[0m
+[11:47:49 PM] [32m[22:47:49.680] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:48:16 PM] [32m[22:48:16.682] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:48:16 PM] [32m[22:48:16.682] [INFO] [checklist] [2a98e2ca] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:48:16 PM] Current list has 0 items
+[11:48:16 PM] [32m[22:48:16.683] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:48:16 PM] [32m[22:48:16.683] [INFO] [checklist] [7cf4e317] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:48:16 PM] [32m[22:48:16.684] [INFO] [checklist] [7cf4e317] 📡 RPC_OUT: [mesh/health] -> http://localhost:33729[0m
+[11:48:16 PM] [32m[22:48:16.685] [INFO] [checklist] [7cf4e317] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:33729[0m
+[11:48:16 PM] Mesh health: NOMINAL, 17 cells
+[11:53:29 PM] [checklist] Key fingerprint: 06b84deb59cc9f8f
+[11:53:29 PM] [32m[22:53:29.079] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:53:29 PM] [32m[22:53:29.086] [INFO] [checklist] Sovereign Cell online @ http://localhost:37795[0m
+[11:53:29 PM] [32m[22:53:29.087] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:53:29 PM] [32m[22:53:29.211] [INFO] [checklist] [dd2314c5] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:53:29 PM] [32m[22:53:29.214] [INFO] [checklist] [dd2314c5] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39795[0m
+[11:53:29 PM] [32m[22:53:29.219] [INFO] [checklist] [dd2314c5] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39795[0m
+[11:53:56 PM] [32m[22:53:56.089] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:53:56 PM] [32m[22:53:56.089] [INFO] [checklist] [8f9b5702] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:53:56 PM] Current list has 0 items
+[11:53:56 PM] [32m[22:53:56.089] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:53:56 PM] [32m[22:53:56.089] [INFO] [checklist] [00156e27] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:53:56 PM] [32m[22:53:56.089] [INFO] [checklist] [00156e27] 📡 RPC_OUT: [mesh/health] -> http://localhost:41801[0m
+[11:53:56 PM] [32m[22:53:56.091] [INFO] [checklist] [00156e27] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:41801[0m
+[11:53:56 PM] Mesh health: NOMINAL, 17 cells
+[11:56:22 PM] [checklist] Key fingerprint: 9da85c4e99499346
+[11:56:22 PM] [32m[22:56:22.657] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:56:22 PM] [32m[22:56:22.667] [INFO] [checklist] Sovereign Cell online @ http://localhost:43193[0m
+[11:56:22 PM] [32m[22:56:22.667] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:56:22 PM] [32m[22:56:22.710] [INFO] [checklist] [af0b1b0d] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:56:22 PM] [32m[22:56:22.711] [INFO] [checklist] [af0b1b0d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:32909[0m
+[11:56:22 PM] [32m[22:56:22.711] [INFO] [checklist] [af0b1b0d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45179[0m
+[11:56:22 PM] [32m[22:56:22.711] [INFO] [checklist] [af0b1b0d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33375[0m
+[11:56:49 PM] [32m[22:56:49.670] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:56:49 PM] [32m[22:56:49.671] [INFO] [checklist] [54fa8410] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:56:49 PM] Current list has 0 items
+[11:56:49 PM] [32m[22:56:49.672] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:56:49 PM] [32m[22:56:49.672] [INFO] [checklist] [4537de80] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:56:49 PM] [32m[22:56:49.672] [INFO] [checklist] [4537de80] 📡 RPC_OUT: [mesh/health] -> http://localhost:45179[0m
+[11:56:49 PM] [32m[22:56:49.674] [INFO] [checklist] [4537de80] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:45179[0m
+[11:56:49 PM] Mesh health: NOMINAL, 16 cells
+[11:56:53 PM] [checklist] Key fingerprint: 377f57220dd65986
+[11:56:53 PM] [32m[22:56:53.687] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:56:53 PM] [32m[22:56:53.696] [INFO] [checklist] Sovereign Cell online @ http://localhost:32857[0m
+[11:56:53 PM] [32m[22:56:53.697] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:57:20 PM] [32m[22:57:20.699] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:57:20 PM] [32m[22:57:20.699] [INFO] [checklist] [73e51291] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[11:57:20 PM] Current list has 0 items
+[11:57:20 PM] [32m[22:57:20.699] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:57:20 PM] [32m[22:57:20.699] [INFO] [checklist] [b6fbe7f7] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[11:57:20 PM] [32m[22:57:20.700] [INFO] [checklist] [b6fbe7f7] 📡 RPC_OUT: [mesh/health] -> http://localhost:37287[0m
+[11:57:20 PM] [32m[22:57:20.702] [INFO] [checklist] [b6fbe7f7] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:37287[0m
+[11:57:20 PM] Mesh health: NOMINAL, 17 cells
+[11:59:46 PM] [checklist] Key fingerprint: ec210bc244ff0fe4
+[11:59:46 PM] [32m[22:59:46.548] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:59:46 PM] [32m[22:59:46.578] [INFO] [checklist] Sovereign Cell online @ http://localhost:38841[0m
+[11:59:46 PM] [32m[22:59:46.579] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:00:13 AM] [32m[23:00:13.581] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:00:13 AM] [32m[23:00:13.581] [INFO] [checklist] [588fe6ee] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:00:13 AM] Current list has 0 items
+[12:00:13 AM] [32m[23:00:13.581] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:00:13 AM] [32m[23:00:13.581] [INFO] [checklist] [006fff27] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:00:13 AM] [32m[23:00:13.582] [INFO] [checklist] [006fff27] 📡 RPC_OUT: [mesh/health] -> http://localhost:39379[0m
+[12:00:13 AM] [32m[23:00:13.583] [INFO] [checklist] [006fff27] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:39379[0m
+[12:00:13 AM] Mesh health: NOMINAL, 16 cells
+[12:07:18 AM] [checklist] Key fingerprint: f80dbadf5a02b385
+[12:07:18 AM] [32m[23:07:18.264] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:07:18 AM] [32m[23:07:18.279] [INFO] [checklist] Sovereign Cell online @ http://localhost:42229[0m
+[12:07:18 AM] [32m[23:07:18.280] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:07:18 AM] [32m[23:07:18.355] [INFO] [checklist] [218a6a89] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:07:18 AM] [32m[23:07:18.356] [INFO] [checklist] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33505[0m
+[12:07:18 AM] [32m[23:07:18.356] [INFO] [checklist] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40629[0m
+[12:07:18 AM] [32m[23:07:18.356] [INFO] [checklist] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36603[0m
+[12:07:45 AM] [32m[23:07:45.281] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:07:45 AM] [32m[23:07:45.282] [INFO] [checklist] [650b17af] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:07:45 AM] Current list has 0 items
+[12:07:45 AM] [32m[23:07:45.282] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:07:45 AM] [32m[23:07:45.282] [INFO] [checklist] [b8e0fafc] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:07:45 AM] [32m[23:07:45.282] [INFO] [checklist] [b8e0fafc] 📡 RPC_OUT: [mesh/health] -> http://localhost:41737[0m
+[12:07:45 AM] [32m[23:07:45.283] [INFO] [checklist] [b8e0fafc] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:41737[0m
+[12:07:45 AM] Mesh health: NOMINAL, 15 cells
+[12:08:36 AM] [checklist] Key fingerprint: 2742d21f7123956b
+[12:08:37 AM] [32m[23:08:36.991] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:08:37 AM] [32m[23:08:37.034] [INFO] [checklist] Sovereign Cell online @ http://localhost:40753[0m
+[12:08:37 AM] [32m[23:08:37.036] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:09:04 AM] [32m[23:09:04.037] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:09:04 AM] [32m[23:09:04.037] [INFO] [checklist] [f9442e22] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:09:04 AM] Current list has 0 items
+[12:09:04 AM] [32m[23:09:04.038] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:09:04 AM] [32m[23:09:04.038] [INFO] [checklist] [4e6eb0ce] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:09:04 AM] [32m[23:09:04.039] [INFO] [checklist] [4e6eb0ce] 📡 RPC_OUT: [mesh/health] -> http://localhost:34721[0m
+[12:09:04 AM] [32m[23:09:04.040] [INFO] [checklist] [4e6eb0ce] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:34721[0m
+[12:09:04 AM] Mesh health: NOMINAL, 16 cells
+[12:11:04 AM] [32m[23:11:04.472] [INFO] [checklist] [6d4ed6d6] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:11:04 AM] [32m[23:11:04.472] [INFO] [checklist] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36661[0m
+[12:11:04 AM] [33m[23:11:04.478] [WARN] [checklist] [6d4ed6d6] ❌ RPC_REMOTE_FAIL: [memory/goals/create] @ http://localhost:36661 (HANDLER_ERR)[0m
+[12:11:04 AM] [32m[23:11:04.479] [INFO] [checklist] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:43095[0m
+[12:11:04 AM] [32m[23:11:04.479] [INFO] [checklist] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:38591[0m
+[12:11:04 AM] [32m[23:11:04.479] [INFO] [checklist] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:38027[0m
+[12:15:04 AM] [checklist] Key fingerprint: b8722d4271d8ef5c
+[12:15:04 AM] [32m[23:15:04.487] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:15:04 AM] [32m[23:15:04.502] [INFO] [checklist] Sovereign Cell online @ http://localhost:38245[0m
+[12:15:04 AM] [32m[23:15:04.503] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:15:04 AM] [32m[23:15:04.646] [INFO] [checklist] [3a19ba3a] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:15:04 AM] [32m[23:15:04.647] [INFO] [checklist] [3a19ba3a] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42213[0m
+[12:15:04 AM] [32m[23:15:04.649] [INFO] [checklist] [3a19ba3a] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:42213[0m
+[12:15:31 AM] [32m[23:15:31.504] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:15:31 AM] [32m[23:15:31.504] [INFO] [checklist] [9879366e] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:15:31 AM] Current list has 0 items
+[12:15:31 AM] [32m[23:15:31.505] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:15:31 AM] [32m[23:15:31.505] [INFO] [checklist] [fc54683e] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:15:31 AM] [32m[23:15:31.505] [INFO] [checklist] [fc54683e] 📡 RPC_OUT: [mesh/health] -> http://localhost:33433[0m
+[12:15:31 AM] [32m[23:15:31.507] [INFO] [checklist] [fc54683e] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:33433[0m
+[12:15:31 AM] Mesh health: NOMINAL, 16 cells
+[12:36:07 AM] [checklist] Key fingerprint: 758e85820889f9b1
+[12:36:07 AM] [32m[23:36:07.152] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:36:07 AM] [32m[23:36:07.158] [INFO] [checklist] Sovereign Cell online @ http://localhost:42597[0m
+[12:36:07 AM] [32m[23:36:07.159] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:36:07 AM] [32m[23:36:07.174] [INFO] [checklist] [b793c367] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:36:07 AM] [32m[23:36:07.175] [INFO] [checklist] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44231[0m
+[12:36:07 AM] [32m[23:36:07.175] [INFO] [checklist] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40359[0m
+[12:36:07 AM] [32m[23:36:07.175] [INFO] [checklist] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36371[0m
+[12:36:07 AM] [32m[23:36:07.188] [INFO] [checklist] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44231[0m
+[12:36:07 AM] [32m[23:36:07.194] [INFO] [checklist] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36371[0m
+[12:36:07 AM] [32m[23:36:07.225] [INFO] [checklist] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:40359[0m

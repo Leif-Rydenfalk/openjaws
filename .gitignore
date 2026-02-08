@@ -148,3 +148,9 @@ $RECYCLE.BIN/
 
 # Keep SVG grid (part of UI theme)
 !ui/static/grid.svg
+
+
+certs/
+/certs
+.pem
+*.pem

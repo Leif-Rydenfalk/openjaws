@@ -278,3 +278,643 @@
 [11:39:30 PM] [32m[22:39:30.147] [INFO] [kindly] 🔧 Tool call: list_add[0m
 [11:39:30 PM] [32m[22:39:30.148] [INFO] [kindly] 🔧 [session_] Starting: list_add[0m
 [11:49:21 PM] [32m[22:49:21.768] [INFO] [kindly] ❌ [session_] list_add (591621ms)[0m
+[2:05:49 PM] [kindly] Key fingerprint: 78ab34edfb747201
+[2:05:49 PM] [32m[13:05:49.910] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:05:49 PM] [32m[13:05:49.954] [INFO] [kindly] Sovereign Cell online @ http://localhost:37519[0m
+[2:05:49 PM] [32m[13:05:49.958] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:09:10 PM] [kindly] Key fingerprint: 35b1f73a9cf4b75f
+[2:09:10 PM] [32m[13:09:10.371] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:09:10 PM] [32m[13:09:10.376] [INFO] [kindly] Sovereign Cell online @ http://localhost:43455[0m
+[2:09:10 PM] [32m[13:09:10.377] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:12:41 PM] [kindly] Key fingerprint: 26fad2acc5eb6105
+[2:12:41 PM] [32m[13:12:41.550] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:12:41 PM] [32m[13:12:41.571] [INFO] [kindly] Sovereign Cell online @ http://localhost:40981[0m
+[2:12:41 PM] [32m[13:12:41.572] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:14:02 PM] [kindly] Key fingerprint: 787d3a004907cc85
+[2:14:02 PM] [32m[13:14:02.878] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:14:02 PM] [32m[13:14:02.917] [INFO] [kindly] Sovereign Cell online @ http://localhost:37063[0m
+[2:14:02 PM] [32m[13:14:02.920] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:14:03 PM] [32m[13:14:03.065] [INFO] [kindly] 💬 New chat request from User[0m
+[2:17:10 PM] [kindly] Key fingerprint: 5ce4dfd9a5fc7f24
+[2:17:10 PM] [32m[13:17:10.609] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:17:10 PM] [32m[13:17:10.627] [INFO] [kindly] Sovereign Cell online @ http://localhost:37311[0m
+[2:17:10 PM] [32m[13:17:10.628] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:17:10 PM] [32m[13:17:10.780] [INFO] [kindly] 💬 New chat request from User[0m
+[2:17:12 PM] [32m[13:17:12.370] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:17:15 PM] [32m[13:17:15.345] [INFO] [kindly] 📊 Tokens: 843 (total: 843)[0m
+[2:24:04 PM] [kindly] Key fingerprint: cadc6c95f0693c5c
+[2:24:04 PM] [32m[13:24:04.645] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:24:04 PM] [32m[13:24:04.686] [INFO] [kindly] Sovereign Cell online @ http://localhost:45801[0m
+[2:24:04 PM] [32m[13:24:04.687] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:27:11 PM] [kindly] Key fingerprint: 910d190e7eba9e2d
+[2:27:11 PM] [32m[13:27:11.693] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:27:11 PM] [32m[13:27:11.701] [INFO] [kindly] Sovereign Cell online @ http://localhost:40843[0m
+[2:27:11 PM] [32m[13:27:11.701] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:27:18 PM] [32m[13:27:18.573] [INFO] [kindly] 💬 New chat request from Commander[0m
+[2:27:20 PM] [32m[13:27:20.923] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:27:23 PM] [32m[13:27:23.774] [INFO] [kindly] 📊 Tokens: 852 (total: 852)[0m
+[2:27:23 PM] [32m[13:27:23.774] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:27:23 PM] [32m[13:27:23.774] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:27:23 PM] [32m[13:27:23.776] [INFO] [kindly] ✅ [session_] list_get (2ms)[0m
+[2:27:23 PM] [32m[13:27:23.776] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:27:28 PM] [32m[13:27:28.318] [INFO] [kindly] 📊 Tokens: 1062 (total: 1914)[0m
+[2:28:55 PM] [kindly] Key fingerprint: a37009a1fbd9820b
+[2:28:55 PM] [32m[13:28:55.076] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:28:55 PM] [32m[13:28:55.096] [INFO] [kindly] Sovereign Cell online @ http://localhost:41881[0m
+[2:28:55 PM] [32m[13:28:55.097] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:29:21 PM] [32m[13:29:21.607] [INFO] [kindly] 💬 New chat request from Commander[0m
+[2:29:23 PM] [32m[13:29:23.984] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:29:29 PM] [32m[13:29:29.565] [INFO] [kindly] 📊 Tokens: 1223 (total: 1223)[0m
+[2:29:29 PM] [32m[13:29:29.565] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:29:29 PM] [32m[13:29:29.565] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:29:29 PM] [32m[13:29:29.567] [INFO] [kindly] ✅ [session_] list_get (2ms)[0m
+[2:29:29 PM] [32m[13:29:29.567] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:29:33 PM] [32m[13:29:33.827] [INFO] [kindly] 📊 Tokens: 1060 (total: 2283)[0m
+[2:30:25 PM] [kindly] Key fingerprint: d78b0549f29fdaa8
+[2:30:25 PM] [32m[13:30:25.255] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:30:25 PM] [32m[13:30:25.266] [INFO] [kindly] Sovereign Cell online @ http://localhost:44231[0m
+[2:30:25 PM] [32m[13:30:25.266] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:30:34 PM] [32m[13:30:34.895] [INFO] [kindly] 💬 New chat request from Commander[0m
+[2:30:37 PM] [32m[13:30:37.022] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:30:41 PM] [32m[13:30:41.433] [INFO] [kindly] 📊 Tokens: 1044 (total: 1044)[0m
+[2:30:41 PM] [32m[13:30:41.433] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:30:41 PM] [32m[13:30:41.434] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:30:41 PM] [32m[13:30:41.436] [INFO] [kindly] ✅ [session_] list_get (2ms)[0m
+[2:30:41 PM] [32m[13:30:41.436] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:30:45 PM] [32m[13:30:45.142] [INFO] [kindly] 📊 Tokens: 969 (total: 2013)[0m
+[2:33:05 PM] [kindly] Key fingerprint: ece3fdc4c9f78154
+[2:33:05 PM] [32m[13:33:05.475] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:33:05 PM] [32m[13:33:05.480] [INFO] [kindly] Sovereign Cell online @ http://localhost:36129[0m
+[2:33:05 PM] [32m[13:33:05.481] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:33:11 PM] [32m[13:33:11.607] [INFO] [kindly] 💬 New chat request from Commander[0m
+[2:33:14 PM] [32m[13:33:14.118] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:33:18 PM] [32m[13:33:18.726] [INFO] [kindly] 📊 Tokens: 1111 (total: 1111)[0m
+[2:33:18 PM] [32m[13:33:18.727] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:33:18 PM] [32m[13:33:18.727] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:33:18 PM] [32m[13:33:18.729] [INFO] [kindly] ✅ [session_] list_get (2ms)[0m
+[2:33:18 PM] [32m[13:33:18.729] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:33:22 PM] [32m[13:33:22.683] [INFO] [kindly] 📊 Tokens: 986 (total: 2097)[0m
+[2:35:04 PM] [kindly] Key fingerprint: 133693371f0c3ec7
+[2:35:04 PM] [32m[13:35:04.612] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:35:04 PM] [32m[13:35:04.628] [INFO] [kindly] Sovereign Cell online @ http://localhost:34243[0m
+[2:35:04 PM] [32m[13:35:04.631] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:35:09 PM] [32m[13:35:09.482] [INFO] [kindly] 💬 New chat request from User[0m
+[2:35:11 PM] [32m[13:35:11.190] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:35:13 PM] [32m[13:35:13.938] [INFO] [kindly] 📊 Tokens: 824 (total: 824)[0m
+[2:35:13 PM] [32m[13:35:13.938] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:35:13 PM] [32m[13:35:13.938] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:35:13 PM] [32m[13:35:13.941] [INFO] [kindly] ✅ [session_] list_get (3ms)[0m
+[2:35:13 PM] [32m[13:35:13.941] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:35:17 PM] [32m[13:35:17.783] [INFO] [kindly] 📊 Tokens: 976 (total: 1800)[0m
+[2:37:08 PM] [kindly] Key fingerprint: 3ce09cb782d08e30
+[2:37:08 PM] [32m[13:37:08.504] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:37:08 PM] [32m[13:37:08.533] [INFO] [kindly] Sovereign Cell online @ http://localhost:38027[0m
+[2:37:08 PM] [32m[13:37:08.539] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:37:18 PM] [32m[13:37:18.821] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[2:37:20 PM] [32m[13:37:20.778] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:37:26 PM] [32m[13:37:26.503] [INFO] [kindly] 📊 Tokens: 1261 (total: 1261)[0m
+[2:37:26 PM] [32m[13:37:26.503] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:37:26 PM] [32m[13:37:26.503] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:37:26 PM] [32m[13:37:26.505] [INFO] [kindly] ✅ [session_] list_get (2ms)[0m
+[2:37:26 PM] [32m[13:37:26.505] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:37:31 PM] [32m[13:37:31.105] [INFO] [kindly] 📊 Tokens: 1109 (total: 2370)[0m
+[2:40:59 PM] [kindly] Key fingerprint: 846b6de06160d2ac
+[2:40:59 PM] [32m[13:40:59.045] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:40:59 PM] [32m[13:40:59.052] [INFO] [kindly] Sovereign Cell online @ http://localhost:38701[0m
+[2:40:59 PM] [32m[13:40:59.060] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:43:30 PM] [kindly] Key fingerprint: 7421fd8263bbf8d5
+[2:43:30 PM] [32m[13:43:30.797] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:43:30 PM] [32m[13:43:30.814] [INFO] [kindly] Sovereign Cell online @ http://localhost:42249[0m
+[2:43:30 PM] [32m[13:43:30.814] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:44:10 PM] [kindly] Key fingerprint: b76ebe3a58f2e66b
+[2:44:10 PM] [32m[13:44:10.629] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:44:10 PM] [32m[13:44:10.653] [INFO] [kindly] Sovereign Cell online @ http://localhost:42409[0m
+[2:44:10 PM] [32m[13:44:10.655] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:45:23 PM] [kindly] Key fingerprint: cf483c47f4aa1b63
+[2:45:23 PM] [32m[13:45:23.577] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:45:23 PM] [32m[13:45:23.601] [INFO] [kindly] Sovereign Cell online @ http://localhost:46291[0m
+[2:45:23 PM] [32m[13:45:23.602] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:47:51 PM] [kindly] Key fingerprint: 21ad212642be5211
+[2:47:51 PM] [32m[13:47:51.310] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:47:51 PM] [32m[13:47:51.317] [INFO] [kindly] Sovereign Cell online @ http://localhost:38303[0m
+[2:47:51 PM] [32m[13:47:51.319] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:49:07 PM] [kindly] Key fingerprint: 112846cd19559691
+[2:49:07 PM] [32m[13:49:07.735] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:49:07 PM] [32m[13:49:07.755] [INFO] [kindly] Sovereign Cell online @ http://localhost:45489[0m
+[2:49:07 PM] [32m[13:49:07.760] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:50:19 PM] [32m[13:50:19.857] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[2:50:22 PM] [32m[13:50:22.116] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:50:26 PM] [32m[13:50:26.259] [INFO] [kindly] 📊 Tokens: 1093 (total: 1093)[0m
+[2:50:26 PM] [32m[13:50:26.259] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:50:26 PM] [32m[13:50:26.259] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:50:26 PM] [32m[13:50:26.261] [INFO] [kindly] ✅ [session_] list_get (2ms)[0m
+[2:50:26 PM] [32m[13:50:26.261] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:50:31 PM] [32m[13:50:31.065] [INFO] [kindly] 📊 Tokens: 1191 (total: 2284)[0m
+[2:51:25 PM] [kindly] Key fingerprint: 853c48d121a1b353
+[2:51:25 PM] [32m[13:51:25.317] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:51:25 PM] [32m[13:51:25.325] [INFO] [kindly] Sovereign Cell online @ http://localhost:35301[0m
+[2:51:25 PM] [32m[13:51:25.326] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:51:30 PM] [32m[13:51:30.590] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[2:51:32 PM] [32m[13:51:32.200] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:51:35 PM] [32m[13:51:35.199] [INFO] [kindly] 📊 Tokens: 882 (total: 882)[0m
+[2:51:35 PM] [32m[13:51:35.199] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:51:35 PM] [32m[13:51:35.199] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:51:35 PM] [32m[13:51:35.201] [INFO] [kindly] ✅ [session_] list_get (2ms)[0m
+[2:51:35 PM] [32m[13:51:35.201] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:51:39 PM] [32m[13:51:39.373] [INFO] [kindly] 📊 Tokens: 1102 (total: 1984)[0m
+[2:53:51 PM] [kindly] Key fingerprint: dac7c7363116baf9
+[2:53:51 PM] [32m[13:53:51.100] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:53:51 PM] [32m[13:53:51.113] [INFO] [kindly] Sovereign Cell online @ http://localhost:36713[0m
+[2:53:51 PM] [32m[13:53:51.114] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:53:51 PM] [32m[13:53:51.163] [INFO] [kindly] [4e255dbf] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[2:53:51 PM] [32m[13:53:51.164] [INFO] [kindly] [4e255dbf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36433[0m
+[2:53:51 PM] [32m[13:53:51.164] [INFO] [kindly] [4e255dbf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42651[0m
+[2:53:51 PM] [32m[13:53:51.164] [INFO] [kindly] [4e255dbf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42551[0m
+[2:53:51 PM] [32m[13:53:51.513] [INFO] [kindly] [94874e2b] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [coder][0m
+[2:53:51 PM] [32m[13:53:51.614] [INFO] [kindly] [f64a4903] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:43433[0m
+[2:53:51 PM] [32m[13:53:51.614] [INFO] [kindly] [6d6db6b4] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:37135[0m
+[2:53:51 PM] [32m[13:53:51.626] [INFO] [kindly] [649b9eff] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [checklist][0m
+[2:53:51 PM] [32m[13:53:51.681] [INFO] [kindly] [007fd11f] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [comms][0m
+[2:53:58 PM] [32m[13:53:58.742] [INFO] [kindly] [3a13ab45] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[2:53:58 PM] [32m[13:53:58.743] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[2:53:58 PM] [32m[13:53:58.743] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[2:53:58 PM] [32m[13:53:58.743] [INFO] [kindly] [ce1a49ff] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[2:53:58 PM] [32m[13:53:58.743] [INFO] [kindly] [ce1a49ff] 📡 RPC_OUT: [ai/generate] -> http://localhost:43247[0m
+[2:54:01 PM] [32m[13:54:01.096] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[2:54:01 PM] [32m[13:54:01.096] [INFO] [kindly] [ac74378b] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[2:54:01 PM] [32m[13:54:01.096] [INFO] [kindly] [ac74378b] 📡 RPC_OUT: [memory/session/store] -> http://localhost:42551[0m
+[2:54:01 PM] [32m[13:54:01.104] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[2:54:01 PM] [32m[13:54:01.104] [INFO] [kindly] [61037236] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[2:54:01 PM] [32m[13:54:01.104] [INFO] [kindly] [61037236] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:42551[0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [kindly] [8f3e0098] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [kindly] [8f3e0098] 📡 RPC_OUT: [ai/generate] -> http://localhost:43247[0m
+[2:54:04 PM] [32m[13:54:04.901] [INFO] [kindly] 📊 Tokens: 1080 (total: 1080)[0m
+[2:54:04 PM] [32m[13:54:04.901] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[2:54:04 PM] [32m[13:54:04.902] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[2:54:04 PM] [32m[13:54:04.902] [INFO] [kindly] 🔗 PROXY_CALL: [log/info][0m
+[2:54:04 PM] [32m[13:54:04.902] [INFO] [kindly] [e091f970] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[2:54:04 PM] [32m[13:54:04.902] [INFO] [kindly] [e091f970] 📡 RPC_OUT: [log/info] -> http://localhost:35099[0m
+[2:54:04 PM] [32m[13:54:04.902] [INFO] [kindly] 🔗 PROXY_CALL: [list/get][0m
+[2:54:04 PM] [32m[13:54:04.902] [INFO] [kindly] [55d50547] 📥 SIGNAL_ARRIVED: [list/get] from [kindly][0m
+[2:54:04 PM] [32m[13:54:04.902] [INFO] [kindly] [55d50547] 📡 RPC_OUT: [list/get] -> http://localhost:43433[0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [kindly] ✅ [session_] list_get (3ms)[0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [kindly] 🔗 PROXY_CALL: [log/info][0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [kindly] [fc243355] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [kindly] [fc243355] 📡 RPC_OUT: [log/info] -> http://localhost:35099[0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [kindly] [2a256ba7] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [kindly] [2a256ba7] 📡 RPC_OUT: [ai/generate] -> http://localhost:43247[0m
+[2:54:06 PM] [32m[13:54:06.016] [INFO] [kindly] [8fb441ae] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [skills][0m
+[2:54:06 PM] [32m[13:54:06.114] [INFO] [kindly] [2392c176] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:37135[0m
+[2:54:06 PM] [32m[13:54:06.114] [INFO] [kindly] [256e533b] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:41521[0m
+[2:54:06 PM] [32m[13:54:06.126] [INFO] [kindly] [51e365a0] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [checklist][0m
+[2:54:08 PM] [32m[13:54:08.036] [INFO] [kindly] 📊 Tokens: 961 (total: 2041)[0m
+[2:54:08 PM] [32m[13:54:08.037] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[2:54:08 PM] [32m[13:54:08.037] [INFO] [kindly] [8977b955] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[2:54:08 PM] [32m[13:54:08.037] [INFO] [kindly] [8977b955] 📡 RPC_OUT: [memory/session/store] -> http://localhost:42551[0m
+[2:54:08 PM] [32m[13:54:08.041] [INFO] [kindly] [050a4ab9] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[2:54:08 PM] [32m[13:54:08.041] [INFO] [kindly] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:43433[0m
+[2:54:08 PM] [32m[13:54:08.041] [INFO] [kindly] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:40283[0m
+[2:54:08 PM] [32m[13:54:08.042] [INFO] [kindly] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:41051[0m
+[2:54:20 PM] [32m[13:54:20.949] [INFO] [kindly] [1cf16c0d] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [Orchestrator_619185][0m
+[2:54:21 PM] [32m[13:54:21.114] [INFO] [kindly] [81ffc66a] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:43247[0m
+[2:54:21 PM] [32m[13:54:21.114] [INFO] [kindly] [c7c02bd3] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:36433[0m
+[2:59:48 PM] [kindly] Key fingerprint: 374f0d52898c6f82
+[2:59:48 PM] [32m[13:59:48.985] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[2:59:49 PM] [32m[13:59:49.004] [INFO] [kindly] Sovereign Cell online @ http://localhost:43079[0m
+[2:59:49 PM] [32m[13:59:49.006] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[2:59:49 PM] [32m[13:59:49.054] [INFO] [kindly] [d2728c9f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[2:59:49 PM] [32m[13:59:49.055] [INFO] [kindly] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43289[0m
+[2:59:49 PM] [32m[13:59:49.055] [INFO] [kindly] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33079[0m
+[2:59:49 PM] [32m[13:59:49.055] [INFO] [kindly] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41839[0m
+[3:00:41 PM] [kindly] Key fingerprint: 55a9c16af2cf2740
+[3:00:41 PM] [32m[14:00:41.929] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:00:41 PM] [32m[14:00:41.938] [INFO] [kindly] Sovereign Cell online @ http://localhost:43051[0m
+[3:00:41 PM] [32m[14:00:41.945] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:00:42 PM] [32m[14:00:42.021] [INFO] [kindly] [6ecce893] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:00:42 PM] [32m[14:00:42.025] [INFO] [kindly] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39329[0m
+[3:00:42 PM] [32m[14:00:42.026] [INFO] [kindly] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41155[0m
+[3:00:42 PM] [32m[14:00:42.026] [INFO] [kindly] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43529[0m
+[3:01:10 PM] [32m[14:01:10.775] [INFO] [kindly] [0bff2362] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[3:01:10 PM] [32m[14:01:10.776] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[3:01:10 PM] [32m[14:01:10.776] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[3:01:10 PM] [32m[14:01:10.776] [INFO] [kindly] [043a36f8] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[3:01:10 PM] [32m[14:01:10.777] [INFO] [kindly] [043a36f8] 📡 RPC_OUT: [ai/generate] -> http://localhost:41155[0m
+[3:01:12 PM] [32m[14:01:12.672] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[3:01:12 PM] [32m[14:01:12.672] [INFO] [kindly] [5961f1bf] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[3:01:12 PM] [32m[14:01:12.672] [INFO] [kindly] [5961f1bf] 📡 RPC_OUT: [memory/session/store] -> http://localhost:44725[0m
+[3:01:12 PM] [32m[14:01:12.680] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[3:01:12 PM] [32m[14:01:12.680] [INFO] [kindly] [e525a059] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[3:01:12 PM] [32m[14:01:12.680] [INFO] [kindly] [e525a059] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:44725[0m
+[3:01:12 PM] [32m[14:01:12.682] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[3:01:12 PM] [32m[14:01:12.682] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[3:01:12 PM] [32m[14:01:12.682] [INFO] [kindly] [4e729410] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[3:01:12 PM] [32m[14:01:12.682] [INFO] [kindly] [4e729410] 📡 RPC_OUT: [ai/generate] -> http://localhost:41155[0m
+[3:01:15 PM] [32m[14:01:15.206] [INFO] [kindly] 📊 Tokens: 857 (total: 857)[0m
+[3:01:15 PM] [32m[14:01:15.206] [INFO] [kindly] 🔧 Tool call: list_get[0m
+[3:01:15 PM] [32m[14:01:15.206] [INFO] [kindly] 🔧 [session_] Starting: list_get[0m
+[3:01:15 PM] [32m[14:01:15.206] [INFO] [kindly] 🔗 PROXY_CALL: [log/info][0m
+[3:01:15 PM] [32m[14:01:15.206] [INFO] [kindly] [1ef5bf8d] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[3:01:15 PM] [32m[14:01:15.207] [INFO] [kindly] [1ef5bf8d] 📡 RPC_OUT: [log/info] -> http://localhost:36855[0m
+[3:01:15 PM] [32m[14:01:15.207] [INFO] [kindly] 🔗 PROXY_CALL: [list/get][0m
+[3:01:15 PM] [32m[14:01:15.207] [INFO] [kindly] [19fabee3] 📥 SIGNAL_ARRIVED: [list/get] from [kindly][0m
+[3:01:15 PM] [32m[14:01:15.207] [INFO] [kindly] [19fabee3] 📡 RPC_OUT: [list/get] -> http://localhost:33267[0m
+[3:01:15 PM] [32m[14:01:15.209] [INFO] [kindly] ✅ [session_] list_get (3ms)[0m
+[3:01:15 PM] [32m[14:01:15.209] [INFO] [kindly] 🔗 PROXY_CALL: [log/info][0m
+[3:01:15 PM] [32m[14:01:15.209] [INFO] [kindly] [4a0ea521] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[3:01:15 PM] [32m[14:01:15.209] [INFO] [kindly] [4a0ea521] 📡 RPC_OUT: [log/info] -> http://localhost:36855[0m
+[3:01:15 PM] [32m[14:01:15.209] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[3:01:15 PM] [32m[14:01:15.209] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[3:01:15 PM] [32m[14:01:15.209] [INFO] [kindly] [68c12acf] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[3:01:15 PM] [32m[14:01:15.210] [INFO] [kindly] [68c12acf] 📡 RPC_OUT: [ai/generate] -> http://localhost:41155[0m
+[3:01:19 PM] [32m[14:01:19.070] [INFO] [kindly] 📊 Tokens: 1129 (total: 1986)[0m
+[3:01:19 PM] [32m[14:01:19.070] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[3:01:19 PM] [32m[14:01:19.070] [INFO] [kindly] [7e45fab1] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[3:01:19 PM] [32m[14:01:19.070] [INFO] [kindly] [7e45fab1] 📡 RPC_OUT: [memory/session/store] -> http://localhost:44725[0m
+[3:01:19 PM] [32m[14:01:19.096] [INFO] [kindly] [c036933f] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[3:01:19 PM] [32m[14:01:19.096] [INFO] [kindly] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:39385[0m
+[3:01:19 PM] [32m[14:01:19.097] [INFO] [kindly] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:40477[0m
+[3:01:19 PM] [32m[14:01:19.097] [INFO] [kindly] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:43579[0m
+[3:01:19 PM] [32m[14:01:19.097] [INFO] [kindly] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:44799[0m
+[3:02:53 PM] [kindly] Key fingerprint: 652836a58aadda52
+[3:02:53 PM] [32m[14:02:52.914] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:02:53 PM] [32m[14:02:52.934] [INFO] [kindly] Sovereign Cell online @ http://localhost:43543[0m
+[3:02:53 PM] [32m[14:02:52.935] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:02:53 PM] [32m[14:02:53.051] [INFO] [kindly] [4cd0293d] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:02:53 PM] [32m[14:02:53.052] [INFO] [kindly] [4cd0293d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43619[0m
+[3:02:53 PM] [32m[14:02:53.052] [INFO] [kindly] [4cd0293d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37737[0m
+[3:02:53 PM] [32m[14:02:53.052] [INFO] [kindly] [4cd0293d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33653[0m
+[3:02:53 PM] [32m[14:02:53.059] [INFO] [kindly] [4cd0293d] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37737[0m
+[3:02:53 PM] [32m[14:02:53.063] [INFO] [kindly] [4cd0293d] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:33653[0m
+[3:02:53 PM] [32m[14:02:53.437] [INFO] [kindly] [799397a7] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:02:53 PM] [32m[14:02:53.437] [INFO] [kindly] [03d1db8a] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37737[0m
+[3:03:07 PM] [32m[14:03:07.936] [INFO] [kindly] [4fbe26c7] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37737[0m
+[3:03:07 PM] [32m[14:03:07.938] [INFO] [kindly] [5185abcb] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37463[0m
+[3:03:22 PM] [32m[14:03:22.937] [INFO] [kindly] [4d21862a] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40875[0m
+[3:03:22 PM] [32m[14:03:22.940] [INFO] [kindly] [5ef68a69] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:03:37 PM] [32m[14:03:37.936] [INFO] [kindly] [33c7cb68] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43751[0m
+[3:03:37 PM] [32m[14:03:37.937] [INFO] [kindly] [b579b859] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37463[0m
+[3:03:48 PM] [kindly] Key fingerprint: 58909b100997c90d
+[3:03:48 PM] [32m[14:03:48.077] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:03:48 PM] [32m[14:03:48.087] [INFO] [kindly] Sovereign Cell online @ http://localhost:36039[0m
+[3:03:48 PM] [32m[14:03:48.088] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:03:48 PM] [32m[14:03:48.591] [INFO] [kindly] [0b75129c] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34813[0m
+[3:03:48 PM] [32m[14:03:48.595] [INFO] [kindly] [ef6469e1] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34751[0m
+[3:04:03 PM] [32m[14:04:03.090] [INFO] [kindly] [affb7372] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:39043[0m
+[3:04:03 PM] [32m[14:04:03.092] [INFO] [kindly] [c26c2c10] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:38583[0m
+[3:04:18 PM] [32m[14:04:18.089] [INFO] [kindly] [d794d2da] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:44355[0m
+[3:04:18 PM] [32m[14:04:18.089] [INFO] [kindly] [e3e73c85] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:39043[0m
+[3:05:53 PM] [kindly] Key fingerprint: 948d3f78a6cbe772
+[3:05:53 PM] [32m[14:05:53.621] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:05:53 PM] [32m[14:05:53.635] [INFO] [kindly] Sovereign Cell online @ http://localhost:37705[0m
+[3:05:53 PM] [32m[14:05:53.636] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:05:53 PM] [32m[14:05:53.734] [INFO] [kindly] [57cb6c73] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:05:53 PM] [32m[14:05:53.735] [INFO] [kindly] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34201[0m
+[3:05:53 PM] [32m[14:05:53.735] [INFO] [kindly] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:38931[0m
+[3:05:53 PM] [32m[14:05:53.735] [INFO] [kindly] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41165[0m
+[3:05:54 PM] [32m[14:05:54.138] [INFO] [kindly] [d5953a4c] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40153[0m
+[3:05:54 PM] [32m[14:05:54.138] [INFO] [kindly] [55e52204] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:38931[0m
+[3:06:43 PM] [kindly] Key fingerprint: cb4b4ce465471852
+[3:06:43 PM] [32m[14:06:43.776] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:06:43 PM] [32m[14:06:43.783] [INFO] [kindly] Sovereign Cell online @ http://localhost:43923[0m
+[3:06:43 PM] [32m[14:06:43.784] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:06:44 PM] [32m[14:06:44.290] [INFO] [kindly] [40edfa80] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:46495[0m
+[3:06:44 PM] [32m[14:06:44.291] [INFO] [kindly] [51ad1c68] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45045[0m
+[3:07:39 PM] [kindly] Key fingerprint: 38f02ba5687cae6d
+[3:07:39 PM] [32m[14:07:39.591] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:07:39 PM] [32m[14:07:39.598] [INFO] [kindly] Sovereign Cell online @ http://localhost:37245[0m
+[3:07:39 PM] [32m[14:07:39.599] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:07:39 PM] [32m[14:07:39.634] [INFO] [kindly] [5fae5789] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:07:39 PM] [32m[14:07:39.636] [INFO] [kindly] [5fae5789] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:38937[0m
+[3:07:39 PM] [32m[14:07:39.639] [INFO] [kindly] [5fae5789] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:38937[0m
+[3:07:40 PM] [33m[14:07:40.101] [WARN] [kindly] [ab651db5] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:38297 (undefined)[0m
+[3:07:40 PM] [33m[14:07:40.102] [WARN] [kindly] [40fcb676] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:38303 (undefined)[0m
+[3:08:35 PM] [kindly] Key fingerprint: 40fa698dd78a458d
+[3:08:35 PM] [32m[14:08:35.038] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:08:35 PM] [32m[14:08:35.046] [INFO] [kindly] Sovereign Cell online @ http://localhost:35203[0m
+[3:08:35 PM] [32m[14:08:35.047] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:08:35 PM] [32m[14:08:35.174] [INFO] [kindly] [93e04371] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:08:35 PM] [32m[14:08:35.175] [INFO] [kindly] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43607[0m
+[3:08:35 PM] [32m[14:08:35.175] [INFO] [kindly] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45333[0m
+[3:08:35 PM] [32m[14:08:35.175] [INFO] [kindly] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42381[0m
+[3:09:03 PM] [kindly] Key fingerprint: 1a6beda016bfa0ed
+[3:09:03 PM] [32m[14:09:03.395] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:09:03 PM] [32m[14:09:03.415] [INFO] [kindly] Sovereign Cell online @ http://localhost:35203[0m
+[3:09:03 PM] [32m[14:09:03.416] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:09:03 PM] [32m[14:09:03.462] [INFO] [kindly] [84648368] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:09:03 PM] [32m[14:09:03.463] [INFO] [kindly] [84648368] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43607[0m
+[3:09:03 PM] [32m[14:09:03.463] [INFO] [kindly] [84648368] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42381[0m
+[3:09:03 PM] [32m[14:09:03.463] [INFO] [kindly] [84648368] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46813[0m
+[3:09:03 PM] [32m[14:09:03.977] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[3:09:03 PM] [32m[14:09:03.980] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[3:09:18 PM] [32m[14:09:18.474] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[3:09:48 PM] [32m[14:09:48.482] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[3:09:48 PM] [32m[14:09:48.508] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[3:10:12 PM] [kindly] Key fingerprint: 48f495f36a85c64a
+[3:10:12 PM] [32m[14:10:12.375] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[3:10:12 PM] [32m[14:10:12.398] [INFO] [kindly] Sovereign Cell online @ http://localhost:45907[0m
+[3:10:12 PM] [32m[14:10:12.398] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[3:10:12 PM] [32m[14:10:12.481] [INFO] [kindly] [46342ad3] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:10:12 PM] [32m[14:10:12.482] [INFO] [kindly] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42357[0m
+[3:10:12 PM] [32m[14:10:12.483] [INFO] [kindly] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:35869[0m
+[3:10:12 PM] [32m[14:10:12.483] [INFO] [kindly] [46342ad3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:35499[0m
+[10:47:54 PM] [kindly] Key fingerprint: 43b6034c4f2a1e02
+[10:47:54 PM] [32m[21:47:54.337] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[10:47:54 PM] [32m[21:47:54.350] [INFO] [kindly] Sovereign Cell online @ http://localhost:42379[0m
+[10:47:54 PM] [32m[21:47:54.351] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[10:47:54 PM] [32m[21:47:54.466] [INFO] [kindly] [a19e3189] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:47:54 PM] [32m[21:47:54.467] [INFO] [kindly] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:32785[0m
+[10:47:54 PM] [32m[21:47:54.467] [INFO] [kindly] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41191[0m
+[10:47:54 PM] [32m[21:47:54.467] [INFO] [kindly] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37433[0m
+[10:52:54 PM] [32m[21:52:54.372] [INFO] [kindly] [a19e3189] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:32785[0m
+[10:52:54 PM] [32m[21:52:54.374] [INFO] [kindly] [a19e3189] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37433[0m
+[10:52:54 PM] [32m[21:52:54.379] [INFO] [kindly] [a19e3189] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:41191[0m
+[11:03:39 PM] [kindly] Key fingerprint: 3587dd88d6ead501
+[11:03:39 PM] [32m[22:03:39.176] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:03:39 PM] [32m[22:03:39.180] [INFO] [kindly] Sovereign Cell online @ http://localhost:46341[0m
+[11:03:39 PM] [32m[22:03:39.180] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:29:17 PM] [kindly] Key fingerprint: 9de4e5176ad7d98f
+[11:29:17 PM] [32m[22:29:17.143] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:29:17 PM] [32m[22:29:17.157] [INFO] [kindly] Sovereign Cell online @ http://localhost:36743[0m
+[11:29:17 PM] [32m[22:29:17.157] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:29:17 PM] [32m[22:29:17.291] [INFO] [kindly] [3b5f98b3] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:29:17 PM] [32m[22:29:17.292] [INFO] [kindly] [3b5f98b3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41099[0m
+[11:29:17 PM] [32m[22:29:17.296] [INFO] [kindly] [3b5f98b3] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:41099[0m
+[11:32:32 PM] [kindly] Key fingerprint: 853e49b137e32048
+[11:32:32 PM] [32m[22:32:32.012] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:32:32 PM] [32m[22:32:32.036] [INFO] [kindly] Sovereign Cell online @ http://localhost:37735[0m
+[11:32:32 PM] [32m[22:32:32.042] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:32:32 PM] [32m[22:32:32.063] [INFO] [kindly] [d54c2507] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:32:32 PM] [32m[22:32:32.064] [INFO] [kindly] [d54c2507] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41393[0m
+[11:32:32 PM] [32m[22:32:32.064] [INFO] [kindly] [d54c2507] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:32941[0m
+[11:32:32 PM] [32m[22:32:32.064] [INFO] [kindly] [d54c2507] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46109[0m
+[11:35:13 PM] [kindly] Key fingerprint: 97eebc5624d99aa1
+[11:35:13 PM] [32m[22:35:13.562] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:35:13 PM] [32m[22:35:13.577] [INFO] [kindly] Sovereign Cell online @ http://localhost:46231[0m
+[11:35:13 PM] [32m[22:35:13.579] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:35:17 PM] [32m[22:35:17.865] [INFO] [kindly] [fd67b479] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[11:35:17 PM] [32m[22:35:17.866] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[11:35:17 PM] [32m[22:35:17.867] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:35:17 PM] [32m[22:35:17.867] [INFO] [kindly] [76bed454] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:35:17 PM] [32m[22:35:17.868] [INFO] [kindly] [76bed454] 📡 RPC_OUT: [ai/generate] -> http://localhost:44331[0m
+[11:35:20 PM] [32m[22:35:20.388] [INFO] [kindly] [76bed454] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:44331[0m
+[11:35:20 PM] [32m[22:35:20.388] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:35:20 PM] [32m[22:35:20.388] [INFO] [kindly] [4a1d1507] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:35:20 PM] [32m[22:35:20.388] [INFO] [kindly] [4a1d1507] 📡 RPC_OUT: [memory/session/store] -> http://localhost:45615[0m
+[11:35:20 PM] [32m[22:35:20.394] [INFO] [kindly] [4a1d1507] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:45615[0m
+[11:35:20 PM] [32m[22:35:20.398] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[11:35:20 PM] [32m[22:35:20.398] [INFO] [kindly] [17066858] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[11:35:20 PM] [32m[22:35:20.398] [INFO] [kindly] [17066858] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:45615[0m
+[11:35:20 PM] [32m[22:35:20.400] [INFO] [kindly] [17066858] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:45615[0m
+[11:35:20 PM] [32m[22:35:20.400] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[11:35:20 PM] [32m[22:35:20.400] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:35:20 PM] [32m[22:35:20.400] [INFO] [kindly] [fa87f931] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:35:20 PM] [32m[22:35:20.400] [INFO] [kindly] [fa87f931] 📡 RPC_OUT: [ai/generate] -> http://localhost:44331[0m
+[11:35:26 PM] [32m[22:35:26.802] [INFO] [kindly] [fa87f931] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:44331[0m
+[11:35:26 PM] [32m[22:35:26.802] [INFO] [kindly] 📊 Tokens: 1355 (total: 1355)[0m
+[11:35:26 PM] [32m[22:35:26.802] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:35:26 PM] [32m[22:35:26.802] [INFO] [kindly] [20687e12] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:35:26 PM] [32m[22:35:26.803] [INFO] [kindly] [20687e12] 📡 RPC_OUT: [memory/session/store] -> http://localhost:45615[0m
+[11:35:26 PM] [32m[22:35:26.805] [INFO] [kindly] [20687e12] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:45615[0m
+[11:40:28 PM] [kindly] Key fingerprint: 65ff663d592400ed
+[11:40:28 PM] [32m[22:40:28.720] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:40:28 PM] [32m[22:40:28.740] [INFO] [kindly] Sovereign Cell online @ http://localhost:44075[0m
+[11:40:28 PM] [32m[22:40:28.741] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:40:28 PM] [32m[22:40:28.871] [INFO] [kindly] [a8aa5baf] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:40:28 PM] [32m[22:40:28.873] [INFO] [kindly] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46445[0m
+[11:40:28 PM] [32m[22:40:28.873] [INFO] [kindly] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44045[0m
+[11:40:28 PM] [32m[22:40:28.873] [INFO] [kindly] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41925[0m
+[11:41:09 PM] [32m[22:41:09.320] [INFO] [kindly] [fe775f44] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[11:41:09 PM] [32m[22:41:09.321] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[11:41:09 PM] [32m[22:41:09.321] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:41:09 PM] [32m[22:41:09.321] [INFO] [kindly] [0612a15e] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:41:09 PM] [32m[22:41:09.321] [INFO] [kindly] [0612a15e] 📡 RPC_OUT: [ai/generate] -> http://localhost:44045[0m
+[11:41:11 PM] [32m[22:41:11.818] [INFO] [kindly] [0612a15e] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:44045[0m
+[11:41:11 PM] [32m[22:41:11.818] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:41:11 PM] [32m[22:41:11.818] [INFO] [kindly] [b80ec3b1] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:41:11 PM] [32m[22:41:11.818] [INFO] [kindly] [b80ec3b1] 📡 RPC_OUT: [memory/session/store] -> http://localhost:41925[0m
+[11:41:11 PM] [32m[22:41:11.825] [INFO] [kindly] [b80ec3b1] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:41925[0m
+[11:41:11 PM] [32m[22:41:11.828] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[11:41:11 PM] [32m[22:41:11.828] [INFO] [kindly] [e372662a] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[11:41:11 PM] [32m[22:41:11.828] [INFO] [kindly] [e372662a] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:41925[0m
+[11:41:11 PM] [32m[22:41:11.830] [INFO] [kindly] [e372662a] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:41925[0m
+[11:41:11 PM] [32m[22:41:11.830] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[11:41:11 PM] [32m[22:41:11.830] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:41:11 PM] [32m[22:41:11.830] [INFO] [kindly] [2588408b] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:41:11 PM] [32m[22:41:11.831] [INFO] [kindly] [2588408b] 📡 RPC_OUT: [ai/generate] -> http://localhost:44045[0m
+[11:41:16 PM] [32m[22:41:16.998] [INFO] [kindly] [2588408b] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:44045[0m
+[11:41:16 PM] [32m[22:41:16.998] [INFO] [kindly] 📊 Tokens: 1205 (total: 1205)[0m
+[11:41:16 PM] [32m[22:41:16.998] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:41:16 PM] [32m[22:41:16.998] [INFO] [kindly] [a0940d84] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:41:16 PM] [32m[22:41:16.998] [INFO] [kindly] [a0940d84] 📡 RPC_OUT: [memory/session/store] -> http://localhost:41925[0m
+[11:41:17 PM] [32m[22:41:17.001] [INFO] [kindly] [a0940d84] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:41925[0m
+[11:45:28 PM] [32m[22:45:28.775] [INFO] [kindly] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36993[0m
+[11:45:28 PM] [32m[22:45:28.776] [INFO] [kindly] [a8aa5baf] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36993[0m
+[11:47:49 PM] [kindly] Key fingerprint: 98915b31b1223afe
+[11:47:49 PM] [32m[22:47:49.632] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:47:49 PM] [32m[22:47:49.654] [INFO] [kindly] Sovereign Cell online @ http://localhost:39483[0m
+[11:47:49 PM] [32m[22:47:49.655] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:47:49 PM] [32m[22:47:49.707] [INFO] [kindly] [10626ec4] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:47:49 PM] [32m[22:47:49.708] [INFO] [kindly] [10626ec4] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42327[0m
+[11:47:49 PM] [32m[22:47:49.709] [INFO] [kindly] [10626ec4] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42443[0m
+[11:47:49 PM] [32m[22:47:49.709] [INFO] [kindly] [10626ec4] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:38859[0m
+[11:48:01 PM] [32m[22:48:01.408] [INFO] [kindly] [4641b79b] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[11:48:01 PM] [32m[22:48:01.409] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[11:48:01 PM] [32m[22:48:01.409] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:48:01 PM] [32m[22:48:01.409] [INFO] [kindly] [7303586e] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:48:01 PM] [32m[22:48:01.409] [INFO] [kindly] [7303586e] 📡 RPC_OUT: [ai/generate] -> http://localhost:45443[0m
+[11:48:03 PM] [32m[22:48:03.713] [INFO] [kindly] [7303586e] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:45443[0m
+[11:48:03 PM] [32m[22:48:03.713] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:48:03 PM] [32m[22:48:03.713] [INFO] [kindly] [6ab53287] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:48:03 PM] [32m[22:48:03.714] [INFO] [kindly] [6ab53287] 📡 RPC_OUT: [memory/session/store] -> http://localhost:36805[0m
+[11:48:03 PM] [32m[22:48:03.719] [INFO] [kindly] [6ab53287] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:36805[0m
+[11:48:03 PM] [32m[22:48:03.723] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[11:48:03 PM] [32m[22:48:03.723] [INFO] [kindly] [1702483d] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[11:48:03 PM] [32m[22:48:03.723] [INFO] [kindly] [1702483d] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:36805[0m
+[11:48:03 PM] [32m[22:48:03.724] [INFO] [kindly] [1702483d] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:36805[0m
+[11:48:03 PM] [32m[22:48:03.725] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[11:48:03 PM] [32m[22:48:03.725] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:48:03 PM] [32m[22:48:03.725] [INFO] [kindly] [1d4c100a] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:48:03 PM] [32m[22:48:03.725] [INFO] [kindly] [1d4c100a] 📡 RPC_OUT: [ai/generate] -> http://localhost:45443[0m
+[11:48:07 PM] [32m[22:48:07.262] [INFO] [kindly] [1d4c100a] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:45443[0m
+[11:48:07 PM] [32m[22:48:07.262] [INFO] [kindly] 📊 Tokens: 964 (total: 964)[0m
+[11:48:07 PM] [32m[22:48:07.262] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:48:07 PM] [32m[22:48:07.262] [INFO] [kindly] [c0f58eac] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:48:07 PM] [32m[22:48:07.262] [INFO] [kindly] [c0f58eac] 📡 RPC_OUT: [memory/session/store] -> http://localhost:36805[0m
+[11:48:07 PM] [32m[22:48:07.264] [INFO] [kindly] [c0f58eac] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:36805[0m
+[11:52:49 PM] [32m[22:52:49.607] [INFO] [kindly] [10626ec4] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:42443[0m
+[11:53:29 PM] [kindly] Key fingerprint: 355c189b5baa965b
+[11:53:29 PM] [32m[22:53:29.082] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:53:29 PM] [32m[22:53:29.094] [INFO] [kindly] Sovereign Cell online @ http://localhost:45083[0m
+[11:53:29 PM] [32m[22:53:29.094] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:56:22 PM] [kindly] Key fingerprint: ea516d746c356f9d
+[11:56:22 PM] [32m[22:56:22.610] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:56:22 PM] [32m[22:56:22.629] [INFO] [kindly] Sovereign Cell online @ http://localhost:40251[0m
+[11:56:22 PM] [32m[22:56:22.634] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:56:22 PM] [32m[22:56:22.706] [INFO] [kindly] [af0b1b0d] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:56:22 PM] [32m[22:56:22.707] [INFO] [kindly] [af0b1b0d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40685[0m
+[11:56:22 PM] [32m[22:56:22.707] [INFO] [kindly] [af0b1b0d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:35633[0m
+[11:56:22 PM] [32m[22:56:22.707] [INFO] [kindly] [af0b1b0d] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45179[0m
+[11:56:32 PM] [32m[22:56:32.277] [INFO] [kindly] [591b78ec] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[11:56:32 PM] [32m[22:56:32.278] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[11:56:32 PM] [32m[22:56:32.279] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:56:32 PM] [32m[22:56:32.279] [INFO] [kindly] [2ad0a4d6] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:56:32 PM] [32m[22:56:32.279] [INFO] [kindly] [2ad0a4d6] 📡 RPC_OUT: [ai/generate] -> http://localhost:33197[0m
+[11:56:34 PM] [32m[22:56:34.460] [INFO] [kindly] [2ad0a4d6] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:33197[0m
+[11:56:34 PM] [32m[22:56:34.460] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:56:34 PM] [32m[22:56:34.460] [INFO] [kindly] [67991de9] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:56:34 PM] [32m[22:56:34.460] [INFO] [kindly] [67991de9] 📡 RPC_OUT: [memory/session/store] -> http://localhost:35757[0m
+[11:56:34 PM] [32m[22:56:34.466] [INFO] [kindly] [67991de9] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:35757[0m
+[11:56:34 PM] [32m[22:56:34.469] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[11:56:34 PM] [32m[22:56:34.470] [INFO] [kindly] [fdc465df] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[11:56:34 PM] [32m[22:56:34.470] [INFO] [kindly] [fdc465df] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:35757[0m
+[11:56:34 PM] [32m[22:56:34.472] [INFO] [kindly] [fdc465df] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:35757[0m
+[11:56:34 PM] [32m[22:56:34.473] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[11:56:34 PM] [32m[22:56:34.473] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:56:34 PM] [32m[22:56:34.473] [INFO] [kindly] [ecccb61c] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:56:34 PM] [32m[22:56:34.473] [INFO] [kindly] [ecccb61c] 📡 RPC_OUT: [ai/generate] -> http://localhost:33197[0m
+[11:56:37 PM] [32m[22:56:37.581] [INFO] [kindly] [ecccb61c] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:33197[0m
+[11:56:37 PM] [32m[22:56:37.581] [INFO] [kindly] 📊 Tokens: 931 (total: 931)[0m
+[11:56:37 PM] [32m[22:56:37.581] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:56:37 PM] [32m[22:56:37.581] [INFO] [kindly] [a6139f7c] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:56:37 PM] [32m[22:56:37.581] [INFO] [kindly] [a6139f7c] 📡 RPC_OUT: [memory/session/store] -> http://localhost:35757[0m
+[11:56:37 PM] [32m[22:56:37.583] [INFO] [kindly] [a6139f7c] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:35757[0m
+[11:56:39 PM] [32m[22:56:39.079] [INFO] [kindly] [8c1c2f9a] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[11:56:39 PM] [32m[22:56:39.079] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[11:56:39 PM] [32m[22:56:39.079] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:56:39 PM] [32m[22:56:39.079] [INFO] [kindly] [81caa1da] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:56:39 PM] [32m[22:56:39.079] [INFO] [kindly] [81caa1da] 📡 RPC_OUT: [ai/generate] -> http://localhost:33197[0m
+[11:56:41 PM] [32m[22:56:41.292] [INFO] [kindly] [81caa1da] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:33197[0m
+[11:56:41 PM] [32m[22:56:41.292] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:56:41 PM] [32m[22:56:41.292] [INFO] [kindly] [6250c0ef] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:56:41 PM] [32m[22:56:41.292] [INFO] [kindly] [6250c0ef] 📡 RPC_OUT: [memory/session/store] -> http://localhost:35757[0m
+[11:56:41 PM] [32m[22:56:41.294] [INFO] [kindly] [6250c0ef] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:35757[0m
+[11:56:41 PM] [32m[22:56:41.294] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[11:56:41 PM] [32m[22:56:41.294] [INFO] [kindly] [20c9364d] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[11:56:41 PM] [32m[22:56:41.294] [INFO] [kindly] [20c9364d] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:35757[0m
+[11:56:41 PM] [32m[22:56:41.295] [INFO] [kindly] [20c9364d] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:35757[0m
+[11:56:41 PM] [32m[22:56:41.295] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[11:56:41 PM] [32m[22:56:41.295] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[11:56:41 PM] [32m[22:56:41.295] [INFO] [kindly] [656447ed] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:56:41 PM] [32m[22:56:41.295] [INFO] [kindly] [656447ed] 📡 RPC_OUT: [ai/generate] -> http://localhost:33197[0m
+[11:56:45 PM] [32m[22:56:45.828] [INFO] [kindly] [656447ed] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:33197[0m
+[11:56:45 PM] [32m[22:56:45.828] [INFO] [kindly] 📊 Tokens: 1133 (total: 1133)[0m
+[11:56:45 PM] [32m[22:56:45.829] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[11:56:45 PM] [32m[22:56:45.829] [INFO] [kindly] [6bfb48ca] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[11:56:45 PM] [32m[22:56:45.829] [INFO] [kindly] [6bfb48ca] 📡 RPC_OUT: [memory/session/store] -> http://localhost:35757[0m
+[11:56:45 PM] [32m[22:56:45.830] [INFO] [kindly] [6bfb48ca] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:35757[0m
+[11:56:53 PM] [kindly] Key fingerprint: 3b26618d3fd01eae
+[11:56:53 PM] [32m[22:56:53.548] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:56:53 PM] [32m[22:56:53.558] [INFO] [kindly] Sovereign Cell online @ http://localhost:32965[0m
+[11:56:53 PM] [32m[22:56:53.561] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:56:53 PM] [32m[22:56:53.635] [INFO] [kindly] [efb7fdb3] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:56:53 PM] [32m[22:56:53.636] [INFO] [kindly] [efb7fdb3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36865[0m
+[11:56:53 PM] [32m[22:56:53.636] [INFO] [kindly] [efb7fdb3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46541[0m
+[11:56:53 PM] [32m[22:56:53.636] [INFO] [kindly] [efb7fdb3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37287[0m
+[11:59:46 PM] [kindly] Key fingerprint: a977b3e54a12ff34
+[11:59:46 PM] [32m[22:59:46.466] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:59:46 PM] [32m[22:59:46.493] [INFO] [kindly] Sovereign Cell online @ http://localhost:46155[0m
+[11:59:46 PM] [32m[22:59:46.495] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:59:46 PM] [32m[22:59:46.574] [INFO] [kindly] [7fcc9c79] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:59:46 PM] [32m[22:59:46.575] [INFO] [kindly] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37721[0m
+[11:59:46 PM] [32m[22:59:46.575] [INFO] [kindly] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34507[0m
+[11:59:46 PM] [32m[22:59:46.575] [INFO] [kindly] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40269[0m
+[12:07:18 AM] [kindly] Key fingerprint: d92b0a928fadd001
+[12:07:18 AM] [32m[23:07:18.174] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:07:18 AM] [32m[23:07:18.178] [INFO] [kindly] Sovereign Cell online @ http://localhost:36621[0m
+[12:07:18 AM] [32m[23:07:18.181] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:07:18 AM] [32m[23:07:18.355] [INFO] [kindly] [218a6a89] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:07:18 AM] [32m[23:07:18.356] [INFO] [kindly] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41737[0m
+[12:07:18 AM] [32m[23:07:18.356] [INFO] [kindly] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:35575[0m
+[12:07:18 AM] [32m[23:07:18.356] [INFO] [kindly] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39339[0m
+[12:08:36 AM] [kindly] Key fingerprint: 713376b109c24cd5
+[12:08:36 AM] [32m[23:08:36.902] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:08:36 AM] [32m[23:08:36.915] [INFO] [kindly] Sovereign Cell online @ http://localhost:35273[0m
+[12:08:36 AM] [32m[23:08:36.923] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:08:37 AM] [32m[23:08:37.005] [INFO] [kindly] [e4240554] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:08:37 AM] [32m[23:08:37.006] [INFO] [kindly] [e4240554] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36661[0m
+[12:08:37 AM] [32m[23:08:37.006] [INFO] [kindly] [e4240554] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33147[0m
+[12:08:37 AM] [32m[23:08:37.006] [INFO] [kindly] [e4240554] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41293[0m
+[12:10:03 AM] [32m[23:10:03.602] [INFO] [kindly] [31349637] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:10:03 AM] [32m[23:10:03.604] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[12:10:03 AM] [32m[23:10:03.604] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[12:10:03 AM] [32m[23:10:03.604] [INFO] [kindly] [32a5f9de] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:10:03 AM] [32m[23:10:03.605] [INFO] [kindly] [32a5f9de] 📡 RPC_OUT: [ai/generate] -> http://localhost:39687[0m
+[12:10:05 AM] [32m[23:10:05.612] [INFO] [kindly] [32a5f9de] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:39687[0m
+[12:10:05 AM] [32m[23:10:05.612] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[12:10:05 AM] [32m[23:10:05.612] [INFO] [kindly] [dd0e645a] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[12:10:05 AM] [32m[23:10:05.612] [INFO] [kindly] [dd0e645a] 📡 RPC_OUT: [memory/session/store] -> http://localhost:36661[0m
+[12:10:05 AM] [32m[23:10:05.618] [INFO] [kindly] [dd0e645a] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:36661[0m
+[12:10:05 AM] [32m[23:10:05.621] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[12:10:05 AM] [32m[23:10:05.621] [INFO] [kindly] [a30bcfe6] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[12:10:05 AM] [32m[23:10:05.621] [INFO] [kindly] [a30bcfe6] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:36661[0m
+[12:10:05 AM] [32m[23:10:05.623] [INFO] [kindly] [a30bcfe6] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:36661[0m
+[12:10:05 AM] [32m[23:10:05.623] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[12:10:05 AM] [32m[23:10:05.623] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[12:10:05 AM] [32m[23:10:05.623] [INFO] [kindly] [7c309f54] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:10:05 AM] [32m[23:10:05.623] [INFO] [kindly] [7c309f54] 📡 RPC_OUT: [ai/generate] -> http://localhost:39687[0m
+[12:10:08 AM] [32m[23:10:08.729] [INFO] [kindly] [7c309f54] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:39687[0m
+[12:10:08 AM] [32m[23:10:08.729] [INFO] [kindly] 📊 Tokens: 897 (total: 897)[0m
+[12:10:08 AM] [32m[23:10:08.730] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[12:10:08 AM] [32m[23:10:08.730] [INFO] [kindly] [bbb7473f] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[12:10:08 AM] [32m[23:10:08.730] [INFO] [kindly] [bbb7473f] 📡 RPC_OUT: [memory/session/store] -> http://localhost:36661[0m
+[12:10:08 AM] [32m[23:10:08.731] [INFO] [kindly] [bbb7473f] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:36661[0m
+[12:10:56 AM] [32m[23:10:56.342] [INFO] [kindly] [b83dc068] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[12:10:56 AM] [32m[23:10:56.342] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[12:10:56 AM] [32m[23:10:56.342] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[12:10:56 AM] [32m[23:10:56.342] [INFO] [kindly] [eaa4f67f] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:10:56 AM] [32m[23:10:56.342] [INFO] [kindly] [eaa4f67f] 📡 RPC_OUT: [ai/generate] -> http://localhost:39687[0m
+[12:10:59 AM] [32m[23:10:59.428] [INFO] [kindly] [eaa4f67f] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:39687[0m
+[12:10:59 AM] [32m[23:10:59.428] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[12:10:59 AM] [32m[23:10:59.428] [INFO] [kindly] [f08df38a] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[12:10:59 AM] [32m[23:10:59.428] [INFO] [kindly] [f08df38a] 📡 RPC_OUT: [memory/session/store] -> http://localhost:36661[0m
+[12:10:59 AM] [32m[23:10:59.430] [INFO] [kindly] [f08df38a] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:36661[0m
+[12:10:59 AM] [32m[23:10:59.430] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[12:10:59 AM] [32m[23:10:59.430] [INFO] [kindly] [80653bf1] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[12:10:59 AM] [32m[23:10:59.430] [INFO] [kindly] [80653bf1] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:36661[0m
+[12:10:59 AM] [32m[23:10:59.431] [INFO] [kindly] [80653bf1] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:36661[0m
+[12:10:59 AM] [32m[23:10:59.432] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[12:10:59 AM] [32m[23:10:59.432] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[12:10:59 AM] [32m[23:10:59.432] [INFO] [kindly] [e86b5614] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:10:59 AM] [32m[23:10:59.432] [INFO] [kindly] [e86b5614] 📡 RPC_OUT: [ai/generate] -> http://localhost:39687[0m
+[12:11:04 AM] [32m[23:11:04.462] [INFO] [kindly] [e86b5614] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:39687[0m
+[12:11:04 AM] [32m[23:11:04.462] [INFO] [kindly] 📊 Tokens: 1377 (total: 1377)[0m
+[12:11:04 AM] [32m[23:11:04.462] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[12:11:04 AM] [32m[23:11:04.462] [INFO] [kindly] 🔧 [tts_sess] Starting: memory_goals_create[0m
+[12:11:04 AM] [32m[23:11:04.462] [INFO] [kindly] 🔗 PROXY_CALL: [log/info][0m
+[12:11:04 AM] [32m[23:11:04.462] [INFO] [kindly] [5011f45f] 📥 SIGNAL_ARRIVED: [log/info] from [kindly][0m
+[12:11:04 AM] [32m[23:11:04.462] [INFO] [kindly] [5011f45f] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:11:04 AM] [32m[23:11:04.463] [INFO] [kindly] 🔗 PROXY_CALL: [memory/goals/create][0m
+[12:11:04 AM] [32m[23:11:04.463] [INFO] [kindly] [6d4ed6d6] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:11:04 AM] [32m[23:11:04.463] [INFO] [kindly] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36661[0m
+[12:11:04 AM] [32m[23:11:04.464] [INFO] [kindly] [5011f45f] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:11:04 AM] [33m[23:11:04.465] [WARN] [kindly] [6d4ed6d6] ❌ RPC_REMOTE_FAIL: [memory/goals/create] @ http://localhost:36661 (HANDLER_ERR)[0m
+[12:11:04 AM] [32m[23:11:04.465] [INFO] [kindly] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:33147[0m
+[12:11:04 AM] [32m[23:11:04.465] [INFO] [kindly] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39687[0m
+[12:11:04 AM] [32m[23:11:04.465] [INFO] [kindly] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:38027[0m
+[12:13:36 AM] [32m[23:13:36.900] [INFO] [kindly] [e4240554] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36661[0m
+[12:15:04 AM] [kindly] Key fingerprint: 37011bb5bc28eca3
+[12:15:04 AM] [32m[23:15:04.456] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:15:04 AM] [32m[23:15:04.472] [INFO] [kindly] Sovereign Cell online @ http://localhost:37719[0m
+[12:15:04 AM] [32m[23:15:04.473] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:15:04 AM] [32m[23:15:04.640] [INFO] [kindly] [3a19ba3a] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:15:04 AM] [32m[23:15:04.642] [INFO] [kindly] [3a19ba3a] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36199[0m
+[12:15:04 AM] [32m[23:15:04.642] [INFO] [kindly] [3a19ba3a] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:38623[0m
+[12:15:04 AM] [32m[23:15:04.642] [INFO] [kindly] [3a19ba3a] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37649[0m
+[12:15:04 AM] [32m[23:15:04.653] [INFO] [kindly] [3a19ba3a] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:38623[0m
+[12:20:04 AM] [32m[23:20:04.451] [INFO] [kindly] [3a19ba3a] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36199[0m
+[12:20:04 AM] [32m[23:20:04.464] [INFO] [kindly] [3a19ba3a] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37649[0m
+[12:36:07 AM] [kindly] Key fingerprint: 9ab2673f8093a2b1
+[12:36:07 AM] [32m[23:36:07.143] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:36:07 AM] [32m[23:36:07.147] [INFO] [kindly] Sovereign Cell online @ http://localhost:40359[0m
+[12:36:07 AM] [32m[23:36:07.149] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:36:07 AM] [32m[23:36:07.187] [INFO] [kindly] [b793c367] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:36:07 AM] [32m[23:36:07.189] [INFO] [kindly] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36975[0m
+[12:36:07 AM] [32m[23:36:07.190] [INFO] [kindly] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36371[0m
+[12:36:07 AM] [32m[23:36:07.190] [INFO] [kindly] [b793c367] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44231[0m
+[12:36:07 AM] [32m[23:36:07.197] [INFO] [kindly] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44231[0m
+[12:36:07 AM] [32m[23:36:07.197] [INFO] [kindly] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36371[0m
+[12:36:07 AM] [32m[23:36:07.225] [INFO] [kindly] [b793c367] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36975[0m

@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-08T11:30:49.673Z
- * Source: Live mesh scan (45 capabilities)
+ * Generated: 2026-02-08T23:36:12.151Z
+ * Source: Live mesh scan (50 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -54,6 +54,11 @@ declare module "./protocols/typed-mesh" {
         "skills/search": { input: any; output: any };
         "skills/sync-from-mesh": { input: any; output: any };
         "skills/update-capability": { input: any; output: any };
+        "telegram/broadcast": { input: any; output: any };
+        "telegram/get-me": { input: any; output: any };
+        "telegram/send-message": { input: any; output: any };
+        "tts/status": { input: any; output: any };
+        "tts/synthesize": { input: any; output: any };
     }
 }
 
@@ -172,4 +177,21 @@ export type SkillsCapabilities = {
     update-capability: { input: any; output: any };
 };
 
-// Type trigger: 1770550249673
+/**
+ * Capabilities in the telegram namespace
+ */
+export type TelegramCapabilities = {
+    broadcast: { input: any; output: any };
+    get-me: { input: any; output: any };
+    send-message: { input: any; output: any };
+};
+
+/**
+ * Capabilities in the tts namespace
+ */
+export type TtsCapabilities = {
+    status: { input: any; output: any };
+    synthesize: { input: any; output: any };
+};
+
+// Type trigger: 1770593772151

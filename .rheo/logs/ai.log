@@ -1082,3 +1082,563 @@
 [12:28:19 PM] [32m[11:28:19.467] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
 [12:29:19 PM] [32m[11:29:19.467] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
 [12:30:19 PM] [32m[11:30:19.466] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
+[12:31:19 PM] [32m[11:31:19.466] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
+[12:32:19 PM] [32m[11:32:19.466] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
+[12:33:19 PM] [32m[11:33:19.466] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
+[12:34:19 PM] [32m[11:34:19.466] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
+[12:35:19 PM] [32m[11:35:19.466] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
+[12:36:19 PM] [32m[11:36:19.466] [INFO] [ai] 📊 AI Stats: 18 calls, 27444 tokens total, 13630 last hour[0m
+[2:05:49 PM] [ai] Key fingerprint: bebc33f794cc57e9
+[2:05:49 PM] [32m[13:05:49.859] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:05:49 PM] [32m[13:05:49.864] [INFO] [ai] Sovereign Cell online @ http://localhost:43311[0m
+[2:09:10 PM] [ai] Key fingerprint: ae01bfecbf3ef37b
+[2:09:10 PM] [32m[13:09:10.465] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:09:10 PM] [32m[13:09:10.478] [INFO] [ai] Sovereign Cell online @ http://localhost:45733[0m
+[2:12:41 PM] [ai] Key fingerprint: 6f528cb7513058a5
+[2:12:41 PM] [32m[13:12:41.671] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:12:41 PM] [32m[13:12:41.686] [INFO] [ai] Sovereign Cell online @ http://localhost:36815[0m
+[2:14:02 PM] [ai] Key fingerprint: 5b53312150d7062e
+[2:14:02 PM] [32m[13:14:02.947] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:14:02 PM] [32m[13:14:02.954] [INFO] [ai] Sovereign Cell online @ http://localhost:38595[0m
+[2:14:03 PM] [32m[13:14:03.071] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "Online?"
+[2:14:03 PM] Options: goal, question, command, update,...[0m
+[2:14:04 PM] [32m[13:14:04.649] [INFO] [ai] ✅ AI Response [direct]: 239 tokens, 1578ms[0m
+[2:15:02 PM] [32m[13:15:02.955] [INFO] [ai] 📊 AI Stats: 1 calls, 239 tokens total, 239 last hour[0m
+[2:16:02 PM] [32m[13:16:02.955] [INFO] [ai] 📊 AI Stats: 1 calls, 239 tokens total, 239 last hour[0m
+[2:17:02 PM] [32m[13:17:02.954] [INFO] [ai] 📊 AI Stats: 1 calls, 239 tokens total, 239 last hour[0m
+[2:17:10 PM] [ai] Key fingerprint: c18fafee2cebb18f
+[2:17:10 PM] [32m[13:17:10.541] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:17:10 PM] [32m[13:17:10.556] [INFO] [ai] Sovereign Cell online @ http://localhost:38835[0m
+[2:17:10 PM] [32m[13:17:10.781] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "Online?"
+[2:17:10 PM] Options: goal, question, command, update,...[0m
+[2:17:12 PM] [32m[13:17:12.358] [INFO] [ai] ✅ AI Response [direct]: 283 tokens, 1577ms[0m
+[2:17:12 PM] [32m[13:17:12.370] [INFO] [ai] 🤖 AI Request [session_1770472190500_p1714b1fg_1]: USER: Online?...[0m
+[2:17:15 PM] [32m[13:17:15.343] [INFO] [ai] ✅ AI Response [session_1770472190500_p1714b1fg_1]: 843 tokens, 2973ms[0m
+[2:18:10 PM] [32m[13:18:10.556] [INFO] [ai] 📊 AI Stats: 2 calls, 1126 tokens total, 1126 last hour[0m
+[2:19:10 PM] [32m[13:19:10.555] [INFO] [ai] 📊 AI Stats: 2 calls, 1126 tokens total, 1126 last hour[0m
+[2:20:10 PM] [32m[13:20:10.554] [INFO] [ai] 📊 AI Stats: 2 calls, 1126 tokens total, 1126 last hour[0m
+[2:21:10 PM] [32m[13:21:10.553] [INFO] [ai] 📊 AI Stats: 2 calls, 1126 tokens total, 1126 last hour[0m
+[2:22:10 PM] [32m[13:22:10.552] [INFO] [ai] 📊 AI Stats: 2 calls, 1126 tokens total, 1126 last hour[0m
+[2:23:10 PM] [32m[13:23:10.552] [INFO] [ai] 📊 AI Stats: 2 calls, 1126 tokens total, 1126 last hour[0m
+[2:24:04 PM] [ai] Key fingerprint: 72f40f3c38f02331
+[2:24:04 PM] [32m[13:24:04.614] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:24:04 PM] [32m[13:24:04.634] [INFO] [ai] Sovereign Cell online @ http://localhost:45391[0m
+[2:27:11 PM] [ai] Key fingerprint: f02e7f770c7425ba
+[2:27:11 PM] [32m[13:27:11.707] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:27:11 PM] [32m[13:27:11.717] [INFO] [ai] Sovereign Cell online @ http://localhost:36165[0m
+[2:27:18 PM] [32m[13:27:18.574] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:27:18 PM] Options: goal, question, command, update, ...[0m
+[2:27:20 PM] [32m[13:27:20.911] [INFO] [ai] ✅ AI Response [direct]: 347 tokens, 2337ms[0m
+[2:27:20 PM] [32m[13:27:20.924] [INFO] [ai] 🤖 AI Request [session_1770557238573_1]: USER: online...[0m
+[2:27:23 PM] [32m[13:27:23.771] [INFO] [ai] ✅ AI Response [session_1770557238573_1]: 852 tokens, 2847ms[0m
+[2:27:23 PM] [32m[13:27:23.777] [INFO] [ai] 🤖 AI Request [session_1770557238573_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:27:28 PM] [32m[13:27:28.315] [INFO] [ai] ✅ AI Response [session_1770557238573_2]: 1062 tokens, 4538ms[0m
+[2:28:11 PM] [32m[13:28:11.717] [INFO] [ai] 📊 AI Stats: 3 calls, 2261 tokens total, 2261 last hour[0m
+[2:28:55 PM] [ai] Key fingerprint: daa28118cd104d66
+[2:28:55 PM] [32m[13:28:55.079] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:28:55 PM] [32m[13:28:55.086] [INFO] [ai] Sovereign Cell online @ http://localhost:44887[0m
+[2:29:21 PM] [32m[13:29:21.609] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:29:21 PM] Options: goal, question, command, update, ...[0m
+[2:29:23 PM] [32m[13:29:23.971] [INFO] [ai] ✅ AI Response [direct]: 373 tokens, 2362ms[0m
+[2:29:23 PM] [32m[13:29:23.984] [INFO] [ai] 🤖 AI Request [session_1770557361607_1]: USER: online...[0m
+[2:29:29 PM] [32m[13:29:29.562] [INFO] [ai] ✅ AI Response [session_1770557361607_1]: 1223 tokens, 5578ms[0m
+[2:29:29 PM] [32m[13:29:29.568] [INFO] [ai] 🤖 AI Request [session_1770557361607_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:29:33 PM] [32m[13:29:33.825] [INFO] [ai] ✅ AI Response [session_1770557361607_2]: 1060 tokens, 4257ms[0m
+[2:29:55 PM] [32m[13:29:55.086] [INFO] [ai] 📊 AI Stats: 3 calls, 2656 tokens total, 2656 last hour[0m
+[2:30:25 PM] [ai] Key fingerprint: f35a2c528d2f22bc
+[2:30:25 PM] [32m[13:30:25.295] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:30:25 PM] [32m[13:30:25.313] [INFO] [ai] Sovereign Cell online @ http://localhost:33605[0m
+[2:30:34 PM] [32m[13:30:34.898] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:30:34 PM] Options: goal, question, command, update, ...[0m
+[2:30:37 PM] [32m[13:30:37.010] [INFO] [ai] ✅ AI Response [direct]: 343 tokens, 2112ms[0m
+[2:30:37 PM] [32m[13:30:37.023] [INFO] [ai] 🤖 AI Request [session_1770557434895_1]: USER: online...[0m
+[2:30:41 PM] [32m[13:30:41.431] [INFO] [ai] ✅ AI Response [session_1770557434895_1]: 1044 tokens, 4408ms[0m
+[2:30:41 PM] [32m[13:30:41.437] [INFO] [ai] 🤖 AI Request [session_1770557434895_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:30:45 PM] [32m[13:30:45.140] [INFO] [ai] ✅ AI Response [session_1770557434895_2]: 969 tokens, 3703ms[0m
+[2:31:25 PM] [32m[13:31:25.313] [INFO] [ai] 📊 AI Stats: 3 calls, 2356 tokens total, 2356 last hour[0m
+[2:32:25 PM] [32m[13:32:25.313] [INFO] [ai] 📊 AI Stats: 3 calls, 2356 tokens total, 2356 last hour[0m
+[2:33:05 PM] [ai] Key fingerprint: 90cd165dd8d790a0
+[2:33:05 PM] [32m[13:33:05.573] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:33:05 PM] [32m[13:33:05.585] [INFO] [ai] Sovereign Cell online @ http://localhost:44511[0m
+[2:33:11 PM] [32m[13:33:11.609] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:33:11 PM] Options: goal, question, command, update, ...[0m
+[2:33:14 PM] [32m[13:33:14.106] [INFO] [ai] ✅ AI Response [direct]: 412 tokens, 2497ms[0m
+[2:33:14 PM] [32m[13:33:14.118] [INFO] [ai] 🤖 AI Request [session_1770557591607_1]: USER: online...[0m
+[2:33:18 PM] [32m[13:33:18.723] [INFO] [ai] ✅ AI Response [session_1770557591607_1]: 1111 tokens, 4605ms[0m
+[2:33:18 PM] [32m[13:33:18.730] [INFO] [ai] 🤖 AI Request [session_1770557591607_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:33:22 PM] [32m[13:33:22.681] [INFO] [ai] ✅ AI Response [session_1770557591607_2]: 986 tokens, 3951ms[0m
+[2:35:04 PM] [ai] Key fingerprint: 6396e6f134e932c2
+[2:35:04 PM] [32m[13:35:04.597] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:35:04 PM] [32m[13:35:04.618] [INFO] [ai] Sovereign Cell online @ http://localhost:45799[0m
+[2:35:09 PM] [32m[13:35:09.484] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:35:09 PM] Options: goal, question, command, update, ...[0m
+[2:35:11 PM] [32m[13:35:11.179] [INFO] [ai] ✅ AI Response [direct]: 298 tokens, 1695ms[0m
+[2:35:11 PM] [32m[13:35:11.191] [INFO] [ai] 🤖 AI Request [session_1770557709482_1]: USER: online...[0m
+[2:35:13 PM] [32m[13:35:13.935] [INFO] [ai] ✅ AI Response [session_1770557709482_1]: 824 tokens, 2744ms[0m
+[2:35:13 PM] [32m[13:35:13.942] [INFO] [ai] 🤖 AI Request [session_1770557709482_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:35:17 PM] [32m[13:35:17.781] [INFO] [ai] ✅ AI Response [session_1770557709482_2]: 976 tokens, 3839ms[0m
+[2:36:04 PM] [32m[13:36:04.618] [INFO] [ai] 📊 AI Stats: 3 calls, 2098 tokens total, 2098 last hour[0m
+[2:37:08 PM] [ai] Key fingerprint: 362e9f9112d6a1ec
+[2:37:08 PM] [32m[13:37:08.532] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:37:08 PM] [32m[13:37:08.553] [INFO] [ai] Sovereign Cell online @ http://localhost:35713[0m
+[2:37:18 PM] [32m[13:37:18.823] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:37:18 PM] Options: goal, question, command, update, ...[0m
+[2:37:20 PM] [32m[13:37:20.765] [INFO] [ai] ✅ AI Response [direct]: 327 tokens, 1942ms[0m
+[2:37:20 PM] [32m[13:37:20.780] [INFO] [ai] 🤖 AI Request [session_1770557838821_1]: USER: online...[0m
+[2:37:26 PM] [32m[13:37:26.500] [INFO] [ai] ✅ AI Response [session_1770557838821_1]: 1261 tokens, 5720ms[0m
+[2:37:26 PM] [32m[13:37:26.506] [INFO] [ai] 🤖 AI Request [session_1770557838821_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:37:31 PM] [32m[13:37:31.103] [INFO] [ai] ✅ AI Response [session_1770557838821_2]: 1109 tokens, 4597ms[0m
+[2:38:08 PM] [32m[13:38:08.560] [INFO] [ai] 📊 AI Stats: 3 calls, 2697 tokens total, 2697 last hour[0m
+[2:39:08 PM] [32m[13:39:08.559] [INFO] [ai] 📊 AI Stats: 3 calls, 2697 tokens total, 2697 last hour[0m
+[2:40:59 PM] [ai] Key fingerprint: 0cbb6aa32e65d5d7
+[2:40:59 PM] [32m[13:40:59.182] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:40:59 PM] [32m[13:40:59.189] [INFO] [ai] Sovereign Cell online @ http://localhost:46871[0m
+[2:43:30 PM] [ai] Key fingerprint: cd3972490baa80d3
+[2:43:30 PM] [32m[13:43:30.877] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:43:30 PM] [32m[13:43:30.898] [INFO] [ai] Sovereign Cell online @ http://localhost:46115[0m
+[2:44:10 PM] [ai] Key fingerprint: 58b4ef5ae0cd6898
+[2:44:10 PM] [32m[13:44:10.730] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:44:10 PM] [32m[13:44:10.750] [INFO] [ai] Sovereign Cell online @ http://localhost:42171[0m
+[2:45:23 PM] [ai] Key fingerprint: 2986b68bc9d2c42f
+[2:45:23 PM] [32m[13:45:23.640] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:45:23 PM] [32m[13:45:23.653] [INFO] [ai] Sovereign Cell online @ http://localhost:43525[0m
+[2:47:51 PM] [ai] Key fingerprint: f3363caa49babcb2
+[2:47:51 PM] [32m[13:47:51.376] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:47:51 PM] [32m[13:47:51.384] [INFO] [ai] Sovereign Cell online @ http://localhost:44197[0m
+[2:49:07 PM] [ai] Key fingerprint: d9a23fa81ede23a6
+[2:49:07 PM] [32m[13:49:07.779] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:49:07 PM] [32m[13:49:07.792] [INFO] [ai] Sovereign Cell online @ http://localhost:42883[0m
+[2:50:19 PM] [32m[13:50:19.859] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:50:19 PM] Options: goal, question, command, update, ...[0m
+[2:50:22 PM] [32m[13:50:22.104] [INFO] [ai] ✅ AI Response [direct]: 380 tokens, 2245ms[0m
+[2:50:22 PM] [32m[13:50:22.117] [INFO] [ai] 🤖 AI Request [session_1770558619857_1]: USER: online...[0m
+[2:50:26 PM] [32m[13:50:26.257] [INFO] [ai] ✅ AI Response [session_1770558619857_1]: 1093 tokens, 4140ms[0m
+[2:50:26 PM] [32m[13:50:26.262] [INFO] [ai] 🤖 AI Request [session_1770558619857_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:50:31 PM] [32m[13:50:31.063] [INFO] [ai] ✅ AI Response [session_1770558619857_2]: 1191 tokens, 4801ms[0m
+[2:51:25 PM] [ai] Key fingerprint: 046d309bc8403efc
+[2:51:25 PM] [32m[13:51:25.407] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:51:25 PM] [32m[13:51:25.428] [INFO] [ai] Sovereign Cell online @ http://localhost:33557[0m
+[2:51:30 PM] [32m[13:51:30.592] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:51:30 PM] Options: goal, question, command, update, ...[0m
+[2:51:32 PM] [32m[13:51:32.189] [INFO] [ai] ✅ AI Response [direct]: 300 tokens, 1597ms[0m
+[2:51:32 PM] [32m[13:51:32.202] [INFO] [ai] 🤖 AI Request [session_1770558690590_1]: USER: online...[0m
+[2:51:35 PM] [32m[13:51:35.196] [INFO] [ai] ✅ AI Response [session_1770558690590_1]: 882 tokens, 2994ms[0m
+[2:51:35 PM] [32m[13:51:35.202] [INFO] [ai] 🤖 AI Request [session_1770558690590_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:51:39 PM] [32m[13:51:39.371] [INFO] [ai] ✅ AI Response [session_1770558690590_2]: 1102 tokens, 4169ms[0m
+[2:52:25 PM] [32m[13:52:25.428] [INFO] [ai] 📊 AI Stats: 3 calls, 2284 tokens total, 2284 last hour[0m
+[2:53:51 PM] [ai] Key fingerprint: 2448ea047425b034
+[2:53:51 PM] [32m[13:53:51.156] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:53:51 PM] [32m[13:53:51.162] [INFO] [ai] Sovereign Cell online @ http://localhost:43247[0m
+[2:53:51 PM] [32m[13:53:51.664] [INFO] [ai] [2671db5d] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:37135[0m
+[2:53:51 PM] [32m[13:53:51.664] [INFO] [ai] [7118be2a] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:43433[0m
+[2:53:51 PM] [32m[13:53:51.686] [INFO] [ai] [4c7ae459] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [log][0m
+[2:53:51 PM] [32m[13:53:51.688] [INFO] [ai] [59a9365b] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [Codegen][0m
+[2:53:58 PM] [32m[13:53:58.744] [INFO] [ai] [ce1a49ff] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[2:53:58 PM] [32m[13:53:58.745] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[2:53:58 PM] Options: goal, question, command, update, ...[0m
+[2:53:58 PM] [32m[13:53:58.745] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[2:53:58 PM] [32m[13:53:58.745] [INFO] [ai] [30f93412] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:53:58 PM] [32m[13:53:58.746] [INFO] [ai] [30f93412] 📡 RPC_OUT: [log/info] -> http://localhost:35099[0m
+[2:54:01 PM] [32m[13:54:01.094] [INFO] [ai] ✅ AI Response [direct]: 346 tokens, 2349ms[0m
+[2:54:01 PM] [32m[13:54:01.094] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[2:54:01 PM] [32m[13:54:01.094] [INFO] [ai] [0c9ff39e] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:01 PM] [32m[13:54:01.094] [INFO] [ai] [0c9ff39e] 📡 RPC_OUT: [log/info] -> http://localhost:35099[0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [ai] [8f3e0098] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [ai] 🤖 AI Request [session_1770558838743_1]: USER: online...[0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [ai] [5a7d7bed] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:01 PM] [32m[13:54:01.107] [INFO] [ai] [5a7d7bed] 📡 RPC_OUT: [log/info] -> http://localhost:35099[0m
+[2:54:04 PM] [32m[13:54:04.898] [INFO] [ai] ✅ AI Response [session_1770558838743_1]: 1080 tokens, 3791ms[0m
+[2:54:04 PM] [32m[13:54:04.898] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[2:54:04 PM] [32m[13:54:04.898] [INFO] [ai] [29a64e24] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:04 PM] [32m[13:54:04.899] [INFO] [ai] [29a64e24] 📡 RPC_OUT: [log/info] -> http://localhost:35099[0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [ai] [2a256ba7] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [ai] 🤖 AI Request [session_1770558838743_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [ai] [7df82252] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:04 PM] [32m[13:54:04.905] [INFO] [ai] [7df82252] 📡 RPC_OUT: [log/info] -> http://localhost:35099[0m
+[2:54:06 PM] [32m[13:54:06.013] [INFO] [ai] [370b6414] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [coder][0m
+[2:54:06 PM] [32m[13:54:06.164] [INFO] [ai] [005f89f9] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:38211[0m
+[2:54:06 PM] [32m[13:54:06.164] [INFO] [ai] [adfe302d] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:45659[0m
+[2:54:08 PM] [32m[13:54:08.034] [INFO] [ai] ✅ AI Response [session_1770558838743_2]: 961 tokens, 3129ms[0m
+[2:54:08 PM] [32m[13:54:08.035] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[2:54:08 PM] [32m[13:54:08.035] [INFO] [ai] [a733d91d] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[2:54:08 PM] [32m[13:54:08.035] [INFO] [ai] [a733d91d] 📡 RPC_OUT: [log/info] -> http://localhost:35099[0m
+[2:54:08 PM] [32m[13:54:08.044] [INFO] [ai] [050a4ab9] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[2:54:08 PM] [32m[13:54:08.044] [INFO] [ai] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:45659[0m
+[2:54:08 PM] [32m[13:54:08.044] [INFO] [ai] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:42551[0m
+[2:54:08 PM] [32m[13:54:08.045] [INFO] [ai] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:37135[0m
+[2:54:21 PM] [32m[13:54:21.116] [INFO] [ai] [81ffc66a] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [kindly][0m
+[2:54:21 PM] [32m[13:54:21.120] [INFO] [ai] [eb846483] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [telemetry][0m
+[2:54:21 PM] [32m[13:54:21.126] [INFO] [ai] [2b7bfc1c] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [checklist][0m
+[2:54:21 PM] [32m[13:54:21.151] [INFO] [ai] [df937598] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [telegram][0m
+[2:54:21 PM] [32m[13:54:21.164] [INFO] [ai] [bbee2951] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:37135[0m
+[2:54:21 PM] [32m[13:54:21.164] [INFO] [ai] [6396ffb3] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:41521[0m
+[2:59:48 PM] [ai] Key fingerprint: 22ee03971b464ed6
+[2:59:48 PM] [32m[13:59:48.996] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[2:59:49 PM] [32m[13:59:49.008] [INFO] [ai] Sovereign Cell online @ http://localhost:41807[0m
+[2:59:49 PM] [32m[13:59:49.061] [INFO] [ai] [d2728c9f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[2:59:49 PM] [32m[13:59:49.063] [INFO] [ai] [d2728c9f] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36831[0m
+[3:00:41 PM] [ai] Key fingerprint: 0e8fc028b00193df
+[3:00:41 PM] [32m[14:00:41.944] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:00:41 PM] [32m[14:00:41.960] [INFO] [ai] Sovereign Cell online @ http://localhost:41155[0m
+[3:00:42 PM] [32m[14:00:42.034] [INFO] [ai] [6ecce893] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:00:42 PM] [32m[14:00:42.035] [INFO] [ai] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44047[0m
+[3:01:10 PM] [32m[14:01:10.777] [INFO] [ai] [043a36f8] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[3:01:10 PM] [32m[14:01:10.778] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[3:01:10 PM] Options: goal, question, command, update, ...[0m
+[3:01:10 PM] [32m[14:01:10.778] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[3:01:10 PM] [32m[14:01:10.779] [INFO] [ai] [be727048] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:10 PM] [32m[14:01:10.779] [INFO] [ai] [be727048] 📡 RPC_OUT: [log/info] -> http://localhost:36855[0m
+[3:01:12 PM] [32m[14:01:12.670] [INFO] [ai] ✅ AI Response [direct]: 310 tokens, 1892ms[0m
+[3:01:12 PM] [32m[14:01:12.670] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[3:01:12 PM] [32m[14:01:12.670] [INFO] [ai] [3c4d0c38] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:12 PM] [32m[14:01:12.670] [INFO] [ai] [3c4d0c38] 📡 RPC_OUT: [log/info] -> http://localhost:36855[0m
+[3:01:12 PM] [32m[14:01:12.683] [INFO] [ai] [4e729410] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[3:01:12 PM] [32m[14:01:12.683] [INFO] [ai] 🤖 AI Request [session_1770559270776_1]: USER: online...[0m
+[3:01:12 PM] [32m[14:01:12.683] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[3:01:12 PM] [32m[14:01:12.683] [INFO] [ai] [396bb818] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:12 PM] [32m[14:01:12.683] [INFO] [ai] [396bb818] 📡 RPC_OUT: [log/info] -> http://localhost:36855[0m
+[3:01:15 PM] [32m[14:01:15.203] [INFO] [ai] ✅ AI Response [session_1770559270776_1]: 857 tokens, 2520ms[0m
+[3:01:15 PM] [32m[14:01:15.203] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[3:01:15 PM] [32m[14:01:15.203] [INFO] [ai] [c84dc8e6] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:15 PM] [32m[14:01:15.203] [INFO] [ai] [c84dc8e6] 📡 RPC_OUT: [log/info] -> http://localhost:36855[0m
+[3:01:15 PM] [32m[14:01:15.210] [INFO] [ai] [68c12acf] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[3:01:15 PM] [32m[14:01:15.210] [INFO] [ai] 🤖 AI Request [session_1770559270776_2]: TOOL_RESULT (list_get): {"success":true,"result":{"items":[],"capacity":5,"date"...[0m
+[3:01:15 PM] [32m[14:01:15.210] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[3:01:15 PM] [32m[14:01:15.210] [INFO] [ai] [b9bdc9c3] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:15 PM] [32m[14:01:15.210] [INFO] [ai] [b9bdc9c3] 📡 RPC_OUT: [log/info] -> http://localhost:36855[0m
+[3:01:19 PM] [32m[14:01:19.068] [INFO] [ai] ✅ AI Response [session_1770559270776_2]: 1129 tokens, 3858ms[0m
+[3:01:19 PM] [32m[14:01:19.068] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[3:01:19 PM] [32m[14:01:19.068] [INFO] [ai] [990dbcd8] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[3:01:19 PM] [32m[14:01:19.068] [INFO] [ai] [990dbcd8] 📡 RPC_OUT: [log/info] -> http://localhost:36855[0m
+[3:01:19 PM] [32m[14:01:19.087] [INFO] [ai] [c036933f] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
+[3:01:19 PM] [32m[14:01:19.087] [INFO] [ai] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:39385[0m
+[3:01:19 PM] [32m[14:01:19.088] [INFO] [ai] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:44047[0m
+[3:01:19 PM] [32m[14:01:19.088] [INFO] [ai] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:36741[0m
+[3:01:19 PM] [32m[14:01:19.088] [INFO] [ai] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:32867[0m
+[3:01:41 PM] [32m[14:01:41.961] [INFO] [ai] 📊 AI Stats: 3 calls, 2296 tokens total, 2296 last hour[0m
+[3:02:41 PM] [32m[14:02:41.960] [INFO] [ai] 📊 AI Stats: 3 calls, 2296 tokens total, 2296 last hour[0m
+[3:02:53 PM] [ai] Key fingerprint: 7df24372d061c71d
+[3:02:53 PM] [32m[14:02:52.984] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:02:53 PM] [32m[14:02:52.989] [INFO] [ai] Sovereign Cell online @ http://localhost:37463[0m
+[3:02:53 PM] [32m[14:02:53.494] [INFO] [ai] [2e979693] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40761[0m
+[3:02:53 PM] [32m[14:02:53.494] [INFO] [ai] [8ab2becb] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40875[0m
+[3:03:07 PM] [32m[14:03:07.991] [INFO] [ai] [ec12eb42] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
+[3:03:07 PM] [32m[14:03:07.991] [INFO] [ai] [be61dcd2] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:32809[0m
+[3:03:22 PM] [32m[14:03:22.991] [INFO] [ai] [dfca8a70] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:32869[0m
+[3:03:37 PM] [32m[14:03:37.991] [INFO] [ai] [76cef4ce] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40761[0m
+[3:03:37 PM] [32m[14:03:37.991] [INFO] [ai] [7a8185b7] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43751[0m
+[3:03:48 PM] [ai] Key fingerprint: a6bbb2e2a060c378
+[3:03:48 PM] [32m[14:03:48.077] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:03:48 PM] [32m[14:03:48.094] [INFO] [ai] Sovereign Cell online @ http://localhost:41231[0m
+[3:03:48 PM] [32m[14:03:48.602] [INFO] [ai] [bf91d550] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40787[0m
+[3:03:48 PM] [32m[14:03:48.606] [INFO] [ai] [c2bb084e] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34751[0m
+[3:04:03 PM] [32m[14:04:03.098] [INFO] [ai] [80b2e36c] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37951[0m
+[3:04:03 PM] [32m[14:04:03.098] [INFO] [ai] [20808a48] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:45853[0m
+[3:04:18 PM] [32m[14:04:18.096] [INFO] [ai] [13622f8c] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:38583[0m
+[3:04:18 PM] [32m[14:04:18.098] [INFO] [ai] [1195fa82] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:39043[0m
+[3:05:53 PM] [ai] Key fingerprint: 623d0d4420d34e47
+[3:05:53 PM] [32m[14:05:53.709] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:05:53 PM] [32m[14:05:53.714] [INFO] [ai] Sovereign Cell online @ http://localhost:44137[0m
+[3:05:53 PM] [32m[14:05:53.747] [INFO] [ai] [57cb6c73] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:05:53 PM] [32m[14:05:53.748] [INFO] [ai] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34195[0m
+[3:05:53 PM] [32m[14:05:53.754] [INFO] [ai] [57cb6c73] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:34195[0m
+[3:05:54 PM] [32m[14:05:54.216] [INFO] [ai] [a30f4bcb] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40153[0m
+[3:05:54 PM] [32m[14:05:54.216] [INFO] [ai] [4c1442aa] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:41165[0m
+[3:06:43 PM] [ai] Key fingerprint: 5037b91efd5fa2cf
+[3:06:43 PM] [32m[14:06:43.829] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:06:43 PM] [32m[14:06:43.834] [INFO] [ai] Sovereign Cell online @ http://localhost:45549[0m
+[3:06:44 PM] [32m[14:06:44.338] [INFO] [ai] [b842686d] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40275[0m
+[3:06:44 PM] [32m[14:06:44.338] [INFO] [ai] [b7ae267d] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43923[0m
+[3:07:39 PM] [ai] Key fingerprint: 8f5fec65f33fe327
+[3:07:39 PM] [32m[14:07:39.569] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:07:39 PM] [32m[14:07:39.576] [INFO] [ai] Sovereign Cell online @ http://localhost:38303[0m
+[3:07:40 PM] [33m[14:07:40.079] [WARN] [ai] [4fda3525] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:41317 (undefined)[0m
+[3:07:40 PM] [33m[14:07:40.079] [WARN] [ai] [9ba64e98] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:37477 (undefined)[0m
+[3:08:35 PM] [ai] Key fingerprint: 0874420328229bb4
+[3:08:35 PM] [32m[14:08:35.113] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:08:35 PM] [32m[14:08:35.130] [INFO] [ai] Sovereign Cell online @ http://localhost:33885[0m
+[3:08:35 PM] [32m[14:08:35.150] [INFO] [ai] [93e04371] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[3:08:35 PM] [32m[14:08:35.151] [INFO] [ai] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:46813[0m
+[3:08:35 PM] [32m[14:08:35.151] [INFO] [ai] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43607[0m
+[3:08:35 PM] [32m[14:08:35.151] [INFO] [ai] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42381[0m
+[3:09:03 PM] [ai] Key fingerprint: acba83e50fc0eaec
+[3:09:03 PM] [32m[14:09:03.499] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:09:03 PM] [32m[14:09:03.506] [INFO] [ai] Sovereign Cell online @ http://localhost:33885[0m
+[3:09:18 PM] [32m[14:09:18.417] [INFO] [ai] 🌐 ~2 → 15p/62c[0m
+[3:09:18 PM] [32m[14:09:18.459] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[3:10:12 PM] [ai] Key fingerprint: 6a6c1e099353ee26
+[3:10:12 PM] [32m[14:10:12.491] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[3:10:12 PM] [32m[14:10:12.503] [INFO] [ai] Sovereign Cell online @ http://localhost:43343[0m
+[10:47:54 PM] [ai] Key fingerprint: 2b73ae000f882a78
+[10:47:54 PM] [32m[21:47:54.395] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[10:47:54 PM] [32m[21:47:54.414] [INFO] [ai] Sovereign Cell online @ http://localhost:34751[0m
+[10:47:54 PM] [32m[21:47:54.465] [INFO] [ai] [a19e3189] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:47:54 PM] [32m[21:47:54.467] [INFO] [ai] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:38587[0m
+[10:47:54 PM] [32m[21:47:54.467] [INFO] [ai] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43279[0m
+[10:47:54 PM] [32m[21:47:54.467] [INFO] [ai] [a19e3189] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45151[0m
+[10:52:54 PM] [32m[21:52:54.328] [INFO] [ai] [a19e3189] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:38587[0m
+[10:52:54 PM] [32m[21:52:54.355] [INFO] [ai] [a19e3189] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:45151[0m
+[10:52:54 PM] [32m[21:52:54.422] [INFO] [ai] [a19e3189] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:43279[0m
+[11:03:39 PM] [ai] Key fingerprint: 06a3b579e2c27442
+[11:03:39 PM] [32m[22:03:39.276] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:03:39 PM] [32m[22:03:39.285] [INFO] [ai] Sovereign Cell online @ http://localhost:43799[0m
+[11:29:17 PM] [ai] Key fingerprint: 8cc33e1432b345a1
+[11:29:17 PM] [32m[22:29:17.227] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:29:17 PM] [32m[22:29:17.239] [INFO] [ai] Sovereign Cell online @ http://localhost:36455[0m
+[11:29:17 PM] [32m[22:29:17.304] [INFO] [ai] [3b5f98b3] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:29:17 PM] [32m[22:29:17.306] [INFO] [ai] [3b5f98b3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36743[0m
+[11:29:17 PM] [32m[22:29:17.306] [INFO] [ai] [3b5f98b3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33383[0m
+[11:29:17 PM] [32m[22:29:17.306] [INFO] [ai] [3b5f98b3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39785[0m
+[11:29:17 PM] [32m[22:29:17.309] [INFO] [ai] [3b5f98b3] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39785[0m
+[11:29:17 PM] [32m[22:29:17.309] [INFO] [ai] [3b5f98b3] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36743[0m
+[11:32:31 PM] [ai] Key fingerprint: d7e56fd19df710a2
+[11:32:31 PM] [32m[22:32:31.987] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:32:32 PM] [32m[22:32:32.000] [INFO] [ai] Sovereign Cell online @ http://localhost:38837[0m
+[11:32:32 PM] [32m[22:32:32.060] [INFO] [ai] [d54c2507] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:32:32 PM] [32m[22:32:32.062] [INFO] [ai] [d54c2507] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43715[0m
+[11:32:32 PM] [32m[22:32:32.072] [INFO] [ai] [d54c2507] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:43715[0m
+[11:35:13 PM] [ai] Key fingerprint: ab9cdc7e44c57967
+[11:35:13 PM] [32m[22:35:13.584] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:35:13 PM] [32m[22:35:13.599] [INFO] [ai] Sovereign Cell online @ http://localhost:44331[0m
+[11:35:17 PM] [32m[22:35:17.869] [INFO] [ai] [76bed454] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:35:17 PM] [32m[22:35:17.870] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[11:35:17 PM] Options: goal, question, command, update, ...[0m
+[11:35:17 PM] [32m[22:35:17.870] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:35:17 PM] [32m[22:35:17.871] [INFO] [ai] [e47cf031] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:35:17 PM] [32m[22:35:17.871] [INFO] [ai] [e47cf031] 📡 RPC_OUT: [log/info] -> http://localhost:32967[0m
+[11:35:17 PM] [32m[22:35:17.872] [INFO] [ai] [e47cf031] ✅ RPC_SUCCESS: [log/info] from http://localhost:32967[0m
+[11:35:20 PM] [32m[22:35:20.385] [INFO] [ai] ✅ AI Response [direct]: 363 tokens, 2515ms[0m
+[11:35:20 PM] [32m[22:35:20.385] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:35:20 PM] [32m[22:35:20.385] [INFO] [ai] [ea473f25] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:35:20 PM] [32m[22:35:20.386] [INFO] [ai] [ea473f25] 📡 RPC_OUT: [log/info] -> http://localhost:32967[0m
+[11:35:20 PM] [32m[22:35:20.387] [INFO] [ai] [ea473f25] ✅ RPC_SUCCESS: [log/info] from http://localhost:32967[0m
+[11:35:20 PM] [32m[22:35:20.401] [INFO] [ai] [fa87f931] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:35:20 PM] [32m[22:35:20.401] [INFO] [ai] 🤖 AI Request [session_1770590117866_1]: USER: online...[0m
+[11:35:20 PM] [32m[22:35:20.401] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:35:20 PM] [32m[22:35:20.401] [INFO] [ai] [cf6d0344] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:35:20 PM] [32m[22:35:20.402] [INFO] [ai] [cf6d0344] 📡 RPC_OUT: [log/info] -> http://localhost:32967[0m
+[11:35:20 PM] [32m[22:35:20.402] [INFO] [ai] [cf6d0344] ✅ RPC_SUCCESS: [log/info] from http://localhost:32967[0m
+[11:35:26 PM] [32m[22:35:26.799] [INFO] [ai] ✅ AI Response [session_1770590117866_1]: 1355 tokens, 6398ms[0m
+[11:35:26 PM] [32m[22:35:26.799] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:35:26 PM] [32m[22:35:26.799] [INFO] [ai] [3e913356] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:35:26 PM] [32m[22:35:26.799] [INFO] [ai] [3e913356] 📡 RPC_OUT: [log/info] -> http://localhost:32967[0m
+[11:35:26 PM] [32m[22:35:26.801] [INFO] [ai] [3e913356] ✅ RPC_SUCCESS: [log/info] from http://localhost:32967[0m
+[11:36:13 PM] [32m[22:36:13.600] [INFO] [ai] 📊 AI Stats: 2 calls, 1718 tokens total, 1718 last hour[0m
+[11:37:13 PM] [32m[22:37:13.599] [INFO] [ai] 📊 AI Stats: 2 calls, 1718 tokens total, 1718 last hour[0m
+[11:38:13 PM] [32m[22:38:13.599] [INFO] [ai] 📊 AI Stats: 2 calls, 1718 tokens total, 1718 last hour[0m
+[11:39:13 PM] [32m[22:39:13.598] [INFO] [ai] 📊 AI Stats: 2 calls, 1718 tokens total, 1718 last hour[0m
+[11:40:13 PM] [32m[22:40:13.598] [INFO] [ai] 📊 AI Stats: 2 calls, 1718 tokens total, 1718 last hour[0m
+[11:40:28 PM] [ai] Key fingerprint: 476f7bf319e0c091
+[11:40:28 PM] [32m[22:40:28.810] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:40:28 PM] [32m[22:40:28.828] [INFO] [ai] Sovereign Cell online @ http://localhost:44045[0m
+[11:40:28 PM] [32m[22:40:28.874] [INFO] [ai] [a8aa5baf] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:40:28 PM] [32m[22:40:28.875] [INFO] [ai] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44859[0m
+[11:40:28 PM] [32m[22:40:28.875] [INFO] [ai] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37589[0m
+[11:40:28 PM] [32m[22:40:28.875] [INFO] [ai] [a8aa5baf] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41925[0m
+[11:41:09 PM] [32m[22:41:09.323] [INFO] [ai] [0612a15e] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:41:09 PM] [32m[22:41:09.325] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "online"
+[11:41:09 PM] Options: goal, question, command, update, ...[0m
+[11:41:09 PM] [32m[22:41:09.326] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:41:09 PM] [32m[22:41:09.326] [INFO] [ai] [1801dac4] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:41:09 PM] [32m[22:41:09.326] [INFO] [ai] [1801dac4] 📡 RPC_OUT: [log/info] -> http://localhost:38317[0m
+[11:41:09 PM] [32m[22:41:09.328] [INFO] [ai] [1801dac4] ✅ RPC_SUCCESS: [log/info] from http://localhost:38317[0m
+[11:41:11 PM] [32m[22:41:11.815] [INFO] [ai] ✅ AI Response [direct]: 346 tokens, 2490ms[0m
+[11:41:11 PM] [32m[22:41:11.815] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:41:11 PM] [32m[22:41:11.816] [INFO] [ai] [d2871121] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:41:11 PM] [32m[22:41:11.816] [INFO] [ai] [d2871121] 📡 RPC_OUT: [log/info] -> http://localhost:38317[0m
+[11:41:11 PM] [32m[22:41:11.817] [INFO] [ai] [d2871121] ✅ RPC_SUCCESS: [log/info] from http://localhost:38317[0m
+[11:41:11 PM] [32m[22:41:11.831] [INFO] [ai] [2588408b] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:41:11 PM] [32m[22:41:11.831] [INFO] [ai] 🤖 AI Request [tts_session_1770590469290_r743c0wcp_1]: USER: online...[0m
+[11:41:11 PM] [32m[22:41:11.831] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:41:11 PM] [32m[22:41:11.831] [INFO] [ai] [ccdd7311] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:41:11 PM] [32m[22:41:11.831] [INFO] [ai] [ccdd7311] 📡 RPC_OUT: [log/info] -> http://localhost:38317[0m
+[11:41:11 PM] [32m[22:41:11.834] [INFO] [ai] [ccdd7311] ✅ RPC_SUCCESS: [log/info] from http://localhost:38317[0m
+[11:41:16 PM] [32m[22:41:16.994] [INFO] [ai] ✅ AI Response [tts_session_1770590469290_r743c0wcp_1]: 1205 tokens, 5163ms[0m
+[11:41:16 PM] [32m[22:41:16.994] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:41:16 PM] [32m[22:41:16.994] [INFO] [ai] [45e37bbc] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:41:16 PM] [32m[22:41:16.995] [INFO] [ai] [45e37bbc] 📡 RPC_OUT: [log/info] -> http://localhost:38317[0m
+[11:41:16 PM] [32m[22:41:16.997] [INFO] [ai] [45e37bbc] ✅ RPC_SUCCESS: [log/info] from http://localhost:38317[0m
+[11:41:28 PM] [32m[22:41:28.828] [INFO] [ai] 📊 AI Stats: 2 calls, 1551 tokens total, 1551 last hour[0m
+[11:42:28 PM] [32m[22:42:28.828] [INFO] [ai] 📊 AI Stats: 2 calls, 1551 tokens total, 1551 last hour[0m
+[11:43:28 PM] [32m[22:43:28.828] [INFO] [ai] 📊 AI Stats: 2 calls, 1551 tokens total, 1551 last hour[0m
+[11:44:28 PM] [32m[22:44:28.827] [INFO] [ai] 📊 AI Stats: 2 calls, 1551 tokens total, 1551 last hour[0m
+[11:45:28 PM] [32m[22:45:28.733] [INFO] [ai] [a8aa5baf] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44859[0m
+[11:45:28 PM] [32m[22:45:28.785] [INFO] [ai] [a8aa5baf] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:41925[0m
+[11:45:28 PM] [32m[22:45:28.787] [INFO] [ai] [a8aa5baf] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37589[0m
+[11:45:28 PM] [32m[22:45:28.827] [INFO] [ai] 📊 AI Stats: 2 calls, 1551 tokens total, 1551 last hour[0m
+[11:46:28 PM] [32m[22:46:28.826] [INFO] [ai] 📊 AI Stats: 2 calls, 1551 tokens total, 1551 last hour[0m
+[11:47:28 PM] [32m[22:47:28.825] [INFO] [ai] 📊 AI Stats: 2 calls, 1551 tokens total, 1551 last hour[0m
+[11:47:49 PM] [ai] Key fingerprint: 75954de6f6dbb6a3
+[11:47:49 PM] [32m[22:47:49.716] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:47:49 PM] [32m[22:47:49.722] [INFO] [ai] Sovereign Cell online @ http://localhost:45443[0m
+[11:48:01 PM] [32m[22:48:01.412] [INFO] [ai] [7303586e] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:48:01 PM] [32m[22:48:01.413] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "status report"
+[11:48:01 PM] Options: goal, question, command, u...[0m
+[11:48:01 PM] [32m[22:48:01.414] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:48:01 PM] [32m[22:48:01.414] [INFO] [ai] [f5f2f047] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:48:01 PM] [32m[22:48:01.415] [INFO] [ai] [f5f2f047] 📡 RPC_OUT: [log/info] -> http://localhost:40897[0m
+[11:48:01 PM] [32m[22:48:01.416] [INFO] [ai] [f5f2f047] ✅ RPC_SUCCESS: [log/info] from http://localhost:40897[0m
+[11:48:03 PM] [32m[22:48:03.710] [INFO] [ai] ✅ AI Response [direct]: 375 tokens, 2297ms[0m
+[11:48:03 PM] [32m[22:48:03.710] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:48:03 PM] [32m[22:48:03.711] [INFO] [ai] [a41b2450] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:48:03 PM] [32m[22:48:03.711] [INFO] [ai] [a41b2450] 📡 RPC_OUT: [log/info] -> http://localhost:40897[0m
+[11:48:03 PM] [32m[22:48:03.712] [INFO] [ai] [a41b2450] ✅ RPC_SUCCESS: [log/info] from http://localhost:40897[0m
+[11:48:03 PM] [32m[22:48:03.725] [INFO] [ai] [1d4c100a] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:48:03 PM] [32m[22:48:03.726] [INFO] [ai] 🤖 AI Request [tts_session_1770590881390_3n1d7xe0m_1]: USER: status report...[0m
+[11:48:03 PM] [32m[22:48:03.726] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:48:03 PM] [32m[22:48:03.726] [INFO] [ai] [29de2839] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:48:03 PM] [32m[22:48:03.726] [INFO] [ai] [29de2839] 📡 RPC_OUT: [log/info] -> http://localhost:40897[0m
+[11:48:03 PM] [32m[22:48:03.729] [INFO] [ai] [29de2839] ✅ RPC_SUCCESS: [log/info] from http://localhost:40897[0m
+[11:48:07 PM] [32m[22:48:07.258] [INFO] [ai] ✅ AI Response [tts_session_1770590881390_3n1d7xe0m_1]: 964 tokens, 3532ms[0m
+[11:48:07 PM] [32m[22:48:07.258] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:48:07 PM] [32m[22:48:07.258] [INFO] [ai] [dfc7c0ba] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:48:07 PM] [32m[22:48:07.259] [INFO] [ai] [dfc7c0ba] 📡 RPC_OUT: [log/info] -> http://localhost:40897[0m
+[11:48:07 PM] [32m[22:48:07.260] [INFO] [ai] [dfc7c0ba] ✅ RPC_SUCCESS: [log/info] from http://localhost:40897[0m
+[11:48:49 PM] [32m[22:48:49.722] [INFO] [ai] 📊 AI Stats: 2 calls, 1339 tokens total, 1339 last hour[0m
+[11:49:49 PM] [32m[22:49:49.722] [INFO] [ai] 📊 AI Stats: 2 calls, 1339 tokens total, 1339 last hour[0m
+[11:50:49 PM] [32m[22:50:49.720] [INFO] [ai] 📊 AI Stats: 2 calls, 1339 tokens total, 1339 last hour[0m
+[11:51:49 PM] [32m[22:51:49.720] [INFO] [ai] 📊 AI Stats: 2 calls, 1339 tokens total, 1339 last hour[0m
+[11:52:49 PM] [32m[22:52:49.733] [INFO] [ai] 📊 AI Stats: 2 calls, 1339 tokens total, 1339 last hour[0m
+[11:53:29 PM] [ai] Key fingerprint: e34a0e3e4016e457
+[11:53:29 PM] [32m[22:53:29.177] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:53:29 PM] [32m[22:53:29.186] [INFO] [ai] Sovereign Cell online @ http://localhost:33173[0m
+[11:56:22 PM] [ai] Key fingerprint: c25d526f88c54c30
+[11:56:22 PM] [32m[22:56:22.703] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:56:22 PM] [32m[22:56:22.735] [INFO] [ai] Sovereign Cell online @ http://localhost:33197[0m
+[11:56:32 PM] [32m[22:56:32.280] [INFO] [ai] [2ad0a4d6] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:56:32 PM] [32m[22:56:32.281] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "status report"
+[11:56:32 PM] Options: goal, question, command, u...[0m
+[11:56:32 PM] [32m[22:56:32.282] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:56:32 PM] [32m[22:56:32.282] [INFO] [ai] [bb4d579c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:32 PM] [32m[22:56:32.283] [INFO] [ai] [bb4d579c] 📡 RPC_OUT: [log/info] -> http://localhost:45627[0m
+[11:56:32 PM] [32m[22:56:32.285] [INFO] [ai] [bb4d579c] ✅ RPC_SUCCESS: [log/info] from http://localhost:45627[0m
+[11:56:34 PM] [32m[22:56:34.457] [INFO] [ai] ✅ AI Response [direct]: 351 tokens, 2176ms[0m
+[11:56:34 PM] [32m[22:56:34.457] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:56:34 PM] [32m[22:56:34.457] [INFO] [ai] [cbea3edf] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:34 PM] [32m[22:56:34.458] [INFO] [ai] [cbea3edf] 📡 RPC_OUT: [log/info] -> http://localhost:45627[0m
+[11:56:34 PM] [32m[22:56:34.459] [INFO] [ai] [cbea3edf] ✅ RPC_SUCCESS: [log/info] from http://localhost:45627[0m
+[11:56:34 PM] [32m[22:56:34.474] [INFO] [ai] [ecccb61c] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:56:34 PM] [32m[22:56:34.474] [INFO] [ai] 🤖 AI Request [tts_session_1770590469290_r743c0wcp_1]: USER: status report...[0m
+[11:56:34 PM] [32m[22:56:34.474] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:56:34 PM] [32m[22:56:34.474] [INFO] [ai] [4451077a] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:34 PM] [32m[22:56:34.474] [INFO] [ai] [4451077a] 📡 RPC_OUT: [log/info] -> http://localhost:45627[0m
+[11:56:34 PM] [32m[22:56:34.476] [INFO] [ai] [4451077a] ✅ RPC_SUCCESS: [log/info] from http://localhost:45627[0m
+[11:56:37 PM] [32m[22:56:37.579] [INFO] [ai] ✅ AI Response [tts_session_1770590469290_r743c0wcp_1]: 931 tokens, 3105ms[0m
+[11:56:37 PM] [32m[22:56:37.579] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:56:37 PM] [32m[22:56:37.579] [INFO] [ai] [af278b5b] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:37 PM] [32m[22:56:37.579] [INFO] [ai] [af278b5b] 📡 RPC_OUT: [log/info] -> http://localhost:45627[0m
+[11:56:37 PM] [32m[22:56:37.580] [INFO] [ai] [af278b5b] ✅ RPC_SUCCESS: [log/info] from http://localhost:45627[0m
+[11:56:39 PM] [32m[22:56:39.081] [INFO] [ai] [81caa1da] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:56:39 PM] [32m[22:56:39.082] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "status report"
+[11:56:39 PM] Options: goal, question, command, u...[0m
+[11:56:39 PM] [32m[22:56:39.082] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:56:39 PM] [32m[22:56:39.082] [INFO] [ai] [2c31887b] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:39 PM] [32m[22:56:39.082] [INFO] [ai] [2c31887b] 📡 RPC_OUT: [log/info] -> http://localhost:45627[0m
+[11:56:39 PM] [32m[22:56:39.082] [INFO] [ai] [2c31887b] ✅ RPC_SUCCESS: [log/info] from http://localhost:45627[0m
+[11:56:41 PM] [32m[22:56:41.287] [INFO] [ai] ✅ AI Response [direct]: 355 tokens, 2205ms[0m
+[11:56:41 PM] [32m[22:56:41.287] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:56:41 PM] [32m[22:56:41.288] [INFO] [ai] [76260521] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:41 PM] [32m[22:56:41.288] [INFO] [ai] [76260521] 📡 RPC_OUT: [log/info] -> http://localhost:45627[0m
+[11:56:41 PM] [32m[22:56:41.291] [INFO] [ai] [76260521] ✅ RPC_SUCCESS: [log/info] from http://localhost:45627[0m
+[11:56:41 PM] [32m[22:56:41.296] [INFO] [ai] [656447ed] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[11:56:41 PM] [32m[22:56:41.296] [INFO] [ai] 🤖 AI Request [tts_session_1770590881390_3n1d7xe0m_1]: USER: status report...[0m
+[11:56:41 PM] [32m[22:56:41.296] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:56:41 PM] [32m[22:56:41.296] [INFO] [ai] [e5e057f5] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:41 PM] [32m[22:56:41.296] [INFO] [ai] [e5e057f5] 📡 RPC_OUT: [log/info] -> http://localhost:45627[0m
+[11:56:41 PM] [32m[22:56:41.297] [INFO] [ai] [e5e057f5] ✅ RPC_SUCCESS: [log/info] from http://localhost:45627[0m
+[11:56:45 PM] [32m[22:56:45.826] [INFO] [ai] ✅ AI Response [tts_session_1770590881390_3n1d7xe0m_1]: 1133 tokens, 4530ms[0m
+[11:56:45 PM] [32m[22:56:45.826] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[11:56:45 PM] [32m[22:56:45.826] [INFO] [ai] [23b1d425] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[11:56:45 PM] [32m[22:56:45.826] [INFO] [ai] [23b1d425] 📡 RPC_OUT: [log/info] -> http://localhost:45627[0m
+[11:56:45 PM] [32m[22:56:45.828] [INFO] [ai] [23b1d425] ✅ RPC_SUCCESS: [log/info] from http://localhost:45627[0m
+[11:56:53 PM] [ai] Key fingerprint: 5b159a920bbc0c7c
+[11:56:53 PM] [32m[22:56:53.611] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:56:53 PM] [32m[22:56:53.617] [INFO] [ai] Sovereign Cell online @ http://localhost:46541[0m
+[11:56:53 PM] [32m[22:56:53.641] [INFO] [ai] [efb7fdb3] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[11:56:53 PM] [32m[22:56:53.642] [INFO] [ai] [efb7fdb3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34491[0m
+[11:56:53 PM] [32m[22:56:53.642] [INFO] [ai] [efb7fdb3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36865[0m
+[11:56:53 PM] [32m[22:56:53.643] [INFO] [ai] [efb7fdb3] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37287[0m
+[11:59:46 PM] [ai] Key fingerprint: b0228b616129defd
+[11:59:46 PM] [32m[22:59:46.538] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:59:46 PM] [32m[22:59:46.563] [INFO] [ai] Sovereign Cell online @ http://localhost:34941[0m
+[12:07:18 AM] [ai] Key fingerprint: e77ea5077e4f2448
+[12:07:18 AM] [32m[23:07:18.259] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:07:18 AM] [32m[23:07:18.269] [INFO] [ai] Sovereign Cell online @ http://localhost:33505[0m
+[12:07:18 AM] [32m[23:07:18.354] [INFO] [ai] [218a6a89] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:07:18 AM] [32m[23:07:18.362] [INFO] [ai] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43693[0m
+[12:07:18 AM] [32m[23:07:18.362] [INFO] [ai] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39685[0m
+[12:07:18 AM] [32m[23:07:18.362] [INFO] [ai] [218a6a89] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41737[0m
+[12:08:36 AM] [ai] Key fingerprint: e2d243c80c9b3267
+[12:08:36 AM] [32m[23:08:36.932] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:08:36 AM] [32m[23:08:36.938] [INFO] [ai] Sovereign Cell online @ http://localhost:39687[0m
+[12:10:03 AM] [32m[23:10:03.605] [INFO] [ai] [32a5f9de] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:10:03 AM] [32m[23:10:03.606] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "hello"
+[12:10:03 AM] Options: goal, question, command, update, f...[0m
+[12:10:03 AM] [32m[23:10:03.606] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:10:03 AM] [32m[23:10:03.607] [INFO] [ai] [a91ab638] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:03 AM] [32m[23:10:03.607] [INFO] [ai] [a91ab638] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:10:03 AM] [32m[23:10:03.608] [INFO] [ai] [a91ab638] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:10:05 AM] [32m[23:10:05.609] [INFO] [ai] ✅ AI Response [direct]: 300 tokens, 2003ms[0m
+[12:10:05 AM] [32m[23:10:05.609] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:10:05 AM] [32m[23:10:05.609] [INFO] [ai] [3c3c372c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:05 AM] [32m[23:10:05.609] [INFO] [ai] [3c3c372c] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:10:05 AM] [32m[23:10:05.611] [INFO] [ai] [3c3c372c] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:10:05 AM] [32m[23:10:05.624] [INFO] [ai] [7c309f54] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:10:05 AM] [32m[23:10:05.624] [INFO] [ai] 🤖 AI Request [tts_session_1770592195345_89pqocuo4_1]: USER: hello...[0m
+[12:10:05 AM] [32m[23:10:05.624] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:10:05 AM] [32m[23:10:05.624] [INFO] [ai] [23de5dcf] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:05 AM] [32m[23:10:05.624] [INFO] [ai] [23de5dcf] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:10:05 AM] [32m[23:10:05.624] [INFO] [ai] [23de5dcf] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:10:08 AM] [32m[23:10:08.727] [INFO] [ai] ✅ AI Response [tts_session_1770592195345_89pqocuo4_1]: 897 tokens, 3103ms[0m
+[12:10:08 AM] [32m[23:10:08.727] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:10:08 AM] [32m[23:10:08.727] [INFO] [ai] [97a9b7a7] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:08 AM] [32m[23:10:08.727] [INFO] [ai] [97a9b7a7] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:10:08 AM] [32m[23:10:08.728] [INFO] [ai] [97a9b7a7] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:10:36 AM] [32m[23:10:36.938] [INFO] [ai] 📊 AI Stats: 2 calls, 1197 tokens total, 1197 last hour[0m
+[12:10:56 AM] [32m[23:10:56.344] [INFO] [ai] [eaa4f67f] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:10:56 AM] [32m[23:10:56.344] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "the plan is to release our second hand Marketplace...[0m
+[12:10:56 AM] [32m[23:10:56.344] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:10:56 AM] [32m[23:10:56.344] [INFO] [ai] [61db841a] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:56 AM] [32m[23:10:56.344] [INFO] [ai] [61db841a] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:10:56 AM] [32m[23:10:56.345] [INFO] [ai] [61db841a] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:10:59 AM] [32m[23:10:59.425] [INFO] [ai] ✅ AI Response [direct]: 551 tokens, 3081ms[0m
+[12:10:59 AM] [32m[23:10:59.425] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:10:59 AM] [32m[23:10:59.425] [INFO] [ai] [fcad0808] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:59 AM] [32m[23:10:59.425] [INFO] [ai] [fcad0808] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:10:59 AM] [32m[23:10:59.427] [INFO] [ai] [fcad0808] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:10:59 AM] [32m[23:10:59.433] [INFO] [ai] [e86b5614] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[12:10:59 AM] [32m[23:10:59.433] [INFO] [ai] 🤖 AI Request [tts_session_1770592195345_89pqocuo4_1]: USER: the plan is to release our second hand Marketplace called Rio in emu Swede...[0m
+[12:10:59 AM] [32m[23:10:59.433] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:10:59 AM] [32m[23:10:59.433] [INFO] [ai] [ef6dd93c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:10:59 AM] [32m[23:10:59.433] [INFO] [ai] [ef6dd93c] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:10:59 AM] [32m[23:10:59.434] [INFO] [ai] [ef6dd93c] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:11:04 AM] [32m[23:11:04.459] [INFO] [ai] ✅ AI Response [tts_session_1770592195345_89pqocuo4_1]: 1377 tokens, 5026ms[0m
+[12:11:04 AM] [32m[23:11:04.459] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[12:11:04 AM] [32m[23:11:04.459] [INFO] [ai] [e8c826c9] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[12:11:04 AM] [32m[23:11:04.459] [INFO] [ai] [e8c826c9] 📡 RPC_OUT: [log/info] -> http://localhost:44675[0m
+[12:11:04 AM] [32m[23:11:04.461] [INFO] [ai] [e8c826c9] ✅ RPC_SUCCESS: [log/info] from http://localhost:44675[0m
+[12:11:04 AM] [32m[23:11:04.465] [INFO] [ai] [6d4ed6d6] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
+[12:11:04 AM] [32m[23:11:04.465] [INFO] [ai] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36661[0m
+[12:11:04 AM] [33m[23:11:04.467] [WARN] [ai] [6d4ed6d6] ❌ RPC_REMOTE_FAIL: [memory/goals/create] @ http://localhost:36661 (HANDLER_ERR)[0m
+[12:11:04 AM] [32m[23:11:04.467] [INFO] [ai] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:33147[0m
+[12:11:04 AM] [32m[23:11:04.467] [INFO] [ai] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:35273[0m
+[12:11:04 AM] [32m[23:11:04.467] [INFO] [ai] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:37669[0m
+[12:11:36 AM] [32m[23:11:36.937] [INFO] [ai] 📊 AI Stats: 4 calls, 3125 tokens total, 3125 last hour[0m
+[12:12:36 AM] [32m[23:12:36.936] [INFO] [ai] 📊 AI Stats: 4 calls, 3125 tokens total, 3125 last hour[0m
+[12:13:36 AM] [32m[23:13:36.935] [INFO] [ai] 📊 AI Stats: 4 calls, 3125 tokens total, 3125 last hour[0m
+[12:14:36 AM] [32m[23:14:36.934] [INFO] [ai] 📊 AI Stats: 4 calls, 3125 tokens total, 3125 last hour[0m
+[12:15:04 AM] [ai] Key fingerprint: 91f2a42a8e7f12cd
+[12:15:04 AM] [32m[23:15:04.534] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:15:04 AM] [32m[23:15:04.540] [INFO] [ai] Sovereign Cell online @ http://localhost:35857[0m
+[12:15:04 AM] [32m[23:15:04.647] [INFO] [ai] [3a19ba3a] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:15:04 AM] [32m[23:15:04.648] [INFO] [ai] [3a19ba3a] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37793[0m
+[12:15:04 AM] [32m[23:15:04.648] [INFO] [ai] [3a19ba3a] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44087[0m
+[12:15:04 AM] [32m[23:15:04.648] [INFO] [ai] [3a19ba3a] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45335[0m
+[12:15:04 AM] [32m[23:15:04.659] [INFO] [ai] [3a19ba3a] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44087[0m
+[12:15:04 AM] [32m[23:15:04.659] [INFO] [ai] [3a19ba3a] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37793[0m
+[12:20:04 AM] [32m[23:20:04.466] [INFO] [ai] [3a19ba3a] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:45335[0m
+[12:36:07 AM] [ai] Key fingerprint: e9c901c4235f7fba
+[12:36:07 AM] [32m[23:36:07.096] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:36:07 AM] [32m[23:36:07.111] [INFO] [ai] Sovereign Cell online @ http://localhost:42711[0m

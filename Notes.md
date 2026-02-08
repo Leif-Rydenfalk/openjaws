@@ -123,3 +123,32 @@ No stop trying to hack this. The ai should do and decide everything by itself, a
 
 
 The problem is that its not aware of what the fuck is going on. Memory is the single most important component in a agentic system.
+
+
+"From this point stop writing the whole files. only localized changes applied using commands - you write commands which find and replace files like git diffs and i run them. 
+Use tools like node to find the file, find the line of code to edit and write the code to the file. Or python. Or another command line tool. Just dont write the whole file - only local small and precise changes. This is because ai models hallucinates a lot and we want to slowly iterate and improve files and keep all previous small precise iterations without accidentally removing them (common when writing the whole file).
+Or write a heredoc and apply the patch - prefered.
+find start line using the code on that line you know.
+find end line using code on that line you know.
+write the code to replace everything in between these lines.
+I will run all terminal commands you write in my terminal to fix my files.
+"
+
+
+i fixed it manually in like 2 seconds. youre very bad at this...
+How do i test the tts system?
+The tts system should not use kindly since kindly sends so long messages and is not async like tts requires or we make kindly async and let it send messages to you at any time and give quick responses and do work in background.
+
+
+
+
+Great but how do i respond to it? Why doesnt my chat session stay when i reload the site / access it from different tabs and devices?
+
+I get "Error failed to execute "start" on speech recognition. recognition already started."
+
+
+Why do you list "common causes"? doesnt the logs show the problem exactly?
+The error handling needs to be 10000000000 times better
+
+"The current system throws away the most useful debugging information at every hop."
+Fix this. Right now.
