@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-07T20:54:03.032Z
- * Source: Live mesh scan (42 capabilities)
+ * Generated: 2026-02-08T11:30:49.673Z
+ * Source: Live mesh scan (45 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -10,6 +10,8 @@
 declare module "./protocols/typed-mesh" {
     interface MeshCapabilities {
         "ai/generate": { input: any; output: any };
+        "ai/reset-usage": { input: any; output: any };
+        "ai/usage": { input: any; output: any };
         "architect/consult": { input: any; output: any };
         "coder/develop": { input: any; output: any };
         "comms/chat": { input: any; output: any };
@@ -19,6 +21,7 @@ declare module "./protocols/typed-mesh" {
         "comms/get-stats": { input: any; output: any };
         "comms/start-session": { input: any; output: any };
         "kindly/chat": { input: any; output: any };
+        "kindly/get-activity": { input: any; output: any };
         "list/add": { input: any; output: any };
         "list/complete": { input: any; output: any };
         "list/get": { input: any; output: any };
@@ -63,6 +66,8 @@ declare module "./protocols/typed-mesh" {
  */
 export type AiCapabilities = {
     generate: { input: any; output: any };
+    reset-usage: { input: any; output: any };
+    usage: { input: any; output: any };
 };
 
 /**
@@ -96,6 +101,7 @@ export type CommsCapabilities = {
  */
 export type KindlyCapabilities = {
     chat: { input: any; output: any };
+    get-activity: { input: any; output: any };
 };
 
 /**
@@ -166,4 +172,4 @@ export type SkillsCapabilities = {
     update-capability: { input: any; output: any };
 };
 
-// Type trigger: 1770497643032
+// Type trigger: 1770550249673

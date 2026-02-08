@@ -271,3 +271,65 @@
 [9:49:33 PM] [32m[20:49:33.066] [INFO] [log] Sovereign Cell online @ http://localhost:38539[0m
 [9:49:33 PM] [32m[20:49:33.067] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
 [9:49:33 PM] [32m[20:49:33.067] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[10:01:19 PM] [log] Key fingerprint: eb1de460db9a1147
+[10:01:19 PM] [32m[21:01:19.871] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[10:01:19 PM] [32m[21:01:19.884] [INFO] [log] Sovereign Cell online @ http://localhost:36721[0m
+[10:01:19 PM] [32m[21:01:19.885] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[10:01:19 PM] [32m[21:01:19.885] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[10:01:35 PM] [32m[21:01:35.228] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[10:01:37 PM] [32m[21:01:37.221] [INFO] [log] 📝 Logged: AI_COMPLETE: 352tok, 1993ms (r...[0m
+[10:01:37 PM] [32m[21:01:37.235] [INFO] [log] 📝 Logged: AI_REQUEST: USER: Hello... (re...[0m
+[10:01:40 PM] [32m[21:01:40.670] [INFO] [log] 📝 Logged: AI_COMPLETE: 955tok, 3435ms (r...[0m
+[10:03:00 PM] [32m[21:03:00.278] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[10:03:02 PM] [32m[21:03:02.114] [INFO] [log] 📝 Logged: AI_COMPLETE: 350tok, 1836ms (r...[0m
+[10:03:02 PM] [32m[21:03:02.119] [INFO] [log] 📝 Logged: AI_REQUEST: USER: what do you ...[0m
+[10:03:07 PM] [32m[21:03:07.526] [INFO] [log] 📝 Logged: AI_COMPLETE: 1416tok, 5407ms (...[0m
+[10:04:43 PM] [32m[21:04:43.252] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[10:04:47 PM] [32m[21:04:47.444] [INFO] [log] 📝 Logged: AI_COMPLETE: 755tok, 4192ms (r...[0m
+[10:04:47 PM] [32m[21:04:47.449] [INFO] [log] 📝 Logged: AI_REQUEST: USER: Your a proto...[0m
+[10:04:52 PM] [32m[21:04:52.694] [INFO] [log] 📝 Logged: AI_COMPLETE: 1364tok, 5245ms (...[0m
+[10:04:52 PM] [32m[21:04:52.697] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[10:09:33 PM] [32m[21:09:33.346] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[10:09:35 PM] [32m[21:09:35.536] [INFO] [log] 📝 Logged: AI_COMPLETE: 452tok, 2191ms (r...[0m
+[10:09:35 PM] [32m[21:09:35.540] [INFO] [log] 📝 Logged: AI_REQUEST: USER: generate a t...[0m
+[10:09:43 PM] [32m[21:09:43.275] [INFO] [log] 📝 Logged: AI_COMPLETE: 1719tok, 7734ms (...[0m
+[10:09:43 PM] [32m[21:09:43.277] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[10:14:21 PM] [32m[21:14:21.771] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (memor...[0m
+[10:14:28 PM] [32m[21:14:28.270] [INFO] [log] 📝 Logged: AI_COMPLETE: 1559tok, 6499ms (...[0m
+[10:19:21 PM] [32m[21:19:21.770] [INFO] [log] 📝 Logged: TOOL_END: memory_goals_create ...[0m
+[10:19:21 PM] [32m[21:19:21.771] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (memor...[0m
+[10:19:28 PM] [32m[21:19:28.059] [INFO] [log] 📝 Logged: AI_COMPLETE: 1560tok, 6289ms (...[0m
+[10:19:28 PM] [32m[21:19:28.061] [INFO] [log] 📝 Logged: TOOL_START: list_add (session:...[0m
+[10:29:21 PM] [32m[21:29:21.770] [INFO] [log] 📝 Logged: TOOL_END: list_add FAILED (593...[0m
+[10:29:21 PM] [32m[21:29:21.771] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[10:29:31 PM] [32m[21:29:31.848] [INFO] [log] 📝 Logged: AI_COMPLETE: 1903tok, 10077ms ...[0m
+[10:29:31 PM] [32m[21:29:31.850] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[10:39:21 PM] [32m[21:39:21.770] [INFO] [log] 📝 Logged: TOOL_END: memory_goals_create ...[0m
+[10:39:21 PM] [32m[21:39:21.771] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (memor...[0m
+[10:39:26 PM] [32m[21:39:26.912] [INFO] [log] 📝 Logged: AI_COMPLETE: 1429tok, 5141ms (...[0m
+[10:39:26 PM] [32m[21:39:26.913] [INFO] [log] 📝 Logged: TOOL_START: list_add (session:...[0m
+[10:49:19 PM] [32m[21:49:19.940] [INFO] [log] 📝 Logged: TOOL_END: list_add FAILED (593...[0m
+[10:49:19 PM] [32m[21:49:19.942] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[10:49:34 PM] [32m[21:49:34.541] [INFO] [log] 📝 Logged: AI_COMPLETE: 2912tok, 14599ms ...[0m
+[10:49:34 PM] [32m[21:49:34.544] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[10:59:21 PM] [32m[21:59:21.769] [INFO] [log] 📝 Logged: TOOL_END: memory_goals_create ...[0m
+[10:59:21 PM] [32m[21:59:21.769] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (memor...[0m
+[10:59:30 PM] [32m[21:59:30.136] [INFO] [log] 📝 Logged: AI_COMPLETE: 1953tok, 8366ms (...[0m
+[10:59:30 PM] [32m[21:59:30.138] [INFO] [log] 📝 Logged: TOOL_START: list_add (session:...[0m
+[11:09:21 PM] [32m[22:09:21.769] [INFO] [log] 📝 Logged: TOOL_END: list_add FAILED (591...[0m
+[11:09:21 PM] [32m[22:09:21.771] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[11:09:34 PM] [32m[22:09:34.662] [INFO] [log] 📝 Logged: AI_COMPLETE: 2520tok, 12891ms ...[0m
+[11:09:34 PM] [32m[22:09:34.665] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[11:19:21 PM] [32m[22:19:21.769] [INFO] [log] 📝 Logged: TOOL_END: memory_goals_create ...[0m
+[11:19:21 PM] [32m[22:19:21.770] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (memor...[0m
+[11:19:31 PM] [32m[22:19:31.320] [INFO] [log] 📝 Logged: AI_COMPLETE: 2398tok, 9551ms (...[0m
+[11:19:31 PM] [32m[22:19:31.323] [INFO] [log] 📝 Logged: TOOL_START: list_add (session:...[0m
+[11:29:19 PM] [32m[22:29:19.937] [INFO] [log] 📝 Logged: TOOL_END: list_add FAILED (588...[0m
+[11:29:19 PM] [32m[22:29:19.937] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (list_...[0m
+[11:29:27 PM] [32m[22:29:27.714] [INFO] [log] 📝 Logged: AI_COMPLETE: 1974tok, 7777ms (...[0m
+[11:29:27 PM] [32m[22:29:27.716] [INFO] [log] 📝 Logged: TOOL_START: memory_goals_creat...[0m
+[11:39:21 PM] [32m[22:39:21.769] [INFO] [log] 📝 Logged: TOOL_END: memory_goals_create ...[0m
+[11:39:21 PM] [32m[22:39:21.771] [INFO] [log] 📝 Logged: AI_REQUEST: TOOL_RESULT (memor...[0m
+[11:39:30 PM] [32m[22:39:30.147] [INFO] [log] 📝 Logged: AI_COMPLETE: 1873tok, 8376ms (...[0m
+[11:39:30 PM] [32m[22:39:30.148] [INFO] [log] 📝 Logged: TOOL_START: list_add (session:...[0m
+[11:49:21 PM] [32m[22:49:21.768] [INFO] [log] 📝 Logged: TOOL_END: list_add FAILED (591...[0m

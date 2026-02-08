@@ -210,3 +210,71 @@
 [9:49:32 PM] [32m[20:49:32.983] [INFO] [kindly] Sovereign Cell online @ http://localhost:36599[0m
 [9:49:32 PM] [32m[20:49:32.983] [INFO] [kindly] 🧠 Kindly online - temporal agent mode[0m
 [9:49:32 PM] [32m[20:49:32.983] [INFO] [kindly]    Features: Perfect memory | Pattern learning | Proactive action[0m
+[10:01:19 PM] [kindly] Key fingerprint: 69fe6a3315347a74
+[10:01:19 PM] [32m[21:01:19.751] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[10:01:19 PM] [32m[21:01:19.766] [INFO] [kindly] Sovereign Cell online @ http://localhost:40693[0m
+[10:01:19 PM] [32m[21:01:19.767] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[10:01:35 PM] [32m[21:01:35.224] [INFO] [kindly] 💬 New chat request from User[0m
+[10:01:37 PM] [32m[21:01:37.233] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[10:01:40 PM] [32m[21:01:40.671] [INFO] [kindly] 📊 Tokens: 955 (total: 955)[0m
+[10:03:00 PM] [32m[21:03:00.276] [INFO] [kindly] 💬 New chat request from User[0m
+[10:03:02 PM] [32m[21:03:02.117] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[10:03:07 PM] [32m[21:03:07.528] [INFO] [kindly] 📊 Tokens: 1416 (total: 1416)[0m
+[10:04:43 PM] [32m[21:04:43.250] [INFO] [kindly] 💬 New chat request from User[0m
+[10:04:47 PM] [32m[21:04:47.447] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[10:04:52 PM] [32m[21:04:52.696] [INFO] [kindly] 📊 Tokens: 1364 (total: 1364)[0m
+[10:04:52 PM] [32m[21:04:52.696] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[10:04:52 PM] [32m[21:04:52.696] [INFO] [kindly] 🔧 [session_] Starting: memory_goals_create[0m
+[10:09:33 PM] [32m[21:09:33.342] [INFO] [kindly] 💬 New chat request from User[0m
+[10:09:35 PM] [32m[21:09:35.539] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[10:09:43 PM] [32m[21:09:43.277] [INFO] [kindly] 📊 Tokens: 1719 (total: 1719)[0m
+[10:09:43 PM] [32m[21:09:43.277] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[10:09:43 PM] [32m[21:09:43.277] [INFO] [kindly] 🔧 [session_] Starting: memory_goals_create[0m
+[10:14:21 PM] [32m[21:14:21.769] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[10:14:28 PM] [32m[21:14:28.271] [INFO] [kindly] 📊 Tokens: 1559 (total: 2923)[0m
+[10:19:21 PM] [32m[21:19:21.768] [INFO] [kindly] ❌ [session_] memory_goals_create (578491ms)[0m
+[10:19:21 PM] [32m[21:19:21.769] [INFO] [kindly] 🔄 Iteration 2/10[0m
+[10:19:28 PM] [32m[21:19:28.060] [INFO] [kindly] 📊 Tokens: 1560 (total: 3279)[0m
+[10:19:28 PM] [32m[21:19:28.060] [INFO] [kindly] 🔧 Tool call: list_add[0m
+[10:19:28 PM] [32m[21:19:28.060] [INFO] [kindly] 🔧 [session_] Starting: list_add[0m
+[10:29:21 PM] [32m[21:29:21.768] [INFO] [kindly] ❌ [session_] list_add (593708ms)[0m
+[10:29:21 PM] [32m[21:29:21.769] [INFO] [kindly] 🔄 Iteration 3/10[0m
+[10:29:31 PM] [32m[21:29:31.849] [INFO] [kindly] 📊 Tokens: 1903 (total: 5182)[0m
+[10:29:31 PM] [32m[21:29:31.850] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[10:29:31 PM] [32m[21:29:31.850] [INFO] [kindly] 🔧 [session_] Starting: memory_goals_create[0m
+[10:39:21 PM] [32m[21:39:21.768] [INFO] [kindly] ❌ [session_] memory_goals_create (589918ms)[0m
+[10:39:21 PM] [32m[21:39:21.768] [INFO] [kindly] 🔄 Iteration 4/10[0m
+[10:39:26 PM] [32m[21:39:26.912] [INFO] [kindly] 📊 Tokens: 1429 (total: 6611)[0m
+[10:39:26 PM] [32m[21:39:26.912] [INFO] [kindly] 🔧 Tool call: list_add[0m
+[10:39:26 PM] [32m[21:39:26.913] [INFO] [kindly] 🔧 [session_] Starting: list_add[0m
+[10:49:19 PM] [32m[21:49:19.936] [INFO] [kindly] ❌ [session_] list_add (593023ms)[0m
+[10:49:19 PM] [32m[21:49:19.937] [INFO] [kindly] 🔄 Iteration 5/10[0m
+[10:49:34 PM] [32m[21:49:34.542] [INFO] [kindly] 📊 Tokens: 2912 (total: 9523)[0m
+[10:49:34 PM] [32m[21:49:34.542] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[10:49:34 PM] [32m[21:49:34.542] [INFO] [kindly] 🔧 [session_] Starting: memory_goals_create[0m
+[10:59:21 PM] [32m[21:59:21.768] [INFO] [kindly] ❌ [session_] memory_goals_create (587226ms)[0m
+[10:59:21 PM] [32m[21:59:21.768] [INFO] [kindly] 🔄 Iteration 6/10[0m
+[10:59:30 PM] [32m[21:59:30.137] [INFO] [kindly] 📊 Tokens: 1953 (total: 11476)[0m
+[10:59:30 PM] [32m[21:59:30.137] [INFO] [kindly] 🔧 Tool call: list_add[0m
+[10:59:30 PM] [32m[21:59:30.137] [INFO] [kindly] 🔧 [session_] Starting: list_add[0m
+[11:09:21 PM] [32m[22:09:21.768] [INFO] [kindly] ❌ [session_] list_add (591631ms)[0m
+[11:09:21 PM] [32m[22:09:21.768] [INFO] [kindly] 🔄 Iteration 7/10[0m
+[11:09:34 PM] [32m[22:09:34.664] [INFO] [kindly] 📊 Tokens: 2520 (total: 13996)[0m
+[11:09:34 PM] [32m[22:09:34.664] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[11:09:34 PM] [32m[22:09:34.664] [INFO] [kindly] 🔧 [session_] Starting: memory_goals_create[0m
+[11:19:21 PM] [32m[22:19:21.768] [INFO] [kindly] ❌ [session_] memory_goals_create (587104ms)[0m
+[11:19:21 PM] [32m[22:19:21.768] [INFO] [kindly] 🔄 Iteration 8/10[0m
+[11:19:31 PM] [32m[22:19:31.322] [INFO] [kindly] 📊 Tokens: 2398 (total: 16394)[0m
+[11:19:31 PM] [32m[22:19:31.322] [INFO] [kindly] 🔧 Tool call: list_add[0m
+[11:19:31 PM] [32m[22:19:31.322] [INFO] [kindly] 🔧 [session_] Starting: list_add[0m
+[11:29:19 PM] [32m[22:29:19.935] [INFO] [kindly] ❌ [session_] list_add (588613ms)[0m
+[11:29:19 PM] [32m[22:29:19.936] [INFO] [kindly] 🔄 Iteration 9/10[0m
+[11:29:27 PM] [32m[22:29:27.714] [INFO] [kindly] 📊 Tokens: 1974 (total: 18368)[0m
+[11:29:27 PM] [32m[22:29:27.714] [INFO] [kindly] 🔧 Tool call: memory_goals_create[0m
+[11:29:27 PM] [32m[22:29:27.714] [INFO] [kindly] 🔧 [session_] Starting: memory_goals_create[0m
+[11:39:21 PM] [32m[22:39:21.768] [INFO] [kindly] ❌ [session_] memory_goals_create (594054ms)[0m
+[11:39:21 PM] [32m[22:39:21.768] [INFO] [kindly] 🔄 Iteration 10/10[0m
+[11:39:30 PM] [32m[22:39:30.147] [INFO] [kindly] 📊 Tokens: 1873 (total: 20241)[0m
+[11:39:30 PM] [32m[22:39:30.147] [INFO] [kindly] 🔧 Tool call: list_add[0m
+[11:39:30 PM] [32m[22:39:30.148] [INFO] [kindly] 🔧 [session_] Starting: list_add[0m
+[11:49:21 PM] [32m[22:49:21.768] [INFO] [kindly] ❌ [session_] list_add (591621ms)[0m

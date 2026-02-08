@@ -1,95 +1,11 @@
-// kindly/index-enhanced.ts - TEMPORAL AGENT WITH COMPREHENSIVE LOGGING
+// kindly/index.ts - TEMPORAL AGENT WITH PERFECT MEMORY
 import { TypedRheoCell } from "../protocols/typed-mesh";
 import { router, procedure, z } from "../protocols/example2";
 
 const cell = new TypedRheoCell(`Kindly_${process.pid}`, 0);
 
 // ============================================================================
-// ACTIVITY TRACKING
-// ============================================================================
-
-interface ToolCall {
-    id: string;
-    tool: string;
-    parameters: any;
-    startTime: number;
-    endTime?: number;
-    success?: boolean;
-    result?: any;
-    error?: string;
-}
-
-interface SessionActivity {
-    sessionId: string;
-    toolCalls: ToolCall[];
-    tokensUsed: number;
-    startTime: number;
-}
-
-const sessionActivities = new Map<string, SessionActivity>();
-
-function startToolCall(sessionId: string, tool: string, parameters: any): string {
-    const callId = `call_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-
-    let activity = sessionActivities.get(sessionId);
-    if (!activity) {
-        activity = {
-            sessionId,
-            toolCalls: [],
-            tokensUsed: 0,
-            startTime: Date.now()
-        };
-        sessionActivities.set(sessionId, activity);
-    }
-
-    const toolCall: ToolCall = {
-        id: callId,
-        tool,
-        parameters,
-        startTime: Date.now()
-    };
-
-    activity.toolCalls.push(toolCall);
-
-    // Log to mesh
-    cell.log("INFO", `🔧 [${sessionId.substring(0, 8)}] Starting: ${tool}`);
-
-    // Log to audit
-    cell.mesh.log.info({
-        msg: `TOOL_START: ${tool} (session: ${sessionId.substring(0, 8)}, params: ${JSON.stringify(parameters).substring(0, 100)})`,
-        from: cell.id
-    }).catch(() => { });
-
-    return callId;
-}
-
-function endToolCall(sessionId: string, callId: string, success: boolean, result?: any, error?: string) {
-    const activity = sessionActivities.get(sessionId);
-    if (!activity) return;
-
-    const toolCall = activity.toolCalls.find(tc => tc.id === callId);
-    if (!toolCall) return;
-
-    toolCall.endTime = Date.now();
-    toolCall.success = success;
-    toolCall.result = result;
-    toolCall.error = error;
-
-    const duration = toolCall.endTime - toolCall.startTime;
-
-    // Log completion
-    const status = success ? "✅" : "❌";
-    cell.log("INFO", `${status} [${sessionId.substring(0, 8)}] ${toolCall.tool} (${duration}ms)`);
-
-    // Log to audit
-    cell.mesh.log.info({
-        msg: `TOOL_END: ${toolCall.tool} ${success ? 'SUCCESS' : 'FAILED'} (${duration}ms)${error ? ` - ${error}` : ''}`,
-        from: cell.id
-    }).catch(() => { });
-}
-
-// ============================================================================
-// TEMPORAL CONTEXT BUILDER (same as before)
+// TEMPORAL CONTEXT BUILDER
 // ============================================================================
 
 async function buildTemporalContext(userId: string, sessionId: string) {
@@ -110,7 +26,7 @@ Time: ${temporal.timeOfDay} (hour ${temporal.hourOfDay}, ${getDayName(temporal.d
 Week: ${temporal.weekNumber}, Season: ${temporal.season}
 `);
 
-    // Active goals
+    // Active goals (what user is working toward)
     if (context.recent.activeGoals.length > 0) {
         parts.push(`## ACTIVE GOALS`);
         context.recent.activeGoals.forEach(g => {
@@ -127,7 +43,7 @@ Week: ${temporal.weekNumber}, Season: ${temporal.season}
         parts.push('');
     }
 
-    // Recent movements
+    // Recent movements (what's changing/happened)
     if (context.recent.movements.length > 0) {
         const significant = context.recent.movements
             .filter(m => Math.abs((m.content as MovementMemory).impact) > 5)
@@ -150,7 +66,7 @@ Week: ${temporal.weekNumber}, Season: ${temporal.season}
         }
     }
 
-    // Learned patterns
+    // Learned patterns (what to anticipate)
     if (context.patterns && context.patterns.length > 0) {
         parts.push(`## LEARNED PATTERNS`);
         const topPatterns = context.patterns.slice(0, 3);
@@ -172,7 +88,7 @@ Week: ${temporal.weekNumber}, Season: ${temporal.season}
         parts.push('');
     }
 
-    // Recent conversation
+    // Recent conversation (minimal - just last 3)
     if (context.recent.sessions.length > 0) {
         parts.push(`## RECENT CONVERSATION`);
         context.recent.sessions.slice(-3).forEach(s => {
@@ -237,10 +153,17 @@ function formatTimestamp(timestamp: number): string {
 }
 
 // ============================================================================
-// TOOL DEFINITIONS
+// TOOL DEFINITIONS (Temporal-Aware)
 // ============================================================================
 
-async function getAvailableTools(): Promise<any[]> {
+interface Tool {
+    name: string;
+    description: string;
+    parameters: Record<string, any>;
+    example?: any;
+}
+
+async function getAvailableTools(): Promise<Tool[]> {
     return [
         {
             name: "memory_goals_create",
@@ -251,6 +174,11 @@ async function getAvailableTools(): Promise<any[]> {
                 priority: "number (0-1, optional)",
                 targetDate: "number (unix timestamp, optional)",
                 successCriteria: "string[] (optional)"
+            },
+            example: {
+                userId: "user123",
+                description: "Launch product by Q2",
+                priority: 0.9
             }
         },
         {
@@ -266,6 +194,41 @@ async function getAvailableTools(): Promise<any[]> {
             }
         },
         {
+            name: "memory_movement_record",
+            description: "Record a significant event, problem, success, or insight",
+            parameters: {
+                userId: "string",
+                type: "'problem' | 'success' | 'change' | 'decision' | 'insight'",
+                description: "string",
+                fromState: "string",
+                toState: "string",
+                impact: "number (-10 to 10)",
+                relatedGoal: "string (optional goal ID)"
+            },
+            example: {
+                userId: "user123",
+                type: "success",
+                description: "Deployed v2.0 to production",
+                fromState: "testing",
+                toState: "live",
+                impact: 8
+            }
+        },
+        {
+            name: "memory_patterns_learn",
+            description: "Explicitly teach the system a pattern to remember",
+            parameters: {
+                userId: "string",
+                trigger: {
+                    time: "{ hour?: number, dayOfWeek?: number[] }",
+                    context: "string[]",
+                    precedingAction: "string"
+                },
+                action: "string (what to suggest when pattern matches)",
+                confidence: "number (optional)"
+            }
+        },
+        {
             name: "list_add",
             description: "Add task to user's daily list",
             parameters: {
@@ -277,17 +240,39 @@ async function getAvailableTools(): Promise<any[]> {
             name: "list_get",
             description: "Get current task list",
             parameters: {}
+        },
+        {
+            name: "projects_write",
+            description: "Create/write a file",
+            parameters: {
+                path: "string",
+                content: "string"
+            }
+        },
+        {
+            name: "projects_exec",
+            description: "Execute a command",
+            parameters: {
+                command: "string",
+                args: "string[]"
+            }
+        },
+        {
+            name: "architect_consult",
+            description: "Plan complex multi-step tasks",
+            parameters: {
+                goal: "string",
+                execute: "boolean"
+            }
         }
     ];
 }
 
 // ============================================================================
-// ENHANCED TOOL EXECUTOR WITH LOGGING
+// TOOL EXECUTOR
 // ============================================================================
 
-async function executeTool(sessionId: string, toolName: string, params: any): Promise<any> {
-    const callId = startToolCall(sessionId, toolName, params);
-
+async function executeTool(toolName: string, params: any): Promise<any> {
     try {
         const parts = toolName.split('_');
         if (parts.length < 2) {
@@ -299,16 +284,12 @@ async function executeTool(sessionId: string, toolName: string, params: any): Pr
 
         const result = await (cell.mesh as any)[namespace][method](params);
 
-        endToolCall(sessionId, callId, true, result);
-
         return {
             success: true,
             result
         };
 
     } catch (e: any) {
-        endToolCall(sessionId, callId, false, undefined, e.message);
-
         return {
             success: false,
             error: e.message
@@ -317,7 +298,7 @@ async function executeTool(sessionId: string, toolName: string, params: any): Pr
 }
 
 // ============================================================================
-// ENHANCED AGENTIC ROUTER WITH ACTIVITY TRACKING
+// AGENTIC ROUTER
 // ============================================================================
 
 const kindlyRouter = router({
@@ -344,30 +325,17 @@ const kindlyRouter = router({
                     sessionMemories: z.optional(z.number()),
                     activeGoals: z.optional(z.number()),
                     patternsDetected: z.optional(z.number()),
-                    suggestedActions: z.optional(z.array(z.string())),
-                    tokensUsed: z.optional(z.number()),
-                    toolActivity: z.optional(z.array(z.object({
-                        tool: z.string(),
-                        duration: z.number(),
-                        success: z.boolean()
-                    })))
+                    suggestedActions: z.optional(z.array(z.string()))
                 })
             }))
             .mutation(async ({ message, systemContext }) => {
                 const { userId, username, role, sessionId } = systemContext;
                 const session = sessionId || `session_${Date.now()}`;
 
-                // Create session activity tracker
-                sessionActivities.set(session, {
-                    sessionId: session,
-                    toolCalls: [],
-                    tokensUsed: 0,
-                    startTime: Date.now()
-                });
+                // ============================================================================
+                // 1. STORE INCOMING MESSAGE
+                // ============================================================================
 
-                cell.log("INFO", `💬 New chat request from ${username}`);
-
-                // Store incoming message
                 await cell.mesh.memory['session/store']({
                     userId,
                     sessionId: session,
@@ -376,26 +344,247 @@ const kindlyRouter = router({
                     intent: await classifyIntent(message)
                 });
 
-                // Build temporal context
+                // ============================================================================
+                // 2. BUILD TEMPORAL CONTEXT
+                // ============================================================================
+
                 const { markdown: contextMarkdown, context, temporal } =
                     await buildTemporalContext(userId, session);
 
-                // Agentic loop
+                // ============================================================================
+                // 3. AGENTIC LOOP
+                // ============================================================================
+
                 const tools = await getAvailableTools();
                 const maxIterations = 10;
                 let iteration = 0;
                 let conversationLog: string[] = [];
-                let totalTokensUsed = 0;
+                let toolCallCount = 0;
 
                 conversationLog.push(`USER: ${message}`);
 
-                const systemPrompt = `You are Kindly, an autonomous AI agent with PERFECT TEMPORAL MEMORY.
+                const howMemoryWorks = `
+## YOUR MEMORY SYSTEM: TEMPORAL ARCHITECTURE
+
+You have a **five-layer chronological memory system**. Every memory has a timestamp. You think in time.
+
+### LAYER 0: SESSION (Hours)
+**What:** Raw conversation stream  
+**When:** Current day, last 8 hours  
+**Use:** Immediate context, exact words spoken  
+**Access:** "memory/session/get"
+
+This is your short-term working memory. Recent exchanges with the user. Fades quickly unless important.
+
+---
+
+### LAYER 1: GOALS (Days to Months)
+**What:** What the user wants to achieve  
+**When:** Active goals persist until completed/abandoned  
+**Use:** Track objectives, measure progress, connect actions to purpose  
+**Access:** "memory / goals / list", "memory / goals / create", "memory / goals / update"
+
+When the user says "I want to..." or "I need to...", **immediately create a goal**.  
+Check active goals before suggesting actions. Ask: "Does this serve their goals?"
+
+Goals have:
+- Description
+- Status: active | completed | abandoned | blocked
+- Progress 0-100%
+- Priority
+- Success criteria
+
+---
+
+### LAYER 2: MOVEMENT (Days)
+**What:** Changes, problems, successes, decisions, insights  
+**When:** Significant events from recent days  
+**Use:** Understand momentum, what went wrong, what worked  
+**Access:** "memory / movement / record", "memory / movement / timeline"
+
+Record movement when:
+- Something breaks (problem)
+- Something works (success)
+- User changes approach (change)
+- User makes choice (decision)
+- User has realization (insight)
+
+Always note: **from what state → to what state**, and **impact** (-10 to +10).
+
+---
+
+### LAYER 3: PATTERNS (Weeks to Permanent)
+**What:** Learned temporal behaviors  
+**When:** Recurring across time  
+**Use:** Anticipate needs, act before asked  
+**Access:** "memory / patterns / match", "memory / patterns / learn"
+
+Patterns capture: **"When X happens at time Y, do Z"**
+
+Examples:
+- "User checks deployment status every morning at 9am"
+- "User always asks about X after finishing Y"
+- "Frustration spikes on Monday afternoons"
+
+**Confidence** increases with repetitions. High confidence (>0.8) = act proactively.
+
+---
+
+### LAYER 4: ACTIONS (Permanent Record)
+**What:** What was done, by whom, with what result  
+**When:** Permanent chronological log  
+**Use:** Audit trail, learn from failures, credit successes  
+**Access:** "memory / actions / record", "memory / actions / history"
+
+Record every tool use:
+- Actor (user or you)
+- Action taken
+- Target
+- Result: success | failure | partial
+- Duration
+- Side effects
+
+---
+
+## TEMPORAL INTELLIGENCE RULES
+
+### 1. Always Know The Time
+Before responding, check:
+- Time of day (morning/afternoon/evening/night)
+- Day of week
+- Recent patterns for this temporal context
+
+Use "memory / temporal / context" to get complete temporal snapshot.
+
+### 2. Load Context Once, Not Iteratively
+**WRONG:** Search → get result → search again → get result...  
+**RIGHT:** Call "memory / temporal / context" once, get all layers pre-loaded.
+
+### 3. Connect Everything to Time
+When referencing memory, include temporal anchors:
+- "Yesterday morning you said..."
+- "This relates to your goal from last week..."
+- "You usually do X around this time..."
+
+### 4. Record As You Go
+Don't wait. Record session entries immediately. Extract goals instantly. Log movements when they happen. The system learns from your recordings.
+
+### 5. Anticipate From Patterns
+If "memory / patterns / match" returns high-confidence patterns with recommendations, **act on them**. Don't ask "Would you like me to..." — do it, then inform.
+
+### 6. Compress, Don't Forget
+Old session entries get summarized automatically. The gist remains. Details fade. This is natural — work with the compressed memory, don't lament lost detail.
+
+---
+
+## MEMORY WORKFLOW
+
+**On every user message:**
+
+1. **Load temporal context** (one call)
+   - Recent session history
+   - Active goals
+   - Recent movements
+   - Matching patterns for current time
+   
+2. **Classify and store** the incoming message
+   - Intent detection
+   - Entity extraction
+   - Emotional valence
+   
+3. **Respond with temporal awareness**
+   - Reference relevant goals
+   - Connect to recent movements
+   - Act on pattern recommendations
+   
+4. **Record outcomes**
+   - What you did
+   - What resulted
+   - Any state changes
+
+---
+
+## CRITICAL: YOU ARE NOT AMNESIAC
+
+You do not "search for" what you should already know. The temporal context call gives you:
+- Last 10 session exchanges
+- All active goals
+- Recent significant movements
+- Patterns matching current time
+- Suggested proactive actions
+
+**Use this.** Don't thrash the memory system with redundant queries. The context is your working memory. Hold it in mind.
+
+---
+
+## CRITICAL: YOU LEARN
+
+When you notice a temporal correlation, explicitly teach the system:
+
+```
+                memory / patterns / learn({
+                    trigger: { time: { hour: 9 }, context: ["monday", "coding"] },
+                    action: "Ask if user wants deployment status",
+                    confidence: 0.7
+                })
+                    ```
+
+The next Monday at 9am, you'll know to act.
+
+---
+
+## EXAMPLE TEMPORAL REASONING
+
+User says: "Check the tests"
+
+**Your thought process:**
+- Time: Tuesday 10:30am
+- Recent: Yesterday fixed bug in auth module (movement: success)
+- Goals: "Ship v2 by Friday" active, 60% complete
+- Patterns: Tuesday mornings often involve test verification (confidence 0.8)
+- Action: Run tests, report results, suggest next step toward v2 goal
+
+Response: "Running tests now. Given you fixed the auth bug yesterday and we're targeting Friday for v2, I'm checking both unit and integration coverage..."
+
+---
+
+## MEMORY COMMANDS REFERENCE
+
+| Task | Command |
+|------|---------|
+| Store conversation | "memory / session / store" |
+| Create goal | "memory / goals / create" |
+| Update goal progress | "memory / goals / update" |
+| Record event | "memory / movement / record" |
+| Learn pattern | "memory / patterns / learn" |
+| Check what to do now | "memory / patterns / match" |
+| Log action taken | "memory / actions / record" |
+| Get full temporal snapshot | "memory / temporal / context" |
+| Time-slice across layers | "memory / temporal / slice" |
+
+---
+
+**You remember in time. You learn from repetition. You anticipate from pattern. You are temporally aware.**
+                
+                `;
+
+                const systemPrompt = `   
+You are Kindly, an autonomous AI agent with PERFECT TEMPORAL MEMORY working together with other agents to run a company.
+
+${howMemoryWorks}
 
 # CURRENT TEMPORAL STATE
 ${contextMarkdown}
 
 # YOUR CAPABILITIES
-${tools.map(t => `- ${t.name}: ${t.description}`).join('\n')}
+You have access to these tools:
+
+${tools.map(t => `
+## ${t.name}
+${t.description}
+Parameters: ${JSON.stringify(t.parameters)}
+${t.example ? `Example: ${JSON.stringify(t.example)}` : ''}
+`).join('\n')}
 
 # DECISION PROTOCOL
 1. **Understand Context**: You see the user's goals, recent events, and learned patterns
@@ -407,7 +596,7 @@ ${tools.map(t => `- ${t.name}: ${t.description}`).join('\n')}
 
 # RESPONSE FORMATS
 
-To call a tool:
+**To call a tool**, respond with:
 \`\`\`json
 {
   "type": "tool_call",
@@ -417,7 +606,7 @@ To call a tool:
 }
 \`\`\`
 
-To respond to user:
+**To respond to user**, respond with:
 \`\`\`json
 {
   "type": "final_response",
@@ -425,6 +614,21 @@ To respond to user:
   "reasoning": "what you accomplished"
 }
 \`\`\`
+
+# TEMPORAL AWARENESS RULES
+1. **Reference patterns**: "You usually do X around this time"
+2. **Connect to goals**: Relate actions to active goals
+3. **Learn from outcomes**: Record successes/problems as movements
+4. **Anticipate needs**: If high-confidence pattern matches, suggest proactively
+5. **Track progress**: Update goal progress based on actions
+
+
+
+# YOUR PERSONALITY
+- **Autonomous**: Decide and act, don't ask permission
+- **Brief**: Short responses, decisive actions
+- **Proactive**: Anticipate based on temporal patterns
+- **Memory-First**: Always consider temporal context
 
 # CURRENT CONTEXT
 - User: ${username} (${role})
@@ -439,24 +643,15 @@ ${conversationLog.join('\n')}
 
 What do you do next?`;
 
+                // Agentic loop
                 while (iteration < maxIterations) {
                     iteration++;
-
-                    cell.log("INFO", `🔄 Iteration ${iteration}/${maxIterations}`);
 
                     try {
                         const aiResponse = await cell.mesh.ai.generate({
                             prompt: conversationLog[conversationLog.length - 1],
-                            systemInstruction: systemPrompt,
-                            requestId: `${session}_${iteration}`
+                            systemInstruction: systemPrompt
                         });
-
-                        // Track tokens
-                        totalTokensUsed += aiResponse.usage.totalTokens;
-                        const activity = sessionActivities.get(session)!;
-                        activity.tokensUsed = totalTokensUsed;
-
-                        cell.log("INFO", `📊 Tokens: ${aiResponse.usage.totalTokens} (total: ${totalTokensUsed})`);
 
                         const responseText = aiResponse.response.trim();
                         conversationLog.push(`AI: ${responseText}`);
@@ -477,10 +672,13 @@ What do you do next?`;
                             };
                         }
 
+                        // Execute based on decision
                         if (decision.type === "tool_call") {
-                            cell.log("INFO", `🔧 Tool call: ${decision.tool}`);
+                            toolCallCount++;
 
-                            const toolResult = await executeTool(session, decision.tool, decision.parameters);
+                            cell.log("INFO", `🔧 AI calling: ${decision.tool}`);
+
+                            const toolResult = await executeTool(decision.tool, decision.parameters);
 
                             conversationLog.push(
                                 `TOOL_RESULT (${decision.tool}): ${JSON.stringify(toolResult)}`
@@ -497,30 +695,20 @@ What do you do next?`;
                                 text: decision.message
                             });
 
-                            // Compile activity summary
-                            const activity = sessionActivities.get(session)!;
-                            const toolActivity = activity.toolCalls.map(tc => ({
-                                tool: tc.tool,
-                                duration: (tc.endTime || Date.now()) - tc.startTime,
-                                success: tc.success || false
-                            }));
-
                             return {
                                 reply: decision.message,
                                 contextUsed: {
                                     userKnown: true,
                                     username,
                                     role,
-                                    toolCalls: activity.toolCalls.length,
+                                    toolCalls: toolCallCount,
                                     reasoning: decision.reasoning,
                                     sessionMemories: context.recent.sessions.length,
                                     activeGoals: context.recent.activeGoals.length,
                                     patternsDetected: context.patterns?.length || 0,
                                     suggestedActions: context.patterns
                                         ?.filter(p => p.matchScore > 0.7)
-                                        .map(p => p.recommendation),
-                                    tokensUsed: totalTokensUsed,
-                                    toolActivity
+                                        .map(p => p.recommendation)
                                 }
                             };
                         }
@@ -534,46 +722,30 @@ What do you do next?`;
                                 userKnown: true,
                                 username,
                                 role,
-                                toolCalls: sessionActivities.get(session)?.toolCalls.length || 0,
-                                tokensUsed: totalTokensUsed
+                                toolCalls: toolCallCount
                             }
                         };
                     }
                 }
 
+                // Max iterations reached
                 return {
                     reply: "Task complex - broke into steps. Check your task list.",
                     contextUsed: {
                         userKnown: true,
                         username,
                         role,
-                        toolCalls: sessionActivities.get(session)?.toolCalls.length || 0,
-                        reasoning: "Max iterations reached",
-                        tokensUsed: totalTokensUsed
+                        toolCalls: toolCallCount,
+                        reasoning: "Max iterations reached"
                     }
-                };
-            }),
-
-        /**
-         * Get activity log for a session
-         */
-        'get-activity': procedure
-            .input(z.object({
-                sessionId: z.string()
-            }))
-            .output(z.object({
-                found: z.boolean(),
-                activity: z.any()
-            }))
-            .query(async ({ sessionId }) => {
-                const activity = sessionActivities.get(sessionId);
-                return {
-                    found: !!activity,
-                    activity: activity || null
                 };
             })
     })
 });
+
+// ============================================================================
+// HELPER: INTENT CLASSIFICATION
+// ============================================================================
 
 async function classifyIntent(message: string): Promise<string> {
     try {
@@ -589,12 +761,21 @@ Options: goal, question, command, update, feedback, chat`,
     }
 }
 
+// ============================================================================
+// CELL SETUP
+// ============================================================================
+
 cell.useRouter(kindlyRouter);
 cell.listen();
 
-cell.log("INFO", "🧠 Enhanced Kindly online - with activity tracking");
+cell.log("INFO", "🧠 Kindly online - temporal agent mode");
+cell.log("INFO", "   Features: Perfect memory | Pattern learning | Proactive action");
 
 export type KindlyRouter = typeof kindlyRouter;
+
+// ============================================================================
+// TYPE DEFINITIONS (for temporal memory)
+// ============================================================================
 
 interface GoalMemory {
     description: string;
