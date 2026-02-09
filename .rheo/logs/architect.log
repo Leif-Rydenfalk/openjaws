@@ -397,3 +397,19 @@
 [12:51:33 AM] [architect] Key fingerprint: 57bd3e3bfc3a0324
 [12:51:33 AM] [32m[23:51:33.637] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
 [12:51:33 AM] [32m[23:51:33.644] [INFO] [architect] Sovereign Cell online @ http://localhost:42603[0m
+[12:53:34 AM] [architect] Key fingerprint: 59de0fca3fcc4a59
+[12:53:34 AM] [32m[23:53:34.951] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[12:53:34 AM] [32m[23:53:34.959] [INFO] [architect] Sovereign Cell online @ http://localhost:33109[0m
+[12:55:19 AM] [31m[23:55:19.962] [ERROR] [architect] [a10ac784] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:49 AM] [31m[23:55:49.962] [ERROR] [architect] [8a350726] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:49 AM] [31m[23:56:49.962] [ERROR] [architect] [056a83b8] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:34 AM] [31m[23:57:34.962] [ERROR] [architect] [de36a9a3] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:58:19 AM] [31m[23:58:19.961] [ERROR] [architect] [9415e80f] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:58:49 AM] [31m[23:58:49.962] [ERROR] [architect] [e8f43b3b] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:19 AM] [31m[23:59:19.961] [ERROR] [architect] [9c263021] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [architect] Key fingerprint: 7c2043da3fe70c9d
+[12:59:43 AM] [32m[23:59:43.748] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[12:59:43 AM] [32m[23:59:43.766] [INFO] [architect] Sovereign Cell online @ http://localhost:40511[0m
+[1:00:19 AM] [architect] Key fingerprint: 1c7fee60041a2778
+[1:00:19 AM] [32m[00:00:19.189] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:00:19 AM] [32m[00:00:19.196] [INFO] [architect] Sovereign Cell online @ http://localhost:45265[0m

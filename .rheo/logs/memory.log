@@ -914,3 +914,27 @@
 [12:51:33 AM] [32m[23:51:33.666] [INFO] [memory] 🧠 Temporal Memory System online[0m
 [12:51:33 AM] [32m[23:51:33.666] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
 [12:51:33 AM] [32m[23:51:33.666] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[12:53:34 AM] [memory] Key fingerprint: 27664b31c8f045eb
+[12:53:34 AM] [32m[23:53:34.857] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[12:53:34 AM] [32m[23:53:34.873] [INFO] [memory] Sovereign Cell online @ http://localhost:45015[0m
+[12:53:34 AM] [32m[23:53:34.878] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[12:53:34 AM] [32m[23:53:34.878] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[12:53:34 AM] [32m[23:53:34.878] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[12:54:04 AM] [31m[23:54:04.878] [ERROR] [memory] [3385a446] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:42603 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:34 AM] [31m[23:54:34.879] [ERROR] [memory] [140a5782] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:34 AM] [31m[23:56:34.881] [ERROR] [memory] [99921918] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [memory] Key fingerprint: 9665de581903fa15
+[12:59:43 AM] [32m[23:59:43.663] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[12:59:43 AM] [32m[23:59:43.691] [INFO] [memory] Sovereign Cell online @ http://localhost:41993[0m
+[12:59:43 AM] [32m[23:59:43.692] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[12:59:43 AM] [32m[23:59:43.692] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[12:59:43 AM] [32m[23:59:43.692] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[12:59:43 AM] [32m[23:59:43.850] [INFO] [memory] [b1c5cfcb] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:59:43 AM] [32m[23:59:43.856] [INFO] [memory] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36503[0m
+[12:59:43 AM] [32m[23:59:43.860] [INFO] [memory] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36503[0m
+[1:00:19 AM] [memory] Key fingerprint: bd522346f7220622
+[1:00:19 AM] [32m[00:00:18.952] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[1:00:19 AM] [32m[00:00:18.989] [INFO] [memory] Sovereign Cell online @ http://localhost:44837[0m
+[1:00:19 AM] [32m[00:00:18.991] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[1:00:19 AM] [32m[00:00:18.991] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[1:00:19 AM] [32m[00:00:18.991] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m

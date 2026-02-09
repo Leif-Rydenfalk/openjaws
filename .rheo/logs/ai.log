@@ -1757,3 +1757,14 @@
 [12:51:33 AM] [ai] Key fingerprint: e6d11fd9923d1226
 [12:51:33 AM] [32m[23:51:33.618] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
 [12:51:33 AM] [32m[23:51:33.634] [INFO] [ai] Sovereign Cell online @ http://localhost:44325[0m
+[12:53:34 AM] [ai] Key fingerprint: ad032a5859321d17
+[12:53:34 AM] [32m[23:53:34.987] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:53:34 AM] [32m[23:53:34.996] [INFO] [ai] Sovereign Cell online @ http://localhost:38833[0m
+[12:55:20 AM] [31m[23:55:20.002] [ERROR] [ai] [db3de9ae] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:35 AM] [31m[23:56:35.000] [ERROR] [ai] [f33406bb] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [ai] Key fingerprint: 79391805860fd716
+[12:59:43 AM] [32m[23:59:43.784] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:59:43 AM] [32m[23:59:43.792] [INFO] [ai] Sovereign Cell online @ http://localhost:39491[0m
+[1:00:19 AM] [ai] Key fingerprint: 676ebe69377e1f3e
+[1:00:19 AM] [32m[00:00:19.076] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:00:19 AM] [32m[00:00:19.120] [INFO] [ai] Sovereign Cell online @ http://localhost:34857[0m

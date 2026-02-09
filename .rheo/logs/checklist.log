@@ -845,3 +845,32 @@
 [12:52:00 AM] [32m[23:52:00.684] [INFO] [checklist] [3ac40d0c] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:46403[0m
 [12:52:00 AM] Mesh health: NOMINAL, 16 cells
 [12:52:33 AM] [32m[23:52:33.509] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[12:53:34 AM] [checklist] Key fingerprint: 2b6f29580b24c2be
+[12:53:34 AM] [32m[23:53:34.921] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:53:34 AM] [32m[23:53:34.928] [INFO] [checklist] Sovereign Cell online @ http://localhost:38127[0m
+[12:53:34 AM] [32m[23:53:34.935] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:54:01 AM] [32m[23:54:01.937] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:54:01 AM] [32m[23:54:01.937] [INFO] [checklist] [978859f8] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:54:01 AM] Current list has 0 items
+[12:54:01 AM] [32m[23:54:01.938] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:54:01 AM] [32m[23:54:01.938] [INFO] [checklist] [a00e269a] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:54:01 AM] [32m[23:54:01.939] [INFO] [checklist] [a00e269a] 📡 RPC_OUT: [mesh/health] -> http://localhost:45623[0m
+[12:54:01 AM] [32m[23:54:01.941] [INFO] [checklist] [a00e269a] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:45623[0m
+[12:54:01 AM] Mesh health: NOMINAL, 17 cells
+[12:57:19 AM] [31m[23:57:19.935] [ERROR] [checklist] [c947e392] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [checklist] Key fingerprint: cc225b588f425703
+[12:59:43 AM] [32m[23:59:43.746] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:59:43 AM] [32m[23:59:43.753] [INFO] [checklist] Sovereign Cell online @ http://localhost:45603[0m
+[12:59:43 AM] [32m[23:59:43.755] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:00:19 AM] [checklist] Key fingerprint: c1ebd88ffbe3b8c3
+[1:00:19 AM] [32m[00:00:19.107] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[1:00:19 AM] [32m[00:00:19.137] [INFO] [checklist] Sovereign Cell online @ http://localhost:36155[0m
+[1:00:19 AM] [32m[00:00:19.137] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:00:46 AM] [32m[00:00:46.140] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[1:00:46 AM] [32m[00:00:46.140] [INFO] [checklist] [fff6d663] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[1:00:46 AM] Current list has 0 items
+[1:00:46 AM] [32m[00:00:46.141] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[1:00:46 AM] [32m[00:00:46.141] [INFO] [checklist] [6313d9a8] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:00:46 AM] [32m[00:00:46.142] [INFO] [checklist] [6313d9a8] 📡 RPC_OUT: [mesh/health] -> http://localhost:44225[0m
+[1:00:46 AM] [32m[00:00:46.144] [INFO] [checklist] [6313d9a8] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:44225[0m
+[1:00:46 AM] Mesh health: NOMINAL, 16 cells

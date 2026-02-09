@@ -942,3 +942,21 @@
 [12:51:33 AM] [32m[23:51:33.608] [INFO] [log] [37cd6c6f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
 [12:52:03 AM] [31m[23:52:03.602] [ERROR] [log] [d6ed91b6] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:33217 | Unable to connect. Is the computer able to access the url?[0m
 [12:52:03 AM] [31m[23:52:03.602] [ERROR] [log] [55f3c628] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:37549 | Unable to connect. Is the computer able to access the url?[0m
+[12:53:34 AM] [log] Key fingerprint: 3dc17b188fcf077d
+[12:53:34 AM] [32m[23:53:34.956] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:53:34 AM] [32m[23:53:34.971] [INFO] [log] Sovereign Cell online @ http://localhost:38247[0m
+[12:53:34 AM] [32m[23:53:34.975] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:53:34 AM] [32m[23:53:34.975] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:55:04 AM] [31m[23:55:04.977] [ERROR] [log] [bda3ea70] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:04 AM] [31m[23:57:04.978] [ERROR] [log] [0a63b4a4] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:58:04 AM] [31m[23:58:04.976] [ERROR] [log] [b8f4350f] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [log] Key fingerprint: 2050aa5680a5a71b
+[12:59:43 AM] [32m[23:59:43.796] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:59:43 AM] [32m[23:59:43.801] [INFO] [log] Sovereign Cell online @ http://localhost:34697[0m
+[12:59:43 AM] [32m[23:59:43.802] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:59:43 AM] [32m[23:59:43.803] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:00:19 AM] [log] Key fingerprint: b00f7ea2b15cb503
+[1:00:19 AM] [32m[00:00:19.153] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[1:00:19 AM] [32m[00:00:19.165] [INFO] [log] Sovereign Cell online @ http://localhost:39983[0m
+[1:00:19 AM] [32m[00:00:19.166] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[1:00:19 AM] [32m[00:00:19.166] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m

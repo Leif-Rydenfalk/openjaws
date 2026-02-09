@@ -1038,3 +1038,21 @@
 [12:51:33 AM] [32m[23:51:33.627] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
 [12:51:33 AM] [32m[23:51:33.637] [INFO] [kindly] Sovereign Cell online @ http://localhost:34541[0m
 [12:51:33 AM] [32m[23:51:33.642] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:53:34 AM] [kindly] Key fingerprint: 204f6c166f2cd657
+[12:53:34 AM] [32m[23:53:34.974] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:53:34 AM] [32m[23:53:34.979] [INFO] [kindly] Sovereign Cell online @ http://localhost:37889[0m
+[12:53:34 AM] [32m[23:53:34.983] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:54:19 AM] [31m[23:54:19.986] [ERROR] [kindly] [ec81f0e6] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:42603 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:04 AM] [31m[23:56:04.985] [ERROR] [kindly] [8995f763] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:49 AM] [31m[23:57:49.985] [ERROR] [kindly] [b477f0ba] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [kindly] Key fingerprint: ae95fb8aab4ae7a6
+[12:59:43 AM] [32m[23:59:43.687] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:59:43 AM] [32m[23:59:43.701] [INFO] [kindly] Sovereign Cell online @ http://localhost:36811[0m
+[12:59:43 AM] [32m[23:59:43.703] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:59:43 AM] [32m[23:59:43.853] [INFO] [kindly] [b1c5cfcb] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:59:43 AM] [32m[23:59:43.857] [INFO] [kindly] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36503[0m
+[12:59:43 AM] [32m[23:59:43.860] [INFO] [kindly] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36503[0m
+[1:00:19 AM] [kindly] Key fingerprint: 5256009336ef4fac
+[1:00:19 AM] [32m[00:00:19.120] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[1:00:19 AM] [32m[00:00:19.134] [INFO] [kindly] Sovereign Cell online @ http://localhost:40533[0m
+[1:00:19 AM] [32m[00:00:19.135] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m

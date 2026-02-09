@@ -449,3 +449,23 @@
 [12:51:33 AM] [projects] Key fingerprint: 9b6c7f9ae7699e51
 [12:51:33 AM] [32m[23:51:33.503] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
 [12:51:33 AM] [32m[23:51:33.512] [INFO] [projects] Sovereign Cell online @ http://localhost:34663[0m
+[12:53:34 AM] [projects] Key fingerprint: 3b8f0dce15abd2e0
+[12:53:34 AM] [32m[23:53:34.956] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[12:53:34 AM] [32m[23:53:34.973] [INFO] [projects] Sovereign Cell online @ http://localhost:39107[0m
+[12:53:35 AM] [32m[23:53:35.023] [INFO] [projects] [501328a1] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:53:35 AM] [32m[23:53:35.026] [INFO] [projects] [501328a1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44445[0m
+[12:53:35 AM] [32m[23:53:35.034] [INFO] [projects] [501328a1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44445[0m
+[12:54:04 AM] [31m[23:54:04.978] [ERROR] [projects] [80965a48] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:46059 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:49 AM] [31m[23:54:49.978] [ERROR] [projects] [ad683123] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:19 AM] [31m[23:55:19.978] [ERROR] [projects] [18221140] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:58:19 AM] [31m[23:58:19.979] [ERROR] [projects] [fd34c601] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:04 AM] [31m[23:59:04.977] [ERROR] [projects] [e125f725] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [projects] Key fingerprint: dc0fe37b7f1a39c7
+[12:59:43 AM] [32m[23:59:43.756] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[12:59:43 AM] [32m[23:59:43.766] [INFO] [projects] Sovereign Cell online @ http://localhost:43507[0m
+[12:59:43 AM] [32m[23:59:43.844] [INFO] [projects] [b1c5cfcb] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:59:43 AM] [32m[23:59:43.848] [INFO] [projects] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36503[0m
+[12:59:43 AM] [32m[23:59:43.853] [INFO] [projects] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36503[0m
+[1:00:19 AM] [projects] Key fingerprint: b10612576d223e9e
+[1:00:19 AM] [32m[00:00:19.104] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[1:00:19 AM] [32m[00:00:19.114] [INFO] [projects] Sovereign Cell online @ http://localhost:35353[0m

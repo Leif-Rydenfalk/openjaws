@@ -58,8 +58,10 @@ export interface TraceError {
     msg: string;
     from: string;
     trace: string[];
-    history?: NarrativeStep[]; // The evidence chain of how we reached this error
+    history?: NarrativeStep[];
     details?: any;
+    /** @internal NarrativeEnvelope for rich error reconstruction */
+    _envelope?: any;
 }
 
 export interface TraceResult {
@@ -1812,17 +1814,24 @@ export class RheoCell {
         } catch (e: any) {
             const duration = performance.now() - startTime;
 
+            // IMPROVED: Better error categorization
             let errorCode = "RPC_FAIL";
             let errorDetails: any = {
                 targetAddress: addr,
                 duration: Math.round(duration),
-                errorType: e.constructor?.name || 'Unknown'
+                errorType: e.constructor?.name || 'Unknown',
+                rawMessage: e.message // Always include raw message for debugging
             };
 
             if (e.name === 'AbortError' || e.message?.includes('timeout')) {
                 errorCode = "RPC_TIMEOUT";
                 errorDetails.reason = "Request timed out";
-            } else if (e.message?.includes('ECONNREFUSED') || e.message?.includes('fetch failed') || e.message?.includes('Connection refused')) {
+            } else if (
+                e.message?.includes('ECONNREFUSED') ||
+                e.message?.includes('fetch failed') ||
+                e.message?.includes('Connection refused') ||
+                e.message?.includes('Unable to connect') // <-- ADD THIS
+            ) {
                 errorCode = "RPC_UNREACHABLE";
                 errorDetails.reason = "Target offline";
                 const targetId = signal.trace.length > 0 ? signal.trace[signal.trace.length - 1].split(':')[0] : 'unknown';
@@ -1832,29 +1841,32 @@ export class RheoCell {
                 errorDetails.reason = "Invalid JSON response";
             }
 
+            // CRITICAL FIX: Use ledger, not journal
+            const envelope = this.ledger.entries.get(cid);
             this.ledger.wrap(signal, this.id, errorCode, {
                 error: e.message,
                 duration,
                 ...errorDetails
             });
 
+            // CRITICAL FIX: Include envelope in error
             const richError: TraceError = {
                 code: errorCode,
                 msg: `${errorCode}: ${e.message}`,
                 details: errorDetails,
                 from: addr,
                 trace: signal.trace || [],
-                _envelope: this.ledger.entries.get(cid)
+                history: envelope?.ancestry.map((a: any) => a.signalSnapshot?._steps || []).flat() || [], // Extract steps from ledger
+                _envelope: envelope // <-- THIS IS THE KEY FIX
             };
 
-            // CONCISE ERROR LOGGING
-            this.log("ERROR",
-                `💥 RPC FAILURE [${errorCode}] ${signal.payload.capability} -> ${addr} | ${e.message?.substring(0, 100)}`,
-                cid
-            );
+            // Use MeshError for consistent formatting (optional but recommended)
+            const meshErr = new MeshError(richError, cid);
+            meshErr.printNarrative(); // This will use the full formatting
 
             // Add stuff like this to notify subscribers:
             // Problem: we need to notify about EVERY single error - not just stupid mesh errors. Subscribe to log errors?
+            // TODO: FIGURE THIS OUT
             // this.emitError({
             //     cell: this.id,
             //     timestamp: Date.now(),

@@ -507,3 +507,14 @@
 [12:51:33 AM] [32m[23:51:33.509] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
 [12:51:33 AM] [32m[23:51:33.522] [INFO] [coder] Sovereign Cell online @ http://localhost:33015[0m
 [12:51:33 AM] [32m[23:51:33.597] [INFO] [coder] [37cd6c6f] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:53:34 AM] [coder] Key fingerprint: 360463b756f3f695
+[12:53:34 AM] [32m[23:53:34.859] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[12:53:34 AM] [32m[23:53:34.873] [INFO] [coder] Sovereign Cell online @ http://localhost:41837[0m
+[12:55:49 AM] [31m[23:55:49.879] [ERROR] [coder] [e251538a] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:19 AM] [31m[23:56:19.876] [ERROR] [coder] [d512d447] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [coder] Key fingerprint: e5fffa9cb3fbe3ac
+[12:59:43 AM] [32m[23:59:43.638] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[12:59:43 AM] [32m[23:59:43.643] [INFO] [coder] Sovereign Cell online @ http://localhost:43215[0m
+[1:00:19 AM] [coder] Key fingerprint: a672d3def9268e1b
+[1:00:19 AM] [32m[00:00:18.972] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[1:00:19 AM] [32m[00:00:18.976] [INFO] [coder] Sovereign Cell online @ http://localhost:33457[0m

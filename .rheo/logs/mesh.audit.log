@@ -20956,3 +20956,438 @@
 [12:53:03 AM] [Codegen] [32m[23:53:03.751] [INFO] [Codegen] 👉 Poked TypeScript server[0m
 [12:53:03 AM] [Codegen] [32m[23:53:03.752] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
 [12:53:13 AM] [telemetry] [32m[23:53:13.520] [INFO] [telemetry] [e5165ac5] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_803528][0m
+[12:53:23 AM] [telemetry] [32m[23:53:23.520] [INFO] [telemetry] [3ee8e456] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_803528][0m
+[12:53:33 AM] [skills] [32m[23:53:33.459] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[12:53:33 AM] [skills] [32m[23:53:33.459] [INFO] [skills] [34b3c0f5] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[12:53:33 AM] [telemetry] [32m[23:53:33.520] [INFO] [telemetry] [c97be41b] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_803528][0m
+[12:53:33 AM] [Codegen] [32m[23:53:33.694] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:53:33 AM] [Codegen] [32m[23:53:33.729] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:53:33 AM] [Codegen] [32m[23:53:33.730] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:53:34 AM] [tts] [tts] Key fingerprint: 0e723ec5f8002c63
+[12:53:34 AM] [skills] [skills] Key fingerprint: 4700457fff00dd96
+[12:53:34 AM] [memory] [memory] Key fingerprint: 27664b31c8f045eb
+[12:53:34 AM] [tts-ui] [tts-ui] Key fingerprint: 2df28e858e63bba3
+[12:53:34 AM] [tts] [32m[23:53:34.806] [INFO] [tts] 📋 Registered 2 capabilities with contracts[0m
+[12:53:34 AM] [skills] [32m[23:53:34.845] [INFO] [skills] 📋 Registered 6 capabilities with contracts[0m
+[12:53:34 AM] [tts] [32m[23:53:34.841] [INFO] [tts] Sovereign Cell online @ http://localhost:41919[0m
+[12:53:34 AM] [skills] [32m[23:53:34.850] [INFO] [skills] Sovereign Cell online @ http://localhost:45351[0m
+[12:53:34 AM] [tts-ui] [32m[23:53:34.865] [INFO] [tts-ui] 🔐 Loaded existing certificates[0m
+[12:53:34 AM] [memory] [32m[23:53:34.857] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[12:53:34 AM] [coder] [coder] Key fingerprint: 360463b756f3f695
+[12:53:34 AM] [telemetry] [telemetry] Key fingerprint: c624b4fd01a274ce
+[12:53:34 AM] [checklist] [checklist] Key fingerprint: 2b6f29580b24c2be
+[12:53:34 AM] [log] [log] Key fingerprint: 3dc17b188fcf077d
+[12:53:34 AM] [architect] [architect] Key fingerprint: 59de0fca3fcc4a59
+[12:53:34 AM] [projects] [projects] Key fingerprint: 3b8f0dce15abd2e0
+[12:53:34 AM] [tts] [32m[23:53:34.841] [INFO] [tts] --------------------------------------------------[0m
+[12:53:34 AM] [skills] [32m[23:53:34.851] [INFO] [skills] 📚 Skills System online[0m
+[12:53:34 AM] [tts-ui] [32m[23:53:34.870] [INFO] [tts-ui] 🚀 VOICE TERMINAL SUBSTRATE ONLINE (HTTPS)[0m
+[12:53:34 AM] [memory] [32m[23:53:34.873] [INFO] [memory] Sovereign Cell online @ http://localhost:45015[0m
+[12:53:34 AM] [coder] [32m[23:53:34.859] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[12:53:34 AM] [projects] [32m[23:53:34.956] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[12:53:34 AM] [architect] [32m[23:53:34.951] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[12:53:34 AM] [log] [32m[23:53:34.956] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:53:34 AM] [checklist] [32m[23:53:34.921] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:53:34 AM] [telemetry] [32m[23:53:34.914] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[12:53:34 AM] [tts] [32m[23:53:34.841] [INFO] [tts] 🤖 OPENJAWS TTS SUBSTRATE v2.1 ONLINE[0m
+[12:53:34 AM] [architect] [32m[23:53:34.959] [INFO] [architect] Sovereign Cell online @ http://localhost:33109[0m
+[12:53:34 AM] [coder] [32m[23:53:34.873] [INFO] [coder] Sovereign Cell online @ http://localhost:41837[0m
+[12:53:34 AM] [memory] [32m[23:53:34.878] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[12:53:34 AM] [tts-ui] [32m[23:53:34.871] [INFO] [tts-ui] ============================================================[0m
+[12:53:34 AM] [checklist] [32m[23:53:34.928] [INFO] [checklist] Sovereign Cell online @ http://localhost:38127[0m
+[12:53:34 AM] [checklist] [32m[23:53:34.935] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:53:34 AM] [tts-ui] [32m[23:53:34.871] [INFO] [tts-ui] 📡 RELAY_LINK: https://127.0.0.1:5139[0m
+[12:53:34 AM] [memory] [32m[23:53:34.878] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[12:53:34 AM] [tts] [32m[23:53:34.841] [INFO] [tts] 📂 DATA_DIR: /home/asdfghj/openjaws/tts/data[0m
+[12:53:34 AM] [telemetry] [32m[23:53:34.920] [INFO] [telemetry] Sovereign Cell online @ http://localhost:45623[0m
+[12:53:34 AM] [Codegen] [Codegen] Key fingerprint: 2e4e48fa37dd87fc
+[12:53:34 AM] [kindly] [kindly] Key fingerprint: 204f6c166f2cd657
+[12:53:34 AM] [log] [32m[23:53:34.971] [INFO] [log] Sovereign Cell online @ http://localhost:38247[0m
+[12:53:34 AM] [ai] [ai] Key fingerprint: ad032a5859321d17
+[12:53:34 AM] [projects] [32m[23:53:34.973] [INFO] [projects] Sovereign Cell online @ http://localhost:39107[0m
+[12:53:34 AM] [memory] [32m[23:53:34.878] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[12:53:34 AM] [tts-ui] [32m[23:53:34.871] [INFO] [tts-ui] 📡 RELAY_LINK: https://192.168.50.205:5139[0m
+[12:53:34 AM] [tts] [32m[23:53:34.841] [INFO] [tts] --------------------------------------------------[0m
+[12:53:34 AM] [Codegen] [32m[23:53:34.958] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[12:53:34 AM] [kindly] [32m[23:53:34.974] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:53:34 AM] [log] [32m[23:53:34.975] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:53:34 AM] [log] [32m[23:53:34.975] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:53:34 AM] [Codegen] [32m[23:53:34.964] [INFO] [Codegen] Sovereign Cell online @ http://localhost:35667[0m
+[12:53:34 AM] [tts] [32m[23:53:34.841] [INFO] [tts] 🎯 [LOCKED] gemini-2.5-flash-preview-tts[0m
+[12:53:34 AM] [tts-ui] [32m[23:53:34.871] [INFO] [tts-ui] ⚠️  Accept the self-signed certificate warning in your browser[0m
+[12:53:34 AM] [kindly] [32m[23:53:34.979] [INFO] [kindly] Sovereign Cell online @ http://localhost:37889[0m
+[12:53:34 AM] [Codegen] [32m[23:53:34.965] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[12:53:34 AM] [kindly] [32m[23:53:34.983] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:53:34 AM] [tts-ui] [32m[23:53:34.871] [INFO] [tts-ui] ============================================================[0m
+[12:53:34 AM] [ai] [32m[23:53:34.987] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:53:34 AM] [tts-ui] [32m[23:53:34.880] [INFO] [tts-ui] Sovereign Cell online @ http://localhost:45847[0m
+[12:53:34 AM] [ai] [32m[23:53:34.996] [INFO] [ai] Sovereign Cell online @ http://localhost:38833[0m
+[12:53:35 AM] [telegram] [dotenv@17.2.4] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+[12:53:35 AM] [telegram] [telegram] Key fingerprint: 7ab9e4f61a11ba8a
+[12:53:35 AM] [comms] [comms] Key fingerprint: efc5f5599bd0423f
+[12:53:35 AM] [telegram] [32m[23:53:35.011] [INFO] [telegram] 📋 Registered 3 capabilities with contracts[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.015] [INFO] [telegram] Sovereign Cell online @ http://localhost:33039[0m
+[12:53:35 AM] [comms] [32m[23:53:35.015] [INFO] [comms] 📋 Registered 6 capabilities with contracts[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.015] [INFO] [telegram] 🤖 Telegram Bot Cell starting...[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.015] [INFO] [telegram] 🔗 PROXY_CALL: [comms/configure-channel][0m
+[12:53:35 AM] [telegram] [32m[23:53:35.017] [INFO] [telegram] [501328a1] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:53:35 AM] [telegram] [32m[23:53:35.020] [INFO] [telegram] [501328a1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45351[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.020] [INFO] [telegram] [501328a1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:45847[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.020] [INFO] [telegram] [501328a1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39107[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.021] [INFO] [telegram] 📡 Starting in POLLING mode (no webhook required)[0m
+[12:53:35 AM] [comms] [32m[23:53:35.021] [INFO] [comms] Sovereign Cell online @ http://localhost:44445[0m
+[12:53:35 AM] [comms] [32m[23:53:35.022] [INFO] [comms] 📡 Communications Hub online[0m
+[12:53:35 AM] [projects] [32m[23:53:35.023] [INFO] [projects] [501328a1] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:53:35 AM] [tts-ui] [32m[23:53:35.025] [INFO] [tts-ui] [501328a1] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:53:35 AM] [projects] [32m[23:53:35.026] [INFO] [projects] [501328a1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44445[0m
+[12:53:35 AM] [tts-ui] [32m[23:53:35.028] [INFO] [tts-ui] [501328a1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44445[0m
+[12:53:35 AM] [skills] [32m[23:53:35.030] [INFO] [skills] [501328a1] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:53:35 AM] [comms] [32m[23:53:35.031] [INFO] [comms] [501328a1] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:53:35 AM] [comms] [32m[23:53:35.032] [INFO] [comms] ⚙️  Channel telegram configured: enabled[0m
+[12:53:35 AM] [projects] [32m[23:53:35.034] [INFO] [projects] [501328a1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44445[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.035] [INFO] [telegram] [501328a1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39107[0m
+[12:53:35 AM] [skills] [32m[23:53:35.036] [INFO] [skills] [501328a1] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44445[0m
+[12:53:35 AM] [tts-ui] [32m[23:53:35.037] [INFO] [tts-ui] [501328a1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44445[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.038] [INFO] [telegram] [501328a1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:45847[0m
+[12:53:35 AM] [skills] [32m[23:53:35.041] [INFO] [skills] [501328a1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44445[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.042] [INFO] [telegram] [501328a1] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:45351[0m
+[12:53:35 AM] [telegram] [32m[23:53:35.135] [INFO] [telegram] 🤖 Bot: @openjaws_bot (OpenJaws)[0m
+[12:53:39 AM] [Codegen] [32m[23:53:39.966] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:53:40 AM] [Codegen] [32m[23:53:40.008] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:53:40 AM] [Codegen] [32m[23:53:40.008] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:53:44 AM] [telemetry] [32m[23:53:44.833] [INFO] [telemetry] [ec712b7f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:53:49 AM] [skills] [32m[23:53:49.853] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[12:53:49 AM] [skills] [32m[23:53:49.854] [INFO] [skills] [8b2086a2] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[12:53:49 AM] [skills] [32m[23:53:49.883] [INFO] [skills] 📚 Initial sync: 0 capabilities discovered[0m
+[12:53:49 AM] [telemetry] [31m[23:53:49.925] [ERROR] [telemetry] [0dfdb28b] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:44325 | Unable to connect. Is the computer able to access the url?[0m
+[12:53:54 AM] [telemetry] [32m[23:53:54.830] [INFO] [telemetry] [9fecfdaa] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:54:01 AM] [checklist] [32m[23:54:01.937] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[12:54:01 AM] [checklist] [32m[23:54:01.937] [INFO] [checklist] [978859f8] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[12:54:01 AM] [checklist] Current list has 0 items
+[12:54:01 AM] [checklist] [32m[23:54:01.938] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[12:54:01 AM] [checklist] [32m[23:54:01.938] [INFO] [checklist] [a00e269a] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:54:01 AM] [checklist] [32m[23:54:01.939] [INFO] [checklist] [a00e269a] 📡 RPC_OUT: [mesh/health] -> http://localhost:45623[0m
+[12:54:01 AM] [telemetry] [32m[23:54:01.940] [INFO] [telemetry] [a00e269a] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[12:54:01 AM] [checklist] [32m[23:54:01.941] [INFO] [checklist] [a00e269a] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:45623[0m
+[12:54:01 AM] [checklist] Mesh health: NOMINAL, 17 cells
+[12:54:04 AM] [telemetry] [32m[23:54:04.830] [INFO] [telemetry] [7af7773b] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:54:04 AM] [memory] [31m[23:54:04.878] [ERROR] [memory] [3385a446] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:42603 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:04 AM] [tts-ui] [31m[23:54:04.883] [ERROR] [tts-ui] [9d7182e1] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:44325 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:04 AM] [telemetry] [31m[23:54:04.924] [ERROR] [telemetry] [f72df0e1] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:46059 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:04 AM] [Codegen] [32m[23:54:04.965] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:54:04 AM] [projects] [31m[23:54:04.978] [ERROR] [projects] [80965a48] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:46059 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:04 AM] [Codegen] [32m[23:54:04.997] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:54:04 AM] [Codegen] [32m[23:54:04.997] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:54:14 AM] [telemetry] [32m[23:54:14.830] [INFO] [telemetry] [eab17aa6] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:54:19 AM] [tts] [31m[23:54:19.844] [ERROR] [tts] [dd0ef7ce] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:19 AM] [skills] [31m[23:54:19.853] [ERROR] [skills] [baf024bb] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:44325 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:19 AM] [kindly] [31m[23:54:19.986] [ERROR] [kindly] [ec81f0e6] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:42603 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:24 AM] [telemetry] [32m[23:54:24.831] [INFO] [telemetry] [3b989b28] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:54:34 AM] [telemetry] [32m[23:54:34.830] [INFO] [telemetry] [52a4bd97] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:54:34 AM] [skills] [32m[23:54:34.850] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[12:54:34 AM] [skills] [32m[23:54:34.851] [INFO] [skills] [b0f6fe6a] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[12:54:34 AM] [skills] [31m[23:54:34.882] [ERROR] [skills] [4255d879] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:34 AM] [memory] [31m[23:54:34.879] [ERROR] [memory] [140a5782] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:34 AM] [tts-ui] [31m[23:54:34.884] [ERROR] [tts-ui] [60288d42] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:34 AM] [Codegen] [32m[23:54:34.964] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:54:35 AM] [Codegen] [32m[23:54:35.009] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:54:35 AM] [Codegen] [32m[23:54:35.010] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:54:44 AM] [telemetry] [32m[23:54:44.832] [INFO] [telemetry] [e88ab2f8] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:54:49 AM] [tts] [31m[23:54:49.844] [ERROR] [tts] [2ba14251] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:49 AM] [projects] [31m[23:54:49.978] [ERROR] [projects] [ad683123] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:54:54 AM] [telemetry] [32m[23:54:54.832] [INFO] [telemetry] [46bc9786] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:55:04 AM] [telemetry] [32m[23:55:04.831] [INFO] [telemetry] [d61d785a] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:55:04 AM] [tts-ui] [31m[23:55:04.883] [ERROR] [tts-ui] [45fbe6eb] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:04 AM] [telemetry] [31m[23:55:04.925] [ERROR] [telemetry] [87f7b648] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:04 AM] [Codegen] [32m[23:55:04.964] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:55:04 AM] [log] [31m[23:55:04.977] [ERROR] [log] [bda3ea70] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:05 AM] [Codegen] [32m[23:55:05.011] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:55:05 AM] [Codegen] [32m[23:55:05.011] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:55:05 AM] [Codegen] [31m[23:55:05.015] [ERROR] [Codegen] [89ab2b91] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:14 AM] [telemetry] [32m[23:55:14.832] [INFO] [telemetry] [04274c3e] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:55:19 AM] [architect] [31m[23:55:19.962] [ERROR] [architect] [a10ac784] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:19 AM] [projects] [31m[23:55:19.978] [ERROR] [projects] [18221140] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:20 AM] [ai] [31m[23:55:20.002] [ERROR] [ai] [db3de9ae] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:24 AM] [telemetry] [32m[23:55:24.832] [INFO] [telemetry] [944468f3] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:55:34 AM] [telemetry] [32m[23:55:34.836] [INFO] [telemetry] [7fb59942] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:55:34 AM] [skills] [32m[23:55:34.849] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[12:55:34 AM] [skills] [32m[23:55:34.850] [INFO] [skills] [dcb955eb] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[12:55:34 AM] [telemetry] [31m[23:55:34.925] [ERROR] [telemetry] [484b4e79] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:34 AM] [Codegen] [32m[23:55:34.964] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:55:34 AM] [Codegen] [32m[23:55:34.992] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:55:34 AM] [Codegen] [32m[23:55:34.993] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:55:35 AM] [Codegen] [31m[23:55:35.014] [ERROR] [Codegen] [071e6f55] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:35 AM] [comms] [31m[23:55:35.024] [ERROR] [comms] [04114973] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:44 AM] [telemetry] [32m[23:55:44.836] [INFO] [telemetry] [323ddb75] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:55:49 AM] [coder] [31m[23:55:49.879] [ERROR] [coder] [e251538a] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:49 AM] [tts-ui] [31m[23:55:49.889] [ERROR] [tts-ui] [9c740169] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:49 AM] [architect] [31m[23:55:49.962] [ERROR] [architect] [8a350726] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:50 AM] [telegram] [31m[23:55:50.018] [ERROR] [telegram] [619ad2ca] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:55:54 AM] [telemetry] [32m[23:55:54.837] [INFO] [telemetry] [c33aa43d] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:56:04 AM] [telemetry] [32m[23:56:04.837] [INFO] [telemetry] [52f9ff4a] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:56:04 AM] [tts-ui] [31m[23:56:04.888] [ERROR] [tts-ui] [1b53bea5] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:04 AM] [Codegen] [32m[23:56:04.964] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:56:04 AM] [kindly] [31m[23:56:04.985] [ERROR] [kindly] [8995f763] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:04 AM] [Codegen] [32m[23:56:04.995] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:56:04 AM] [Codegen] [32m[23:56:04.995] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:56:05 AM] [Codegen] [31m[23:56:05.017] [ERROR] [Codegen] [02b230d9] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:14 AM] [telemetry] [32m[23:56:14.837] [INFO] [telemetry] [68552c9c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:56:19 AM] [coder] [31m[23:56:19.876] [ERROR] [coder] [d512d447] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:19 AM] [telemetry] [31m[23:56:19.925] [ERROR] [telemetry] [88408ff9] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:20 AM] [comms] [31m[23:56:20.027] [ERROR] [comms] [c7563c14] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:24 AM] [telemetry] [32m[23:56:24.838] [INFO] [telemetry] [9103232c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:56:34 AM] [telemetry] [32m[23:56:34.838] [INFO] [telemetry] [66618ad2] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:56:34 AM] [skills] [32m[23:56:34.848] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[12:56:34 AM] [skills] [32m[23:56:34.849] [INFO] [skills] [005cd9c0] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[12:56:34 AM] [memory] [31m[23:56:34.881] [ERROR] [memory] [99921918] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:34 AM] [Codegen] [32m[23:56:34.963] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:56:34 AM] [Codegen] [32m[23:56:34.996] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:56:34 AM] [Codegen] [32m[23:56:34.996] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:56:35 AM] [ai] [31m[23:56:35.000] [ERROR] [ai] [f33406bb] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:44 AM] [telemetry] [32m[23:56:44.838] [INFO] [telemetry] [178d682c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:56:49 AM] [tts-ui] [31m[23:56:49.888] [ERROR] [tts-ui] [d4ebba28] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:49 AM] [architect] [31m[23:56:49.962] [ERROR] [architect] [056a83b8] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:56:54 AM] [telemetry] [32m[23:56:54.838] [INFO] [telemetry] [d1584ea7] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:57:04 AM] [telemetry] [32m[23:57:04.838] [INFO] [telemetry] [bf53f695] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:57:04 AM] [tts-ui] [31m[23:57:04.888] [ERROR] [tts-ui] [fadaf6b3] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:04 AM] [Codegen] [32m[23:57:04.963] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:57:04 AM] [log] [31m[23:57:04.978] [ERROR] [log] [0a63b4a4] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:04 AM] [Codegen] [32m[23:57:04.996] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:57:04 AM] [Codegen] [32m[23:57:04.996] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:57:14 AM] [telemetry] [32m[23:57:14.839] [INFO] [telemetry] [86645e66] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:57:19 AM] [tts] [31m[23:57:19.843] [ERROR] [tts] [bfe757b8] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:19 AM] [skills] [31m[23:57:19.879] [ERROR] [skills] [25ff1dc7] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:19 AM] [checklist] [31m[23:57:19.935] [ERROR] [checklist] [c947e392] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:24 AM] [telemetry] [32m[23:57:24.839] [INFO] [telemetry] [36655627] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:57:34 AM] [telemetry] [32m[23:57:34.839] [INFO] [telemetry] [83e8f345] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:57:34 AM] [skills] [32m[23:57:34.848] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[12:57:34 AM] [skills] [32m[23:57:34.848] [INFO] [skills] [7ef0c7f0] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[12:57:34 AM] [telemetry] [31m[23:57:34.925] [ERROR] [telemetry] [a0b61fa9] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:34 AM] [architect] [31m[23:57:34.962] [ERROR] [architect] [de36a9a3] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:34 AM] [Codegen] [32m[23:57:34.963] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:57:34 AM] [Codegen] [32m[23:57:34.994] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:57:34 AM] [Codegen] [32m[23:57:34.994] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:57:44 AM] [telemetry] [32m[23:57:44.840] [INFO] [telemetry] [fb43dd70] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:57:49 AM] [kindly] [31m[23:57:49.985] [ERROR] [kindly] [b477f0ba] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:57:54 AM] [telemetry] [32m[23:57:54.840] [INFO] [telemetry] [d53f9eb0] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:58:04 AM] [telemetry] [32m[23:58:04.840] [INFO] [telemetry] [da45ba38] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:58:04 AM] [Codegen] [32m[23:58:04.963] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:58:04 AM] [log] [31m[23:58:04.976] [ERROR] [log] [b8f4350f] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:58:04 AM] [Codegen] [32m[23:58:04.999] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:58:05 AM] [Codegen] [32m[23:58:04.999] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:58:14 AM] [telemetry] [32m[23:58:14.841] [INFO] [telemetry] [b89ef625] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:58:19 AM] [architect] [31m[23:58:19.961] [ERROR] [architect] [9415e80f] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:58:19 AM] [projects] [31m[23:58:19.979] [ERROR] [projects] [fd34c601] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:58:24 AM] [telemetry] [32m[23:58:24.841] [INFO] [telemetry] [3f3403e9] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:58:34 AM] [telemetry] [32m[23:58:34.841] [INFO] [telemetry] [6dc2587c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:58:34 AM] [skills] [32m[23:58:34.847] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[12:58:34 AM] [skills] [32m[23:58:34.847] [INFO] [skills] [27a3d72c] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[12:58:34 AM] [Codegen] [32m[23:58:34.963] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:58:34 AM] [Codegen] [32m[23:58:34.991] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:58:34 AM] [Codegen] [32m[23:58:34.991] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:58:44 AM] [telemetry] [32m[23:58:44.842] [INFO] [telemetry] [b1b259c3] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:58:49 AM] [architect] [31m[23:58:49.962] [ERROR] [architect] [e8f43b3b] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:58:54 AM] [telemetry] [32m[23:58:54.842] [INFO] [telemetry] [a36b0723] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:59:04 AM] [telemetry] [32m[23:59:04.842] [INFO] [telemetry] [06c42d57] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:59:04 AM] [Codegen] [32m[23:59:04.962] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:59:04 AM] [projects] [31m[23:59:04.977] [ERROR] [projects] [e125f725] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:04 AM] [Codegen] [32m[23:59:04.992] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:59:04 AM] [Codegen] [32m[23:59:04.992] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:59:14 AM] [telemetry] [32m[23:59:14.843] [INFO] [telemetry] [1977a804] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:59:19 AM] [tts] [31m[23:59:19.842] [ERROR] [tts] [aa66023f] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:19 AM] [architect] [31m[23:59:19.961] [ERROR] [architect] [9c263021] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:24 AM] [telemetry] [32m[23:59:24.842] [INFO] [telemetry] [39cda4d9] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:59:34 AM] [tts] [31m[23:59:34.841] [ERROR] [tts] [d538c2aa] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:34 AM] [telemetry] [32m[23:59:34.843] [INFO] [telemetry] [99ab507f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_804439][0m
+[12:59:34 AM] [skills] [32m[23:59:34.847] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[12:59:34 AM] [skills] [32m[23:59:34.847] [INFO] [skills] [0634cc5a] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[12:59:34 AM] [Codegen] [32m[23:59:34.962] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:59:34 AM] [Codegen] [32m[23:59:34.994] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:59:34 AM] [Codegen] [32m[23:59:34.994] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[12:59:35 AM] [Codegen] [31m[23:59:35.020] [ERROR] [Codegen] [2b66ed84] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
+[12:59:43 AM] [tts] [tts] Key fingerprint: 9036f050a8c79f45
+[12:59:43 AM] [skills] [skills] Key fingerprint: eb87286d0de2c0df
+[12:59:43 AM] [memory] [memory] Key fingerprint: 9665de581903fa15
+[12:59:43 AM] [coder] [coder] Key fingerprint: e5fffa9cb3fbe3ac
+[12:59:43 AM] [coder] [32m[23:59:43.638] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[12:59:43 AM] [memory] [32m[23:59:43.663] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[12:59:43 AM] [skills] [32m[23:59:43.614] [INFO] [skills] 📋 Registered 6 capabilities with contracts[0m
+[12:59:43 AM] [tts] [32m[23:59:43.606] [INFO] [tts] 📋 Registered 2 capabilities with contracts[0m
+[12:59:43 AM] [coder] [32m[23:59:43.643] [INFO] [coder] Sovereign Cell online @ http://localhost:43215[0m
+[12:59:43 AM] [skills] [32m[23:59:43.647] [INFO] [skills] Sovereign Cell online @ http://localhost:34659[0m
+[12:59:43 AM] [tts] [32m[23:59:43.622] [INFO] [tts] Sovereign Cell online @ http://localhost:32971[0m
+[12:59:43 AM] [skills] [32m[23:59:43.647] [INFO] [skills] 📚 Skills System online[0m
+[12:59:43 AM] [tts] [32m[23:59:43.622] [INFO] [tts] --------------------------------------------------[0m
+[12:59:43 AM] [tts] [32m[23:59:43.622] [INFO] [tts] 🤖 OPENJAWS TTS SUBSTRATE v2.1 ONLINE[0m
+[12:59:43 AM] [tts] [32m[23:59:43.622] [INFO] [tts] 📂 DATA_DIR: /home/asdfghj/openjaws/tts/data[0m
+[12:59:43 AM] [memory] [32m[23:59:43.691] [INFO] [memory] Sovereign Cell online @ http://localhost:41993[0m
+[12:59:43 AM] [kindly] [kindly] Key fingerprint: ae95fb8aab4ae7a6
+[12:59:43 AM] [tts] [32m[23:59:43.622] [INFO] [tts] --------------------------------------------------[0m
+[12:59:43 AM] [tts] [32m[23:59:43.622] [INFO] [tts] 🎯 [LOCKED] gemini-2.5-flash-preview-tts[0m
+[12:59:43 AM] [kindly] [32m[23:59:43.687] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[12:59:43 AM] [memory] [32m[23:59:43.692] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[12:59:43 AM] [kindly] [32m[23:59:43.701] [INFO] [kindly] Sovereign Cell online @ http://localhost:36811[0m
+[12:59:43 AM] [memory] [32m[23:59:43.692] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[12:59:43 AM] [kindly] [32m[23:59:43.703] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[12:59:43 AM] [memory] [32m[23:59:43.692] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[12:59:43 AM] [tts-ui] [tts-ui] Key fingerprint: 4dc9f6e9b9324319
+[12:59:43 AM] [tts-ui] [32m[23:59:43.715] [INFO] [tts-ui] 🔐 Loaded existing certificates[0m
+[12:59:43 AM] [telemetry] [telemetry] Key fingerprint: 6741cf51a75adc13
+[12:59:43 AM] [tts-ui] [32m[23:59:43.732] [INFO] [tts-ui] 🚀 VOICE TERMINAL SUBSTRATE ONLINE (HTTPS)[0m
+[12:59:43 AM] [tts-ui] [32m[23:59:43.732] [INFO] [tts-ui] ============================================================[0m
+[12:59:43 AM] [tts-ui] [32m[23:59:43.732] [INFO] [tts-ui] 📡 RELAY_LINK: https://127.0.0.1:5139[0m
+[12:59:43 AM] [tts-ui] [32m[23:59:43.732] [INFO] [tts-ui] 📡 RELAY_LINK: https://192.168.50.205:5139[0m
+[12:59:43 AM] [tts-ui] [32m[23:59:43.732] [INFO] [tts-ui] ⚠️  Accept the self-signed certificate warning in your browser[0m
+[12:59:43 AM] [tts-ui] [32m[23:59:43.732] [INFO] [tts-ui] ============================================================[0m
+[12:59:43 AM] [telemetry] [32m[23:59:43.739] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[12:59:43 AM] [tts-ui] [32m[23:59:43.741] [INFO] [tts-ui] Sovereign Cell online @ http://localhost:35361[0m
+[12:59:43 AM] [architect] [architect] Key fingerprint: 7c2043da3fe70c9d
+[12:59:43 AM] [checklist] [checklist] Key fingerprint: cc225b588f425703
+[12:59:43 AM] [checklist] [32m[23:59:43.746] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[12:59:43 AM] [architect] [32m[23:59:43.748] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[12:59:43 AM] [checklist] [32m[23:59:43.753] [INFO] [checklist] Sovereign Cell online @ http://localhost:45603[0m
+[12:59:43 AM] [projects] [projects] Key fingerprint: dc0fe37b7f1a39c7
+[12:59:43 AM] [checklist] [32m[23:59:43.755] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[12:59:43 AM] [projects] [32m[23:59:43.756] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[12:59:43 AM] [telemetry] [32m[23:59:43.760] [INFO] [telemetry] Sovereign Cell online @ http://localhost:43505[0m
+[12:59:43 AM] [architect] [32m[23:59:43.766] [INFO] [architect] Sovereign Cell online @ http://localhost:40511[0m
+[12:59:43 AM] [projects] [32m[23:59:43.766] [INFO] [projects] Sovereign Cell online @ http://localhost:43507[0m
+[12:59:43 AM] [ai] [ai] Key fingerprint: 79391805860fd716
+[12:59:43 AM] [ai] [32m[23:59:43.784] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[12:59:43 AM] [log] [log] Key fingerprint: 2050aa5680a5a71b
+[12:59:43 AM] [ai] [32m[23:59:43.792] [INFO] [ai] Sovereign Cell online @ http://localhost:39491[0m
+[12:59:43 AM] [log] [32m[23:59:43.796] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[12:59:43 AM] [log] [32m[23:59:43.801] [INFO] [log] Sovereign Cell online @ http://localhost:34697[0m
+[12:59:43 AM] [log] [32m[23:59:43.802] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[12:59:43 AM] [log] [32m[23:59:43.803] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[12:59:43 AM] [Codegen] [Codegen] Key fingerprint: 51f9071c31994f11
+[12:59:43 AM] [telegram] [dotenv@17.2.4] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[12:59:43 AM] [telegram] [telegram] Key fingerprint: 004149b91b3f5509
+[12:59:43 AM] [telegram] [32m[23:59:43.817] [INFO] [telegram] 📋 Registered 3 capabilities with contracts[0m
+[12:59:43 AM] [Codegen] [32m[23:59:43.818] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[12:59:43 AM] [comms] [comms] Key fingerprint: d684a5806d379884
+[12:59:43 AM] [Codegen] [32m[23:59:43.826] [INFO] [Codegen] Sovereign Cell online @ http://localhost:33247[0m
+[12:59:43 AM] [Codegen] [32m[23:59:43.827] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[12:59:43 AM] [comms] [32m[23:59:43.831] [INFO] [comms] 📋 Registered 6 capabilities with contracts[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.832] [INFO] [telegram] Sovereign Cell online @ http://localhost:46367[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.835] [INFO] [telegram] 🤖 Telegram Bot Cell starting...[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.836] [INFO] [telegram] 🔗 PROXY_CALL: [comms/configure-channel][0m
+[12:59:43 AM] [comms] [32m[23:59:43.836] [INFO] [comms] Sovereign Cell online @ http://localhost:36503[0m
+[12:59:43 AM] [comms] [32m[23:59:43.838] [INFO] [comms] 📡 Communications Hub online[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.839] [INFO] [telegram] [b1c5cfcb] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:59:43 AM] [telegram] [32m[23:59:43.842] [INFO] [telegram] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:43507[0m
+[12:59:43 AM] [projects] [32m[23:59:43.844] [INFO] [projects] [b1c5cfcb] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:59:43 AM] [telegram] [32m[23:59:43.845] [INFO] [telegram] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41993[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.851] [INFO] [telegram] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36811[0m
+[12:59:43 AM] [memory] [32m[23:59:43.850] [INFO] [memory] [b1c5cfcb] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:59:43 AM] [projects] [32m[23:59:43.848] [INFO] [projects] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36503[0m
+[12:59:43 AM] [comms] [32m[23:59:43.851] [INFO] [comms] [b1c5cfcb] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:59:43 AM] [comms] [32m[23:59:43.852] [INFO] [comms] ⚙️  Channel telegram configured: enabled[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.852] [INFO] [telegram] 📡 Starting in POLLING mode (no webhook required)[0m
+[12:59:43 AM] [kindly] [32m[23:59:43.853] [INFO] [kindly] [b1c5cfcb] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[12:59:43 AM] [projects] [32m[23:59:43.853] [INFO] [projects] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36503[0m
+[12:59:43 AM] [kindly] [32m[23:59:43.857] [INFO] [kindly] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36503[0m
+[12:59:43 AM] [memory] [32m[23:59:43.856] [INFO] [memory] [b1c5cfcb] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:36503[0m
+[12:59:43 AM] [kindly] [32m[23:59:43.860] [INFO] [kindly] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36503[0m
+[12:59:43 AM] [memory] [32m[23:59:43.860] [INFO] [memory] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36503[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.861] [INFO] [telegram] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:43507[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.862] [INFO] [telegram] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:41993[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.862] [INFO] [telegram] [b1c5cfcb] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:36811[0m
+[12:59:43 AM] [telegram] [32m[23:59:43.966] [INFO] [telegram] 🤖 Bot: @openjaws_bot (OpenJaws)[0m
+[12:59:48 AM] [Codegen] [32m[23:59:48.828] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[12:59:48 AM] [Codegen] [32m[23:59:48.869] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[12:59:48 AM] [Codegen] [32m[23:59:48.869] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[1:00:19 AM] [tts] [tts] Key fingerprint: 761600a3d4615489
+[1:00:19 AM] [memory] [memory] Key fingerprint: bd522346f7220622
+[1:00:19 AM] [skills] [skills] Key fingerprint: 443d740c53447a12
+[1:00:19 AM] [coder] [coder] Key fingerprint: a672d3def9268e1b
+[1:00:19 AM] [tts-ui] [tts-ui] Key fingerprint: f612772d87174ecf
+[1:00:19 AM] [kindly] [kindly] Key fingerprint: 5256009336ef4fac
+[1:00:19 AM] [telemetry] [telemetry] Key fingerprint: 3e4b2a32d13f452f
+[1:00:19 AM] [projects] [projects] Key fingerprint: b10612576d223e9e
+[1:00:19 AM] [checklist] [checklist] Key fingerprint: c1ebd88ffbe3b8c3
+[1:00:19 AM] [Codegen] [Codegen] Key fingerprint: 09a403058ca22fd4
+[1:00:19 AM] [log] [log] Key fingerprint: b00f7ea2b15cb503
+[1:00:19 AM] [ai] [ai] Key fingerprint: 676ebe69377e1f3e
+[1:00:19 AM] [coder] [32m[00:00:18.972] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[1:00:19 AM] [skills] [32m[00:00:18.924] [INFO] [skills] 📋 Registered 6 capabilities with contracts[0m
+[1:00:19 AM] [memory] [32m[00:00:18.952] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[1:00:19 AM] [tts] [32m[00:00:18.971] [INFO] [tts] 📋 Registered 2 capabilities with contracts[0m
+[1:00:19 AM] [tts-ui] [32m[00:00:19.000] [INFO] [tts-ui] 🔐 Loaded existing certificates[0m
+[1:00:19 AM] [telemetry] [32m[00:00:19.042] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[1:00:19 AM] [kindly] [32m[00:00:19.120] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[1:00:19 AM] [projects] [32m[00:00:19.104] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[1:00:19 AM] [ai] [32m[00:00:19.076] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:00:19 AM] [log] [32m[00:00:19.153] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[1:00:19 AM] [Codegen] [32m[00:00:19.110] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[1:00:19 AM] [checklist] [32m[00:00:19.107] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[1:00:19 AM] [tts-ui] [32m[00:00:19.039] [INFO] [tts-ui] 🚀 VOICE TERMINAL SUBSTRATE ONLINE (HTTPS)[0m
+[1:00:19 AM] [tts] [32m[00:00:18.984] [INFO] [tts] Sovereign Cell online @ http://localhost:45971[0m
+[1:00:19 AM] [memory] [32m[00:00:18.989] [INFO] [memory] Sovereign Cell online @ http://localhost:44837[0m
+[1:00:19 AM] [skills] [32m[00:00:18.936] [INFO] [skills] Sovereign Cell online @ http://localhost:46827[0m
+[1:00:19 AM] [coder] [32m[00:00:18.976] [INFO] [coder] Sovereign Cell online @ http://localhost:33457[0m
+[1:00:19 AM] [telemetry] [32m[00:00:19.063] [INFO] [telemetry] Sovereign Cell online @ http://localhost:44225[0m
+[1:00:19 AM] [kindly] [32m[00:00:19.134] [INFO] [kindly] Sovereign Cell online @ http://localhost:40533[0m
+[1:00:19 AM] [projects] [32m[00:00:19.114] [INFO] [projects] Sovereign Cell online @ http://localhost:35353[0m
+[1:00:19 AM] [kindly] [32m[00:00:19.135] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[1:00:19 AM] [skills] [32m[00:00:18.936] [INFO] [skills] 📚 Skills System online[0m
+[1:00:19 AM] [memory] [32m[00:00:18.991] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[1:00:19 AM] [tts] [32m[00:00:18.984] [INFO] [tts] --------------------------------------------------[0m
+[1:00:19 AM] [tts-ui] [32m[00:00:19.039] [INFO] [tts-ui] ============================================================[0m
+[1:00:19 AM] [checklist] [32m[00:00:19.137] [INFO] [checklist] Sovereign Cell online @ http://localhost:36155[0m
+[1:00:19 AM] [Codegen] [32m[00:00:19.120] [INFO] [Codegen] Sovereign Cell online @ http://localhost:42727[0m
+[1:00:19 AM] [ai] [32m[00:00:19.120] [INFO] [ai] Sovereign Cell online @ http://localhost:34857[0m
+[1:00:19 AM] [memory] [32m[00:00:18.991] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[1:00:19 AM] [tts] [32m[00:00:18.984] [INFO] [tts] 🤖 OPENJAWS TTS SUBSTRATE v2.1 ONLINE[0m
+[1:00:19 AM] [tts-ui] [32m[00:00:19.040] [INFO] [tts-ui] 📡 RELAY_LINK: https://127.0.0.1:5139[0m
+[1:00:19 AM] [checklist] [32m[00:00:19.137] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:00:19 AM] [Codegen] [32m[00:00:19.121] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[1:00:19 AM] [memory] [32m[00:00:18.991] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[1:00:19 AM] [tts] [32m[00:00:18.984] [INFO] [tts] 📂 DATA_DIR: /home/asdfghj/openjaws/tts/data[0m
+[1:00:19 AM] [tts-ui] [32m[00:00:19.040] [INFO] [tts-ui] 📡 RELAY_LINK: https://192.168.50.205:5139[0m
+[1:00:19 AM] [tts] [32m[00:00:18.984] [INFO] [tts] --------------------------------------------------[0m
+[1:00:19 AM] [tts-ui] [32m[00:00:19.040] [INFO] [tts-ui] ⚠️  Accept the self-signed certificate warning in your browser[0m
+[1:00:19 AM] [log] [32m[00:00:19.165] [INFO] [log] Sovereign Cell online @ http://localhost:39983[0m
+[1:00:19 AM] [comms] [comms] Key fingerprint: c43cd21d9f1fad1c
+[1:00:19 AM] [architect] [architect] Key fingerprint: 1c7fee60041a2778
+[1:00:19 AM] [tts] [32m[00:00:18.984] [INFO] [tts] 🎯 [LOCKED] gemini-2.5-flash-preview-tts[0m
+[1:00:19 AM] [log] [32m[00:00:19.166] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[1:00:19 AM] [tts-ui] [32m[00:00:19.040] [INFO] [tts-ui] ============================================================[0m
+[1:00:19 AM] [comms] [32m[00:00:19.165] [INFO] [comms] 📋 Registered 6 capabilities with contracts[0m
+[1:00:19 AM] [architect] [32m[00:00:19.189] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:00:19 AM] [comms] [32m[00:00:19.171] [INFO] [comms] Sovereign Cell online @ http://localhost:44043[0m
+[1:00:19 AM] [tts-ui] [32m[00:00:19.046] [INFO] [tts-ui] Sovereign Cell online @ http://localhost:34911[0m
+[1:00:19 AM] [log] [32m[00:00:19.166] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:00:19 AM] [telegram] [dotenv@17.2.4] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[1:00:19 AM] [architect] [32m[00:00:19.196] [INFO] [architect] Sovereign Cell online @ http://localhost:45265[0m
+[1:00:19 AM] [comms] [32m[00:00:19.172] [INFO] [comms] 📡 Communications Hub online[0m
+[1:00:19 AM] [telegram] [telegram] Key fingerprint: 53abf7d7ce897e5d
+[1:00:19 AM] [telegram] [32m[00:00:19.211] [INFO] [telegram] 📋 Registered 3 capabilities with contracts[0m
+[1:00:19 AM] [telegram] [32m[00:00:19.228] [INFO] [telegram] Sovereign Cell online @ http://localhost:41785[0m
+[1:00:19 AM] [telegram] [32m[00:00:19.229] [INFO] [telegram] 🤖 Telegram Bot Cell starting...[0m
+[1:00:19 AM] [telegram] [32m[00:00:19.229] [INFO] [telegram] 🔗 PROXY_CALL: [comms/configure-channel][0m
+[1:00:19 AM] [telegram] [32m[00:00:19.231] [INFO] [telegram] [a6b025ac] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:00:19 AM] [telegram] [32m[00:00:19.233] [INFO] [telegram] [a6b025ac] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44043[0m
+[1:00:19 AM] [comms] [32m[00:00:19.236] [INFO] [comms] [a6b025ac] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:00:19 AM] [telegram] [32m[00:00:19.235] [INFO] [telegram] 📡 Starting in POLLING mode (no webhook required)[0m
+[1:00:19 AM] [comms] [32m[00:00:19.237] [INFO] [comms] ⚙️  Channel telegram configured: enabled[0m
+[1:00:19 AM] [telegram] [32m[00:00:19.240] [INFO] [telegram] [a6b025ac] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44043[0m
+[1:00:19 AM] [telegram] [32m[00:00:19.350] [INFO] [telegram] 🤖 Bot: @openjaws_bot (OpenJaws)[0m
+[1:00:24 AM] [Codegen] [32m[00:00:24.121] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[1:00:24 AM] [Codegen] [32m[00:00:24.151] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[1:00:24 AM] [Codegen] [32m[00:00:24.151] [INFO] [Codegen] ✅ Generated 50 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[1:00:29 AM] [telemetry] [32m[00:00:29.012] [INFO] [telemetry] [8f0beb09] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:00:33 AM] [skills] [32m[00:00:33.952] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[1:00:33 AM] [skills] [32m[00:00:33.955] [INFO] [skills] [0a78e74b] 📥 SIGNAL_ARRIVED: [skills/sync-from-mesh] from [skills][0m
+[1:00:34 AM] [skills] [32m[00:00:34.007] [INFO] [skills] 📚 Initial sync: 0 capabilities discovered[0m
+[1:00:39 AM] [telemetry] [32m[00:00:39.010] [INFO] [telemetry] [cc4e5e48] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:00:41 AM] [tts-ui] [32m[00:00:41.347] [INFO] [tts-ui] [S4788H] 📱 New UI session requested from Mozilla/5.0[0m
+[1:00:46 AM] [checklist] [32m[00:00:46.140] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[1:00:46 AM] [checklist] [32m[00:00:46.140] [INFO] [checklist] [fff6d663] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[1:00:46 AM] [checklist] Current list has 0 items
+[1:00:46 AM] [checklist] [32m[00:00:46.141] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[1:00:46 AM] [checklist] [32m[00:00:46.141] [INFO] [checklist] [6313d9a8] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:00:46 AM] [checklist] [32m[00:00:46.142] [INFO] [checklist] [6313d9a8] 📡 RPC_OUT: [mesh/health] -> http://localhost:44225[0m
+[1:00:46 AM] [telemetry] [32m[00:00:46.143] [INFO] [telemetry] [6313d9a8] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:00:46 AM] [checklist] [32m[00:00:46.144] [INFO] [checklist] [6313d9a8] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:44225[0m
+[1:00:46 AM] [checklist] Mesh health: NOMINAL, 16 cells
