@@ -12,7 +12,7 @@
  * ----------------------------------------------------------------------------
  */
 
-import { TypedRheoCell } from "../protocols/typed-mesh";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
 import { networkInterfaces } from "node:os";
 
 const PORT = 5139;

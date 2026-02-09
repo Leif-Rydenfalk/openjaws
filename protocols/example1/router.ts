@@ -1,8 +1,8 @@
 // protocols/example2.ts - Type-Safe Router Protocol for RheoMesh
 // Inspired by tRPC but adapted for distributed mesh architecture
 
-import { RheoCell as BaseCell } from "./example1";
-import type { TraceResult, Signal } from "./example1";
+import { RheoCell as BaseCell } from "./core";
+import type { TraceResult, Signal } from "./core";
 
 // ============================================================================
 // TYPE UTILITIES

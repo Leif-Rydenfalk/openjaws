@@ -1,5 +1,5 @@
 // kindly/+page.server.ts - UPDATED SERVER ACTIONS
-import { TypedRheoCell } from '../../../../protocols/typed-mesh';
+import { TypedRheoCell } from '../../../../protocols/example1/typed-mesh';
 
 let serverCell: TypedRheoCell;
 if (!(globalThis as any)._serverCell) {

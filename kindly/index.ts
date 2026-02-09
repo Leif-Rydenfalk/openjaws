@@ -1,6 +1,6 @@
 // kindly/index-enhanced.ts - TEMPORAL AGENT WITH COMPREHENSIVE LOGGING
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 
 const cell = new TypedRheoCell(`Kindly_${process.pid}`, 0);
 

@@ -1,6 +1,6 @@
 // comms/index.ts - Channel-Agnostic Conversation Management
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 

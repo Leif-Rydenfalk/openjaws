@@ -1,6 +1,6 @@
 // codegen/codegen.ts - Auto-generate types from LIVE zod schemas
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 import { writeFileSync, existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { spawn } from "node:child_process";

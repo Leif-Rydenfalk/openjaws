@@ -2,7 +2,7 @@
 // Browser mesh client - NO Node.js imports!
 
 import { browser } from '$app/environment';
-import type { MeshCapabilities } from '../../../protocols/typed-mesh';
+import type { MeshCapabilities } from '../../../protocols/example1/typed-mesh';
 
 /**
  * Simple browser mesh client

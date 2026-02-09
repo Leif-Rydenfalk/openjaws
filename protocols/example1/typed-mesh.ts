@@ -1,7 +1,7 @@
 // protocols/typed-mesh.ts - Fully Type-Safe Cross-Cell Communication
 // This protocol provides 100% compile-time type safety for mesh calls
 
-import { RheoCell as BaseCell, TraceResult, Signal } from "./example1";
+import { RheoCell as BaseCell, TraceResult, Signal } from "./core";
 import type {
     Router,
     Procedure,
@@ -9,7 +9,7 @@ import type {
     InferOutput,
     AnyProcedure,
     AnyRouter
-} from "./example2";
+} from "./router";
 
 // ============================================================================
 // TYPE EXTRACTION UTILITIES

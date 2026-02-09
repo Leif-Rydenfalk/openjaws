@@ -2,7 +2,7 @@
 // Server cell that handles browser mesh calls
 
 import type { Handle } from '@sveltejs/kit';
-import { TypedRheoCell } from '../../protocols/typed-mesh';
+import { TypedRheoCell } from '../../protocols/example1/typed-mesh';
 
 // ONE real server cell
 const globalThis_any = globalThis as any;

@@ -1,6 +1,6 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-09T19:54:52.764Z
+ * Generated: 2026-02-09T21:39:08.005Z
  * Source: Live mesh scan (55 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
@@ -210,4 +210,4 @@ export type TtsCapabilities = {
     synthesize: { input: any; output: any };
 };
 
-// Type trigger: 1770666892765
+// Type trigger: 1770673148005

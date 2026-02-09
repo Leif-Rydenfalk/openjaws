@@ -1215,3 +1215,24 @@
 [8:54:22 PM] [32m[19:54:22.592] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
 [8:54:22 PM] [32m[19:54:22.604] [INFO] [kindly] Sovereign Cell online @ http://localhost:39067[0m
 [8:54:22 PM] [32m[19:54:22.605] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[10:34:15 PM] [kindly] Key fingerprint: 87f436db693ab7b5
+[10:34:15 PM] [32m[21:34:15.628] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.641] [INFO] [kindly] Sovereign Cell online @ http://localhost:32885[0m
+[10:34:15 PM] [32m[21:34:15.642] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[10:34:15 PM] [32m[21:34:15.788] [INFO] [kindly] [752f2c35] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:34:15 PM] [32m[21:34:15.796] [INFO] [kindly] [752f2c35] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37807[0m
+[10:34:15 PM] [32m[21:34:15.802] [INFO] [kindly] [752f2c35] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37807[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/kindly/index.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/kindly/index.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [kindly] Key fingerprint: 6df19bece5f22779
+[10:36:50 PM] [32m[21:36:50.233] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.252] [INFO] [kindly] Sovereign Cell online @ http://localhost:35495[0m
+[10:36:50 PM] [32m[21:36:50.253] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[10:36:50 PM] [32m[21:36:50.570] [INFO] [kindly] 🌐 ~1 → 12p/51c[0m
+[10:36:50 PM] [32m[21:36:50.635] [INFO] [kindly] 🌐 ~1 → 17p/67c[0m
+[10:39:02 PM] [kindly] Key fingerprint: a22f92699453f9a9
+[10:39:02 PM] [32m[21:39:02.815] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.839] [INFO] [kindly] Sovereign Cell online @ http://localhost:37865[0m
+[10:39:02 PM] [32m[21:39:02.840] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m

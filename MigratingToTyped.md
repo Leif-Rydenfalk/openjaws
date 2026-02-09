@@ -49,8 +49,8 @@ cell.listen();
 
 ```typescript
 // ai1/index.ts - NEW VERSION
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 
 // 1. Create typed router
 const aiRouter = router({
@@ -88,7 +88,7 @@ const aiRouter = router({
 });
 
 // 2. Augment global types
-declare module "../protocols/typed-mesh" {
+declare module "../protocols/example1/typed-mesh" {
     interface MeshCapabilities {
         "ai/generate": {
             input: {
@@ -132,8 +132,8 @@ For each cell you're migrating:
 import { RheoCell } from "../protocols/example1";
 
 // NEW
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 ```
 
 ### 2. Convert `cell.provide()` to Routers
@@ -174,7 +174,7 @@ const userRouter = router({
 ### 3. Add Type Augmentation
 
 ```typescript
-declare module "../protocols/typed-mesh" {
+declare module "../protocols/example1/typed-mesh" {
     interface MeshCapabilities {
         // Add each capability
         "users/get": {
@@ -245,7 +245,7 @@ router({
     })
 });
 
-declare module "../protocols/typed-mesh" {
+declare module "../protocols/example1/typed-mesh" {
     interface MeshCapabilities {
         "status/health": {
             input: void;
@@ -368,7 +368,7 @@ console.log(health);
 
 **Cause:** Import paths are wrong.
 
-**Fix:** Check that `../protocols/typed-mesh` path is correct relative to your cell.
+**Fix:** Check that `../protocols/example1/typed-mesh` path is correct relative to your cell.
 
 ### "Type 'any' is not assignable"
 
@@ -429,8 +429,8 @@ cell.listen();
 ### AFTER
 
 ```typescript
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 
 const cell = new TypedRheoCell(`Store_${process.pid}`, 0);
 
@@ -453,7 +453,7 @@ const storeRouter = router({
     })
 });
 
-declare module "../protocols/typed-mesh" {
+declare module "../protocols/example1/typed-mesh" {
     interface MeshCapabilities {
         "store/list": {
             input: void;

@@ -1,5 +1,5 @@
 // ui/src/routes/kindly/+page.server.ts - Use Comms Cell
-import { TypedRheoCell } from '../../../protocols/typed-mesh';
+import { TypedRheoCell } from '../../../protocols/example1/typed-mesh';
 
 let serverCell: TypedRheoCell;
 if (!(globalThis as any)._serverCell) {

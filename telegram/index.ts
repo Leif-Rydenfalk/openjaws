@@ -1,6 +1,6 @@
 // telegram/index.ts - Telegram Bot Cell
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 import { createServer } from "node:http";
 import { config } from "dotenv";
 import { join, dirname } from "node:path";

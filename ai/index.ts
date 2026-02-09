@@ -1,5 +1,5 @@
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 
 // Accessing the key passed by the Orchestrator
 const API_KEY = process.env.GEMINI_API_KEY;

@@ -55,7 +55,7 @@ You wanted **tRPC-style type safety** but for a **distributed mesh** where cells
 
 ```typescript
 // checklist/index.ts
-import { RheoCell, router, procedure, z } from "../protocols/example2";
+import { RheoCell, router, procedure, z } from "../protocols/example1/router";
 
 const checklistRouter = router({
   list: router({

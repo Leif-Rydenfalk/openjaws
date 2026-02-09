@@ -5,7 +5,7 @@
 ### BEFORE (Manual Type Declarations)
 ```typescript
 // ❌ Had to write this in every cell
-declare module "../protocols/typed-mesh" {
+declare module "../protocols/example1/typed-mesh" {
     interface MeshCapabilities {
         "log/info": { input: {...}, output: {...} };
     }
@@ -77,7 +77,7 @@ const router = router({
 });
 
 // ❌ Manual type declaration
-declare module "../protocols/typed-mesh" {
+declare module "../protocols/example1/typed-mesh" {
     interface MeshCapabilities {
         "log/info": { input: { msg: string }, output: { ok: boolean } };
     }

@@ -1536,3 +1536,17 @@
 [8:54:22 PM] This usually happens if the cell crashed or timed out during the hop.
 [8:54:22 PM] ============================================================
 [8:54:49 PM] [32m[19:54:49.633] [INFO] [telemetry] [fec52037] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[10:34:15 PM] [telemetry] Key fingerprint: 28ce74a60fe38a95
+[10:34:15 PM] [32m[21:34:15.645] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.700] [INFO] [telemetry] Sovereign Cell online @ http://localhost:41921[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/telemetry/index.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/telemetry/index.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [telemetry] Key fingerprint: 3b651edcbe0245d2
+[10:36:50 PM] [32m[21:36:50.237] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.254] [INFO] [telemetry] Sovereign Cell online @ http://localhost:42375[0m
+[10:37:17 PM] [32m[21:37:17.326] [INFO] [telemetry] [9644c585] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[10:39:02 PM] [telemetry] Key fingerprint: 52811c65b5801f57
+[10:39:02 PM] [32m[21:39:02.875] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.899] [INFO] [telemetry] Sovereign Cell online @ http://localhost:39645[0m

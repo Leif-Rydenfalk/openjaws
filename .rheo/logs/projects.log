@@ -600,3 +600,32 @@
 [8:54:22 PM] [projects] Key fingerprint: 5316d0af4924286b
 [8:54:22 PM] [32m[19:54:22.718] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
 [8:54:22 PM] [32m[19:54:22.736] [INFO] [projects] Sovereign Cell online @ http://localhost:39949[0m
+[10:34:15 PM] [projects] Key fingerprint: 3a1c07e6aa57e209
+[10:34:15 PM] [32m[21:34:15.621] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.660] [INFO] [projects] Sovereign Cell online @ http://localhost:39129[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/projects/index.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/projects/index.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [projects] Key fingerprint: 39d9d267766fb565
+[10:36:50 PM] [32m[21:36:50.266] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.287] [INFO] [projects] Sovereign Cell online @ http://localhost:44569[0m
+[10:37:20 PM] ============================================================
+[10:37:20 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[10:37:20 PM] ============================================================
+[10:37:20 PM] Time:     2026-02-09T21:37:20.290Z
+[10:37:20 PM] Signal:   712aaafd-abe0-41d8-a549-b52301c5af33
+[10:37:20 PM] Failed At: http://localhost:38001
+[10:37:20 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[10:37:20 PM] 📜 Full Narrative (1 steps):
+[10:37:20 PM]    [21:37:20.288] projects             | RPC_ATTEMPT         
+[10:37:20 PM] 💡 Likely Causes:
+[10:37:20 PM] Target cell crashed or is unreachable
+[10:37:20 PM] Network partition between cells
+[10:37:20 PM] Target cell port not open or firewall blocking
+[10:37:20 PM] Target cell is still starting up (check logs)
+[10:37:20 PM] ============================================================
+[10:37:20 PM] [32m[21:37:20.301] [INFO] [projects] 🌐 ~1 → 17p/67c[0m
+[10:39:02 PM] [projects] Key fingerprint: ec7c524efd7f4c9e
+[10:39:02 PM] [32m[21:39:02.871] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.876] [INFO] [projects] Sovereign Cell online @ http://localhost:42155[0m

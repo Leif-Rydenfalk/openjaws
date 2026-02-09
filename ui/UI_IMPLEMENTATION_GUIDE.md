@@ -48,7 +48,7 @@ cell.bootstrapFromRegistry(true); // Finds peers
 import type { 
     MeshCapabilities, 
     ValidCapability 
-} from '../../../protocols/typed-mesh';
+} from '../../../protocols/example1/typed-mesh';
 
 // ✅ Full type inference
 const items = await mesh.list.get();
@@ -227,7 +227,7 @@ procedure
 }
 
 // 3. UI imports types
-import type { MeshCapabilities } from '../../../protocols/typed-mesh'
+import type { MeshCapabilities } from '../../../protocols/example1/typed-mesh'
 
 // 4. Full autocomplete in UI
 const result = await mesh.list.add({ text: "..." });

@@ -574,3 +574,36 @@
 [8:54:22 PM] The capability was found earlier, but no cell responded to the signal.
 [8:54:22 PM] This usually happens if the cell crashed or timed out during the hop.
 [8:54:22 PM] ============================================================
+[10:34:15 PM] [architect] Key fingerprint: c90941a4c4231fc8
+[10:34:15 PM] [32m[21:34:15.783] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.794] [INFO] [architect] Sovereign Cell online @ http://localhost:45897[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/architect/index.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/architect/index.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [architect] Key fingerprint: c4a4a7c4e269c75a
+[10:36:50 PM] [32m[21:36:50.289] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.297] [INFO] [architect] Sovereign Cell online @ http://localhost:44003[0m
+[10:36:50 PM] [32m[21:36:50.346] [INFO] [architect] [3ade1521] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:36:50 PM] ============================================================
+[10:36:50 PM] 💥 MESH FAILURE [NOT_FOUND]
+[10:36:50 PM] ============================================================
+[10:36:50 PM] Time:     2026-02-09T21:36:50.352Z
+[10:36:50 PM] Signal:   3ade1521-415c-4898-90c2-60c0400e7323
+[10:36:50 PM] Failed At: architect
+[10:36:50 PM] Message:  No route to comms/configure-channel after exhaustive search (Providers: 0)
+[10:36:50 PM] 📍 Signal Path (2 hops):
+[10:36:50 PM]    1. telegram @ 21:36:50.343
+[10:36:50 PM]    2. architect @ 21:36:50.346
+[10:36:50 PM] 💡 Likely Causes:
+[10:36:50 PM] Capability not registered in any cell
+[10:36:50 PM] Cell hosting capability is offline
+[10:36:50 PM] Mesh hasn't converged yet (try adding delay)
+[10:36:50 PM] Typo in capability name
+[10:36:50 PM] The capability was found earlier, but no cell responded to the signal.
+[10:36:50 PM] This usually happens if the cell crashed or timed out during the hop.
+[10:36:50 PM] ============================================================
+[10:36:50 PM] [32m[21:36:50.645] [INFO] [architect] 🌐 ~2 → 17p/67c[0m
+[10:39:02 PM] [architect] Key fingerprint: 3df8b55912c1ee03
+[10:39:02 PM] [32m[21:39:02.906] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.913] [INFO] [architect] Sovereign Cell online @ http://localhost:43165[0m

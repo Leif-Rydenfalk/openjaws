@@ -1,7 +1,7 @@
 // ui/src/app.d.ts
 // See https://svelte.dev/docs/kit/types#app.d.ts
 
-import type { TypedRheoCell } from '../../protocols/typed-mesh';
+import type { TypedRheoCell } from '../../protocols/example1/typed-mesh';
 
 declare global {
 	namespace App {

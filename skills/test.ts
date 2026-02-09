@@ -1,7 +1,7 @@
 #!/usr/bin/env bun
 // skills/test.ts - Test and demonstration of Skills System
 
-import { TypedRheoCell } from "../protocols/typed-mesh";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
 
 const cell = new TypedRheoCell(`SkillsTest_${process.pid}`, 0);
 

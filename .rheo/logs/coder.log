@@ -670,3 +670,66 @@
 [8:54:22 PM] [coder] Key fingerprint: ce5ffff35bcadd50
 [8:54:22 PM] [32m[19:54:22.540] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
 [8:54:22 PM] [32m[19:54:22.551] [INFO] [coder] Sovereign Cell online @ http://localhost:40745[0m
+[10:34:15 PM] [coder] Key fingerprint: bbbdf3a555b9b748
+[10:34:15 PM] [32m[21:34:15.578] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.600] [INFO] [coder] Sovereign Cell online @ http://localhost:39973[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/coder/index.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/coder/index.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [coder] Key fingerprint: aa6204462184fab8
+[10:36:50 PM] [32m[21:36:50.130] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.141] [INFO] [coder] Sovereign Cell online @ http://localhost:46875[0m
+[10:36:50 PM] [32m[21:36:50.372] [INFO] [coder] [3ade1521] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:36:50 PM] ============================================================
+[10:36:50 PM] 💥 MESH FAILURE [NOT_FOUND]
+[10:36:50 PM] ============================================================
+[10:36:50 PM] Time:     2026-02-09T21:36:50.374Z
+[10:36:50 PM] Signal:   3ade1521-415c-4898-90c2-60c0400e7323
+[10:36:50 PM] Failed At: coder
+[10:36:50 PM] Message:  No route to comms/configure-channel after exhaustive search (Providers: 0)
+[10:36:50 PM] 📍 Signal Path (2 hops):
+[10:36:50 PM]    1. telegram @ 21:36:50.343
+[10:36:50 PM]    2. coder @ 21:36:50.372
+[10:36:50 PM] 💡 Likely Causes:
+[10:36:50 PM] Capability not registered in any cell
+[10:36:50 PM] Cell hosting capability is offline
+[10:36:50 PM] Mesh hasn't converged yet (try adding delay)
+[10:36:50 PM] Typo in capability name
+[10:36:50 PM] The capability was found earlier, but no cell responded to the signal.
+[10:36:50 PM] This usually happens if the cell crashed or timed out during the hop.
+[10:36:50 PM] ============================================================
+[10:37:05 PM] [32m[21:37:05.303] [INFO] [coder] 🌐 ~1 → 17p/67c[0m
+[10:37:20 PM] ============================================================
+[10:37:20 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[10:37:20 PM] ============================================================
+[10:37:20 PM] Time:     2026-02-09T21:37:20.145Z
+[10:37:20 PM] Signal:   6d570fde-4747-4380-9f52-d54d49d9872a
+[10:37:20 PM] Failed At: http://localhost:38001
+[10:37:20 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[10:37:20 PM] 📜 Full Narrative (1 steps):
+[10:37:20 PM]    [21:37:20.143] coder                | RPC_ATTEMPT         
+[10:37:20 PM] 💡 Likely Causes:
+[10:37:20 PM] Target cell crashed or is unreachable
+[10:37:20 PM] Network partition between cells
+[10:37:20 PM] Target cell port not open or firewall blocking
+[10:37:20 PM] Target cell is still starting up (check logs)
+[10:37:20 PM] ============================================================
+[10:38:05 PM] ============================================================
+[10:38:05 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[10:38:05 PM] ============================================================
+[10:38:05 PM] Time:     2026-02-09T21:38:05.144Z
+[10:38:05 PM] Signal:   e2895fcf-2ffa-4c67-aabe-b670a20fbe78
+[10:38:05 PM] Failed At: http://localhost:38001
+[10:38:05 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[10:38:05 PM] 📜 Full Narrative (1 steps):
+[10:38:05 PM]    [21:38:05.143] coder                | RPC_ATTEMPT         
+[10:38:05 PM] 💡 Likely Causes:
+[10:38:05 PM] Target cell crashed or is unreachable
+[10:38:05 PM] Network partition between cells
+[10:38:05 PM] Target cell port not open or firewall blocking
+[10:38:05 PM] Target cell is still starting up (check logs)
+[10:38:05 PM] ============================================================
+[10:39:02 PM] [coder] Key fingerprint: d36e88638a6d1e38
+[10:39:02 PM] [32m[21:39:02.810] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.835] [INFO] [coder] Sovereign Cell online @ http://localhost:43085[0m

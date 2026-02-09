@@ -1,6 +1,6 @@
 // telemetry/index.ts - Clean implementation with NO manual type declarations
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 
 const seed = process.argv[2];
 const cell = new TypedRheoCell(`Telemetry_${process.pid}`, 0, seed);

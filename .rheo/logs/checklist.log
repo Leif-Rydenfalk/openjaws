@@ -1123,3 +1123,61 @@
 [8:54:49 PM] [32m[19:54:49.631] [INFO] [checklist] [fec52037] 📡 RPC_OUT: [mesh/health] -> http://localhost:36305[0m
 [8:54:49 PM] [32m[19:54:49.633] [INFO] [checklist] [fec52037] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:36305[0m
 [8:54:49 PM] Mesh health: NOMINAL, 16 cells
+[10:34:15 PM] [checklist] Key fingerprint: 9eb70a5fa6759faa
+[10:34:15 PM] [32m[21:34:15.730] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.747] [INFO] [checklist] Sovereign Cell online @ http://localhost:34007[0m
+[10:34:15 PM] [32m[21:34:15.748] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/checklist/index.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/checklist/index.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [checklist] Key fingerprint: 5c7c817e6f55484b
+[10:36:50 PM] [32m[21:36:50.308] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.318] [INFO] [checklist] Sovereign Cell online @ http://localhost:36675[0m
+[10:36:50 PM] [32m[21:36:50.319] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[10:36:50 PM] [32m[21:36:50.348] [INFO] [checklist] [3ade1521] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:36:50 PM] ============================================================
+[10:36:50 PM] 💥 MESH FAILURE [NOT_FOUND]
+[10:36:50 PM] ============================================================
+[10:36:50 PM] Time:     2026-02-09T21:36:50.351Z
+[10:36:50 PM] Signal:   3ade1521-415c-4898-90c2-60c0400e7323
+[10:36:50 PM] Failed At: checklist
+[10:36:50 PM] Message:  No route to comms/configure-channel after exhaustive search (Providers: 0)
+[10:36:50 PM] 📍 Signal Path (2 hops):
+[10:36:50 PM]    1. telegram @ 21:36:50.343
+[10:36:50 PM]    2. checklist @ 21:36:50.348
+[10:36:50 PM] 💡 Likely Causes:
+[10:36:50 PM] Capability not registered in any cell
+[10:36:50 PM] Cell hosting capability is offline
+[10:36:50 PM] Mesh hasn't converged yet (try adding delay)
+[10:36:50 PM] Typo in capability name
+[10:36:50 PM] The capability was found earlier, but no cell responded to the signal.
+[10:36:50 PM] This usually happens if the cell crashed or timed out during the hop.
+[10:36:50 PM] ============================================================
+[10:37:17 PM] [32m[21:37:17.322] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[10:37:17 PM] [32m[21:37:17.323] [INFO] [checklist] [e86e08db] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[10:37:17 PM] Current list has 0 items
+[10:37:17 PM] [32m[21:37:17.324] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[10:37:17 PM] [32m[21:37:17.324] [INFO] [checklist] [9644c585] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[10:37:17 PM] [32m[21:37:17.325] [INFO] [checklist] [9644c585] 📡 RPC_OUT: [mesh/health] -> http://localhost:42375[0m
+[10:37:17 PM] [32m[21:37:17.327] [INFO] [checklist] [9644c585] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:42375[0m
+[10:37:17 PM] Mesh health: NOMINAL, 18 cells
+[10:37:50 PM] ============================================================
+[10:37:50 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[10:37:50 PM] ============================================================
+[10:37:50 PM] Time:     2026-02-09T21:37:50.323Z
+[10:37:50 PM] Signal:   f342d1ba-5864-47cd-9d89-ed0f89e51c8e
+[10:37:50 PM] Failed At: http://localhost:38001
+[10:37:50 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[10:37:50 PM] 📜 Full Narrative (1 steps):
+[10:37:50 PM]    [21:37:50.320] checklist            | RPC_ATTEMPT         
+[10:37:50 PM] 💡 Likely Causes:
+[10:37:50 PM] Target cell crashed or is unreachable
+[10:37:50 PM] Network partition between cells
+[10:37:50 PM] Target cell port not open or firewall blocking
+[10:37:50 PM] Target cell is still starting up (check logs)
+[10:37:50 PM] ============================================================
+[10:39:02 PM] [checklist] Key fingerprint: c757ef752a0429f9
+[10:39:02 PM] [32m[21:39:02.904] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.934] [INFO] [checklist] Sovereign Cell online @ http://localhost:36787[0m
+[10:39:02 PM] [32m[21:39:02.936] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m

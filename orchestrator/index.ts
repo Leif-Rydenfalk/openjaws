@@ -1,4 +1,4 @@
-import { RheoCell } from "../protocols/example1";
+import { RheoCell } from "../protocols/example1/core";
 import { spawn } from "node:child_process";
 import { unlinkSync, existsSync, readFileSync, writeFileSync, readdirSync, statSync, mkdirSync, createWriteStream } from "node:fs";
 import { join, resolve } from "node:path";

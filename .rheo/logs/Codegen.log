@@ -11460,3 +11460,37 @@
 [8:54:52 PM] [32m[19:54:52.726] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
 [8:54:52 PM] [32m[19:54:52.766] [INFO] [Codegen] 👉 Poked TypeScript server[0m
 [8:54:52 PM] [32m[19:54:52.766] [INFO] [Codegen] ✅ Generated 55 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:34:15 PM] [Codegen] Key fingerprint: 81af700abe91e5bc
+[10:34:15 PM] [32m[21:34:15.786] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.794] [INFO] [Codegen] Sovereign Cell online @ http://localhost:45735[0m
+[10:34:15 PM] [32m[21:34:15.795] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/codegen/codegen.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/codegen/codegen.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [Codegen] Key fingerprint: 9fd87110fffc4bfe
+[10:36:50 PM] [32m[21:36:50.294] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.301] [INFO] [Codegen] Sovereign Cell online @ http://localhost:46069[0m
+[10:36:50 PM] [32m[21:36:50.302] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[10:36:55 PM] [32m[21:36:55.302] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:36:55 PM] [32m[21:36:55.340] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:36:55 PM] [32m[21:36:55.340] [INFO] [Codegen] ✅ Generated 55 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:37:05 PM] [32m[21:37:05.145] [INFO] [Codegen] 🌐 ~1 → 17p/67c[0m
+[10:37:05 PM] [32m[21:37:05.303] [INFO] [Codegen] 🌐 ~1 → 17p/67c[0m
+[10:37:05 PM] [32m[21:37:05.375] [INFO] [Codegen] 🌐 ~1 → 17p/67c[0m
+[10:37:06 PM] [32m[21:37:06.147] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:37:06 PM] [32m[21:37:06.179] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:37:06 PM] [32m[21:37:06.179] [INFO] [Codegen] ✅ Generated 55 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:37:20 PM] [32m[21:37:20.302] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:37:20 PM] [32m[21:37:20.335] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:37:20 PM] [32m[21:37:20.335] [INFO] [Codegen] ✅ Generated 55 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:37:50 PM] [32m[21:37:50.302] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:37:50 PM] [32m[21:37:50.348] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:37:50 PM] [32m[21:37:50.348] [INFO] [Codegen] ✅ Generated 55 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:39:02 PM] [Codegen] Key fingerprint: 78cfb46867bf0f86
+[10:39:02 PM] [32m[21:39:02.965] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.969] [INFO] [Codegen] Sovereign Cell online @ http://localhost:33503[0m
+[10:39:02 PM] [32m[21:39:02.970] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[10:39:07 PM] [32m[21:39:07.971] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:39:08 PM] [32m[21:39:08.007] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:39:08 PM] [32m[21:39:08.007] [INFO] [Codegen] ✅ Generated 55 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m

@@ -1113,3 +1113,62 @@
 [8:54:22 PM] [32m[19:54:22.659] [INFO] [log] Sovereign Cell online @ http://localhost:42155[0m
 [8:54:22 PM] [32m[19:54:22.659] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
 [8:54:22 PM] [32m[19:54:22.659] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[10:34:15 PM] [log] Key fingerprint: 4184ee5a5de54f23
+[10:34:15 PM] [32m[21:34:15.719] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.729] [INFO] [log] Sovereign Cell online @ http://localhost:40773[0m
+[10:34:15 PM] [32m[21:34:15.730] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[10:34:15 PM] [32m[21:34:15.730] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[10:34:15 PM] [32m[21:34:15.787] [INFO] [log] [752f2c35] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:34:15 PM] [32m[21:34:15.788] [INFO] [log] [752f2c35] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37807[0m
+[10:34:15 PM] [32m[21:34:15.792] [INFO] [log] [752f2c35] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37807[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/log/index.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/log/index.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [log] Key fingerprint: fd93ad4da07af1d6
+[10:36:50 PM] [32m[21:36:50.346] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.363] [INFO] [log] Sovereign Cell online @ http://localhost:44755[0m
+[10:36:50 PM] [32m[21:36:50.364] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[10:36:50 PM] [32m[21:36:50.364] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[10:36:50 PM] [32m[21:36:50.386] [INFO] [log] [3ade1521] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[10:36:50 PM] ============================================================
+[10:36:50 PM] 💥 MESH FAILURE [NOT_FOUND]
+[10:36:50 PM] ============================================================
+[10:36:50 PM] Time:     2026-02-09T21:36:50.387Z
+[10:36:50 PM] Signal:   3ade1521-415c-4898-90c2-60c0400e7323
+[10:36:50 PM] Failed At: log
+[10:36:50 PM] Message:  No route to comms/configure-channel after exhaustive search (Providers: 0)
+[10:36:50 PM] 📍 Signal Path (2 hops):
+[10:36:50 PM]    1. telegram @ 21:36:50.343
+[10:36:50 PM]    2. log @ 21:36:50.386
+[10:36:50 PM] 💡 Likely Causes:
+[10:36:50 PM] Capability not registered in any cell
+[10:36:50 PM] Cell hosting capability is offline
+[10:36:50 PM] Mesh hasn't converged yet (try adding delay)
+[10:36:50 PM] Typo in capability name
+[10:36:50 PM] The capability was found earlier, but no cell responded to the signal.
+[10:36:50 PM] This usually happens if the cell crashed or timed out during the hop.
+[10:36:50 PM] ============================================================
+[10:36:50 PM] [32m[21:36:50.879] [INFO] [log] 🌐 ~1 → 17p/67c[0m
+[10:37:20 PM] [32m[21:37:20.376] [INFO] [log] 🌐 ~1 → 17p/67c[0m
+[10:37:20 PM] [32m[21:37:20.378] [INFO] [log] 🌐 ~1 → 17p/67c[0m
+[10:37:35 PM] ============================================================
+[10:37:35 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[10:37:35 PM] ============================================================
+[10:37:35 PM] Time:     2026-02-09T21:37:35.368Z
+[10:37:35 PM] Signal:   98aec3f7-5c8e-41b2-9bf4-4eec6d340c28
+[10:37:35 PM] Failed At: http://localhost:38001
+[10:37:35 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[10:37:35 PM] 📜 Full Narrative (1 steps):
+[10:37:35 PM]    [21:37:35.367] log                  | RPC_ATTEMPT         
+[10:37:35 PM] 💡 Likely Causes:
+[10:37:35 PM] Target cell crashed or is unreachable
+[10:37:35 PM] Network partition between cells
+[10:37:35 PM] Target cell port not open or firewall blocking
+[10:37:35 PM] Target cell is still starting up (check logs)
+[10:37:35 PM] ============================================================
+[10:39:02 PM] [log] Key fingerprint: f8d74a44cfd77511
+[10:39:02 PM] [32m[21:39:02.887] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.892] [INFO] [log] Sovereign Cell online @ http://localhost:41177[0m
+[10:39:02 PM] [32m[21:39:02.893] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[10:39:02 PM] [32m[21:39:02.893] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m

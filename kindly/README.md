@@ -6,8 +6,8 @@ You're absolutely right. Let me give you a **true agentic system** where the AI 
 
 ```typescript
 // kindly/index.ts - Fully Agentic AI (No Hardcoded Logic)
-import { TypedRheoCell } from "../protocols/typed-mesh";
-import { router, procedure, z } from "../protocols/example2";
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+import { router, procedure, z } from "../protocols/example1/router";
 
 const cell = new TypedRheoCell(`kindly`, 0);
 

@@ -4,7 +4,7 @@
 
 ### Setup (hooks.server.ts)
 ```typescript
-import { TypedRheoCell } from '../../protocols/typed-mesh';
+import { TypedRheoCell } from '../../protocols/example1/typed-mesh';
 
 const serverCell = new TypedRheoCell(`SvelteKit_${process.pid}`, 0);
 serverCell.listen(); // Server mode

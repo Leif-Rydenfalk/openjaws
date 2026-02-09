@@ -1116,3 +1116,31 @@
 [8:54:22 PM] [32m[19:54:22.703] [INFO] [memory] 🧠 Temporal Memory System online[0m
 [8:54:22 PM] [32m[19:54:22.703] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
 [8:54:22 PM] [32m[19:54:22.703] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[10:34:15 PM] [memory] Key fingerprint: 1b2f8fd11f7de196
+[10:34:15 PM] [32m[21:34:15.584] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[10:34:15 PM] [32m[21:34:15.605] [INFO] [memory] Sovereign Cell online @ http://localhost:46391[0m
+[10:34:15 PM] [32m[21:34:15.614] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[10:34:15 PM] [32m[21:34:15.614] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[10:34:15 PM] [32m[21:34:15.614] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/memory/index.ts'
+[10:35:42 PM] Bun v1.3.1 (Linux x64)
+[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/memory/index.ts'
+[10:36:34 PM] Bun v1.3.1 (Linux x64)
+[10:36:50 PM] [memory] Key fingerprint: a99411c24cedf5bb
+[10:36:50 PM] [32m[21:36:50.169] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[10:36:50 PM] [32m[21:36:50.178] [INFO] [memory] Sovereign Cell online @ http://localhost:35981[0m
+[10:36:50 PM] [32m[21:36:50.181] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[10:36:50 PM] [32m[21:36:50.181] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[10:36:50 PM] [32m[21:36:50.181] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[10:36:50 PM] [32m[21:36:50.671] [INFO] [memory] 🌐 ~1 → 13p/60c[0m
+[10:36:50 PM] [32m[21:36:50.756] [INFO] [memory] 🌐 ~1 → 17p/67c[0m
+[10:36:50 PM] [32m[21:36:50.804] [INFO] [memory] 🌐 ~2 → 17p/67c[0m
+[10:36:50 PM] [32m[21:36:50.877] [INFO] [memory] 🌐 ~1 → 17p/67c[0m
+[10:37:05 PM] [32m[21:37:05.137] [INFO] [memory] 🌐 ~1 → 17p/67c[0m
+[10:37:05 PM] [32m[21:37:05.241] [INFO] [memory] 🌐 ~1 → 17p/67c[0m
+[10:39:02 PM] [memory] Key fingerprint: 5ef83ddbbb0c5d9b
+[10:39:02 PM] [32m[21:39:02.765] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[10:39:02 PM] [32m[21:39:02.789] [INFO] [memory] Sovereign Cell online @ http://localhost:36013[0m
+[10:39:02 PM] [32m[21:39:02.790] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[10:39:02 PM] [32m[21:39:02.790] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[10:39:02 PM] [32m[21:39:02.790] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
