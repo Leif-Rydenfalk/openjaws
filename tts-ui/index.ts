@@ -373,39 +373,98 @@ const UI_HTML = `
             addEntry('user', text);
             trigger.classList.add('thinking');
             icon.innerText = "💭";
-            mStatus.innerText = "Mesh Routing...";
-
-            const start = Date.now();
-            const session = await getSession();  // ← Get session
+            mStatus.innerText = "Connecting...";
+            
+            let buffer = ""; // Buffer for incomplete JSON lines
+            let receivedFinal = false;
 
             try {
-                const res = await fetch('/api/converse', {
+                const response = await fetch('/api/converse', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ 
                         text, 
                         voice: document.getElementById('voice-id').value,
-                        sessionId: session.sessionId,  // ← SEND SESSION
-                        userId: session.userId
+                        sessionId: sessionData.sessionId,
+                        userId: sessionData.userId
                     })
                 });
 
-                const data = await res.json();
-                
-                if (data.error) throw new Error(data.error);
-
-                lStatus.innerText = (Date.now() - start) + " MS";
-                addEntry('ai', data.text);
-
-                if (data.audio) {
-                    mStatus.innerText = "Speaking...";
-                    icon.innerText = "🔊";
-                    await playStream(data.audio);
+                if (!response.ok) {
+                    throw new Error("HTTP " + response.status + ": " + response.statusText);
                 }
 
+                if (!response.body) {
+                    throw new Error("No response body");
+                }
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                
+                while (true) {
+                    const { done, value } = await reader.read();
+                    
+                    // Decode chunk and add to buffer
+                    const chunk = decoder.decode(value, { stream: !done });
+                    buffer += chunk;
+                    
+                    // Process complete lines
+                    const lines = buffer.split('\n');
+                    // Keep the last incomplete line in buffer
+                    buffer = lines.pop() || "";
+                    
+                    for (const line of lines) {
+                        if (!line.trim()) continue;
+                        
+                        try {
+                            const data = JSON.parse(line);
+                            
+                            if (data.error) {
+                                throw new Error(data.error);
+                            }
+                            
+                            if (data.status === "processing") {
+                                mStatus.innerText = data.message || data.step;
+                            } 
+                            else if (data.ok) {
+                                // Final result - only process once
+                                if (receivedFinal) continue;
+                                receivedFinal = true;
+                                
+                                lStatus.innerText = (data.meta?.latency || "---") + " MS";
+                                addEntry('ai', data.text);
+                                
+                                if (data.audio) {
+                                    mStatus.innerText = "Speaking...";
+                                    icon.innerText = "🔊";
+                                    await playStream(data.audio);
+                                }
+                            }
+                        } catch (parseErr) {
+                            console.warn("Parse error:", line, parseErr);
+                        }
+                    }
+                    
+                    if (done) break;
+                }
+                
+                // Process any remaining data in buffer
+                if (buffer.trim() && !receivedFinal) {
+                    try {
+                        const data = JSON.parse(buffer);
+                        if (data.ok) {
+                            lStatus.innerText = (data.meta?.latency || "---") + " MS";
+                            addEntry('ai', data.text);
+                            if (data.audio) await playStream(data.audio);
+                        }
+                    } catch (e) {
+                        console.warn("Final buffer parse error:", e);
+                    }
+                }
+                
             } catch (e) {
-                console.error(e);
-                addEntry('sys', "Error: " + e.message);
+                console.error("Request failed:", e);
+                addEntry('sys', "Error: " + (e.message || "Request failed"));
             } finally {
                 trigger.classList.remove('thinking');
                 icon.innerText = "🎙️";
@@ -422,51 +481,56 @@ const UI_HTML = `
         }
 
         async function playStream(base64) {
-            // Convert base64 PCM to WAV
-            const pcmData = Uint8Array.from(atob(base64), c => c.charCodeAt(0));
-            const sampleRate = 24000;
-            
-            // Create WAV header (44 bytes)
-            const wavHeader = new ArrayBuffer(44);
-            const view = new DataView(wavHeader);
-            
-            // RIFF chunk descriptor
-            view.setUint32(0, 0x52494646, false); // "RIFF"
-            view.setUint32(4, 36 + pcmData.length, true);
-            view.setUint32(8, 0x57415645, false); // "WAVE"
-            
-            // fmt sub-chunk
-            view.setUint32(12, 0x666D7420, false); // "fmt "
-            view.setUint32(16, 16, true); // subchunk1Size
-            view.setUint16(20, 1, true); // audioFormat (PCM)
-            view.setUint16(22, 1, true); // numChannels (mono)
-            view.setUint32(24, sampleRate, true); // sampleRate
-            view.setUint32(28, sampleRate * 2, true); // byteRate
-            view.setUint16(32, 2, true); // blockAlign
-            view.setUint16(34, 16, true); // bitsPerSample
-            
-            // data sub-chunk
-            view.setUint32(36, 0x64617461, false); // "data"
-            view.setUint32(40, pcmData.length, true);
-            
-            // Combine header and PCM data
-            const wavBuffer = new Uint8Array(wavHeader.byteLength + pcmData.length);
-            wavBuffer.set(new Uint8Array(wavHeader), 0);
-            wavBuffer.set(pcmData, wavHeader.byteLength);
-            
-            // Decode and play
-            const audioBuffer = await aCtx.decodeAudioData(wavBuffer.buffer);
-            const source = aCtx.createBufferSource();
-            source.buffer = audioBuffer;
-            source.connect(analyser);
-            analyser.connect(aCtx.destination);
-            source.start(0);
-            
-            mStatus.innerText = "Playing...";
-            return new Promise(r => source.onended = () => {
-                mStatus.innerText = "Terminal Standby";
-                r();
-            });
+            try {
+                // Convert base64 PCM to WAV
+                const pcmData = Uint8Array.from(atob(base64), c => c.charCodeAt(0));
+                const sampleRate = 24000;
+                
+                // Create WAV header (44 bytes)
+                const wavHeader = new ArrayBuffer(44);
+                const view = new DataView(wavHeader);
+                
+                view.setUint32(0, 0x52494646, false); // "RIFF"
+                view.setUint32(4, 36 + pcmData.length, true);
+                view.setUint32(8, 0x57415645, false); // "WAVE"
+                view.setUint32(12, 0x666D7420, false); // "fmt "
+                view.setUint32(16, 16, true);
+                view.setUint16(20, 1, true); // PCM
+                view.setUint16(22, 1, true); // Mono
+                view.setUint32(24, sampleRate, true);
+                view.setUint32(28, sampleRate * 2, true);
+                view.setUint16(32, 2, true);
+                view.setUint16(34, 16, true);
+                view.setUint32(36, 0x64617461, false); // "data"
+                view.setUint32(40, pcmData.length, true);
+                
+                // Combine
+                const wavBuffer = new Uint8Array(wavHeader.byteLength + pcmData.length);
+                wavBuffer.set(new Uint8Array(wavHeader), 0);
+                wavBuffer.set(pcmData, wavHeader.byteLength);
+                
+                // Decode and play
+                const audioBuffer = await aCtx.decodeAudioData(wavBuffer.buffer);
+                const source = aCtx.createBufferSource();
+                source.buffer = audioBuffer;
+                source.connect(analyser);
+                analyser.connect(aCtx.destination);
+                source.start(0);
+                
+                mStatus.innerText = "Playing...";
+                
+                return new Promise(resolve => {
+                    source.onended = () => {
+                        mStatus.innerText = "Terminal Standby";
+                        resolve();
+                    };
+                });
+                
+            } catch (e) {
+                console.error("Audio playback failed:", e);
+                mStatus.innerText = "Audio Error";
+                throw e;
+            }
         }
 
         function drawSpectrum() {
@@ -642,78 +706,124 @@ Bun.serve({
             });
         }
 
-        // 3. API: Conversation Pipeline
+        // In the fetch handler, for /api/converse:
+        // API: Conversation Pipeline
         if (url.pathname === "/api/converse") {
             const startTime = Date.now();
+            const reqId = Math.random().toString(36).substring(7).toUpperCase();
 
-            try {
-                const body = await req.json();
-                const userText = body.text;
-                const voiceId = body.voice || "en-US-Achernar";
-                const sessionId = body.sessionId;
-                const userId = body.userId || "voice-term-01";
+            // Create streaming response
+            const stream = new TransformStream();
+            const writer = stream.writable.getWriter();
+            const encoder = new TextEncoder();
 
-                if (!sessionId) {
-                    return Response.json({
-                        error: "No session ID provided",
-                        code: "NO_SESSION"
-                    }, { status: 400 });
+            // Track writer state to prevent double-close
+            let writerClosed = false;
+            const safeWrite = (obj: any) => {
+                if (writerClosed) return;
+                try {
+                    const line = JSON.stringify(obj) + "\n";
+                    writer.write(encoder.encode(line));
+                } catch (e) {
+                    // Writer might be closed, ignore
                 }
+            };
+            const safeClose = () => {
+                if (writerClosed) return;
+                writerClosed = true;
+                writer.close().catch(() => { });
+            };
 
-                cell.log("INFO", `[${reqId}] 📥 VOICE_START: "${userText}" | Session: ${sessionId.substring(0, 16)}...`);
+            // Process request in background
+            (async () => {
+                try {
+                    const body = await req.json();
+                    const userText = body.text;  // <-- text is defined here
+                    const voiceId = body.voice || "en-US-Achernar";
+                    const sessionId = body.sessionId;
+                    const userId = body.userId || "voice-term-01";
 
-                // A. Route to [Kindly] Brain WITH session
-                const startKindly = Date.now();
-                sysAudit(reqId, `Relaying to [kindly] for logic processing...`);
+                    // MOVE THE LOG HERE - after parsing body.text
+                    cell.log("INFO", `[${reqId}] 📥 VOICE_START: "${userText.substring(0, 50)}..."`);
 
-                const chatRes = await cell.mesh.kindly.chat({
-                    message: userText,
-                    systemContext: {
-                        userId: userId,
-                        username: "Administrator",
-                        role: "admin",
-                        channel: "voice",
-                        sessionId: sessionId
+                    if (!userText) {
+                        safeWrite({ error: "No text provided", code: "NO_TEXT" });
+                        safeClose();
+                        return;
                     }
-                });
 
-                const kLatency = Date.now() - startKindly;
-                cell.log("INFO", `[${reqId}] 🧠 KINDLY_RESPONSE: Acquired in ${kLatency}ms`);
-
-                // B. Route to [TTS] Voice
-                const startTts = Date.now();
-                sysAudit(reqId, `Relaying to [tts] for native synthesis (${voiceId})...`);
-
-                const ttsRes = await cell.mesh.tts.synthesize({
-                    text: chatRes.reply,
-                    voice: voiceId
-                });
-
-                const tLatency = Date.now() - startTts;
-                cell.log("INFO", `[${reqId}] 🔊 TTS_RESPONSE: Synthesized in ${tLatency}ms using ${ttsRes.model}`);
-
-                const totalLatency = Date.now() - startTime;
-                cell.log("INFO", `[${reqId}] ✅ TRANSACTION_COMPLETE: Total Roundtrip ${totalLatency}ms`);
-
-                return Response.json({
-                    text: chatRes.reply,
-                    audio: ttsRes.audio,
-                    meta: {
-                        reqId,
-                        latency: totalLatency,
-                        brain: kLatency,
-                        voice: tLatency,
-                        model: ttsRes.model
+                    if (!sessionId) {
+                        safeWrite({ error: "No session ID provided", code: "NO_SESSION" });
+                        safeClose();
+                        return;
                     }
-                });
 
-            } catch (e: any) {
-                cell.log("ERROR", `[${reqId}] 🚨 MESH_ORCHESTRATION_FAILED: ${e.message}`);
-                return Response.json({
-                    error: "Mesh Pipeline Error: " + e.message,
-                    code: "SIGNAL_LOST"
-                }, { status: 500 });
-            }
+                    // Step 1: Kindly
+                    safeWrite({ status: "processing", step: "thinking", message: "AI analyzing..." });
+
+                    const chatRes = await cell.mesh.kindly.chat({
+                        message: userText,
+                        systemContext: {
+                            userId: userId,
+                            username: "Administrator",
+                            role: "admin",
+                            channel: "voice",
+                            sessionId: sessionId
+                        }
+                    });
+
+                    const kLatency = Date.now() - startTime;
+                    cell.log("INFO", `[${reqId}] 🧠 KINDLY_RESPONSE: ${kLatency}ms`);
+
+                    // Step 2: TTS
+                    safeWrite({ status: "processing", step: "speaking", message: "Synthesizing voice..." });
+
+                    const ttsRes = await cell.mesh.tts.synthesize({
+                        text: chatRes.reply,
+                        voice: voiceId
+                    });
+
+                    const tLatency = ttsRes.latency || (Date.now() - startTime - kLatency);
+                    const totalLatency = Date.now() - startTime;
+
+                    cell.log("INFO", `[${reqId}] 🔊 TTS_RESPONSE: ${tLatency}ms using ${ttsRes.model}`);
+
+                    // Send final result
+                    safeWrite({
+                        ok: true,
+                        text: chatRes.reply,
+                        audio: ttsRes.audio,
+                        mimeType: ttsRes.mimeType || "audio/pcm",
+                        meta: {
+                            reqId,
+                            latency: totalLatency,
+                            brain: kLatency,
+                            voice: tLatency,
+                            model: ttsRes.model
+                        }
+                    });
+
+                    cell.log("INFO", `[${reqId}] ✅ TRANSACTION_COMPLETE: ${totalLatency}ms`);
+
+                } catch (e: any) {
+                    cell.log("ERROR", `[${reqId}] 🚨 MESH_ORCHESTRATION_FAILED: ${e.message}`);
+                    safeWrite({
+                        error: e.message || "Pipeline failed",
+                        code: "PIPELINE_FAIL",
+                        reqId
+                    });
+                } finally {
+                    safeClose();
+                }
+            })();
+
+            return new Response(stream.readable, {
+                headers: {
+                    "Content-Type": "application/x-ndjson",
+                    "Cache-Control": "no-cache",
+                    "X-Request-ID": reqId
+                }
+            });
         }
 
         return new Response("Not Found", { status: 404 });

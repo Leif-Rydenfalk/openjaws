@@ -1,4 +1,5 @@
-// cdk.ts - The Sovereign Substrate for the Rheo Living Mesh
+// example1.ts - A example implementation of a Sovereign Living Mesh Substrate
+// This is not at all what a cell implementation has to look like - this is only a bad reference
 // Pattern: Narrative Transparent Substrate (NTS-1)
 const bunServe = (globalThis as any).Bun?.serve;
 import { createServer } from "node:http";
@@ -279,6 +280,12 @@ export class MeshError extends Error {
                 "Check if the Gemini/LLM API is responding slowly.",
                 "Consider increasing the rpc timeout in example1.ts"
             ],
+            "RPC_UNREACHABLE": [
+                "Target cell crashed or is unreachable",
+                "Network partition between cells",
+                "Target cell port not open or firewall blocking",
+                "Target cell is still starting up (check logs)"
+            ]
         };
 
         return causes[error.code] || [
@@ -318,7 +325,7 @@ export class MeshError extends Error {
 // protocols/narrative.ts - The Complete Signal Preservation Layer
 // No information loss. Ever.
 
-import type { Signal, TraceResult, TraceError, NarrativeStep } from "./example1";
+// import type { Signal, TraceResult, TraceError, NarrativeStep } from "./example1";
 
 /**
  * Immutable signal envelope that grows with each hop.
@@ -1238,6 +1245,12 @@ export class RheoCell {
 
         this.provide("cell/contract", (args: { cap: string }) => this.contracts.get(args.cap) || null);
 
+        // this.provide("mesh/health", () => ({
+        //     status: "healthy",
+        //     pid: process.pid,
+        //     uptime: Date.now() - this.startTime
+        // }));
+
         // // If seed provided, synchronously fetch atlas before returning
         // if (seed) {
         //     this.bootstrapFromSeed(seed);
@@ -1428,11 +1441,13 @@ export class RheoCell {
     }
 
     private cleanupGhostProcesses() {
-        if (!existsSync(this.manifestPath)) return;
-        try {
-            const m = JSON.parse(readFileSync(this.manifestPath, 'utf8'));
-            if (m.pid && m.pid !== process.pid) process.kill(m.pid, 'SIGKILL');
-        } catch (e) { }
+        if (process.env.RHEO_GHOST_CLEANUP === "true") {
+            if (!existsSync(this.manifestPath)) return;
+            try {
+                const m = JSON.parse(readFileSync(this.manifestPath, 'utf8'));
+                if (m.pid && m.pid !== process.pid) process.kill(m.pid, 'SIGKILL');
+            } catch (e) { }
+        };
     }
 
     private saveManifest() {
@@ -1479,7 +1494,16 @@ export class RheoCell {
             id: randomUUID(), from: this.id, intent: "ASK", payload: { capability, args },
             proofs, atlas: this.atlas, trace: [], _steps: []
         };
-        return this.route(signal);
+        const result = await this.route(signal);
+
+        // ADD THIS BLOCK at the end:
+        if (!result.ok && result.error) {
+            const meshErr = new MeshError(result.error, signal.id);
+            meshErr.printNarrative();  // <-- ADD HERE (optional, since route already logs)
+            // Or just: console.error(meshErr.message);
+        }
+
+        return result;
     }
 
     private requestQueue = new Map<string, Promise<TraceResult>>();
@@ -1568,16 +1592,22 @@ export class RheoCell {
                 }
             } catch (e: any) {
                 this.ledger.wrap(updatedSignal, myId, "HANDLER_EXCEPTION", { error: e.message });
+
+                // ADD THIS:
+                const richError: TraceError = {
+                    code: "HANDLER_ERR",
+                    msg: e.message,
+                    from: myId,
+                    trace: updatedSignal.trace,
+                    _envelope: this.ledger.entries.get(cid)
+                };
+                const meshErr = new MeshError(richError, cid);
+                meshErr.printNarrative();  // <-- ADD HERE
+
                 result = {
                     ok: false,
                     cid,
-                    error: {
-                        code: "HANDLER_ERR",
-                        msg: e.message,
-                        from: myId,
-                        trace: updatedSignal.trace,
-                        _envelope: this.ledger.entries.get(cid)
-                    }
+                    error: richError
                 };
             }
 
@@ -1702,18 +1732,23 @@ export class RheoCell {
             return this.forwardToPeer(signal, cap, cid);
         }
 
-        this.ledger.wrap(signal, myId, "P2P_NO_ROUTE", { capability: cap, atlasSize: Object.keys(this.atlas).length });
+        this.ledger.wrap(signal, myId, "P2P_NO_ROUTE", { capability: cap, atlasSize: Object.keys(this.atlas).size });
+
+        // ADD THIS:
+        const richError: TraceError = {
+            code: "NOT_FOUND",
+            msg: `No route to ${cap} after exhaustive search (Providers: ${providers.length})`,
+            from: myId,
+            trace: signal.trace || [],
+            _envelope: this.ledger.entries.get(cid)
+        };
+        const meshErr = new MeshError(richError, cid);
+        meshErr.printNarrative();  // <-- ADD HERE
 
         return {
             ok: false,
             cid,
-            error: {
-                code: "NOT_FOUND",
-                msg: `No route to ${cap} after exhaustive search (Providers: ${providers.length})`,
-                from: myId,
-                trace: signal.trace || [],
-                _envelope: this.ledger.entries.get(cid)
-            }
+            error: richError
         };
     }
 
@@ -1848,16 +1883,19 @@ export class RheoCell {
                 duration,
                 ...errorDetails
             });
-
-            // CRITICAL FIX: Include envelope in error
             const richError: TraceError = {
                 code: errorCode,
                 msg: `${errorCode}: ${e.message}`,
                 details: errorDetails,
                 from: addr,
                 trace: signal.trace || [],
-                history: envelope?.ancestry.map((a: any) => a.signalSnapshot?._steps || []).flat() || [], // Extract steps from ledger
-                _envelope: envelope // <-- THIS IS THE KEY FIX
+                history: envelope?.ancestry?.map((a: any) => ({
+                    cell: a.cellId,
+                    timestamp: a.timestamp,
+                    action: a.action,
+                    data: a.signalSnapshot?._steps?.[0]?.data
+                })).flat() || [],
+                _envelope: envelope
             };
 
             // Use MeshError for consistent formatting (optional but recommended)
@@ -1887,435 +1925,6 @@ export class RheoCell {
         }
     }
 
-
-    // private requestQueue = new Map<string, Promise<TraceResult>>();
-    // private maxConcurrent = 50;
-
-    // /**
-    //  * The Logic Engine of the Cell.
-    //  * Responsibility: Deduplication, Loop Prevention, Narrative Tracking, and Execution.
-    //  */
-    // private async route(signal: Signal): Promise<TraceResult> {
-    //     while (this.activeExecutions.size >= this.maxConcurrent) {
-    //         await new Promise(r => setTimeout(r, 10));
-    //     }
-
-    //     const cid = signal.id;
-    //     const myId = this.id;
-    //     const cap = signal.payload.capability;
-
-    //     // CLIENT MODE: Can forward but not handle unless explicitly provided
-    //     if (!this.addr && this.mode === 'server' && this.handlers[cap]) {
-    //         return { ok: false, cid, error: { code: "NOT_READY", msg: "Cell has no address - cannot handle local capabilities", from: myId, trace: [] } };
-    //     }
-
-    //     // --- 1. RESULT CACHE (Idempotency) ---
-    //     // If we already finished this work recently, return the exact same result.
-    //     if (this.resultCache.has(cid)) {
-    //         return this.resultCache.get(cid)!.result;
-    //     }
-
-    //     // --- 2. REQUEST JOINING (Deduplication) ---
-    //     // If we are currently working on this ID, don't start a new execution.
-    //     // Return the Promise of the one already running.
-    //     if (this.activeExecutions.has(cid)) {
-    //         // this.log("DEBUG", `🪢  Joining existing execution for signal ${cid.substring(0,8)}`);
-    //         return this.activeExecutions.get(cid)!;
-    //     }
-
-    //     // --- 3. LOOP PREVENTION ---
-    //     const visitedIds = signal._visitedCellIds || [];
-    //     if (visitedIds.includes(myId)) {
-    //         return { ok: false, cid, error: { code: "LOOP", msg: "Loop detected", from: myId, trace: signal.trace } };
-    //     }
-
-    //     // --- 4. EXECUTION WRAPPER ---
-    //     // We create a promise that represents the work.
-    //     const executionPromise = (async (): Promise<TraceResult> => {
-    //         visitedIds.push(myId);
-
-    //         if (!this.journal[cid]) this.journal[cid] = (signal._steps || []).slice(-20);
-    //         this.addStep(cid, "RECEIVED_SIGNAL", { capability: cap });
-    //         if (cap !== 'mesh/gossip' && cap !== 'cell/contract') {
-    //             if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") if (cap !== "mesh/gossip" && cap !== "cell/contract") this.log("INFO", `📥 SIGNAL_ARRIVED: [${cap}] from [${signal.from}]`, cid);
-    //         }
-
-    //         const updatedSignal: Signal = {
-    //             ...signal,
-    //             _visitedCellIds: visitedIds,
-    //             _visitedAddr: [...(signal._visitedAddr || []), this.addr],
-    //             trace: [...(signal.trace || []), `${myId}:${Date.now()}`],
-    //             atlas: { ...this.atlas, ...(signal.atlas || {}) },
-    //             _steps: this.journal[cid],
-    //             _hops: (signal._hops || 0) + 1
-    //         };
-
-    //         let result: TraceResult;
-    //         const startTime = performance.now();
-
-    //         try {
-    //             if (this.handlers[cap]) {
-    //                 this.addStep(cid, "LOCAL_HANDLER", { capability: cap });
-    //                 const val = await this.handlers[cap](updatedSignal.payload.args, updatedSignal);
-    //                 result = { ok: true, value: val, cid };
-    //             } else {
-    //                 result = await this.forwardToPeer(updatedSignal, cap, cid);
-    //             }
-    //         } catch (e: any) {
-    //             result = { ok: false, cid, error: { code: "HANDLER_ERR", msg: e.message, from: myId, trace: updatedSignal.trace, history: this.journal[cid] } };
-    //         }
-
-    //         this.updateMetrics(performance.now() - startTime, !result.ok);
-
-    //         // Move from "Active" to "Recent Cache"
-    //         this.resultCache.set(cid, { result, time: Date.now() });
-    //         this.activeExecutions.delete(cid);
-    //         return result;
-    //     })();
-
-    //     // Register the promise so other redundant paths can join it.
-    //     this.activeExecutions.set(cid, executionPromise);
-
-    //     // Cleanup Cache periodically
-    //     if (this.resultCache.size > 1000) {
-    //         const now = Date.now();
-    //         for (const [id, entry] of this.resultCache) {
-    //             if (now - entry.time > 10000) this.resultCache.delete(id);
-    //         }
-    //     }
-
-    //     return executionPromise;
-    // }
-
-    // /**
-    //  * The P2P Strategy Engine.
-    //  * Logic Flow: 
-    //  * 1. Attempt the known primary provider.
-    //  * 2. If primary is busy/duplicate, accept that as delivery.
-    //  * 3. If primary fails, cycle through failover providers.
-    //  * 4. If all known providers fail, flood to random neighbors.
-    //  * 5. As a last resort, hit the seed (bootstrap) node.
-    //  */
-    // private async forwardToPeer(signal: Signal, cap: string, cid: string): Promise<TraceResult> {
-    //     const myAddr = this.addr;
-    //     const myId = this.id;
-    //     const visitedIds = signal._visitedCellIds || [];
-    //     const visitedAddr = signal._visitedAddr || [];
-
-    //     // --- 1. PROVIDER IDENTIFICATION ---
-    //     // Filter the Atlas for cells providing this capability.
-    //     // We exclude: ourselves, cells we've already visited, and duplicate addresses.
-    //     const seenAddrs = new Set<string>();
-
-    //     const providers = Object.entries(this.atlas)
-    //         .filter(([key, e]) => {
-    //             const entryId = e.id || key;
-    //             const hasCap = e.caps.includes(cap);
-    //             const isSelf = entryId === myId || e.addr === myAddr;
-    //             const isVisited = visitedIds.includes(entryId);
-    //             const isDuplicateAddr = seenAddrs.has(e.addr);
-    //             const isClientOnly = e.addr.startsWith('client://'); // NEW: Skip client cells for capability routing
-
-    //             if (hasCap && !isSelf && !isVisited && !isDuplicateAddr && !isClientOnly) {
-    //                 seenAddrs.add(e.addr);
-    //                 return true;
-    //             }
-    //             return false;
-    //         })
-    //         .map(([_, e]) => e);
-
-    //     // --- 2. PRIMARY & FAILOVER ROUTING ---
-    //     if (providers.length > 0) {
-    //         // We iterate through available providers until one accepts or reports busy.
-    //         for (let i = 0; i < Math.min(providers.length, 4); i++) {
-    //             const target = providers[i];
-    //             this.addStep(cid, i === 0 ? "P2P_ROUTE_ATTEMPT" : "P2P_FAILOVER_ATTEMPT", {
-    //                 target: target.addr,
-    //                 attempt: i + 1
-    //             });
-
-    //             const result = await this.rpc(target.addr, signal);
-
-    //             // --- THE HANDOFF FIX ---
-    //             // result.ok is standard success.
-    //             // DUPLICATE_SIGNAL/ARRIVAL means the signal reached its destination 
-    //             // via a different path already. This is a mesh SUCCESS.
-    //             const isDelivered = result.ok ||
-    //                 result.error?.code === "DUPLICATE_SIGNAL" ||
-    //                 result.error?.code === "DUPLICATE_ARRIVAL";
-
-    //             if (isDelivered) {
-    //                 this.addStep(cid, "P2P_ROUTE_SUCCESS", {
-    //                     via: target.addr,
-    //                     status: result.ok ? "OK" : "ALREADY_PROCESSING"
-    //                 });
-    //                 return result;
-    //             }
-
-    //             // If the error was a loop or something unrecoverable, we stop this branch immediately.
-    //             if (result.error?.code === "ROUTING_LOOP_PREVENTED") return result;
-    //         }
-    //     }
-
-    //     // --- 3. BOUNDED FLOODING ---
-    //     // If we found no providers or all providers were unreachable, 
-    //     // we "Flood" the signal to 3 random neighbors who might have a fresher Atlas.
-    //     const neighbors = Object.values(this.atlas)
-    //         .filter(e => e.addr !== myAddr && !visitedIds.includes(e.id || '') && !providers.includes(e))
-    //         .sort(() => 0.5 - Math.random())
-    //         .slice(0, 3);
-
-    //     if (neighbors.length > 0) {
-    //         this.addStep(cid, "P2P_FLOOD_START", { neighborCount: neighbors.length });
-
-    //         // We fire these off in parallel (Promise.allSettled) for maximum throughput.
-    //         const floodResults = await Promise.allSettled(
-    //             neighbors.map(n => this.rpc(n.addr, signal))
-    //         );
-
-    //         for (let i = 0; i < floodResults.length; i++) {
-    //             const res = floodResults[i];
-    //             // Check if any flood path resulted in a successful handoff.
-    //             if (res.status === 'fulfilled') {
-    //                 const val = res.value;
-    //                 if (val.ok || val.error?.code === "DUPLICATE_SIGNAL" || val.error?.code === "DUPLICATE_ARRIVAL") {
-    //                     this.addStep(cid, "P2P_FLOOD_SUCCESS", { via: neighbors[i].addr });
-    //                     return val;
-    //                 }
-    //             }
-    //         }
-
-    //         this.addStep(cid, "P2P_FLOOD_FAILED", { attempts: neighbors.length });
-    //     }
-
-    //     // --- 4. SEED BOOTSTRAP (LAST RESORT) ---
-    //     // If the seed is defined and we haven't visited it yet, try it as a last hope.
-    //     if (this.seed && !visitedAddr.includes(this.seed)) {
-    //         this.addStep(cid, "P2P_SEED_ATTEMPT", { seed: this.seed });
-    //         const seedResult = await this.rpc(this.seed, signal);
-
-    //         if (seedResult.ok || seedResult.error?.code === "DUPLICATE_SIGNAL" || seedResult.error?.code === "DUPLICATE_ARRIVAL") {
-    //             return seedResult;
-    //         }
-    //     }
-
-    //     // --- 5. EXHAUSTIVE FAILURE ---
-
-    //     // FAIL-SAFE: If we are about to fail, check the disk one last time.
-    //     // This fixes the startup race condition where we started before the target existed.
-    //     if (!signal._registryScanned) { // Prevent infinite loops
-
-    //         // Force a full read of the registry directory
-    //         await this.bootstrapFromRegistry(true);
-
-    //         signal._registryScanned = true;
-
-    //         // Try routing again with the fresh data
-    //         return this.forwardToPeer(signal, cap, cid);
-    //     }
-
-    //     // Original Failure Logic
-    //     this.addStep(cid, "P2P_NO_ROUTE", { capability: cap, atlasSize: Object.keys(this.atlas).length });
-
-    //     return {
-    //         ok: false,
-    //         cid,
-    //         error: {
-    //             code: "NOT_FOUND",
-    //             msg: `No route to ${cap} after exhaustive search (Providers: ${providers.length}, Neighbors: ${neighbors.length})`,
-    //             from: myId,
-    //             trace: signal.trace || [],
-    //             history: this.journal[cid]
-    //         }
-    //     };
-    // }
-
-    // private failedAddresses = new Map<string, { count: number, lastFail: number }>();
-
-    // public async rpc(addr: string, signal: Signal): Promise<TraceResult> {
-    //     const failure = this.failedAddresses.get(addr);
-    //     if (failure && failure.count > 3 && Date.now() - failure.lastFail < 30000) {
-    //         return {
-    //             ok: false, cid: signal.id, error: {
-    //                 code: "CIRCUIT_OPEN",
-    //                 msg: "Circuit breaker open",
-    //                 from: addr,
-    //                 trace: []
-    //             }
-    //         };
-    //     }
-
-    //     const cid = signal.id;
-    //     const startTime = performance.now();
-
-    //     if (signal.payload.capability !== 'mesh/gossip' && signal.payload.capability !== 'cell/contract') {
-    //         if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") if (signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") this.log("INFO", `📡 RPC_OUT: [${signal.payload.capability}] -> ${addr}`, cid);
-    //     }
-    //     this.addStep(cid, "RPC_ATTEMPT", {
-    //         target: addr,
-    //         capability: signal.payload.capability,
-    //         payloadSize: JSON.stringify(signal.payload).length
-    //     });
-
-    //     try {
-    //         const res = await fetch(addr, {
-    //             method: "POST",
-    //             body: JSON.stringify(signal),
-    //             headers: { "Content-Type": "application/json" },
-    //             signal: AbortSignal.timeout(600000) // 600 second timeout on requests - 10 minutes
-    //         });
-
-    //         const duration = performance.now() - startTime;
-
-    //         if (!res.ok) {
-    //             const body = await res.text().catch(() => 'unreadable');
-    //             this.addStep(cid, "RPC_HTTP_ERROR", {
-    //                 status: res.status,
-    //                 statusText: res.statusText,
-    //                 body: body.substring(0, 200),
-    //                 duration
-    //             });
-
-    //             return {
-    //                 ok: false,
-    //                 cid,
-    //                 error: {
-    //                     code: "RPC_HTTP_ERR",
-    //                     msg: `HTTP ${res.status} ${res.statusText} from ${addr}`,
-    //                     details: {
-    //                         httpStatus: res.status,
-    //                         responseBody: body.substring(0, 500),
-    //                         targetAddress: addr,
-    //                         duration: Math.round(duration)
-    //                     },
-    //                     from: addr,
-    //                     trace: signal.trace,
-    //                     history: this.journal[cid]
-    //                 }
-    //             };
-    //         }
-
-    //         const data = await res.json();
-
-    //         if (data.atlas) this.mergeAtlas(data.atlas);
-
-    //         const r = data.result || data;
-
-    //         // CRITICAL: Merge remote narrative if failure occurred
-    //         if (!r.ok && r.error?.history) {
-    //             // Merge remote history into local journal for full context
-    //             const remoteHistory = r.error.history;
-    //             if (!this.journal[cid]) this.journal[cid] = [];
-
-    //             // Add remote steps that we don't have yet (avoiding duplicates)
-    //             const localTimestamps = new Set(this.journal[cid].map((s: NarrativeStep) => s.timestamp));
-    //             for (const remoteStep of remoteHistory) {
-    //                 if (!localTimestamps.has(remoteStep.timestamp)) {
-    //                     this.journal[cid].push(remoteStep);
-    //                 }
-    //             }
-
-    //             // Log the merged narrative
-    //             this.log("WARN",
-    //                 `📥 Merged ${remoteHistory.length} remote narrative steps from failing cell\n` +
-    //                 `  Remote error: ${r.error.code} - ${r.error.msg}\n` +
-    //                 `  From cell: ${r.error.from}`,
-    //                 cid
-    //             );
-    //         }
-
-    //         if (r.ok && signal.payload.capability !== "mesh/gossip" && signal.payload.capability !== "cell/contract") {
-    //             this.log("INFO", "✅ RPC_SUCCESS: [" + signal.payload.capability + "] from " + addr, cid);
-    //         } else if (!r.ok) {
-    //             // Enhanced error logging with full context
-    //             const err = r.error as TraceError;
-    //             this.log('ERROR',
-    //                 `❌ RPC_REMOTE_FAIL: [${signal.payload.capability}] @ ${addr}\n` +
-    //                 `  Error Code: ${err?.code}\n` +
-    //                 `  Error Message: ${err?.msg}\n` +
-    //                 `  From Cell: ${err?.from}\n` +
-    //                 `  Details: ${JSON.stringify(err?.details, null, 2)}\n` +
-    //                 `  Full Trace: ${err?.trace?.join(' -> ')}\n` +
-    //                 `  Narrative History (${err?.history?.length || 0} steps):`,
-    //                 cid
-    //             );
-
-    //             // Also dump full narrative to stderr for debugging
-    //             if (err?.history && err.history.length > 0) {
-    //                 console.error(`\n=== FULL NARRATIVE FOR ${cid} ===`);
-    //                 for (const step of err.history) {
-    //                     const time = new Date(step.timestamp).toISOString().split('T')[1].replace('Z', '');
-    //                     const dataStr = step.data ? JSON.stringify(step.data).substring(0, 100) : '';
-    //                     console.error(`[${time}] ${step.cell.padEnd(20)} | ${step.action.padEnd(25)} | ${dataStr}`);
-    //                 }
-    //                 console.error(`=== END NARRATIVE ===\n`);
-    //             }
-    //         }
-
-    //         return r;
-    //     } catch (e: any) {
-    //         const duration = performance.now() - startTime;
-
-    //         // Categorize network errors
-    //         let errorCode = "RPC_FAIL";
-    //         let errorDetails: any = {
-    //             targetAddress: addr,
-    //             duration: Math.round(duration),
-    //             errorType: e.constructor?.name || 'Unknown'
-    //         };
-
-    //         if (e.name === 'AbortError' || e.message?.includes('timeout')) {
-    //             errorCode = "RPC_TIMEOUT";
-    //             errorDetails.reason = "Request timed out";
-    //         } else if (e.message?.includes('ECONNREFUSED') || e.message?.includes('fetch failed') || e.message?.includes('Connection refused')) {
-    //             errorCode = "RPC_UNREACHABLE";
-    //             errorDetails.reason = "Target offline";
-    //             // Prune dead peer
-    //             const targetId = signal.trace.length > 0 ? signal.trace[signal.trace.length - 1].split(':')[0] : 'unknown';
-    //             this.pruneDeadPeer(targetId);
-    //         } else if (e.message?.includes('JSON')) {
-    //             errorCode = "RPC_PARSE_ERR";
-    //             errorDetails.reason = "Invalid JSON response";
-    //         }
-
-    //         this.addStep(cid, errorCode, {
-    //             error: e.message,
-    //             duration,
-    //             ...errorDetails
-    //         });
-
-    //         // CRITICAL: Build rich error with full context
-    //         const richError: TraceError = {
-    //             code: errorCode,
-    //             msg: `${errorCode}: ${e.message}`,
-    //             details: errorDetails,
-    //             from: addr,
-    //             trace: signal.trace || [],
-    //             history: this.journal[cid] || []
-    //         };
-
-    //         // Log the FULL error locally with narrative
-    //         this.log("ERROR",
-    //             `💥 RPC FAILURE [${errorCode}]\n` +
-    //             `  Target: ${addr}\n` +
-    //             `  Capability: ${signal.payload.capability}\n` +
-    //             `  Message: ${e.message}\n` +
-    //             `  Duration: ${Math.round(duration)}ms\n` +
-    //             `  Narrative (${richError.history.length} steps):\n` +
-    //             richError.history.slice(-5).map((s: NarrativeStep) =>
-    //                 `    [${new Date(s.timestamp).toISOString().split('T')[1].replace('Z', '')}] ${s.cell}: ${s.action}`
-    //             ).join('\n'),
-    //             cid
-    //         );
-
-    //         return {
-    //             ok: false,
-    //             cid,
-    //             error: richError
-    //         };
-    //     }
-
-    // }
 
     /**
  * Create a pipeline that auto-updates when mesh topology changes.
@@ -3002,3 +2611,868 @@ export function createContract<I extends TypeDef<any>, O extends TypeDef<any>>(
         transport: { protocol: "INTERNAL", adapters: [] }
     };
 }
+
+
+// ------ Typed mesh stuff
+
+// protocols/example2.ts - Type-Safe Router Protocol for RheoMesh
+// Inspired by tRPC but adapted for distributed mesh architecture
+
+// import { RheoCell as BaseCell } from "./example1";
+// import type { TraceResult, Signal } from "./example1";
+
+// ============================================================================
+// TYPE UTILITIES
+// ============================================================================
+
+/**
+ * Extracts the input type from a procedure
+ */
+export type InferInput<T> = T extends Procedure<infer I, unknown> ? I : never;
+
+/**
+ * Extracts the output type from a procedure
+ */
+export type InferOutput<T> = T extends Procedure<unknown, infer O> ? O : never;
+
+/**
+ * Converts a procedure to its client-callable interface
+ */
+type InferProcedure<T> =
+    T extends Procedure<infer I, infer O>
+    ? I extends void
+    ? { query: () => Promise<O>; mutate: () => Promise<O> }
+    : { query: (input: I) => Promise<O>; mutate: (input: I) => Promise<O> }
+    : T extends Router<infer P>
+    ? { [K in keyof P]: InferProcedure<P[K]> }
+    : never;
+
+/**
+ * Converts a router definition to a client-callable interface
+ */
+export type InferRouter<T> = T extends Router<infer TProcedures>
+    ? { [K in keyof TProcedures]: InferProcedure<TProcedures[K]> }
+    : never;
+
+// ============================================================================
+// SCHEMA SYSTEM (Runtime validation + Type inference)
+// ============================================================================
+
+export interface Schema<T> {
+    _type?: T;
+    _def?: any;
+    parse: (value: unknown) => T;
+    _isOptional?: boolean;
+    optional: () => Schema<T | undefined>;
+}
+
+// Interfaces for chainable methods
+export interface ZodString extends Schema<string> {
+    min: (length: number, message?: string) => ZodString;
+    max: (length: number, message?: string) => ZodString;
+}
+
+export interface ZodNumber extends Schema<number> {
+    min: (value: number, message?: string) => ZodNumber;
+    max: (value: number, message?: string) => ZodNumber;
+}
+
+// Helper to attach common methods
+const createSchema = <T>(base: Omit<Schema<T>, 'optional'>): Schema<T> => {
+    const s = base as Schema<T>;
+    s.optional = () => z.optional(s);
+    return s;
+};
+
+export const z = {
+    string: (): ZodString => {
+        const base = createSchema<string>({
+            _def: { typeName: "ZodString" },
+            parse: (val) => {
+                if (typeof val !== 'string') throw new Error('Expected string');
+                return val;
+            }
+        }) as ZodString;
+
+        // Add chainable string methods
+        base.min = (length: number, msg?: string) => {
+            const prevParse = base.parse;
+            base.parse = (val: unknown) => {
+                const res = prevParse(val);
+                if (res.length < length) throw new Error(msg || `String must be at least ${length} characters`);
+                return res;
+            };
+            return base;
+        };
+
+        base.max = (length: number, msg?: string) => {
+            const prevParse = base.parse;
+            base.parse = (val: unknown) => {
+                const res = prevParse(val);
+                if (res.length > length) throw new Error(msg || `String must be at most ${length} characters`);
+                return res;
+            };
+            return base;
+        };
+
+        return base;
+    },
+
+    number: (): ZodNumber => {
+        const base = createSchema<number>({
+            _def: { typeName: "ZodNumber" },
+            parse: (val) => {
+                if (typeof val !== 'number') throw new Error('Expected number');
+                return val;
+            }
+        }) as ZodNumber;
+
+        // Add chainable number methods
+        base.min = (value: number, msg?: string) => {
+            const prevParse = base.parse;
+            base.parse = (val: unknown) => {
+                const res = prevParse(val);
+                if (res < value) throw new Error(msg || `Number must be >= ${value}`);
+                return res;
+            };
+            return base;
+        };
+
+        base.max = (value: number, msg?: string) => {
+            const prevParse = base.parse;
+            base.parse = (val: unknown) => {
+                const res = prevParse(val);
+                if (res > value) throw new Error(msg || `Number must be <= ${value}`);
+                return res;
+            };
+            return base;
+        };
+
+        return base;
+    },
+
+    boolean: () => createSchema<boolean>({
+        _def: { typeName: "ZodBoolean" },
+        parse: (val) => {
+            if (typeof val !== 'boolean') throw new Error('Expected boolean');
+            return val;
+        }
+    }),
+
+    enum: <T extends string>(values: readonly T[]) => createSchema<T>({
+        _def: { typeName: "ZodEnum", values },
+        parse: (val) => {
+            if (!values.includes(val as T)) {
+                throw new Error(`Expected one of: ${values.join(', ')}`);
+            }
+            return val as T;
+        }
+    }),
+
+    object: <T extends Record<string, Schema<unknown>>>(
+        shape: T
+    ) => createSchema<{ [K in keyof T]: T[K] extends Schema<infer U> ? U : never }>({
+        _def: {
+            typeName: "ZodObject",
+            shape: () => shape
+        },
+        parse: (val) => {
+            if (typeof val !== 'object' || val === null) throw new Error('Expected object');
+            const result: any = {};
+            for (const [key, schema] of Object.entries(shape)) {
+                const fieldValue = (val as any)[key];
+                if (fieldValue === undefined && !schema._isOptional) {
+                    throw new Error(`Missing required field: ${key}`);
+                }
+                if (fieldValue !== undefined) {
+                    result[key] = schema.parse(fieldValue);
+                }
+            }
+            return result;
+        }
+    }),
+
+    array: <T>(item: Schema<T>) => createSchema<T[]>({
+        _def: { typeName: "ZodArray", type: item },
+        parse: (val) => {
+            if (!Array.isArray(val)) throw new Error('Expected array');
+            return val.map(v => item.parse(v));
+        }
+    }),
+
+    record: <T>(valueSchema: Schema<T>) => createSchema<Record<string, T>>({
+        _def: { typeName: "ZodRecord", valueType: valueSchema },
+        parse: (val) => {
+            if (typeof val !== 'object' || val === null || Array.isArray(val)) {
+                throw new Error('Expected object map');
+            }
+            const result: Record<string, T> = {};
+            for (const [key, value] of Object.entries(val)) {
+                result[key] = valueSchema.parse(value);
+            }
+            return result;
+        }
+    }),
+
+    optional: <T>(schema: Schema<T>): Schema<T | undefined> => {
+        const s = {
+            _def: { typeName: "ZodOptional", innerType: schema },
+            parse: (val: any) => (val === undefined ? undefined : schema.parse(val)),
+            _isOptional: true,
+        } as Schema<T | undefined>;
+        s.optional = () => s;
+        return s;
+    },
+
+    void: () => createSchema<void>({
+        _def: { typeName: "ZodVoid" },
+        parse: () => undefined
+    }),
+
+    any: () => createSchema<any>({
+        _def: { typeName: "ZodAny" },
+        parse: (val) => val
+    })
+};
+
+// ============================================================================
+// PROCEDURE BUILDER
+// ============================================================================
+
+export interface ProcedureMeta {
+    description?: string;
+    example?: any;
+}
+
+export class Procedure<TInput = void, TOutput = unknown> {
+    public readonly _def: {
+        input?: Schema<TInput>;
+        output?: Schema<TOutput>;
+        meta?: ProcedureMeta;
+        type: 'query' | 'mutation';
+        handler: (input: TInput, ctx: Signal) => Promise<TOutput>;
+    };
+
+    constructor(
+        type: 'query' | 'mutation',
+        input: Schema<TInput> | undefined,
+        output: Schema<TOutput> | undefined,
+        handler: (input: TInput, ctx: Signal) => Promise<TOutput>,
+        meta?: ProcedureMeta
+    ) {
+        this._def = { type, input, output, handler, meta };
+    }
+}
+
+class ProcedureBuilder<TInput, TOutput> {
+    constructor(
+        private _input?: Schema<TInput>,
+        private _output?: Schema<TOutput>,
+        private _meta?: ProcedureMeta
+    ) { }
+
+    /**
+     * Add metadata/documentation to the procedure.
+     * Can be called multiple times; properties are merged.
+     */
+    meta(meta: ProcedureMeta): ProcedureBuilder<TInput, TOutput> {
+        return new ProcedureBuilder(
+            this._input,
+            this._output,
+            { ...this._meta, ...meta }
+        );
+    }
+
+    /**
+     * Define the input schema (validation)
+     */
+    input<TNewInput>(schema: Schema<TNewInput>): ProcedureBuilder<TNewInput, TOutput> {
+        return new ProcedureBuilder<TNewInput, TOutput>(
+            schema,
+            this._output,
+            this._meta
+        );
+    }
+
+    /**
+     * Define the output schema (validation)
+     */
+    output<TNewOutput>(schema: Schema<TNewOutput>): ProcedureBuilder<TInput, TNewOutput> {
+        return new ProcedureBuilder<TInput, TNewOutput>(
+            this._input,
+            schema,
+            this._meta
+        );
+    }
+
+    /**
+     * Define a Query (read-only) operation
+     */
+    query(handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> {
+        return new Procedure(
+            'query',
+            this._input,
+            this._output,
+            handler,
+            this._meta
+        );
+    }
+
+    /**
+     * Define a Mutation (write) operation
+     */
+    mutation(handler: (input: TInput, ctx: Signal) => Promise<TOutput>): Procedure<TInput, TOutput> {
+        return new Procedure(
+            'mutation',
+            this._input,
+            this._output,
+            handler,
+            this._meta
+        );
+    }
+}
+
+/**
+ * Procedure builder - start here to create endpoints
+ */
+export const procedure = new ProcedureBuilder<void, unknown>();
+
+// ============================================================================
+// ROUTER
+// ============================================================================
+
+export type AnyProcedure = Procedure<unknown, unknown>;
+export type AnyRouter = Router<Record<string, AnyProcedure | AnyRouter>>;
+
+export class Router<TProcedures extends Record<string, AnyProcedure | AnyRouter>> {
+    public readonly _def: {
+        procedures: TProcedures;
+    };
+
+    constructor(procedures: TProcedures) {
+        this._def = { procedures };
+    }
+
+    /**
+     * Get all capability paths this router provides
+     */
+    getCapabilities(prefix = ''): string[] {
+        const caps: string[] = [];
+
+        for (const [key, proc] of Object.entries(this._def.procedures)) {
+            const path = prefix ? `${prefix}/${key}` : key;
+
+            if (proc instanceof Router) {
+                caps.push(...proc.getCapabilities(path));
+            } else {
+                caps.push(path);
+            }
+        }
+
+        return caps;
+    }
+
+    /**
+     * Find a procedure by its capability path
+     */
+    findProcedure(capability: string): AnyProcedure | null {
+        const parts = capability.split('/');
+        let current: AnyProcedure | AnyRouter | undefined = undefined;
+        let currentProcs: Record<string, AnyProcedure | AnyRouter> = this._def.procedures;
+
+        for (const part of parts) {
+            current = currentProcs[part];
+            if (!current) return null;
+
+            if (current instanceof Router) {
+                currentProcs = current._def.procedures;
+            }
+        }
+
+        return current instanceof Procedure ? current : null;
+    }
+
+    /**
+     * Get contract information for a capability
+     * Returns the actual zod schemas that can be introspected
+     */
+    getContract(capability: string): { input?: any; output?: any; meta?: ProcedureMeta } | null {
+        const proc = this.findProcedure(capability);
+        if (!proc) return null;
+
+        return {
+            input: proc._def.input,
+            output: proc._def.output,
+            meta: proc._def.meta // <--- ADDED
+        };
+    }
+
+    /**
+     * Get all contracts from this router
+     */
+    getAllContracts(): Record<string, { input?: any; output?: any }> {
+        const contracts: Record<string, { input?: any; output?: any }> = {};
+        for (const cap of this.getCapabilities()) {
+            const contract = this.getContract(cap);
+            if (contract) contracts[cap] = contract;
+        }
+        return contracts;
+    }
+}
+
+/**
+ * Create a router
+ */
+export function router<T extends Record<string, AnyProcedure | AnyRouter>>(
+    procedures: T
+): Router<T> {
+    return new Router(procedures);
+}
+
+// ============================================================================
+// ENHANCED RHEO CELL WITH ROUTER SUPPORT
+// ============================================================================
+
+export class RheoCell extends BaseCell {
+    private _router: AnyRouter | null = null;
+
+    /**
+     * Attach a typed router to this cell
+     */
+    useRouter<T extends AnyRouter>(router: T): void {
+        this._router = router;
+
+        // Register all capabilities from the router
+        const capabilities = router.getCapabilities();
+
+        for (const cap of capabilities) {
+            this.provide(cap, async (args: unknown, ctx: Signal) => {
+                const proc = router.findProcedure(cap);
+
+                if (!proc) {
+                    throw new Error(`Procedure not found: ${cap}`);
+                }
+
+                // Validate input if schema exists
+                let validatedInput = args;
+                if (proc._def.input) {
+                    try {
+                        validatedInput = proc._def.input.parse(args);
+                    } catch (e: unknown) {
+                        const error = e as Error;
+                        throw new Error(`Input validation failed for ${cap}: ${error.message}`);
+                    }
+                }
+
+                // Execute handler
+                const start = Date.now();
+                this.log('INFO', `⚙️  EXEC_START: [${cap}]`);
+                const result = await proc._def.handler(validatedInput, ctx);
+                this.log('INFO', `⚙️  EXEC_END: [${cap}] (${Date.now() - start}ms)`);
+                return result;
+            });
+        }
+
+        // ✅ AUTO-REGISTER CONTRACT ENDPOINT
+        // This makes the schemas available to codegen
+        this.provide("cell/contract", ({ cap }: { cap: string }) => {
+            return router.getContract(cap) || null;
+        });
+    }
+
+    /**
+     * Get the router if attached
+     */
+    getRouter(): AnyRouter | null {
+        return this._router;
+    }
+}
+
+// ============================================================================
+// CLIENT PROXY GENERATOR
+// ============================================================================
+
+/**
+ * Creates a type-safe client proxy for calling mesh procedures
+ */
+export function createMeshClient<TRouter extends AnyRouter>(config: {
+    fetchFn: (capability: string, args: unknown) => Promise<unknown>;
+}): InferRouter<TRouter> {
+    const { fetchFn } = config;
+
+    function createProxy(path: string[] = []): unknown {
+        return new Proxy(() => { }, {
+            get(_target, prop: string) {
+                return createProxy([...path, prop]);
+            },
+
+            apply(_target, _thisArg, args: unknown[]) {
+                const capability = path.join('/');
+                const input = args[0];
+
+                return fetchFn(capability, input);
+            },
+
+            // Support for .query() and .mutate()
+            has(_target, prop: string) {
+                return prop === 'query' || prop === 'mutate';
+            }
+        });
+    }
+
+    return createProxy() as InferRouter<TRouter>;
+}
+
+// ============================================================================
+// TYPE EXPORT HELPERS
+// ============================================================================
+
+/**
+ * Helper to export router type from a cell
+ */
+export type RouterType<T extends { _def: { procedures: Record<string, AnyProcedure | AnyRouter> } }> = T;
+
+/**
+ * Helper to infer the full client interface from a cell's router
+ */
+export type ClientFromRouter<T> = T extends AnyRouter ? InferRouter<T> : never;
+
+
+
+// --- Typed mesh ---
+
+// protocols/typed-mesh.ts - Fully Type-Safe Cross-Cell Communication
+// This protocol provides 100% compile-time type safety for mesh calls
+
+// import { RheoCell as BaseCell, TraceResult, Signal } from "./example1";
+// import type {
+//     Router,
+//     Procedure,
+//     InferInput,
+//     InferOutput,
+//     AnyProcedure,
+//     AnyRouter
+// } from "./example2";
+
+// ============================================================================
+// TYPE EXTRACTION UTILITIES
+// ============================================================================
+
+/**
+ * Extract all procedures from a router recursively
+ * Converts nested routers into flat capability paths
+ */
+export type FlattenRouter<T, Prefix extends string = ""> = T extends Router<infer TProcedures>
+    ? {
+        [K in keyof TProcedures]: TProcedures[K] extends Router<any>
+        ? FlattenRouter<TProcedures[K], Prefix extends "" ? K & string : `${Prefix}/${K & string}`>
+        : Prefix extends ""
+        ? { [P in K]: TProcedures[K] }
+        : { [P in `${Prefix}/${K & string}`]: TProcedures[K] }
+    }[keyof TProcedures]
+    : never;
+
+/**
+ * Convert flattened procedures into capability map
+ */
+export type RouterToCapabilityMap<T extends AnyRouter> = {
+    [K in keyof FlattenRouter<T>]: FlattenRouter<T>[K] extends AnyProcedure
+    ? {
+        input: InferInput<FlattenRouter<T>[K]>;
+        output: InferOutput<FlattenRouter<T>[K]>;
+    }
+    : never;
+};
+
+// ============================================================================
+// MESH REGISTRY (Augmentable by codegen)
+// ============================================================================
+
+/**
+ * Global mesh capability registry
+ * Codegen auto-generates this from live mesh topology
+ */
+export interface MeshCapabilities {
+    // Core mesh capabilities
+    "mesh/ping": { input: void; output: "PONG" };
+    "mesh/health": {
+        input: void;
+        output: {
+            totalCells: number;
+            avgLoad: number;
+            status: "NOMINAL";
+            hotSpots: string[];
+            timestamp: number;
+        };
+    };
+    "cell/shutdown": { input: void; output: { status: string } };
+    // Other capabilities are auto-generated by codegen cell
+}
+
+/**
+ * Helper type to validate a capability path exists
+ */
+export type ValidCapability = keyof MeshCapabilities;
+
+/**
+ * Extract input type for a specific capability
+ */
+export type CapabilityInput<T extends ValidCapability> = MeshCapabilities[T]["input"];
+
+/**
+ * Extract output type for a specific capability
+ */
+export type CapabilityOutput<T extends ValidCapability> = MeshCapabilities[T]["output"];
+
+/**
+ * Typed result that includes the capability's output type
+ */
+export interface TypedTraceResult<T> extends TraceResult {
+    value?: T;
+}
+
+// ============================================================================
+// TYPED RHEO CELL
+// ============================================================================
+
+/**
+ * Type-safe extension of RheoCell
+ * Provides compile-time verification of all mesh calls
+ */
+export class TypedRheoCell extends BaseCell {
+    private _router: AnyRouter | null = null;
+
+    /**
+     * Type-safe mesh call
+     * - Validates capability exists at compile time
+     * - Validates input matches expected schema
+     * - Returns typed output
+     */
+    async askMesh<TCapability extends ValidCapability>(
+        capability: TCapability,
+        ...args: CapabilityInput<TCapability> extends void
+            ? []
+            : [CapabilityInput<TCapability>]
+    ): Promise<TypedTraceResult<CapabilityOutput<TCapability>>> {
+        const input = args[0];
+        const result = await super.askMesh(
+            capability as string,
+            input,
+            {}
+        );
+        return result as TypedTraceResult<CapabilityOutput<TCapability>>;
+    }
+
+    /**
+     * Attach a typed router and auto-register contract endpoint
+     */
+    useRouter<T extends AnyRouter>(router: T): void {
+        this._router = router;
+
+        // Register all capabilities from the router
+        const capabilities = router.getCapabilities();
+
+        for (const cap of capabilities) {
+            const proc = router.findProcedure(cap);
+
+            if (!proc) {
+                throw new Error(`Procedure not found: ${cap}`);
+            }
+
+            // Register the handler
+            this.provide(cap, async (args: unknown, ctx: any) => {
+                let validatedInput = args;
+                if (proc._def.input) {
+                    try {
+                        validatedInput = proc._def.input.parse(args);
+                    } catch (e: unknown) {
+                        const error = e as Error;
+                        throw new Error(`Input validation failed for ${cap}: ${error.message}`);
+                    }
+                }
+
+                // Execute handler
+                return await proc._def.handler(validatedInput, ctx);
+            });
+        }
+
+        // ✅ AUTO-REGISTER CONTRACT ENDPOINT
+        // This makes the schemas available to codegen
+        this.provide("cell/contract", ({ cap }: { cap: string }) => {
+            const contract = router.getContract(cap);
+            return contract || null;
+        });
+
+        this.log("INFO", `📋 Registered ${capabilities.length} capabilities with contracts`);
+    }
+
+    /**
+     * Get the router if attached
+     */
+    getRouter(): AnyRouter | null {
+        return this._router;
+    }
+
+    /**
+     * Proxy-based API for more ergonomic calls
+     * Usage: cell.mesh.ai.generate({ prompt: "..." })
+     */
+    get mesh(): MeshProxy {
+        return createMeshProxy(this);
+    }
+}
+
+// ============================================================================
+// MESH PROXY (Ergonomic API)
+// ============================================================================
+
+/**
+ * Parse "namespace/procedure" capability path
+ */
+type ParseCapability<T extends string> =
+    T extends `${infer Namespace}/${infer Procedure}`
+    ? { namespace: Namespace; procedure: Procedure }
+    : never;
+
+/**
+ * Get all capabilities for a namespace
+ */
+type CapabilitiesForNamespace<TNamespace extends string> = {
+    [K in ValidCapability]: ParseCapability<K>["namespace"] extends TNamespace
+    ? K
+    : never
+}[ValidCapability];
+
+/**
+ * Convert capabilities to procedure methods
+ */
+type NamespaceProcedures<TNamespace extends string> = {
+    [K in CapabilitiesForNamespace<TNamespace> as ParseCapability<K>["procedure"]]:
+    CapabilityInput<K> extends void
+    ? () => Promise<CapabilityOutput<K>>
+    : (input: CapabilityInput<K>) => Promise<CapabilityOutput<K>>
+};
+
+/**
+ * Get all unique namespaces from capability paths
+ */
+type ExtractNamespaces<T extends string> =
+    T extends `${infer NS}/${string}` ? NS : never;
+
+type AllNamespaces = ExtractNamespaces<ValidCapability>;
+
+/**
+ * The typed mesh proxy interface
+ */
+export type MeshProxy = {
+    [TNamespace in AllNamespaces]: NamespaceProcedures<TNamespace>
+};
+
+/**
+ * Create the mesh proxy for ergonomic calls
+ */
+function createMeshProxy(cell: TypedRheoCell): MeshProxy {
+    return new Proxy({} as MeshProxy, {
+        get(_target, namespace: string) {
+            return new Proxy({}, {
+                get(_subTarget, procedure: string) {
+                    return async (input?: any) => {
+                        const capability = `${namespace}/${procedure}` as ValidCapability;
+                        cell.log('INFO', `🔗 PROXY_CALL: [${capability}]`);
+                        const result = await cell.askMesh(
+                            capability,
+                            ...(input !== undefined ? [input] : []) as any
+                        );
+
+                        if (!result.ok) {
+                            throw new Error(
+                                `Mesh call failed: ${capability}\n` +
+                                `Error: ${result.error?.msg || 'Unknown error'}`
+                            );
+                        }
+
+                        return result.value;
+                    };
+                }
+            });
+        }
+    });
+}
+
+// ============================================================================
+// ROUTER REGISTRATION HELPER
+// ============================================================================
+
+/**
+ * Register a router and augment the type system
+ * This helper makes it easier for cells to register their capabilities
+ */
+export function registerRouter<T extends AnyRouter>(
+    cell: TypedRheoCell,
+    router: T,
+    options?: { prefix?: string }
+): void {
+    // Register with the base cell (runtime)
+    (cell as any).useRouter(router);
+
+    // Type augmentation happens automatically via codegen
+}
+
+// ============================================================================
+// CAPABILITY VALIDATOR (Optional runtime validation)
+// ============================================================================
+
+/**
+ * Runtime validator to ensure mesh state matches types
+ * Useful during development to catch capability mismatches
+ */
+export class CapabilityValidator {
+    private static expectedCapabilities: Set<string> = new Set();
+
+    static registerExpected(capabilities: ValidCapability[]) {
+        capabilities.forEach(cap => this.expectedCapabilities.add(cap));
+    }
+
+    static async validateMesh(cell: TypedRheoCell): Promise<{
+        missing: string[];
+        unexpected: string[];
+    }> {
+        // Get actual capabilities from mesh
+        const healthResult = await cell.askMesh("mesh/health");
+
+        if (!healthResult.ok) {
+            return { missing: [], unexpected: [] };
+        }
+
+        // Gather all capabilities from atlas
+        const actualCapabilities = new Set<string>();
+        for (const entry of Object.values(cell.atlas)) {
+            entry.caps.forEach(cap => actualCapabilities.add(cap));
+        }
+
+        const missing = Array.from(this.expectedCapabilities)
+            .filter(cap => !actualCapabilities.has(cap));
+
+        const expected = Array.from(this.expectedCapabilities);
+        const unexpected = Array.from(actualCapabilities)
+            .filter(cap => !expected.includes(cap as ValidCapability));
+
+        return { missing, unexpected };
+    }
+}
+
+// ============================================================================
+// TYPE EXPORT HELPERS
+// ============================================================================
+
+/**
+ * Helper to define a cell's router with full type inference
+ */
+export type DefineRouter<T extends AnyRouter> = T;
+
+/**
+ * Extract the capability map from a router for augmentation
+ */
+export type ExtractCapabilities<T extends AnyRouter, Prefix extends string = ""> =
+    RouterToCapabilityMap<T>;
+

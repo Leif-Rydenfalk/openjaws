@@ -874,3 +874,252 @@
 [1:00:46 AM] [32m[00:00:46.142] [INFO] [checklist] [6313d9a8] 📡 RPC_OUT: [mesh/health] -> http://localhost:44225[0m
 [1:00:46 AM] [32m[00:00:46.144] [INFO] [checklist] [6313d9a8] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:44225[0m
 [1:00:46 AM] Mesh health: NOMINAL, 16 cells
+[1:04:24 AM] [checklist] Key fingerprint: e159a43e326bc4a3
+[1:04:24 AM] [32m[00:04:24.080] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[1:04:24 AM] [32m[00:04:24.097] [INFO] [checklist] Sovereign Cell online @ http://localhost:45535[0m
+[1:04:24 AM] [32m[00:04:24.098] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:04:24 AM] [32m[00:04:24.130] [INFO] [checklist] [5a3002de] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:04:39 AM] ============================================================
+[1:04:39 AM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[1:04:39 AM] ============================================================
+[1:04:39 AM] Time:     2026-02-09T00:04:39.100Z
+[1:04:39 AM] Signal:   223cc235-7e05-4e8e-bcb6-b0b2cadb479a
+[1:04:39 AM] Failed At: http://localhost:42727
+[1:04:39 AM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[1:04:39 AM] 💡 Likely Causes:
+[1:04:39 AM] Unknown error type - check narrative history for clues
+[1:04:39 AM] Verify all cells in the chain are healthy
+[1:04:39 AM] Check for recent changes to capability implementations
+[1:04:39 AM] ============================================================
+[1:04:39 AM] ============================================================
+[1:04:39 AM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[1:04:39 AM] ============================================================
+[1:04:39 AM] Time:     2026-02-09T00:04:39.101Z
+[1:04:39 AM] Signal:   d8da5bac-67c9-4270-b471-f492dd3f3b30
+[1:04:39 AM] Failed At: http://localhost:45265
+[1:04:39 AM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[1:04:39 AM] 💡 Likely Causes:
+[1:04:39 AM] Unknown error type - check narrative history for clues
+[1:04:39 AM] Verify all cells in the chain are healthy
+[1:04:39 AM] Check for recent changes to capability implementations
+[1:04:39 AM] ============================================================
+[1:06:54 AM] [checklist] Key fingerprint: 0d2b85bb7ff3ed4b
+[1:06:54 AM] [32m[00:06:54.775] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[1:06:54 AM] [32m[00:06:54.782] [INFO] [checklist] Sovereign Cell online @ http://localhost:36645[0m
+[1:06:54 AM] [32m[00:06:54.783] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:07:21 AM] [32m[00:07:21.785] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[1:07:21 AM] [32m[00:07:21.785] [INFO] [checklist] [865b466a] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[1:07:21 AM] Current list has 0 items
+[1:07:21 AM] [32m[00:07:21.786] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[1:07:21 AM] [32m[00:07:21.786] [INFO] [checklist] [8cf88bc5] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:07:21 AM] [32m[00:07:21.787] [INFO] [checklist] [8cf88bc5] 📡 RPC_OUT: [mesh/health] -> http://localhost:36415[0m
+[1:07:21 AM] [32m[00:07:21.789] [INFO] [checklist] [8cf88bc5] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:36415[0m
+[1:07:21 AM] Mesh health: NOMINAL, 16 cells
+[1:14:20 AM] [checklist] Key fingerprint: be21117961876c53
+[1:14:20 AM] [32m[00:14:20.787] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[1:14:20 AM] [32m[00:14:20.814] [INFO] [checklist] Sovereign Cell online @ http://localhost:42827[0m
+[1:14:20 AM] [32m[00:14:20.815] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:20:58 AM] [checklist] Key fingerprint: 4ba736d214b01506
+[1:20:58 AM] [32m[00:20:58.147] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[1:20:58 AM] [32m[00:20:58.161] [INFO] [checklist] Sovereign Cell online @ http://localhost:45343[0m
+[1:20:58 AM] [32m[00:20:58.162] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:21:25 AM] [32m[00:21:25.164] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[1:21:25 AM] [32m[00:21:25.165] [INFO] [checklist] [d7ed48db] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[1:21:25 AM] Current list has 0 items
+[1:21:25 AM] [32m[00:21:25.166] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[1:21:25 AM] [32m[00:21:25.166] [INFO] [checklist] [a4c0c07a] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:21:25 AM] [32m[00:21:25.167] [INFO] [checklist] [a4c0c07a] 📡 RPC_OUT: [mesh/health] -> http://localhost:39461[0m
+[1:21:25 AM] [32m[00:21:25.169] [INFO] [checklist] [a4c0c07a] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:39461[0m
+[1:21:25 AM] Mesh health: NOMINAL, 16 cells
+[1:22:54 AM] [checklist] Key fingerprint: 3009c193fee0028f
+[1:22:54 AM] [32m[00:22:54.589] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[1:22:54 AM] [32m[00:22:54.603] [INFO] [checklist] Sovereign Cell online @ http://localhost:38457[0m
+[1:22:54 AM] [32m[00:22:54.603] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:22:54 AM] [32m[00:22:54.704] [INFO] [checklist] [c03660d6] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:22:54 AM] [32m[00:22:54.707] [INFO] [checklist] [c03660d6] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33435[0m
+[1:22:54 AM] [32m[00:22:54.709] [INFO] [checklist] [c03660d6] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:33435[0m
+[1:30:17 AM] [checklist] Key fingerprint: f9de06657aae4de9
+[1:30:17 AM] [32m[00:30:17.453] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[1:30:17 AM] [32m[00:30:17.465] [INFO] [checklist] Sovereign Cell online @ http://localhost:32925[0m
+[1:30:17 AM] [32m[00:30:17.466] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[1:30:32 AM] [32m[00:30:32.534] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[1:30:42 AM] [32m[00:30:42.465] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[1:30:44 AM] [32m[00:30:44.469] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[1:30:44 AM] [32m[00:30:44.469] [INFO] [checklist] [917dea95] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[1:30:44 AM] Current list has 0 items
+[1:30:44 AM] [32m[00:30:44.470] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[1:30:44 AM] [32m[00:30:44.470] [INFO] [checklist] [c73cf9e2] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:30:44 AM] [32m[00:30:44.471] [INFO] [checklist] [c73cf9e2] 📡 RPC_OUT: [mesh/health] -> http://localhost:45375[0m
+[1:30:44 AM] [32m[00:30:44.475] [INFO] [checklist] [c73cf9e2] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:45375[0m
+[1:30:44 AM] Mesh health: NOMINAL, 16 cells
+[1:30:47 AM] [32m[00:30:47.288] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[1:30:47 AM] [32m[00:30:47.347] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[1:31:02 AM] [32m[00:31:02.472] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[1:31:12 AM] [32m[00:31:12.505] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[1:31:17 AM] [32m[00:31:17.349] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[1:31:17 AM] [32m[00:31:17.490] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[1:31:42 AM] [32m[00:31:42.486] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[1:31:47 AM] [32m[00:31:47.360] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: telemetry[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: memory[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: skills[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: coder[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: telegram[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: architect[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: comms[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: tts-ui[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: kindly[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: log[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: projects[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: Codegen[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: Orchestrator_819624[0m
+[4:02:00 AM] [32m[03:01:59.876] [INFO] [checklist] 🧹 Cleaned stale entry: ai[0m
+[4:10:44 AM] [32m[03:10:44.867] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:13:14 AM] [32m[03:13:14.868] [INFO] [checklist] 🌐 ~1 → 14p/59c[0m
+[4:13:30 AM] [32m[03:13:30.279] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:18:59 AM] [32m[03:18:59.867] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:26:59 AM] [32m[03:26:59.860] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:30:59 AM] [32m[03:30:59.895] [INFO] [checklist] 🌐 ~1 → 14p/58c[0m
+[4:33:45 AM] [32m[03:33:45.289] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:35:00 AM] [32m[03:35:00.249] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:35:34 AM] [32m[03:35:34.840] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:37:29 AM] [32m[03:37:29.833] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:37:29 AM] [32m[03:37:29.858] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:38:29 AM] [32m[03:38:29.946] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:38:44 AM] [32m[03:38:44.915] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:39:14 AM] [32m[03:39:14.844] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:39:59 AM] [32m[03:39:59.919] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[4:41:15 AM] [32m[03:41:15.275] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:41:30 AM] [32m[03:41:30.275] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:41:30 AM] [32m[03:41:30.284] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:43:14 AM] [32m[03:43:14.850] [INFO] [checklist] 🌐 ~1 → 14p/56c[0m
+[4:43:59 AM] [32m[03:43:59.911] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:44:29 AM] [32m[03:44:29.829] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:44:59 AM] [32m[03:44:59.919] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:46:19 AM] [32m[03:46:19.834] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:47:00 AM] [32m[03:47:00.272] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:47:19 AM] [32m[03:47:19.833] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:47:30 AM] [32m[03:47:30.280] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[4:47:44 AM] [32m[03:47:44.907] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:50:45 AM] [32m[03:50:45.078] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[4:52:29 AM] [32m[03:52:29.918] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:54:44 AM] [32m[03:54:44.834] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[4:59:29 AM] [32m[03:59:29.943] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[4:59:44 AM] [32m[03:59:44.868] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:00:44 AM] [32m[04:00:44.831] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:01:00 AM] [32m[04:01:00.250] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:01:45 AM] [32m[04:01:45.078] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:05:15 AM] [32m[04:05:15.237] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:05:45 AM] [32m[04:05:45.247] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:06:30 AM] [32m[04:06:30.247] [INFO] [checklist] 🌐 ~1 → 14p/58c[0m
+[5:08:14 AM] [32m[04:08:14.898] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:08:29 AM] [32m[04:08:29.816] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:12:44 AM] [32m[04:12:44.924] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:12:59 AM] [32m[04:12:59.981] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:13:00 AM] [32m[04:13:00.242] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:14:30 AM] [32m[04:14:30.241] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:15:19 AM] [32m[04:15:19.824] [INFO] [checklist] 🌐 ~1 → 14p/61c[0m
+[5:15:29 AM] [32m[04:15:29.984] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:17:44 AM] [32m[04:17:44.812] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:18:14 AM] [32m[04:18:14.861] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:18:14 AM] [32m[04:18:14.900] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:18:29 AM] [32m[04:18:29.812] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:18:39 AM] [32m[04:18:39.975] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:18:44 AM] [32m[04:18:44.977] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[5:19:14 AM] [32m[04:19:14.977] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:22:59 AM] [32m[04:22:59.858] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:24:04 AM] [32m[04:24:04.889] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:24:59 AM] [32m[04:24:59.977] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:25:05 AM] [32m[04:25:05.021] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:25:09 AM] [32m[04:25:09.972] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:25:30 AM] [32m[04:25:30.215] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:26:19 AM] [32m[04:26:19.996] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:27:24 AM] [32m[04:27:24.971] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:30:44 AM] [32m[04:30:44.851] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:30:45 AM] [32m[04:30:45.251] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:31:20 AM] [32m[04:31:20.018] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:32:05 AM] [32m[04:32:05.016] [INFO] [checklist] 🌐 ~1 → 14p/58c[0m
+[5:33:00 AM] [32m[04:33:00.249] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:33:15 AM] [32m[04:33:15.242] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:34:15 AM] [32m[04:34:15.223] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:34:20 AM] [32m[04:34:20.038] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:34:44 AM] [32m[04:34:44.966] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:34:50 AM] [32m[04:34:50.037] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:35:59 AM] [32m[04:35:59.847] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:38:04 AM] [32m[04:38:04.881] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:38:59 AM] [32m[04:38:59.883] [INFO] [checklist] 🌐 ~2 → 14p/61c[0m
+[5:41:00 AM] [32m[04:41:00.089] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:42:04 AM] [32m[04:42:04.991] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:43:39 AM] [32m[04:43:39.937] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:44:44 AM] [32m[04:44:44.926] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:45:14 AM] [32m[04:45:14.963] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:47:30 AM] [32m[04:47:30.003] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:47:54 AM] [32m[04:47:54.958] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:48:00 AM] [32m[04:48:00.005] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:49:44 AM] [32m[04:49:44.954] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:50:04 AM] [32m[04:50:04.964] [INFO] [checklist] 🌐 ~1 → 13p/53c[0m
+[5:50:19 AM] [32m[04:50:19.963] [INFO] [checklist] 🌐 ~2 → 14p/56c[0m
+[5:52:04 AM] [32m[04:52:04.994] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:52:34 AM] [32m[04:52:34.993] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:53:30 AM] [32m[04:53:30.000] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[5:56:14 AM] [32m[04:56:14.803] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:56:35 AM] [32m[04:56:35.055] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[5:58:29 AM] [32m[04:58:29.943] [INFO] [checklist] 🌐 ~2 → 13p/57c[0m
+[6:00:32 AM] [32m[05:00:29.040] [INFO] [checklist] 🌐 ~1 → 4p/28c[0m
+[6:00:32 AM] [32m[05:00:29.042] [INFO] [checklist] 🌐 ~1 → 13p/43c[0m
+[6:00:32 AM] [32m[05:00:29.045] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[6:00:32 AM] [32m[05:00:29.049] [INFO] [checklist] 🌐 ~3 → 5p/34c[0m
+[6:00:44 AM] [32m[05:00:44.115] [INFO] [checklist] 🌐 ~3 → 7p/36c[0m
+[6:02:13 AM] [32m[05:02:13.868] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:02:58 AM] [32m[05:02:58.901] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:03:13 AM] [32m[05:03:13.914] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:03:17 AM] [32m[05:03:17.552] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[6:03:43 AM] [32m[05:03:43.718] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:03:43 AM] [32m[05:03:43.859] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:03:43 AM] [32m[05:03:43.892] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:03:58 AM] [32m[05:03:58.718] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:04:28 AM] [32m[05:04:28.719] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:05:13 AM] [32m[05:05:13.830] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:06:13 AM] [32m[05:06:13.826] [INFO] [checklist] 🌐 ~3 → 15p/62c[0m
+[6:06:46 AM] [32m[05:06:46.394] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:06:58 AM] [32m[05:06:58.848] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:09:28 AM] [32m[05:09:28.847] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:09:58 AM] [32m[05:09:58.731] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:10:13 AM] [32m[05:10:13.815] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:10:13 AM] [32m[05:10:13.853] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:12:28 AM] [32m[05:12:28.895] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[6:12:43 AM] [32m[05:12:43.523] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[6:12:47 AM] [32m[05:12:47.512] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:13:58 AM] [32m[05:13:58.826] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:14:43 AM] [32m[05:14:43.957] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[6:15:28 AM] [32m[05:15:28.912] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:16:43 AM] [32m[05:16:43.846] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:17:43 AM] [32m[05:17:43.897] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:17:58 AM] [32m[05:17:58.879] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:18:13 AM] [32m[05:18:13.879] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:19:58 AM] [32m[05:19:58.817] [INFO] [checklist] 🌐 ~1 → 14p/49c[0m
+[6:20:28 AM] [32m[05:20:28.904] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:21:43 AM] [32m[05:21:43.913] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:22:28 AM] [32m[05:22:28.931] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[6:22:58 AM] [32m[05:22:58.973] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[6:24:59 AM] [32m[05:24:59.103] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:25:14 AM] [32m[05:25:14.103] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:26:28 AM] [32m[05:26:28.516] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:26:44 AM] [32m[05:26:44.002] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:26:58 AM] [32m[05:26:58.710] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:26:58 AM] [32m[05:26:58.929] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:28:13 AM] [32m[05:28:13.915] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:29:13 AM] [32m[05:29:13.939] [INFO] [checklist] 🌐 ~1 → 15p/62c[0m
+[6:30:35 AM] [32m[05:30:29.113] [INFO] [checklist] 🌐 ~2 → 15p/62c[0m
+[8:54:22 PM] [checklist] Key fingerprint: 562d240f8420bd26
+[8:54:22 PM] [32m[19:54:22.616] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[8:54:22 PM] [32m[19:54:22.626] [INFO] [checklist] Sovereign Cell online @ http://localhost:41577[0m
+[8:54:22 PM] [32m[19:54:22.627] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[8:54:49 PM] [32m[19:54:49.629] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[8:54:49 PM] [32m[19:54:49.629] [INFO] [checklist] [86eb03e0] 📥 SIGNAL_ARRIVED: [list/get] from [checklist][0m
+[8:54:49 PM] Current list has 0 items
+[8:54:49 PM] [32m[19:54:49.630] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[8:54:49 PM] [32m[19:54:49.630] [INFO] [checklist] [fec52037] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[8:54:49 PM] [32m[19:54:49.631] [INFO] [checklist] [fec52037] 📡 RPC_OUT: [mesh/health] -> http://localhost:36305[0m
+[8:54:49 PM] [32m[19:54:49.633] [INFO] [checklist] [fec52037] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:36305[0m
+[8:54:49 PM] Mesh health: NOMINAL, 16 cells

@@ -78,7 +78,12 @@ async function spawnCell(blueprint: Blueprint) {
     const proc = spawn(cmd, args, {
         cwd: blueprint.path,
         stdio: ["ignore", "pipe", "pipe"],
-        env: { ...process.env, ...blueprint.env, RHEO_CELL_ID: instanceId }
+        env: {
+            ...process.env,
+            ...blueprint.env,
+            RHEO_CELL_ID: instanceId,
+            RHEO_DISABLE_GHOST_CLEANUP: "false"  // ADD THIS
+        }
     });
 
     const handleData = (data: Buffer) => {
@@ -138,17 +143,29 @@ process.on("SIGINT", async () => {
     process.exit(0);
 });
 
-// Autonomic Loop (Healing)
 setInterval(async () => {
     if (shuttingDown) return;
-    const health = await orchestratorCell!.askMesh("mesh/health", {});
-    if (!health.ok) return;
 
-    blueprints.forEach(b => {
-        const isRunning = Object.keys(orchestratorCell!.atlas).some(id => id.startsWith(b.id));
-        if (!isRunning && b.critical) {
-            console.log(`🚨 Healing: ${b.id} missing.`);
-            spawnCell(b);
+    // Check specific cells, not broadcast
+    for (const [cellId, entry] of Object.entries(orchestratorCell!.atlas)) {
+        if (cellId === orchestratorCell!.id) continue;
+
+        // Direct ping to specific address
+        try {
+            const res = await fetch(`${entry.addr}/atlas`, {
+                signal: AbortSignal.timeout(2000)
+            });
+            if (!res.ok) throw new Error("HTTP " + res.status);
+        } catch {
+            console.log(`💀 ${cellId} unreachable, removing from atlas`);
+            delete orchestratorCell!.atlas[cellId];
+
+            // Respawn if critical
+            const blueprint = blueprints.find(b => b.id === cellId);
+            if (blueprint?.critical) {
+                console.log(`🚨 Respawning critical cell: ${cellId}`);
+                spawnCell(blueprint);
+            }
         }
-    });
+    }
 }, 10000);

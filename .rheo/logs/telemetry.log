@@ -1204,3 +1204,335 @@
 [1:00:29 AM] [32m[00:00:29.012] [INFO] [telemetry] [8f0beb09] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
 [1:00:39 AM] [32m[00:00:39.010] [INFO] [telemetry] [cc4e5e48] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
 [1:00:46 AM] [32m[00:00:46.143] [INFO] [telemetry] [6313d9a8] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:00:49 AM] [32m[00:00:49.010] [INFO] [telemetry] [eddd3ca5] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:00:59 AM] [32m[00:00:59.010] [INFO] [telemetry] [2ff2d098] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:01:09 AM] [32m[00:01:09.011] [INFO] [telemetry] [ab412f12] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:01:19 AM] [32m[00:01:19.012] [INFO] [telemetry] [ceeb8071] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:01:29 AM] [32m[00:01:29.012] [INFO] [telemetry] [f0471b0d] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:01:39 AM] [32m[00:01:39.012] [INFO] [telemetry] [f203ea2f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:01:49 AM] [32m[00:01:49.011] [INFO] [telemetry] [d80d6536] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:01:59 AM] [32m[00:01:59.012] [INFO] [telemetry] [a7666247] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:02:09 AM] [32m[00:02:09.012] [INFO] [telemetry] [d500eb1b] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:02:19 AM] [32m[00:02:19.012] [INFO] [telemetry] [8ea97435] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:02:29 AM] [32m[00:02:29.012] [INFO] [telemetry] [b49491f0] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:02:39 AM] [32m[00:02:39.013] [INFO] [telemetry] [53d279e7] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:02:49 AM] [32m[00:02:49.013] [INFO] [telemetry] [c6df97ec] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:02:59 AM] [32m[00:02:59.014] [INFO] [telemetry] [6e2047ba] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:03:09 AM] [32m[00:03:09.014] [INFO] [telemetry] [9b605d8e] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:03:19 AM] [32m[00:03:19.014] [INFO] [telemetry] [c56d2b63] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:03:29 AM] [32m[00:03:29.014] [INFO] [telemetry] [6b8ca6be] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:03:39 AM] [32m[00:03:39.015] [INFO] [telemetry] [5d30b313] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:03:49 AM] [32m[00:03:49.015] [INFO] [telemetry] [b1ebf297] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:03:59 AM] [32m[00:03:59.015] [INFO] [telemetry] [6dcbf071] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:04:09 AM] [32m[00:04:09.017] [INFO] [telemetry] [63f41e74] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:04:19 AM] [32m[00:04:19.016] [INFO] [telemetry] [9a2d02af] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_809314][0m
+[1:04:24 AM] [telemetry] Key fingerprint: 73c2399f48fb8404
+[1:04:24 AM] [32m[00:04:24.141] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[1:04:24 AM] [32m[00:04:24.157] [INFO] [telemetry] Sovereign Cell online @ http://localhost:46613[0m
+[1:04:34 AM] [32m[00:04:34.112] [INFO] [telemetry] [33f07ff2] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_811193][0m
+[1:06:54 AM] [telemetry] Key fingerprint: 483fb6244e8533ba
+[1:06:54 AM] [32m[00:06:54.743] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[1:06:54 AM] [32m[00:06:54.755] [INFO] [telemetry] Sovereign Cell online @ http://localhost:36415[0m
+[1:06:54 AM] [32m[00:06:54.902] [INFO] [telemetry] [dc305a50] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:07:04 AM] [32m[00:07:04.762] [INFO] [telemetry] [f77204d5] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:07:14 AM] [32m[00:07:14.759] [INFO] [telemetry] [7cb24560] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:07:21 AM] [32m[00:07:21.788] [INFO] [telemetry] [8cf88bc5] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:07:24 AM] [32m[00:07:24.761] [INFO] [telemetry] [7fcd8422] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:07:34 AM] [32m[00:07:34.760] [INFO] [telemetry] [4dd498eb] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:07:44 AM] [32m[00:07:44.761] [INFO] [telemetry] [3f7b5072] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:07:54 AM] [32m[00:07:54.760] [INFO] [telemetry] [249dc681] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:08:04 AM] [32m[00:08:04.761] [INFO] [telemetry] [9906c33d] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:08:14 AM] [32m[00:08:14.761] [INFO] [telemetry] [71c39f3c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:08:24 AM] [32m[00:08:24.760] [INFO] [telemetry] [765ba7b0] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:08:34 AM] [32m[00:08:34.762] [INFO] [telemetry] [851a4946] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:08:44 AM] [32m[00:08:44.761] [INFO] [telemetry] [830b2cc4] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:08:54 AM] [32m[00:08:54.763] [INFO] [telemetry] [9159d12c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:09:04 AM] [32m[00:09:04.763] [INFO] [telemetry] [a6ebd73e] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:09:14 AM] [32m[00:09:14.764] [INFO] [telemetry] [a1df18cb] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:09:24 AM] [32m[00:09:24.763] [INFO] [telemetry] [a04fd7f0] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:09:34 AM] [32m[00:09:34.763] [INFO] [telemetry] [a11ed8f9] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:09:44 AM] [32m[00:09:44.764] [INFO] [telemetry] [c41f5173] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:09:54 AM] [32m[00:09:54.764] [INFO] [telemetry] [84faae7a] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:10:04 AM] [32m[00:10:04.764] [INFO] [telemetry] [be656318] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:10:14 AM] [32m[00:10:14.764] [INFO] [telemetry] [cd867730] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:10:24 AM] [32m[00:10:24.765] [INFO] [telemetry] [3dfa81ef] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:10:34 AM] [32m[00:10:34.764] [INFO] [telemetry] [90e266d3] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:10:44 AM] [32m[00:10:44.765] [INFO] [telemetry] [c80c2630] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:10:54 AM] [32m[00:10:54.765] [INFO] [telemetry] [a365d909] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:11:04 AM] [32m[00:11:04.765] [INFO] [telemetry] [aa9a2d2c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:11:14 AM] [32m[00:11:14.765] [INFO] [telemetry] [6b9bac5c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:11:24 AM] [32m[00:11:24.765] [INFO] [telemetry] [99b63ba1] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:11:34 AM] [32m[00:11:34.766] [INFO] [telemetry] [d08351b8] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:11:44 AM] [32m[00:11:44.766] [INFO] [telemetry] [a832f22e] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:11:54 AM] [32m[00:11:54.766] [INFO] [telemetry] [0745fccb] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:12:04 AM] [32m[00:12:04.767] [INFO] [telemetry] [8b9e196d] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:12:14 AM] [32m[00:12:14.767] [INFO] [telemetry] [56440828] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:12:24 AM] [32m[00:12:24.769] [INFO] [telemetry] [f11f63da] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:12:34 AM] [32m[00:12:34.769] [INFO] [telemetry] [46af9444] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:12:44 AM] [32m[00:12:44.769] [INFO] [telemetry] [07497993] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:12:54 AM] [32m[00:12:54.768] [INFO] [telemetry] [06007210] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:13:04 AM] [32m[00:13:04.769] [INFO] [telemetry] [61daa56e] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:13:14 AM] [32m[00:13:14.769] [INFO] [telemetry] [bd60a23f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:13:24 AM] [32m[00:13:24.769] [INFO] [telemetry] [0c0c1b1b] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:13:34 AM] [32m[00:13:34.770] [INFO] [telemetry] [31691e1e] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:13:44 AM] [32m[00:13:44.770] [INFO] [telemetry] [a908d50d] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:13:54 AM] [32m[00:13:54.770] [INFO] [telemetry] [0820cff4] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:14:04 AM] [32m[00:14:04.771] [INFO] [telemetry] [b535fa3f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:14:14 AM] [32m[00:14:14.773] [INFO] [telemetry] [fec62eff] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_812048][0m
+[1:14:20 AM] [telemetry] Key fingerprint: c144703bc53dbcab
+[1:14:20 AM] [32m[00:14:20.696] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[1:14:20 AM] [32m[00:14:20.719] [INFO] [telemetry] Sovereign Cell online @ http://localhost:34181[0m
+[1:14:20 AM] [32m[00:14:20.843] [INFO] [telemetry] [a5b4602e] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:14:30 AM] [32m[00:14:30.670] [INFO] [telemetry] [8015e389] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_814607][0m
+[1:14:35 AM] ============================================================
+[1:14:35 AM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[1:14:35 AM] ============================================================
+[1:14:35 AM] Time:     2026-02-09T00:14:35.722Z
+[1:14:35 AM] Signal:   42e10c66-9534-4951-80cf-34e44ba2e73a
+[1:14:35 AM] Failed At: http://localhost:38507
+[1:14:35 AM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[1:14:35 AM] 💡 Likely Causes:
+[1:14:35 AM] Unknown error type - check narrative history for clues
+[1:14:35 AM] Verify all cells in the chain are healthy
+[1:14:35 AM] Check for recent changes to capability implementations
+[1:14:35 AM] ============================================================
+[1:20:58 AM] [telemetry] Key fingerprint: 38cceb76236fc2be
+[1:20:58 AM] [32m[00:20:58.057] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[1:20:58 AM] [32m[00:20:58.087] [INFO] [telemetry] Sovereign Cell online @ http://localhost:39461[0m
+[1:21:08 AM] [32m[00:21:08.038] [INFO] [telemetry] [f5b09029] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:21:18 AM] [32m[00:21:18.035] [INFO] [telemetry] [090bc888] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:21:25 AM] [32m[00:21:25.168] [INFO] [telemetry] [a4c0c07a] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:21:28 AM] [32m[00:21:28.036] [INFO] [telemetry] [5fd02f3c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:21:38 AM] [32m[00:21:38.035] [INFO] [telemetry] [eb8b3a56] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:21:48 AM] [32m[00:21:48.035] [INFO] [telemetry] [24651dca] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:21:58 AM] [32m[00:21:58.036] [INFO] [telemetry] [bc9fadc1] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:22:08 AM] [32m[00:22:08.035] [INFO] [telemetry] [592daf35] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:22:18 AM] [32m[00:22:18.035] [INFO] [telemetry] [6cc94289] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:22:28 AM] [32m[00:22:28.037] [INFO] [telemetry] [914abe50] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:22:38 AM] [32m[00:22:38.037] [INFO] [telemetry] [9ce97a21] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:22:48 AM] [32m[00:22:48.038] [INFO] [telemetry] [60a33cba] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_816528][0m
+[1:22:54 AM] [telemetry] Key fingerprint: c0869865f8f7b15a
+[1:22:54 AM] [32m[00:22:54.543] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[1:22:54 AM] [32m[00:22:54.566] [INFO] [telemetry] Sovereign Cell online @ http://localhost:44219[0m
+[1:22:54 AM] [32m[00:22:54.699] [INFO] [telemetry] [c03660d6] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:22:54 AM] [32m[00:22:54.703] [INFO] [telemetry] [c03660d6] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33435[0m
+[1:22:54 AM] [32m[00:22:54.710] [INFO] [telemetry] [c03660d6] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:33435[0m
+[1:23:04 AM] [32m[00:23:04.558] [INFO] [telemetry] [6f875c65] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_817337][0m
+[1:30:17 AM] [telemetry] Key fingerprint: 952a875e6dab716e
+[1:30:17 AM] [32m[00:30:17.396] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[1:30:17 AM] [32m[00:30:17.430] [INFO] [telemetry] Sovereign Cell online @ http://localhost:45375[0m
+[1:30:17 AM] [32m[00:30:17.494] [INFO] [telemetry] [b3737cf5] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:30:17 AM] [32m[00:30:17.497] [INFO] [telemetry] [b3737cf5] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37483[0m
+[1:30:17 AM] [32m[00:30:17.506] [INFO] [telemetry] [b3737cf5] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:37483[0m
+[1:30:27 AM] [telemetry] Key fingerprint: 901a5b116d8fa5a4
+[1:30:27 AM] [32m[00:30:27.469] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[1:30:27 AM] [32m[00:30:27.479] [INFO] [telemetry] Sovereign Cell online @ http://localhost:45375[0m
+[1:30:32 AM] [32m[00:30:32.472] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[1:30:37 AM] [32m[00:30:37.375] [INFO] [telemetry] [d9579cda] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.378] [INFO] [telemetry] [2ffc46ea] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.380] [INFO] [telemetry] [e815fbc8] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.383] [INFO] [telemetry] [7b44e91f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.385] [INFO] [telemetry] [8cffa3ff] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.388] [INFO] [telemetry] [84f9c4d9] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.390] [INFO] [telemetry] [fe8c366f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.395] [INFO] [telemetry] [c7d1b067] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.397] [INFO] [telemetry] [f5062b3b] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.399] [INFO] [telemetry] [eebf0e1f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.401] [INFO] [telemetry] [bead4bb3] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.403] [INFO] [telemetry] [db8f6b2b] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.406] [INFO] [telemetry] [926c81bf] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.408] [INFO] [telemetry] [f8a3babd] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:37 AM] [32m[00:30:37.411] [INFO] [telemetry] [e839c6d4] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[1:30:44 AM] [32m[00:30:44.473] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[1:30:44 AM] [32m[00:30:44.474] [INFO] [telemetry] [c73cf9e2] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m
+[1:30:47 AM] [32m[00:30:47.209] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[1:30:47 AM] [32m[00:30:47.359] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[1:30:57 AM] [32m[00:30:57.464] [INFO] [telemetry] 🌐 ~2 → 15p/62c[0m
+[1:31:02 AM] [32m[00:31:02.488] [INFO] [telemetry] 🌐 ~2 → 15p/62c[0m
+[1:31:32 AM] [32m[00:31:32.348] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[1:31:47 AM] [32m[00:31:47.348] [INFO] [telemetry] 🌐 ~2 → 15p/62c[0m
+[1:31:57 AM] [32m[00:31:57.461] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:02:00 AM] [32m[03:01:59.881] [INFO] [telemetry] 🧹 Cleaned stale entry: tts-ui[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: tts[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: ai[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: coder[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: projects[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: comms[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: Orchestrator_819624[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: telegram[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: kindly[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: memory[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: skills[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: architect[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: log[0m
+[4:02:00 AM] [32m[03:01:59.883] [INFO] [telemetry] 🧹 Cleaned stale entry: Codegen[0m
+[4:02:00 AM] [telemetry] Key fingerprint: 50a2f7dc11e6c17f
+[4:02:00 AM] [32m[03:02:00.273] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[4:02:00 AM] [32m[03:02:00.281] [INFO] [telemetry] Sovereign Cell online @ http://localhost:36817[0m
+[4:02:09 AM] [32m[03:02:09.811] [INFO] [telemetry] [dced6651] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.813] [INFO] [telemetry] [3c69b9a9] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.815] [INFO] [telemetry] [66bd2ff1] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.817] [INFO] [telemetry] [e3f6f8b5] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.819] [INFO] [telemetry] [dc26bdcd] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.822] [INFO] [telemetry] [7fb0594d] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.823] [INFO] [telemetry] [54621427] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.825] [INFO] [telemetry] [d60056f5] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.827] [INFO] [telemetry] [4ca1499a] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:09 AM] [32m[03:02:09.829] [INFO] [telemetry] [9975fdf2] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:19 AM] [32m[03:02:19.811] [INFO] [telemetry] [685d4df3] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:19 AM] [32m[03:02:19.813] [INFO] [telemetry] [27fed4ec] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:19 AM] [32m[03:02:19.815] [INFO] [telemetry] [6c488dee] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:19 AM] [32m[03:02:19.817] [INFO] [telemetry] [442decee] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:02:19 AM] [32m[03:02:19.819] [INFO] [telemetry] [aaa2e98a] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:07:59 AM] [32m[03:07:59.816] [INFO] [telemetry] [65d70eed] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:08:09 AM] [32m[03:08:09.816] [INFO] [telemetry] [20daf810] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:09:14 AM] [32m[03:09:14.840] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:09:34 AM] [32m[03:09:34.854] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:14:29 AM] [32m[03:14:29.844] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:16:59 AM] [32m[03:16:59.867] [INFO] [telemetry] 🌐 ~1 → 14p/49c[0m
+[4:18:49 AM] [32m[03:18:49.833] [INFO] [telemetry] [9c9daf55] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:25:44 AM] [32m[03:25:44.853] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:25:45 AM] [32m[03:25:45.274] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:26:59 AM] [32m[03:26:59.838] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:26:59 AM] [32m[03:26:59.861] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:30:45 AM] [32m[03:30:45.010] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:36:09 AM] [32m[03:36:09.876] [INFO] [telemetry] [c7aa3475] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:36:29 AM] [32m[03:36:29.876] [INFO] [telemetry] [14a82d2c] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:37:14 AM] [32m[03:37:14.858] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:41:19 AM] [32m[03:41:19.915] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:42:29 AM] [32m[03:42:29.945] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:42:49 AM] [32m[03:42:49.915] [INFO] [telemetry] 🌐 ~2 → 15p/62c[0m
+[4:46:14 AM] [32m[03:46:14.943] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:46:45 AM] [32m[03:46:45.248] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[4:47:09 AM] [32m[03:47:09.892] [INFO] [telemetry] [9239616d] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:52:39 AM] [32m[03:52:39.899] [INFO] [telemetry] [49e60f0b] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[4:58:14 AM] [32m[03:58:14.843] [INFO] [telemetry] 🌐 ~1 → 14p/56c[0m
+[4:58:29 AM] [32m[03:58:29.833] [INFO] [telemetry] 🌐 ~2 → 15p/62c[0m
+[5:00:59 AM] [32m[04:00:59.821] [INFO] [telemetry] 🌐 ~2 → 15p/62c[0m
+[5:01:39 AM] [32m[04:01:39.909] [INFO] [telemetry] [66519161] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:03:09 AM] [32m[04:03:09.911] [INFO] [telemetry] [91a8d7bd] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:03:49 AM] [32m[04:03:49.911] [INFO] [telemetry] [4acc5618] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:03:49 AM] [32m[04:03:49.913] [INFO] [telemetry] [10fe4c62] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:03:54 AM] [32m[04:03:54.875] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:04:24 AM] [32m[04:04:24.971] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:06:00 AM] [32m[04:06:00.248] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:07:39 AM] [32m[04:07:39.918] [INFO] [telemetry] [02126d89] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:08:19 AM] [32m[04:08:19.918] [INFO] [telemetry] [7b722321] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:08:39 AM] [32m[04:08:39.919] [INFO] [telemetry] [be761acf] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:09:19 AM] [telemetry] Key fingerprint: c7f9ab2452f0b960
+[5:09:19 AM] [32m[04:09:19.977] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[5:09:19 AM] [32m[04:09:19.985] [INFO] [telemetry] Sovereign Cell online @ http://localhost:40415[0m
+[5:09:29 AM] [32m[04:09:29.920] [INFO] [telemetry] [6c8a5033] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:09:29 AM] [32m[04:09:29.922] [INFO] [telemetry] [f17420ac] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:09:29 AM] [32m[04:09:29.925] [INFO] [telemetry] [6df361cc] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:09:29 AM] [32m[04:09:29.928] [INFO] [telemetry] [aa59f5f9] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:10:29 AM] [telemetry] Key fingerprint: 222fecd524ce19e6
+[5:10:29 AM] [32m[04:10:29.965] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[5:10:29 AM] [32m[04:10:29.968] [INFO] [telemetry] Sovereign Cell online @ http://localhost:44205[0m
+[5:10:39 AM] [32m[04:10:39.922] [INFO] [telemetry] [37911ae9] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:11:14 AM] [32m[04:11:14.864] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:12:15 AM] [32m[04:12:15.234] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:13:00 AM] [32m[04:13:00.257] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:13:30 AM] [32m[04:13:30.257] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:16:04 AM] [32m[04:16:04.895] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:17:05 AM] [32m[04:17:05.025] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:17:49 AM] [32m[04:17:49.823] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:19:09 AM] [32m[04:19:09.996] [INFO] [telemetry] 🧹 Cleaned stale entry: memory[0m
+[5:22:29 AM] [32m[04:22:29.818] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:26:44 AM] [32m[04:26:44.914] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:26:59 AM] [32m[04:26:59.823] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:31:19 AM] [telemetry] Key fingerprint: 71e471951f475b1e
+[5:31:19 AM] [32m[04:31:19.983] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[5:31:19 AM] [32m[04:31:19.988] [INFO] [telemetry] Sovereign Cell online @ http://localhost:41631[0m
+[5:31:29 AM] [32m[04:31:29.946] [INFO] [telemetry] [1271d2f1] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:31:44 AM] [32m[04:31:44.850] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:31:44 AM] [32m[04:31:44.888] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:31:59 AM] [32m[04:31:59.946] [INFO] [telemetry] [bcdfda81] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:31:59 AM] [32m[04:31:59.949] [INFO] [telemetry] [aa0b2a5e] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:33:39 AM] [32m[04:33:39.973] [INFO] [telemetry] 🌐 ~2 → 15p/62c[0m
+[5:33:59 AM] [32m[04:33:59.947] [INFO] [telemetry] [b72cded4] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:33:59 AM] [32m[04:33:59.949] [INFO] [telemetry] [bd27a20a] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:36:09 AM] [32m[04:36:09.952] [INFO] [telemetry] [e0438fb0] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:37:09 AM] [telemetry] Key fingerprint: 3ac586c12df378d4
+[5:37:09 AM] [32m[04:37:09.994] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[5:37:09 AM] [32m[04:37:09.997] [INFO] [telemetry] Sovereign Cell online @ http://localhost:45521[0m
+[5:37:14 AM] [32m[04:37:14.926] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:37:19 AM] [32m[04:37:19.951] [INFO] [telemetry] [96699381] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:38:14 AM] [32m[04:38:14.906] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:41:39 AM] [32m[04:41:39.953] [INFO] [telemetry] [2cf8d2b4] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:42:19 AM] [32m[04:42:19.952] [INFO] [telemetry] [069469a0] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:42:19 AM] [32m[04:42:19.954] [INFO] [telemetry] [d0c9dd54] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:43:54 AM] [32m[04:43:54.937] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:44:44 AM] [32m[04:44:44.809] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:46:59 AM] [telemetry] Key fingerprint: 0da36a7bd64ac65b
+[5:46:59 AM] [32m[04:46:59.996] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[5:47:00 AM] [32m[04:47:00.000] [INFO] [telemetry] Sovereign Cell online @ http://localhost:42551[0m
+[5:47:09 AM] [32m[04:47:09.954] [INFO] [telemetry] [e58673c3] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:48:00 AM] [32m[04:48:00.005] [INFO] [telemetry] 🧹 Cleaned stale entry: comms[0m
+[5:49:00 AM] [telemetry] Key fingerprint: 515318272ef67746
+[5:49:00 AM] [32m[04:49:00.019] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[5:49:00 AM] [32m[04:49:00.028] [INFO] [telemetry] Sovereign Cell online @ http://localhost:36171[0m
+[5:49:09 AM] [32m[04:49:09.954] [INFO] [telemetry] [1f1c06aa] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:49:09 AM] [32m[04:49:09.957] [INFO] [telemetry] [f7e1217f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:49:20 AM] [32m[04:49:20.033] [INFO] [telemetry] 🌐 ~1 → 14p/49c[0m
+[5:50:34 AM] [32m[04:50:34.964] [INFO] [telemetry] 🧹 Cleaned stale entry: comms[0m
+[5:50:34 AM] [32m[04:50:34.964] [INFO] [telemetry] 🧹 Cleaned stale entry: ai[0m
+[5:50:34 AM] [32m[04:50:34.964] [INFO] [telemetry] 🧹 Cleaned stale entry: projects[0m
+[5:53:39 AM] [32m[04:53:39.962] [INFO] [telemetry] 🧹 Cleaned stale entry: comms[0m
+[5:54:14 AM] [32m[04:54:14.915] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:55:29 AM] [32m[04:55:29.808] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[5:55:59 AM] [32m[04:55:59.962] [INFO] [telemetry] [b266dcdc] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:55:59 AM] [32m[04:55:59.968] [INFO] [telemetry] [cff70b8f] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[5:58:45 AM] [32m[04:58:45.000] [INFO] [telemetry] 🌐 ~1 → 14p/58c[0m
+[6:00:32 AM] [32m[05:00:28.967] [INFO] [telemetry] 🌐 ~2 → 4p/36c[0m
+[6:00:32 AM] [32m[05:00:28.867] [INFO] [telemetry] 🌐 ~2 → 4p/23c[0m
+[6:00:32 AM] [32m[05:00:28.853] [INFO] [telemetry] 🌐 ~1 → 3p/30c[0m
+[6:00:32 AM] [telemetry] Key fingerprint: b706716d0b714534
+[6:00:32 AM] [32m[05:00:32.499] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[6:00:32 AM] [32m[05:00:32.519] [INFO] [telemetry] Sovereign Cell online @ http://localhost:36911[0m
+[6:00:42 AM] [32m[05:00:42.248] [INFO] [telemetry] [72bfa268] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[6:00:42 AM] [32m[05:00:42.250] [INFO] [telemetry] [2f301020] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[6:00:42 AM] [32m[05:00:42.252] [INFO] [telemetry] [11f1a153] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[6:00:42 AM] [32m[05:00:42.254] [INFO] [telemetry] [85b741aa] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[6:00:42 AM] [32m[05:00:42.258] [INFO] [telemetry] [d8bd34f9] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[6:00:42 AM] [32m[05:00:42.260] [INFO] [telemetry] [8be45ec1] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[6:00:43 AM] [32m[05:00:43.943] [INFO] [telemetry] 🌐 ~1 → 6p/42c[0m
+[6:03:32 AM] [32m[05:03:32.254] [INFO] [telemetry] [06c11023] 📥 SIGNAL_ARRIVED: [mesh/health] from [Orchestrator_819624][0m
+[6:04:28 AM] [32m[05:04:28.886] [INFO] [telemetry] 🌐 ~2 → 15p/62c[0m
+[6:05:43 AM] [32m[05:05:43.878] [INFO] [telemetry] 🧹 Cleaned stale entry: comms[0m
+[6:06:13 AM] [32m[05:06:13.923] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:06:58 AM] [32m[05:06:58.519] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:07:43 AM] [32m[05:07:43.896] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:07:58 AM] [32m[05:07:58.896] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:09:13 AM] [32m[05:09:13.890] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:10:13 AM] [32m[05:10:13.731] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:12:02 AM] [32m[05:12:02.517] [INFO] [telemetry] 🌐 ~1 → 14p/56c[0m
+[6:13:47 AM] [32m[05:13:47.511] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:17:28 AM] [32m[05:17:28.915] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:21:13 AM] [32m[05:21:13.932] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:24:43 AM] [32m[05:24:43.868] [INFO] [telemetry] 🌐 ~1 → 15p/62c[0m
+[6:25:43 AM] [32m[05:25:43.899] [INFO] [telemetry] 🧹 Cleaned stale entry: skills[0m
+[6:27:13 AM] [32m[05:27:13.931] [INFO] [telemetry] 🧹 Cleaned stale entry: comms[0m
+[8:54:22 PM] [telemetry] Key fingerprint: 6a6807536673b7a6
+[8:54:22 PM] [32m[19:54:22.684] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[8:54:22 PM] [32m[19:54:22.692] [INFO] [telemetry] Sovereign Cell online @ http://localhost:36305[0m
+[8:54:22 PM] [32m[19:54:22.749] [INFO] [telemetry] [1c9820ac] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[8:54:22 PM] ============================================================
+[8:54:22 PM] 💥 MESH FAILURE [NOT_FOUND]
+[8:54:22 PM] ============================================================
+[8:54:22 PM] Time:     2026-02-09T19:54:22.751Z
+[8:54:22 PM] Signal:   1c9820ac-b1e9-497e-8710-b670ed532a0b
+[8:54:22 PM] Failed At: telemetry
+[8:54:22 PM] Message:  No route to comms/configure-channel after exhaustive search (Providers: 0)
+[8:54:22 PM] 📍 Signal Path (2 hops):
+[8:54:22 PM]    1. telegram @ 19:54:22.744
+[8:54:22 PM]    2. telemetry @ 19:54:22.749
+[8:54:22 PM] 💡 Likely Causes:
+[8:54:22 PM] Capability not registered in any cell
+[8:54:22 PM] Cell hosting capability is offline
+[8:54:22 PM] Mesh hasn't converged yet (try adding delay)
+[8:54:22 PM] Typo in capability name
+[8:54:22 PM] The capability was found earlier, but no cell responded to the signal.
+[8:54:22 PM] This usually happens if the cell crashed or timed out during the hop.
+[8:54:22 PM] ============================================================
+[8:54:49 PM] [32m[19:54:49.633] [INFO] [telemetry] [fec52037] 📥 SIGNAL_ARRIVED: [mesh/health] from [checklist][0m

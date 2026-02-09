@@ -1056,3 +1056,162 @@
 [1:00:19 AM] [32m[00:00:19.120] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
 [1:00:19 AM] [32m[00:00:19.134] [INFO] [kindly] Sovereign Cell online @ http://localhost:40533[0m
 [1:00:19 AM] [32m[00:00:19.135] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[1:01:15 AM] [32m[00:01:15.574] [INFO] [kindly] [b4ecace1] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
+[1:01:15 AM] [32m[00:01:15.575] [INFO] [kindly] 💬 New chat request from Administrator[0m
+[1:01:15 AM] [32m[00:01:15.576] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[1:01:15 AM] [32m[00:01:15.576] [INFO] [kindly] [e52a1e9c] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[1:01:15 AM] [32m[00:01:15.577] [INFO] [kindly] [e52a1e9c] 📡 RPC_OUT: [ai/generate] -> http://localhost:34857[0m
+[1:01:17 AM] [32m[00:01:17.268] [INFO] [kindly] [e52a1e9c] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:34857[0m
+[1:01:17 AM] [32m[00:01:17.269] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[1:01:17 AM] [32m[00:01:17.269] [INFO] [kindly] [063c31a9] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[1:01:17 AM] [32m[00:01:17.269] [INFO] [kindly] [063c31a9] 📡 RPC_OUT: [memory/session/store] -> http://localhost:44837[0m
+[1:01:17 AM] [32m[00:01:17.275] [INFO] [kindly] [063c31a9] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:44837[0m
+[1:01:17 AM] [32m[00:01:17.279] [INFO] [kindly] 🔗 PROXY_CALL: [memory/temporal/context][0m
+[1:01:17 AM] [32m[00:01:17.279] [INFO] [kindly] [59c1329f] 📥 SIGNAL_ARRIVED: [memory/temporal/context] from [kindly][0m
+[1:01:17 AM] [32m[00:01:17.279] [INFO] [kindly] [59c1329f] 📡 RPC_OUT: [memory/temporal/context] -> http://localhost:44837[0m
+[1:01:17 AM] [32m[00:01:17.282] [INFO] [kindly] [59c1329f] ✅ RPC_SUCCESS: [memory/temporal/context] from http://localhost:44837[0m
+[1:01:17 AM] [32m[00:01:17.283] [INFO] [kindly] 🔄 Iteration 1/10[0m
+[1:01:17 AM] [32m[00:01:17.283] [INFO] [kindly] 🔗 PROXY_CALL: [ai/generate][0m
+[1:01:17 AM] [32m[00:01:17.283] [INFO] [kindly] [cc8a09e3] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[1:01:17 AM] [32m[00:01:17.283] [INFO] [kindly] [cc8a09e3] 📡 RPC_OUT: [ai/generate] -> http://localhost:34857[0m
+[1:01:25 AM] [32m[00:01:25.757] [INFO] [kindly] [cc8a09e3] ✅ RPC_SUCCESS: [ai/generate] from http://localhost:34857[0m
+[1:01:25 AM] [32m[00:01:25.758] [INFO] [kindly] 📊 Tokens: 1682 (total: 1682)[0m
+[1:01:25 AM] [32m[00:01:25.758] [INFO] [kindly] 🔗 PROXY_CALL: [memory/session/store][0m
+[1:01:25 AM] [32m[00:01:25.758] [INFO] [kindly] [5c361193] 📥 SIGNAL_ARRIVED: [memory/session/store] from [kindly][0m
+[1:01:25 AM] [32m[00:01:25.759] [INFO] [kindly] [5c361193] 📡 RPC_OUT: [memory/session/store] -> http://localhost:44837[0m
+[1:01:25 AM] [32m[00:01:25.761] [INFO] [kindly] [5c361193] ✅ RPC_SUCCESS: [memory/session/store] from http://localhost:44837[0m
+[1:04:24 AM] [kindly] Key fingerprint: 924cc4b5ef9e27d1
+[1:04:24 AM] [32m[00:04:24.064] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[1:04:24 AM] [32m[00:04:24.100] [INFO] [kindly] Sovereign Cell online @ http://localhost:45283[0m
+[1:04:24 AM] [32m[00:04:24.102] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[1:04:24 AM] [32m[00:04:24.144] [INFO] [kindly] [5a3002de] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:06:54 AM] [kindly] Key fingerprint: fd6b608d08376e9c
+[1:06:54 AM] [32m[00:06:54.851] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[1:06:54 AM] [32m[00:06:54.860] [INFO] [kindly] Sovereign Cell online @ http://localhost:38507[0m
+[1:06:54 AM] [32m[00:06:54.862] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[1:06:54 AM] [32m[00:06:54.890] [INFO] [kindly] [dc305a50] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:14:20 AM] [kindly] Key fingerprint: de7411151b0dfdc7
+[1:14:20 AM] [32m[00:14:20.656] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[1:14:20 AM] [32m[00:14:20.675] [INFO] [kindly] Sovereign Cell online @ http://localhost:37153[0m
+[1:14:20 AM] [32m[00:14:20.676] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[1:14:20 AM] [32m[00:14:20.835] [INFO] [kindly] [a5b4602e] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:20:58 AM] [kindly] Key fingerprint: 76aa1607d17f2c0b
+[1:20:58 AM] [32m[00:20:58.064] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[1:20:58 AM] [32m[00:20:58.101] [INFO] [kindly] Sovereign Cell online @ http://localhost:45761[0m
+[1:20:58 AM] [32m[00:20:58.101] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[1:22:54 AM] [kindly] Key fingerprint: 4e9c4aa38e52ff80
+[1:22:54 AM] [32m[00:22:54.583] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[1:22:54 AM] [32m[00:22:54.600] [INFO] [kindly] Sovereign Cell online @ http://localhost:39181[0m
+[1:22:54 AM] [32m[00:22:54.601] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[1:30:17 AM] [kindly] Key fingerprint: 277f715eb139f517
+[1:30:17 AM] [32m[00:30:17.321] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[1:30:17 AM] [32m[00:30:17.327] [INFO] [kindly] Sovereign Cell online @ http://localhost:34415[0m
+[1:30:17 AM] [32m[00:30:17.328] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[1:30:32 AM] [32m[00:30:32.359] [INFO] [kindly] 🌐 ~4 → 15p/62c[0m
+[1:30:32 AM] [32m[00:30:32.488] [INFO] [kindly] 🌐 ~4 → 15p/62c[0m
+[1:30:42 AM] [32m[00:30:42.505] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[1:30:57 AM] [32m[00:30:57.457] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[1:32:02 AM] [32m[00:32:02.209] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:02:00 AM] [32m[03:00:09.865] [INFO] [kindly] 🧹 Cleaned stale entry: memory[0m
+[4:02:00 AM] [32m[03:00:13.342] [INFO] [kindly] 🧹 Cleaned stale entry: tts[0m
+[4:02:00 AM] [32m[03:00:32.345] [INFO] [kindly] 🧹 Cleaned stale entry: skills[0m
+[4:02:00 AM] [32m[03:00:35.379] [INFO] [kindly] 🧹 Cleaned stale entry: tts-ui[0m
+[4:02:00 AM] [32m[03:00:37.370] [INFO] [kindly] 🧹 Cleaned stale entry: log[0m
+[4:02:00 AM] [32m[03:00:39.530] [INFO] [kindly] 🧹 Cleaned stale entry: projects[0m
+[4:02:00 AM] [32m[03:00:46.998] [INFO] [kindly] 🧹 Cleaned stale entry: telegram[0m
+[4:02:00 AM] [32m[03:00:59.352] [INFO] [kindly] 🧹 Cleaned stale entry: telemetry[0m
+[4:02:00 AM] [32m[03:01:59.567] [INFO] [kindly] 🧹 Cleaned stale entry: checklist[0m
+[4:02:00 AM] [32m[03:01:59.771] [INFO] [kindly] 🧹 Cleaned stale entry: comms[0m
+[4:02:00 AM] [32m[03:01:59.771] [INFO] [kindly] 🧹 Cleaned stale entry: architect[0m
+[4:02:00 AM] [32m[03:01:59.771] [INFO] [kindly] 🧹 Cleaned stale entry: ai[0m
+[4:02:00 AM] [32m[03:01:59.771] [INFO] [kindly] 🧹 Cleaned stale entry: Codegen[0m
+[4:02:00 AM] [32m[03:01:59.771] [INFO] [kindly] 🧹 Cleaned stale entry: Orchestrator_819624[0m
+[4:06:44 AM] [32m[03:06:44.838] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:12:29 AM] [32m[03:12:29.874] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:13:15 AM] [32m[03:13:15.091] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:14:29 AM] [32m[03:14:29.861] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[4:18:59 AM] [32m[03:18:59.868] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:21:59 AM] [32m[03:21:59.855] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:23:14 AM] [32m[03:23:14.867] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:23:29 AM] [32m[03:23:29.840] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:24:59 AM] [32m[03:24:59.889] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:30:59 AM] [32m[03:30:59.862] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:32:30 AM] [32m[03:32:30.290] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:33:45 AM] [32m[03:33:45.290] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:43:04 AM] [32m[03:43:04.834] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[4:43:29 AM] [32m[03:43:29.875] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:44:15 AM] [32m[03:44:15.003] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:47:30 AM] [32m[03:47:30.247] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:47:45 AM] [32m[03:47:45.280] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[4:47:59 AM] [32m[03:47:59.849] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:48:14 AM] [32m[03:48:14.910] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:48:14 AM] [32m[03:48:14.942] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:51:00 AM] [32m[03:51:00.235] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:51:29 AM] [32m[03:51:29.836] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:54:15 AM] [32m[03:54:15.233] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[4:56:00 AM] [32m[03:56:00.079] [INFO] [kindly] 🌐 ~1 → 14p/56c[0m
+[4:56:15 AM] [32m[03:56:15.255] [INFO] [kindly] 🌐 ~1 → 14p/61c[0m
+[4:59:44 AM] [32m[03:59:44.868] [INFO] [kindly] 🌐 ~1 → 14p/49c[0m
+[5:00:29 AM] [32m[04:00:29.943] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:01:44 AM] [32m[04:01:44.943] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:04:24 AM] [32m[04:04:24.972] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:05:15 AM] [32m[04:05:15.237] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[5:11:14 AM] [32m[04:11:14.816] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:12:00 AM] [32m[04:12:00.234] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:12:09 AM] [32m[04:12:09.953] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[5:15:19 AM] [32m[04:15:19.823] [INFO] [kindly] 🌐 ~1 → 14p/49c[0m
+[5:15:24 AM] [32m[04:15:24.952] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:19:59 AM] [32m[04:19:59.824] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:24:59 AM] [32m[04:24:59.977] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:28:19 AM] [32m[04:28:19.976] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[5:29:44 AM] [32m[04:29:44.962] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:31:14 AM] [32m[04:31:14.942] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:32:59 AM] [32m[04:32:59.849] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:35:19 AM] [32m[04:35:19.973] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:36:44 AM] [32m[04:36:44.848] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:40:19 AM] [32m[04:40:19.827] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:41:14 AM] [32m[04:41:14.800] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:42:29 AM] [32m[04:42:29.867] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:44:50 AM] [32m[04:44:50.034] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[5:48:44 AM] [32m[04:48:44.950] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:49:45 AM] [32m[04:49:45.200] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[5:50:05 AM] [32m[04:50:05.015] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:51:09 AM] [32m[04:51:09.932] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[5:54:44 AM] [32m[04:54:44.795] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:54:59 AM] [32m[04:54:59.920] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[5:55:20 AM] [32m[04:55:20.005] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:55:45 AM] [32m[04:55:45.089] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:56:29 AM] [32m[04:56:29.794] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[5:57:04 AM] [32m[04:57:04.990] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:00:32 AM] [32m[05:00:29.073] [INFO] [kindly] 🌐 ~5 → 6p/44c[0m
+[6:00:43 AM] [32m[05:00:43.845] [INFO] [kindly] 🌐 ~2 → 8p/50c[0m
+[6:00:43 AM] [32m[05:00:43.857] [INFO] [kindly] 🌐 ~1 → 8p/46c[0m
+[6:01:43 AM] [32m[05:01:43.818] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[6:02:43 AM] [32m[05:02:43.951] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[6:03:43 AM] [32m[05:03:43.719] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:03:43 AM] [32m[05:03:43.909] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:05:44 AM] [32m[05:05:44.114] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:06:13 AM] [32m[05:06:13.880] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:06:31 AM] [32m[05:06:31.394] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:07:13 AM] [32m[05:07:13.520] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:09:28 AM] [32m[05:09:28.918] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:11:28 AM] [32m[05:11:28.917] [INFO] [kindly] 🌐 ~2 → 15p/62c[0m
+[6:12:32 AM] [32m[05:12:32.512] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:13:13 AM] [32m[05:13:13.821] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:14:58 AM] [32m[05:14:58.922] [INFO] [kindly] 🌐 ~2 → 14p/58c[0m
+[6:16:13 AM] [32m[05:16:13.882] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:17:17 AM] [32m[05:17:17.509] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:17:28 AM] [32m[05:17:28.896] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:19:28 AM] [32m[05:19:28.519] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:24:13 AM] [32m[05:24:13.927] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:25:02 AM] [32m[05:25:02.541] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:25:58 AM] [32m[05:25:58.959] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:26:02 AM] [32m[05:26:02.509] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:26:43 AM] [32m[05:26:43.929] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:27:13 AM] [32m[05:27:13.813] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:27:58 AM] [32m[05:27:58.845] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[6:29:59 AM] [32m[05:29:59.002] [INFO] [kindly] 🌐 ~1 → 15p/62c[0m
+[8:54:22 PM] [kindly] Key fingerprint: 1077b404bcc9b21f
+[8:54:22 PM] [32m[19:54:22.592] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[8:54:22 PM] [32m[19:54:22.604] [INFO] [kindly] Sovereign Cell online @ http://localhost:39067[0m
+[8:54:22 PM] [32m[19:54:22.605] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m

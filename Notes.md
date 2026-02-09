@@ -154,8 +154,45 @@ The error handling needs to be 10000000000 times better
 Fix this. Right now.
 
 
+
 Add even better error handling, logging tracing etc. I want to let cells subscribe to error events happening in any cell - any error in any cell.
 Example use cases:
 auto error log and saving for human personel to look through
 auto fix errors using ai by looking at source code of cells
 Log to terminal
+
+Maybe:
+mesh provides default error handling implementations, returns typed enums always for all calls to handle errors and state natively and user can override mesh default error handling.
+Error handling can either be handled in orchestrator for all cells to print them to the terminal.
+Or defined in a ai cell which fixes the errors automatically.
+
+
+
+Why does mesh-types.d.ts not define types?? it just writes "any"
+
+
+
+Right now:
+We DONT have type safety.
+And we have to create a seperate api for the frotnend to access the cell mesh.
+
+Solutions:
+Make it type safe.
+Make the cell cdk example1 etc be browser capable directly.
+
+
+
+Allow a cells to share capabilities and all get called at the same time:
+for example a airplane looking for dangers:
+it calls "get_close_proximity" which calls the radar controller cell, the elevation controller cell, the lidar controller cells... The construction crew installs a new sensor to check for birds on the front wings. all it does is assign itself with the "get_close_proximity" capability and it is automatically installed and working within the system.
+This makes the mesh even more modular. Self assembling functionality from the network topology.
+
+A ship tries to communicate with the dock to give it the products and cargo it has onboard automatically.
+The data is not compatible and no automatic router is installed so the data is just presented in a sheet for a human to review manually or using ai before sending over to the automatic mesh once more.
+The cell networks doesnt have to be of the same type or even compatible. But when both sides implement 10 different standard protocols and each have 5 means of communication one of them will match and they will 1, either auto translate data to be compatible between the systems or 
+2, let a human do it if implemented on the sides. 
+If they cant find a way of communicating they are not meant to communicate.
+If they still need to communicate both sides implement a human equivelent and mail to send the data. And fax. All through the "communicate" capability which the central controllers on each side calls. It doesnt matter that the formats are not compatible or the protocols as long as the cells acts as adapters and convert the data to the protocol the "communicate" capability defines and expects
+
+
+There is currently 1 protocol defined in the protocols folder and thats for typescript - you can merge all of them

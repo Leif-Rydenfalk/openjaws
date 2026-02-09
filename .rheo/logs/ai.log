@@ -1768,3 +1768,197 @@
 [1:00:19 AM] [ai] Key fingerprint: 676ebe69377e1f3e
 [1:00:19 AM] [32m[00:00:19.076] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
 [1:00:19 AM] [32m[00:00:19.120] [INFO] [ai] Sovereign Cell online @ http://localhost:34857[0m
+[1:01:15 AM] [32m[00:01:15.578] [INFO] [ai] [e52a1e9c] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[1:01:15 AM] [32m[00:01:15.579] [INFO] [ai] 🤖 AI Request [direct]: Classify intent in ONE word: "give me a full loan status report on all cells whi...[0m
+[1:01:15 AM] [32m[00:01:15.579] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[1:01:15 AM] [32m[00:01:15.580] [INFO] [ai] [a961e485] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[1:01:15 AM] [32m[00:01:15.580] [INFO] [ai] [a961e485] 📡 RPC_OUT: [log/info] -> http://localhost:39983[0m
+[1:01:15 AM] [32m[00:01:15.582] [INFO] [ai] [a961e485] ✅ RPC_SUCCESS: [log/info] from http://localhost:39983[0m
+[1:01:17 AM] [32m[00:01:17.265] [INFO] [ai] ✅ AI Response [direct]: 281 tokens, 1686ms[0m
+[1:01:17 AM] [32m[00:01:17.265] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[1:01:17 AM] [32m[00:01:17.265] [INFO] [ai] [3483c39c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[1:01:17 AM] [32m[00:01:17.265] [INFO] [ai] [3483c39c] 📡 RPC_OUT: [log/info] -> http://localhost:39983[0m
+[1:01:17 AM] [32m[00:01:17.267] [INFO] [ai] [3483c39c] ✅ RPC_SUCCESS: [log/info] from http://localhost:39983[0m
+[1:01:17 AM] [32m[00:01:17.285] [INFO] [ai] [cc8a09e3] 📥 SIGNAL_ARRIVED: [ai/generate] from [kindly][0m
+[1:01:17 AM] [32m[00:01:17.285] [INFO] [ai] 🤖 AI Request [tts_session_1770592195345_89pqocuo4_1]: USER: give me a full loan status report on all cells which are active...[0m
+[1:01:17 AM] [32m[00:01:17.285] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[1:01:17 AM] [32m[00:01:17.285] [INFO] [ai] [86f79c0d] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[1:01:17 AM] [32m[00:01:17.286] [INFO] [ai] [86f79c0d] 📡 RPC_OUT: [log/info] -> http://localhost:39983[0m
+[1:01:17 AM] [32m[00:01:17.287] [INFO] [ai] [86f79c0d] ✅ RPC_SUCCESS: [log/info] from http://localhost:39983[0m
+[1:01:19 AM] [32m[00:01:19.120] [INFO] [ai] 📊 AI Stats: 1 calls, 281 tokens total, 281 last hour[0m
+[1:01:25 AM] [32m[00:01:25.754] [INFO] [ai] ✅ AI Response [tts_session_1770592195345_89pqocuo4_1]: 1682 tokens, 8469ms[0m
+[1:01:25 AM] [32m[00:01:25.754] [INFO] [ai] 🔗 PROXY_CALL: [log/info][0m
+[1:01:25 AM] [32m[00:01:25.754] [INFO] [ai] [b77bd32c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[1:01:25 AM] [32m[00:01:25.755] [INFO] [ai] [b77bd32c] 📡 RPC_OUT: [log/info] -> http://localhost:39983[0m
+[1:01:25 AM] [32m[00:01:25.757] [INFO] [ai] [b77bd32c] ✅ RPC_SUCCESS: [log/info] from http://localhost:39983[0m
+[1:02:19 AM] [32m[00:02:19.119] [INFO] [ai] 📊 AI Stats: 2 calls, 1963 tokens total, 1963 last hour[0m
+[1:03:19 AM] [32m[00:03:19.118] [INFO] [ai] 📊 AI Stats: 2 calls, 1963 tokens total, 1963 last hour[0m
+[1:04:19 AM] [32m[00:04:19.117] [INFO] [ai] 📊 AI Stats: 2 calls, 1963 tokens total, 1963 last hour[0m
+[1:04:24 AM] [ai] Key fingerprint: eaa8aa6316af94da
+[1:04:24 AM] [32m[00:04:24.182] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:04:24 AM] [32m[00:04:24.202] [INFO] [ai] Sovereign Cell online @ http://localhost:41319[0m
+[1:06:54 AM] [ai] Key fingerprint: a82124338eb6bd49
+[1:06:54 AM] [32m[00:06:54.829] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:06:54 AM] [32m[00:06:54.848] [INFO] [ai] Sovereign Cell online @ http://localhost:41001[0m
+[1:06:54 AM] [32m[00:06:54.890] [INFO] [ai] [dc305a50] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:14:20 AM] [ai] Key fingerprint: 4baf8833aa232e78
+[1:14:20 AM] [32m[00:14:20.780] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:14:20 AM] [32m[00:14:20.801] [INFO] [ai] Sovereign Cell online @ http://localhost:33381[0m
+[1:20:58 AM] [ai] Key fingerprint: 115ba45205ef4ac6
+[1:20:58 AM] [32m[00:20:58.140] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:20:58 AM] [32m[00:20:58.165] [INFO] [ai] Sovereign Cell online @ http://localhost:44821[0m
+[1:22:54 AM] [ai] Key fingerprint: edb766b489f36798
+[1:22:54 AM] [32m[00:22:54.614] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:22:54 AM] [32m[00:22:54.625] [INFO] [ai] Sovereign Cell online @ http://localhost:35897[0m
+[1:22:54 AM] [32m[00:22:54.693] [INFO] [ai] [c03660d6] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
+[1:22:54 AM] [32m[00:22:54.696] [INFO] [ai] [c03660d6] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33435[0m
+[1:22:54 AM] [32m[00:22:54.712] [INFO] [ai] [c03660d6] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:33435[0m
+[1:30:17 AM] [ai] Key fingerprint: 29294ea5926619e8
+[1:30:17 AM] [32m[00:30:17.484] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:30:17 AM] [32m[00:30:17.521] [INFO] [ai] Sovereign Cell online @ http://localhost:38751[0m
+[1:30:27 AM] [ai] Key fingerprint: c648b220724f8487
+[1:30:27 AM] [32m[00:30:27.465] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[1:30:27 AM] [33m[00:30:27.466] [WARN] [ai] Port 38751 in use, seeking alternative...[0m
+[1:30:27 AM] [32m[00:30:27.476] [INFO] [ai] Sovereign Cell online @ http://localhost:40777[0m
+[1:30:32 AM] [32m[00:30:32.287] [INFO] [ai] 🌐 ~5 → 15p/62c[0m
+[1:30:47 AM] [32m[00:30:47.330] [INFO] [ai] 🌐 ~2 → 15p/62c[0m
+[1:31:17 AM] [32m[00:31:17.467] [INFO] [ai] 🌐 ~2 → 15p/62c[0m
+[1:31:17 AM] [32m[00:31:17.489] [INFO] [ai] 🌐 ~3 → 15p/62c[0m
+[1:31:27 AM] [32m[00:31:27.457] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[1:31:27 AM] [32m[00:31:27.487] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[1:31:32 AM] [32m[00:31:32.560] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: telemetry[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: tts[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: Orchestrator_819624[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: projects[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: telegram[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: tts-ui[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: checklist[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: comms[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: log[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: architect[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: memory[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: Codegen[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: kindly[0m
+[4:02:00 AM] [32m[03:01:59.877] [INFO] [ai] 🧹 Cleaned stale entry: skills[0m
+[4:02:00 AM] [ai] Key fingerprint: 2426bf1fc13b3576
+[4:02:00 AM] [32m[03:02:00.268] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[4:02:00 AM] [32m[03:02:00.282] [INFO] [ai] Sovereign Cell online @ http://localhost:45689[0m
+[4:08:15 AM] [32m[03:08:15.282] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:10:29 AM] [32m[03:10:29.868] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:10:30 AM] [32m[03:10:30.283] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:12:29 AM] [32m[03:12:29.934] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:18:59 AM] [32m[03:18:59.914] [INFO] [ai] 🧹 Cleaned stale entry: comms[0m
+[4:21:59 AM] [32m[03:21:59.895] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:23:29 AM] [32m[03:23:29.840] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:31:00 AM] [32m[03:31:00.272] [INFO] [ai] 🧹 Cleaned stale entry: skills[0m
+[4:31:59 AM] [32m[03:31:59.835] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:31:59 AM] [32m[03:31:59.862] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:36:19 AM] [ai] Key fingerprint: 7d0e4b14a99ad5af
+[4:36:19 AM] [32m[03:36:19.911] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[4:36:19 AM] [32m[03:36:19.915] [INFO] [ai] Sovereign Cell online @ http://localhost:43647[0m
+[4:37:29 AM] [32m[03:37:29.859] [INFO] [ai] 🧹 Cleaned stale entry: comms[0m
+[4:41:29 AM] [32m[03:41:29.919] [INFO] [ai] 🌐 ~2 → 15p/62c[0m
+[4:44:29 AM] [32m[03:44:29.829] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:45:45 AM] [32m[03:45:45.261] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:51:59 AM] [32m[03:51:59.917] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:55:44 AM] [32m[03:55:44.845] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[4:58:29 AM] [32m[03:58:29.843] [INFO] [ai] 🌐 ~1 → 14p/58c[0m
+[5:01:00 AM] [32m[04:01:00.270] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:03:39 AM] [ai] Key fingerprint: a18c90e8b8a204fe
+[5:03:39 AM] [32m[04:03:39.951] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[5:03:39 AM] [32m[04:03:39.956] [INFO] [ai] Sovereign Cell online @ http://localhost:37541[0m
+[5:07:29 AM] [ai] Key fingerprint: eca96bbe75622edc
+[5:07:29 AM] [32m[04:07:29.962] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[5:07:29 AM] [32m[04:07:29.966] [INFO] [ai] Sovereign Cell online @ http://localhost:44431[0m
+[5:09:20 AM] [ai] Key fingerprint: daf823606e555721
+[5:09:20 AM] [32m[04:09:20.019] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[5:09:20 AM] [32m[04:09:20.023] [INFO] [ai] Sovereign Cell online @ http://localhost:44307[0m
+[5:09:50 AM] [32m[04:09:50.023] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:10:14 AM] [32m[04:10:14.953] [INFO] [ai] 🌐 ~1 → 14p/58c[0m
+[5:10:34 AM] [32m[04:10:34.988] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:12:30 AM] [32m[04:12:30.233] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:12:39 AM] [32m[04:12:39.954] [INFO] [ai] 🧹 Cleaned stale entry: telemetry[0m
+[5:12:39 AM] [32m[04:12:39.954] [INFO] [ai] 🧹 Cleaned stale entry: memory[0m
+[5:12:44 AM] [32m[04:12:44.924] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:14:15 AM] [32m[04:14:15.075] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:15:39 AM] [32m[04:15:39.952] [INFO] [ai] 🧹 Cleaned stale entry: comms[0m
+[5:17:20 AM] [32m[04:17:20.335] [INFO] [ai] 🧹 Cleaned stale entry: memory[0m
+[5:18:54 AM] [32m[04:18:54.976] [INFO] [ai] 🌐 ~1 → 14p/61c[0m
+[5:19:29 AM] [32m[04:19:29.970] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:19:59 AM] [32m[04:19:59.833] [INFO] [ai] 🧹 Cleaned stale entry: telemetry[0m
+[5:23:59 AM] [32m[04:23:59.891] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:25:35 AM] [32m[04:25:35.022] [INFO] [ai] 🧹 Cleaned stale entry: skills[0m
+[5:26:00 AM] [32m[04:26:00.215] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:29:54 AM] [32m[04:29:54.976] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:31:50 AM] [32m[04:31:50.018] [INFO] [ai] 🧹 Cleaned stale entry: telemetry[0m
+[5:33:50 AM] [ai] Key fingerprint: 93f4605d2c5eeb19
+[5:33:50 AM] [32m[04:33:50.009] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[5:33:50 AM] [32m[04:33:50.017] [INFO] [ai] Sovereign Cell online @ http://localhost:37727[0m
+[5:34:30 AM] [32m[04:34:30.249] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:35:29 AM] [32m[04:35:29.907] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:35:59 AM] [ai] Key fingerprint: 4abbde749cbc1b27
+[5:36:00 AM] [32m[04:36:00.002] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[5:36:00 AM] [32m[04:36:00.008] [INFO] [ai] Sovereign Cell online @ http://localhost:38343[0m
+[5:36:59 AM] [32m[04:36:59.960] [INFO] [ai] 🧹 Cleaned stale entry: projects[0m
+[5:37:14 AM] [32m[04:37:14.969] [INFO] [ai] 🌐 ~1 → 14p/56c[0m
+[5:37:24 AM] [32m[04:37:24.942] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:37:44 AM] [32m[04:37:44.813] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:39:35 AM] [32m[04:39:35.003] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:40:19 AM] [32m[04:40:19.825] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:42:09 AM] [ai] Key fingerprint: edd9bc954a9a23cf
+[5:42:10 AM] [32m[04:42:10.002] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[5:42:10 AM] [32m[04:42:10.007] [INFO] [ai] Sovereign Cell online @ http://localhost:36621[0m
+[5:44:09 AM] [32m[04:44:09.938] [INFO] [ai] 🧹 Cleaned stale entry: memory[0m
+[5:44:35 AM] [32m[04:44:35.033] [INFO] [ai] 🌐 ~1 → 14p/58c[0m
+[5:48:34 AM] [32m[04:48:34.827] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:49:14 AM] [32m[04:49:14.951] [INFO] [ai] 🧹 Cleaned stale entry: skills[0m
+[5:49:44 AM] [32m[04:49:44.954] [INFO] [ai] 🌐 ~2 → 15p/62c[0m
+[5:49:45 AM] [32m[04:49:45.200] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:53:50 AM] [32m[04:53:50.053] [INFO] [ai] 🧹 Cleaned stale entry: projects[0m
+[5:54:00 AM] [32m[04:54:00.197] [INFO] [ai] 🌐 ~2 → 15p/62c[0m
+[5:54:15 AM] [32m[04:54:15.197] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:55:50 AM] [ai] Key fingerprint: fa47ce98e5932fc7
+[5:55:50 AM] [32m[04:55:50.042] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[5:55:50 AM] [32m[04:55:50.048] [INFO] [ai] Sovereign Cell online @ http://localhost:39361[0m
+[5:56:20 AM] [32m[04:56:20.056] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[5:59:45 AM] [32m[04:59:45.000] [INFO] [ai] 🧹 Cleaned stale entry: skills[0m
+[6:00:32 AM] [32m[05:00:28.904] [INFO] [ai] 🌐 ~3 → 15p/62c[0m
+[6:00:32 AM] [32m[05:00:28.900] [INFO] [ai] 🌐 ~3 → 15p/62c[0m
+[6:00:32 AM] [32m[05:00:28.883] [INFO] [ai] 🌐 ~2 → 5p/42c[0m
+[6:00:32 AM] [32m[05:00:28.979] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:00:32 AM] [ai] Key fingerprint: 7bc379ceee8bd883
+[6:00:32 AM] [32m[05:00:32.528] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[6:00:32 AM] [32m[05:00:32.550] [INFO] [ai] Sovereign Cell online @ http://localhost:46581[0m
+[6:00:58 AM] [32m[05:00:58.884] [INFO] [ai] 🧹 Cleaned stale entry: telegram[0m
+[6:00:58 AM] [32m[05:00:58.884] [INFO] [ai] 🧹 Cleaned stale entry: checklist[0m
+[6:00:58 AM] [32m[05:00:58.884] [INFO] [ai] 🧹 Cleaned stale entry: Orchestrator_819624[0m
+[6:00:58 AM] [32m[05:00:58.884] [INFO] [ai] 🧹 Cleaned stale entry: tts[0m
+[6:00:58 AM] [32m[05:00:58.884] [INFO] [ai] 🧹 Cleaned stale entry: coder[0m
+[6:00:58 AM] [32m[05:00:58.884] [INFO] [ai] 🧹 Cleaned stale entry: log[0m
+[6:00:58 AM] [32m[05:00:58.884] [INFO] [ai] 🧹 Cleaned stale entry: kindly[0m
+[6:00:58 AM] [32m[05:00:58.884] [INFO] [ai] 🧹 Cleaned stale entry: memory[0m
+[6:05:28 AM] [32m[05:05:28.830] [INFO] [ai] 🧹 Cleaned stale entry: comms[0m
+[6:06:43 AM] [32m[05:06:43.880] [INFO] [ai] 🧹 Cleaned stale entry: telemetry[0m
+[6:06:43 AM] [32m[05:06:43.880] [INFO] [ai] 🧹 Cleaned stale entry: comms[0m
+[6:07:43 AM] [32m[05:07:43.905] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:07:58 AM] [32m[05:07:58.845] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:07:58 AM] [32m[05:07:58.905] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:10:18 AM] [32m[05:10:18.906] [INFO] [ai] 🧹 Cleaned stale entry: skills[0m
+[6:12:58 AM] [32m[05:12:58.717] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:13:28 AM] [32m[05:13:28.820] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:13:58 AM] [32m[05:13:58.819] [INFO] [ai] 🌐 ~2 → 15p/62c[0m
+[6:14:13 AM] [32m[05:14:13.820] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:14:58 AM] [32m[05:14:58.848] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:16:43 AM] [32m[05:16:43.846] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:16:58 AM] [32m[05:16:58.846] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:17:13 AM] [32m[05:17:13.932] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:19:28 AM] [32m[05:19:28.726] [INFO] [ai] 🧹 Cleaned stale entry: projects[0m
+[6:20:28 AM] [32m[05:20:28.902] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:22:28 AM] [32m[05:22:28.918] [INFO] [ai] 🌐 ~1 → 15p/62c[0m
+[6:22:58 AM] [32m[05:22:58.972] [INFO] [ai] 🌐 ~1 → 14p/56c[0m
+[6:25:17 AM] [32m[05:25:17.542] [INFO] [ai] 🧹 Cleaned stale entry: telemetry[0m
+[6:27:28 AM] [32m[05:27:28.814] [INFO] [ai] 🧹 Cleaned stale entry: skills[0m
+[8:54:22 PM] [ai] Key fingerprint: 920f3c35307d70ed
+[8:54:22 PM] [32m[19:54:22.717] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[8:54:22 PM] [32m[19:54:22.721] [INFO] [ai] Sovereign Cell online @ http://localhost:43233[0m

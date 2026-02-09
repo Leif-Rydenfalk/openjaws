@@ -519,3 +519,8 @@ export type RouterType<T extends { _def: { procedures: Record<string, AnyProcedu
  * Helper to infer the full client interface from a cell's router
  */
 export type ClientFromRouter<T> = T extends AnyRouter ? InferRouter<T> : never;
+
+
+
+// --- Typed mesh ---
+

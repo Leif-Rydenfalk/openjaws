@@ -159,3 +159,9 @@ certs/
 /.rheo
 .rheo
 *.log
+
+mesh-types.d.ts
+.mesh-types-trigger
+
+trash/
+/trash

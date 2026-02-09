@@ -1,8 +1,8 @@
 {
-  "pid": 809417,
-  "version": "0d0bf6c4b2221433",
-  "port": 39983,
-  "startTime": 1770595219165,
+  "pid": 1277232,
+  "version": "839fd796ebf7089f",
+  "port": 42155,
+  "startTime": 1770666862659,
   "capabilities": [
     "mesh/ping",
     "mesh/gossip",
@@ -16,5 +16,5 @@
     "log/info",
     "log/get"
   ],
-  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEANkbfa4SJnWlrzvytXLxk6OAbMttNYvpevqHgOZarSIA=\n-----END PUBLIC KEY-----\n"
+  "pubKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJ5BIGVGNY3f5TJnTfE5SQ00aUpgtZ2U1GEGJ+wXjGiM=\n-----END PUBLIC KEY-----\n"
 }

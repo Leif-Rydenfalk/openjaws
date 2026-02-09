@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-09T00:00:24.148Z
- * Source: Live mesh scan (50 capabilities)
+ * Generated: 2026-02-09T19:54:52.764Z
+ * Source: Live mesh scan (55 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -48,6 +48,11 @@ declare module "./protocols/typed-mesh" {
         "projects/list": { input: any; output: any };
         "projects/read": { input: any; output: any };
         "projects/write": { input: any; output: any };
+        "simple-ai/chat": { input: any; output: any };
+        "simple-ai/clear": { input: any; output: any };
+        "simple-ai/history": { input: any; output: any };
+        "simple-ai/session": { input: any; output: any };
+        "simple-ai/stats": { input: any; output: any };
         "skills/get-context": { input: any; output: any };
         "skills/learn-pattern": { input: any; output: any };
         "skills/list": { input: any; output: any };
@@ -166,6 +171,17 @@ export type ProjectsCapabilities = {
 };
 
 /**
+ * Capabilities in the simple-ai namespace
+ */
+export type Simple-aiCapabilities = {
+    chat: { input: any; output: any };
+    clear: { input: any; output: any };
+    history: { input: any; output: any };
+    session: { input: any; output: any };
+    stats: { input: any; output: any };
+};
+
+/**
  * Capabilities in the skills namespace
  */
 export type SkillsCapabilities = {
@@ -194,4 +210,4 @@ export type TtsCapabilities = {
     synthesize: { input: any; output: any };
 };
 
-// Type trigger: 1770595224149
+// Type trigger: 1770666892765

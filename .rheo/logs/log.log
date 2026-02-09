@@ -960,3 +960,156 @@
 [1:00:19 AM] [32m[00:00:19.165] [INFO] [log] Sovereign Cell online @ http://localhost:39983[0m
 [1:00:19 AM] [32m[00:00:19.166] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
 [1:00:19 AM] [32m[00:00:19.166] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:01:15 AM] [32m[00:01:15.573] [INFO] [log] [980cb932] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[1:01:15 AM] [32m[00:01:15.574] [INFO] [log] 📝 Logged: [AGR5S] VOICE_UI: Relaying to ...[0m
+[1:01:15 AM] [32m[00:01:15.581] [INFO] [log] [a961e485] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[1:01:15 AM] [32m[00:01:15.582] [INFO] [log] 📝 Logged: AI_REQUEST: Classify intent in...[0m
+[1:01:17 AM] [32m[00:01:17.267] [INFO] [log] [3483c39c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[1:01:17 AM] [32m[00:01:17.267] [INFO] [log] 📝 Logged: AI_COMPLETE: 281tok, 1686ms (r...[0m
+[1:01:17 AM] [32m[00:01:17.287] [INFO] [log] [86f79c0d] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[1:01:17 AM] [32m[00:01:17.287] [INFO] [log] 📝 Logged: AI_REQUEST: USER: give me a fu...[0m
+[1:01:25 AM] [32m[00:01:25.756] [INFO] [log] [b77bd32c] 📥 SIGNAL_ARRIVED: [log/info] from [ai][0m
+[1:01:25 AM] [32m[00:01:25.756] [INFO] [log] 📝 Logged: AI_COMPLETE: 1682tok, 8469ms (...[0m
+[1:01:25 AM] [32m[00:01:25.764] [INFO] [log] [159dd148] 📥 SIGNAL_ARRIVED: [log/info] from [tts-ui][0m
+[1:01:25 AM] [32m[00:01:25.764] [INFO] [log] 📝 Logged: [AGR5S] VOICE_UI: Relaying to ...[0m
+[1:04:24 AM] [log] Key fingerprint: 528a35de37fc57f0
+[1:04:24 AM] [32m[00:04:24.167] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[1:04:24 AM] [32m[00:04:24.180] [INFO] [log] Sovereign Cell online @ http://localhost:45253[0m
+[1:04:24 AM] [32m[00:04:24.183] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[1:04:24 AM] [32m[00:04:24.183] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:06:54 AM] [log] Key fingerprint: c667f5234e5ab788
+[1:06:54 AM] [32m[00:06:54.858] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[1:06:54 AM] [32m[00:06:54.867] [INFO] [log] Sovereign Cell online @ http://localhost:40151[0m
+[1:06:54 AM] [32m[00:06:54.870] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[1:06:54 AM] [32m[00:06:54.870] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:14:20 AM] [log] Key fingerprint: f0a6134df467a4ea
+[1:14:20 AM] [32m[00:14:20.803] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[1:14:20 AM] [32m[00:14:20.824] [INFO] [log] Sovereign Cell online @ http://localhost:36031[0m
+[1:14:20 AM] [32m[00:14:20.827] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[1:14:20 AM] [32m[00:14:20.827] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:20:58 AM] [log] Key fingerprint: 2142039cefb569b3
+[1:20:58 AM] [32m[00:20:58.160] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[1:20:58 AM] [32m[00:20:58.171] [INFO] [log] Sovereign Cell online @ http://localhost:33141[0m
+[1:20:58 AM] [32m[00:20:58.172] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[1:20:58 AM] [32m[00:20:58.172] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:22:54 AM] [log] Key fingerprint: 31bc9c3235b215a0
+[1:22:54 AM] [32m[00:22:54.628] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[1:22:54 AM] [32m[00:22:54.643] [INFO] [log] Sovereign Cell online @ http://localhost:37597[0m
+[1:22:54 AM] [32m[00:22:54.645] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[1:22:54 AM] [32m[00:22:54.645] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:30:17 AM] [log] Key fingerprint: b7c1e39f0106a0fb
+[1:30:17 AM] [32m[00:30:17.476] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[1:30:17 AM] [32m[00:30:17.486] [INFO] [log] Sovereign Cell online @ http://localhost:41205[0m
+[1:30:17 AM] [32m[00:30:17.487] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[1:30:17 AM] [32m[00:30:17.487] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[1:30:27 AM] [32m[00:30:27.959] [INFO] [log] 🌐 ~1 → 14p/62c[0m
+[1:30:32 AM] [32m[00:30:32.347] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[1:30:32 AM] [32m[00:30:32.534] [INFO] [log] 🌐 ~4 → 15p/62c[0m
+[1:30:57 AM] [32m[00:30:57.458] [INFO] [log] 🌐 ~3 → 15p/62c[0m
+[1:30:57 AM] [32m[00:30:57.505] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[1:31:02 AM] [32m[00:31:02.288] [INFO] [log] 🌐 ~3 → 15p/62c[0m
+[1:31:27 AM] [32m[00:31:27.488] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[4:04:59 AM] [32m[03:04:59.835] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:07:45 AM] [32m[03:07:45.263] [INFO] [log] 🌐 ~1 → 14p/58c[0m
+[4:09:34 AM] [32m[03:09:34.854] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:09:49 AM] [32m[03:09:49.853] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:10:29 AM] [32m[03:10:29.897] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:13:14 AM] [32m[03:13:14.867] [INFO] [log] 🌐 ~1 → 14p/49c[0m
+[4:16:29 AM] [32m[03:16:29.872] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:22:15 AM] [32m[03:22:15.015] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:24:30 AM] [32m[03:24:30.254] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:30:45 AM] [32m[03:30:45.010] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:31:00 AM] [32m[03:31:00.271] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:36:59 AM] [32m[03:36:59.858] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:37:29 AM] [32m[03:37:29.858] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:41:29 AM] [32m[03:41:29.852] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:41:45 AM] [32m[03:41:45.276] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:47:30 AM] [32m[03:47:30.247] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:47:59 AM] [32m[03:47:59.847] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:57:24 AM] [32m[03:57:24.876] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[4:59:14 AM] [32m[03:59:14.846] [INFO] [log] 🌐 ~1 → 14p/61c[0m
+[4:59:45 AM] [32m[03:59:45.253] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:01:00 AM] [32m[04:01:00.270] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:04:00 AM] [32m[04:04:00.248] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:04:24 AM] [32m[04:04:24.958] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:06:15 AM] [32m[04:06:15.249] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:11:14 AM] [32m[04:11:14.815] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:12:09 AM] [32m[04:12:09.953] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[5:12:09 AM] [32m[04:12:09.984] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:12:14 AM] [32m[04:12:14.836] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:14:14 AM] [32m[04:14:14.864] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:14:15 AM] [32m[04:14:15.074] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:15:14 AM] [32m[04:15:14.983] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[5:15:44 AM] [32m[04:15:44.952] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:21:29 AM] [32m[04:21:29.827] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:23:59 AM] [32m[04:23:59.968] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:26:14 AM] [32m[04:26:14.932] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[5:26:44 AM] [32m[04:26:44.822] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:26:59 AM] [32m[04:26:59.823] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:27:24 AM] [32m[04:27:24.971] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:27:59 AM] [32m[04:27:59.913] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:29:44 AM] [32m[04:29:44.888] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:31:44 AM] [32m[04:31:44.824] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:31:45 AM] [32m[04:31:45.250] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[5:33:15 AM] [32m[04:33:15.084] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[5:34:00 AM] [32m[04:34:00.210] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:34:15 AM] [32m[04:34:15.223] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:34:20 AM] [32m[04:34:20.039] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:34:29 AM] [32m[04:34:29.927] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:34:30 AM] [32m[04:34:30.231] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:34:45 AM] [32m[04:34:45.230] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:36:44 AM] [32m[04:36:44.885] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:36:45 AM] [32m[04:36:45.229] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:38:04 AM] [32m[04:38:04.881] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[5:39:14 AM] [32m[04:39:14.849] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:40:15 AM] [32m[04:40:15.227] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:40:15 AM] [32m[04:40:15.238] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:42:19 AM] [32m[04:42:19.990] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:43:44 AM] [32m[04:43:44.872] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:45:14 AM] [32m[04:45:14.900] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:45:29 AM] [32m[04:45:29.900] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:46:44 AM] [32m[04:46:44.881] [INFO] [log] 🌐 ~1 → 14p/61c[0m
+[5:47:54 AM] [32m[04:47:54.958] [INFO] [log] 🌐 ~1 → 14p/61c[0m
+[5:48:59 AM] [32m[04:48:59.919] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:49:14 AM] [32m[04:49:14.808] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:50:39 AM] [32m[04:50:39.934] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:50:44 AM] [32m[04:50:44.955] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:53:15 AM] [32m[04:53:15.000] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:56:04 AM] [32m[04:56:04.984] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[5:56:29 AM] [32m[04:56:29.793] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:00:32 AM] [32m[05:00:29.117] [INFO] [log] 🌐 ~4 → 6p/44c[0m
+[6:00:43 AM] [32m[05:00:43.863] [INFO] [log] 🌐 ~1 → 8p/46c[0m
+[6:01:28 AM] [32m[05:01:28.818] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:01:59 AM] [32m[05:01:59.048] [INFO] [log] 🌐 ~1 → 14p/49c[0m
+[6:02:58 AM] [32m[05:02:58.874] [INFO] [log] 🌐 ~1 → 14p/56c[0m
+[6:03:43 AM] [32m[05:03:43.720] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:04:43 AM] [32m[05:04:43.895] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:06:13 AM] [32m[05:06:13.873] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:06:28 AM] [32m[05:06:28.892] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[6:06:43 AM] [32m[05:06:43.889] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:06:58 AM] [32m[05:06:58.960] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:08:13 AM] [32m[05:08:13.865] [INFO] [log] 🌐 ~1 → 14p/58c[0m
+[6:09:28 AM] [32m[05:09:28.719] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:12:58 AM] [32m[05:12:58.821] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:13:17 AM] [32m[05:13:17.511] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[6:13:28 AM] [32m[05:13:28.969] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:15:13 AM] [32m[05:15:13.913] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:15:58 AM] [32m[05:15:58.921] [INFO] [log] 🌐 ~1 → 14p/61c[0m
+[6:17:02 AM] [32m[05:17:02.509] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:18:43 AM] [32m[05:18:43.946] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:19:28 AM] [32m[05:19:28.724] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:25:14 AM] [32m[05:25:14.103] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:25:28 AM] [32m[05:25:28.929] [INFO] [log] 🌐 ~2 → 15p/62c[0m
+[6:25:29 AM] [32m[05:25:29.103] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:27:13 AM] [32m[05:27:13.990] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:27:43 AM] [32m[05:27:43.844] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:28:13 AM] [32m[05:28:13.917] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:28:43 AM] [32m[05:28:43.995] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:29:17 AM] [32m[05:29:17.549] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:30:14 AM] [32m[05:30:14.020] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[6:31:15 AM] [32m[05:30:30.277] [INFO] [log] 🌐 ~1 → 15p/62c[0m
+[8:54:22 PM] [log] Key fingerprint: 77e13e5772955035
+[8:54:22 PM] [32m[19:54:22.648] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[8:54:22 PM] [32m[19:54:22.659] [INFO] [log] Sovereign Cell online @ http://localhost:42155[0m
+[8:54:22 PM] [32m[19:54:22.659] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[8:54:22 PM] [32m[19:54:22.659] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
