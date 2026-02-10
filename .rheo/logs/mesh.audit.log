@@ -8406,3 +8406,359 @@
 [9:58:03 PM] [Safety] [32m[20:58:03.087] [INFO] [Safety] 🔥 TEST CONTROLLER SHUTDOWN[0m
 [9:58:03 PM] [Safety] [32m[20:58:03.087] [INFO] [Safety] ═══════════════════════════════════════════════════[0m
 [9:58:03 PM] [Safety] [33m[20:58:03.087] [WARN] [Safety] Extinguishing cell...[0m
+[9:58:12 PM] [ai-ui] [31m[20:58:12.640] [ERROR] [ai-ui] [c8fdb3df] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:12 PM] [checklist] [31m[20:58:12.676] [ERROR] [checklist] [2d4c3691] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:12 PM] [skills] [32m[20:58:12.679] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[9:58:12 PM] [skills] [32m[20:58:12.693] [INFO] [skills] 📚 Initial sync: 0 capabilities discovered[0m
+[9:58:12 PM] [skills] [31m[20:58:12.694] [ERROR] [skills] [1395f5b3] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:12 PM] [kindly] [31m[20:58:12.711] [ERROR] [kindly] [b4e5e838] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:12 PM] [ai] [31m[20:58:12.764] [ERROR] [ai] [12adca59] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:12 PM] [log] [31m[20:58:12.902] [ERROR] [log] [e98483ca] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:24 PM] [checklist] [32m[20:58:24.676] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[9:58:24 PM] [checklist] Current list has 0 items
+[9:58:24 PM] [checklist] [32m[20:58:24.677] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[9:58:24 PM] [checklist] [32m[20:58:24.683] [INFO] [checklist] [bef64725] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:35029[0m
+[9:58:24 PM] [checklist] Mesh health: NOMINAL, 21 cells
+[9:58:27 PM] [ai-ui] [31m[20:58:27.639] [ERROR] [ai-ui] [de6b515f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:27 PM] [tts] [31m[20:58:27.671] [ERROR] [tts] [7ce68753] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:27 PM] [kindly] [31m[20:58:27.711] [ERROR] [kindly] [64f0ff8d] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:27 PM] [comms] [31m[20:58:27.867] [ERROR] [comms] [dccc024e] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:27 PM] [Codegen] [32m[20:58:27.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:58:27 PM] [Codegen] [32m[20:58:27.925] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:58:27 PM] [Codegen] [32m[20:58:27.925] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:58:42 PM] [memory] [31m[20:58:42.574] [ERROR] [memory] [d728a171] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:42 PM] [coder] [31m[20:58:42.605] [ERROR] [coder] [f78091ee] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:42 PM] [tts] [31m[20:58:42.670] [ERROR] [tts] [69936af0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:42 PM] [Codegen] [31m[20:58:42.927] [ERROR] [Codegen] [22b1e9a7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [coder] [31m[20:58:57.604] [ERROR] [coder] [e21159fe] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [ai-ui] [31m[20:58:57.639] [ERROR] [ai-ui] [3f14e854] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [skills] [32m[20:58:57.678] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[9:58:57 PM] [kindly] [31m[20:58:57.711] [ERROR] [kindly] [98523ce1] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [telemetry] [31m[20:58:57.720] [ERROR] [telemetry] [8d22a7ca] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [ai] [31m[20:58:57.763] [ERROR] [ai] [6550ca9e] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [Codegen] [32m[20:58:57.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:58:57 PM] [Codegen] [32m[20:58:57.928] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:58:57 PM] [Codegen] [32m[20:58:57.928] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:58:57 PM] [Codegen] [31m[20:58:57.931] [ERROR] [Codegen] [0ec39b82] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:12 PM] [checklist] [31m[20:59:12.676] [ERROR] [checklist] [f9b60130] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:12 PM] [tts-ui] [31m[20:59:12.813] [ERROR] [tts-ui] [4c24eb8d] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:12 PM] [ai-ui-ui] [31m[20:59:12.818] [ERROR] [ai-ui-ui] [9a27e99c] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:12 PM] [Codegen] [31m[20:59:12.930] [ERROR] [Codegen] [d19daa54] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:27 PM] [memory] [31m[20:59:27.573] [ERROR] [memory] [6f24b0b1] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:27 PM] [memory] [31m[20:59:27.573] [ERROR] [memory] [54efe251] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:27 PM] [skills] [31m[20:59:27.707] [ERROR] [skills] [642ad1f5] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:27 PM] [Codegen] [32m[20:59:27.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:59:27 PM] [log] [31m[20:59:27.898] [ERROR] [log] [614b3a7e] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:27 PM] [Codegen] [32m[20:59:27.943] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:59:27 PM] [Codegen] [32m[20:59:27.943] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:59:27 PM] [Codegen] [31m[20:59:27.946] [ERROR] [Codegen] [a17d8ebe] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:42 PM] [ai-ui] [31m[20:59:42.640] [ERROR] [ai-ui] [bf707142] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:42 PM] [kindly] [31m[20:59:42.710] [ERROR] [kindly] [86f218b0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:42 PM] [ai-ui-ui] [31m[20:59:42.818] [ERROR] [ai-ui-ui] [1f83d579] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:42 PM] [projects] [31m[20:59:42.863] [ERROR] [projects] [8bfaa2b8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:42 PM] [log] [31m[20:59:42.898] [ERROR] [log] [5d7a00d4] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [memory] [31m[20:59:57.573] [ERROR] [memory] [ef72e2dd] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [skills] [32m[20:59:57.677] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[9:59:57 PM] [skills] [31m[20:59:57.707] [ERROR] [skills] [a7d346b8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [kindly] [31m[20:59:57.710] [ERROR] [kindly] [fec97375] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [telemetry] [31m[20:59:57.722] [ERROR] [telemetry] [14416030] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [projects] [31m[20:59:57.865] [ERROR] [projects] [4b7aca45] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [comms] [31m[20:59:57.868] [ERROR] [comms] [f246f7eb] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [Codegen] [32m[20:59:57.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:59:57 PM] [Codegen] [32m[20:59:57.926] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:59:57 PM] [Codegen] [32m[20:59:57.926] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:00:12 PM] [memory] [31m[21:00:12.574] [ERROR] [memory] [2d4fa30f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:12 PM] [coder] [31m[21:00:12.604] [ERROR] [coder] [613b0ac8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:12 PM] [checklist] [31m[21:00:12.675] [ERROR] [checklist] [0a33990f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:12 PM] [ai] [31m[21:00:12.762] [ERROR] [ai] [32c568b7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:12 PM] [comms] [31m[21:00:12.866] [ERROR] [comms] [0d88520a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [ai-ui] [31m[21:00:27.639] [ERROR] [ai-ui] [d69ed47a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [checklist] [31m[21:00:27.676] [ERROR] [checklist] [5a5ddf68] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [skills] [31m[21:00:27.707] [ERROR] [skills] [3038a45c] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [ai] [31m[21:00:27.762] [ERROR] [ai] [e8b3cde3] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [tts-ui] [31m[21:00:27.813] [ERROR] [tts-ui] [65ef8641] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [projects] [31m[21:00:27.863] [ERROR] [projects] [575bdbd2] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [Codegen] [32m[21:00:27.881] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:00:27 PM] [Codegen] [32m[21:00:27.925] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:00:27 PM] [Codegen] [32m[21:00:27.925] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:00:27 PM] [Codegen] [31m[21:00:27.947] [ERROR] [Codegen] [677ca77f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:42 PM] [ai-ui] [31m[21:00:42.639] [ERROR] [ai-ui] [2593cab0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:42 PM] [ai] [31m[21:00:42.764] [ERROR] [ai] [1a1bceee] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:42 PM] [log] [31m[21:00:42.898] [ERROR] [log] [8440d459] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [coder] [31m[21:00:57.604] [ERROR] [coder] [a53737a7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [skills] [32m[21:00:57.676] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[10:00:57 PM] [ai] [31m[21:00:57.762] [ERROR] [ai] [d43bf6ae] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [tts-ui] [31m[21:00:57.811] [ERROR] [tts-ui] [e3d1cd1b] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [architect] [31m[21:00:57.845] [ERROR] [architect] [356c1eab] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [comms] [31m[21:00:57.867] [ERROR] [comms] [fb3a13c9] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [Codegen] [32m[21:00:57.880] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:00:57 PM] [log] [31m[21:00:57.898] [ERROR] [log] [97953566] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [Codegen] [32m[21:00:57.924] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:00:57 PM] [Codegen] [32m[21:00:57.924] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:01:12 PM] [coder] [31m[21:01:12.604] [ERROR] [coder] [be8445f0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:12 PM] [skills] [31m[21:01:12.708] [ERROR] [skills] [9cea6de0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:12 PM] [telemetry] [31m[21:01:12.719] [ERROR] [telemetry] [a9318227] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:12 PM] [telemetry] [31m[21:01:12.719] [ERROR] [telemetry] [42c9f5f9] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:12 PM] [tts-ui] [31m[21:01:12.811] [ERROR] [tts-ui] [37efa916] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:12 PM] [ai-ui-ui] [31m[21:01:12.818] [ERROR] [ai-ui-ui] [1624061a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:12 PM] [projects] [31m[21:01:12.863] [ERROR] [projects] [df7ffc02] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:12 PM] [telegram] [31m[21:01:12.872] [ERROR] [telegram] [f8b4b367] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:27 PM] [coder] [31m[21:01:27.603] [ERROR] [coder] [5e721402] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:27 PM] [tts] [31m[21:01:27.668] [ERROR] [tts] [2638e1aa] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:27 PM] [projects] [31m[21:01:27.863] [ERROR] [projects] [85000dfb] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:27 PM] [Codegen] [32m[21:01:27.880] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:01:27 PM] [log] [31m[21:01:27.898] [ERROR] [log] [62d39f33] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:27 PM] [Codegen] [32m[21:01:27.926] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:01:27 PM] [Codegen] [32m[21:01:27.927] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:01:27 PM] [Codegen] [31m[21:01:27.948] [ERROR] [Codegen] [0d5bb8d7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:42 PM] [memory] [31m[21:01:42.573] [ERROR] [memory] [f0d94dc4] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:42 PM] [skills] [31m[21:01:42.708] [ERROR] [skills] [199e5d1c] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:42 PM] [tts-ui] [31m[21:01:42.811] [ERROR] [tts-ui] [5089c902] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:42 PM] [telegram] [31m[21:01:42.874] [ERROR] [telegram] [ce5cbaee] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [coder] [31m[21:01:57.604] [ERROR] [coder] [ef09ef3f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [skills] [32m[21:01:57.675] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[10:01:57 PM] [kindly] [31m[21:01:57.711] [ERROR] [kindly] [c0fc97a9] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [telemetry] [31m[21:01:57.719] [ERROR] [telemetry] [6033cae0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [architect] [31m[21:01:57.845] [ERROR] [architect] [d16c6ac9] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [telegram] [31m[21:01:57.876] [ERROR] [telegram] [13beb05d] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [Codegen] [32m[21:01:57.880] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:01:57 PM] [Codegen] [32m[21:01:57.927] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:01:57 PM] [Codegen] [32m[21:01:57.927] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:02:12 PM] [checklist] [31m[21:02:12.674] [ERROR] [checklist] [6ccb9481] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:12 PM] [skills] [31m[21:02:12.707] [ERROR] [skills] [995c6d95] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:12 PM] [skills] [31m[21:02:12.707] [ERROR] [skills] [1a9c91be] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:12 PM] [log] [31m[21:02:12.898] [ERROR] [log] [a250fc72] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:27 PM] [memory] [31m[21:02:27.572] [ERROR] [memory] [af9c10c8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:27 PM] [kindly] [31m[21:02:27.710] [ERROR] [kindly] [87535509] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:27 PM] [ai] [31m[21:02:27.761] [ERROR] [ai] [37e222d7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:27 PM] [comms] [31m[21:02:27.868] [ERROR] [comms] [080dd221] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:27 PM] [Codegen] [32m[21:02:27.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:02:27 PM] [Codegen] [32m[21:02:27.923] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:02:27 PM] [Codegen] [32m[21:02:27.923] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:02:27 PM] [Codegen] [31m[21:02:27.950] [ERROR] [Codegen] [c892c93a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [ai] [31m[21:02:42.761] [ERROR] [ai] [fc80c508] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [ai] [31m[21:02:42.761] [ERROR] [ai] [2ac6bfb1] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [architect] [31m[21:02:42.845] [ERROR] [architect] [335a7162] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [log] [31m[21:02:42.899] [ERROR] [log] [f53d4e55] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [Codegen] [31m[21:02:42.951] [ERROR] [Codegen] [18831ada] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:57 PM] [tts] [31m[21:02:57.668] [ERROR] [tts] [31ae78a6] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:57 PM] [tts] [31m[21:02:57.668] [ERROR] [tts] [7c1599e1] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:57 PM] [skills] [32m[21:02:57.674] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[10:02:57 PM] [telemetry] [31m[21:02:57.718] [ERROR] [telemetry] [0783b8c0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:57 PM] [comms] [31m[21:02:57.868] [ERROR] [comms] [92074085] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:57 PM] [Codegen] [32m[21:02:57.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:02:57 PM] [Codegen] [32m[21:02:57.925] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:02:57 PM] [Codegen] [32m[21:02:57.925] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:02:57 PM] [Codegen] [31m[21:02:57.951] [ERROR] [Codegen] [ea6c5f9e] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:12 PM] [tts] [31m[21:03:12.669] [ERROR] [tts] [bf86d56a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:12 PM] [projects] [31m[21:03:12.862] [ERROR] [projects] [177bfd1d] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:12 PM] [telegram] [31m[21:03:12.872] [ERROR] [telegram] [4e5f6092] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:12 PM] [log] [31m[21:03:12.898] [ERROR] [log] [e76aa207] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:27 PM] [ai-ui] [31m[21:03:27.639] [ERROR] [ai-ui] [4814e6a8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:27 PM] [ai] [31m[21:03:27.761] [ERROR] [ai] [aaaba8fa] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:27 PM] [tts-ui] [31m[21:03:27.810] [ERROR] [tts-ui] [26b6f501] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:27 PM] [architect] [31m[21:03:27.845] [ERROR] [architect] [e18ea292] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:27 PM] [Codegen] [32m[21:03:27.878] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:03:27 PM] [Codegen] [32m[21:03:27.921] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:03:27 PM] [Codegen] [32m[21:03:27.921] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:03:27 PM] [Codegen] [31m[21:03:27.950] [ERROR] [Codegen] [c6b2fdf9] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:42 PM] [skills] [31m[21:03:42.708] [ERROR] [skills] [ca13d8d3] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:42 PM] [kindly] [31m[21:03:42.710] [ERROR] [kindly] [f8f172a8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:42 PM] [architect] [31m[21:03:42.846] [ERROR] [architect] [b4639764] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:42 PM] [telegram] [31m[21:03:42.873] [ERROR] [telegram] [64f03d62] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [tts] [31m[21:03:57.670] [ERROR] [tts] [194d3550] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [skills] [32m[21:03:57.674] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[10:03:57 PM] [checklist] [31m[21:03:57.673] [ERROR] [checklist] [1d070089] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [kindly] [31m[21:03:57.710] [ERROR] [kindly] [9b96eb1a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [tts-ui] [31m[21:03:57.810] [ERROR] [tts-ui] [95f567e4] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [projects] [31m[21:03:57.861] [ERROR] [projects] [38a42040] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [Codegen] [32m[21:03:57.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:03:57 PM] [log] [31m[21:03:57.898] [ERROR] [log] [0cc9b42a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [Codegen] [32m[21:03:57.925] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:03:57 PM] [Codegen] [32m[21:03:57.925] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:55:41 PM] [tts] [tts] Key fingerprint: ccb7d4751b06efa5
+[11:55:41 PM] [skills] [skills] Key fingerprint: 3ab903eb13d50349
+[11:55:41 PM] [coder] [coder] Key fingerprint: ff96c7d158a44bb6
+[11:55:41 PM] [memory] [memory] Key fingerprint: d2d6ceea6fc96086
+[11:55:41 PM] [tts-ui] [tts-ui] Key fingerprint: c7904d6fb76c7ccc
+[11:55:41 PM] [Radar] [Radar] Key fingerprint: ff01ed336c9594d1
+[11:55:41 PM] [ai-ui] [ai-ui] Key fingerprint: 47218c9affb33d04
+[11:55:41 PM] [kindly] [kindly] Key fingerprint: 4d53ead3708bfe11
+[11:55:41 PM] [telemetry] [telemetry] Key fingerprint: 298fbc5a95ad1d52
+[11:55:41 PM] [projects] [projects] Key fingerprint: 194ba13b44c5b9c7
+[11:55:41 PM] [tts] [32m[22:55:41.336] [INFO] [tts] 📋 Registered 2 capabilities with contracts[0m
+[11:55:41 PM] [comms] [comms] Key fingerprint: 17e31f319b95d55f
+[11:55:41 PM] [log] [log] Key fingerprint: cea363694ed7ecf7
+[11:55:41 PM] [telegram] [dotenv@17.2.4] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[11:55:41 PM] [ai-ui-ui] [ai-ui-ui] Key fingerprint: 47933913d9fedb51
+[11:55:41 PM] [Lidar] [Lidar] Key fingerprint: b22ea154c3bb21df
+[11:55:41 PM] [skills] [32m[22:55:41.271] [INFO] [skills] 📋 Registered 6 capabilities with contracts[0m
+[11:55:41 PM] [memory] [32m[22:55:41.269] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[11:55:41 PM] [coder] [32m[22:55:41.334] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[11:55:41 PM] [ai-ui] [32m[22:55:41.392] [INFO] [ai-ui] 📋 Registered 5 capabilities with contracts[0m
+[11:55:41 PM] [Radar] [32m[22:55:41.347] [INFO] [Radar] 📋 Registered 1 capabilities with contracts[0m
+[11:55:41 PM] [tts-ui] [32m[22:55:41.320] [INFO] [tts-ui] 🔐 Loaded existing certificates[0m
+[11:55:41 PM] [telemetry] [32m[22:55:41.468] [INFO] [telemetry] 📋 Registered 1 capabilities with contracts[0m
+[11:55:41 PM] [kindly] [32m[22:55:41.463] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:55:41 PM] [projects] [32m[22:55:41.425] [INFO] [projects] 📋 Registered 4 capabilities with contracts[0m
+[11:55:41 PM] [tts] [32m[22:55:41.345] [INFO] [tts] Sovereign Cell online @ http://localhost:40237[0m
+[11:55:41 PM] [tts] [32m[22:55:41.346] [INFO] [tts] --------------------------------------------------[0m
+[11:55:41 PM] [projects] [32m[22:55:41.442] [INFO] [projects] Sovereign Cell online @ http://localhost:42065[0m
+[11:55:41 PM] [kindly] [32m[22:55:41.506] [INFO] [kindly] Sovereign Cell online @ http://localhost:43151[0m
+[11:55:41 PM] [telemetry] [32m[22:55:41.494] [INFO] [telemetry] Sovereign Cell online @ http://localhost:37223[0m
+[11:55:41 PM] [tts-ui] [32m[22:55:41.336] [INFO] [tts-ui] 🚀 VOICE TERMINAL SUBSTRATE ONLINE (HTTPS)[0m
+[11:55:41 PM] [Radar] [32m[22:55:41.360] [INFO] [Radar] Sovereign Cell online @ http://localhost:35181[0m
+[11:55:41 PM] [ai-ui] [32m[22:55:41.404] [INFO] [ai-ui] Sovereign Cell online @ http://localhost:36105[0m
+[11:55:41 PM] [coder] [32m[22:55:41.389] [INFO] [coder] Sovereign Cell online @ http://localhost:38509[0m
+[11:55:41 PM] [memory] [32m[22:55:41.275] [INFO] [memory] Sovereign Cell online @ http://localhost:36361[0m
+[11:55:41 PM] [skills] [32m[22:55:41.280] [INFO] [skills] Sovereign Cell online @ http://localhost:36575[0m
+[11:55:41 PM] [Lidar] [32m[22:55:41.349] [INFO] [Lidar] 📋 Registered 1 capabilities with contracts[0m
+[11:55:41 PM] [ai-ui-ui] [32m[22:55:41.488] [INFO] [ai-ui-ui] Sovereign Cell online @ http://localhost:37675[0m
+[11:55:41 PM] [telegram] [telegram] Key fingerprint: 7a40a565fd2fdc08
+[11:55:41 PM] [log] [32m[22:55:41.442] [INFO] [log] 📋 Registered 2 capabilities with contracts[0m
+[11:55:41 PM] [tts] [32m[22:55:41.346] [INFO] [tts] 🤖 OPENJAWS TTS SUBSTRATE v2.1 ONLINE[0m
+[11:55:41 PM] [kindly] [32m[22:55:41.510] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[11:55:41 PM] [tts-ui] [32m[22:55:41.336] [INFO] [tts-ui] ============================================================[0m
+[11:55:41 PM] [Radar] [32m[22:55:41.360] [INFO] [Radar] 📡 Radar controller online[0m
+[11:55:41 PM] [ai-ui] [32m[22:55:41.404] [INFO] [ai-ui] 💬 Simple AI-UI cell online[0m
+[11:55:41 PM] [memory] [32m[22:55:41.276] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[11:55:41 PM] [ai-ui] [32m[22:55:41.404] [INFO] [ai-ui]    Capabilities: simple-ai/session, simple-ai/chat, simple-ai/history, simple-ai/clear[0m
+[11:55:41 PM] [Radar] [32m[22:55:41.360] [INFO] [Radar]    Capabilities: sensors/proximity[0m
+[11:55:41 PM] [tts-ui] [32m[22:55:41.337] [INFO] [tts-ui] 📡 RELAY_LINK: https://127.0.0.1:5139[0m
+[11:55:41 PM] [tts] [32m[22:55:41.346] [INFO] [tts] 📂 DATA_DIR: /home/asdfghj/openjaws/tts/data[0m
+[11:55:41 PM] [log] [32m[22:55:41.461] [INFO] [log] Sovereign Cell online @ http://localhost:43469[0m
+[11:55:41 PM] [telegram] [32m[22:55:41.522] [INFO] [telegram] 📋 Registered 3 capabilities with contracts[0m
+[11:55:41 PM] [ai-ui-ui] [32m[22:55:41.488] [INFO] [ai-ui-ui] 🌐 AI-UI Web Interface Online[0m
+[11:55:41 PM] [Lidar] [32m[22:55:41.361] [INFO] [Lidar] Sovereign Cell online @ http://localhost:44075[0m
+[11:55:41 PM] [skills] [32m[22:55:41.280] [INFO] [skills] 📚 Skills System online[0m
+[11:55:41 PM] [checklist] [checklist] Key fingerprint: 2adbfc0fb794365e
+[11:55:41 PM] [comms] [32m[22:55:41.544] [INFO] [comms] 📋 Registered 6 capabilities with contracts[0m
+[11:55:41 PM] [Codegen] [Codegen] Key fingerprint: 818c426822294457
+[11:55:41 PM] [ai-ui-ui] [32m[22:55:41.488] [INFO] [ai-ui-ui] ==================================================[0m
+[11:55:41 PM] [telegram] [32m[22:55:41.539] [INFO] [telegram] Sovereign Cell online @ http://localhost:46765[0m
+[11:55:41 PM] [log] [32m[22:55:41.461] [INFO] [log] 🛡️ Type-safe Logger cell initialized[0m
+[11:55:41 PM] [tts] [32m[22:55:41.346] [INFO] [tts] --------------------------------------------------[0m
+[11:55:41 PM] [tts-ui] [32m[22:55:41.337] [INFO] [tts-ui] 📡 RELAY_LINK: https://192.168.50.205:5139[0m
+[11:55:41 PM] [Radar] [32m[22:55:41.360] [INFO] [Radar]    Coverage: 360° azimuth, 0-90° elevation[0m
+[11:55:41 PM] [memory] [32m[22:55:41.276] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[11:55:41 PM] [Safety] [Safety] Key fingerprint: c1db7ccd31ad4b1c
+[11:55:41 PM] [architect] [architect] Key fingerprint: 073c295210c9d9d3
+[11:55:41 PM] [Codegen] [32m[22:55:41.562] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:55:41 PM] [comms] [32m[22:55:41.559] [INFO] [comms] Sovereign Cell online @ http://localhost:34229[0m
+[11:55:41 PM] [checklist] [32m[22:55:41.541] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:55:41 PM] [Lidar] [32m[22:55:41.361] [INFO] [Lidar] 🔦 Lidar controller online[0m
+[11:55:41 PM] [ai-ui-ui] [32m[22:55:41.488] [INFO] [ai-ui-ui] 📱 Open: http://127.0.0.1:5140[0m
+[11:55:41 PM] [log] [32m[22:55:41.461] [INFO] [log] Audit trail: /home/asdfghj/openjaws/log/mesh_audit.log[0m
+[11:55:41 PM] [telegram] [32m[22:55:41.539] [INFO] [telegram] 🤖 Telegram Bot Cell starting...[0m
+[11:55:41 PM] [telegram] [32m[22:55:41.540] [INFO] [telegram] 🔗 PROXY_CALL: [comms/configure-channel][0m
+[11:55:41 PM] [ai-ui-ui] [32m[22:55:41.488] [INFO] [ai-ui-ui] 📱 Open: http://192.168.50.205:5140[0m
+[11:55:41 PM] [Lidar] [32m[22:55:41.361] [INFO] [Lidar]    Specialization: Ground proximity, obstacle detection[0m
+[11:55:41 PM] [checklist] [32m[22:55:41.568] [INFO] [checklist] Sovereign Cell online @ http://localhost:44559[0m
+[11:55:41 PM] [comms] [32m[22:55:41.559] [INFO] [comms] 📡 Communications Hub online[0m
+[11:55:41 PM] [Codegen] [32m[22:55:41.569] [INFO] [Codegen] Sovereign Cell online @ http://localhost:43217[0m
+[11:55:41 PM] [Safety] [32m[22:55:41.569] [INFO] [Safety] 📋 Registered 2 capabilities with contracts[0m
+[11:55:41 PM] [memory] [32m[22:55:41.276] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[11:55:41 PM] [Radar] [32m[22:55:41.360] [INFO] [Radar]    Auto-shutdown: 30s idle[0m
+[11:55:41 PM] [tts-ui] [32m[22:55:41.337] [INFO] [tts-ui] ⚠️  Accept the self-signed certificate warning in your browser[0m
+[11:55:41 PM] [tts] [32m[22:55:41.346] [INFO] [tts] 🎯 [LOCKED] gemini-2.5-flash-preview-tts[0m
+[11:55:41 PM] [architect] [32m[22:55:41.573] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[11:55:41 PM] [telegram] [32m[22:55:41.550] [INFO] [telegram] 📡 Starting in POLLING mode (no webhook required)[0m
+[11:55:41 PM] [ai-ui-ui] [32m[22:55:41.488] [INFO] [ai-ui-ui] ==================================================[0m
+[11:55:41 PM] [Lidar] [32m[22:55:41.361] [INFO] [Lidar]    Auto-shutdown: 25s idle[0m
+[11:55:41 PM] [checklist] [32m[22:55:41.568] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:55:41 PM] [Codegen] [32m[22:55:41.570] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:55:41 PM] [tts-ui] [32m[22:55:41.337] [INFO] [tts-ui] ============================================================[0m
+[11:55:41 PM] [tts-ui] [32m[22:55:41.344] [INFO] [tts-ui] Sovereign Cell online @ http://localhost:35537[0m
+[11:55:41 PM] [architect] [32m[22:55:41.581] [INFO] [architect] Sovereign Cell online @ http://localhost:42485[0m
+[11:55:41 PM] [Safety] [32m[22:55:41.591] [INFO] [Safety] Sovereign Cell online @ http://localhost:36763[0m
+[11:55:41 PM] [Safety] [32m[22:55:41.592] [INFO] [Safety] 🛩️  Safety Controller online - auto-test in 5s...[0m
+[11:55:41 PM] [ai] [ai] Key fingerprint: 32fe1fe1334f5825
+[11:55:41 PM] [comms] [32m[22:55:41.603] [INFO] [comms] ⚙️  Channel telegram configured: enabled[0m
+[11:55:41 PM] [telegram] [32m[22:55:41.603] [INFO] [telegram] [49c4b30d] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:34229[0m
+[11:55:41 PM] [ai] [32m[22:55:41.606] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:55:41 PM] [ai] [32m[22:55:41.611] [INFO] [ai] Sovereign Cell online @ http://localhost:46763[0m
+[11:55:41 PM] [telegram] [32m[22:55:41.686] [INFO] [telegram] 🤖 Bot: @openjaws_bot (OpenJaws)[0m
+[11:55:42 PM] [Safety] [32m[22:55:42.592] [INFO] [Safety] 🔗 PROXY_CALL: [safety/run-test-sequence][0m
+[11:55:42 PM] [Safety] [32m[22:55:42.594] [INFO] [Safety] ═══════════════════════════════════════════════════[0m
+[11:55:42 PM] [Safety] [32m[22:55:42.594] [INFO] [Safety] 🛩️  AIRCRAFT PROXIMITY FUSION TEST[0m
+[11:55:42 PM] [Safety] [32m[22:55:42.594] [INFO] [Safety] ═══════════════════════════════════════════════════[0m
+[11:55:42 PM] [Safety] [32m[22:55:42.594] [INFO] [Safety] Configuration: 8 scans @ 20ms interval[0m
+[11:55:42 PM] [Safety] [32m[22:55:42.594] [INFO] [Safety] Waiting for sensors to join mesh...[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.595] [INFO] [Safety] 🔗 PROXY_CALL: [safety/get-close-proximity][0m
+[11:55:44 PM] [Safety] [32m[22:55:44.596] [INFO] [Safety] 🛩️  [SCAN-1] Requesting proximity data from all sensors...[0m
+[11:55:44 PM] [Radar] [32m[22:55:44.599] [INFO] [Radar] 📡 RADAR SWEEP: 45° | 0 contacts[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.599] [INFO] [Safety] [bfb8df11] ✅ RPC_SUCCESS: [sensors/proximity] from http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.599] [INFO] [Safety]    ✅ http://localhost:35181: 0 detections (3.00ms)[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.599] [INFO] [Safety] ✅ CLEAR: No threats detected[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.620] [INFO] [Safety] 🔗 PROXY_CALL: [safety/get-close-proximity][0m
+[11:55:44 PM] [Safety] [32m[22:55:44.621] [INFO] [Safety] 🛩️  [SCAN-2] Requesting proximity data from all sensors...[0m
+[11:55:44 PM] [Radar] [32m[22:55:44.622] [INFO] [Radar] 📡 RADAR SWEEP: 90° | 0 contacts[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.623] [INFO] [Safety] [a31f4c33] ✅ RPC_SUCCESS: [sensors/proximity] from http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.623] [INFO] [Safety]    ✅ http://localhost:35181: 0 detections (1.87ms)[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.623] [INFO] [Safety] ✅ CLEAR: No threats detected[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.644] [INFO] [Safety] 🔗 PROXY_CALL: [safety/get-close-proximity][0m
+[11:55:44 PM] [Safety] [32m[22:55:44.644] [INFO] [Safety] 🛩️  [SCAN-3] Requesting proximity data from all sensors...[0m
+[11:55:44 PM] [Radar] [32m[22:55:44.645] [INFO] [Radar] 📡 RADAR SWEEP: 135° | 2 contacts[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.646] [INFO] [Safety] [8182fbfc] ✅ RPC_SUCCESS: [sensors/proximity] from http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.646] [INFO] [Safety]    ✅ http://localhost:35181: 2 detections (1.57ms)[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.646] [INFO] [Safety] ⚠️  CLOSEST THREAT: 609.1m 145.41700232492414° (radar)[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.667] [INFO] [Safety] 🔗 PROXY_CALL: [safety/get-close-proximity][0m
+[11:55:44 PM] [Safety] [32m[22:55:44.667] [INFO] [Safety] 🛩️  [SCAN-4] Requesting proximity data from all sensors...[0m
+[11:55:44 PM] [Radar] [32m[22:55:44.669] [INFO] [Radar] 📡 RADAR SWEEP: 180° | 0 contacts[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.669] [INFO] [Safety] [10a6c3f7] ✅ RPC_SUCCESS: [sensors/proximity] from http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.669] [INFO] [Safety]    ✅ http://localhost:35181: 0 detections (1.39ms)[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.669] [INFO] [Safety] ✅ CLEAR: No threats detected[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.690] [INFO] [Safety] 🔗 PROXY_CALL: [safety/get-close-proximity][0m
+[11:55:44 PM] [Safety] [32m[22:55:44.690] [INFO] [Safety] 🛩️  [SCAN-5] Requesting proximity data from all sensors...[0m
+[11:55:44 PM] [Radar] [32m[22:55:44.691] [INFO] [Radar] 📡 RADAR SWEEP: 225° | 0 contacts[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.692] [INFO] [Safety] [6d01ac10] ✅ RPC_SUCCESS: [sensors/proximity] from http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.692] [INFO] [Safety]    ✅ http://localhost:35181: 0 detections (1.84ms)[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.692] [INFO] [Safety] ✅ CLEAR: No threats detected[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.713] [INFO] [Safety] 🔗 PROXY_CALL: [safety/get-close-proximity][0m
+[11:55:44 PM] [Safety] [32m[22:55:44.713] [INFO] [Safety] 🛩️  [SCAN-6] Requesting proximity data from all sensors...[0m
+[11:55:44 PM] [Radar] [32m[22:55:44.715] [INFO] [Radar] 📡 RADAR SWEEP: 270° | 0 contacts[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.715] [INFO] [Safety] [4dfc837f] ✅ RPC_SUCCESS: [sensors/proximity] from http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.715] [INFO] [Safety]    ✅ http://localhost:35181: 0 detections (1.61ms)[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.715] [INFO] [Safety] ✅ CLEAR: No threats detected[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.736] [INFO] [Safety] 🔗 PROXY_CALL: [safety/get-close-proximity][0m
+[11:55:44 PM] [Safety] [32m[22:55:44.736] [INFO] [Safety] 🛩️  [SCAN-7] Requesting proximity data from all sensors...[0m
+[11:55:44 PM] [Radar] [32m[22:55:44.738] [INFO] [Radar] 📡 RADAR SWEEP: 315° | 0 contacts[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.738] [INFO] [Safety] [f22fb77f] ✅ RPC_SUCCESS: [sensors/proximity] from http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.738] [INFO] [Safety]    ✅ http://localhost:35181: 0 detections (1.66ms)[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.738] [INFO] [Safety] ✅ CLEAR: No threats detected[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.759] [INFO] [Safety] 🔗 PROXY_CALL: [safety/get-close-proximity][0m
+[11:55:44 PM] [Safety] [32m[22:55:44.759] [INFO] [Safety] 🛩️  [SCAN-8] Requesting proximity data from all sensors...[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.760] [INFO] [Safety] [f2b2c7cc] ✅ RPC_SUCCESS: [sensors/proximity] from http://localhost:35181[0m
+[11:55:44 PM] [Radar] [32m[22:55:44.760] [INFO] [Radar] 📡 RADAR SWEEP: 0° | 0 contacts[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety]    ✅ http://localhost:35181: 0 detections (1.35ms)[0m
+[11:55:44 PM] [Radar] [33m[22:55:44.762] [WARN] [Radar] Extinguishing cell...[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] ✅ CLEAR: No threats detected[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] ═══════════════════════════════════════════════════[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] 📋 TEST SUMMARY[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] ═══════════════════════════════════════════════════[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] Duration: 2.17s[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] Total scans: 8[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] Unique sensors: 1[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety]    • http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] Total threats detected: 2[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.761] [INFO] [Safety] 🔧 Shutting down test sensors...[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.763] [INFO] [Safety] [a6925103] ✅ RPC_SUCCESS: [cell/shutdown] from http://localhost:35181[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.763] [INFO] [Safety]    ✅ http://localhost:35181 acknowledged[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.763] [INFO] [Safety]    Shutdown: 1/1 sensors[0m
+[11:55:44 PM] [Safety] [32m[22:55:44.763] [INFO] [Safety] 🔄 Scheduling self-termination in 2s...[0m
+[11:55:46 PM] [Codegen] [32m[22:55:46.571] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:55:46 PM] [Codegen] [32m[22:55:46.617] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:55:46 PM] [Codegen] [32m[22:55:46.617] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:55:46 PM] [Safety] [32m[22:55:46.763] [INFO] [Safety] ═══════════════════════════════════════════════════[0m
+[11:55:46 PM] [Safety] [32m[22:55:46.763] [INFO] [Safety] 🔥 TEST CONTROLLER SHUTDOWN[0m
+[11:55:46 PM] [Safety] [32m[22:55:46.763] [INFO] [Safety] ═══════════════════════════════════════════════════[0m
+[11:55:46 PM] [Safety] [33m[22:55:46.764] [WARN] [Safety] Extinguishing cell...[0m
+[11:55:56 PM] [skills] [32m[22:55:56.282] [INFO] [skills] 🔗 PROXY_CALL: [skills/sync-from-mesh][0m
+[11:55:56 PM] [skills] [32m[22:55:56.310] [INFO] [skills] 📚 Initial sync: 0 capabilities discovered[0m
+[11:56:06 PM] [Lidar] [32m[22:56:06.361] [INFO] [Lidar] ⏰ Idle timeout - self-terminating[0m
+[11:56:06 PM] [Lidar] [33m[22:56:06.362] [WARN] [Lidar] Extinguishing cell...[0m
+[11:56:08 PM] [checklist] [32m[22:56:08.570] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:56:08 PM] [checklist] Current list has 0 items
+[11:56:08 PM] [checklist] [32m[22:56:08.572] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:56:08 PM] [checklist] [32m[22:56:08.576] [INFO] [checklist] [dd4abc74] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:37223[0m
+[11:56:08 PM] [checklist] Mesh health: NOMINAL, 21 cells

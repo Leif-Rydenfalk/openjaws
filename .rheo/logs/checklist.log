@@ -284,3 +284,23 @@
 [9:57:57 PM] [32m[20:57:57.670] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
 [9:57:57 PM] [32m[20:57:57.673] [INFO] [checklist] Sovereign Cell online @ http://localhost:38447[0m
 [9:57:57 PM] [32m[20:57:57.674] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[9:58:12 PM] [31m[20:58:12.676] [ERROR] [checklist] [2d4c3691] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:24 PM] [32m[20:58:24.676] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[9:58:24 PM] Current list has 0 items
+[9:58:24 PM] [32m[20:58:24.677] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[9:58:24 PM] [32m[20:58:24.683] [INFO] [checklist] [bef64725] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:35029[0m
+[9:58:24 PM] Mesh health: NOMINAL, 21 cells
+[9:59:12 PM] [31m[20:59:12.676] [ERROR] [checklist] [f9b60130] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:12 PM] [31m[21:00:12.675] [ERROR] [checklist] [0a33990f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [31m[21:00:27.676] [ERROR] [checklist] [5a5ddf68] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:12 PM] [31m[21:02:12.674] [ERROR] [checklist] [6ccb9481] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [31m[21:03:57.673] [ERROR] [checklist] [1d070089] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[11:55:41 PM] [checklist] Key fingerprint: 2adbfc0fb794365e
+[11:55:41 PM] [32m[22:55:41.541] [INFO] [checklist] 📋 Registered 5 capabilities with contracts[0m
+[11:55:41 PM] [32m[22:55:41.568] [INFO] [checklist] Sovereign Cell online @ http://localhost:44559[0m
+[11:55:41 PM] [32m[22:55:41.568] [INFO] [checklist] 📋 Type-safe Checklist cell initialized[0m
+[11:56:08 PM] [32m[22:56:08.570] [INFO] [checklist] 🔗 PROXY_CALL: [list/get][0m
+[11:56:08 PM] Current list has 0 items
+[11:56:08 PM] [32m[22:56:08.572] [INFO] [checklist] 🔗 PROXY_CALL: [mesh/health][0m
+[11:56:08 PM] [32m[22:56:08.576] [INFO] [checklist] [dd4abc74] ✅ RPC_SUCCESS: [mesh/health] from http://localhost:37223[0m
+[11:56:08 PM] Mesh health: NOMINAL, 21 cells

@@ -183,3 +183,11 @@
 [9:57:57 PM] [architect] Key fingerprint: 8cc2f4ca42e5fc51
 [9:57:57 PM] [32m[20:57:57.825] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
 [9:57:57 PM] [32m[20:57:57.841] [INFO] [architect] Sovereign Cell online @ http://localhost:39631[0m
+[10:00:57 PM] [31m[21:00:57.845] [ERROR] [architect] [356c1eab] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [31m[21:01:57.845] [ERROR] [architect] [d16c6ac9] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [31m[21:02:42.845] [ERROR] [architect] [335a7162] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:27 PM] [31m[21:03:27.845] [ERROR] [architect] [e18ea292] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:42 PM] [31m[21:03:42.846] [ERROR] [architect] [b4639764] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[11:55:41 PM] [architect] Key fingerprint: 073c295210c9d9d3
+[11:55:41 PM] [32m[22:55:41.573] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[11:55:41 PM] [32m[22:55:41.581] [INFO] [architect] Sovereign Cell online @ http://localhost:42485[0m

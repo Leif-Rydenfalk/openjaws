@@ -261,3 +261,16 @@
 [9:57:57 PM] [32m[20:57:57.667] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
 [9:57:57 PM] [32m[20:57:57.709] [INFO] [kindly] Sovereign Cell online @ http://localhost:35819[0m
 [9:57:57 PM] [32m[20:57:57.709] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m
+[9:58:12 PM] [31m[20:58:12.711] [ERROR] [kindly] [b4e5e838] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:27 PM] [31m[20:58:27.711] [ERROR] [kindly] [64f0ff8d] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [31m[20:58:57.711] [ERROR] [kindly] [98523ce1] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:42 PM] [31m[20:59:42.710] [ERROR] [kindly] [86f218b0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [31m[20:59:57.710] [ERROR] [kindly] [fec97375] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [31m[21:01:57.711] [ERROR] [kindly] [c0fc97a9] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:27 PM] [31m[21:02:27.710] [ERROR] [kindly] [87535509] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:42 PM] [31m[21:03:42.710] [ERROR] [kindly] [f8f172a8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [31m[21:03:57.710] [ERROR] [kindly] [9b96eb1a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[11:55:41 PM] [kindly] Key fingerprint: 4d53ead3708bfe11
+[11:55:41 PM] [32m[22:55:41.463] [INFO] [kindly] 📋 Registered 2 capabilities with contracts[0m
+[11:55:41 PM] [32m[22:55:41.506] [INFO] [kindly] Sovereign Cell online @ http://localhost:43151[0m
+[11:55:41 PM] [32m[22:55:41.510] [INFO] [kindly] 🧠 Enhanced Kindly online - with activity tracking[0m

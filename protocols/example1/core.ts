@@ -2032,13 +2032,12 @@ export class RheoCell {
         } catch (e: any) {
             const duration = performance.now() - startTime;
 
-            // IMPROVED: Better error categorization
             let errorCode = "RPC_FAIL";
             let errorDetails: any = {
                 targetAddress: addr,
                 duration: Math.round(duration),
                 errorType: e.constructor?.name || 'Unknown',
-                rawMessage: e.message // Always include raw message for debugging
+                rawMessage: e.message
             };
 
             if (e.name === 'AbortError' || e.message?.includes('timeout')) {
@@ -2048,7 +2047,7 @@ export class RheoCell {
                 e.message?.includes('ECONNREFUSED') ||
                 e.message?.includes('fetch failed') ||
                 e.message?.includes('Connection refused') ||
-                e.message?.includes('Unable to connect') // <-- ADD THIS
+                e.message?.includes('Unable to connect')
             ) {
                 errorCode = "RPC_UNREACHABLE";
                 errorDetails.reason = "Target offline";
@@ -2058,8 +2057,6 @@ export class RheoCell {
                 errorCode = "RPC_PARSE_ERR";
                 errorDetails.reason = "Invalid JSON response";
             }
-
-            // CRITICAL FIX: Use ledger, not journal
 
             const envelope = this.ledger.entries.get(cid);
             const richError: TraceError = {
@@ -2077,17 +2074,20 @@ export class RheoCell {
                 _envelope: envelope
             };
 
-            // Only print full narrative at origin to prevent spam
+            // LOGGING LOGIC
             const isOrigin = signal.from === this.id;
-            const hasPrinted = signal._errorPrinted; // Track if already printed
+            const hasPrinted = (signal as any)._errorPrinted;
 
-            if (isOrigin || !hasPrinted) {
-                // ✅ CHANGE: Only print massive narrative if RHEO_DEBUG is on
+            // 🔇 SILENCE GOSSIP FAILURES:
+            // If we can't reach a node during gossip, we pruned it above. 
+            // We don't need to log an error for it.
+            const isGossipUnreachable = errorCode === "RPC_UNREACHABLE" && signal.payload.capability === 'mesh/gossip';
+
+            if ((isOrigin || !hasPrinted) && !isGossipUnreachable) {
                 if (process.env.RHEO_DEBUG) {
                     const meshErr = new MeshError(richError, cid);
                     this.log('ERROR', meshErr.message, cid);
                 } else {
-                    // Clean one-liner
                     this.log('ERROR', `❌ ${errorCode}: [${signal.payload.capability}] @ ${addr} - ${e.message}`, cid);
                 }
                 (signal as any)._errorPrinted = true;

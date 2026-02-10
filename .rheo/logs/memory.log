@@ -268,3 +268,16 @@
 [9:57:57 PM] [32m[20:57:57.573] [INFO] [memory] 🧠 Temporal Memory System online[0m
 [9:57:57 PM] [32m[20:57:57.573] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
 [9:57:57 PM] [32m[20:57:57.573] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m
+[9:58:42 PM] [31m[20:58:42.574] [ERROR] [memory] [d728a171] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:27 PM] [31m[20:59:27.573] [ERROR] [memory] [6f24b0b1] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:27 PM] [31m[20:59:27.573] [ERROR] [memory] [54efe251] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [31m[20:59:57.573] [ERROR] [memory] [ef72e2dd] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:12 PM] [31m[21:00:12.574] [ERROR] [memory] [2d4fa30f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:42 PM] [31m[21:01:42.573] [ERROR] [memory] [f0d94dc4] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:27 PM] [31m[21:02:27.572] [ERROR] [memory] [af9c10c8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[11:55:41 PM] [memory] Key fingerprint: d2d6ceea6fc96086
+[11:55:41 PM] [32m[22:55:41.269] [INFO] [memory] 📋 Registered 13 capabilities with contracts[0m
+[11:55:41 PM] [32m[22:55:41.275] [INFO] [memory] Sovereign Cell online @ http://localhost:36361[0m
+[11:55:41 PM] [32m[22:55:41.276] [INFO] [memory] 🧠 Temporal Memory System online[0m
+[11:55:41 PM] [32m[22:55:41.276] [INFO] [memory]    Layers: session → goals → movement → patterns → actions[0m
+[11:55:41 PM] [32m[22:55:41.276] [INFO] [memory]    Time-aware | Chronological | Proactive pattern learning[0m

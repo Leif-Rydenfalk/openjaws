@@ -188,3 +188,13 @@
 [9:57:57 PM] [coder] Key fingerprint: 26ab4925aabeb59f
 [9:57:57 PM] [32m[20:57:57.587] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
 [9:57:57 PM] [32m[20:57:57.603] [INFO] [coder] Sovereign Cell online @ http://localhost:33449[0m
+[9:58:42 PM] [31m[20:58:42.605] [ERROR] [coder] [f78091ee] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [31m[20:58:57.604] [ERROR] [coder] [e21159fe] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:12 PM] [31m[21:00:12.604] [ERROR] [coder] [613b0ac8] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [31m[21:00:57.604] [ERROR] [coder] [a53737a7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:12 PM] [31m[21:01:12.604] [ERROR] [coder] [be8445f0] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:27 PM] [31m[21:01:27.603] [ERROR] [coder] [5e721402] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [31m[21:01:57.604] [ERROR] [coder] [ef09ef3f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[11:55:41 PM] [coder] Key fingerprint: ff96c7d158a44bb6
+[11:55:41 PM] [32m[22:55:41.334] [INFO] [coder] 📋 Registered 1 capabilities with contracts[0m
+[11:55:41 PM] [32m[22:55:41.389] [INFO] [coder] Sovereign Cell online @ http://localhost:38509[0m

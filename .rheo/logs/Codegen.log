@@ -1299,3 +1299,56 @@
 [9:58:02 PM] [32m[20:58:02.880] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
 [9:58:02 PM] [32m[20:58:02.912] [INFO] [Codegen] 👉 Poked TypeScript server[0m
 [9:58:02 PM] [32m[20:58:02.912] [INFO] [Codegen] ✅ Generated 36 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:58:27 PM] [32m[20:58:27.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:58:27 PM] [32m[20:58:27.925] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:58:27 PM] [32m[20:58:27.925] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:58:42 PM] [31m[20:58:42.927] [ERROR] [Codegen] [22b1e9a7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [32m[20:58:57.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:58:57 PM] [32m[20:58:57.928] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:58:57 PM] [32m[20:58:57.928] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:58:57 PM] [31m[20:58:57.931] [ERROR] [Codegen] [0ec39b82] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:12 PM] [31m[20:59:12.930] [ERROR] [Codegen] [d19daa54] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:27 PM] [32m[20:59:27.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:59:27 PM] [32m[20:59:27.943] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:59:27 PM] [32m[20:59:27.943] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[9:59:27 PM] [31m[20:59:27.946] [ERROR] [Codegen] [a17d8ebe] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[9:59:57 PM] [32m[20:59:57.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[9:59:57 PM] [32m[20:59:57.926] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[9:59:57 PM] [32m[20:59:57.926] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:00:27 PM] [32m[21:00:27.881] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:00:27 PM] [32m[21:00:27.925] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:00:27 PM] [32m[21:00:27.925] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:00:27 PM] [31m[21:00:27.947] [ERROR] [Codegen] [677ca77f] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [32m[21:00:57.880] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:00:57 PM] [32m[21:00:57.924] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:00:57 PM] [32m[21:00:57.924] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:01:27 PM] [32m[21:01:27.880] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:01:27 PM] [32m[21:01:27.926] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:01:27 PM] [32m[21:01:27.927] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:01:27 PM] [31m[21:01:27.948] [ERROR] [Codegen] [0d5bb8d7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:01:57 PM] [32m[21:01:57.880] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:01:57 PM] [32m[21:01:57.927] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:01:57 PM] [32m[21:01:57.927] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:02:27 PM] [32m[21:02:27.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:02:27 PM] [32m[21:02:27.923] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:02:27 PM] [32m[21:02:27.923] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:02:27 PM] [31m[21:02:27.950] [ERROR] [Codegen] [c892c93a] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [31m[21:02:42.951] [ERROR] [Codegen] [18831ada] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:57 PM] [32m[21:02:57.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:02:57 PM] [32m[21:02:57.925] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:02:57 PM] [32m[21:02:57.925] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:02:57 PM] [31m[21:02:57.951] [ERROR] [Codegen] [ea6c5f9e] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:27 PM] [32m[21:03:27.878] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:03:27 PM] [32m[21:03:27.921] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:03:27 PM] [32m[21:03:27.921] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[10:03:27 PM] [31m[21:03:27.950] [ERROR] [Codegen] [c6b2fdf9] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:57 PM] [32m[21:03:57.879] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[10:03:57 PM] [32m[21:03:57.925] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[10:03:57 PM] [32m[21:03:57.925] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m
+[11:55:41 PM] [Codegen] Key fingerprint: 818c426822294457
+[11:55:41 PM] [32m[22:55:41.562] [INFO] [Codegen] 📋 Registered 4 capabilities with contracts[0m
+[11:55:41 PM] [32m[22:55:41.569] [INFO] [Codegen] Sovereign Cell online @ http://localhost:43217[0m
+[11:55:41 PM] [32m[22:55:41.570] [INFO] [Codegen] 🧬 Enhanced Codegen cell online[0m
+[11:55:46 PM] [32m[22:55:46.571] [INFO] [Codegen] 🧬 Scanning mesh for type information...[0m
+[11:55:46 PM] [32m[22:55:46.617] [INFO] [Codegen] 👉 Poked TypeScript server[0m
+[11:55:46 PM] [32m[22:55:46.617] [INFO] [Codegen] ✅ Generated 58 types → /home/asdfghj/openjaws/mesh-types.d.ts[0m

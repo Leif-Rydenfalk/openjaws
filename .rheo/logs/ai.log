@@ -143,3 +143,16 @@
 [9:57:57 PM] [ai] Key fingerprint: 2ab158d09b525128
 [9:57:57 PM] [32m[20:57:57.757] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
 [9:57:57 PM] [32m[20:57:57.761] [INFO] [ai] Sovereign Cell online @ http://localhost:37957[0m
+[9:58:12 PM] [31m[20:58:12.764] [ERROR] [ai] [12adca59] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[9:58:57 PM] [31m[20:58:57.763] [ERROR] [ai] [6550ca9e] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:43751 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:12 PM] [31m[21:00:12.762] [ERROR] [ai] [32c568b7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:27 PM] [31m[21:00:27.762] [ERROR] [ai] [e8b3cde3] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:42 PM] [31m[21:00:42.764] [ERROR] [ai] [1a1bceee] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:00:57 PM] [31m[21:00:57.762] [ERROR] [ai] [d43bf6ae] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:27 PM] [31m[21:02:27.761] [ERROR] [ai] [37e222d7] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [31m[21:02:42.761] [ERROR] [ai] [fc80c508] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:41431 - Unable to connect. Is the computer able to access the url?[0m
+[10:02:42 PM] [31m[21:02:42.761] [ERROR] [ai] [2ac6bfb1] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[10:03:27 PM] [31m[21:03:27.761] [ERROR] [ai] [aaaba8fa] ❌ RPC_UNREACHABLE: [mesh/gossip] @ http://localhost:44255 - Unable to connect. Is the computer able to access the url?[0m
+[11:55:41 PM] [ai] Key fingerprint: 32fe1fe1334f5825
+[11:55:41 PM] [32m[22:55:41.606] [INFO] [ai] 📋 Registered 3 capabilities with contracts[0m
+[11:55:41 PM] [32m[22:55:41.611] [INFO] [ai] Sovereign Cell online @ http://localhost:46763[0m
