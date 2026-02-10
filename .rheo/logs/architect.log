@@ -1,609 +1,185 @@
-[1:45:29 AM] [architect_53612] Key fingerprint: 55e70f048cee967d
-[1:45:29 AM] [32m[00:45:29.314] [INFO] [architect_53612] 📋 Registered 1 capabilities with contracts[0m
-[1:45:29 AM] [32m[00:45:29.319] [INFO] [architect_53612] Sovereign Cell online @ http://localhost:37373[0m
-[1:45:31 AM] [architect_53740] Key fingerprint: fdf800d47815a1c8
-[1:45:31 AM] [32m[00:45:31.614] [INFO] [architect_53740] 📋 Registered 1 capabilities with contracts[0m
-[1:45:31 AM] [32m[00:45:31.619] [INFO] [architect_53740] Sovereign Cell online @ http://localhost:43471[0m
-[1:47:37 AM] [architect_54040] Key fingerprint: 44b9615a408d3b8b
-[1:47:37 AM] [32m[00:47:37.573] [INFO] [architect_54040] 📋 Registered 1 capabilities with contracts[0m
-[1:47:37 AM] [32m[00:47:37.583] [INFO] [architect_54040] Sovereign Cell online @ http://localhost:42469[0m
-[1:48:59 AM] [architect] Key fingerprint: 3261c0f9f3a2e245
-[1:48:59 AM] [32m[00:48:59.863] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:48:59 AM] [32m[00:48:59.869] [INFO] [architect] Sovereign Cell online @ http://localhost:46363[0m
-[1:52:49 AM] [architect] Key fingerprint: 6cddd2ebbac9a4ba
-[1:52:49 AM] [32m[00:52:49.304] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:52:49 AM] [32m[00:52:49.313] [INFO] [architect] Sovereign Cell online @ http://localhost:33865[0m
-[1:55:00 AM] [architect] Key fingerprint: 93628a7b4f94a60c
-[1:55:00 AM] [32m[00:55:00.806] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:55:00 AM] [32m[00:55:00.813] [INFO] [architect] Sovereign Cell online @ http://localhost:43821[0m
-[1:57:35 AM] [architect] Key fingerprint: 5cf6080d6bf4d116
-[1:57:35 AM] [32m[00:57:35.040] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:57:35 AM] [32m[00:57:35.051] [INFO] [architect] Sovereign Cell online @ http://localhost:40879[0m
-[1:57:46 AM] [architect] Key fingerprint: 286a98c58400222e
-[1:57:46 AM] [32m[00:57:46.773] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:57:46 AM] [32m[00:57:46.780] [INFO] [architect] Sovereign Cell online @ http://localhost:40879[0m
-[1:57:56 AM] [architect] Key fingerprint: 121b5d4a7ddb52e6
-[1:57:56 AM] [32m[00:57:56.399] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:57:56 AM] [32m[00:57:56.406] [INFO] [architect] Sovereign Cell online @ http://localhost:40879[0m
-[2:00:23 AM] [architect] Key fingerprint: 62d833adeb7f31e0
-[2:00:23 AM] [32m[01:00:23.064] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:00:23 AM] [32m[01:00:23.071] [INFO] [architect] Sovereign Cell online @ http://localhost:35723[0m
-[2:08:33 AM] [architect] Key fingerprint: 0dd0c1390fffe706
-[2:08:33 AM] [32m[01:08:33.910] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:08:33 AM] [32m[01:08:33.916] [INFO] [architect] Sovereign Cell online @ http://localhost:36613[0m
-[2:09:17 AM] [architect] Key fingerprint: 3d83ba4f280129e6
-[2:09:17 AM] [32m[01:09:17.974] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:09:17 AM] [32m[01:09:17.979] [INFO] [architect] Sovereign Cell online @ http://localhost:36457[0m
-[2:09:35 AM] [architect] Key fingerprint: aa43338697be8f92
-[2:09:35 AM] [32m[01:09:35.111] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:09:35 AM] [32m[01:09:35.120] [INFO] [architect] Sovereign Cell online @ http://localhost:36457[0m
-[2:09:48 AM] [32m[01:09:48.629] [INFO] [architect] 🌐 ~5 → 12p/31c[0m
-[2:09:50 AM] [32m[01:09:50.055] [INFO] [architect] 🌐 ~1 → 17p/31c[0m
-[2:09:50 AM] [32m[01:09:50.076] [INFO] [architect] 🌐 ~2 → 17p/31c[0m
-[2:09:50 AM] [32m[01:09:50.139] [INFO] [architect] 🌐 ~2 → 17p/31c[0m
-[2:11:11 AM] [architect] Key fingerprint: 369d330c6d6767e3
-[2:11:11 AM] [32m[01:11:11.272] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:11:11 AM] [32m[01:11:11.282] [INFO] [architect] Sovereign Cell online @ http://localhost:39893[0m
-[2:25:19 AM] [architect] Key fingerprint: 27855da321040efc
-[2:25:19 AM] [32m[01:25:19.037] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:25:19 AM] [32m[01:25:19.045] [INFO] [architect] Sovereign Cell online @ http://localhost:36865[0m
-[2:28:52 AM] [architect] Key fingerprint: eeea215b6a9e2416
-[2:28:52 AM] [32m[01:28:52.209] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:28:52 AM] [32m[01:28:52.219] [INFO] [architect] Sovereign Cell online @ http://localhost:36669[0m
-[2:28:55 AM] [architect] Key fingerprint: 5c7f8fc531729777
-[2:28:55 AM] [32m[01:28:55.804] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:28:55 AM] [32m[01:28:55.810] [INFO] [architect] Sovereign Cell online @ http://localhost:36669[0m
-[2:28:56 AM] [32m[01:28:56.200] [INFO] [architect] 🌐 ~1 → 8p/26c[0m
-[2:29:19 AM] [architect] Key fingerprint: 0bee0ce47f1ef72c
-[2:29:19 AM] [32m[01:29:19.194] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:29:19 AM] [32m[01:29:19.199] [INFO] [architect] Sovereign Cell online @ http://localhost:36669[0m
-[2:29:19 AM] [32m[01:29:19.728] [INFO] [architect] 🌐 ~1 → 10p/32c[0m
-[2:29:26 AM] [architect] Key fingerprint: a739f6a5b3ef351a
-[2:29:26 AM] [32m[01:29:26.475] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:29:26 AM] [32m[01:29:26.482] [INFO] [architect] Sovereign Cell online @ http://localhost:36669[0m
-[2:29:47 AM] [architect] Key fingerprint: 032dccd0ec134d43
-[2:29:47 AM] [32m[01:29:47.560] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:29:47 AM] [32m[01:29:47.572] [INFO] [architect] Sovereign Cell online @ http://localhost:36669[0m
-[2:30:02 AM] [32m[01:30:02.580] [INFO] [architect] 🌐 ~2 → 10p/32c[0m
-[2:30:06 AM] [architect] Key fingerprint: 9ec4fdf2e32a79d2
-[2:30:06 AM] [32m[01:30:06.219] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:30:06 AM] [32m[01:30:06.232] [INFO] [architect] Sovereign Cell online @ http://localhost:36669[0m
-[2:30:19 AM] [architect] Key fingerprint: b8cf948bb8b58f86
-[2:30:19 AM] [32m[01:30:19.968] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:30:19 AM] [32m[01:30:19.973] [INFO] [architect] Sovereign Cell online @ http://localhost:36669[0m
-[2:30:20 AM] [32m[01:30:20.430] [INFO] [architect] 🌐 ~1 → 11p/39c[0m
-[2:30:55 AM] [architect] Key fingerprint: 50d0a7d7b8f673e4
-[2:30:55 AM] [32m[01:30:55.472] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:30:55 AM] [32m[01:30:55.484] [INFO] [architect] Sovereign Cell online @ http://localhost:40637[0m
-[2:54:06 AM] [architect] Key fingerprint: 242b1da2e9bdfbff
-[2:54:06 AM] [32m[01:54:06.564] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:54:06 AM] [32m[01:54:06.569] [INFO] [architect] Sovereign Cell online @ http://localhost:40745[0m
-[3:15:38 AM] [architect] Key fingerprint: 667491796cfcfe8a
-[3:15:38 AM] [32m[02:15:38.095] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:15:38 AM] [32m[02:15:38.108] [INFO] [architect] Sovereign Cell online @ http://localhost:41085[0m
-[11:05:18 AM] [architect] Key fingerprint: 5e4f362bd7bf371a
-[11:05:18 AM] [32m[10:05:18.281] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:05:18 AM] [32m[10:05:18.285] [INFO] [architect] Sovereign Cell online @ http://localhost:41375[0m
-[11:20:21 AM] [architect] Key fingerprint: 49c531c223b2a749
-[11:20:21 AM] [32m[10:20:21.030] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:20:21 AM] [32m[10:20:21.042] [INFO] [architect] Sovereign Cell online @ http://localhost:43267[0m
-[2:48:12 PM] [architect] Key fingerprint: 2b16e87689e5a5c0
-[2:48:12 PM] [32m[13:48:12.336] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:48:12 PM] [32m[13:48:12.341] [INFO] [architect] Sovereign Cell online @ http://localhost:43561[0m
-[2:49:10 PM] [architect] Key fingerprint: f60044d59e7fc266
-[2:49:10 PM] [32m[13:49:10.556] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:49:10 PM] [32m[13:49:10.568] [INFO] [architect] Sovereign Cell online @ http://localhost:41707[0m
-[2:49:23 PM] [architect] Key fingerprint: b5dd98ae18717435
-[2:49:23 PM] [32m[13:49:23.195] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:49:23 PM] [32m[13:49:23.200] [INFO] [architect] Sovereign Cell online @ http://localhost:41707[0m
-[3:11:59 PM] [architect] Key fingerprint: 01788c01cc3616d1
-[3:11:59 PM] [32m[14:11:59.405] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:11:59 PM] [32m[14:11:59.410] [INFO] [architect] Sovereign Cell online @ http://localhost:46751[0m
-[3:30:19 PM] [architect] Key fingerprint: bfc98db609552204
-[3:30:19 PM] [32m[14:30:19.337] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:30:19 PM] [32m[14:30:19.345] [INFO] [architect] Sovereign Cell online @ http://localhost:35653[0m
-[3:37:29 PM] [architect] Key fingerprint: 14aa6326f90fa2a6
-[3:37:29 PM] [32m[14:37:29.880] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:37:29 PM] [32m[14:37:29.886] [INFO] [architect] Sovereign Cell online @ http://localhost:35551[0m
-[9:12:48 PM] [architect] Key fingerprint: 393c7a26ab2da916
-[9:12:48 PM] [32m[20:12:48.503] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[9:12:48 PM] [32m[20:12:48.515] [INFO] [architect] Sovereign Cell online @ http://localhost:41543[0m
-[9:14:54 PM] [architect] Key fingerprint: 870208c678d9d8f7
-[9:14:54 PM] [32m[20:14:54.447] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[9:14:54 PM] [32m[20:14:54.454] [INFO] [architect] Sovereign Cell online @ http://localhost:42807[0m
-[9:34:13 PM] [architect] Key fingerprint: e070f92363ea6dda
-[9:34:14 PM] [32m[20:34:14.004] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[9:34:14 PM] [32m[20:34:14.009] [INFO] [architect] Sovereign Cell online @ http://localhost:39435[0m
-[9:36:08 PM] [architect] Key fingerprint: 8a99c11d5d8c2a0d
-[9:36:08 PM] [32m[20:36:08.165] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[9:36:08 PM] [32m[20:36:08.170] [INFO] [architect] Sovereign Cell online @ http://localhost:37933[0m
-[9:40:17 PM] [architect] Key fingerprint: da88fa57a3e3c521
-[9:40:17 PM] [32m[20:40:17.930] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[9:40:17 PM] [32m[20:40:17.939] [INFO] [architect] Sovereign Cell online @ http://localhost:44413[0m
-[9:47:14 PM] [architect] Key fingerprint: e7bf0aa319cafffc
-[9:47:14 PM] [32m[20:47:14.715] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[9:47:14 PM] [32m[20:47:14.721] [INFO] [architect] Sovereign Cell online @ http://localhost:38727[0m
-[9:49:33 PM] [architect] Key fingerprint: b457656cae99a66c
-[9:49:33 PM] [32m[20:49:33.031] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[9:49:33 PM] [32m[20:49:33.041] [INFO] [architect] Sovereign Cell online @ http://localhost:38773[0m
-[10:01:19 PM] [architect] Key fingerprint: 7a55998577f7375b
-[10:01:19 PM] [32m[21:01:19.817] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[10:01:19 PM] [32m[21:01:19.831] [INFO] [architect] Sovereign Cell online @ http://localhost:43123[0m
-[2:05:49 PM] [architect] Key fingerprint: 738d014fd5aa345b
-[2:05:49 PM] [32m[13:05:49.964] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:05:49 PM] [32m[13:05:49.969] [INFO] [architect] Sovereign Cell online @ http://localhost:39045[0m
-[2:09:10 PM] [architect] Key fingerprint: 79b2189d1961f7ab
-[2:09:10 PM] [32m[13:09:10.512] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:09:10 PM] [32m[13:09:10.517] [INFO] [architect] Sovereign Cell online @ http://localhost:46543[0m
-[2:12:41 PM] [architect] Key fingerprint: ecd758434cc28580
-[2:12:41 PM] [32m[13:12:41.702] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:12:41 PM] [32m[13:12:41.709] [INFO] [architect] Sovereign Cell online @ http://localhost:37487[0m
-[2:14:02 PM] [architect] Key fingerprint: 4922f0cec504fde1
-[2:14:02 PM] [32m[13:14:02.972] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:14:02 PM] [32m[13:14:02.976] [INFO] [architect] Sovereign Cell online @ http://localhost:36803[0m
-[2:17:10 PM] [architect] Key fingerprint: a5956dd5aa98502a
-[2:17:10 PM] [32m[13:17:10.671] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:17:10 PM] [32m[13:17:10.679] [INFO] [architect] Sovereign Cell online @ http://localhost:45225[0m
-[2:24:04 PM] [architect] Key fingerprint: d60ea1505103075b
-[2:24:04 PM] [32m[13:24:04.684] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:24:04 PM] [32m[13:24:04.691] [INFO] [architect] Sovereign Cell online @ http://localhost:43205[0m
-[2:27:11 PM] [architect] Key fingerprint: c93e2eea3426b9dc
-[2:27:11 PM] [32m[13:27:11.742] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:27:11 PM] [32m[13:27:11.753] [INFO] [architect] Sovereign Cell online @ http://localhost:42245[0m
-[2:28:55 PM] [architect] Key fingerprint: 21fee8ba13f6b3c2
-[2:28:55 PM] [32m[13:28:55.116] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:28:55 PM] [32m[13:28:55.123] [INFO] [architect] Sovereign Cell online @ http://localhost:45171[0m
-[2:30:25 PM] [architect] Key fingerprint: 3faf4db921167596
-[2:30:25 PM] [32m[13:30:25.275] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:30:25 PM] [32m[13:30:25.288] [INFO] [architect] Sovereign Cell online @ http://localhost:43101[0m
-[2:33:05 PM] [architect] Key fingerprint: 84753ff3c8d0876c
-[2:33:05 PM] [32m[13:33:05.601] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:33:05 PM] [32m[13:33:05.608] [INFO] [architect] Sovereign Cell online @ http://localhost:33339[0m
-[2:35:04 PM] [architect] Key fingerprint: 7083e5c7ffe94b15
-[2:35:04 PM] [32m[13:35:04.664] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:35:04 PM] [32m[13:35:04.677] [INFO] [architect] Sovereign Cell online @ http://localhost:41731[0m
-[2:37:08 PM] [architect] Key fingerprint: 55e9ad55407535ab
-[2:37:08 PM] [32m[13:37:08.616] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:37:08 PM] [32m[13:37:08.631] [INFO] [architect] Sovereign Cell online @ http://localhost:36195[0m
-[2:40:59 PM] [architect] Key fingerprint: 933faff46dd68067
-[2:40:59 PM] [32m[13:40:59.153] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:40:59 PM] [32m[13:40:59.159] [INFO] [architect] Sovereign Cell online @ http://localhost:34781[0m
-[2:43:30 PM] [architect] Key fingerprint: fbcbe7446de9e258
-[2:43:30 PM] [32m[13:43:30.914] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:43:30 PM] [32m[13:43:30.923] [INFO] [architect] Sovereign Cell online @ http://localhost:40091[0m
-[2:44:10 PM] [architect] Key fingerprint: ae36182d5229d48a
-[2:44:10 PM] [32m[13:44:10.747] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:44:10 PM] [32m[13:44:10.754] [INFO] [architect] Sovereign Cell online @ http://localhost:45239[0m
-[2:45:23 PM] [architect] Key fingerprint: 7212c5893e7b853c
-[2:45:23 PM] [32m[13:45:23.656] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:45:23 PM] [32m[13:45:23.662] [INFO] [architect] Sovereign Cell online @ http://localhost:34191[0m
-[2:47:51 PM] [architect] Key fingerprint: a16ebe08a3453832
-[2:47:51 PM] [32m[13:47:51.387] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:47:51 PM] [32m[13:47:51.394] [INFO] [architect] Sovereign Cell online @ http://localhost:39999[0m
-[2:49:07 PM] [architect] Key fingerprint: f4ae2b984b43442b
-[2:49:07 PM] [32m[13:49:07.856] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:49:07 PM] [32m[13:49:07.865] [INFO] [architect] Sovereign Cell online @ http://localhost:38363[0m
-[2:51:25 PM] [architect] Key fingerprint: c19cbf2c9a187aec
-[2:51:25 PM] [32m[13:51:25.469] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:51:25 PM] [32m[13:51:25.473] [INFO] [architect] Sovereign Cell online @ http://localhost:36615[0m
-[2:53:51 PM] [architect] Key fingerprint: 0ab38be1da0bce73
-[2:53:51 PM] [32m[13:53:51.194] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:53:51 PM] [32m[13:53:51.198] [INFO] [architect] Sovereign Cell online @ http://localhost:36455[0m
-[2:53:51 PM] [32m[13:53:51.653] [INFO] [architect] [e88ffeee] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [projects][0m
-[2:53:51 PM] [32m[13:53:51.702] [INFO] [architect] [db2a721b] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:38211[0m
-[2:53:51 PM] [32m[13:53:51.702] [INFO] [architect] [0deead57] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:42651[0m
-[2:54:06 PM] [32m[13:54:06.181] [INFO] [architect] [da1e494f] 📥 SIGNAL_ARRIVED: [mesh/gossip] from [comms][0m
-[2:54:06 PM] [32m[13:54:06.199] [INFO] [architect] [af8d9c9e] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:42651[0m
-[2:54:06 PM] [32m[13:54:06.199] [INFO] [architect] [3317c00e] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:36313[0m
-[2:54:08 PM] [32m[13:54:08.046] [INFO] [architect] [050a4ab9] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
-[2:54:08 PM] [32m[13:54:08.047] [INFO] [architect] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:36713[0m
-[2:54:08 PM] [32m[13:54:08.047] [INFO] [architect] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:40283[0m
-[2:54:08 PM] [32m[13:54:08.047] [INFO] [architect] [050a4ab9] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:42651[0m
-[2:54:21 PM] [32m[13:54:21.201] [INFO] [architect] [22d87949] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:36433[0m
-[2:54:21 PM] [32m[13:54:21.201] [INFO] [architect] [a4fa8487] 📡 RPC_OUT: [mesh/gossip] -> http://localhost:42651[0m
-[2:59:49 PM] [architect] Key fingerprint: 9dd797d0d7a7e8af
-[2:59:49 PM] [32m[13:59:49.018] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[2:59:49 PM] [32m[13:59:49.023] [INFO] [architect] Sovereign Cell online @ http://localhost:38289[0m
-[3:00:41 PM] [architect] Key fingerprint: 142a2877efb9577a
-[3:00:41 PM] [32m[14:00:41.974] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:00:41 PM] [32m[14:00:41.982] [INFO] [architect] Sovereign Cell online @ http://localhost:39649[0m
-[3:00:42 PM] [32m[14:00:42.006] [INFO] [architect] [6ecce893] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
-[3:00:42 PM] [32m[14:00:42.007] [INFO] [architect] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:33267[0m
-[3:00:42 PM] [32m[14:00:42.007] [INFO] [architect] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39329[0m
-[3:00:42 PM] [32m[14:00:42.007] [INFO] [architect] [6ecce893] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40581[0m
-[3:01:19 PM] [32m[14:01:19.077] [INFO] [architect] [c036933f] 📥 SIGNAL_ARRIVED: [tts/synthesize] from [tts-ui][0m
-[3:01:19 PM] [32m[14:01:19.077] [INFO] [architect] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:39385[0m
-[3:01:19 PM] [32m[14:01:19.079] [INFO] [architect] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:43579[0m
-[3:01:19 PM] [32m[14:01:19.079] [INFO] [architect] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:44725[0m
-[3:01:19 PM] [32m[14:01:19.079] [INFO] [architect] [c036933f] 📡 RPC_OUT: [tts/synthesize] -> http://localhost:32867[0m
-[3:02:53 PM] [architect] Key fingerprint: fffb4e581ebe6d66
-[3:02:53 PM] [32m[14:02:53.060] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:02:53 PM] [32m[14:02:53.067] [INFO] [architect] Sovereign Cell online @ http://localhost:42793[0m
-[3:02:53 PM] [32m[14:02:53.571] [INFO] [architect] [341ba084] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34161[0m
-[3:02:53 PM] [32m[14:02:53.571] [INFO] [architect] [ba7252e8] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
-[3:03:08 PM] [32m[14:03:08.069] [INFO] [architect] [d6caaf03] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34161[0m
-[3:03:08 PM] [32m[14:03:08.070] [INFO] [architect] [f08a8d19] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
-[3:03:23 PM] [32m[14:03:23.070] [INFO] [architect] [da56f4de] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43619[0m
-[3:03:23 PM] [32m[14:03:23.070] [INFO] [architect] [48d8040f] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:43089[0m
-[3:03:38 PM] [32m[14:03:38.070] [INFO] [architect] [fd4a3e08] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40875[0m
-[3:03:38 PM] [32m[14:03:38.070] [INFO] [architect] [42962bd1] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:33653[0m
-[3:03:48 PM] [architect] Key fingerprint: 086cf056d94a2e53
-[3:03:48 PM] [32m[14:03:48.148] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:03:48 PM] [32m[14:03:48.155] [INFO] [architect] Sovereign Cell online @ http://localhost:45853[0m
-[3:03:48 PM] [32m[14:03:48.659] [INFO] [architect] [b5929e95] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37951[0m
-[3:03:48 PM] [32m[14:03:48.660] [INFO] [architect] [2d00d2e0] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:41231[0m
-[3:04:03 PM] [32m[14:04:03.157] [INFO] [architect] [96c2d794] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:38583[0m
-[3:04:03 PM] [32m[14:04:03.157] [INFO] [architect] [f73db536] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34751[0m
-[3:04:18 PM] [32m[14:04:18.157] [INFO] [architect] [5fb9b001] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37247[0m
-[3:04:18 PM] [32m[14:04:18.158] [INFO] [architect] [70c0b943] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34813[0m
-[3:05:53 PM] [architect] Key fingerprint: 700d4744b971e133
-[3:05:53 PM] [32m[14:05:53.694] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:05:53 PM] [32m[14:05:53.700] [INFO] [architect] Sovereign Cell online @ http://localhost:44195[0m
-[3:05:53 PM] [32m[14:05:53.744] [INFO] [architect] [57cb6c73] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
-[3:05:53 PM] [32m[14:05:53.745] [INFO] [architect] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41165[0m
-[3:05:53 PM] [32m[14:05:53.745] [INFO] [architect] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:44137[0m
-[3:05:53 PM] [32m[14:05:53.745] [INFO] [architect] [57cb6c73] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:38931[0m
-[3:05:53 PM] [32m[14:05:53.755] [INFO] [architect] [57cb6c73] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:44137[0m
-[3:05:54 PM] [32m[14:05:54.203] [INFO] [architect] [111ddbee] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:34467[0m
-[3:05:54 PM] [32m[14:05:54.203] [INFO] [architect] [782bd1cc] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40177[0m
-[3:06:43 PM] [architect] Key fingerprint: 4b73915fcae6fe04
-[3:06:43 PM] [32m[14:06:43.872] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:06:43 PM] [32m[14:06:43.889] [INFO] [architect] Sovereign Cell online @ http://localhost:41225[0m
-[3:06:44 PM] [32m[14:06:44.395] [INFO] [architect] [23c8756b] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:37523[0m
-[3:06:44 PM] [32m[14:06:44.396] [INFO] [architect] [b9e37462] ✅ RPC_SUCCESS: [mesh/gossip] from http://localhost:40135[0m
-[3:07:39 PM] [architect] Key fingerprint: ec7a79ff7807c0fd
-[3:07:39 PM] [32m[14:07:39.535] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:07:39 PM] [32m[14:07:39.542] [INFO] [architect] Sovereign Cell online @ http://localhost:38061[0m
-[3:07:40 PM] [33m[14:07:40.046] [WARN] [architect] [40265e8e] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:42063 (undefined)[0m
-[3:07:40 PM] [33m[14:07:40.047] [WARN] [architect] [93db891e] ❌ RPC_REMOTE_FAIL: [mesh/gossip] @ http://localhost:41317 (undefined)[0m
-[3:08:35 PM] [architect] Key fingerprint: 388884cfec6c1c03
-[3:08:35 PM] [32m[14:08:35.106] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:08:35 PM] [32m[14:08:35.114] [INFO] [architect] Sovereign Cell online @ http://localhost:45333[0m
-[3:08:35 PM] [32m[14:08:35.162] [INFO] [architect] [93e04371] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
-[3:08:35 PM] [32m[14:08:35.163] [INFO] [architect] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:39801[0m
-[3:08:35 PM] [32m[14:08:35.163] [INFO] [architect] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:41269[0m
-[3:08:35 PM] [32m[14:08:35.163] [INFO] [architect] [93e04371] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:40965[0m
-[3:08:35 PM] [32m[14:08:35.168] [INFO] [architect] [93e04371] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:39801[0m
-[3:08:35 PM] [33m[14:08:35.168] [WARN] [architect] [93e04371] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:39801 (undefined)[0m
-[3:09:03 PM] [architect] Key fingerprint: a938786b66cb0e04
-[3:09:03 PM] [32m[14:09:03.507] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:09:03 PM] [32m[14:09:03.513] [INFO] [architect] Sovereign Cell online @ http://localhost:45333[0m
-[3:10:12 PM] [architect] Key fingerprint: cd4b7bcb9ecb2e15
-[3:10:12 PM] [32m[14:10:12.500] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[3:10:12 PM] [32m[14:10:12.508] [INFO] [architect] Sovereign Cell online @ http://localhost:39545[0m
-[10:47:54 PM] [architect] Key fingerprint: f7b61e9477d0dd09
-[10:47:54 PM] [32m[21:47:54.528] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[10:47:54 PM] [32m[21:47:54.535] [INFO] [architect] Sovereign Cell online @ http://localhost:34655[0m
-[11:03:39 PM] [architect] Key fingerprint: e9aa46846828469e
-[11:03:39 PM] [32m[22:03:39.315] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:03:39 PM] [32m[22:03:39.327] [INFO] [architect] Sovereign Cell online @ http://localhost:45677[0m
-[11:29:17 PM] [architect] Key fingerprint: 8c863a74d10f3199
-[11:29:17 PM] [32m[22:29:17.232] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:29:17 PM] [32m[22:29:17.239] [INFO] [architect] Sovereign Cell online @ http://localhost:43839[0m
-[11:32:32 PM] [architect] Key fingerprint: 372c48b62107df22
-[11:32:32 PM] [32m[22:32:32.035] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:32:32 PM] [32m[22:32:32.050] [INFO] [architect] Sovereign Cell online @ http://localhost:45069[0m
-[11:35:13 PM] [architect] Key fingerprint: 1f8222c57f86482e
-[11:35:13 PM] [32m[22:35:13.531] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:35:13 PM] [32m[22:35:13.566] [INFO] [architect] Sovereign Cell online @ http://localhost:41641[0m
-[11:40:28 PM] [architect] Key fingerprint: cf0f06bc0ddf1c3a
-[11:40:28 PM] [32m[22:40:28.917] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:40:28 PM] [32m[22:40:28.922] [INFO] [architect] Sovereign Cell online @ http://localhost:40967[0m
-[11:47:49 PM] [architect] Key fingerprint: cb8160d2aec82aad
-[11:47:49 PM] [32m[22:47:49.801] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:47:49 PM] [32m[22:47:49.807] [INFO] [architect] Sovereign Cell online @ http://localhost:41103[0m
-[11:53:29 PM] [architect] Key fingerprint: dcd2c48ee3badf7f
-[11:53:29 PM] [32m[22:53:29.139] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:53:29 PM] [32m[22:53:29.148] [INFO] [architect] Sovereign Cell online @ http://localhost:45807[0m
-[11:56:22 PM] [architect] Key fingerprint: 02ce47e3f19a8c61
-[11:56:22 PM] [32m[22:56:22.753] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:56:22 PM] [32m[22:56:22.767] [INFO] [architect] Sovereign Cell online @ http://localhost:46451[0m
-[11:56:53 PM] [architect] Key fingerprint: 14b3974573f49f40
-[11:56:53 PM] [32m[22:56:53.678] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:56:53 PM] [32m[22:56:53.682] [INFO] [architect] Sovereign Cell online @ http://localhost:37853[0m
-[11:59:46 PM] [architect] Key fingerprint: 546da3173463dd91
-[11:59:46 PM] [32m[22:59:46.521] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[11:59:46 PM] [32m[22:59:46.529] [INFO] [architect] Sovereign Cell online @ http://localhost:46313[0m
-[11:59:46 PM] [32m[22:59:46.586] [INFO] [architect] [7fcc9c79] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
-[11:59:46 PM] [32m[22:59:46.587] [INFO] [architect] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34053[0m
-[11:59:46 PM] [32m[22:59:46.587] [INFO] [architect] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:34507[0m
-[11:59:46 PM] [32m[22:59:46.587] [INFO] [architect] [7fcc9c79] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:37721[0m
-[12:07:18 AM] [architect] Key fingerprint: 1a2661884338d8be
-[12:07:18 AM] [32m[23:07:18.274] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[12:07:18 AM] [32m[23:07:18.294] [INFO] [architect] Sovereign Cell online @ http://localhost:39677[0m
-[12:08:36 AM] [architect] Key fingerprint: b205db04530000ea
-[12:08:36 AM] [32m[23:08:36.981] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[12:08:36 AM] [32m[23:08:36.995] [INFO] [architect] Sovereign Cell online @ http://localhost:39149[0m
-[12:11:04 AM] [32m[23:11:04.468] [INFO] [architect] [6d4ed6d6] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
-[12:11:04 AM] [32m[23:11:04.469] [INFO] [architect] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36661[0m
-[12:11:04 AM] [33m[23:11:04.472] [WARN] [architect] [6d4ed6d6] ❌ RPC_REMOTE_FAIL: [memory/goals/create] @ http://localhost:36661 (HANDLER_ERR)[0m
-[12:11:04 AM] [32m[23:11:04.472] [INFO] [architect] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:38591[0m
-[12:11:04 AM] [32m[23:11:04.472] [INFO] [architect] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:41557[0m
-[12:11:04 AM] [32m[23:11:04.472] [INFO] [architect] [6d4ed6d6] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40753[0m
-[12:15:04 AM] [architect] Key fingerprint: a57e7759c83f31bd
-[12:15:04 AM] [32m[23:15:04.587] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[12:15:04 AM] [32m[23:15:04.595] [INFO] [architect] Sovereign Cell online @ http://localhost:38623[0m
-[12:15:04 AM] [32m[23:15:04.640] [INFO] [architect] [3a19ba3a] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
-[12:15:04 AM] [32m[23:15:04.642] [INFO] [architect] [3a19ba3a] 📡 RPC_OUT: [comms/configure-channel] -> http://localhost:42213[0m
-[12:15:04 AM] [32m[23:15:04.645] [INFO] [architect] [3a19ba3a] ✅ RPC_SUCCESS: [comms/configure-channel] from http://localhost:42213[0m
-[12:36:07 AM] [architect] Key fingerprint: 6cc4ac32621c5ce2
-[12:36:07 AM] [32m[23:36:07.107] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[12:36:07 AM] [32m[23:36:07.112] [INFO] [architect] Sovereign Cell online @ http://localhost:40557[0m
-[12:37:46 AM] [32m[23:37:46.667] [INFO] [architect] [9ca500a7] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
-[12:37:46 AM] [32m[23:37:46.668] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
-[12:37:46 AM] [31m[23:37:46.681] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
-[12:37:46 AM]   Target: http://localhost:44231
-[12:37:46 AM]   Capability: memory/goals/create
-[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
-[12:37:46 AM] [32m[23:37:46.687] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42597[0m
-[12:37:46 AM] [32m[23:37:46.687] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
-[12:37:46 AM] [32m[23:37:46.687] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
-[12:37:46 AM] [31m[23:37:46.696] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
-[12:37:46 AM]   Target: http://localhost:44231
-[12:37:46 AM]   Capability: memory/goals/create
-[12:37:46 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
-[12:37:55 AM] [32m[23:37:55.748] [INFO] [architect] [166e4a40] 📥 SIGNAL_ARRIVED: [memory/goals/create] from [kindly][0m
-[12:37:55 AM] [32m[23:37:55.749] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
-[12:37:55 AM] [31m[23:37:55.760] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
-[12:37:55 AM]   Target: http://localhost:44231
-[12:37:55 AM]   Capability: memory/goals/create
-[12:37:55 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
-[12:37:55 AM] [32m[23:37:55.760] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:36371[0m
-[12:37:55 AM] [32m[23:37:55.761] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
-[12:37:55 AM] [32m[23:37:55.761] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44089[0m
-[12:42:09 AM] [32m[23:42:09.025] [INFO] [architect] [7678b1f2] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
-[12:42:09 AM] [32m[23:42:09.026] [INFO] [architect] [7678b1f2] 📡 RPC_OUT: [kindly/chat] -> http://localhost:40359[0m
-[12:42:09 AM] [32m[23:42:09.031] [INFO] [architect] [df814e3f] 📥 SIGNAL_ARRIVED: [kindly/chat] from [tts-ui][0m
-[12:42:09 AM] [32m[23:42:09.032] [INFO] [architect] [df814e3f] 📡 RPC_OUT: [kindly/chat] -> http://localhost:40359[0m
-[12:42:11 AM] [31m[23:42:11.115] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
-[12:42:11 AM]   Target: http://localhost:44089
-[12:42:11 AM]   Capability: memory/goals/create
-[12:42:11 AM]   Message: The operation timed out.[0m
-[12:42:11 AM] [31m[23:42:11.115] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
-[12:42:11 AM]   Target: http://localhost:42571
-[12:42:11 AM]   Capability: memory/goals/create
-[12:42:11 AM]   Message: The operation timed out.[0m
-[12:42:11 AM] [31m[23:42:11.115] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
-[12:42:11 AM]   Target: http://localhost:36371
-[12:42:11 AM]   Capability: memory/goals/create
-[12:42:11 AM]   Message: The operation timed out.[0m
-[12:42:11 AM] [32m[23:42:11.116] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
-[12:42:11 AM] [31m[23:42:11.117] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
-[12:42:11 AM]   Target: http://localhost:42597
-[12:42:11 AM]   Capability: memory/goals/create
-[12:42:11 AM]   Message: The operation timed out.[0m
-[12:42:11 AM] [31m[23:42:11.117] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
-[12:42:11 AM]   Target: http://localhost:44089
-[12:42:11 AM]   Capability: memory/goals/create
-[12:42:11 AM]   Message: The operation timed out.[0m
-[12:42:11 AM] [32m[23:42:11.118] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:44231[0m
-[12:42:11 AM] [31m[23:42:11.119] [ERROR] [architect] [166e4a40] 💥 RPC FAILURE [RPC_FAIL]
-[12:42:11 AM]   Target: http://localhost:44231
-[12:42:11 AM]   Capability: memory/goals/create
-[12:42:11 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
-[12:42:11 AM] [32m[23:42:11.120] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
-[12:42:11 AM] [32m[23:42:11.120] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:40359[0m
-[12:42:11 AM] [32m[23:42:11.121] [INFO] [architect] [166e4a40] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42597[0m
-[12:42:11 AM] [31m[23:42:11.121] [ERROR] [architect] [9ca500a7] 💥 RPC FAILURE [RPC_FAIL]
-[12:42:11 AM]   Target: http://localhost:44231
-[12:42:11 AM]   Capability: memory/goals/create
-[12:42:11 AM]   Message: this.ledger.merge is not a function. (In 'this.ledger.merge(r.error._envelope)', 'this.ledger.merge' is undefined)[0m
-[12:42:11 AM] [32m[23:42:11.122] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:39293[0m
-[12:42:11 AM] [32m[23:42:11.122] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:42571[0m
-[12:42:11 AM] [32m[23:42:11.123] [INFO] [architect] [9ca500a7] 📡 RPC_OUT: [memory/goals/create] -> http://localhost:35417[0m
-[12:44:39 AM] [architect] Key fingerprint: c030c90e90547d41
-[12:44:39 AM] [32m[23:44:39.391] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[12:44:39 AM] [32m[23:44:39.414] [INFO] [architect] Sovereign Cell online @ http://localhost:36789[0m
-[12:51:33 AM] [architect] Key fingerprint: 57bd3e3bfc3a0324
-[12:51:33 AM] [32m[23:51:33.637] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[12:51:33 AM] [32m[23:51:33.644] [INFO] [architect] Sovereign Cell online @ http://localhost:42603[0m
-[12:53:34 AM] [architect] Key fingerprint: 59de0fca3fcc4a59
-[12:53:34 AM] [32m[23:53:34.951] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[12:53:34 AM] [32m[23:53:34.959] [INFO] [architect] Sovereign Cell online @ http://localhost:33109[0m
-[12:55:19 AM] [31m[23:55:19.962] [ERROR] [architect] [a10ac784] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
-[12:55:49 AM] [31m[23:55:49.962] [ERROR] [architect] [8a350726] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
-[12:56:49 AM] [31m[23:56:49.962] [ERROR] [architect] [056a83b8] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
-[12:57:34 AM] [31m[23:57:34.962] [ERROR] [architect] [de36a9a3] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
-[12:58:19 AM] [31m[23:58:19.961] [ERROR] [architect] [9415e80f] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
-[12:58:49 AM] [31m[23:58:49.962] [ERROR] [architect] [e8f43b3b] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
-[12:59:19 AM] [31m[23:59:19.961] [ERROR] [architect] [9c263021] 💥 RPC FAILURE [RPC_FAIL] mesh/gossip -> http://localhost:45453 | Unable to connect. Is the computer able to access the url?[0m
-[12:59:43 AM] [architect] Key fingerprint: 7c2043da3fe70c9d
-[12:59:43 AM] [32m[23:59:43.748] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[12:59:43 AM] [32m[23:59:43.766] [INFO] [architect] Sovereign Cell online @ http://localhost:40511[0m
-[1:00:19 AM] [architect] Key fingerprint: 1c7fee60041a2778
-[1:00:19 AM] [32m[00:00:19.189] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:00:19 AM] [32m[00:00:19.196] [INFO] [architect] Sovereign Cell online @ http://localhost:45265[0m
-[1:04:24 AM] [architect] Key fingerprint: a0ad3e2ecc6f2d97
-[1:04:24 AM] [32m[00:04:24.183] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:04:24 AM] [32m[00:04:24.190] [INFO] [architect] Sovereign Cell online @ http://localhost:39775[0m
-[1:06:54 AM] [architect] Key fingerprint: df2a9260335aa8df
-[1:06:54 AM] [32m[00:06:54.886] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:06:54 AM] [32m[00:06:54.908] [INFO] [architect] Sovereign Cell online @ http://localhost:33377[0m
-[1:14:20 AM] [architect] Key fingerprint: 2d1bc85a5115e76f
-[1:14:20 AM] [32m[00:14:20.801] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:14:20 AM] [32m[00:14:20.822] [INFO] [architect] Sovereign Cell online @ http://localhost:38585[0m
-[1:20:58 AM] [architect] Key fingerprint: a6429eefe2e2bc71
-[1:20:58 AM] [32m[00:20:58.211] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:20:58 AM] [32m[00:20:58.215] [INFO] [architect] Sovereign Cell online @ http://localhost:44245[0m
-[1:22:54 AM] [architect] Key fingerprint: 8d10fc64bd451029
-[1:22:54 AM] [32m[00:22:54.672] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:22:54 AM] [32m[00:22:54.676] [INFO] [architect] Sovereign Cell online @ http://localhost:45445[0m
-[1:30:17 AM] [architect] Key fingerprint: 5f48a14d2825ecee
-[1:30:17 AM] [32m[00:30:17.463] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[1:30:17 AM] [32m[00:30:17.471] [INFO] [architect] Sovereign Cell online @ http://localhost:45089[0m
-[1:30:42 AM] [32m[00:30:42.463] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[1:31:12 AM] [32m[00:31:12.465] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[1:31:17 AM] [32m[00:31:17.560] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[1:31:42 AM] [32m[00:31:42.485] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:02:30 AM] [32m[03:02:30.265] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:11:44 AM] [32m[03:11:44.863] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:16:59 AM] [32m[03:16:59.868] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:19:14 AM] [32m[03:19:14.857] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:21:59 AM] [32m[03:21:59.855] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:25:44 AM] [32m[03:25:44.853] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:27:24 AM] [32m[03:27:24.891] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:27:29 AM] [32m[03:27:29.923] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:29:30 AM] [32m[03:29:30.271] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:32:44 AM] [32m[03:32:44.884] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:35:00 AM] [32m[03:35:00.249] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:35:59 AM] [32m[03:35:59.875] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:36:59 AM] [32m[03:36:59.858] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:37:29 AM] [32m[03:37:29.833] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:43:45 AM] [32m[03:43:45.283] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[4:44:44 AM] [32m[03:44:44.920] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:46:29 AM] [32m[03:46:29.828] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:46:30 AM] [32m[03:46:30.248] [INFO] [architect] 🌐 ~1 → 14p/61c[0m
-[4:47:15 AM] [32m[03:47:15.261] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:47:30 AM] [32m[03:47:30.280] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[4:49:29 AM] [32m[03:49:29.838] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:50:59 AM] [32m[03:50:59.847] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:51:15 AM] [32m[03:51:15.257] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:51:29 AM] [32m[03:51:29.836] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:51:30 AM] [32m[03:51:30.277] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:52:45 AM] [32m[03:52:45.234] [INFO] [architect] 🌐 ~1 → 14p/56c[0m
-[4:53:34 AM] [32m[03:53:34.908] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:54:00 AM] [32m[03:54:00.243] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:56:00 AM] [32m[03:56:00.255] [INFO] [architect] 🌐 ~1 → 14p/56c[0m
-[4:57:30 AM] [32m[03:57:30.273] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:58:29 AM] [32m[03:58:29.869] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[4:59:00 AM] [32m[03:59:00.254] [INFO] [architect] 🌐 ~1 → 14p/58c[0m
-[4:59:14 AM] [32m[03:59:14.846] [INFO] [architect] 🌐 ~1 → 14p/61c[0m
-[5:01:30 AM] [32m[04:01:30.229] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:10:30 AM] [32m[04:10:30.264] [INFO] [architect] 🌐 ~1 → 14p/49c[0m
-[5:15:24 AM] [32m[04:15:24.952] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:16:44 AM] [32m[04:16:44.946] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:18:30 AM] [32m[04:18:30.258] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:18:44 AM] [32m[04:18:44.894] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:19:29 AM] [32m[04:19:29.832] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:22:29 AM] [32m[04:22:29.831] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:22:39 AM] [32m[04:22:39.946] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:25:39 AM] [32m[04:25:39.868] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:25:54 AM] [32m[04:25:54.868] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:26:44 AM] [32m[04:26:44.883] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:26:44 AM] [32m[04:26:44.914] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:27:24 AM] [32m[04:27:24.977] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:30:30 AM] [32m[04:30:30.251] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:31:44 AM] [32m[04:31:44.850] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[5:31:59 AM] [32m[04:31:59.823] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:32:29 AM] [32m[04:32:29.902] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[5:33:00 AM] [32m[04:33:00.223] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:33:09 AM] [32m[04:33:09.974] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[5:33:24 AM] [32m[04:33:24.974] [INFO] [architect] 🌐 ~1 → 14p/58c[0m
-[5:36:45 AM] [32m[04:36:45.221] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:41:29 AM] [32m[04:41:29.922] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:41:35 AM] [32m[04:41:35.034] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[5:43:30 AM] [32m[04:43:30.236] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:43:54 AM] [32m[04:43:54.937] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:44:09 AM] [32m[04:44:09.936] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:46:19 AM] [32m[04:46:19.826] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:46:59 AM] [32m[04:46:59.881] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[5:47:00 AM] [32m[04:47:00.233] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:47:45 AM] [32m[04:47:45.003] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:48:59 AM] [32m[04:48:59.919] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:48:59 AM] [32m[04:48:59.953] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:49:20 AM] [32m[04:49:20.035] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[5:49:50 AM] [32m[04:49:50.018] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:50:14 AM] [32m[04:50:14.955] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:51:29 AM] [32m[04:51:29.810] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:54:29 AM] [32m[04:54:29.808] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:54:29 AM] [32m[04:54:29.815] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:55:59 AM] [32m[04:55:59.864] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:56:20 AM] [32m[04:56:20.058] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:57:20 AM] [32m[04:57:20.036] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[5:57:49 AM] [32m[04:57:49.830] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[5:57:59 AM] [32m[04:57:59.887] [INFO] [architect] 🌐 ~1 → 14p/56c[0m
-[5:59:44 AM] [32m[04:59:44.999] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:00:32 AM] [32m[05:00:28.863] [INFO] [architect] 🌐 ~3 → 3p/32c[0m
-[6:00:32 AM] [32m[05:00:29.010] [INFO] [architect] 🌐 ~1 → 3p/21c[0m
-[6:00:32 AM] [32m[05:00:29.035] [INFO] [architect] 🌐 ~1 → 4p/23c[0m
-[6:00:32 AM] [32m[05:00:29.036] [INFO] [architect] 🌐 ~2 → 3p/21c[0m
-[6:00:32 AM] [32m[05:00:29.074] [INFO] [architect] 🌐 ~1 → 13p/52c[0m
-[6:00:32 AM] [32m[05:00:29.076] [INFO] [architect] 🌐 ~3 → 7p/48c[0m
-[6:00:43 AM] [32m[05:00:43.845] [INFO] [architect] 🌐 ~2 → 8p/50c[0m
-[6:00:43 AM] [32m[05:00:43.918] [INFO] [architect] 🌐 ~2 → 8p/36c[0m
-[6:01:58 AM] [32m[05:01:58.511] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:02:28 AM] [32m[05:02:28.716] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[6:03:43 AM] [32m[05:03:43.718] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:04:43 AM] [32m[05:04:43.829] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:05:28 AM] [32m[05:05:28.829] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:06:28 AM] [32m[05:06:28.849] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:06:58 AM] [32m[05:06:58.827] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:07:43 AM] [32m[05:07:43.905] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:07:58 AM] [32m[05:07:58.932] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:08:13 AM] [32m[05:08:13.864] [INFO] [architect] 🌐 ~1 → 14p/61c[0m
-[6:09:43 AM] [32m[05:09:43.873] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:10:28 AM] [32m[05:10:28.934] [INFO] [architect] 🌐 ~3 → 15p/62c[0m
-[6:11:13 AM] [32m[05:11:13.829] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:13:17 AM] [32m[05:13:17.511] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[6:13:28 AM] [32m[05:13:28.820] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:13:43 AM] [32m[05:13:43.826] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:14:28 AM] [32m[05:14:28.884] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[6:14:43 AM] [32m[05:14:43.933] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:15:28 AM] [32m[05:15:28.915] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:16:13 AM] [32m[05:16:13.884] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:16:28 AM] [32m[05:16:28.869] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:17:43 AM] [32m[05:17:43.873] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:17:43 AM] [32m[05:17:43.899] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:18:43 AM] [32m[05:18:43.810] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:18:43 AM] [32m[05:18:43.946] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:19:43 AM] [32m[05:19:43.963] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:23:13 AM] [32m[05:23:13.972] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[6:26:58 AM] [32m[05:26:58.939] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:27:58 AM] [32m[05:27:58.945] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[6:28:43 AM] [32m[05:28:43.918] [INFO] [architect] 🌐 ~2 → 15p/62c[0m
-[6:28:58 AM] [32m[05:28:58.940] [INFO] [architect] 🌐 ~1 → 15p/62c[0m
-[8:54:22 PM] [architect] Key fingerprint: d435ccc86b672a3d
-[8:54:22 PM] [32m[19:54:22.673] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[8:54:22 PM] [32m[19:54:22.678] [INFO] [architect] Sovereign Cell online @ http://localhost:39851[0m
-[8:54:22 PM] [32m[19:54:22.758] [INFO] [architect] [1c9820ac] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
-[8:54:22 PM] ============================================================
-[8:54:22 PM] 💥 MESH FAILURE [NOT_FOUND]
-[8:54:22 PM] ============================================================
-[8:54:22 PM] Time:     2026-02-09T19:54:22.760Z
-[8:54:22 PM] Signal:   1c9820ac-b1e9-497e-8710-b670ed532a0b
-[8:54:22 PM] Failed At: architect
-[8:54:22 PM] Message:  No route to comms/configure-channel after exhaustive search (Providers: 0)
-[8:54:22 PM] 📍 Signal Path (2 hops):
-[8:54:22 PM]    1. telegram @ 19:54:22.744
-[8:54:22 PM]    2. architect @ 19:54:22.758
-[8:54:22 PM] 💡 Likely Causes:
-[8:54:22 PM] Capability not registered in any cell
-[8:54:22 PM] Cell hosting capability is offline
-[8:54:22 PM] Mesh hasn't converged yet (try adding delay)
-[8:54:22 PM] Typo in capability name
-[8:54:22 PM] The capability was found earlier, but no cell responded to the signal.
-[8:54:22 PM] This usually happens if the cell crashed or timed out during the hop.
-[8:54:22 PM] ============================================================
-[10:34:15 PM] [architect] Key fingerprint: c90941a4c4231fc8
-[10:34:15 PM] [32m[21:34:15.783] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[10:34:15 PM] [32m[21:34:15.794] [INFO] [architect] Sovereign Cell online @ http://localhost:45897[0m
-[10:35:42 PM] error: Cannot find module '../protocols/typed-mesh' from '/home/asdfghj/openjaws/architect/index.ts'
-[10:35:42 PM] Bun v1.3.1 (Linux x64)
-[10:36:34 PM] error: Cannot find module '../protocols/example2' from '/home/asdfghj/openjaws/architect/index.ts'
-[10:36:34 PM] Bun v1.3.1 (Linux x64)
-[10:36:50 PM] [architect] Key fingerprint: c4a4a7c4e269c75a
-[10:36:50 PM] [32m[21:36:50.289] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[10:36:50 PM] [32m[21:36:50.297] [INFO] [architect] Sovereign Cell online @ http://localhost:44003[0m
-[10:36:50 PM] [32m[21:36:50.346] [INFO] [architect] [3ade1521] 📥 SIGNAL_ARRIVED: [comms/configure-channel] from [telegram][0m
-[10:36:50 PM] ============================================================
-[10:36:50 PM] 💥 MESH FAILURE [NOT_FOUND]
-[10:36:50 PM] ============================================================
-[10:36:50 PM] Time:     2026-02-09T21:36:50.352Z
-[10:36:50 PM] Signal:   3ade1521-415c-4898-90c2-60c0400e7323
-[10:36:50 PM] Failed At: architect
-[10:36:50 PM] Message:  No route to comms/configure-channel after exhaustive search (Providers: 0)
-[10:36:50 PM] 📍 Signal Path (2 hops):
-[10:36:50 PM]    1. telegram @ 21:36:50.343
-[10:36:50 PM]    2. architect @ 21:36:50.346
-[10:36:50 PM] 💡 Likely Causes:
-[10:36:50 PM] Capability not registered in any cell
-[10:36:50 PM] Cell hosting capability is offline
-[10:36:50 PM] Mesh hasn't converged yet (try adding delay)
-[10:36:50 PM] Typo in capability name
-[10:36:50 PM] The capability was found earlier, but no cell responded to the signal.
-[10:36:50 PM] This usually happens if the cell crashed or timed out during the hop.
-[10:36:50 PM] ============================================================
-[10:36:50 PM] [32m[21:36:50.645] [INFO] [architect] 🌐 ~2 → 17p/67c[0m
-[10:39:02 PM] [architect] Key fingerprint: 3df8b55912c1ee03
-[10:39:02 PM] [32m[21:39:02.906] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
-[10:39:02 PM] [32m[21:39:02.913] [INFO] [architect] Sovereign Cell online @ http://localhost:43165[0m
+[1:20:33 PM] [architect] Key fingerprint: 0f70ddb585d0dd6c
+[1:20:33 PM] [32m[12:20:33.898] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:20:33 PM] [32m[12:20:33.902] [INFO] [architect] Sovereign Cell online @ http://localhost:40749[0m
+[1:40:57 PM] [architect] Key fingerprint: 0f80e2c558b86dac
+[1:40:57 PM] [32m[12:40:57.387] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:40:57 PM] [32m[12:40:57.395] [INFO] [architect] Sovereign Cell online @ http://localhost:36655[0m
+[1:42:46 PM] [architect] Key fingerprint: daa1cc669b53491e
+[1:42:46 PM] [32m[12:42:46.355] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:42:46 PM] [32m[12:42:46.366] [INFO] [architect] Sovereign Cell online @ http://localhost:43281[0m
+[1:43:06 PM] [33m[12:43:06.454] [WARN] [architect] Extinguishing cell...[0m
+[1:45:07 PM] [architect] Key fingerprint: a860e7efd34e9bb3
+[1:45:07 PM] [32m[12:45:07.799] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:45:07 PM] [32m[12:45:07.803] [INFO] [architect] Sovereign Cell online @ http://localhost:38543[0m
+[1:52:04 PM] [architect] Key fingerprint: 0cd10e8a5930d27a
+[1:52:04 PM] [32m[12:52:04.070] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:52:04 PM] [32m[12:52:04.081] [INFO] [architect] Sovereign Cell online @ http://localhost:39795[0m
+[1:56:46 PM] [architect] Key fingerprint: 1a4e5b9d3a0f791e
+[1:56:46 PM] [32m[12:56:46.896] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:56:46 PM] [32m[12:56:46.906] [INFO] [architect] Sovereign Cell online @ http://localhost:42559[0m
+[1:58:55 PM] [architect] Key fingerprint: fb7d22ff242cea27
+[1:58:55 PM] [32m[12:58:55.018] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[1:58:55 PM] [32m[12:58:55.045] [INFO] [architect] Sovereign Cell online @ http://localhost:41229[0m
+[2:00:30 PM] [architect] Key fingerprint: ca96b029e1d7f4be
+[2:00:30 PM] [32m[13:00:30.476] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:00:30 PM] [32m[13:00:30.482] [INFO] [architect] Sovereign Cell online @ http://localhost:40111[0m
+[2:00:30 PM] ============================================================
+[2:00:30 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[2:00:30 PM] ============================================================
+[2:00:30 PM] Time:     2026-02-10T13:00:30.986Z
+[2:00:30 PM] Signal:   18101f06-551b-4ced-b72d-9832a07ec0c0
+[2:00:30 PM] Failed At: http://localhost:34417
+[2:00:30 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[2:00:30 PM] 📜 Full Narrative (1 steps):
+[2:00:30 PM]    [13:00:30.984] architect            | RPC_ATTEMPT         
+[2:00:30 PM] 💡 Likely Causes:
+[2:00:30 PM] Target cell crashed or is unreachable
+[2:00:30 PM] Network partition between cells
+[2:00:30 PM] Target cell port not open or firewall blocking
+[2:00:30 PM] Target cell is still starting up (check logs)
+[2:00:30 PM] ============================================================
+[2:02:49 PM] [architect] Key fingerprint: b469ecadd2b6a339
+[2:02:49 PM] [32m[13:02:49.313] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:02:49 PM] [32m[13:02:49.319] [INFO] [architect] Sovereign Cell online @ http://localhost:38311[0m
+[2:03:34 PM] ============================================================
+[2:03:34 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[2:03:34 PM] ============================================================
+[2:03:34 PM] Time:     2026-02-10T13:03:34.326Z
+[2:03:34 PM] Signal:   dd834e71-4e8b-4412-a482-8cea5c18f7ba
+[2:03:34 PM] Failed At: http://localhost:39189
+[2:03:34 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[2:03:34 PM] 📜 Full Narrative (1 steps):
+[2:03:34 PM]    [13:03:34.324] architect            | RPC_ATTEMPT         
+[2:03:34 PM] 💡 Likely Causes:
+[2:03:34 PM] Target cell crashed or is unreachable
+[2:03:34 PM] Network partition between cells
+[2:03:34 PM] Target cell port not open or firewall blocking
+[2:03:34 PM] Target cell is still starting up (check logs)
+[2:03:34 PM] ============================================================
+[2:04:33 PM] [architect] Key fingerprint: 6a74c7fa03ff4a38
+[2:04:33 PM] [32m[13:04:33.300] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:04:33 PM] [32m[13:04:33.316] [INFO] [architect] Sovereign Cell online @ http://localhost:41993[0m
+[2:05:09 PM] [architect] Key fingerprint: 62b3bb3f88f65b38
+[2:05:09 PM] [32m[13:05:09.010] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:05:09 PM] [32m[13:05:09.033] [INFO] [architect] Sovereign Cell online @ http://localhost:44503[0m
+[2:05:53 PM] [32m[13:05:53.866] [INFO] [architect] 🌐 ~1 → 19p/70c[0m
+[2:05:54 PM] ============================================================
+[2:05:54 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[2:05:54 PM] ============================================================
+[2:05:54 PM] Time:     2026-02-10T13:05:54.037Z
+[2:05:54 PM] Signal:   ad82b616-b39c-4983-8396-3403487aac19
+[2:05:54 PM] Failed At: http://localhost:42341
+[2:05:54 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[2:05:54 PM] 📜 Full Narrative (1 steps):
+[2:05:54 PM]    [13:05:54.035] architect            | RPC_ATTEMPT         
+[2:05:54 PM] 💡 Likely Causes:
+[2:05:54 PM] Target cell crashed or is unreachable
+[2:05:54 PM] Network partition between cells
+[2:05:54 PM] Target cell port not open or firewall blocking
+[2:05:54 PM] Target cell is still starting up (check logs)
+[2:05:54 PM] ============================================================
+[2:07:17 PM] [architect] Key fingerprint: d7735b039634620c
+[2:07:17 PM] [32m[13:07:17.689] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:07:17 PM] [32m[13:07:17.700] [INFO] [architect] Sovereign Cell online @ http://localhost:41413[0m
+[2:07:32 PM] ============================================================
+[2:07:32 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[2:07:32 PM] ============================================================
+[2:07:32 PM] Time:     2026-02-10T13:07:32.703Z
+[2:07:32 PM] Signal:   9d13e584-9196-4db0-b823-df2da8b048f0
+[2:07:32 PM] Failed At: http://localhost:36297
+[2:07:32 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[2:07:32 PM] 📜 Full Narrative (1 steps):
+[2:07:32 PM]    [13:07:32.701] architect            | RPC_ATTEMPT         
+[2:07:32 PM] 💡 Likely Causes:
+[2:07:32 PM] Target cell crashed or is unreachable
+[2:07:32 PM] Network partition between cells
+[2:07:32 PM] Target cell port not open or firewall blocking
+[2:07:32 PM] Target cell is still starting up (check logs)
+[2:07:32 PM] ============================================================
+[2:07:47 PM] ============================================================
+[2:07:47 PM] 💥 MESH FAILURE [RPC_UNREACHABLE]
+[2:07:47 PM] ============================================================
+[2:07:47 PM] Time:     2026-02-10T13:07:47.705Z
+[2:07:47 PM] Signal:   3171d15a-159a-4b7a-afe6-ae3c0603e4af
+[2:07:47 PM] Failed At: http://localhost:36297
+[2:07:47 PM] Message:  RPC_UNREACHABLE: Unable to connect. Is the computer able to access the url?
+[2:07:47 PM] 📜 Full Narrative (1 steps):
+[2:07:47 PM]    [13:07:47.702] architect            | RPC_ATTEMPT         
+[2:07:47 PM] 💡 Likely Causes:
+[2:07:47 PM] Target cell crashed or is unreachable
+[2:07:47 PM] Network partition between cells
+[2:07:47 PM] Target cell port not open or firewall blocking
+[2:07:47 PM] Target cell is still starting up (check logs)
+[2:07:47 PM] ============================================================
+[2:10:02 PM] [architect] Key fingerprint: d23df928344dc1ff
+[2:10:02 PM] [32m[13:10:02.593] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:10:02 PM] [32m[13:10:02.610] [INFO] [architect] Sovereign Cell online @ http://localhost:42575[0m
+[2:10:35 PM] [architect] Key fingerprint: 4272026f2aa25a82
+[2:10:35 PM] [32m[13:10:35.515] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:10:35 PM] [32m[13:10:35.524] [INFO] [architect] Sovereign Cell online @ http://localhost:39807[0m
+[2:15:51 PM] [architect] Key fingerprint: 72ac5f08b3d8f025
+[2:15:51 PM] [32m[13:15:51.402] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:15:51 PM] [32m[13:15:51.425] [INFO] [architect] Sovereign Cell online @ http://localhost:36115[0m
+[2:25:38 PM] [architect] Key fingerprint: b4914d685a3889ae
+[2:25:38 PM] [32m[13:25:38.820] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[2:25:38 PM] [32m[13:25:38.824] [INFO] [architect] Sovereign Cell online @ http://localhost:36621[0m
+[2:25:39 PM] [31m[13:25:39.072] [ERROR] [architect] [3723dc56] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:34031 | HANDLER_ERR: Input validation failed for comms/configure-channel: Missing required field: channel[0m
+[8:04:15 PM] [architect] Key fingerprint: 02c0726513bb1d51
+[8:04:15 PM] [32m[19:04:15.578] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:04:15 PM] [32m[19:04:15.586] [INFO] [architect] Sovereign Cell online @ http://localhost:40737[0m
+[8:04:15 PM] [31m[19:04:15.766] [ERROR] [architect] [ea608b7b] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:33797 | HANDLER_ERR: Input validation failed for comms/configure-channel: Missing required field: channel | Received: {}[0m
+[8:07:59 PM] [architect] Key fingerprint: d87aded26b50369b
+[8:07:59 PM] [32m[19:07:59.473] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:07:59 PM] [32m[19:07:59.481] [INFO] [architect] Sovereign Cell online @ http://localhost:43229[0m
+[8:08:41 PM] [architect] Key fingerprint: e9ffbdeba27255d3
+[8:08:41 PM] [32m[19:08:40.952] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:08:41 PM] [32m[19:08:40.957] [INFO] [architect] Sovereign Cell online @ http://localhost:38397[0m
+[8:08:41 PM] [31m[19:08:41.185] [ERROR] [architect] [37d90e05] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:35185 | HANDLER_ERR: Input validation failed for comms/configure-channel: Missing required field: channel | Received: {}[0m
+[8:08:41 PM] [31m[19:08:41.224] [ERROR] [architect] [37d90e05] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:35185 | HANDLER_ERR: Input validation failed for comms/configure-channel: Missing required field: channel | Received: {}[0m
+[8:11:14 PM] [architect] Key fingerprint: 4ee10852a6a21cbe
+[8:11:14 PM] [32m[19:11:14.428] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:11:14 PM] [32m[19:11:14.448] [INFO] [architect] Sovereign Cell online @ http://localhost:43291[0m
+[8:16:34 PM] [architect] Key fingerprint: 7ec49e3b6d858444
+[8:16:34 PM] [32m[19:16:34.568] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:16:34 PM] [32m[19:16:34.573] [INFO] [architect] Sovereign Cell online @ http://localhost:34215[0m
+[8:16:34 PM] [DEBUG architect] Handler found for mesh/gossip, args: {"atlas":{"coder":{"id":"coder","addr":"http://localhost:37981","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA7rpvKvTS23cYhiPXnC+CvMjSdPWo9AduVnANdRmkBoo=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994867,"lastGossiped":1770750994867,"gossipHopCount":0},"Orchestrator_206427":{"addr":"http://localhost:42325","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAHHqv5RuvHd3HG/PHlrEKcKJFg6YqtrMilessDJn4Ek0=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994740,"lastGossiped":1770750994743,"gossipHopCount":1},"projects":{"addr":"http://localhost:36549","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","projects/write","projects/read","projects/list","projects/exec"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA1GyfV6uqspXxxkdnxTIajDKaMR7YPwSJSQwCP75LAlY=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994635,"lastGossiped":1770750994743,"gossipHopCount":1},"checklist":{"addr":"http://localhost:42179","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/0bdTENcQTYoHmVHNXmonPFrOdTxWSa8HjsxOklMy78=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994649,"lastGossiped":1770750994743,"gossipHopCount":1},"architect":{"addr":"http://localhost:34215","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAhonN1hsSQLbFs2Q1Yd1s37d8jD6irniWjp4qofAUt7w=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994776,"lastGossiped":1770750994776,"gossipHopCount":0},"Codegen":{"addr":"http://localhost:40669","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","codegen/mesh-types","codegen/poke-ts","codegen/validate","codegen/describe"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAe4Q56jBqknNKEovj0S20btAcKzuLvvx7kjf1bism0EM=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994819,"lastGossiped":1770750994819,"gossipHopCount":0},"ai-ui":{"addr":"http://localhost:33611","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","simple-ai/session","simple-ai/chat","simple-ai/history","simple-ai/clear","simple-ai/stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEADVm/b+n93P7Q/2oPLXSh981oBtCMyZuu2Nyau4WgBmA=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994867,"lastGossiped":1770750994867,"gossipHopCount":0}}}
+[8:16:35 PM] [DEBUG architect] Handler found for mesh/gossip, args: {"atlas":{"Codegen":{"id":"Codegen","addr":"http://localhost:40669","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","codegen/mesh-types","codegen/poke-ts","codegen/validate","codegen/describe"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAe4Q56jBqknNKEovj0S20btAcKzuLvvx7kjf1bism0EM=\n-----END PUBLIC KEY-----\n","lastSeen":1770750995078,"lastGossiped":1770750995078,"gossipHopCount":0},"ai-ui":{"addr":"http://localhost:33611","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","simple-ai/session","simple-ai/chat","simple-ai/history","simple-ai/clear","simple-ai/stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEADVm/b+n93P7Q/2oPLXSh981oBtCMyZuu2Nyau4WgBmA=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994867,"lastGossiped":1770750995017,"gossipHopCount":1},"tts":{"addr":"http://localhost:33749","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","tts/synthesize","tts/status"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA2CbXxC+s0pM1RXBymmRzMtuiTzQHZdJlcJ0s0MV6ST0=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994857,"lastGossiped":1770750994857,"gossipHopCount":0},"coder":{"addr":"http://localhost:37981","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA7rpvKvTS23cYhiPXnC+CvMjSdPWo9AduVnANdRmkBoo=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994867,"lastGossiped":1770750994883,"gossipHopCount":1},"Radar":{"addr":"http://localhost:35615","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAFmfc/zkiWDe91sAt1Ohd0/kqxTOzYhbiK2ySOpvtcsw=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994874,"lastGossiped":1770750995017,"gossipHopCount":1},"telegram":{"addr":"http://localhost:43937","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAgz7j/V0bnBJozv7XioCV04jxhIs/icrMWn/iT97izOg=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994862,"lastGossiped":1770750994862,"gossipHopCount":0},"log":{"addr":"http://localhost:40521","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","log/info","log/get"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA+8CHnu6ZCfOpoksZIhEChe4GKuaNKyLFcnvf/s+A3AY=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994862,"lastGossiped":1770750994862,"gossipHopCount":0},"comms":{"addr":"http://localhost:45057","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","comms/start-session","comms/chat","comms/get-session","comms/end-session","comms/configure-channel","comms/get-stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAdiNXn/qJOBL5fH0tuah/hc/ISVp+5Te708r/uZmoWec=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994859,"lastGossiped":1770750994859,"gossipHopCount":0},"architect":{"addr":"http://localhost:34215","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAhonN1hsSQLbFs2Q1Yd1s37d8jD6irniWjp4qofAUt7w=\n-----END PUBLIC KEY-----\n","lastSeen":1770750995078,"lastGossiped":1770750995078,"gossipHopCount":0},"memory":{"addr":"http://localhost:42209","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","memory/session/store","memory/session/get","memory/goals/create","memory/goals/list","memory/goals/update","memory/movement/record","memory/movement/timeline","memory/patterns/learn","memory/patterns/match","memory/actions/record","memory/actions/history","memory/temporal/slice","memory/temporal/context"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA0JeAeZXHjB+DG7tf5kZy8CHT6QRUDgPFGuL4yPe1r0U=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994864,"lastGossiped":1770750994864,"gossipHopCount":0},"skills":{"addr":"http://localhost:39683","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","skills/list","skills/get-context","skills/update-capability","skills/learn-pattern","skills/sync-from-mesh","skills/search"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAlBdDvn/QYoXMxZT405vfgTHiOo3I90QAIS5hivt/cEY=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994864,"lastGossiped":1770750994864,"gossipHopCount":0},"projects":{"addr":"http://localhost:36549","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","projects/write","projects/read","projects/list","projects/exec"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA1GyfV6uqspXxxkdnxTIajDKaMR7YPwSJSQwCP75LAlY=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994863,"lastGossiped":1770750994883,"gossipHopCount":2},"Lidar":{"addr":"http://localhost:43417","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAHIUiPF0Y5me/lMirEEtHGFu4cODnQS7MMUESVYTCTc8=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994861,"lastGossiped":1770750994861,"gossipHopCount":0},"ai-ui-ui":{"addr":"http://localhost:42257","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEADoWM4SoVV6pJd47p+TQZd9AB5p0WYWOCo3gGKdfBWHY=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994861,"lastGossiped":1770750994861,"gossipHopCount":0},"kindly":{"addr":"http://localhost:36613","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","kindly/chat","kindly/get-activity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAg6lEYZ5MHKiaG/q6QiaNX14QgMqKWPzv9h44QDqXo3c=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994860,"lastGossiped":1770750995017,"gossipHopCount":1},"ai":{"addr":"http://localhost:38593","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","ai/generate","ai/usage","ai/reset-usage"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAATRF+OD7veyBSuGpGPJ6oIjtpFVNdRowC4oifOTLyG8=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994858,"lastGossiped":1770750994858,"gossipHopCount":0},"tts-ui":{"addr":"http://localhost:42491","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/xnbuIrWlgolsOy72aRkt72QxccHQoV9cBypwx5WylU=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994858,"lastGossiped":1770750994858,"gossipHopCount":0},"telemetry":{"addr":"http://localhost:39755","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASYCeZUFGGav/SmeMGOKT9L1BfdOf9/Ew8ALnE1yPTU4=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994857,"lastGossiped":1770750994857,"gossipHopCount":0},"Orchestrator_206427":{"addr":"http://localhost:42325","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAHHqv5RuvHd3HG/PHlrEKcKJFg6YqtrMilessDJn4Ek0=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994853,"lastGossiped":1770750994883,"gossipHopCount":2},"Safety":{"addr":"http://localhost:34419","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","safety/get-close-proximity","safety/run-test-sequence"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA4mP2lUa6Q4yAH85FNSfTUU+Rq1oCaGvLFyp2dkDKnZM=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994874,"lastGossiped":1770750995017,"gossipHopCount":1},"checklist":{"addr":"http://localhost:42179","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/0bdTENcQTYoHmVHNXmonPFrOdTxWSa8HjsxOklMy78=\n-----END PUBLIC KEY-----\n","lastSeen":1770750994839,"lastGossiped":1770750995017,"gossipHopCount":1}}}
+[8:16:35 PM] [31m[19:16:35.267] [ERROR] [architect] [80d5ce06] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:45057 | HANDLER_ERR: Input validation failed for comms/configure-channel: Missing required field: channel | Received: {}[0m
+[8:18:12 PM] [architect] Key fingerprint: 2a6fc4f47dd019da
+[8:18:12 PM] [32m[19:18:12.046] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:18:12 PM] [32m[19:18:12.053] [INFO] [architect] Sovereign Cell online @ http://localhost:44487[0m
+[8:22:32 PM] [architect] Key fingerprint: 33c676bfb3dd114b
+[8:22:32 PM] [32m[19:22:32.520] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:22:32 PM] [32m[19:22:32.527] [INFO] [architect] Sovereign Cell online @ http://localhost:39433[0m
+[8:22:32 PM] [DEBUG architect] handleRequest() received, raw.payload.args: {}
+[8:22:32 PM] [DEBUG architect] handleRequest() received, raw.payload.args: {}
+[8:22:33 PM] [DEBUG architect] handleRequest() received, raw.payload.args: {"atlas":{"memory":{"id":"memory","addr":"http://localhost:34011","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","memory/session/store","memory/session/get","memory/goals/create","memory/goals/list","memory/goals/update","memory/movement/record","memory/movement/timeline","memory/patterns/learn","memory/patterns/match","memory/actions/record","memory/actions/history","memory/temporal/slice","memory/temporal/context"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAOLr4WfFE3yp7R999skRls91Aj7h/XCPtYvostYu0hlY=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352994,"lastGossiped":1770751352994,"gossipHopCount":0},"telegram":{"addr":"http://localhost:40491","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAnVX+L2AHily67tOgtaW2g45sLAZaKpJhIQ2Wah+D8AU=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"tts":{"addr":"http://localhost:44499","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","tts/synthesize","tts/status"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJTh6M/txahPnMpgo4f5IA9mM8A6HSs8whzAnh9+8mvc=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"Lidar":{"addr":"http://localhost:35031","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAsM+PN7FhEYt7uxauUHb+lcIrYopNvyzVRMxpIpGcwvo=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"checklist":{"addr":"http://localhost:38121","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAYfSaajiWo0C3zfJoGrPd+wtLj0+z2djp3PsHqxUnumE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"comms":{"addr":"http://localhost:45213","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","comms/start-session","comms/chat","comms/get-session","comms/end-session","comms/configure-channel","comms/get-stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAUFu9uXSbfWhjBY7OsDgbfCZQWGYybpRmXqY86/ethQ0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"projects":{"addr":"http://localhost:34851","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","projects/write","projects/read","projects/list","projects/exec"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvcgqdioMnf6LdaLG2oStJuJ9Y3GbqzST3Me/CvZR8As=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"Radar":{"addr":"http://localhost:42623","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAY20XrSmrNQoIqxcgeDpcAP8v4rtVQ3amehfQ/Wz9nrg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"skills":{"addr":"http://localhost:42989","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","skills/list","skills/get-context","skills/update-capability","skills/learn-pattern","skills/sync-from-mesh","skills/search"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA6GKzXKFmBPa7eHU5eVCP/JoE2IoRhKpEo/KB1gzIBzE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"kindly":{"addr":"http://localhost:46771","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","kindly/chat","kindly/get-activity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAIS/wWubBnt0AV3wu++rQh6ToYMKZr8HbMDqRBKN2r2U=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"telemetry":{"addr":"http://localhost:44133","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAj4xUfzwe/8AoNfyBuWQZ/XLtaLsDJwpsz/2WNDYmWgA=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"architect":{"addr":"http://localhost:39433","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAzKTCXSB6vufNETYnsDRGLylUSkW2UMuwPqYFeWSzmcE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"coder":{"addr":"http://localhost:43911","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtquQMYRYg9PSvJlWmH5GrYY7TBIoaa9TZ0Hw3/r5Ka8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"log":{"addr":"http://localhost:40587","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","log/info","log/get"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAVOAWIwoRJd+AO63Z7OHb95tRGTDgnCL5XS+Rl1OR92s=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"Orchestrator_208585":{"addr":"http://localhost:41821","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3Q3NQTLu3q/gsaHGNkVM874sMl5S1Jlp/ZrYpuUYMAM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"tts-ui":{"addr":"http://localhost:45157","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAWT5pZwpto+Yl8X93y8H5iwTlGOVxo4/0tk4CoSu4Gjk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"ai":{"addr":"http://localhost:37077","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","ai/generate","ai/usage","ai/reset-usage"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvN64s0U7pOmpoOPZDtFBWOTkBAu8+f0t7ZBjqQe0OEo=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"Safety":{"addr":"http://localhost:42459","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","safety/get-close-proximity","safety/run-test-sequence"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAdT5aVzlN7FEp1pnZ5YB3jIuDI+iTm9qU4owwIlGZDKM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"ai-ui":{"addr":"http://localhost:41153","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","simple-ai/session","simple-ai/chat","simple-ai/history","simple-ai/clear","simple-ai/stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA1V5agFWAZsfEhl5NWMUbszUNnHTkXOgMMVvL8EMctRg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"ai-ui-ui":{"addr":"http://localhost:42309","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEApPs1DKpuNTD6Kt9RLZ0fOxIOgCdGcp718C9Yo5/Fui0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1}}}
+[8:22:33 PM] [DEBUG architect] Handler found for mesh/gossip, args: {"atlas":{"memory":{"id":"memory","addr":"http://localhost:34011","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","memory/session/store","memory/session/get","memory/goals/create","memory/goals/list","memory/goals/update","memory/movement/record","memory/movement/timeline","memory/patterns/learn","memory/patterns/match","memory/actions/record","memory/actions/history","memory/temporal/slice","memory/temporal/context"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAOLr4WfFE3yp7R999skRls91Aj7h/XCPtYvostYu0hlY=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352994,"lastGossiped":1770751352994,"gossipHopCount":0},"telegram":{"addr":"http://localhost:40491","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAnVX+L2AHily67tOgtaW2g45sLAZaKpJhIQ2Wah+D8AU=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"tts":{"addr":"http://localhost:44499","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","tts/synthesize","tts/status"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJTh6M/txahPnMpgo4f5IA9mM8A6HSs8whzAnh9+8mvc=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"Lidar":{"addr":"http://localhost:35031","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAsM+PN7FhEYt7uxauUHb+lcIrYopNvyzVRMxpIpGcwvo=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"checklist":{"addr":"http://localhost:38121","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAYfSaajiWo0C3zfJoGrPd+wtLj0+z2djp3PsHqxUnumE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"comms":{"addr":"http://localhost:45213","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","comms/start-session","comms/chat","comms/get-session","comms/end-session","comms/configure-channel","comms/get-stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAUFu9uXSbfWhjBY7OsDgbfCZQWGYybpRmXqY86/ethQ0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"projects":{"addr":"http://localhost:34851","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","projects/write","projects/read","projects/list","projects/exec"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvcgqdioMnf6LdaLG2oStJuJ9Y3GbqzST3Me/CvZR8As=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"Radar":{"addr":"http://localhost:42623","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAY20XrSmrNQoIqxcgeDpcAP8v4rtVQ3amehfQ/Wz9nrg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"skills":{"addr":"http://localhost:42989","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","skills/list","skills/get-context","skills/update-capability","skills/learn-pattern","skills/sync-from-mesh","skills/search"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA6GKzXKFmBPa7eHU5eVCP/JoE2IoRhKpEo/KB1gzIBzE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"kindly":{"addr":"http://localhost:46771","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","kindly/chat","kindly/get-activity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAIS/wWubBnt0AV3wu++rQh6ToYMKZr8HbMDqRBKN2r2U=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"telemetry":{"addr":"http://localhost:44133","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAj4xUfzwe/8AoNfyBuWQZ/XLtaLsDJwpsz/2WNDYmWgA=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"architect":{"addr":"http://localhost:39433","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAzKTCXSB6vufNETYnsDRGLylUSkW2UMuwPqYFeWSzmcE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"coder":{"addr":"http://localhost:43911","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtquQMYRYg9PSvJlWmH5GrYY7TBIoaa9TZ0Hw3/r5Ka8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"log":{"addr":"http://localhost:40587","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","log/info","log/get"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAVOAWIwoRJd+AO63Z7OHb95tRGTDgnCL5XS+Rl1OR92s=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"Orchestrator_208585":{"addr":"http://localhost:41821","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3Q3NQTLu3q/gsaHGNkVM874sMl5S1Jlp/ZrYpuUYMAM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"tts-ui":{"addr":"http://localhost:45157","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAWT5pZwpto+Yl8X93y8H5iwTlGOVxo4/0tk4CoSu4Gjk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"ai":{"addr":"http://localhost:37077","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","ai/generate","ai/usage","ai/reset-usage"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvN64s0U7pOmpoOPZDtFBWOTkBAu8+f0t7ZBjqQe0OEo=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"Safety":{"addr":"http://localhost:42459","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","safety/get-close-proximity","safety/run-test-sequence"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAdT5aVzlN7FEp1pnZ5YB3jIuDI+iTm9qU4owwIlGZDKM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"ai-ui":{"addr":"http://localhost:41153","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","simple-ai/session","simple-ai/chat","simple-ai/history","simple-ai/clear","simple-ai/stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA1V5agFWAZsfEhl5NWMUbszUNnHTkXOgMMVvL8EMctRg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1},"ai-ui-ui":{"addr":"http://localhost:42309","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEApPs1DKpuNTD6Kt9RLZ0fOxIOgCdGcp718C9Yo5/Fui0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751352994,"gossipHopCount":1}}}
+[8:22:33 PM] [DEBUG architect] rpc() sending to http://localhost:41153, signal.payload.args: {"atlas":{"architect":{"id":"architect","addr":"http://localhost:39433","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAzKTCXSB6vufNETYnsDRGLylUSkW2UMuwPqYFeWSzmcE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751353006,"lastGossiped":1770751353006,"gossipHopCount":0},"checklist":{"addr":"http://localhost:38121","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAYfSaajiWo0C3zfJoGrPd+wtLj0+z2djp3PsHqxUnumE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"projects":{"addr":"http://localhost:34851","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","projects/write","projects/read","projects/list","projects/exec"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvcgqdioMnf6LdaLG2oStJuJ9Y3GbqzST3Me/CvZR8As=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"Radar":{"addr":"http://localhost:42623","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAY20XrSmrNQoIqxcgeDpcAP8v4rtVQ3amehfQ/Wz9nrg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"ai-ui":{"addr":"http://localhost:41153","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","simple-ai/session","simple-ai/chat","simple-ai/history","simple-ai/clear","simple-ai/stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA1V5agFWAZsfEhl5NWMUbszUNnHTkXOgMMVvL8EMctRg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"telegram":{"addr":"http://localhost:40491","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAnVX+L2AHily67tOgtaW2g45sLAZaKpJhIQ2Wah+D8AU=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"telemetry":{"addr":"http://localhost:44133","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAj4xUfzwe/8AoNfyBuWQZ/XLtaLsDJwpsz/2WNDYmWgA=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"memory":{"addr":"http://localhost:34011","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","memory/session/store","memory/session/get","memory/goals/create","memory/goals/list","memory/goals/update","memory/movement/record","memory/movement/timeline","memory/patterns/learn","memory/patterns/match","memory/actions/record","memory/actions/history","memory/temporal/slice","memory/temporal/context"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAOLr4WfFE3yp7R999skRls91Aj7h/XCPtYvostYu0hlY=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352994,"lastGossiped":1770751353006,"gossipHopCount":1},"skills":{"addr":"http://localhost:42989","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","skills/list","skills/get-context","skills/update-capability","skills/learn-pattern","skills/sync-from-mesh","skills/search"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA6GKzXKFmBPa7eHU5eVCP/JoE2IoRhKpEo/KB1gzIBzE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"coder":{"addr":"http://localhost:43911","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtquQMYRYg9PSvJlWmH5GrYY7TBIoaa9TZ0Hw3/r5Ka8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"log":{"addr":"http://localhost:40587","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","log/info","log/get"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAVOAWIwoRJd+AO63Z7OHb95tRGTDgnCL5XS+Rl1OR92s=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"Lidar":{"addr":"http://localhost:35031","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAsM+PN7FhEYt7uxauUHb+lcIrYopNvyzVRMxpIpGcwvo=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"kindly":{"addr":"http://localhost:46771","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","kindly/chat","kindly/get-activity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAIS/wWubBnt0AV3wu++rQh6ToYMKZr8HbMDqRBKN2r2U=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"Orchestrator_208585":{"addr":"http://localhost:41821","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3Q3NQTLu3q/gsaHGNkVM874sMl5S1Jlp/ZrYpuUYMAM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"tts-ui":{"addr":"http://localhost:45157","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAWT5pZwpto+Yl8X93y8H5iwTlGOVxo4/0tk4CoSu4Gjk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"tts":{"addr":"http://localhost:44499","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","tts/synthesize","tts/status"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJTh6M/txahPnMpgo4f5IA9mM8A6HSs8whzAnh9+8mvc=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"ai-ui-ui":{"addr":"http://localhost:42309","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEApPs1DKpuNTD6Kt9RLZ0fOxIOgCdGcp718C9Yo5/Fui0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"comms":{"addr":"http://localhost:45213","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","comms/start-session","comms/chat","comms/get-session","comms/end-session","comms/configure-channel","comms/get-stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAUFu9uXSbfWhjBY7OsDgbfCZQWGYybpRmXqY86/ethQ0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"ai":{"addr":"http://localhost:37077","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","ai/generate","ai/usage","ai/reset-usage"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvN64s0U7pOmpoOPZDtFBWOTkBAu8+f0t7ZBjqQe0OEo=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"Safety":{"addr":"http://localhost:42459","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","safety/get-close-proximity","safety/run-test-sequence"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAdT5aVzlN7FEp1pnZ5YB3jIuDI+iTm9qU4owwIlGZDKM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2}}}
+[8:22:33 PM] [DEBUG architect] rpc() sending to http://localhost:46771, signal.payload.args: {"atlas":{"architect":{"id":"architect","addr":"http://localhost:39433","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAzKTCXSB6vufNETYnsDRGLylUSkW2UMuwPqYFeWSzmcE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751353006,"lastGossiped":1770751353006,"gossipHopCount":0},"checklist":{"addr":"http://localhost:38121","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAYfSaajiWo0C3zfJoGrPd+wtLj0+z2djp3PsHqxUnumE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"projects":{"addr":"http://localhost:34851","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","projects/write","projects/read","projects/list","projects/exec"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvcgqdioMnf6LdaLG2oStJuJ9Y3GbqzST3Me/CvZR8As=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"Radar":{"addr":"http://localhost:42623","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAY20XrSmrNQoIqxcgeDpcAP8v4rtVQ3amehfQ/Wz9nrg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"ai-ui":{"addr":"http://localhost:41153","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","simple-ai/session","simple-ai/chat","simple-ai/history","simple-ai/clear","simple-ai/stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA1V5agFWAZsfEhl5NWMUbszUNnHTkXOgMMVvL8EMctRg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"telegram":{"addr":"http://localhost:40491","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAnVX+L2AHily67tOgtaW2g45sLAZaKpJhIQ2Wah+D8AU=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"telemetry":{"addr":"http://localhost:44133","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAj4xUfzwe/8AoNfyBuWQZ/XLtaLsDJwpsz/2WNDYmWgA=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"memory":{"addr":"http://localhost:34011","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","memory/session/store","memory/session/get","memory/goals/create","memory/goals/list","memory/goals/update","memory/movement/record","memory/movement/timeline","memory/patterns/learn","memory/patterns/match","memory/actions/record","memory/actions/history","memory/temporal/slice","memory/temporal/context"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAOLr4WfFE3yp7R999skRls91Aj7h/XCPtYvostYu0hlY=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352994,"lastGossiped":1770751353006,"gossipHopCount":1},"skills":{"addr":"http://localhost:42989","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","skills/list","skills/get-context","skills/update-capability","skills/learn-pattern","skills/sync-from-mesh","skills/search"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA6GKzXKFmBPa7eHU5eVCP/JoE2IoRhKpEo/KB1gzIBzE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"coder":{"addr":"http://localhost:43911","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtquQMYRYg9PSvJlWmH5GrYY7TBIoaa9TZ0Hw3/r5Ka8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"log":{"addr":"http://localhost:40587","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","log/info","log/get"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAVOAWIwoRJd+AO63Z7OHb95tRGTDgnCL5XS+Rl1OR92s=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"Lidar":{"addr":"http://localhost:35031","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAsM+PN7FhEYt7uxauUHb+lcIrYopNvyzVRMxpIpGcwvo=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"kindly":{"addr":"http://localhost:46771","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","kindly/chat","kindly/get-activity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAIS/wWubBnt0AV3wu++rQh6ToYMKZr8HbMDqRBKN2r2U=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"Orchestrator_208585":{"addr":"http://localhost:41821","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3Q3NQTLu3q/gsaHGNkVM874sMl5S1Jlp/ZrYpuUYMAM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"tts-ui":{"addr":"http://localhost:45157","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAWT5pZwpto+Yl8X93y8H5iwTlGOVxo4/0tk4CoSu4Gjk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"tts":{"addr":"http://localhost:44499","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","tts/synthesize","tts/status"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJTh6M/txahPnMpgo4f5IA9mM8A6HSs8whzAnh9+8mvc=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"ai-ui-ui":{"addr":"http://localhost:42309","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEApPs1DKpuNTD6Kt9RLZ0fOxIOgCdGcp718C9Yo5/Fui0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"comms":{"addr":"http://localhost:45213","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","comms/start-session","comms/chat","comms/get-session","comms/end-session","comms/configure-channel","comms/get-stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAUFu9uXSbfWhjBY7OsDgbfCZQWGYybpRmXqY86/ethQ0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"ai":{"addr":"http://localhost:37077","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","ai/generate","ai/usage","ai/reset-usage"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvN64s0U7pOmpoOPZDtFBWOTkBAu8+f0t7ZBjqQe0OEo=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2},"Safety":{"addr":"http://localhost:42459","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","safety/get-close-proximity","safety/run-test-sequence"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAdT5aVzlN7FEp1pnZ5YB3jIuDI+iTm9qU4owwIlGZDKM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751352983,"lastGossiped":1770751353006,"gossipHopCount":2}}}
+[8:22:33 PM] [DEBUG architect] handleRequest() received, raw.payload.args: {}
+[8:22:33 PM] [DEBUG architect] rpc() sending to http://localhost:45213, signal.payload.args: {}
+[8:22:33 PM] [31m[19:22:33.146] [ERROR] [architect] [7bc0e5a6] ❌ RPC_REMOTE_FAIL: [comms/configure-channel] @ http://localhost:45213 | HANDLER_ERR: Input validation failed for comms/configure-channel: Missing required field: channel | Received: {}[0m
+[8:25:54 PM] [architect] Key fingerprint: 76955b4cad650932
+[8:25:54 PM] [32m[19:25:54.285] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:25:54 PM] [32m[19:25:54.304] [INFO] [architect] Sovereign Cell online @ http://localhost:33441[0m
+[8:25:54 PM] [DEBUG architect] handleRequest() received, raw.payload.args: {"atlas":{"coder":{"id":"coder","addr":"http://localhost:45041","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEABQ5QIWLVEU2VXKMQ+ZBWSCAhIIaDoI0FZZigF/sq0gk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554506,"lastGossiped":1770751554506,"gossipHopCount":0},"telemetry":{"addr":"http://localhost:44907","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3ghMo7mAPhrrIEsuVZWihIqZvy+BAMZhLO+jnd7g3KE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554323,"lastGossiped":1770751554323,"gossipHopCount":0},"Radar":{"addr":"http://localhost:34599","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAd5cftx2fQjaj3KY7nfmeiiV2ZGulbgQLK+KTZQjGRe8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554370,"lastGossiped":1770751554370,"gossipHopCount":0},"architect":{"addr":"http://localhost:33441","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtp8YSR1LoOPjtEFV864qobyWra2FK3iZ75VqZ1STrm0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554506,"lastGossiped":1770751554506,"gossipHopCount":0}}}
+[8:25:54 PM] [DEBUG architect] Handler found for mesh/gossip, args: {"atlas":{"coder":{"id":"coder","addr":"http://localhost:45041","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEABQ5QIWLVEU2VXKMQ+ZBWSCAhIIaDoI0FZZigF/sq0gk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554506,"lastGossiped":1770751554506,"gossipHopCount":0},"telemetry":{"addr":"http://localhost:44907","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3ghMo7mAPhrrIEsuVZWihIqZvy+BAMZhLO+jnd7g3KE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554323,"lastGossiped":1770751554323,"gossipHopCount":0},"Radar":{"addr":"http://localhost:34599","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAd5cftx2fQjaj3KY7nfmeiiV2ZGulbgQLK+KTZQjGRe8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554370,"lastGossiped":1770751554370,"gossipHopCount":0},"architect":{"addr":"http://localhost:33441","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtp8YSR1LoOPjtEFV864qobyWra2FK3iZ75VqZ1STrm0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554506,"lastGossiped":1770751554506,"gossipHopCount":0}}}
+[8:25:54 PM] [DEBUG architect] rpc() sending to http://localhost:45041, signal.payload.args: {"atlas":{"architect":{"id":"architect","addr":"http://localhost:33441","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtp8YSR1LoOPjtEFV864qobyWra2FK3iZ75VqZ1STrm0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554672,"lastGossiped":1770751554672,"gossipHopCount":0},"coder":{"addr":"http://localhost:45041","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEABQ5QIWLVEU2VXKMQ+ZBWSCAhIIaDoI0FZZigF/sq0gk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554602,"lastGossiped":1770751554602,"gossipHopCount":0},"checklist":{"addr":"http://localhost:35771","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASsNS+6OJdagLOIESeXLWkAUs10L25LMcBI8CRJ04BmM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554333,"lastGossiped":1770751554333,"gossipHopCount":0},"telegram":{"addr":"http://localhost:34575","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/kEJvREORs4E5+jgm/JQHzABIE0vrcTLFLajZB69+w8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554338,"lastGossiped":1770751554338,"gossipHopCount":0},"telemetry":{"addr":"http://localhost:44907","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3ghMo7mAPhrrIEsuVZWihIqZvy+BAMZhLO+jnd7g3KE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554323,"lastGossiped":1770751554602,"gossipHopCount":1},"Radar":{"addr":"http://localhost:34599","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAd5cftx2fQjaj3KY7nfmeiiV2ZGulbgQLK+KTZQjGRe8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554672,"lastGossiped":1770751554672,"gossipHopCount":0}}}
+[8:25:54 PM] [DEBUG architect] rpc() sending to http://localhost:44907, signal.payload.args: {"atlas":{"architect":{"id":"architect","addr":"http://localhost:33441","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAtp8YSR1LoOPjtEFV864qobyWra2FK3iZ75VqZ1STrm0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554672,"lastGossiped":1770751554672,"gossipHopCount":0},"coder":{"addr":"http://localhost:45041","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEABQ5QIWLVEU2VXKMQ+ZBWSCAhIIaDoI0FZZigF/sq0gk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554602,"lastGossiped":1770751554602,"gossipHopCount":0},"checklist":{"addr":"http://localhost:35771","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASsNS+6OJdagLOIESeXLWkAUs10L25LMcBI8CRJ04BmM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554333,"lastGossiped":1770751554333,"gossipHopCount":0},"telegram":{"addr":"http://localhost:34575","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/kEJvREORs4E5+jgm/JQHzABIE0vrcTLFLajZB69+w8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554338,"lastGossiped":1770751554338,"gossipHopCount":0},"telemetry":{"addr":"http://localhost:44907","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3ghMo7mAPhrrIEsuVZWihIqZvy+BAMZhLO+jnd7g3KE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554323,"lastGossiped":1770751554602,"gossipHopCount":1},"Radar":{"addr":"http://localhost:34599","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAd5cftx2fQjaj3KY7nfmeiiV2ZGulbgQLK+KTZQjGRe8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751554672,"lastGossiped":1770751554672,"gossipHopCount":0}}}
+[8:26:50 PM] [architect] Key fingerprint: 58e17200ce2cda14
+[8:26:50 PM] [32m[19:26:50.179] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:26:50 PM] [32m[19:26:50.186] [INFO] [architect] Sovereign Cell online @ http://localhost:34813[0m
+[8:26:50 PM] [DEBUG architect] Handler found for mesh/gossip, args: {"atlas":{"Radar":{"id":"Radar","addr":"http://localhost:36119","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEApMn6PUFXCpjl9clTlZ1boBTV5/xuX0MmVHleXXB31kY=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610590,"lastGossiped":1770751610590,"gossipHopCount":0},"Lidar":{"addr":"http://localhost:39319","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA7BnAfdtfcb+6gq/HwFjvRNN+gg6R8pdhHe5PGEa/PgI=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610561,"lastGossiped":1770751610590,"gossipHopCount":1},"memory":{"addr":"http://localhost:36451","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","memory/session/store","memory/session/get","memory/goals/create","memory/goals/list","memory/goals/update","memory/movement/record","memory/movement/timeline","memory/patterns/learn","memory/patterns/match","memory/actions/record","memory/actions/history","memory/temporal/slice","memory/temporal/context"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEANcG6NIH4FkzBiKcqk3el2GoXNVz+bBav3vUJC2iW6ag=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610492,"lastGossiped":1770751610590,"gossipHopCount":3},"tts-ui":{"addr":"http://localhost:33877","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA+FypfoZJKFqqrMcK5PtQ6yC5k5G0dzJbaCi+/GRtODs=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610561,"lastGossiped":1770751610590,"gossipHopCount":1},"projects":{"addr":"http://localhost:42543","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","projects/write","projects/read","projects/list","projects/exec"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA23+xAZjDskc/aO2sRoKiIYZP4OXfPnirLc9sCozyS5g=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610320,"lastGossiped":1770751610590,"gossipHopCount":3},"Codegen":{"addr":"http://localhost:44771","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","codegen/mesh-types","codegen/poke-ts","codegen/validate","codegen/describe"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAb59fd/MChwdV85UypUcM2sxg26S+e3ChEXfMNWx8NPE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610337,"lastGossiped":1770751610337,"gossipHopCount":0},"telegram":{"addr":"http://localhost:33391","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAHjpH3j0UD7m/6LmNltq8SlW9u+xd4C9kb0d6SOLrYdQ=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610355,"lastGossiped":1770751610590,"gossipHopCount":3},"comms":{"addr":"http://localhost:39245","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","comms/start-session","comms/chat","comms/get-session","comms/end-session","comms/configure-channel","comms/get-stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASUL7f7CgeDU7S0saUO6Dr9Af8ETGd6T+a+OGGlyC7So=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610356,"lastGossiped":1770751610356,"gossipHopCount":0},"ai":{"addr":"http://localhost:36037","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","ai/generate","ai/usage","ai/reset-usage"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAwL4a9H+5iXHsJu1ddFtecS9jvuCJKq9KCWeqrpb+P1g=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610366,"lastGossiped":1770751610590,"gossipHopCount":1},"architect":{"addr":"http://localhost:34813","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAqWGUYbHl3oghv/eQuzmXn/ta+Wl3t1ha0l10+L1brvc=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610388,"lastGossiped":1770751610388,"gossipHopCount":0},"ai-ui":{"addr":"http://localhost:35403","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","simple-ai/session","simple-ai/chat","simple-ai/history","simple-ai/clear","simple-ai/stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAGba6Qx8N81hDUUK3phbdbtd7n63PqesektYHwalu1pY=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610218,"lastGossiped":1770751610590,"gossipHopCount":3},"Orchestrator_210474":{"addr":"http://localhost:42377","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAoQVbNaqbpEuUVAibPjEMIg4jMSiULCfQxOoR2m/+DXE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610289,"lastGossiped":1770751610590,"gossipHopCount":3},"Safety":{"addr":"http://localhost:34439","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","safety/get-close-proximity","safety/run-test-sequence"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAMpQjbc5UUi6k/3yxtiZHDTghWfZii1oZ+deeTkkLMGU=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610401,"lastGossiped":1770751610590,"gossipHopCount":1},"coder":{"addr":"http://localhost:38923","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAmeIGd+XDkZpU5WPPMx/34jXrut9vEftaNjNspOFn8OM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610384,"lastGossiped":1770751610590,"gossipHopCount":2},"telemetry":{"addr":"http://localhost:38167","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAqyBLQ5m7ytzVJyaclceqe98qEcBay8IO9t5N/ZqdUIY=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610169,"lastGossiped":1770751610590,"gossipHopCount":3},"skills":{"addr":"http://localhost:36299","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","skills/list","skills/get-context","skills/update-capability","skills/learn-pattern","skills/sync-from-mesh","skills/search"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAK7sZOhe+Z5KLGQ09HBP3sf0f1kBG6FcvOTd+eTv1Z5w=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610377,"lastGossiped":1770751610590,"gossipHopCount":3},"tts":{"addr":"http://localhost:42253","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","tts/synthesize","tts/status"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAZrfnsm6CJhHsmLbY2QGQQsu5QJG+BHuczwItM4hnDKs=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610375,"lastGossiped":1770751610590,"gossipHopCount":3},"ai-ui-ui":{"addr":"http://localhost:35473","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEADoApeYfTlZUDJM5+wLHu2tSqJbfaxLzR25ULwXQ9uh4=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610244,"lastGossiped":1770751610590,"gossipHopCount":3},"kindly":{"addr":"http://localhost:40151","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","kindly/chat","kindly/get-activity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA8Y5KLZgHiGMScMvYdDCnO1e9YFbY9QUb17So57IP3uM=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610284,"lastGossiped":1770751610590,"gossipHopCount":3},"checklist":{"addr":"http://localhost:39159","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAWpy2AHd7dUrqV1TUC9bBbcNNroSfOjpiwNTVKE1iBp0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751610289,"lastGossiped":1770751610590,"gossipHopCount":3}}}
+[8:29:50 PM] [architect] Key fingerprint: c9e11f241bd63f48
+[8:29:50 PM] [32m[19:29:50.613] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:29:50 PM] [32m[19:29:50.619] [INFO] [architect] Sovereign Cell online @ http://localhost:38627[0m
+[8:29:50 PM] [DEBUG architect] Handler found for mesh/gossip, args: {"atlas":{"tts-ui":{"id":"tts-ui","addr":"http://localhost:43975","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAIYO3vWMYuc8ehlD1dcsH2FjAF1S7UE3PxMGnb5NwrKk=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790821,"lastGossiped":1770751790821,"gossipHopCount":0},"Radar":{"addr":"http://localhost:34311","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAj9wmo7AhjXj0ShaUJXD1m5sXLA/hD2f/SxV9gPum0nI=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790663,"lastGossiped":1770751790663,"gossipHopCount":0},"telemetry":{"addr":"http://localhost:33061","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAC8mw8euuj3hgH/VdZtQmMCyd6qvNyiOqSgYUQOdemdc=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790695,"lastGossiped":1770751790695,"gossipHopCount":0},"checklist":{"addr":"http://localhost:32855","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3FYO+BhgdEFeu2P+ZB3YJv2higa6mbFFBBe8b1LbMA4=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790730,"lastGossiped":1770751790730,"gossipHopCount":0},"ai":{"addr":"http://localhost:40245","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","ai/generate","ai/usage","ai/reset-usage"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA6aBZ55Nnkypio10Q+zvCyr4V6oJTjDW5oAE0UIb0AXI=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790733,"lastGossiped":1770751790733,"gossipHopCount":0},"comms":{"addr":"http://localhost:44461","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","comms/start-session","comms/chat","comms/get-session","comms/end-session","comms/configure-channel","comms/get-stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAEt5wmAo5syF78XqinaYjgs4UhYxI2YkFAe1MLdXypDI=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790806,"lastGossiped":1770751790806,"gossipHopCount":0},"architect":{"addr":"http://localhost:38627","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAx5JniKzmTYacpOWBPkQGZo93v2Y80ncFDAylA9sbv5o=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790821,"lastGossiped":1770751790821,"gossipHopCount":0}}}
+[8:29:50 PM] [DEBUG architect] Handler found for mesh/gossip, args: {"atlas":{"kindly":{"id":"kindly","addr":"http://localhost:39761","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","kindly/chat","kindly/get-activity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAL+NaZ2+kRfaxMoh1EFWuj8bRt/NwmXxw+NlZTNloAQ8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790923,"lastGossiped":1770751790923,"gossipHopCount":0},"coder":{"addr":"http://localhost:36349","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAkezd9gBA78OKRAjspyOBPFWzPHOQpuL8owyo0Ai2zt4=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790923,"lastGossiped":1770751790923,"gossipHopCount":0},"Codegen":{"addr":"http://localhost:36107","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","codegen/mesh-types","codegen/poke-ts","codegen/validate","codegen/describe"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/jnEmhBRUGN1MG9Xz2JB1lbnMXcWJccGvU/w9igWpxI=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790757,"lastGossiped":1770751790757,"gossipHopCount":0},"architect":{"addr":"http://localhost:38627","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAx5JniKzmTYacpOWBPkQGZo93v2Y80ncFDAylA9sbv5o=\n-----END PUBLIC KEY-----\n","lastSeen":1770751790821,"lastGossiped":1770751790821,"gossipHopCount":0}}}
+[8:30:19 PM] [architect] Key fingerprint: 0e02c1d1a6e78097
+[8:30:19 PM] [32m[19:30:19.163] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[8:30:19 PM] [32m[19:30:19.179] [INFO] [architect] Sovereign Cell online @ http://localhost:38627[0m
+[8:30:19 PM] [DEBUG architect] Handler found for mesh/gossip, args: {"atlas":{"skills":{"id":"skills","addr":"http://localhost:39983","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","skills/list","skills/get-context","skills/update-capability","skills/learn-pattern","skills/sync-from-mesh","skills/search"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEATh5LOv/EC+3X1rV7KxC1miiGswanKyYCSaiAMOgFYvg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819479,"lastGossiped":1770751819479,"gossipHopCount":0},"tts":{"addr":"http://localhost:34895","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","tts/synthesize","tts/status"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAyfS8waXHCyRr6nOJM0SFlCc0GvpfBCsCgNjfocfNRIw=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819288,"lastGossiped":1770751819413,"gossipHopCount":1},"memory":{"addr":"http://localhost:38919","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","memory/session/store","memory/session/get","memory/goals/create","memory/goals/list","memory/goals/update","memory/movement/record","memory/movement/timeline","memory/patterns/learn","memory/patterns/match","memory/actions/record","memory/actions/history","memory/temporal/slice","memory/temporal/context"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAcWhBcMTC95doE2dXU2GAKxpEa8M5lkJsUabnsbqF71k=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819410,"lastGossiped":1770751819413,"gossipHopCount":1},"checklist":{"addr":"http://localhost:32855","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","list/get","list/add","list/complete","list/summarize","list/suggest-tasks"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAI/bK6i2P0hN1cZ89MuURBAY07YOqe9gSpWfrnJkUHLY=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819281,"lastGossiped":1770751819376,"gossipHopCount":1},"comms":{"addr":"http://localhost:44461","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","comms/start-session","comms/chat","comms/get-session","comms/end-session","comms/configure-channel","comms/get-stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAAGqnoszD7ZMKAGpONJJzrs/lRPT3YyCevlT9hr8rRLw=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819325,"lastGossiped":1770751819376,"gossipHopCount":1},"coder":{"addr":"http://localhost:36349","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","coder/develop"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAl1/iZPEwe1jsHpGBXWhf8M+XJeE/Jj+V5kJhRjDbyo0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819371,"lastGossiped":1770751819376,"gossipHopCount":1},"Orchestrator_212017":{"addr":"http://localhost:43421","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAinXE3DIF5ezuc/BEeHXmlrVAmniaBX5611MfanhkM2Q=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819303,"lastGossiped":1770751819376,"gossipHopCount":1},"telegram":{"addr":"http://localhost:38423","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","telegram/send-message","telegram/get-me","telegram/broadcast"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEArqFp2+dYpAgmKU+yPOrXJui9D0HmB/aU+AAclHxmh9U=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819302,"lastGossiped":1770751819376,"gossipHopCount":1},"projects":{"addr":"http://localhost:37601","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","projects/write","projects/read","projects/list","projects/exec"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAhVtVsQwc+mWp6aPukz7PYk+n3MS0ZuIK3HwbOXqCvpc=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819304,"lastGossiped":1770751819376,"gossipHopCount":1},"tts-ui":{"addr":"http://localhost:43975","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAhoA33pEjRFZSu54zGKP/0X4agkwAGlhxoIkayYfZwDE=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819479,"lastGossiped":1770751819479,"gossipHopCount":0},"log":{"addr":"http://localhost:35443","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","log/info","log/get"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAHXqGFgcRtsiixDfQW5xa10Kb7nvMDl3s6Wt4OnExhK4=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819303,"lastGossiped":1770751819376,"gossipHopCount":1},"Lidar":{"addr":"http://localhost:39891","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAlB7Jffk4lr63ZY5H9nFKkHyxRxNeYYqbRb+FJU2ujoA=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819299,"lastGossiped":1770751819376,"gossipHopCount":1},"ai-ui-ui":{"addr":"http://localhost:44193","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAajUPCtOwaWNpws7qnRnQ/8Ptb5uaCROFvoawhdSp52k=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819299,"lastGossiped":1770751819376,"gossipHopCount":1},"kindly":{"addr":"http://localhost:39761","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","kindly/chat","kindly/get-activity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAZz84khAG6upPTZisqJzKyZ7r18HR6sKGBazesSMXFh8=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819298,"lastGossiped":1770751819376,"gossipHopCount":1},"telemetry":{"addr":"http://localhost:33061","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","mesh/health"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAgXknFrL7uaaS2Z6uASXax8sVVBW+8mZnczprTqC5mcs=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819295,"lastGossiped":1770751819413,"gossipHopCount":1},"ai-ui":{"addr":"http://localhost:42523","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","simple-ai/session","simple-ai/chat","simple-ai/history","simple-ai/clear","simple-ai/stats"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAv9rX5r34sraXjgwJXCM5HY52/iPC4ehdsnH5W3uvtps=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819287,"lastGossiped":1770751819376,"gossipHopCount":1},"Radar":{"addr":"http://localhost:34311","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","sensors/proximity"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA8zfOGFkVOuDrERi/xte/xocL0HUIY6zflZDALLjzN0I=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819286,"lastGossiped":1770751819376,"gossipHopCount":1},"Safety":{"addr":"http://localhost:43747","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","safety/get-close-proximity","safety/run-test-sequence"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/OdYNryc2OnRHqFvnSJDlV43bp4yExu4AbNSCHXy9ao=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819282,"lastGossiped":1770751819376,"gossipHopCount":1},"Codegen":{"addr":"http://localhost:36107","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","codegen/mesh-types","codegen/poke-ts","codegen/validate","codegen/describe"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAvD9IwUlxottHVoc0guJBfz03AE3ETGsBP5BEGhSjwMg=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819306,"lastGossiped":1770751819376,"gossipHopCount":1},"architect":{"addr":"http://localhost:38627","caps":["mesh/ping","mesh/gossip","cell/shutdown","cell/inspect","cell/journal","mesh/directory","mesh/who","mesh/signal-to-url","cell/contract","architect/consult"],"pubKey":"-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAD5Yku0ATsbvjGyNsKW1/15e5PpplydsQyruEm15HaL0=\n-----END PUBLIC KEY-----\n","lastSeen":1770751819316,"lastGossiped":1770751819376,"gossipHopCount":1}}}
+[9:57:57 PM] [architect] Key fingerprint: 8cc2f4ca42e5fc51
+[9:57:57 PM] [32m[20:57:57.825] [INFO] [architect] 📋 Registered 1 capabilities with contracts[0m
+[9:57:57 PM] [32m[20:57:57.841] [INFO] [architect] Sovereign Cell online @ http://localhost:39631[0m

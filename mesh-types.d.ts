@@ -1,7 +1,7 @@
 /**
  * 🤖 AUTO-GENERATED MESH TYPE DECLARATIONS
- * Generated: 2026-02-09T21:39:08.005Z
- * Source: Live mesh scan (55 capabilities)
+ * Generated: 2026-02-10T20:58:02.908Z
+ * Source: Live mesh scan (36 capabilities)
  * 
  * DO NOT EDIT MANUALLY - changes will be overwritten.
  * To regenerate: Call mesh.codegen['mesh-types']() or restart orchestrator
@@ -14,12 +14,6 @@ declare module "./protocols/typed-mesh" {
         "ai/usage": { input: any; output: any };
         "architect/consult": { input: any; output: any };
         "coder/develop": { input: any; output: any };
-        "comms/chat": { input: any; output: any };
-        "comms/configure-channel": { input: any; output: any };
-        "comms/end-session": { input: any; output: any };
-        "comms/get-session": { input: any; output: any };
-        "comms/get-stats": { input: any; output: any };
-        "comms/start-session": { input: any; output: any };
         "kindly/chat": { input: any; output: any };
         "kindly/get-activity": { input: any; output: any };
         "list/add": { input: any; output: any };
@@ -29,25 +23,15 @@ declare module "./protocols/typed-mesh" {
         "list/summarize": { input: any; output: any };
         "log/get": { input: any; output: any };
         "log/info": { input: any; output: any };
-        "memory/actions/history": { input: any; output: any };
-        "memory/actions/record": { input: any; output: any };
-        "memory/goals/create": { input: any; output: any };
-        "memory/goals/list": { input: any; output: any };
-        "memory/goals/update": { input: any; output: any };
-        "memory/movement/record": { input: any; output: any };
-        "memory/movement/timeline": { input: any; output: any };
-        "memory/patterns/learn": { input: any; output: any };
-        "memory/patterns/match": { input: any; output: any };
-        "memory/session/get": { input: any; output: any };
-        "memory/session/store": { input: any; output: any };
-        "memory/temporal/context": { input: any; output: any };
-        "memory/temporal/slice": { input: any; output: any };
         "mesh/health": { input: any; output: any };
         "mesh/ping": { input: any; output: any };
         "projects/exec": { input: any; output: any };
         "projects/list": { input: any; output: any };
         "projects/read": { input: any; output: any };
         "projects/write": { input: any; output: any };
+        "safety/get-close-proximity": { input: any; output: any };
+        "safety/run-test-sequence": { input: any; output: any };
+        "sensors/proximity": { input: any; output: any };
         "simple-ai/chat": { input: any; output: any };
         "simple-ai/clear": { input: any; output: any };
         "simple-ai/history": { input: any; output: any };
@@ -59,9 +43,6 @@ declare module "./protocols/typed-mesh" {
         "skills/search": { input: any; output: any };
         "skills/sync-from-mesh": { input: any; output: any };
         "skills/update-capability": { input: any; output: any };
-        "telegram/broadcast": { input: any; output: any };
-        "telegram/get-me": { input: any; output: any };
-        "telegram/send-message": { input: any; output: any };
         "tts/status": { input: any; output: any };
         "tts/synthesize": { input: any; output: any };
     }
@@ -95,18 +76,6 @@ export type CoderCapabilities = {
 };
 
 /**
- * Capabilities in the comms namespace
- */
-export type CommsCapabilities = {
-    chat: { input: any; output: any };
-    configure-channel: { input: any; output: any };
-    end-session: { input: any; output: any };
-    get-session: { input: any; output: any };
-    get-stats: { input: any; output: any };
-    start-session: { input: any; output: any };
-};
-
-/**
  * Capabilities in the kindly namespace
  */
 export type KindlyCapabilities = {
@@ -134,25 +103,6 @@ export type LogCapabilities = {
 };
 
 /**
- * Capabilities in the memory namespace
- */
-export type MemoryCapabilities = {
-    actions: { input: any; output: any };
-    actions: { input: any; output: any };
-    goals: { input: any; output: any };
-    goals: { input: any; output: any };
-    goals: { input: any; output: any };
-    movement: { input: any; output: any };
-    movement: { input: any; output: any };
-    patterns: { input: any; output: any };
-    patterns: { input: any; output: any };
-    session: { input: any; output: any };
-    session: { input: any; output: any };
-    temporal: { input: any; output: any };
-    temporal: { input: any; output: any };
-};
-
-/**
  * Capabilities in the mesh namespace
  */
 export type MeshCapabilities = {
@@ -168,6 +118,21 @@ export type ProjectsCapabilities = {
     list: { input: any; output: any };
     read: { input: any; output: any };
     write: { input: any; output: any };
+};
+
+/**
+ * Capabilities in the safety namespace
+ */
+export type SafetyCapabilities = {
+    get-close-proximity: { input: any; output: any };
+    run-test-sequence: { input: any; output: any };
+};
+
+/**
+ * Capabilities in the sensors namespace
+ */
+export type SensorsCapabilities = {
+    proximity: { input: any; output: any };
 };
 
 /**
@@ -194,15 +159,6 @@ export type SkillsCapabilities = {
 };
 
 /**
- * Capabilities in the telegram namespace
- */
-export type TelegramCapabilities = {
-    broadcast: { input: any; output: any };
-    get-me: { input: any; output: any };
-    send-message: { input: any; output: any };
-};
-
-/**
  * Capabilities in the tts namespace
  */
 export type TtsCapabilities = {
@@ -210,4 +166,4 @@ export type TtsCapabilities = {
     synthesize: { input: any; output: any };
 };
 
-// Type trigger: 1770673148005
+// Type trigger: 1770757082909

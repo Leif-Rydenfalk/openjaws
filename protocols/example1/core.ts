@@ -1020,6 +1020,12 @@ export const globalLedger = new NarrativeLedger();
 
 // --- CORE RHEO CELL ---
 
+interface MulticastResult {
+    results: Array<{ cellId: string; result: any; latency: number }>;
+    failures: Array<{ cellId: string; error: TraceError }>;
+    consensus?: any; // Aggregated result
+}
+
 export class RheoCell {
     public atlas: Record<string, AtlasEntry> = {};
     private handlers: Record<string, Function> = {};
@@ -1100,38 +1106,36 @@ export class RheoCell {
  * Example: cell.mesh.inventory.add__auth_user() -> "inventory/add|auth/user"
  */
     get mesh(): any {
-        // Lazy initialization - create proxy on first access
-        if (!(this as any)._meshProxy) {
-            (this as any)._meshProxy = new Proxy({} as any, {
-                get: (target, namespace: string) => {
-                    return new Proxy({}, {
-                        get: (subTarget, methodCall: string) => {
-                            return async (args: any, proofs: Record<string, string> = {}) => {
-                                const [method, ...middlewares] = methodCall.split('__');
+        return new Proxy({} as any, {
+            get: (target, namespace: string) => {
+                return new Proxy({}, {
+                    get: (subTarget, methodCall: string) => {
+                        return (...callArgs: any[]) => {
+                            const [method, ...middlewares] = methodCall.split('__');
+                            let capability = `${namespace}/${method.replace(/_/g, '-')}`;
 
-                                // Standardize underscores to dashes for the primary method
-                                let capability = `${namespace}/${method.replace(/_/g, '-')}`;
+                            if (middlewares.length > 0) {
+                                capability += "|" + middlewares.join('|').replace(/_/g, '/');
+                            }
 
-                                if (middlewares.length > 0) {
-                                    // inventory/add|auth/user
-                                    capability += "|" + middlewares.join('|').replace(/_/g, '/');
-                                }
+                            const args = callArgs[0] !== undefined ? callArgs[0] : {};
+                            const proofs = callArgs[1] !== undefined ? callArgs[1] : {};
 
-                                const res = await this.askMesh(capability, args, proofs);
+                            if (process.env.RHEO_DEBUG) {
+                                console.log(`[DEBUG ${this.id}] mesh.${namespace}.${methodCall}(`, JSON.stringify(args), `)`);
+                            }
 
+                            return this.askMesh(capability, args, proofs).then(res => {
                                 if (!res.ok) {
-                                    const err = new MeshError(res.error!, res.cid);
-                                    err.printNarrative();
-                                    throw err;
+                                    throw new MeshError(res.error!, res.cid);
                                 }
                                 return res.value;
-                            };
-                        }
-                    });
-                }
-            });
-        }
-        return (this as any)._meshProxy;
+                            });
+                        };
+                    }
+                });
+            }
+        });
     }
 
     // /**
@@ -1265,6 +1269,64 @@ export class RheoCell {
         // this.saveManifest();
     }
 
+
+    /**
+     * Call ALL cells providing a capability, not just one
+     * Returns when all respond or timeout
+     */
+    async askAll(capability: string, args: any, timeoutMs = 5000): Promise<MulticastResult> {
+        const providers = Object.values(this.atlas)
+            .filter(e => e.caps.includes(capability));
+
+        const promises = providers.map(async entry => {
+            const start = performance.now();
+            try {
+                const result = await this.rpc(entry.addr, {
+                    id: randomUUID(),
+                    from: this.id,
+                    intent: "ASK",
+                    payload: { capability, args },
+                    proofs: {},
+                    atlas: this.atlas,
+                    trace: [],
+                    _steps: []
+                } as Signal);
+
+                return {
+                    cellId: entry.id || entry.addr,
+                    result: result.ok ? result.value : null,
+                    error: result.ok ? null : result.error,
+                    latency: performance.now() - start
+                };
+            } catch (e) {
+                return {
+                    cellId: entry.id || entry.addr,
+                    result: null,
+                    error: {
+                        code: "TIMEOUT",
+                        msg: e.message,
+                        from: entry.addr,
+                        trace: []
+                    },
+                    latency: performance.now() - start
+                };
+            }
+        });
+
+        const settled = await Promise.allSettled(promises);
+
+        return {
+            results: settled
+                .filter((r): r is PromiseFulfilledResult<any> => r.status === 'fulfilled')
+                .map(r => r.value)
+                .filter(r => !r.error),
+            failures: settled
+                .filter((r): r is PromiseFulfilledResult<any> => r.status === 'fulfilled')
+                .map(r => r.value)
+                .filter(r => r.error)
+        };
+    }
+
     // --- DECENTRALIZED DISCOVERY ---
 
     private registerToRegistry() {
@@ -1303,14 +1365,7 @@ export class RheoCell {
 
     public async bootstrapFromRegistry(forceAll = false) {
         try {
-            // DEBUG: Log where we are looking
-            // console.log(`[${this.id}] Scanning registry at: ${REGISTRY_DIR}`);
-
             const files = readdirSync(REGISTRY_DIR).filter(f => f.endsWith('.json') && f !== `${this.id}.json`);
-
-            // DEBUG: Log what we found
-            // if (files.length > 0) console.log(`[${this.id}] Found ${files.length} peers in registry`);
-
             const peers = forceAll ? files : files.sort(() => 0.5 - Math.random()).slice(0, 5);
 
             for (const file of peers) {
@@ -1318,19 +1373,26 @@ export class RheoCell {
                     const content = readFileSync(join(REGISTRY_DIR, file), 'utf8');
                     const entry: AtlasEntry = JSON.parse(content);
 
+                    // ADD THIS: Verify cell is actually alive before merging
                     if (Date.now() - entry.lastSeen < 60000) {
-                        this.mergeAtlas({ [entry.id || file.replace('.json', '')]: entry }, false, 0);
-                    } else {
-                        // DEBUG: Log stale removal
-                        // console.log(`[${this.id}] Removing stale peer: ${file}`);
-                        unlinkSync(join(REGISTRY_DIR, file));
+                        try {
+                            // Quick ping to verify liveness
+                            const pingRes = await fetch(`${entry.addr}/atlas`, {
+                                method: "POST",
+                                signal: AbortSignal.timeout(500)
+                            });
+                            if (!pingRes.ok) throw new Error("Dead");
+                        } catch (e) {
+                            // Cell is dead, remove from registry
+                            unlinkSync(join(REGISTRY_DIR, file));
+                            continue; // Skip this entry
+                        }
                     }
+
+                    this.mergeAtlas({ [entry.id || file.replace('.json', '')]: entry }, false, 0);
                 } catch (e) { }
             }
-        } catch (e) {
-            // DEBUG: Log read errors
-            console.error(`[${this.id}] Registry scan failed: ${e}`);
-        }
+        } catch (e) { }
     }
 
     // private async bootstrapFromSeed(seed: string) {
@@ -1414,10 +1476,26 @@ export class RheoCell {
 
     // --- LIFECYCLE & TELEMETRY ---
 
-    public log(level: "INFO" | "WARN" | "ERROR", msg: string, cid?: string) {
+    public log(level: "DEBUG" | "INFO" | "WARN" | "ERROR", msg: string, cid?: string) {
         const timestamp = new Date().toISOString().split('T')[1].split('Z')[0];
-        const colors = { INFO: "\x1b[32m", WARN: "\x1b[33m", ERROR: "\x1b[31m" };
-        console.log(`${colors[level]}[${timestamp}] [${level}] [${this.id}]${cid ? ` [${cid.substring(0, 8)}]` : ""} ${msg}\x1b[0m`);
+        const colors = {
+            DEBUG: "\x1b[90m",  // Gray
+            INFO: "\x1b[32m",
+            WARN: "\x1b[33m",
+            ERROR: "\x1b[31m"
+        };
+
+        // Filter at runtime based on env
+        const minLevel = process.env.RHEO_LOG_LEVEL || "INFO";
+        if (!this.shouldLog(level, minLevel)) return;
+
+        const color = colors[level] || colors.INFO;
+        console.log(`${color}[${timestamp}] [${level}] [${this.id}]${cid ? ` [${cid.substring(0, 8)}]` : ""} ${msg}\x1b[0m`);
+    }
+
+    private shouldLog(msgLevel: string, minLevel: string): boolean {
+        const levels = ["DEBUG", "INFO", "WARN", "ERROR"];
+        return levels.indexOf(msgLevel) >= levels.indexOf(minLevel);
     }
 
     private updateMetrics(duration: number, isError: boolean) {
@@ -1488,21 +1566,99 @@ export class RheoCell {
 
     // --- MESH COMMUNICATIONS ---
 
-    public async askMesh(capability: string, args: any = {}, proofs: Record<string, string> = {}): Promise<TraceResult> {
-        const signal: Signal = {
-            id: randomUUID(), from: this.id, intent: "ASK", payload: { capability, args },
-            proofs, atlas: this.atlas, trace: [], _steps: []
-        };
-        const result = await this.route(signal);
+    /**
+   * Ask mesh with exponential backoff retry for discovery.
+   * 
+   * When a capability isn't found, this will:
+   * 1. Retry with exponential backoff (100ms, 200ms, 400ms, 800ms...)
+   * 2. Refresh atlas from registry periodically
+   * 3. Continue until success or max timeout (default 30s)
+   * 
+   * This handles the race condition where cells are still registering
+   * when the first request comes in.
+   */
+    public async askMesh(
+        capability: string,
+        args: any = {},
+        proofs: Record<string, string> = {},
+        options: {
+            maxWaitMs?: number;
+            baseDelayMs?: number;
+            maxDelayMs?: number;
+            atlasRefreshIntervalMs?: number;
+        } = {}
+    ): Promise<TraceResult> {
+        // console.log(`[DEBUG ${this.id}] askMesh called:`, {
+        //     capability,
+        //     args: JSON.stringify(args),
+        //     argsType: typeof args,
+        //     argsKeys: typeof args === 'object' && args !== null ? Object.keys(args) : 'N/A'
+        // });
 
-        // ADD THIS BLOCK at the end:
-        if (!result.ok && result.error) {
-            const meshErr = new MeshError(result.error, signal.id);
-            meshErr.printNarrative();  // <-- ADD HERE (optional, since route already logs)
-            // Or just: console.error(meshErr.message);
+
+        const {
+            maxWaitMs = 30000,
+            baseDelayMs = 100,
+            maxDelayMs = 5000,
+            atlasRefreshIntervalMs = 1000
+        } = options;
+
+        const startTime = Date.now();
+        let attempt = 0;
+        let lastAtlasRefresh = 0;
+
+        while (true) {
+            const signal: Signal = {
+                id: randomUUID(),
+                from: this.id,
+                intent: "ASK",
+                payload: { capability, args },
+                proofs,
+                atlas: this.atlas,
+                trace: [],
+                _steps: []
+            };
+
+            const result = await this.route(signal);
+
+            // Success? Return immediately
+            if (result.ok) {
+                if (attempt > 0) {
+                    this.log("INFO", `✅ [${capability}] succeeded after ${attempt + 1} attempts (${Date.now() - startTime}ms)`);
+                }
+                return result;
+            }
+
+            // Not a NOT_FOUND error? Don't retry
+            if (result.error?.code !== "NOT_FOUND") {
+                return result;
+            }
+
+            // Check timeout
+            const elapsed = Date.now() - startTime;
+            if (elapsed >= maxWaitMs) {
+                this.log("WARN", `⏰ [${capability}] discovery timeout after ${maxWaitMs}ms, ${attempt + 1} attempts`);
+                return result;
+            }
+
+            // Calculate backoff delay
+            const delay = Math.min(
+                baseDelayMs * Math.pow(2, attempt),
+                maxDelayMs
+            );
+
+            // Check if we should refresh atlas
+            if (elapsed - lastAtlasRefresh >= atlasRefreshIntervalMs) {
+                this.log("DEBUG", `🔄 [${capability}] refreshing atlas (attempt ${attempt + 1}, ${elapsed}ms elapsed)`);
+                await this.bootstrapFromRegistry(true);
+                lastAtlasRefresh = elapsed;
+            }
+
+            attempt++;
+            this.log("DEBUG", `⏳ [${capability}] retry ${attempt} in ${delay}ms (${elapsed}ms elapsed)`);
+
+            await new Promise(r => setTimeout(r, delay));
         }
-
-        return result;
     }
 
     private requestQueue = new Map<string, Promise<TraceResult>>();
@@ -1566,7 +1722,7 @@ export class RheoCell {
             this.ledger.wrap(signal, myId, "RECEIVED_SIGNAL", { capability: cap });
 
             if (cap !== 'mesh/gossip' && cap !== 'cell/contract') {
-                this.log("INFO", `📥 SIGNAL_ARRIVED: [${cap}] from [${signal.from}]`, cid);
+                this.log("DEBUG", `📥 SIGNAL_ARRIVED: [${cap}] from [${signal.from}]`, cid);
             }
 
             const updatedSignal: Signal = {
@@ -1583,6 +1739,8 @@ export class RheoCell {
 
             try {
                 if (this.handlers[cap]) {
+                    // console.log(`[DEBUG ${this.id}] Handler found for ${cap}, args:`, JSON.stringify(updatedSignal.payload.args));
+
                     this.ledger.wrap(updatedSignal, myId, "LOCAL_HANDLER", { capability: cap });
                     const val = await this.handlers[cap](updatedSignal.payload.args, updatedSignal);
                     result = { ok: true, value: val, cid };
@@ -1592,7 +1750,6 @@ export class RheoCell {
             } catch (e: any) {
                 this.ledger.wrap(updatedSignal, myId, "HANDLER_EXCEPTION", { error: e.message });
 
-                // ADD THIS:
                 const richError: TraceError = {
                     code: "HANDLER_ERR",
                     msg: e.message,
@@ -1600,14 +1757,26 @@ export class RheoCell {
                     trace: updatedSignal.trace,
                     _envelope: this.ledger.entries.get(cid)
                 };
-                const meshErr = new MeshError(richError, cid);
-                meshErr.printNarrative();  // <-- ADD HERE
 
-                result = {
-                    ok: false,
-                    cid,
-                    error: richError
-                };
+                // ONLY print full narrative if we're the origin cell (signal.from === this.id)
+                // or if this is the first time we're seeing this error
+                const isOrigin = signal.from === this.id;
+                const hasBeenPrinted = (signal as any)._errorPrinted;
+
+                if (isOrigin || !hasBeenPrinted) {
+                    // ✅ CHANGE: Only print massive narrative if RHEO_DEBUG is on
+                    if (process.env.RHEO_DEBUG) {
+                        const meshErr = new MeshError(richError, cid);
+                        this.log('ERROR', `\n${meshErr.message}`);
+                    } else {
+                        // Clean one-liner
+                        this.log('ERROR', `❌ HANDLER_ERR: [${cap}] - ${e.message}`, cid);
+                    }
+                    (signal as any)._errorPrinted = true;
+                }
+
+
+                result = { ok: false, cid, error: richError };
             }
 
             this.updateMetrics(performance.now() - startTime, !result.ok);
@@ -1630,8 +1799,22 @@ export class RheoCell {
 
     /**
      * The P2P Strategy Engine.
+     * Returns NOT_FOUND only when no providers exist after exhaustive search.
      */
     private async forwardToPeer(signal: Signal, cap: string, cid: string): Promise<TraceResult> {
+        // BOUNDED GOSSIP: Only forward last 20 peers to prevent payload explosion
+        const trimmedAtlas = Object.fromEntries(
+            Object.entries(signal.atlas || {})
+                .sort(([, a], [, b]) => b.lastSeen - a.lastSeen)
+                .slice(0, 20)
+        );
+
+        // Create scoped signal for forwarding
+        const forwardSignal = {
+            ...signal,
+            atlas: trimmedAtlas
+        };
+
         const myAddr = this.addr;
         const myId = this.id;
         const visitedIds = signal._visitedCellIds || [];
@@ -1664,7 +1847,7 @@ export class RheoCell {
                     attempt: i + 1
                 });
 
-                const result = await this.rpc(target.addr, signal);
+                const result = await this.rpc(target.addr, forwardSignal);
 
                 const isDelivered = result.ok ||
                     result.error?.code === "DUPLICATE_SIGNAL" ||
@@ -1695,7 +1878,7 @@ export class RheoCell {
                 this.ledger.wrap(signal, myId, "P2P_FLOOD_START", { neighborCount: neighbors.length });
 
                 // Mark that we're flooding so children don't also flood
-                const floodSignal = { ...signal, _floodAttempted: true };
+                const floodSignal = { ...signal, _floodAttempted: true, atlas: trimmedAtlas };
 
                 const floodResults = await Promise.allSettled(
                     neighbors.map(n => this.rpc(n.addr, floodSignal))
@@ -1718,7 +1901,7 @@ export class RheoCell {
 
         if (this.seed && !visitedAddr.includes(this.seed)) {
             this.ledger.wrap(signal, myId, "P2P_SEED_ATTEMPT", { seed: this.seed });
-            const seedResult = await this.rpc(this.seed, signal);
+            const seedResult = await this.rpc(this.seed, forwardSignal);
 
             if (seedResult.ok || seedResult.error?.code === "DUPLICATE_SIGNAL" || seedResult.error?.code === "DUPLICATE_ARRIVAL") {
                 return seedResult;
@@ -1731,29 +1914,30 @@ export class RheoCell {
             return this.forwardToPeer(signal, cap, cid);
         }
 
-        this.ledger.wrap(signal, myId, "P2P_NO_ROUTE", { capability: cap, atlasSize: Object.keys(this.atlas).size });
-
-        // ADD THIS:
-        const richError: TraceError = {
-            code: "NOT_FOUND",
-            msg: `No route to ${cap} after exhaustive search (Providers: ${providers.length})`,
-            from: myId,
-            trace: signal.trace || [],
-            _envelope: this.ledger.entries.get(cid)
-        };
-        const meshErr = new MeshError(richError, cid);
-        meshErr.printNarrative();  // <-- ADD HERE
+        this.ledger.wrap(signal, myId, "P2P_NO_ROUTE", {
+            capability: cap,
+            atlasSize: Object.keys(this.atlas).size,
+            providersChecked: providers.length
+        });
 
         return {
             ok: false,
             cid,
-            error: richError
+            error: {
+                code: "NOT_FOUND",
+                msg: `No route to ${cap} (checked ${providers.length} providers, ${Object.keys(this.atlas).size} atlas entries)`,
+                from: myId,
+                trace: signal.trace || [],
+                _envelope: this.ledger.entries.get(cid)
+            }
         };
     }
 
     private failedAddresses = new Map<string, { count: number, lastFail: number }>();
 
     public async rpc(addr: string, signal: Signal): Promise<TraceResult> {
+        // console.log(`[DEBUG ${this.id}] rpc() sending to ${addr}, signal.payload.args:`, JSON.stringify(signal.payload.args));
+
         const failure = this.failedAddresses.get(addr);
         if (failure && failure.count > 3 && Date.now() - failure.lastFail < 30000) {
             return {
@@ -1771,7 +1955,7 @@ export class RheoCell {
         const startTime = performance.now();
 
         if (signal.payload.capability !== 'mesh/gossip' && signal.payload.capability !== 'cell/contract') {
-            this.log("INFO", `📡 RPC_OUT: [${signal.payload.capability}] -> ${addr}`, cid);
+            this.log("DEBUG", `📡 RPC_OUT: [${signal.payload.capability}] -> ${addr}`, cid);
         }
 
         this.ledger.wrap(signal, this.id, "RPC_ATTEMPT", {
@@ -1876,12 +2060,8 @@ export class RheoCell {
             }
 
             // CRITICAL FIX: Use ledger, not journal
+
             const envelope = this.ledger.entries.get(cid);
-            this.ledger.wrap(signal, this.id, errorCode, {
-                error: e.message,
-                duration,
-                ...errorDetails
-            });
             const richError: TraceError = {
                 code: errorCode,
                 msg: `${errorCode}: ${e.message}`,
@@ -1897,30 +2077,23 @@ export class RheoCell {
                 _envelope: envelope
             };
 
-            // Use MeshError for consistent formatting (optional but recommended)
-            const meshErr = new MeshError(richError, cid);
-            meshErr.printNarrative(); // This will use the full formatting
+            // Only print full narrative at origin to prevent spam
+            const isOrigin = signal.from === this.id;
+            const hasPrinted = signal._errorPrinted; // Track if already printed
 
-            // Add stuff like this to notify subscribers:
-            // Problem: we need to notify about EVERY single error - not just stupid mesh errors. Subscribe to log errors?
-            // TODO: FIGURE THIS OUT
-            // this.emitError({
-            //     cell: this.id,
-            //     timestamp: Date.now(),
-            //     code: errorCode,
-            //     message: e.message,
-            //     capability: signal.payload.capability,
-            //     target: addr,
-            //     trace: signal.trace,
-            //     // Include full envelope for deep inspection
-            //     envelope: this.ledger.entries.get(cid)
-            // });
+            if (isOrigin || !hasPrinted) {
+                // ✅ CHANGE: Only print massive narrative if RHEO_DEBUG is on
+                if (process.env.RHEO_DEBUG) {
+                    const meshErr = new MeshError(richError, cid);
+                    this.log('ERROR', meshErr.message, cid);
+                } else {
+                    // Clean one-liner
+                    this.log('ERROR', `❌ ${errorCode}: [${signal.payload.capability}] @ ${addr} - ${e.message}`, cid);
+                }
+                (signal as any)._errorPrinted = true;
+            }
 
-            return {
-                ok: false,
-                cid,
-                error: richError
-            };
+            return { ok: false, cid, error: richError };
         }
     }
 
@@ -2215,6 +2388,7 @@ export class RheoCell {
     }
 
     private async handleRequest(req: Request): Promise<Response> {
+
         if (this.isShuttingDown) return new Response("Stopping", { status: 503 });
 
         // 1. HANDSHAKE
@@ -2238,10 +2412,13 @@ export class RheoCell {
             try {
                 const raw: Signal = await req.json();
 
+                // console.log(`[DEBUG ${this.id}] handleRequest() received, raw.payload.args:`, JSON.stringify(raw.payload.args));
+
+
                 if (this.seenNonces.has(raw.id)) {
                     return Response.json({
-                        result: { ok: true, value: { _meshStatus: "DUPLICATE_ARRIVAL" }, cid: raw.id },
-                        atlas: this.atlas
+                        result: { ok: true, value: { _meshStatus: "DUPLICATE_ARRIVAL" }, cid: raw.id }
+                        // No atlas on duplicate nonce response
                     });
                 }
 
@@ -2250,10 +2427,14 @@ export class RheoCell {
                 const result = await this.route(raw);
 
                 try {
-                    return Response.json({ result, atlas: this.atlas });
+                    const url = new URL(req.url);
+                    const wantsAtlas = url.searchParams.has('atlas') || raw.payload?.capability === 'mesh/gossip';
+                    return Response.json(wantsAtlas ? { result, atlas: this.atlas } : { result });
                 } catch (err) {
                     if (result.error) result.error.history = [];
-                    return Response.json({ result, atlas: this.atlas });
+                    const url = new URL(req.url);
+                    const wantsAtlas = url.searchParams.has('atlas') || raw.payload?.capability === 'mesh/gossip';
+                    return Response.json(wantsAtlas ? { result, atlas: this.atlas } : { result });
                 }
             } catch (e: any) {
                 return new Response(JSON.stringify({ error: "INVALID_SIGNAL" }), { status: 400 });

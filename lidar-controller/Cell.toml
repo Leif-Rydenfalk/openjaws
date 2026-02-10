@@ -1,0 +1,4 @@
+id = "Lidar"
+command = "bun run index.ts"
+critical = false
+scalable = false

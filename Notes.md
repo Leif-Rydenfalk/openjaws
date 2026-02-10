@@ -195,4 +195,15 @@ If they cant find a way of communicating they are not meant to communicate.
 If they still need to communicate both sides implement a human equivelent and mail to send the data. And fax. All through the "communicate" capability which the central controllers on each side calls. It doesnt matter that the formats are not compatible or the protocols as long as the cells acts as adapters and convert the data to the protocol the "communicate" capability defines and expects
 
 
+It would allow making self organizing codebases
+
+
+
 There is currently 1 protocol defined in the protocols folder and thats for typescript - you can merge all of them
+
+
+
+I dont like that a .rheo directory is created in the root directory / each cell should have their own .cell directory - each cell manages itself and its own active instances
+
+
+I added the askall to the example1. write the airplane and bird cell examples. the cells should print the results, communicate then organize a shut down when the test is complete with a pretty log. In this architecture we run tests on the production mesh directly.

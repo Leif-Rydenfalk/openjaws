@@ -100,22 +100,35 @@ export class TypedRheoCell extends BaseCell {
     private _router: AnyRouter | null = null;
 
     /**
-     * Type-safe mesh call
-     * - Validates capability exists at compile time
-     * - Validates input matches expected schema
-     * - Returns typed output
-     */
+    * Type-safe mesh call with exponential backoff retry.
+    * - Validates capability exists at compile time
+    * - Validates input matches expected schema
+    * - Returns typed output
+    * - Retries with exponential backoff if capability not found
+    */
     async askMesh<TCapability extends ValidCapability>(
         capability: TCapability,
-        ...args: CapabilityInput<TCapability> extends void
-            ? []
-            : [CapabilityInput<TCapability>]
+        ...args: any[]
     ): Promise<TypedTraceResult<CapabilityOutput<TCapability>>> {
-        const input = args[0];
+        let input: any = undefined;
+        let options: any = undefined;
+
+        // Simple, robust argument parsing based on length
+        if (args.length === 2) {
+            input = args[0];
+            options = args[1];
+        } else if (args.length === 1) {
+            // If the single argument is the options object (for void input calls), handle it?
+            // In our typed router, void input calls usually don't pass arguments unless it's options.
+            // However, to be safe and match the router logic:
+            input = args[0];
+        }
+
         const result = await super.askMesh(
             capability as string,
             input,
-            {}
+            {},
+            options
         );
         return result as TypedTraceResult<CapabilityOutput<TCapability>>;
     }
@@ -138,19 +151,24 @@ export class TypedRheoCell extends BaseCell {
 
             // Register the handler
             this.provide(cap, async (args: unknown, ctx: any) => {
+                // DEBUG: Log what we received
+                if (process.env.RHEO_DEBUG_INPUT) {
+                    console.log(`[DEBUG] ${cap} received args:`, JSON.stringify(args, null, 2));
+                }
+
                 let validatedInput = args;
                 if (proc._def.input) {
                     try {
                         validatedInput = proc._def.input.parse(args);
                     } catch (e: unknown) {
                         const error = e as Error;
-                        throw new Error(`Input validation failed for ${cap}: ${error.message}`);
+                        // Include actual received args in error for debugging
+                        throw new Error(`Input validation failed for ${cap}: ${error.message} | Received: ${JSON.stringify(args).substring(0, 200)}`);
                     }
                 }
-
-                // Execute handler
                 return await proc._def.handler(validatedInput, ctx);
             });
+
         }
 
         // ✅ AUTO-REGISTER CONTRACT ENDPOINT

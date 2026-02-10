@@ -1,0 +1,8 @@
+id = "Radar"
+command = "bun run index.ts"
+critical = false
+scalable = false
+
+[runtime]
+ephemeral = true    # Don't health-check, don't respawn
+maxLifetime = "30s" # SIGKILL if still running

@@ -1,0 +1,4 @@
+id = "Safety"
+command = "bun run safety-controller.ts"
+critical = false
+scalable = false

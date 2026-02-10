@@ -311,10 +311,8 @@ const UI_HTML = `
                 minute: '2-digit' 
             });
             
-            div.innerHTML = `
-                ${ escapeHtml(content) }
-<div class="timestamp" > ${ time } </div>
-    `;
+           div.innerHTML = escapeHtml(content) + 
+    '<div class="timestamp">' + time + '</div>';
             
             chatContainer.appendChild(div);
             chatContainer.scrollTop = chatContainer.scrollHeight;

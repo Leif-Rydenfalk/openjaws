@@ -99,6 +99,12 @@ async function extractContract(
     cellId: string,
     capability: string
 ): Promise<{ input: string; output: string } | null> {
+    // DEFENSIVE: Check if capability is valid
+    if (!capability || typeof capability !== 'string') {
+        cell.log("WARN", `Invalid capability passed to extractContract: ${JSON.stringify(capability)}`);
+        return null;
+    }
+
     try {
         const result = await cell.askMesh("cell/contract" as any, { cap: capability });
 
@@ -113,8 +119,8 @@ async function extractContract(
         const outputType = contract.output ? zodShapeToTS(contract.output) : "any";
 
         return { input: inputType, output: outputType };
-    } catch (e) {
-        // Cell might not support contracts yet
+    } catch (e: any) {
+        cell.log("DEBUG", `Failed to get contract for ${capability}: ${e.message}`);
         return null;
     }
 }

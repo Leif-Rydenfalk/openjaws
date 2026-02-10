@@ -41,182 +41,268 @@ export type InferRouter<T> = T extends Router<infer TProcedures>
 // SCHEMA SYSTEM (Runtime validation + Type inference)
 // ============================================================================
 
-export interface Schema<T> {
-    _type?: T;
-    _def?: any;
-    parse: (value: unknown) => T;
-    _isOptional?: boolean;
-    optional: () => Schema<T | undefined>;
-}
 
-// Interfaces for chainable methods
-export interface ZodString extends Schema<string> {
-    min: (length: number, message?: string) => ZodString;
-    max: (length: number, message?: string) => ZodString;
-}
+abstract class ZodType<T> {
+    _def: any = {};
+    protected _defaultValue?: T;
+    protected _optional = false;
 
-export interface ZodNumber extends Schema<number> {
-    min: (value: number, message?: string) => ZodNumber;
-    max: (value: number, message?: string) => ZodNumber;
-}
+    abstract parse(val: unknown): T;
 
-// Helper to attach common methods
-const createSchema = <T>(base: Omit<Schema<T>, 'optional'>): Schema<T> => {
-    const s = base as Schema<T>;
-    s.optional = () => z.optional(s);
-    return s;
-};
+    // PUBLIC GETTER for default value checking
+    getDefault(): T | undefined {
+        return this._defaultValue;
+    }
 
-export const z = {
-    string: (): ZodString => {
-        const base = createSchema<string>({
-            _def: { typeName: "ZodString" },
-            parse: (val) => {
-                if (typeof val !== 'string') throw new Error('Expected string');
-                return val;
-            }
-        }) as ZodString;
+    optional(): ZodOptional<T> {
+        return new ZodOptional(this);
+    }
 
-        // Add chainable string methods
-        base.min = (length: number, msg?: string) => {
-            const prevParse = base.parse;
-            base.parse = (val: unknown) => {
-                const res = prevParse(val);
-                if (res.length < length) throw new Error(msg || `String must be at least ${length} characters`);
-                return res;
-            };
-            return base;
-        };
+    default(value: T): this {
+        this._defaultValue = value;
+        return this;
+    }
 
-        base.max = (length: number, msg?: string) => {
-            const prevParse = base.parse;
-            base.parse = (val: unknown) => {
-                const res = prevParse(val);
-                if (res.length > length) throw new Error(msg || `String must be at most ${length} characters`);
-                return res;
-            };
-            return base;
-        };
-
-        return base;
-    },
-
-    number: (): ZodNumber => {
-        const base = createSchema<number>({
-            _def: { typeName: "ZodNumber" },
-            parse: (val) => {
-                if (typeof val !== 'number') throw new Error('Expected number');
-                return val;
-            }
-        }) as ZodNumber;
-
-        // Add chainable number methods
-        base.min = (value: number, msg?: string) => {
-            const prevParse = base.parse;
-            base.parse = (val: unknown) => {
-                const res = prevParse(val);
-                if (res < value) throw new Error(msg || `Number must be >= ${value}`);
-                return res;
-            };
-            return base;
-        };
-
-        base.max = (value: number, msg?: string) => {
-            const prevParse = base.parse;
-            base.parse = (val: unknown) => {
-                const res = prevParse(val);
-                if (res > value) throw new Error(msg || `Number must be <= ${value}`);
-                return res;
-            };
-            return base;
-        };
-
-        return base;
-    },
-
-    boolean: () => createSchema<boolean>({
-        _def: { typeName: "ZodBoolean" },
-        parse: (val) => {
-            if (typeof val !== 'boolean') throw new Error('Expected boolean');
-            return val;
+    protected applyDefault(val: unknown): T | undefined {
+        if (val === undefined && this._defaultValue !== undefined) {
+            return this._defaultValue;
         }
-    }),
+        return val as T;
+    }
+}
 
-    enum: <T extends string>(values: readonly T[]) => createSchema<T>({
-        _def: { typeName: "ZodEnum", values },
-        parse: (val) => {
-            if (!values.includes(val as T)) {
-                throw new Error(`Expected one of: ${values.join(', ')}`);
-            }
-            return val as T;
+class ZodString extends ZodType<string> {
+    private _min?: number;
+    private _max?: number;
+
+    constructor() {
+        super();
+        this._def.typeName = "ZodString";
+    }
+
+    parse(val: unknown): string {
+        const withDefault = this.applyDefault(val);
+        if (withDefault !== undefined) return withDefault;
+        if (typeof val !== 'string') throw new Error('Expected string');
+        if (this._min !== undefined && val.length < this._min) {
+            throw new Error(`String too short (min ${this._min})`);
         }
-    }),
+        if (this._max !== undefined && val.length > this._max) {
+            throw new Error(`String too long (max ${this._max})`);
+        }
+        return val;
+    }
 
-    object: <T extends Record<string, Schema<unknown>>>(
-        shape: T
-    ) => createSchema<{ [K in keyof T]: T[K] extends Schema<infer U> ? U : never }>({
-        _def: {
-            typeName: "ZodObject",
-            shape: () => shape
-        },
-        parse: (val) => {
-            if (typeof val !== 'object' || val === null) throw new Error('Expected object');
-            const result: any = {};
-            for (const [key, schema] of Object.entries(shape)) {
-                const fieldValue = (val as any)[key];
-                if (fieldValue === undefined && !schema._isOptional) {
+    min(n: number): this {
+        this._min = n;
+        return this;
+    }
+
+    max(n: number): this {
+        this._max = n;
+        return this;
+    }
+}
+
+class ZodNumber extends ZodType<number> {
+    private _min?: number;
+    private _max?: number;
+
+    constructor() {
+        super();
+        this._def.typeName = "ZodNumber";
+    }
+
+    parse(val: unknown): number {
+        const withDefault = this.applyDefault(val);
+        if (withDefault !== undefined) return withDefault;
+        if (typeof val !== 'number') throw new Error('Expected number');
+        if (this._min !== undefined && val < this._min) {
+            throw new Error(`Number too small (min ${this._min})`);
+        }
+        if (this._max !== undefined && val > this._max) {
+            throw new Error(`Number too large (max ${this._max})`);
+        }
+        return val;
+    }
+
+    min(n: number): this {
+        this._min = n;
+        return this;
+    }
+
+    max(n: number): this {
+        this._max = n;
+        return this;
+    }
+}
+
+class ZodBoolean extends ZodType<boolean> {
+    constructor() {
+        super();
+        this._def.typeName = "ZodBoolean";
+    }
+
+    parse(val: unknown): boolean {
+        const withDefault = this.applyDefault(val);
+        if (withDefault !== undefined) return withDefault;
+        if (typeof val !== 'boolean') throw new Error('Expected boolean');
+        return val;
+    }
+}
+
+class ZodLiteral<T extends string | number | boolean> extends ZodType<T> {
+    constructor(private value: T) {
+        super();
+        this._def = { typeName: "ZodLiteral", value };
+    }
+
+    parse(val: unknown): T {
+        if (val !== this.value) {
+            throw new Error(`Expected literal: ${this.value}`);
+        }
+        return val as T;
+    }
+}
+
+class ZodOptional<T> extends ZodType<T | undefined> {
+    constructor(private inner: ZodType<T>) {
+        super();
+        this._def = { typeName: "ZodOptional", innerType: inner };
+    }
+
+    parse(val: unknown): T | undefined {
+        if (val === undefined) return undefined;
+        return this.inner.parse(val);
+    }
+}
+
+class ZodObject<T extends Record<string, ZodType<any>>> extends ZodType<{
+    [K in keyof T]: T[K] extends ZodType<infer U> ? U : never
+}> {
+    constructor(private shape: T) {
+        super();
+        this._def = { typeName: "ZodObject", shape: () => shape };
+    }
+
+    parse(val: unknown): any {
+        if (typeof val !== 'object' || val === null) {
+            throw new Error('Expected object');
+        }
+        const result: any = {};
+        for (const [key, schema] of Object.entries(this.shape)) {
+            const fieldVal = (val as any)[key];
+
+            // Use public getter instead of protected property
+            const defaultValue = schema.getDefault();
+            const isOptional = schema instanceof ZodOptional;
+
+            if (fieldVal === undefined && !isOptional) {
+                // Check if schema has default using public getter
+                if (defaultValue !== undefined) {
+                    result[key] = defaultValue;
+                } else {
                     throw new Error(`Missing required field: ${key}`);
                 }
-                if (fieldValue !== undefined) {
-                    result[key] = schema.parse(fieldValue);
-                }
+            } else if (fieldVal !== undefined) {
+                result[key] = schema.parse(fieldVal);
+            } else if (isOptional) {
+                // Optional field with undefined value - skip it
+                result[key] = undefined;
             }
-            return result;
         }
-    }),
+        return result;
+    }
+}
 
-    array: <T>(item: Schema<T>) => createSchema<T[]>({
-        _def: { typeName: "ZodArray", type: item },
-        parse: (val) => {
-            if (!Array.isArray(val)) throw new Error('Expected array');
-            return val.map(v => item.parse(v));
+class ZodArray<T> extends ZodType<T[]> {
+    constructor(private item: ZodType<T>) {
+        super();
+        this._def = { typeName: "ZodArray", item };
+    }
+
+    parse(val: unknown): T[] {
+        if (!Array.isArray(val)) throw new Error('Expected array');
+        return val.map(v => this.item.parse(v));
+    }
+}
+
+class ZodEnum<T extends string> extends ZodType<T> {
+    private values: readonly T[];
+
+    constructor(values: readonly T[]) {
+        super();
+        this.values = [...values]; // Defensive copy
+        this._def = { typeName: "ZodEnum", values: this.values };
+    }
+
+    parse(val: unknown): T {
+        if (val === undefined || val === null) {
+            throw new Error(`Expected enum value but got ${val}. Allowed: [${this.values.join(', ')}]`);
         }
-    }),
-
-    record: <T>(valueSchema: Schema<T>) => createSchema<Record<string, T>>({
-        _def: { typeName: "ZodRecord", valueType: valueSchema },
-        parse: (val) => {
-            if (typeof val !== 'object' || val === null || Array.isArray(val)) {
-                throw new Error('Expected object map');
-            }
-            const result: Record<string, T> = {};
-            for (const [key, value] of Object.entries(val)) {
-                result[key] = valueSchema.parse(value);
-            }
-            return result;
+        // Handle both string and enum values
+        const strVal = typeof val === 'string' ? val : String(val);
+        if (!this.values.includes(strVal as T)) {
+            throw new Error(`Invalid value "${strVal}". Expected one of: [${this.values.join(', ')}]`);
         }
-    }),
+        return strVal as T;
+    }
+}
 
-    optional: <T>(schema: Schema<T>): Schema<T | undefined> => {
-        const s = {
-            _def: { typeName: "ZodOptional", innerType: schema },
-            parse: (val: any) => (val === undefined ? undefined : schema.parse(val)),
-            _isOptional: true,
-        } as Schema<T | undefined>;
-        s.optional = () => s;
-        return s;
-    },
+class ZodRecord<T> extends ZodType<Record<string, T>> {
+    constructor(private valueSchema: ZodType<T>) {
+        super();
+        this._def = { typeName: "ZodRecord", valueType: valueSchema };
+    }
 
-    void: () => createSchema<void>({
-        _def: { typeName: "ZodVoid" },
-        parse: () => undefined
-    }),
+    parse(val: unknown): Record<string, T> {
+        if (typeof val !== 'object' || val === null || Array.isArray(val)) {
+            throw new Error('Expected object map');
+        }
+        const result: Record<string, T> = {};
+        for (const [k, v] of Object.entries(val)) {
+            result[k] = this.valueSchema.parse(v);
+        }
+        return result;
+    }
+}
 
-    any: () => createSchema<any>({
-        _def: { typeName: "ZodAny" },
-        parse: (val) => val
-    })
+class ZodVoid extends ZodType<void> {
+    constructor() {
+        super();
+        this._def.typeName = "ZodVoid";
+    }
+    parse(): void { return undefined; }
+}
+
+class ZodAny extends ZodType<any> {
+    constructor() {
+        super();
+        this._def.typeName = "ZodAny";
+    }
+    parse(val: unknown): any { return val; }
+}
+
+// ============================================================================
+// EXPORT z OBJECT
+// ============================================================================
+
+export const z = {
+    string: () => new ZodString(),
+    number: () => new ZodNumber(),
+    boolean: () => new ZodBoolean(),
+    literal: <T extends string | number | boolean>(value: T) => new ZodLiteral(value),
+    enum: <T extends string>(values: readonly T[]) => new ZodEnum(values),
+    object: <T extends Record<string, ZodType<any>>>(shape: T) => new ZodObject(shape),
+    array: <T>(item: ZodType<T>) => new ZodArray(item),
+    record: <T>(valueSchema: ZodType<T>) => new ZodRecord(valueSchema),
+    optional: <T>(schema: ZodType<T>) => new ZodOptional(schema),
+    void: () => new ZodVoid(),
+    any: () => new ZodAny(),
 };
+
+// Type exports
+export type Schema<T> = ZodType<T>;
 
 // ============================================================================
 // PROCEDURE BUILDER
