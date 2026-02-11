@@ -26,3 +26,7 @@ see .ts .svelte .js .rs .toml
 
 When you add a Cell.toml the orchestrator picks it up and runs the spawn script you write in it.
 Prototyping meshes is very fast with this... But it can be faster.
+
+
+
+Can this ever be safe? Like if I create a auth cell which is the load balancer and api entry point and only exposed cell which only routes calls to the rest of the mesh only if its authenticated?
