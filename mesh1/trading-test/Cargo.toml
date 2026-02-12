@@ -1,0 +1,14 @@
+# trading-test/Cargo.toml
+[package]
+name = "trading-test-cell"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cell-protocol-example1-rs = { path = "../protocols/example1/example1-rs" }
+tokio = { version = "1.35", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

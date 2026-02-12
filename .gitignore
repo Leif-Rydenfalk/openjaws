@@ -165,3 +165,6 @@ mesh-types.d.ts
 
 trash/
 /trash
+
+target/
+/target

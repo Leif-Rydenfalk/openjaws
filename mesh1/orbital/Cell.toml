@@ -1,0 +1,4 @@
+id = "orbital"
+command = "cargo run --release"
+critical = true
+scalable = false

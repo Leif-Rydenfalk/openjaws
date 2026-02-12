@@ -1,0 +1,5 @@
+# trading-test/Cell.toml
+id = "trading-test"
+command = "cargo run --release -- --auto"
+critical = false
+scalable = true

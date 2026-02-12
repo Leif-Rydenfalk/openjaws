@@ -1,0 +1,2 @@
+
+The prediction analyst should present the data and use ai to analyse data and present it so its very easy for me to say if the current percentages match reality or not. ai should give tips and feedback and find absurd bets which are obviously one direction - like the famous will jesus return before gta 6 which is obviously no - instant double money.

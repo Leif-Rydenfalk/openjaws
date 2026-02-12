@@ -1,0 +1,4 @@
+id = "trading"
+command = "cargo run --release"
+critical = false
+scalable = true

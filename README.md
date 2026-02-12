@@ -22,6 +22,12 @@ bun run index.ts
 
 see .ts .svelte .js .toml
 see .ts .svelte .js .rs .toml
+-e airplane -e radar-controller -e lidar-controller
+-e ai-ui -e ai-ui-ui
+
+see .ts -e airplane -e radar-controller -e lidar-controller -e ai-ui -e ai-ui-ui -e protcols -e tts -e tts-ui -e ui -e telegram -e telemetry -e verify-types-tests -e memory -e kindly -e discord -e architect -e assets -e coder 
+
+see .ts .rs .toml -e airplane -e radar-controller -e lidar-controller -e ai-ui -e ai-ui-ui -e protcols -e tts -e tts-ui -e ui -e telegram -e telemetry -e verify-types-tests -e memory -e kindly -e discord -e architect -e assets -e coder 
 
 
 When you add a Cell.toml the orchestrator picks it up and runs the spawn script you write in it.

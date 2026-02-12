@@ -1,0 +1,4 @@
+id = "test-1-rs"
+command = "cargo run --release"
+critical = false
+scalable = true

@@ -1,0 +1,4 @@
+id = "test-types"
+command = "bun run index.ts"
+critical = false
+scalable = true

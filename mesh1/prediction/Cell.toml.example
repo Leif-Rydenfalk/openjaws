@@ -1,0 +1,4 @@
+id = "prediction"
+command = "bun run index.ts"
+critical = false
+scalable = true

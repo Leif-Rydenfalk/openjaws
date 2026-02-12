@@ -1,0 +1,182 @@
+// trading-test/index.ts - Simple test suite for trading cell
+import { TypedRheoCell } from "../protocols/example1/typed-mesh";
+
+const cell = new TypedRheoCell(`TradingTest_${process.pid}`, 0);
+
+async function runTests() {
+    // Wait for mesh to converge
+    await new Promise(r => setTimeout(r, 5000));
+
+    console.log("\n🧪 TRADING CELL TEST SUITE");
+    console.log("=".repeat(50));
+
+    let passed = 0;
+    let failed = 0;
+
+    // Test 1: Check trading cell is in mesh
+    console.log("\n📡 Test 1: Discover trading cell");
+    try {
+        const health = await cell.mesh.mesh.health();
+        const tradingCell = Object.entries(cell.atlas).find(([_, e]) =>
+            e.caps.some(c => c.startsWith("trading/"))
+        );
+
+        if (tradingCell) {
+            console.log(`✅ Trading cell found: ${tradingCell[0]}`);
+            console.log(`   Capabilities: ${tradingCell[1].caps.filter(c => c.startsWith("trading/")).join(", ")}`);
+            passed++;
+        } else {
+            console.log("❌ Trading cell not found in mesh");
+            failed++;
+        }
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Test 2: Simulate market data
+    console.log("\n📈 Test 2: Simulate market data");
+    try {
+        await cell.mesh.trading.simulate_market_data({});
+        console.log("✅ Market data simulated");
+        passed++;
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Test 3: Get market data
+    console.log("\n📊 Test 3: Get market data");
+    try {
+        const tick = await cell.mesh.trading.get_market_data({ symbol: "BTC-USD" });
+        if (tick) {
+            console.log(`✅ BTC-USD: bid=${tick.bid.toFixed(2)}, ask=${tick.ask.toFixed(2)}`);
+            passed++;
+        } else {
+            console.log("⚠️  No market data (may need to simulate first)");
+        }
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Test 4: Place a buy order
+    console.log("\n🛒 Test 4: Place buy order");
+    let orderId: string;
+    try {
+        const order = await cell.mesh.trading.place_order({
+            symbol: "BTC-USD",
+            side: "Buy",
+            price: 45000.0,
+            quantity: 1.0,
+            order_type: "Limit"
+        });
+        orderId = order.order_id;
+        console.log(`✅ Order placed: ${orderId}`);
+        console.log(`   Status: ${order.status}, Filled: ${order.filled_quantity}/${order.remaining_quantity + order.filled_quantity}`);
+        passed++;
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Test 5: Get position
+    console.log("\n💼 Test 5: Get position");
+    try {
+        const position = await cell.mesh.trading.get_position({ symbol: "BTC-USD" });
+        if (position) {
+            console.log(`✅ Position: ${position.quantity} @ ${position.avg_entry_price.toFixed(2)}`);
+            console.log(`   Unrealized PnL: ${position.unrealized_pnl.toFixed(2)}`);
+            passed++;
+        } else {
+            console.log("⚠️  No position yet");
+        }
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Test 6: Risk check
+    console.log("\n🛡️  Test 6: Risk check");
+    try {
+        const risk = await cell.mesh.trading.check_risk({
+            symbol: "BTC-USD",
+            side: "Buy",
+            quantity: 100.0, // Large order to test limits
+            price: 45000.0
+        });
+        console.log(`✅ Risk check: ${risk.allowed ? "ALLOWED" : "BLOCKED"}`);
+        if (!risk.allowed) {
+            console.log(`   Reason: ${risk.reason}`);
+        }
+        console.log(`   Position after: ${risk.position_after}`);
+        passed++;
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Test 7: Get all positions
+    console.log("\n📋 Test 7: Get all positions");
+    try {
+        const positions = await cell.mesh.trading.get_all_positions({});
+        console.log(`✅ Total positions: ${positions.length}`);
+        positions.forEach(p => {
+            console.log(`   ${p.symbol}: ${p.quantity} @ ${p.avg_entry_price.toFixed(2)}`);
+        });
+        passed++;
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Test 8: Get stats
+    console.log("\n📊 Test 8: Get trading stats");
+    try {
+        const stats = await cell.mesh.trading.get_stats({});
+        console.log(`✅ Total orders: ${stats.total_orders}`);
+        console.log(`   Filled: ${stats.filled_orders}, Cancelled: ${stats.cancelled_orders}`);
+        console.log(`   Total volume: ${stats.total_volume.toFixed(2)}`);
+        console.log(`   Total PnL: ${stats.total_pnl.toFixed(2)}`);
+        passed++;
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Test 9: Get risk limits
+    console.log("\n⚠️  Test 9: Get risk limits");
+    try {
+        const limits = await cell.mesh.trading.get_risk_limits({});
+        console.log(`✅ Max position: ${limits.max_position}`);
+        console.log(`   Max order size: ${limits.max_order_size}`);
+        console.log(`   Max daily loss: ${limits.max_daily_loss}`);
+        passed++;
+    } catch (e: any) {
+        console.log(`❌ Error: ${e.message}`);
+        failed++;
+    }
+
+    // Summary
+    console.log("\n" + "=".repeat(50));
+    console.log(`📊 TEST RESULTS: ${passed} passed, ${failed} failed`);
+    console.log("=".repeat(50));
+
+    if (failed === 0) {
+        console.log("\n🎉 All tests passed! Trading cell is operational.");
+    } else {
+        console.log(`\n⚠️  ${failed} test(s) failed. Check logs above.`);
+    }
+
+    // Keep running for a bit then exit
+    setTimeout(() => {
+        console.log("\n👋 Trading test complete. Exiting.");
+        process.exit(failed > 0 ? 1 : 0);
+    }, 2000);
+}
+
+// Connect and run
+cell.listen();
+setTimeout(runTests, 15000);
+
+console.log("⏳ Waiting for mesh convergence...");

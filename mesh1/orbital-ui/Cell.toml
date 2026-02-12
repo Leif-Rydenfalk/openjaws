@@ -1,0 +1,4 @@
+id = "orbital-ui"
+command = "bun run index.ts"
+critical = false
+scalable = false
